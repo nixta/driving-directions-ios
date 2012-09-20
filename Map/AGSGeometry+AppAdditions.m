@@ -1,0 +1,96 @@
+//
+//  AGSGeometry+AppAdditions.m
+//  ArcGISMobile
+//
+//  Created by ryan3374 on 12/9/10.
+//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//
+
+#import "AGSGeometry+AppAdditions.h"
+
+@implementation AGSGeometry (AppAdditions)
+
+-(BOOL)isEmpty
+{
+    BOOL bIsEmpty = YES;
+    if ([self isKindOfClass:[AGSPoint class]]){
+		AGSPoint *p = (AGSPoint*)self;
+		
+        bIsEmpty = (isinf(p.x) || isinf(p.y) ||
+                    isnan(p.x) || isnan(p.y));
+	}
+	
+	else if ([self isKindOfClass:[AGSPolyline class]]){
+		bIsEmpty = [((AGSPolyline*)self) numPaths];
+	}
+	else if ([self isKindOfClass:[AGSPolygon class]]){
+		bIsEmpty = [((AGSPolygon*)self) numRings];
+	}
+	else{
+		// multipoints...
+        bIsEmpty = ([((AGSMultipoint*)self) numPoints] <= 0);
+	}
+    
+    return bIsEmpty;
+}
+
+//gets a single point for any geometry type.
+//returns the center point of the envelope for
+//polylines and polygons
+-(AGSPoint *)getLocationPoint
+{
+	if ([self isKindOfClass:[AGSPoint class]]){
+        return (AGSPoint*)self;
+	}
+	else if ([self isKindOfClass:[AGSPolyline class]] ||
+             [self isKindOfClass:[AGSPolygon class]]){
+		return self.envelope.center;
+	}
+	else if ([self isKindOfClass:[AGSMultipoint class]] &&
+             ((AGSMultipoint *)self).numPoints > 0){
+        return [((AGSMultipoint*)self) pointAtIndex:0];
+    }
+    
+	return nil;
+}
+
+//returns head of geometry, i.e the first point if a line,
+//the first point of a polygon, and just the point for
+//a point
+-(AGSPoint *)head
+{
+    if ([self isKindOfClass:[AGSPoint class]]){
+        return (AGSPoint*)self;
+	}
+	else if ([self isKindOfClass:[AGSPolyline class]]){
+		AGSPolyline *pl = (AGSPolyline *)self;
+        return [pl pointOnPath:0 atIndex:0];
+	}
+    else if([self isKindOfClass:[AGSPolygon class]])
+    {
+        AGSPolygon *pl = (AGSPolygon *)self;
+        return [pl pointOnRing:0 atIndex:0];
+    }
+    
+	return nil;
+}
+
+-(AGSGeometryType)geometryType
+{
+    AGSGeometryType geoType = AGSGeometryTypePoint;
+    
+    if ([self isKindOfClass:[AGSPoint class]] || [self isKindOfClass:[AGSMutablePoint class]]) {
+        geoType = AGSGeometryTypePoint;
+    }
+    else if ([self isKindOfClass:[AGSPolyline class]] || [self isKindOfClass:[AGSMutablePolyline class]]) {
+        geoType = AGSGeometryTypePolyline;
+    }
+    else if ([self isKindOfClass:[AGSPolygon class]] || [self isKindOfClass:[AGSMutablePolygon class]])
+    {
+        geoType = AGSGeometryTypePolygon;
+    }
+    
+    return geoType;
+}
+
+@end
