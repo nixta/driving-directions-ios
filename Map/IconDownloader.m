@@ -80,13 +80,9 @@
 {
     self.delegate = nil;
     
-    self.content = nil;
-    self.indexPathInTableView = nil;
     
     [self.irop cancel];
-    self.irop = nil;
     
-    [super dealloc];
 }
 
 - (void)startDownloadWithUrlString:(NSString *)urlString withHost:(NSString *)host
@@ -101,7 +97,7 @@
 	//create the url request, complete with token and referer, if signed in
 	NSURLRequest *contentReq = [connection requestForUrlString:urlString withHost:nil];
     
-    self.irop = [[[AGSImageRequestOperation alloc] initWithRequest:contentReq] autorelease];
+    self.irop = [[AGSImageRequestOperation alloc] initWithRequest:contentReq];
     self.irop.target = self;
     self.irop.action = @selector(imageDownload:didGetImage:);
     self.irop.errorAction = @selector(imageDownload:didFailWithError:);

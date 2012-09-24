@@ -90,8 +90,8 @@
     {
         cell = [tableView dequeueReusableCellWithIdentifier:DefaultCellIdentifier];
         if (cell == nil) {
-            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle 
-                                           reuseIdentifier:DefaultCellIdentifier] autorelease];
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle 
+                                           reuseIdentifier:DefaultCellIdentifier];
         }
         
         cell.textLabel.text = currentResult.name;

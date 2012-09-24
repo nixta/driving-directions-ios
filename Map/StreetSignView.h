@@ -20,7 +20,7 @@
     Direction   *_direction;
 }
 
-@property (nonatomic, retain) Direction *direction;
+@property (nonatomic, strong) Direction *direction;
 
 -(id)initWithFrame:(CGRect)frame withDirection:(Direction *)direction withReflectionSlope:(CGFloat)slope startingX:(CGFloat)x useShadow:(BOOL)useShadow;
 

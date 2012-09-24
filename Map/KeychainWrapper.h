@@ -13,8 +13,8 @@
     NSMutableDictionary        *_genericPasswordQuery;
 }
 
-@property (nonatomic, retain) NSMutableDictionary *keychainData;
-@property (nonatomic, retain) NSMutableDictionary *genericPasswordQuery;
+@property (nonatomic, strong) NSMutableDictionary *keychainData;
+@property (nonatomic, strong) NSMutableDictionary *genericPasswordQuery;
 
 - (void)setPassword:(id)password forUser:(id)user;
 - (id)getPassword;

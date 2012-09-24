@@ -94,12 +94,6 @@
     return self.legendLayer.title;
 }
 
-- (void)dealloc {
-
-    self.legendLayer = nil;
-    
-	[super dealloc];
-}
 
 
 @end

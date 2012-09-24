@@ -35,33 +35,33 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.esri.ArcGISMobileUI\0";
         OSStatus keychainErr = noErr;
         
         // Set up the keychain search dictionary:
-        self.genericPasswordQuery = [[[NSMutableDictionary alloc] init] autorelease];
+        self.genericPasswordQuery = [[NSMutableDictionary alloc] init];
         
         // This keychain item is a generic password.
-        [self.genericPasswordQuery setObject:(id)kSecClassGenericPassword
-                                 forKey:(id)kSecClass];
+        [self.genericPasswordQuery setObject:(__bridge id)kSecClassGenericPassword
+                                 forKey:(__bridge id)kSecClass];
         
         // The kSecAttrGeneric attribute is used to store a unique string that is used
         // to easily identify and find this keychain item. The string is first
         // converted to an NSData object:
         NSData *keychainItemID = [NSData dataWithBytes:kKeychainItemIdentifier
                                                 length:strlen((const char *)kKeychainItemIdentifier)];
-        [self.genericPasswordQuery setObject:keychainItemID forKey:(id)kSecAttrGeneric];
+        [self.genericPasswordQuery setObject:keychainItemID forKey:(__bridge id)kSecAttrGeneric];
         
         // Return the attributes of the first match only:
-        [self.genericPasswordQuery setObject:(id)kSecMatchLimitOne forKey:(id)kSecMatchLimit];
+        [self.genericPasswordQuery setObject:(__bridge id)kSecMatchLimitOne forKey:(__bridge id)kSecMatchLimit];
         
         // Return the attributes of the keychain item (the password is
         //  acquired in the secItemFormatToDictionary: method):
         [self.genericPasswordQuery setObject:(id)kCFBooleanTrue
-                                 forKey:(id)kSecReturnAttributes];
+                                 forKey:(__bridge id)kSecReturnAttributes];
         
         //Initialize the dictionary used to hold return data from the keychain:
         NSMutableDictionary *outDictionary = nil;
         
         // If the keychain item exists, return the attributes of the item: 
-        keychainErr = SecItemCopyMatching((CFDictionaryRef)self.genericPasswordQuery,
-                                          (CFTypeRef *)&outDictionary);
+        keychainErr = SecItemCopyMatching((__bridge CFDictionaryRef)self.genericPasswordQuery,
+                                          ( __bridge CFTypeRef )outDictionary);
         
         if (keychainErr == noErr) {
             // Convert the data dictionary into the format used by the view controller:
@@ -75,18 +75,11 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.esri.ArcGISMobileUI\0";
             NSAssert(NO, @"Serious keychain error.\n");
         }
         
-        [outDictionary release];
     }
     
     return self;
 }
 
-- (void)dealloc
-{
-    self.keychainData = nil;
-    self.genericPasswordQuery = nil;
-    [super dealloc];
-}
 
 // Implement the mySetObject:forKey method, which writes attributes to the keychain:
 - (void)setPassword:(id)password forUser:(id)user
@@ -94,16 +87,16 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.esri.ArcGISMobileUI\0";
     if (password == nil)
         return;
     
-    NSString *oldUser = [self.keychainData objectForKey:(id)kSecAttrAccount];
-    NSString *oldPassword = [self.keychainData objectForKey:(id)kSecValueData];
+    NSString *oldUser = [self.keychainData objectForKey:(__bridge id)kSecAttrAccount];
+    NSString *oldPassword = [self.keychainData objectForKey:(__bridge id)kSecValueData];
     if (![oldUser isEqualToString:user] ||
         ![oldPassword isEqualToString:password])
     {
         //set user and password
-        [self.keychainData setObject:user forKey:(id)kSecAttrAccount];
-        [self.keychainData setObject:password forKey:(id)kSecValueData];
+        [self.keychainData setObject:user forKey:(__bridge id)kSecAttrAccount];
+        [self.keychainData setObject:password forKey:(__bridge id)kSecValueData];
         
-        [self.keychainData setObject:[NSNumber numberWithBool:NO] forKey:(id)kSecAttrIsNegative];
+        [self.keychainData setObject:[NSNumber numberWithBool:NO] forKey:(__bridge id)kSecAttrIsNegative];
 
         [self writeToKeychain];
     }
@@ -112,18 +105,18 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.esri.ArcGISMobileUI\0";
 // Implement the myObjectForKey: method, which reads an attribute value from a dictionary:
 - (id)getPassword
 {
-    return [self.keychainData objectForKey:(id)kSecValueData];
+    return [self.keychainData objectForKey:(__bridge id)kSecValueData];
 }
 
 // Implement the myObjectForKey: method, which reads an attribute value from a dictionary:
 - (id)getUser
 {
-    return [self.keychainData objectForKey:(id)kSecAttrAccount];
+    return [self.keychainData objectForKey:(__bridge id)kSecAttrAccount];
 }
 
 - (BOOL)isLoggedIn
 {
-    NSNumber *isNegative = [self.keychainData objectForKey:(id)kSecAttrIsNegative];
+    NSNumber *isNegative = [self.keychainData objectForKey:(__bridge id)kSecAttrIsNegative];
     return (![isNegative boolValue]);
 }
 
@@ -134,7 +127,7 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.esri.ArcGISMobileUI\0";
 {
     if (!_keychainData) //Allocate the keychainData dictionary if it doesn't exist yet.
     {
-        self.keychainData = [[[NSMutableDictionary alloc] init] autorelease];
+        self.keychainData = [[NSMutableDictionary alloc] init];
     }
     else if (_keychainData)
     {
@@ -143,21 +136,21 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.esri.ArcGISMobileUI\0";
         NSMutableDictionary *tmpDictionary =
         [self dictionaryToSecItemFormat:self.keychainData];
         // Delete the keychain item in preparation for resetting the values:
-        NSAssert(SecItemDelete((CFDictionaryRef)tmpDictionary) == noErr,
+        NSAssert(SecItemDelete((__bridge CFDictionaryRef)tmpDictionary) == noErr,
                  @"Problem deleting current keychain item." );
     }
     
     // Default generic data for Keychain Item:
-    [self.keychainData setObject:@"" forKey:(id)kSecAttrLabel];
-    [self.keychainData setObject:@"" forKey:(id)kSecAttrDescription];
-    [self.keychainData setObject:@"Account" forKey:(id)kSecAttrAccount];
-    [self.keychainData setObject:@"" forKey:(id)kSecAttrService];
-    [self.keychainData setObject:@"" forKey:(id)kSecAttrComment];
-    [self.keychainData setObject:@"password" forKey:(id)kSecValueData];
+    [self.keychainData setObject:@"" forKey:(__bridge id)kSecAttrLabel];
+    [self.keychainData setObject:@"" forKey:(__bridge id)kSecAttrDescription];
+    [self.keychainData setObject:@"Account" forKey:(__bridge id)kSecAttrAccount];
+    [self.keychainData setObject:@"" forKey:(__bridge id)kSecAttrService];
+    [self.keychainData setObject:@"" forKey:(__bridge id)kSecAttrComment];
+    [self.keychainData setObject:@"password" forKey:(__bridge id)kSecValueData];
     
     //use the kSecAttrIsInvisible attribute to denote whether the account is logged in or not...
     //True means not logged in, False means logged in
-    [self.keychainData setObject:[NSNumber numberWithBool:YES] forKey:(id)kSecAttrIsNegative];
+    [self.keychainData setObject:[NSNumber numberWithBool:YES] forKey:(__bridge id)kSecAttrIsNegative];
 }
 
 #pragma mark -
@@ -178,13 +171,13 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.esri.ArcGISMobileUI\0";
     // Add the keychain item class and the generic attribute:
     NSData *keychainItemID = [NSData dataWithBytes:kKeychainItemIdentifier
                                             length:strlen((const char *)kKeychainItemIdentifier)];
-    [returnDictionary setObject:keychainItemID forKey:(id)kSecAttrGeneric];
-    [returnDictionary setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
+    [returnDictionary setObject:keychainItemID forKey:(__bridge id)kSecAttrGeneric];
+    [returnDictionary setObject:(__bridge id)kSecClassGenericPassword forKey:(__bridge id)kSecClass];
     
     // Convert the password NSString to NSData to fit the API paradigm:
-    NSString *passwordString = [dictionaryToConvert objectForKey:(id)kSecValueData];
+    NSString *passwordString = [dictionaryToConvert objectForKey:(__bridge id)kSecValueData];
     [returnDictionary setObject:[passwordString dataUsingEncoding:NSUTF8StringEncoding]
-                         forKey:(id)kSecValueData];
+                         forKey:(__bridge id)kSecValueData];
     return returnDictionary;
 }
 
@@ -202,22 +195,22 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.esri.ArcGISMobileUI\0";
     
     // To acquire the password data from the keychain item,
     // first add the search key and class attribute required to obtain the password:
-    [returnDictionary setObject:(id)kCFBooleanTrue forKey:(id)kSecReturnData];
-    [returnDictionary setObject:(id)kSecClassGenericPassword forKey:(id)kSecClass];
+    [returnDictionary setObject:(id)kCFBooleanTrue forKey:(__bridge id)kSecReturnData];
+    [returnDictionary setObject:(__bridge id)kSecClassGenericPassword forKey:(__bridge id)kSecClass];
     // Then call Keychain Services to get the password:
     NSData *passwordData = NULL;
     OSStatus keychainError = noErr; //
-    keychainError = SecItemCopyMatching((CFDictionaryRef)returnDictionary,
-                                        (CFTypeRef *)&passwordData);
+    keychainError = SecItemCopyMatching((__bridge CFDictionaryRef)returnDictionary,
+                                        (__bridge CFTypeRef )passwordData);
     if (keychainError == noErr)
     {
         // Remove the kSecReturnData key; we don't need it anymore:
-        [returnDictionary removeObjectForKey:(id)kSecReturnData];
+        [returnDictionary removeObjectForKey:(__bridge id)kSecReturnData];
         
         // Convert the password to an NSString and add it to the return dictionary:
-        NSString *password = [[[NSString alloc] initWithBytes:[passwordData bytes]
-                                                       length:[passwordData length] encoding:NSUTF8StringEncoding] autorelease];
-        [returnDictionary setObject:password forKey:(id)kSecValueData];
+        NSString *password = [[NSString alloc] initWithBytes:[passwordData bytes]
+                                                       length:[passwordData length] encoding:NSUTF8StringEncoding];
+        [returnDictionary setObject:password forKey:(__bridge id)kSecValueData];
     }
     // Don't do anything if nothing is found.
     else if (keychainError == errSecItemNotFound) {
@@ -229,7 +222,6 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.esri.ArcGISMobileUI\0";
         NSAssert(NO, @"Serious error.\n");
     }
     
-    [passwordData release];
     return returnDictionary;
 }
 
@@ -244,8 +236,8 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.esri.ArcGISMobileUI\0";
     NSMutableDictionary *updateItem = NULL;
     
     // If the keychain item already exists, modify it:
-    if (SecItemCopyMatching((CFDictionaryRef)self.genericPasswordQuery,
-                            (CFTypeRef *)&attributes) == noErr)
+    if (SecItemCopyMatching((__bridge CFDictionaryRef)self.genericPasswordQuery,
+                            ( __bridge CFTypeRef )attributes) == noErr)
     {
         // First, get the attributes returned from the keychain and add them to the
         // dictionary that controls the update:
@@ -253,17 +245,17 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.esri.ArcGISMobileUI\0";
         
         // Second, get the class value from the generic password query dictionary and
         // add it to the updateItem dictionary:
-        [updateItem setObject:[self.genericPasswordQuery objectForKey:(id)kSecClass]
-                       forKey:(id)kSecClass];
+        [updateItem setObject:[self.genericPasswordQuery objectForKey:(__bridge id)kSecClass]
+                       forKey:(__bridge id)kSecClass];
         
         // Finally, set up the dictionary that contains new values for the attributes:
         NSMutableDictionary *tempCheck = [self dictionaryToSecItemFormat:self.keychainData];
         //Remove the class--it's not a keychain attribute:
-        [tempCheck removeObjectForKey:(id)kSecClass];
+        [tempCheck removeObjectForKey:(__bridge id)kSecClass];
         
         // You can update only a single keychain item at a time.
-        NSAssert(SecItemUpdate((CFDictionaryRef)updateItem,
-                               (CFDictionaryRef)tempCheck) == noErr,
+        NSAssert(SecItemUpdate((__bridge CFDictionaryRef)updateItem,
+                               (__bridge CFDictionaryRef)tempCheck) == noErr,
                  @"Couldn't update the Keychain Item." );
     }
     else
@@ -274,7 +266,7 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.esri.ArcGISMobileUI\0";
         
         // No pointer to the newly-added items is needed, so pass NULL for the second parameter:
         NSMutableDictionary *dict = [self dictionaryToSecItemFormat:self.keychainData];
-        OSStatus status = SecItemAdd((CFDictionaryRef)dict, NULL);
+        OSStatus status = SecItemAdd((__bridge CFDictionaryRef)dict, NULL);
         NSAssert(status == noErr, @"Couldn't add the Keychain Item." );
     }
 }

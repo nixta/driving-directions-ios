@@ -36,11 +36,11 @@
 }
 
 //Wrapper for the items array on the private UIToolbar
-@property (nonatomic, retain) NSArray           *items;
+@property (nonatomic, strong) NSArray           *items;
 
-@property (nonatomic, retain) UIView            *toolsView;
-@property (nonatomic, retain) UIView            *supplementalToolsView;
-@property (nonatomic, retain) UIImageView       *selectedButtonArrow;
+@property (nonatomic, strong) UIView            *toolsView;
+@property (nonatomic, strong) UIView            *supplementalToolsView;
+@property (nonatomic, strong) UIImageView       *selectedButtonArrow;
 
 -(id)initWithFrame:(CGRect)frame showToolsBelowToolbar:(BOOL)showBelowToolbar;
 

@@ -1117,6 +1117,7 @@
 		882A01EA160BCE3100027BE2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		882A01ED160BD15300027BE2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		882A01EF160BD16A00027BE2 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		882A01F31610BD8400027BE2 /* NSDictionary+AGSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+AGSAdditions.h"; path = "../../ArcGIS_iOS_3/Headers/NSDictionary+AGSAdditions.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1329,6 +1330,7 @@
 		78342C99140D9CB400B0F354 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				882A01F31610BD8400027BE2 /* NSDictionary+AGSAdditions.h */,
 				78342CA8140D9CB500B0F354 /* ArcGIS.bundle */,
 				78342CA2140D9CB400B0F354 /* MapAppDelegate.h */,
 				78342CA3140D9CB400B0F354 /* MapAppDelegate.m */,
@@ -2817,6 +2819,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Map/Map-Prefix.pch";
@@ -2843,6 +2846,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Library/SDKs/ArcGIS/**";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Map/Map-Prefix.pch";

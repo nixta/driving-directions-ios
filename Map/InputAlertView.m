@@ -40,12 +40,11 @@
 +(InputAlertView *)inputAlertViewWithTitle:(NSString *)title
                     initialFieldText:(NSString *)text delegate:(id<InputAlertViewDelegate>)delegate
 {
-    InputAlertView *_alert = [[[self alloc] 
+    InputAlertView *_alert = [[self alloc] 
                             initWithTitle:title 
                             message:@"\n" delegate:nil 
                             cancelButtonTitle:NSLocalizedString(@"Cancel", nil) 
-                            otherButtonTitles:NSLocalizedString(@"OK", nil), nil] 
-                            autorelease];
+                            otherButtonTitles:NSLocalizedString(@"OK", nil), nil];
 
     _alert.delegate = _alert;
     _alert.inputViewDelegate = delegate;
@@ -94,7 +93,6 @@
     bookmarkField.delegate = self;
     self.textField = bookmarkField;
     [self addSubview:bookmarkField];
-    [bookmarkField release];
     
     //on ios 5 devices textfield shows up as clear. Need to explicitly
     //set background color so its viewable
@@ -129,10 +127,5 @@
     return YES;
 }
 
--(void)dealloc
-{
-    self.textField = nil;
-    [super dealloc];
-}
 
 @end

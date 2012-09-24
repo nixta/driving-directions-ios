@@ -53,10 +53,10 @@
 #pragma mark Location Creation
 -(Location *)defaultLocationForPoint:(AGSPoint *)point
 {
-    return [[[Location alloc] initWithPoint:point 
+    return [[Location alloc] initWithPoint:point 
                                       aName:nil  
                                      anIcon:[UIImage imageNamed:@"AddressPin.png"]
-                                 locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]] autorelease];
+                                 locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]];
 }
 
 
@@ -109,7 +109,6 @@
     LocationCalloutView *locationCallout = [[LocationCalloutView alloc] initWithLocation:location calloutType:_appState];
     locationCallout.delegate = self;
     self.locationCallout = locationCallout;
-    [locationCallout release];
     
     self.mapView.callout.customView = self.locationCallout;
     self.mapView.callout.margin = CGSizeMake(0, 0);
@@ -156,14 +155,12 @@
     LocationCalloutView *locationCallout = [[LocationCalloutView alloc] initWithLocation:gpsLocation];
     locationCallout.delegate = self;
     self.locationCallout = locationCallout;
-    [locationCallout release];
     
     self.mapView.callout.customView = self.locationCallout;
     self.mapView.callout.margin = CGSizeMake(0, 0);
     self.mapView.callout.highlight = nil;
     self.mapView.callout.cornerRadius = [LocationCalloutView radius];
     
-    [gpsLocation release];
     
     return self.locationCallout;
 }
@@ -222,7 +219,6 @@
                     
                     AGSPopup *newPopup = [AGSPopup popupWithGraphic:tappedFeature popupInfo:featurePopupInfo];
                     [self.selectedFeaturePopupInfos addObject:newPopup];
-                    [featurePopupInfo release];
                 }
             }
         }
@@ -286,7 +282,7 @@
     //only show popups if popups indeed exist
     if (self.selectedFeaturePopupInfos.count > 0) {
         
-        self.popupsViewController = [[[AGSPopupsContainerViewController alloc] initWithPopups:self.selectedFeaturePopupInfos] autorelease];
+        self.popupsViewController = [[AGSPopupsContainerViewController alloc] initWithPopups:self.selectedFeaturePopupInfos];
         
         self.popupsViewController.style = AGSPopupsContainerStyleBlack;
         
@@ -296,7 +292,6 @@
                                                                       target:self 
                                                                       action:@selector(popupsContainerDidFinishViewingPopups:)];
         self.popupsViewController.doneButton = doneButton;
-        [doneButton release]; 
         
         //make map page the delegate of the popups
         self.popupsViewController.delegate = self;
@@ -359,7 +354,6 @@
     actionSheet.tag = kMapTapActionSheetTag;
     
     [actionSheet showInView:self.view];
-    [actionSheet release];
 }
 
 -(void)wantBookmarkForLocation:(Location *)location
@@ -385,7 +379,6 @@
         Route *pr = [[Route alloc] init];
         pr.stops.delegate = self.stopsView;
         self.planningRoute = pr;
-        [pr release];
     }
     
     //route isn't editable
@@ -431,7 +424,6 @@
         }
 
         [self.planningRoute addStop:updatedStopLocation];
-        [newLocation release];
     }
     
     [self.planningLayer dataChanged];
@@ -461,7 +453,6 @@
                         withCustomName:text 
                             withExtent:self.mapView.visibleArea.envelope];
     
-    [locationBookmark release];
 }
 
 #pragma mark -

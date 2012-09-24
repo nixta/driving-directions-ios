@@ -23,8 +23,8 @@
     OrganizationChooserViewController *_chooserVC;
 }
 
-@property (nonatomic, retain) IBOutlet UITableView  *tableView;
-@property (nonatomic, retain) MapAppSettings        *appSettings;
-@property (nonatomic, retain) OrganizationChooserViewController *chooserVC;
+@property (nonatomic, strong) IBOutlet UITableView  *tableView;
+@property (nonatomic, strong) MapAppSettings        *appSettings;
+@property (nonatomic, strong) OrganizationChooserViewController *chooserVC;
 
 @end

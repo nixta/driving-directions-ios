@@ -32,12 +32,12 @@
 
 -(void)basemapTapped:(id)sender;
 
-@property (nonatomic, retain) NSMutableArray            *views;
-@property (nonatomic, retain) UIActivityIndicatorView   *activityIndicator;
-@property (nonatomic, retain) NSTimer                   *watchdogTimer;
-@property (nonatomic, retain) UIView                    *currentBasemapView;
-@property (nonatomic, retain) NSMutableDictionary       *imageDownloadsInProgress;
-@property (nonatomic, retain) NSMutableArray            *basemapButtons;
+@property (nonatomic, strong) NSMutableArray            *views;
+@property (nonatomic, strong) UIActivityIndicatorView   *activityIndicator;
+@property (nonatomic, strong) NSTimer                   *watchdogTimer;
+@property (nonatomic, strong) UIView                    *currentBasemapView;
+@property (nonatomic, strong) NSMutableDictionary       *imageDownloadsInProgress;
+@property (nonatomic, strong) NSMutableArray            *basemapButtons;
 
 @end
 
@@ -61,19 +61,6 @@
 #pragma mark -
 #pragma mark Init/Dealloc Methods
 
--(void)dealloc
-{
-    self.scrollView = nil;
-    self.basemaps = nil;
-    self.views = nil;
-    self.activityIndicator = nil;
-    self.watchdogTimer = nil;
-    self.currentBasemapView = nil;
-    self.imageDownloadsInProgress = nil;
-    self.basemapButtons = nil;
-    
-    [super dealloc];
-}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -166,7 +153,6 @@
      maskView.userInteractionEnabled = NO;
      maskView.frame = self.view.frame;
      [self.view addSubview:maskView];
-     [maskView release];
      
      _currentPage = 0;
      
@@ -186,7 +172,7 @@
     UIView *view = [self.views objectAtIndex:page];
     if ((NSNull *)view == [NSNull null])
     {
-        view = [[[UIView alloc] initWithFrame:CGRectMake(0, 0, kScrollViewFrameWidth - 20, kScrollViewFrameWidth -20)] autorelease];
+        view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScrollViewFrameWidth - 20, kScrollViewFrameWidth -20)];
         view.backgroundColor = [UIColor clearColor];
                         
         UIButton *basemapButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -333,7 +319,6 @@
         iconDownloader.delegate = self;
         [self.imageDownloadsInProgress setObject:iconDownloader forKey:anIndexPath];
         [iconDownloader startDownloadWithUrlString:urlString];
-        [iconDownloader release];   
     }
 }
 
@@ -389,7 +374,6 @@
     label.font = [UIFont systemFontOfSize:16];
     label.textAlignment = UITextAlignmentCenter;
     [view addSubview:label];
-    [label release]; 
 }
                             
 
@@ -430,7 +414,6 @@
         aiv.center = self.scrollView.center;
         
         self.activityIndicator = aiv;
-        [aiv release];
     }
     
     return _activityIndicator;
@@ -442,7 +425,6 @@
     {
         Basemaps *bm = [[Basemaps alloc] initWithDelegate:self];
         self.basemaps = bm;
-        [bm release];
     }
     
     return _basemaps;
@@ -464,10 +446,8 @@
         currentLabel.text = NSLocalizedString(@"Current", nil);
         
         [cbv addSubview:currentLabel];
-        [currentLabel release];
         
         self.currentBasemapView = cbv;
-        [cbv release];
     }
     
     return _currentBasemapView;

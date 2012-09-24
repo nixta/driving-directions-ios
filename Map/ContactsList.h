@@ -14,6 +14,6 @@
     NSMutableArray  *_sections;
 }
 
-@property (nonatomic, retain, readonly) NSArray *sectionTitles;
+@property (nonatomic, strong, readonly) NSArray *sectionTitles;
 
 @end

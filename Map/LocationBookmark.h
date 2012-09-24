@@ -16,7 +16,7 @@
     AGSEnvelope *_envelope;
 }
 
-@property (nonatomic, retain) AGSEnvelope *envelope;
+@property (nonatomic, strong) AGSEnvelope *envelope;
 
 -(id)initWithLocation:(Location *)location extent:(AGSEnvelope *)extent;
 

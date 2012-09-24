@@ -33,14 +33,14 @@
 {
     UIScrollView                    *_scrollView;
     SignTableView                   *_tableView;
-    id<SignsViewDelegate>           _delegate;
-    id<DrawableContainerDataSource> _datasource;
+    id<SignsViewDelegate>           __unsafe_unretained _delegate;
+    id<DrawableContainerDataSource> __unsafe_unretained _datasource;
     
     NSUInteger                      _currentPage;
     
     @private
     UIView                          *_signOverlayView;
-    UIView                          *_viewToAnimate;
+    UIView                          *__unsafe_unretained _viewToAnimate;
     NSMutableArray                  *_signs;
     SignTableViewCell               *_dummyCell;
     UISwipeGestureRecognizer        *_downSwipeGestureRecognizer;
@@ -66,11 +66,11 @@
 
 -(void)reloadData;
 
-@property (nonatomic, retain) UIScrollView                      *scrollView;
-@property (nonatomic, retain) SignTableView                     *tableView;
+@property (nonatomic, strong) UIScrollView                      *scrollView;
+@property (nonatomic, strong) SignTableView                     *tableView;
 
-@property (nonatomic, assign) id<SignsViewDelegate>             delegate;
-@property (nonatomic, assign) id<DrawableContainerDataSource>   datasource;
+@property (nonatomic, unsafe_unretained) id<SignsViewDelegate>             delegate;
+@property (nonatomic, unsafe_unretained) id<DrawableContainerDataSource>   datasource;
 
 @end
 
@@ -98,7 +98,7 @@
 
 @interface StopsSignsView : SignsView <StopsDelegate> {
     
-    id<EditableSignsDelegate>   _editDelegate;
+    id<EditableSignsDelegate>   __unsafe_unretained _editDelegate;
     
     @private
     BlankSignView               *_heldSign;
@@ -115,7 +115,7 @@
     NSTimer                     *_timer;
 }
 
-@property (nonatomic, assign) id<EditableSignsDelegate> editDelegate;
+@property (nonatomic, unsafe_unretained) id<EditableSignsDelegate> editDelegate;
 
 @end
 

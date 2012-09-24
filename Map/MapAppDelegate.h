@@ -27,8 +27,8 @@
     AGSJSONRequestOperation *_organizationOp;
 }
 
-@property (nonatomic, retain) KeychainWrapper *keychainWrapper;
-@property (nonatomic, retain) UIAlertView     *networkAlertView;
-@property (nonatomic, retain) NSArray         *testOrganizations;
+@property (nonatomic, strong) KeychainWrapper *keychainWrapper;
+@property (nonatomic, strong) UIAlertView     *networkAlertView;
+@property (nonatomic, strong) NSArray         *testOrganizations;
 
 @end

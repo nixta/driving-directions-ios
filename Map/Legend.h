@@ -37,7 +37,7 @@
     //only public facing properties
     NSArray *_layerInfos; 
     NSArray *_layers;
-    id<LegendDelegate> _delegate;
+    id<LegendDelegate> __unsafe_unretained _delegate;
     BOOL _finishedDownloading;
     BOOL _isDownloading;
     
@@ -54,7 +54,7 @@
 }
 
 /*Delegate when legend is finished downloading */
-@property (nonatomic, assign) id<LegendDelegate> delegate;
+@property (nonatomic, unsafe_unretained) id<LegendDelegate> delegate;
 
 /*State of the legend download */
 @property (nonatomic, assign) BOOL finishedDownloading;
@@ -106,13 +106,13 @@
 
 /*List of groups withing a layer.  A group is itself a legend
   layer */
-@property (nonatomic, retain) NSMutableArray *groups;
+@property (nonatomic, strong) NSMutableArray *groups;
 
 /*The elements for the given layer. These are essentially the leaves
   of the hierarchical legend tree */
-@property (nonatomic, retain) NSMutableArray *elements;
+@property (nonatomic, strong) NSMutableArray *elements;
 
-@property (nonatomic, retain) NSMutableArray *allVisibleElements;
+@property (nonatomic, strong) NSMutableArray *allVisibleElements;
 
 /*Level of layer in hierarchy */
 @property (nonatomic, assign) NSUInteger level;
@@ -124,11 +124,11 @@
 @property (nonatomic, assign) BOOL baseLayer;
 
 /*The maplayerInfo this layer is a part of */
-@property (nonatomic, retain) AGSWebMapLayerInfo *mapLayerInfo;
+@property (nonatomic, strong) AGSWebMapLayerInfo *mapLayerInfo;
 
 /*If layer/sublayer/group is a map service, this will be populated.
   Nil otherwise */
-@property (nonatomic, retain) AGSMapServiceLayerInfo *mapServiceLayerInfo;
+@property (nonatomic, strong) AGSMapServiceLayerInfo *mapServiceLayerInfo;
 
 
 //YES if layer should be visible in legend. NO otherwise */
@@ -159,7 +159,7 @@
 
 /*an image associated with legend element. May be nil if
  only a title is appropriate */
-@property (nonatomic, retain) UIImage *swatch;
+@property (nonatomic, strong) UIImage *swatch;
 
 /*The level at which the legend should be shown in hierarchuy.
   Between 0 -> ... */

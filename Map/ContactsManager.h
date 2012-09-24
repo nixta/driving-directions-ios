@@ -31,8 +31,8 @@ email: contracts@esri.com
     NSArray             *_allContactsWithAddresses;
 }
 
-@property (nonatomic, retain) NSArray *allContacts;
-@property (nonatomic, retain) NSArray *allContactsWithAddresses;
+@property (nonatomic, strong) NSArray *allContacts;
+@property (nonatomic, strong) NSArray *allContactsWithAddresses;
 
 //class method that returns a singleton object for 
 //working with a device's contact list

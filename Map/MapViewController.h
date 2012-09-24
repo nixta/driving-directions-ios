@@ -121,7 +121,7 @@
     MapAppState                         _appState;
     MapSearchState                      _searchState;
     
-    ArcGISAppDelegate                   *_app;
+    ArcGISAppDelegate                   *__unsafe_unretained _app;
     NSUInteger                          _searchesInProgress;
     NSUInteger                          _currentSearchResultIndex;
     
@@ -133,64 +133,64 @@
 }
 
 /*Interface Builder Ux Elements */
-@property (nonatomic, retain) IBOutlet AGSMapView                   *mapView;
-@property (nonatomic, retain) IBOutlet UIView                       *mapContainerView;
-@property (nonatomic, retain) IBOutlet UIButton                     *gpsButton;
-@property (nonatomic, retain) IBOutlet UIButton                     *layersButton;
+@property (nonatomic, strong) IBOutlet AGSMapView                   *mapView;
+@property (nonatomic, strong) IBOutlet UIView                       *mapContainerView;
+@property (nonatomic, strong) IBOutlet UIButton                     *gpsButton;
+@property (nonatomic, strong) IBOutlet UIButton                     *layersButton;
 
 /*Misc Ux Elements */
-@property (nonatomic, retain) ExtendableToolbar                     *extendableToolbar;
-@property (nonatomic, retain) UISearchBar                           *searchBar;
-@property (nonatomic, retain) UIImageView                           *toolbarImageView;
-@property (nonatomic, retain) UIBarButtonItem                       *mapListButton;
-@property (nonatomic, retain) UIBarButtonItem                       *planningButton;
-@property (nonatomic, retain) UIBarButtonItem                       *routeSettingsButton;
-@property (nonatomic, retain) UIBarButtonItem                       *clearRouteButton;
-@property (nonatomic, retain) UIBarButtonItem                       *routeButton;
-@property (nonatomic, retain) UIBarButtonItem                       *routeRefreshButton;
-@property (nonatomic, retain) UIBarButtonItem                       *routeActionButton;
-@property (nonatomic, retain) UIBarButtonItem                       *routeFinishedButton;
-@property (nonatomic, retain) UILabel                               *routeOverviewLabel;
-@property (nonatomic, retain) LocationCalloutView                   *locationCallout;
-@property (nonatomic, retain) UIActivityIndicatorView               *activityIndicator;
-@property (nonatomic, retain) UIView                                *activityIndicatorView;
-@property (nonatomic, retain) UIView                                *planningToolsView;
+@property (nonatomic, strong) ExtendableToolbar                     *extendableToolbar;
+@property (nonatomic, strong) UISearchBar                           *searchBar;
+@property (nonatomic, strong) UIImageView                           *toolbarImageView;
+@property (nonatomic, strong) UIBarButtonItem                       *mapListButton;
+@property (nonatomic, strong) UIBarButtonItem                       *planningButton;
+@property (nonatomic, strong) UIBarButtonItem                       *routeSettingsButton;
+@property (nonatomic, strong) UIBarButtonItem                       *clearRouteButton;
+@property (nonatomic, strong) UIBarButtonItem                       *routeButton;
+@property (nonatomic, strong) UIBarButtonItem                       *routeRefreshButton;
+@property (nonatomic, strong) UIBarButtonItem                       *routeActionButton;
+@property (nonatomic, strong) UIBarButtonItem                       *routeFinishedButton;
+@property (nonatomic, strong) UILabel                               *routeOverviewLabel;
+@property (nonatomic, strong) LocationCalloutView                   *locationCallout;
+@property (nonatomic, strong) UIActivityIndicatorView               *activityIndicator;
+@property (nonatomic, strong) UIView                                *activityIndicatorView;
+@property (nonatomic, strong) UIView                                *planningToolsView;
 
 
 /*Graphics Layers and associated graphics symbols on top of web map */
-@property (nonatomic, retain) AGSGraphicsLayer                      *identifyLayer;
-@property (nonatomic, retain) AGSGraphicsLayer                      *searchLayer;
-@property (nonatomic, retain) AGSGraphicsLayer                      *routeLayer;
-@property (nonatomic, retain) AGSGraphicsLayer                      *planningLayer;
+@property (nonatomic, strong) AGSGraphicsLayer                      *identifyLayer;
+@property (nonatomic, strong) AGSGraphicsLayer                      *searchLayer;
+@property (nonatomic, strong) AGSGraphicsLayer                      *routeLayer;
+@property (nonatomic, strong) AGSGraphicsLayer                      *planningLayer;
 
-@property (nonatomic, retain) Location                              *identifyLocation;
-@property (nonatomic, retain) Route                                 *currentRoute;
-@property (nonatomic, retain) Route                                 *planningRoute;
+@property (nonatomic, strong) Location                              *identifyLocation;
+@property (nonatomic, strong) Route                                 *currentRoute;
+@property (nonatomic, strong) Route                                 *planningRoute;
 
-@property (nonatomic, retain) AGSGraphic                            *currentDirectionGraphic;
-@property (nonatomic, retain) AGSGraphic                            *turnHighlightGraphic;
-@property (nonatomic, retain) AGSCompositeSymbol                    *routeSymbol;
-@property (nonatomic, retain) AGSCompositeSymbol                    *currentDirectionSymbol;
-@property (nonatomic, retain) AGSCompositeSymbol                    *turnHighlightSymbol;
+@property (nonatomic, strong) AGSGraphic                            *currentDirectionGraphic;
+@property (nonatomic, strong) AGSGraphic                            *turnHighlightGraphic;
+@property (nonatomic, strong) AGSCompositeSymbol                    *routeSymbol;
+@property (nonatomic, strong) AGSCompositeSymbol                    *currentDirectionSymbol;
+@property (nonatomic, strong) AGSCompositeSymbol                    *turnHighlightSymbol;
 
-@property (readonly) MapAppSettings                                 *mapAppSettings;
+@property (unsafe_unretained, readonly) MapAppSettings                                 *mapAppSettings;
 
-@property (nonatomic, retain) DirectionsSignsView                   *directionsView;
-@property (nonatomic, retain) StopsSignsView                        *stopsView;
-@property (nonatomic, retain) DrawableResultsTableView              *resultsTableView;
+@property (nonatomic, strong) DirectionsSignsView                   *directionsView;
+@property (nonatomic, strong) StopsSignsView                        *stopsView;
+@property (nonatomic, strong) DrawableResultsTableView              *resultsTableView;
 
 /* Local filtered results is an object to filter local results.  */
-@property (nonatomic, retain) UserSearchResults                     *localFilteredResults;
+@property (nonatomic, strong) UserSearchResults                     *localFilteredResults;
 
 /* Search results by explicitly tapping search  */
-@property (nonatomic, retain) UserSearchResults                     *searchResults;
+@property (nonatomic, strong) UserSearchResults                     *searchResults;
 
-@property (nonatomic, retain) GeocodeService                        *geocodeService;
+@property (nonatomic, strong) GeocodeService                        *geocodeService;
 
 /*Popups Related Info */
-@property (nonatomic, retain) NSMutableArray                        *selectedFeaturePopupInfos;
-@property (nonatomic, retain) AGSPopupsContainerViewController      *popupsViewController;
-@property (nonatomic, retain) NSMutableArray                        *queryOperations;
+@property (nonatomic, strong) NSMutableArray                        *selectedFeaturePopupInfos;
+@property (nonatomic, strong) AGSPopupsContainerViewController      *popupsViewController;
+@property (nonatomic, strong) NSMutableArray                        *queryOperations;
 
 @property (nonatomic, assign) BOOL                                  mapLoaded;
 @property (nonatomic, copy) NSURL                                   *shareWithMapUrl;

@@ -64,7 +64,7 @@
         self.bitlyKey = @"R_b8a169f3a8b978b9697f64613bf1db6d";
         self.portalName = @"";
         self.defaultMap = @"{\"operationalLayers\":[],\"baseMap\":{\"baseMapLayers\":[{\"id\":\"defaultBasemap\",\"opacity\":1,\"visibility\":true,\"url\":\"http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer\"}],\"title\":\"Topographic\"},\"version\":\"1.2\"}";
-        self.defaultMapExtent = [[[AGSEnvelope alloc]initWithXmin:-135.7032 ymin:-3.4998 xmax:-56.1622 ymax:64.592 spatialReference:[AGSSpatialReference spatialReferenceWithWKID:4326 WKT:nil]]autorelease];
+        self.defaultMapExtent = [[AGSEnvelope alloc]initWithXmin:-135.7032 ymin:-3.4998 xmax:-56.1622 ymax:64.592 spatialReference:[AGSSpatialReference spatialReferenceWithWKID:4326 WKT:nil]];
         self.ecasRegistrationUrl = @"https://ecasapi.esri.com/1.0/accounts";
 	}
 
@@ -75,7 +75,7 @@
 +(ArcGISMobileConfig *)defaultConfig {
     ArcGISMobileConfig *config = [[ArcGISMobileConfig alloc] init];
     
-    return [config autorelease];
+    return config;
 }
 
 #pragma mark -
@@ -217,7 +217,7 @@
     
     tmp = [NSDictionary safeGetObjectFromDictionary:properties withKey:@"defaultMapExtent"];
 	if (tmp != nil){
-        self.defaultMapExtent = [[[AGSEnvelope alloc] initWithJSON:[tmp AGSJSONValue]] autorelease];
+        self.defaultMapExtent = [[AGSEnvelope alloc] initWithJSON:[tmp AGSJSONValue]];
     }
 }
 
@@ -270,26 +270,4 @@
 #pragma mark -
 #pragma mark Memory Management
 
--(void)dealloc
-{
-    self.geometryServiceUrl = nil;
-    self.geocodeServiceUrl = nil;
-    self.locatorServiceUrl = nil;
-    self.worldLocatorServiceUrl = nil;
-    self.esriGlobalAccount = nil;
-    self.arcgisRegistrationUrl = nil;
-    self.ecasRegistrationUrl = nil;
-    self.sharing = nil;
-    self.legend = nil;
-    self.bingMapsKey = nil;
-    self.basemapsGroupQueries = nil;
-    self.featuredMapsGroupQueries = nil;
-    self.bitlyLogin = nil;
-    self.bitlyKey = nil;
-    self.portalName = nil;
-    self.defaultMap = nil;
-    self.defaultMapExtent = nil;
-    
-	[super dealloc];
-}
 @end

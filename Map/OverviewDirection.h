@@ -21,7 +21,7 @@
     StopsList *_stops;
 }
 
-@property (nonatomic, retain) StopsList *stops;
+@property (nonatomic, strong) StopsList *stops;
 
 -(id)initWithDirectionSet:(AGSDirectionSet *)directionSet stops:(StopsList *)stops;
 

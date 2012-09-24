@@ -12,7 +12,7 @@
 
 @interface DrawableCollection () 
 
-@property (nonatomic, retain) NSMutableArray *lists;
+@property (nonatomic, strong) NSMutableArray *lists;
 
 @end
 
@@ -21,15 +21,10 @@
 @synthesize lists = _lists;
 @synthesize currentIndex = _currentIndex;
 
--(void)dealloc
-{
-    self.lists = nil;
-    [super dealloc];
-}
 
 +(DrawableCollection *)collection
 {
-    DrawableCollection *dc = [[[DrawableCollection alloc] init] autorelease];
+    DrawableCollection *dc = [[DrawableCollection alloc] init];
     return dc;
 }
 

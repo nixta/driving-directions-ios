@@ -38,8 +38,8 @@ typedef enum {
 
 @property (nonatomic, assign, readonly) MapShareInterfaceType   shareType;
 
-@property (nonatomic, retain, readonly) Route                   *route;
-@property (nonatomic, retain, readonly) Location                *shareLocation;
+@property (nonatomic, strong, readonly) Route                   *route;
+@property (nonatomic, strong, readonly) Location                *shareLocation;
 
 @property (nonatomic, copy) NSString                            *callbackString;
 

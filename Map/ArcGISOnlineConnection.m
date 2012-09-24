@@ -41,7 +41,7 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
 	if (self = [super init])
 	{
         self.token = @"";
-        self.credential = [[[NSURLCredential alloc] initWithUser:@"" password:@"" persistence:NSURLCredentialPersistenceNone] autorelease];
+        self.credential = [[NSURLCredential alloc] initWithUser:@"" password:@"" persistence:NSURLCredentialPersistenceNone];
 	}
 	return self;
 }
@@ -251,8 +251,7 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
     TokenResponse* tokenResponse = [[TokenResponse alloc] init];
     [tokenResponse decodeWithJSON:json];
     
-    [strData release];
-    return [tokenResponse autorelease];
+    return tokenResponse;
 }
 
 + (NSURLConnection *)generateURLConnection:(NSString *)url withDelegate:(id)delegate
@@ -298,7 +297,6 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
     //     NSLog(@"---response: %@",responseString);
 	
     NSDictionary *json = [responseString AGSJSONValue];
-    [responseString release];
     
     return json;
 }
@@ -350,7 +348,7 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
         request = req;        
     }
     
-    return [request autorelease];
+    return request;
 }
 
 + (NSString *)portalSharingLocation
@@ -360,13 +358,6 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
     //return @"http://dev.arcgis.com/sharing";
 }
 
-- (void)dealloc
-{
-    self.credential = nil;
-    self.token = nil;
-    
-    [super dealloc];
-}
 @end
 
 

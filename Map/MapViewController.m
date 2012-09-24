@@ -86,17 +86,17 @@
 
 -(NSUInteger)getAdjustedIndexForMapTapIndex:(NSUInteger)buttonIndex;
 
-@property (nonatomic, assign) ArcGISAppDelegate                     *app;
-@property (nonatomic, retain) AGSWebMap                             *customBasemap;
+@property (nonatomic, unsafe_unretained) ArcGISAppDelegate                     *app;
+@property (nonatomic, strong) AGSWebMap                             *customBasemap;
 
 /*Other pages we can see from the map page */
-@property (nonatomic, retain) UINavigationController                *mapContentVC;
+@property (nonatomic, strong) UINavigationController                *mapContentVC;
 
 /*Routing properties */
-@property (nonatomic, retain) RouteSolver                           *routeSolver;
+@property (nonatomic, strong) RouteSolver                           *routeSolver;
 
 //Temporary!!
-@property (nonatomic, retain) OrganizationChooserViewController     *orgChooserVC;
+@property (nonatomic, strong) OrganizationChooserViewController     *orgChooserVC;
 
 @end
 
@@ -174,61 +174,15 @@
         _observingGPS = NO;
     }
     
-    self.mapView                    = nil;
-    self.mapContainerView           = nil;
-    self.gpsButton                  = nil;
-    self.layersButton               = nil;
     
-    self.extendableToolbar          = nil;
-    self.searchBar                  = nil;
-    self.toolbarImageView           = nil;
-    self.mapListButton              = nil;
-    self.planningButton             = nil;
-    self.routeButton                = nil;
-    self.clearRouteButton           = nil;
-    self.routeSettingsButton        = nil;
-    self.routeActionButton          = nil;
-    self.routeFinishedButton        = nil;
-    self.routeRefreshButton         = nil;
-    self.routeOverviewLabel         = nil;
-    self.locationCallout            = nil;
-    self.activityIndicator          = nil;
-    self.activityIndicatorView      = nil;
-    self.planningToolsView          = nil;
     
-    self.identifyLayer              = nil;
-    self.searchLayer                = nil;
-    self.routeLayer                 = nil;
-    self.planningLayer              = nil;
     
-    self.identifyLocation           = nil;
     
-    self.mapContentVC               = nil;
-    self.resultsTableView           = nil;
-    self.directionsView             = nil;
-    self.stopsView                  = nil;
     
-    self.localFilteredResults       = nil;
-    self.searchResults              = nil;
-    self.geocodeService             = nil;
     
-    self.queryOperations            = nil;
-    self.popupsViewController       = nil;
-    self.selectedFeaturePopupInfos  = nil;
     
-    self.shareWithMapUrl            = nil;
-    self.callbackString             = nil;
     
-    self.currentDirectionSymbol     = nil;
-    self.currentDirectionGraphic    = nil;
-    self.turnHighlightGraphic       = nil;
-    self.turnHighlightSymbol        = nil;
-    self.routeSymbol                = nil;
-    self.currentRoute               = nil;
-    self.planningRoute              = nil;
-    self.routeSolver                = nil;
     
-    [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning
@@ -332,7 +286,7 @@
         aView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         
         //build an animated activity indicator into view
-        self.activityIndicator = [[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge]autorelease];
+        self.activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
         self.activityIndicator.center = CGPointMake(aView.bounds.size.width/2, aView.bounds.size.height/2);
         self.activityIndicator.userInteractionEnabled = NO;
         self.activityIndicator.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
@@ -341,7 +295,6 @@
         [aView addSubview:self.activityIndicator];
         
         self.activityIndicatorView = aView;
-        [aView release];
     }
     
     return _activityIndicatorView;
@@ -362,11 +315,8 @@
         fixedSpace.width = 10;
         
         tb.items = [NSArray arrayWithObjects:self.routeSettingsButton, fixedSpace, self.clearRouteButton, flexibleSpace, self.routeButton, nil];
-        [flexibleSpace release];
-        [fixedSpace release];
                                 
         self.planningToolsView = tb;
-        [tb release]; 
     }
     
     return _planningToolsView;
@@ -384,8 +334,6 @@
          nvc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
          nvc.navigationBar.barStyle = UIBarStyleBlackOpaque;
          self.mapContentVC = nvc;
-         [nvc release];
-         [mcvc release];
      }
      
      return _mapContentVC;
@@ -401,7 +349,6 @@
         etb.supplementalToolsView = self.planningToolsView;
         
         self.extendableToolbar = etb;
-        [etb release];
     }
     
     return _extendableToolbar;
@@ -418,7 +365,6 @@
         sb.delegate = self;
         sb.showsBookmarkButton = YES;
         self.searchBar = sb;
-        [sb release];
     }
     
     return _searchBar;
@@ -433,7 +379,6 @@
         DrawableResultsTableView *tv = [[DrawableResultsTableView alloc] initWithFrame:tvFrame style:UITableViewStylePlain];
         self.resultsTableView = tv;
         self.resultsTableView.resultsDelegate = self;
-        [tv release];
     }
     
     return _resultsTableView;
@@ -449,7 +394,6 @@
                                                                           target:self 
                                                                           action:@selector(planningButtonPressed:event:)];
         self.planningButton = pb;
-        [pb release];
     }
     
     return _planningButton;
@@ -464,7 +408,6 @@
                                                                target:self action:@selector(routeSettingsButtonPressed:)];
         
         self.routeSettingsButton = bbi;
-        [bbi release];
     }
     
     return _routeSettingsButton;
@@ -481,7 +424,6 @@
         
         bbi.enabled = NO;
         self.routeButton = bbi;
-        [bbi release];
     }
     
     return _routeButton;
@@ -495,7 +437,6 @@
                                                                              target:self 
                                                                              action:@selector(clearRouteButtonPressed:)];
         self.clearRouteButton = bbi;
-        [bbi release];
     }
     
     return _clearRouteButton;
@@ -510,7 +451,6 @@
                                                                target:self 
                                                                action:@selector(mapListButtonPressed:)];
         self.mapListButton = bbi;
-        [bbi release];
         
     }
     
@@ -525,7 +465,6 @@
                                                                              target:self 
                                                                              action:@selector(routeActionButtonPressed:)];
         self.routeActionButton = bbi;
-        [bbi release];
         
     }
     
@@ -538,7 +477,6 @@
     {
         UIBarButtonItem *bbi = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(routeFinishedButtonPressed:)];
         self.routeFinishedButton = bbi;
-        [bbi release];
         
     }
     
@@ -553,7 +491,6 @@
                                                                              target:self 
                                                                              action:@selector(routeRefreshButtonPressed:)];
         self.routeRefreshButton = bbi;
-        [bbi release];
         
     }
     return _routeRefreshButton;
@@ -570,7 +507,6 @@
         label.textColor = [UIColor whiteColor];
         
         self.routeOverviewLabel = label;
-        [label release];
     }
     
     return _routeOverviewLabel;
@@ -726,18 +662,18 @@
     
     [toolbarItems addObject:self.routeActionButton];
     
-    UIBarButtonItem *flexibleSpaceButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace 
+    UIBarButtonItem *flexibleSpaceButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace 
                                                                                           target:nil 
-                                                                                          action:nil] autorelease];
+                                                                                          action:nil];
     
     [toolbarItems addObject:flexibleSpaceButton];
     
     //only show refresh button if they are routing using current location
     if (_usingCurrentLocation) {
         
-        UIBarButtonItem *fixedSpaceButton = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace 
+        UIBarButtonItem *fixedSpaceButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace 
                                                                                            target:nil 
-                                                                                           action:nil] autorelease];
+                                                                                           action:nil];
         fixedSpaceButton.width = 5;
         
         
@@ -834,7 +770,6 @@
     actionSheet.tag = kRouteActionSheetTag;
     
     [actionSheet showInView:self.view];
-    [actionSheet release];
 }
 
 -(void)routeRefreshButtonPressed:(id)sender
@@ -845,7 +780,6 @@
                                        cancelButtonTitle:@"OK" 
                                        otherButtonTitles:nil];
     [av show];
-    [av release];
 }
 
 -(void)routeSettingsButtonPressed:(id)sender
@@ -1091,8 +1025,8 @@
     if(_routeSolver == nil)
     {
         //by intializing, we are automatically going out to get defaults
-        self.routeSolver = [[[RouteSolver alloc] initWithSpatialReference:self.mapView.spatialReference 
-                                                        routingServiceUrl:self.mapAppSettings.organization.routeUrl] autorelease];
+        self.routeSolver = [[RouteSolver alloc] initWithSpatialReference:self.mapView.spatialReference 
+                                                        routingServiceUrl:self.mapAppSettings.organization.routeUrl];
         self.routeSolver.delegate = self;
     }
     
@@ -1127,9 +1061,9 @@
     //app was called with a URL when not open... We need to start the routing process!
     if(self.shareWithMapUrl)
     {
-        MapShareUtility *msi = [[[MapShareUtility alloc] initWithUrl:self.shareWithMapUrl 
+        MapShareUtility *msi = [[MapShareUtility alloc] initWithUrl:self.shareWithMapUrl 
                                                           withSpatialReference:self.mapView.spatialReference 
-                                                                    locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]] autorelease];
+                                                                    locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]];
         
         [self shareInformationWithMap:msi];
         
@@ -1137,8 +1071,8 @@
         self.shareWithMapUrl = nil;
     }
     
-    self.mapAppSettings.legend = [[[Legend alloc] initWithMapLayerInfos:webMap.operationalLayers 
-                                                            withMapView:self.mapView] autorelease];
+    self.mapAppSettings.legend = [[Legend alloc] initWithMapLayerInfos:webMap.operationalLayers 
+                                                            withMapView:self.mapView];
     [self.mapAppSettings.legend buildLegend];
 }
 
@@ -1233,7 +1167,6 @@
     [self.routeSolver solveRoute:simpleABRoute];
     
     //Route solver retains... we can get rid of here
-    [simpleABRoute release];
 }
 
 -(void)endRouteModeToState:(MapAppState)state animated:(BOOL)animated
@@ -1309,7 +1242,7 @@
                       xmax:mutEnv.xmax 
                       ymax:mutEnv.ymax + (sizeOfToolbar *self.mapView.resolution)];
     
-    return [mutEnv autorelease];
+    return mutEnv;
 }
 
 #pragma mark -
@@ -1380,7 +1313,6 @@
                                           otherButtonTitles:nil];
     
     [alert show];
-    [alert release];
     
     [self showActivityIndicator:NO];
     
@@ -1448,7 +1380,6 @@
             DirectionsPrintRenderer *dpr = [[DirectionsPrintRenderer alloc] initWithDirections:self.currentRoute.directions];
             dpr.footerHeight = 20;
             pic.printPageRenderer = dpr;
-            [dpr release];
         }
         else
         {
@@ -1458,7 +1389,6 @@
             textFormatter.contentInsets = UIEdgeInsetsMake(72.0, 72.0, 72.0, 72.0); // 1 inch margins
             textFormatter.maximumContentWidth = 6 * 72.0;
             pic.printFormatter = textFormatter;
-            [textFormatter release];
             pic.showsPageRange = YES;
         }
         
@@ -1499,7 +1429,6 @@
     
     [self presentModalViewController:composer animated:YES];
     
-    [composer release];
 }
 
 // Displays an email composition interface inside the application. Populates all the Mail fields. 
@@ -1519,7 +1448,6 @@
     
     [self presentModalViewController:composer animated:YES];
     
-    [composer release];
 }
 
 #pragma mark -
@@ -1556,7 +1484,7 @@
                                             ];
             
             double fRatio = 12000.0 / self.mapView.mapScale;
-            mutEnv =[[self.mapView.visibleArea.envelope mutableCopy] autorelease];
+            mutEnv =[self.mapView.visibleArea.envelope mutableCopy];
             [mutEnv expandByFactor:fRatio];
             [mutEnv centerAtPoint:[result.geometry head]];
             
@@ -1598,7 +1526,6 @@
     vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     
     self.orgChooserVC = vc;
-    [vc release];
     
     [self presentModalViewController:self.orgChooserVC animated:YES];
 }

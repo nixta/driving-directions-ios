@@ -22,7 +22,7 @@
 {
     UIScrollView                *_scrollView;
     Basemaps                    *_basemaps;
-    id<ChangeBasemapsDelegate>  _delegate;
+    id<ChangeBasemapsDelegate>  __unsafe_unretained _delegate;
     
     @private
     int                         _currentPage;
@@ -35,9 +35,9 @@
     NSMutableArray              *_basemapButtons;
 }
 
-@property (nonatomic, retain) IBOutlet UIScrollView         *scrollView;
-@property (nonatomic, retain) Basemaps                      *basemaps;
-@property (nonatomic, assign) id<ChangeBasemapsDelegate>    delegate;
+@property (nonatomic, strong) IBOutlet UIScrollView         *scrollView;
+@property (nonatomic, strong) Basemaps                      *basemaps;
+@property (nonatomic, unsafe_unretained) id<ChangeBasemapsDelegate>    delegate;
 
 -(void)successfullyChangedBasemap;
 

@@ -24,7 +24,7 @@
 {
     NSURL                   *_routingServiceUrl;
     AGSSpatialReference     *_spatialReference;
-    id<RouteSolverDelegate> _delegate;
+    id<RouteSolverDelegate> __unsafe_unretained _delegate;
     
     @private
     AGSRouteTask            *_routeTask;
@@ -35,9 +35,9 @@
     BOOL                    _solvingRoute;
 }
 
-@property (nonatomic, retain) NSURL                     *routingServiceUrl;
-@property (nonatomic, retain) AGSSpatialReference       *spatialReference;
-@property (nonatomic, assign) id<RouteSolverDelegate>   delegate;
+@property (nonatomic, strong) NSURL                     *routingServiceUrl;
+@property (nonatomic, strong) AGSSpatialReference       *spatialReference;
+@property (nonatomic, unsafe_unretained) id<RouteSolverDelegate>   delegate;
 
 -(id)initWithSpatialReference:(AGSSpatialReference *)sr routingServiceUrl:(NSURL *)url;
 

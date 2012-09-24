@@ -19,7 +19,7 @@
  */
 
 #import "Legend.h"
-//#import "NSDictionary+AGSAdditions.h"
+#import "NSDictionary+AGSAdditions.h"
 #import "MapLayerInfo+AppAdditions.h"
 #import "ArcGISMobileConfig.h"
 #import "ArcGISAppDelegate.h"
@@ -71,24 +71,24 @@
 //private properties
 
 /*Array of map layer infos for the map */
-@property (nonatomic, retain) NSArray *layerInfos;
+@property (nonatomic, strong) NSArray *layerInfos;
 
 
 /*Dictionary of layer names to the AGSLayer */
-@property (nonatomic, retain) NSDictionary *layerNames;
+@property (nonatomic, strong) NSDictionary *layerNames;
 
 /*Hierarchical structure that closely models the structure of legend*/
-@property (nonatomic, retain) NSMutableArray *legendLayers;
+@property (nonatomic, strong) NSMutableArray *legendLayers;
 
 /*For retainment purposes only */
-@property (nonatomic, retain) AGSMapServiceInfo *currentMapServiceInfo;
+@property (nonatomic, strong) AGSMapServiceInfo *currentMapServiceInfo;
 
 /*If layer doesn't have legend support, then we need to hit a SOAP service
   to get the legend info */
-@property (nonatomic, retain) NSURLConnection *soapConnection;
+@property (nonatomic, strong) NSURLConnection *soapConnection;
 
 /*Response string from SOAP to JSON connection */
-@property (nonatomic, retain) NSString *responseString;
+@property (nonatomic, strong) NSString *responseString;
 
 @end
 
@@ -309,7 +309,6 @@ static int kNumberOfLayersInFeatureCollection = 4;
         ll.groups = nil;
         
         [self.legendLayers addObject:ll];
-        [ll release];
         
     }
     
@@ -337,7 +336,6 @@ static int kNumberOfLayersInFeatureCollection = 4;
     ll.groups = nil;
     
     [self.legendLayers addObject:ll];
-    [ll release];
     
     //Recursive call for next layer
     _currentLayerIndex--;
@@ -412,7 +410,7 @@ static int kNumberOfLayersInFeatureCollection = 4;
 
     NSString *fullSoapLegendEndpoint = [NSString stringWithFormat:@"%@?soapUrl=%@&returnbytes=true&f=json", legendUrl, msi.URL.relativeString];
     
-    NSURLRequest *request = [[[NSURLRequest alloc] initWithURL:[NSURL URLWithString:fullSoapLegendEndpoint]] autorelease];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:fullSoapLegendEndpoint]];
     self.soapConnection = [NSURLConnection connectionWithRequest:request delegate:self];
 }
 
@@ -426,7 +424,7 @@ static int kNumberOfLayersInFeatureCollection = 4;
     
     //top level legend layer that we will use to begin the creation of the 
     //mapserviceInfo LegendLayer
-    LegendLayer *ll = [[[LegendLayer alloc] init] autorelease];
+    LegendLayer *ll = [[LegendLayer alloc] init];
     ll.level = 0;
     ll.mapLayerInfo = [self.layerInfos objectAtIndex:_currentLayerIndex];
     ll.title = ll.mapLayerInfo.title;
@@ -489,7 +487,6 @@ mapServiceLayerInfos:mapServiceLayerInfos
             
             [root addGroup:aLegendLayer];
             current = aLegendLayer;
-            [aLegendLayer release];
             
             //finally, incrememnt array index since we have now handled that layer
             //in the map service layer array
@@ -590,7 +587,6 @@ mapServiceLayerInfos:mapServiceLayerInfos
         self.responseString = [self.responseString stringByAppendingString:jsonString];
     }
     
-    [jsonString release];
 }
 
 #pragma mark -
@@ -697,18 +693,6 @@ mapServiceLayerInfos:mapServiceLayerInfos
     return visibleLayers;
 }
 
--(void)dealloc
-{
-    self.layerInfos = nil;
-    self.soapConnection = nil;
-    self.responseString = nil;
-    
-    self.legendLayers = nil;
-    self.layerNames = nil;
-    self.currentMapServiceInfo = nil;
-    
-    [super dealloc];
-}
 
 @end
 
@@ -890,16 +874,6 @@ mapServiceLayerInfos:mapServiceLayerInfos
     return self.title;
 }
 
--(void)dealloc
-{
-    self.groups = nil;
-    self.title = nil;
-    self.elements = nil;
-    self.allVisibleElements = nil;
-    self.mapLayerInfo = nil;
-    self.mapServiceLayerInfo = nil;
-    [super dealloc];
-}
 
 @end
 
@@ -926,17 +900,10 @@ mapServiceLayerInfos:mapServiceLayerInfos
 
 +(LegendElement *)legendElementWithTitle:(NSString *)aTitle withSwatch:(UIImage *)aSwatch
 {
-    LegendElement *le = [[[LegendElement alloc] initWithTitle:aTitle withSwatch:aSwatch] autorelease];
+    LegendElement *le = [[LegendElement alloc] initWithTitle:aTitle withSwatch:aSwatch];
     return le;
 }
 
--(void)dealloc
-{
-    self.title = nil;
-    self.swatch = nil;
-    
-    [super dealloc];
-}
 
 @end
 

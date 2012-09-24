@@ -150,12 +150,11 @@
     //show name of result in search bar
     self.searchBar.text = location.name;
     
-    self.searchResults = [[[UserSearchResults alloc] initWithRecents:nil localCollection:nil] autorelease];
+    self.searchResults = [[UserSearchResults alloc] initWithRecents:nil localCollection:nil];
     
     DrawableList *dl = [[DrawableList alloc] initWithName:@"Location" withItems:[NSMutableArray arrayWithObject:location]];
     [self.searchResults addList:dl];
     [self.searchResults addResultsToLayer:self.searchLayer];
-    [dl release];
     
     self.resultsTableView.resultsDataSource = self.searchResults;
     
@@ -212,7 +211,6 @@
     
     Search *newSearch = [[Search alloc] initWithName:searchBar.text];
     [self.mapAppSettings addRecentSearch:newSearch onlyUniqueEntries:YES];
-    [newSearch release];
     
     [self showActivityIndicator:YES];
     
@@ -223,14 +221,14 @@
         
     if (self.geocodeService == nil)
     {
-        self.geocodeService = [[[GeocodeService alloc] init] autorelease];
+        self.geocodeService = [[GeocodeService alloc] init];
         self.geocodeService.delegate = self;
         self.geocodeService.addressLocatorString = self.mapAppSettings.organization.locatorUrlString;
         self.geocodeService.useSingleLine = (self.mapAppSettings.organization.locatorUrlString == nil);
     }
     
     [self removeOldResults];
-    self.searchResults = [[[UserSearchResults alloc] initWithRecents:nil localCollection:nil] autorelease];
+    self.searchResults = [[UserSearchResults alloc] initWithRecents:nil localCollection:nil];
     self.resultsTableView.resultsDataSource = self.searchResults;
     [self.resultsTableView reloadData];
     
@@ -273,7 +271,6 @@
     bmvc.contactDelegate = self;
     bmvc.contactDataSource = self.mapAppSettings.contacts;
     [self presentModalViewController:bmvc animated:YES];
-    [bmvc release];
     
     //If the text changes as a result of pressing the 'Bookmarks', the searchBar will
     //call the beginEditing delegate.  Since we don't want to begin editing
@@ -364,9 +361,8 @@
         DrawableCollection *locals = [[DrawableCollection alloc] initWithList:self.mapAppSettings.bookmarks];
         [locals addList:self.mapAppSettings.contacts];
         
-        self.localFilteredResults = [[[UserSearchResults alloc] initWithRecents:self.mapAppSettings.recentSearches 
-                                                                localCollection:locals] autorelease];
-        [locals release];
+        self.localFilteredResults = [[UserSearchResults alloc] initWithRecents:self.mapAppSettings.recentSearches 
+                                                                localCollection:locals];
         
         self.resultsTableView.resultsDataSource = self.localFilteredResults;
     }
@@ -418,7 +414,6 @@
                                                                                    action:nil];
     NSArray *items = [NSArray arrayWithObjects:self.planningButton, flexibleSpace, self.mapListButton, nil];
     self.extendableToolbar.items = items;
-    [flexibleSpace release];
     
     if(self.searchBar.superview == nil)
         [self.extendableToolbar.toolsView addSubview:self.searchBar];
@@ -494,14 +489,12 @@
                                                                        anIcon:[UIImage imageNamed:@"AddressPin.png"] 
                                                                    locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]];
             newLoc.addressCandidate = addr;
-            newLoc.geometry = [[addr.location copy] autorelease];
+            newLoc.geometry = [addr.location copy];
             
             [addrList addItem:newLoc];
-            [newLoc release];
         }
         
         [self.searchResults addList:addrList];
-        [addrList release];
         
         [self.resultsTableView reloadData];
     }
@@ -528,15 +521,13 @@
                                                                        anIcon:[UIImage imageNamed:@"PlacePin.png"] 
                                                                    locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]];
             
-            newLoc.geometry = [[place.location copy] autorelease];
-            newLoc.envelope = [[place.extent copy] autorelease];
+            newLoc.geometry = [place.location copy];
+            newLoc.envelope = [place.extent copy];
             
             [placeList addItem:newLoc];
-            [newLoc release];
         }
         
         [self.searchResults addList:placeList];
-        [placeList release];
         
         [self.resultsTableView reloadData];
     }

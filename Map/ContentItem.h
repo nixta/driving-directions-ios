@@ -44,11 +44,11 @@
 @property (nonatomic, assign) NSInteger         size;
 @property (nonatomic, copy) NSString            *description;
 @property (nonatomic, copy) NSString            *snippet;
-@property (nonatomic, retain) AGSEnvelope       *extent;
+@property (nonatomic, strong) AGSEnvelope       *extent;
 @property (nonatomic, assign) double            uploaded;
 @property (nonatomic, copy) NSString            *name;
 @property (nonatomic, assign) double            avgRating;
-@property (nonatomic, retain) NSMutableArray    *tags;
+@property (nonatomic, strong) NSMutableArray    *tags;
 @property (nonatomic, assign) NSInteger         numComments;
 @property (nonatomic, assign) NSInteger         numRatings;
 @property (nonatomic, assign) NSInteger         numViews;

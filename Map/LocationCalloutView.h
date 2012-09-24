@@ -29,7 +29,7 @@
     UISegmentedControl              *_stopSegmentedControl;
     
     Location                        *_location;
-    id<LocationCalloutDelegate>     _delegate;
+    id<LocationCalloutDelegate>     __unsafe_unretained _delegate;
     
     NSString                        *_addressString;
     
@@ -39,17 +39,17 @@
     MapAppState                     _calloutType;
 
 }
-@property (nonatomic, retain) UILabel               *locationLabel;
-@property (nonatomic, retain) UILabel               *addressLabel;
-@property (nonatomic, retain) UIButton              *hideButton;
-@property (nonatomic, retain) UIButton              *actionButton;
-@property (nonatomic, retain) UIButton              *accessoryButton;
-@property (nonatomic, retain) UIButton              *fullViewButton;
-@property (nonatomic, retain) UISegmentedControl    *stopSegmentedControl;
+@property (nonatomic, strong) UILabel               *locationLabel;
+@property (nonatomic, strong) UILabel               *addressLabel;
+@property (nonatomic, strong) UIButton              *hideButton;
+@property (nonatomic, strong) UIButton              *actionButton;
+@property (nonatomic, strong) UIButton              *accessoryButton;
+@property (nonatomic, strong) UIButton              *fullViewButton;
+@property (nonatomic, strong) UISegmentedControl    *stopSegmentedControl;
 
-@property (nonatomic, retain) Location                      *location;
+@property (nonatomic, strong) Location                      *location;
 
-@property (nonatomic, assign) id<LocationCalloutDelegate>   delegate;
+@property (nonatomic, unsafe_unretained) id<LocationCalloutDelegate>   delegate;
 
 -(id)initWithLocation:(Location *)location;
 -(id)initWithLocation:(Location *)location calloutType:(MapAppState)type;

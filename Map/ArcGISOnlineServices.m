@@ -40,10 +40,6 @@
     return json;
 }
 
--(void)dealloc{
-	self.token = nil;
-	[super dealloc];
-}
 
 @end
 
@@ -92,16 +88,6 @@
     return json;
 }
 
--(void)dealloc{
-	self.userName = nil;
-	self.fullName = nil;
-	self.description = nil;
-	self.email = nil;
-	self.organization = nil;
-	self.defaultGroupId = nil;
-	self.groups = nil;
-	[super dealloc];
-}
 
 @end
 
@@ -135,11 +121,6 @@
     return json;
 }
 
--(void)dealloc{
-	self.userName = nil;
-	self.memberType = nil;
-	[super dealloc];
-}
 
 @end
 
@@ -228,20 +209,6 @@
                  self.thumbnail];
 }
 
--(void)dealloc{
-	self.groupId = nil;
-	self.title = nil;
-	self.description = nil;
-    self.snippet = nil;
-    self.phone = nil;
-	self.thumbnail = nil;
-	self.owner = nil;
-    self.members = nil;
-    self.tags = nil;
-    self.groupIcon = nil;
-    self.featuredItemsId = nil;
-	[super dealloc];
-}
 
 @end
 
@@ -268,9 +235,6 @@
     return json;
 }
 
--(void)dealloc{
-	[super dealloc];
-}
 
 @end
 
@@ -317,9 +281,6 @@
     return json;
 }
 
--(void)dealloc{
-	[super dealloc];
-}
 
 @end
 
@@ -362,12 +323,6 @@
     return json;
 }
 
--(void)dealloc{
-	self.folderId = nil;
-	self.title = nil;
-	self.userName = nil;
-	[super dealloc];
-}
 
 @end
 

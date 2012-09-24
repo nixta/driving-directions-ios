@@ -35,12 +35,12 @@
 {
     self = [super init];
     if (self) {
-        self.recentSearches = [[[RecentSearches alloc] initWithName:NSLocalizedString(@"Recent Searches", nil) 
-                                                        withItems:nil] autorelease];
+        self.recentSearches = [[RecentSearches alloc] initWithName:NSLocalizedString(@"Recent Searches", nil) 
+                                                        withItems:nil];
         
-        self.bookmarks = [[[Bookmarks alloc] init] autorelease];
+        self.bookmarks = [[Bookmarks alloc] init];
         
-        self.routeSolverSettings = [[[RouteSolverSettings alloc] init] autorelease];
+        self.routeSolverSettings = [[RouteSolverSettings alloc] init];
         
         self.customBasemap = nil;
         
@@ -56,17 +56,17 @@
 {
     [super decodeWithJSON:json];
     
-    self.recentSearches = [[[RecentSearches alloc] initWithJSON:[json objectForKey:@"recentSearches"]] autorelease];
+    self.recentSearches = [[RecentSearches alloc] initWithJSON:[json objectForKey:@"recentSearches"]];
     
-    self.bookmarks = [[[Bookmarks alloc] initWithJSON:[json objectForKey:@"bookmarks"]] autorelease];
+    self.bookmarks = [[Bookmarks alloc] initWithJSON:[json objectForKey:@"bookmarks"]];
     
     NSDictionary *solverJSON = [json objectForKey:@"routeSolverSettings"];
     if (solverJSON) {
-        self.routeSolverSettings = [[[RouteSolverSettings alloc] initWithJSON:solverJSON] autorelease];
+        self.routeSolverSettings = [[RouteSolverSettings alloc] initWithJSON:solverJSON];
     }
     else
     {
-        self.routeSolverSettings = [[[RouteSolverSettings alloc] init] autorelease];
+        self.routeSolverSettings = [[RouteSolverSettings alloc] init];
     }
     
 #warning Commented Out for now. Needs to be moved to organization
@@ -198,18 +198,5 @@
     return self.recentSearches;
 }
 
--(void)dealloc
-{
-    self.recentSearches = nil;
-    self.bookmarks = nil;
-    self.contacts = nil;
-    self.customBasemap = nil;
-    self.savedExtent = nil;
-    self.legend = nil;
-    self.routeSolverSettings = nil;
-    self.organization = nil;
-    
-    [super dealloc];
-}
 
 @end

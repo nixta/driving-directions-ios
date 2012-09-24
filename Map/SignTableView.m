@@ -10,7 +10,7 @@
 
 @interface SignTableView () 
 
-@property (nonatomic, retain) UITableView *tableView;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -22,10 +22,8 @@
 {
     self.tableView.delegate     = nil;
     self.tableView.dataSource   = nil;
-    self.tableView              = nil;
     
     
-    [super dealloc];
 }
 
 - (id)initWithFrame:(CGRect)frame
@@ -38,7 +36,7 @@
     self = [super initWithFrame:frame];
     if(self)
     {
-        self.tableView = [[[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain] autorelease];
+        self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
         self.tableView.delegate = delegate;
         self.tableView.dataSource = dataSource;
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

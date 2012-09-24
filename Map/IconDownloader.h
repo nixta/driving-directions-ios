@@ -57,17 +57,17 @@
 {
     id                              _content;
     NSIndexPath                     *_indexPathInTableView;
-    id <IconDownloaderDelegate>     _delegate;
+    id <IconDownloaderDelegate>     __unsafe_unretained _delegate;
 
     AGSImageRequestOperation        *_irop;
     CGSize                          _size;
 }
 
-@property (nonatomic, retain) id                            content;
-@property (nonatomic, retain) NSIndexPath                   *indexPathInTableView;
-@property (nonatomic, assign) id <IconDownloaderDelegate>   delegate;
+@property (nonatomic, strong) id                            content;
+@property (nonatomic, strong) NSIndexPath                   *indexPathInTableView;
+@property (nonatomic, unsafe_unretained) id <IconDownloaderDelegate>   delegate;
 
-@property (nonatomic, retain) AGSImageRequestOperation      *irop;
+@property (nonatomic, strong) AGSImageRequestOperation      *irop;
 
 @property (nonatomic, assign) CGSize                        size;
 

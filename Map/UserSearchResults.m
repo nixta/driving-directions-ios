@@ -16,7 +16,7 @@
 
 @interface UserSearchResults () 
 
-@property (nonatomic, retain, readwrite) AGSMutableEnvelope *envelope;
+@property (nonatomic, strong, readwrite) AGSMutableEnvelope *envelope;
 
 -(void)invalidateEnvelope;
 
@@ -28,14 +28,6 @@
 @synthesize recentSearches = _recentSearches;
 @synthesize envelope = _envelope;
 
--(void)dealloc
-{
-    self.localCollection = nil;
-    self.recentSearches = nil;
-    self.envelope = nil;
-    
-    [super dealloc];
-}
 
 - (id)init
 {
@@ -121,7 +113,6 @@
                 [_envelope unionWithEnvelope:ftrEnv];
             }
             
-            [ftrEnv release];
         }
         
         [_envelope expandByFactor:1.2];

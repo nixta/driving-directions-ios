@@ -20,20 +20,20 @@
     ArcGISMobileConfig  *_config;
     AppSettings         *_appSettings;
     
-    NSDictionary        *_launchOptions;
+    NSDictionary        *__unsafe_unretained _launchOptions;
     
     SplashImageVC       *_splashVC;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow             *window;
-@property (nonatomic, retain) IBOutlet UIViewController     *viewController;
+@property (nonatomic, strong) IBOutlet UIWindow             *window;
+@property (nonatomic, strong) IBOutlet UIViewController     *viewController;
 
-@property (nonatomic, retain) ArcGISMobileConfig            *config;
-@property (nonatomic, retain) AppSettings                   *appSettings;
+@property (nonatomic, strong) ArcGISMobileConfig            *config;
+@property (nonatomic, strong) AppSettings                   *appSettings;
 
-@property (nonatomic, assign) NSDictionary                  *launchOptions;
+@property (nonatomic, unsafe_unretained) NSDictionary                  *launchOptions;
 
-@property (nonatomic, retain) SplashImageVC                 *splashVC;
+@property (nonatomic, strong) SplashImageVC                 *splashVC;
 
 @property (nonatomic, readonly) BOOL                        isIPad;
 

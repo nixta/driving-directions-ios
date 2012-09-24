@@ -26,8 +26,8 @@
     AGSMutableEnvelope  *_envelope;
 }
 
-@property (nonatomic, retain) DrawableList          *recentSearches;
-@property (nonatomic, retain) DrawableCollection    *localCollection;
+@property (nonatomic, strong) DrawableList          *recentSearches;
+@property (nonatomic, strong) DrawableCollection    *localCollection;
 
 -(id)initWithRecents:(DrawableList *)recentSearches localCollection:(DrawableCollection *)localCollection;
 

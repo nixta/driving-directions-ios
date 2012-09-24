@@ -19,7 +19,7 @@
     DirectionsList *_directions;
 }
 
-@property (nonatomic, retain) DirectionsList *directions;
+@property (nonatomic, strong) DirectionsList *directions;
 
 -(id)initWithDirections:(DirectionsList *)list;
 

@@ -17,15 +17,15 @@
 
 @interface DrawableResultsTableView : UITableView <UITableViewDataSource, UITableViewDelegate>
 {
-    id<DrawableContainerDelegate>   _resultsDelegate;
+    id<DrawableContainerDelegate>   __unsafe_unretained _resultsDelegate;
     id<DrawableContainerDataSource> _drawableDataSource;
     
     @private
     BOOL                            _tableViewMinimized;
 }
 
-@property (nonatomic, assign) id<DrawableContainerDataSource> resultsDataSource;
-@property (nonatomic, assign) id<DrawableContainerDelegate> resultsDelegate;
+@property (nonatomic, unsafe_unretained) id<DrawableContainerDataSource> resultsDataSource;
+@property (nonatomic, unsafe_unretained) id<DrawableContainerDelegate> resultsDelegate;
 
 -(void)minimize;
 -(void)maximize;

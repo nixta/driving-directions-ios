@@ -21,7 +21,7 @@
     NSUInteger      _currentIndex;
 }
 
-@property (nonatomic, retain, readonly) NSMutableArray  *items;
+@property (nonatomic, strong, readonly) NSMutableArray  *items;
 @property (nonatomic, copy, readonly) NSString          *name;
 @property (nonatomic, assign) NSUInteger                currentIndex;
 

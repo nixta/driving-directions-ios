@@ -16,10 +16,10 @@
 
 @interface LocationGraphic : AGSGraphic
 {
-    Location *_location;
+    Location *__unsafe_unretained _location;
 }
 
-@property (nonatomic, assign) Location *location;
+@property (nonatomic, unsafe_unretained) Location *location;
 
 -(void)clearLocation;
 

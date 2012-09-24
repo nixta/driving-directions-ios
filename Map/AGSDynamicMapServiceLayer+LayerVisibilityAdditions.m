@@ -57,7 +57,6 @@
     
     //2nd step:  add parent layers
     [allVisibleLayers addObjectsFromArray:[layersToAdd allObjects]];
-    [layersToAdd release];
     
     //sort so its proper order
     NSSortDescriptor *lowToHigh = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:YES];

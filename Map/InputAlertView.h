@@ -34,14 +34,14 @@
 <UIAlertViewDelegate, UITextFieldDelegate>
 {
     UITextField                 *_textField;
-    id<InputAlertViewDelegate>  _inputViewDelegate;
+    id<InputAlertViewDelegate>  __unsafe_unretained _inputViewDelegate;
     
     BOOL                        _firstTimeLayingOutSubViews;
     UIInterfaceOrientation      _currentOrientation;
 }
 
-@property (nonatomic, retain) UITextField                   *textField;
-@property (nonatomic, assign) id<InputAlertViewDelegate>    inputViewDelegate;
+@property (nonatomic, strong) UITextField                   *textField;
+@property (nonatomic, unsafe_unretained) id<InputAlertViewDelegate>    inputViewDelegate;
 
 +(InputAlertView *)inputAlertViewWithTitle:(NSString *)title
                     initialFieldText:(NSString *)text delegate:(id<InputAlertViewDelegate>)delegate;

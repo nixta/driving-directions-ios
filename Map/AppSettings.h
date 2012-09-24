@@ -16,6 +16,6 @@
     ArcGISOnlineConnection  *_arcGISOnlineConnection;
 }
 
-@property (nonatomic, retain) ArcGISOnlineConnection    *arcGISOnlineConnection;
+@property (nonatomic, strong) ArcGISOnlineConnection    *arcGISOnlineConnection;
 
 @end

@@ -50,41 +50,41 @@
     
     UINavigationBar                 *_navBar;
     
-    id<DrawableContainerDataSource> _bookmarkDataSource;
-    id<DrawableContainerDelegate>   _bookmarkDelegate;
+    id<DrawableContainerDataSource> __unsafe_unretained _bookmarkDataSource;
+    id<DrawableContainerDelegate>   __unsafe_unretained _bookmarkDelegate;
     
-    id<DrawableContainerDataSource> _contactkDataSource;
-    id<DrawableContainerDelegate>   _contactDelegate;
+    id<DrawableContainerDataSource> __unsafe_unretained _contactkDataSource;
+    id<DrawableContainerDelegate>   __unsafe_unretained _contactDelegate;
     
     @private
-    ArcGISAppDelegate               *_app;
+    ArcGISAppDelegate               *__unsafe_unretained _app;
     BOOL                            _showContacts;
     BOOL                            _useNavigationStack;
 }
 
 /*IB Resources */
-@property (nonatomic, retain) IBOutlet UISegmentedControl       *segmentedControl;
-@property (nonatomic, retain) IBOutlet UITableView              *bookmarkTableView;
-@property (nonatomic, retain) IBOutlet UIToolbar                *toolbar;
+@property (nonatomic, strong) IBOutlet UISegmentedControl       *segmentedControl;
+@property (nonatomic, strong) IBOutlet UITableView              *bookmarkTableView;
+@property (nonatomic, strong) IBOutlet UIToolbar                *toolbar;
 
 /*Misc. Ux Resources */
-@property (nonatomic, retain) UINavigationBar                   *navBar;
+@property (nonatomic, strong) UINavigationBar                   *navBar;
 
 /*buttons used for editing(moving, deletion) of bookmarks */
-@property (nonatomic, retain) UIBarButtonItem                   *editButton;
-@property (nonatomic, retain) UIBarButtonItem                   *doneButton;
+@property (nonatomic, strong) UIBarButtonItem                   *editButton;
+@property (nonatomic, strong) UIBarButtonItem                   *doneButton;
 
 /*datasource object that supplies view controller with bookmarks */
-@property (nonatomic, assign) id<DrawableContainerDataSource>   bookmarkDataSource;
+@property (nonatomic, unsafe_unretained) id<DrawableContainerDataSource>   bookmarkDataSource;
 
 /*delegate that responds to a bookmark being selected */
-@property (nonatomic, assign) id<DrawableContainerDelegate>     bookmarkDelegate;
+@property (nonatomic, unsafe_unretained) id<DrawableContainerDelegate>     bookmarkDelegate;
 
 /*datasource object that supplies view controller with bookmarks */
-@property (nonatomic, assign) id<DrawableContainerDataSource>   contactDataSource;
+@property (nonatomic, unsafe_unretained) id<DrawableContainerDataSource>   contactDataSource;
 
 /*delegate that responds to a bookmark being selected */
-@property (nonatomic, assign) id<DrawableContainerDelegate>     contactDelegate;
+@property (nonatomic, unsafe_unretained) id<DrawableContainerDelegate>     contactDelegate;
 
 @property (nonatomic, assign) BOOL                              showContacts;
 

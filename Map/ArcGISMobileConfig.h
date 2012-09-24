@@ -33,26 +33,26 @@
     AGSEnvelope *_defaultMapExtent;
 }
 
-@property (nonatomic, retain) NSString *geometryServiceUrl;
-@property (nonatomic, retain) NSString *geocodeServiceUrl;
-@property (nonatomic, retain) NSString *locatorServiceUrl;
-@property (nonatomic, retain) NSString *worldLocatorServiceUrl;
-@property (nonatomic, retain) NSString *esriGlobalAccount;
-@property (nonatomic, retain) NSString *arcgisRegistrationUrl;
-@property (nonatomic, retain) NSString *ecasRegistrationUrl;
-@property (nonatomic, retain) NSString *sharing;
-@property (nonatomic, retain) NSString *legend;
-@property (nonatomic, retain) NSString *bingMapsKey;
-@property (nonatomic, retain) NSString *basemapsGroupQueries;
-@property (nonatomic, retain) NSString *featuredMapsGroupQueries;
+@property (nonatomic, strong) NSString *geometryServiceUrl;
+@property (nonatomic, strong) NSString *geocodeServiceUrl;
+@property (nonatomic, strong) NSString *locatorServiceUrl;
+@property (nonatomic, strong) NSString *worldLocatorServiceUrl;
+@property (nonatomic, strong) NSString *esriGlobalAccount;
+@property (nonatomic, strong) NSString *arcgisRegistrationUrl;
+@property (nonatomic, strong) NSString *ecasRegistrationUrl;
+@property (nonatomic, strong) NSString *sharing;
+@property (nonatomic, strong) NSString *legend;
+@property (nonatomic, strong) NSString *bingMapsKey;
+@property (nonatomic, strong) NSString *basemapsGroupQueries;
+@property (nonatomic, strong) NSString *featuredMapsGroupQueries;
 @property (nonatomic, assign) NSInteger tokenExpiration;
 @property (nonatomic, assign) BOOL      showSocialMediaLinks;
 @property (nonatomic, assign) BOOL      enableBitly;
-@property (nonatomic, retain) NSString *bitlyLogin;
-@property (nonatomic, retain) NSString *bitlyKey;
-@property (nonatomic, retain) NSString *portalName;
-@property (nonatomic, retain) NSString *defaultMap;
-@property (nonatomic, retain) AGSEnvelope *defaultMapExtent;
+@property (nonatomic, strong) NSString *bitlyLogin;
+@property (nonatomic, strong) NSString *bitlyKey;
+@property (nonatomic, strong) NSString *portalName;
+@property (nonatomic, strong) NSString *defaultMap;
+@property (nonatomic, strong) AGSEnvelope *defaultMapExtent;
 
 +(ArcGISMobileConfig *)defaultConfig;
 

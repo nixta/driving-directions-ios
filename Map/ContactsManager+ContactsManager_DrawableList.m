@@ -16,12 +16,12 @@
 {
     ABPersonCompositeNameFormat nameFormat = ABPersonGetCompositeNameFormat();
     
-    NSString *firstName = [(NSString *)ABRecordCopyValue(record, kABPersonFirstNameProperty) autorelease];
+    NSString *firstName = (NSString *)CFBridgingRelease(ABRecordCopyValue(record, kABPersonFirstNameProperty));
     if (!firstName) {
         firstName = @"";
     }
     
-    NSString *lastName = [(NSString *)ABRecordCopyValue(record, kABPersonLastNameProperty) autorelease];
+    NSString *lastName = (NSString *)CFBridgingRelease(ABRecordCopyValue(record, kABPersonLastNameProperty));
     if(!lastName)
     {
         lastName = @"";
@@ -90,7 +90,7 @@
     
     for(int i = 0; i < contacts.count; i++)
     {
-        ABRecordRef record = [contacts objectAtIndex:i];
+        ABRecordRef record = (__bridge ABRecordRef)([contacts objectAtIndex:i]);
         
         //grab all addresses
         ABMutableMultiValueRef addressMulti = ABRecordCopyValue(record, kABPersonAddressProperty);
@@ -99,7 +99,7 @@
         
         for (int i = 0; i < nMultiValues; i++)
         {
-            NSDictionary *anAddress = [(NSDictionary *)ABMultiValueCopyValueAtIndex(addressMulti, i) autorelease];
+            NSDictionary *anAddress = (NSDictionary *)CFBridgingRelease(ABMultiValueCopyValueAtIndex(addressMulti, i));
             [addressArray addObject:anAddress];
             
             ContactLocationBookmark *contact= [[ContactLocationBookmark alloc] initWithName:[ContactsManager nameForRecord:record] 
@@ -110,14 +110,13 @@
             contact.contactRef = record;
             
             [items addObject:contact];
-            [contact release];
         }
         
         CFRelease(addressMulti);
     }
     
-    ContactsList *contactsList = [[[ContactsList alloc] initWithName:NSLocalizedString(@"Contacts", nil) 
-                                                          withItems:items] autorelease];
+    ContactsList *contactsList = [[ContactsList alloc] initWithName:NSLocalizedString(@"Contacts", nil) 
+                                                          withItems:items];
 
     
     return contactsList;

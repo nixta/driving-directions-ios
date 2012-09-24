@@ -14,13 +14,6 @@
 @synthesize name = _name;
 @synthesize icon = _icon;
 
--(void)dealloc
-{
-    self.name = nil;
-    self.icon = nil;
-    
-    [super dealloc];
-}
 
 -(id)initWithName:(NSString *)name
 {

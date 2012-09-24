@@ -14,8 +14,8 @@
 @interface MapShareUtility () 
 
 @property (nonatomic, assign, readwrite) MapShareInterfaceType  shareType;
-@property (nonatomic, retain, readwrite) Route                  *route;
-@property (nonatomic, retain, readwrite) Location               *shareLocation;
+@property (nonatomic, strong, readwrite) Route                  *route;
+@property (nonatomic, strong, readwrite) Location               *shareLocation;
 
 -(NSMutableArray*)parseCSVString:(NSString*)csvData;
 
@@ -28,14 +28,6 @@
 @synthesize shareLocation   = _shareLocation;
 @synthesize callbackString  = _callbackString;
 
--(void)dealloc
-{
-    self.route          = nil;
-    self.shareLocation  = nil;
-    self.callbackString = nil;
-    
-    [super dealloc];
-}
 
 //Url string that app was called with, and spatial reference of actual map
 -(id)initWithUrl:(NSURL *)url withSpatialReference:(AGSSpatialReference *)spatialReference locatorURL:(NSURL *)locatorURL
@@ -119,10 +111,10 @@
                 coordinatePoint = (AGSPoint *)[[AGSGeometryEngine defaultGeometryEngine] projectGeometry:coordinatePoint 
                                                                                       toSpatialReference:spatialReference];
                 
-                Location *newLocation = [[[Location alloc] initWithPoint:coordinatePoint 
+                Location *newLocation = [[Location alloc] initWithPoint:coordinatePoint 
                                                                    aName:coordinateName 
                                                                   anIcon:[UIImage imageNamed:@"AddressPin.png"] 
-                                                              locatorURL:locatorURL] autorelease];
+                                                              locatorURL:locatorURL];
                 
                 
                 //assuming there is only one location to share... break out of loop
@@ -146,7 +138,6 @@
                 if (self.route == nil) {
                     Route *r = [[Route alloc] init];
                     self.route = r;
-                    [r release];
                 }
                 
                 [self.route addStop:newLocation];

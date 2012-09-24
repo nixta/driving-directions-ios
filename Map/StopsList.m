@@ -21,7 +21,7 @@
 -(void)replaceStartStopWithStop:(Location *)stop;
 -(void)updateAllStops;
 
-@property (nonatomic, retain) CurrentLocation           *currentLocation;
+@property (nonatomic, strong) CurrentLocation           *currentLocation;
 
 @end
 
@@ -31,13 +31,6 @@
 @synthesize delegate        = _delegate;
 @synthesize currentLocation = _currentLocation;
 
--(void)dealloc
-{
-    self.displacedStops     = nil;
-    self.currentLocation    = nil;
-    
-    [super dealloc];
-}
 
 -(id)initWithName:(NSString *)name withItems:(NSMutableArray *)items
 {
@@ -264,7 +257,6 @@
 
 -(NSUInteger)removeStop:(Location *)location preserveType:(BOOL)preserveType
 {
-    [location retain];
     NSUInteger indexOfStop = [self privateRemoveStop:location];
     
     //change type and add to displaced stops
@@ -280,7 +272,6 @@
         }
     }
     
-    [location release];
     
     return indexOfStop;
 }
@@ -313,7 +304,7 @@
     if (index1 == index2)
         return;
     
-    Location *stopToMove= [[self stopAtIndex:index1] retain];
+    Location *stopToMove= [self stopAtIndex:index1];
     Location *stopAtToIndex = [self stopAtIndex:index2];
     
     //if we are moving the destination, we need to make the last transit
@@ -338,7 +329,6 @@
         [self.delegate stopsList:self movedStop:stopToMove fromIndex:index1 toIndex:index2 trueMove:YES];
     }
     
-    [stopToMove release]; 
 }
 
 -(void)clear

@@ -25,13 +25,13 @@
 
 @interface MapContentViewController () 
 
-@property (nonatomic, retain) BasemapsViewController    *basemapsVC;
-@property (nonatomic, retain) BasemapsTableViewCell     *basemapsTableViewCell;
-@property (nonatomic, retain) SettingsViewController    *settingsVC;
-@property (nonatomic, retain) NSMutableArray            *layersArray;
-@property (nonatomic, retain) UIView                    *waitingView;
-@property (nonatomic, retain) UIActivityIndicatorView   *activityIndicator;
-@property (nonatomic, assign) MapAppSettings            *appSettings;
+@property (nonatomic, strong) BasemapsViewController    *basemapsVC;
+@property (nonatomic, strong) BasemapsTableViewCell     *basemapsTableViewCell;
+@property (nonatomic, strong) SettingsViewController    *settingsVC;
+@property (nonatomic, strong) NSMutableArray            *layersArray;
+@property (nonatomic, strong) UIView                    *waitingView;
+@property (nonatomic, strong) UIActivityIndicatorView   *activityIndicator;
+@property (nonatomic, unsafe_unretained) MapAppSettings            *appSettings;
 
 -(NSUInteger)adjustedIndexForSection:(NSUInteger)section;
 -(void)createLegendSections;
@@ -68,24 +68,6 @@ static NSUInteger kBasemapSection = 0;
 #pragma mark -
 #pragma mark Init/Dealloc Methods
 
--(void)dealloc
-{
-    self.tableView = nil;
-    self.navBar    = nil;
-    self.navItem   = nil;    
-    self.settingsView = nil;
-    self.signInLabel = nil;
-    
-    self.mapButton = nil;
-    self.settingsButton = nil;
-    
-    self.settingsVC = nil;
-    self.basemapsVC = nil;
-    self.basemapsTableViewCell = nil;
-    self.layersArray = nil;
-    
-    [super dealloc];
-}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -195,7 +177,6 @@ static NSUInteger kBasemapSection = 0;
         BasemapsViewController *bmvc = [[BasemapsViewController alloc] initWithNibName:@"BasemapsViewController" bundle:nil];
         bmvc.delegate = self;
         self.basemapsVC = bmvc;
-        [bmvc release];
     }
     
     return _basemapsVC;
@@ -210,7 +191,6 @@ static NSUInteger kBasemapSection = 0;
                                                                target:self 
                                                                action:@selector(mapButtonPressed:)];
         self.mapButton = bbi;
-        [bbi release];
     }
     
     return _mapButton;
@@ -225,7 +205,6 @@ static NSUInteger kBasemapSection = 0;
                                                                target:self 
                                                                action:@selector(settingsButtonTapped:)];
         self.settingsButton = bbi;
-        [bbi release];
     }
     
     return _settingsButton;
@@ -243,7 +222,7 @@ static NSUInteger kBasemapSection = 0;
         view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         
         //The black screen includes a moving activity indicator
-        self.activityIndicator = [[[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge]autorelease];
+        self.activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
         self.activityIndicator.center = CGPointMake(view.bounds.size.width/2, view.bounds.size.height/2);
         self.activityIndicator.userInteractionEnabled = NO;
         [self.activityIndicator stopAnimating];
@@ -251,7 +230,6 @@ static NSUInteger kBasemapSection = 0;
         [view addSubview:self.activityIndicator];
         
         self.waitingView = view;
-        [view release];
     }
     
     return _waitingView;
@@ -271,7 +249,6 @@ static NSUInteger kBasemapSection = 0;
     svc.appSettings = self.appSettings;
     svc.view.frame = self.tableView.frame;
     self.settingsVC = svc;
-    [svc release]; 
     
     //[self.view addSubview:self.settingsVC.view];
     [self.navigationController pushViewController:self.settingsVC animated:YES];
@@ -315,10 +292,10 @@ static NSUInteger kBasemapSection = 0;
            
     SectionInfo *sectionInfo = [self.layersArray objectAtIndex:[self adjustedIndexForSection:section]];
     if (!sectionInfo.headerView) {
-        sectionInfo.headerView = [[[SectionHeaderView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.tableView.bounds.size.width, 44) 
+        sectionInfo.headerView = [[SectionHeaderView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.tableView.bounds.size.width, 44) 
                                                                      title:sectionInfo.title
                                                                    section:section 
-                                                                  delegate:self] autorelease];
+                                                                  delegate:self];
     }
     
 	return sectionInfo.headerView;
@@ -331,10 +308,10 @@ static NSUInteger kBasemapSection = 0;
     
     SectionInfo *sectionInfo = [self.layersArray objectAtIndex:[self adjustedIndexForSection:section]];
     if (!sectionInfo.headerView) {
-        sectionInfo.headerView = [[[SectionHeaderView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.tableView.bounds.size.width, 44) 
+        sectionInfo.headerView = [[SectionHeaderView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.tableView.bounds.size.width, 44) 
                                                                      title:sectionInfo.title
                                                                    section:section 
-                                                                  delegate:self] autorelease];
+                                                                  delegate:self];
     }
     
 	return sectionInfo.headerView.frame.size.height;
@@ -388,7 +365,7 @@ static NSUInteger kBasemapSection = 0;
     {
         cell = [tableView dequeueReusableCellWithIdentifier:LegendCellIdentifier];
         if (cell == nil) {
-            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:LegendCellIdentifier] autorelease];
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:LegendCellIdentifier];
         }
         
         //offset section by basemap section
@@ -435,7 +412,7 @@ static NSUInteger kBasemapSection = 0;
      Create an array containing the index paths of the rows to insert: These correspond to the rows for each quotation in the current section.
      */
     NSInteger countOfRowsToInsert = [sectionInfo numberOfEntries];
-    NSMutableArray *indexPathsToInsert = [[[NSMutableArray alloc] init] autorelease];
+    NSMutableArray *indexPathsToInsert = [[NSMutableArray alloc] init];
     for (NSInteger i = 0; i < countOfRowsToInsert; i++) {
         [indexPathsToInsert addObject:[NSIndexPath indexPathForRow:i inSection:sectionOpened]];
     }
@@ -461,7 +438,6 @@ static NSUInteger kBasemapSection = 0;
             [indexPathsToDelete addObject:[NSIndexPath indexPathForRow:i inSection:sectionClosed]];
         }
         [self.tableView deleteRowsAtIndexPaths:indexPathsToDelete withRowAnimation:UITableViewRowAnimationNone];
-        [indexPathsToDelete release];
     }
 }
 
@@ -527,7 +503,6 @@ static NSUInteger kBasemapSection = 0;
             SectionInfo *si = [[SectionInfo alloc] init];
             si.legendLayer = [legend legendLayerAtIndex:i];
             [self.layersArray addObject:si];
-            [si release];
         }
     } 
     

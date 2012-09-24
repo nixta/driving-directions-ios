@@ -58,7 +58,7 @@
         double miny = [[bl objectAtIndex:1]doubleValue];
         double maxx = [[tr objectAtIndex:0]doubleValue];
         double maxy = [[tr objectAtIndex:1]doubleValue];
-        self.extent = [[[AGSEnvelope alloc]initWithXmin:minx ymin:miny xmax:maxx ymax:maxy spatialReference:[AGSSpatialReference spatialReferenceWithWKID:4326 WKT:nil]]autorelease];
+        self.extent = [[AGSEnvelope alloc]initWithXmin:minx ymin:miny xmax:maxx ymax:maxy spatialReference:[AGSSpatialReference spatialReferenceWithWKID:4326 WKT:nil]];
     }
     else {
         self.extent = nil;
@@ -134,24 +134,6 @@
 #pragma mark -
 #pragma mark other
 
--(void)dealloc{
-	self.itemId = nil;
-	self.item = nil;
-	self.itemType = nil;
-    self.access = nil;
-	self.contentType = nil;
-	self.title = nil;
-	self.type = nil;
-	self.thumbnail = nil;
-	self.owner = nil;
-    self.description = nil;
-    self.extent = nil;
-    self.name = nil;
-    self.tags = nil;
-	self.snippet = nil;
-    
-	[super dealloc];
-}
 
 
 @end

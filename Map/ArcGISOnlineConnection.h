@@ -17,12 +17,12 @@
     NSURLCredential     *_credential;
     NSString            *_token;
     
-    ArcGISAppDelegate   *_app;
+    ArcGISAppDelegate   *__unsafe_unretained _app;
 }
 
-@property (nonatomic, retain) NSURLCredential   *credential;
-@property (nonatomic, retain) NSString          *token;
-@property (nonatomic, assign) ArcGISAppDelegate *app;
+@property (nonatomic, strong) NSURLCredential   *credential;
+@property (nonatomic, strong) NSString          *token;
+@property (nonatomic, unsafe_unretained) ArcGISAppDelegate *app;
 
 /// <summary>
 /// Gets a flag indicating whether the connection has a valid token.

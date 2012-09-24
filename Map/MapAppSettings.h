@@ -43,14 +43,14 @@
     Organization        *_organization;
 }
 
-@property (nonatomic, retain) DrawableList          *recentSearches;
-@property (nonatomic, retain) Bookmarks             *bookmarks;
-@property (nonatomic, retain) ContactsList          *contacts;
-@property (nonatomic, retain) BasemapInfo           *customBasemap;
-@property (nonatomic, retain) AGSEnvelope           *savedExtent;
-@property (nonatomic, retain) Legend                *legend;
-@property (nonatomic, retain) RouteSolverSettings   *routeSolverSettings;
-@property (nonatomic, retain) Organization          *organization;
+@property (nonatomic, strong) DrawableList          *recentSearches;
+@property (nonatomic, strong) Bookmarks             *bookmarks;
+@property (nonatomic, strong) ContactsList          *contacts;
+@property (nonatomic, strong) BasemapInfo           *customBasemap;
+@property (nonatomic, strong) AGSEnvelope           *savedExtent;
+@property (nonatomic, strong) Legend                *legend;
+@property (nonatomic, strong) RouteSolverSettings   *routeSolverSettings;
+@property (nonatomic, strong) Organization          *organization;
 
 -(void)addBookmark:(Location *)bookmark withCustomName:(NSString *)name withExtent:(AGSEnvelope *)envelope;
 -(void)addRecentSearch:(Search *)recentSearch onlyUniqueEntries:(BOOL)unique;

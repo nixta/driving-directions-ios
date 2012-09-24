@@ -15,7 +15,7 @@
 
 @interface DrawableList () 
 
-@property (nonatomic, retain, readwrite) NSMutableArray  *items;
+@property (nonatomic, strong, readwrite) NSMutableArray  *items;
 @property (nonatomic, copy, readwrite) NSString          *name;
 
 @end
@@ -26,13 +26,6 @@
 @synthesize name = _name;
 @synthesize currentIndex = _currentIndex;
 
--(void)dealloc
-{
-    self.items = nil;
-    self.name = nil;
-    
-    [super dealloc];
-}
 
 - (id)init
 {
@@ -118,11 +111,10 @@
     if (index1 == index2)
         return;
     
-    id itemToMove = [[self.items objectAtIndex:index1] retain];
+    id itemToMove = [self.items objectAtIndex:index1];
     [self.items removeObjectAtIndex:index1];
     
     [self.items insertObject:itemToMove atIndex:index2];
-    [itemToMove release]; 
 }
 
 -(void)clear
@@ -149,7 +141,7 @@
 //on a filter string
 -(DrawableList *)drawableListFilteredBy:(NSString *)filterString
 {
-    DrawableList *filteredList = [[[DrawableList alloc] initWithName:self.name withItems:nil] autorelease];
+    DrawableList *filteredList = [[DrawableList alloc] initWithName:self.name withItems:nil];
     for (id<TableViewDrawable> item in self.items)
     {
         if([item.name rangeOfString:filterString options:NSCaseInsensitiveSearch].location != NSNotFound)

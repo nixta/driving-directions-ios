@@ -13,17 +13,12 @@
 
 @synthesize envelope = _envelope;
 
--(void)dealloc
-{
-    self.envelope = nil;
-    [super dealloc];
-}
 
 
 -(id)initWithLocation:(Location *)location extent:(AGSEnvelope *)extent
 {
     
-    AGSPoint *newLoc = (AGSPoint *)[[location.geometry mutableCopy] autorelease];
+    AGSPoint *newLoc = (AGSPoint *)[location.geometry mutableCopy];
     self = [super initWithPoint:newLoc
                           aName:location.name 
                          anIcon:location.icon   
@@ -43,7 +38,7 @@
 {
     [super decodeWithJSON:json];
     
-    self.envelope = [[[AGSEnvelope alloc] initWithJSON:[json objectForKey:@"envelope"]] autorelease];
+    self.envelope = [[AGSEnvelope alloc] initWithJSON:[json objectForKey:@"envelope"]];
     
 #warning Added because encoding/decoding image was making image larger
     self.icon = [UIImage imageNamed:@"BookmarkPin.png"];

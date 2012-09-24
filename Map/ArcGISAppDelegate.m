@@ -41,18 +41,6 @@ static NSString *kDefaultPortalUrl = @"http://www.arcgis.com";
 #pragma mark -
 #pragma mark Lifetime
 
--(void)dealloc
-{
-    self.window = nil;
-    self.viewController = nil;
-    
-    self.config = nil;
-    self.appSettings = nil;
-
-    self.splashVC = nil;
-    
-    [super dealloc];
-}
 
 #pragma mark -
 #pragma mark UIApplicationDelegate
@@ -307,7 +295,7 @@ static NSString *kDefaultPortalUrl = @"http://www.arcgis.com";
 	// kick off operation to load portal configs
     //
     NSString *configUrl = [NSString stringWithFormat:@"%@/%@", currentPortalUrl, kArcGISMobileConfigFilename];
-	AGSJSONRequestOperation *urisRequestOp = [[[AGSJSONRequestOperation alloc]initWithURL:[NSURL URLWithString:configUrl]]autorelease];
+	AGSJSONRequestOperation *urisRequestOp = [[AGSJSONRequestOperation alloc]initWithURL:[NSURL URLWithString:configUrl]];
 	urisRequestOp.target = self;
 	urisRequestOp.action = @selector(urisOperation:completedWithResults:);
 	urisRequestOp.errorAction = @selector(urisOperation:didFailWithError:);
@@ -348,7 +336,7 @@ static NSString *kDefaultPortalUrl = @"http://www.arcgis.com";
 
 -(void) urisOperation:(NSOperation*)op completedWithResults:(NSDictionary*)results{
     
-    self.config = [[[ArcGISMobileConfig alloc] initWithJSON:results] autorelease];
+    self.config = [[ArcGISMobileConfig alloc] initWithJSON:results];
 
     /*
     //get portal name and set if necessary...
@@ -413,14 +401,14 @@ static NSString *kDefaultPortalUrl = @"http://www.arcgis.com";
 {
     //+1 ref count since using the word 'create' in method name.  
     //Caller should handle memory
-    return [[[AppSettings alloc] init] autorelease];
+    return [[AppSettings alloc] init];
 }
 
 -(AppSettings *)createAppSettingsWithJSON:(NSDictionary *)JSON
 {
     //+1 ref count since using the word 'create' in method name.  
     //Caller should handle memory
-    return [[[AppSettings alloc] initWithJSON:JSON] autorelease];
+    return [[AppSettings alloc] initWithJSON:JSON];
 }
  
 
@@ -432,7 +420,6 @@ static NSString *kDefaultPortalUrl = @"http://www.arcgis.com";
     if (_splashVC == nil) {
 		SplashImageVC *sivc = [[SplashImageVC alloc] init];
 		self.splashVC = sivc;
-        [sivc release];
 	}
     
     return _splashVC;

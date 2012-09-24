@@ -29,16 +29,16 @@
 }
 
 /*Direction user is currently on */
-@property (nonatomic, retain, readonly) Direction       *currentDirection;
+@property (nonatomic, strong, readonly) Direction       *currentDirection;
 
 /*Geometry of the entire route */
-@property (nonatomic, retain, readonly) AGSGeometry     *mergedGeometry;
+@property (nonatomic, strong, readonly) AGSGeometry     *mergedGeometry;
 
 /*Directions that correspond to a stop on the route. These can be
  start, stops, and transit points. This is an array of numbers indicating
  where stop n indexes into the actual directions
  */
-@property (nonatomic, retain, readonly) NSMutableArray  *stopDirections;
+@property (nonatomic, strong, readonly) NSMutableArray  *stopDirections;
  
 -(id)initWithDirectionSet:(AGSDirectionSet *)directionSet stops:(StopsList *)stops;
 

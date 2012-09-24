@@ -37,12 +37,12 @@
 -(void)upSwipe:(UISwipeGestureRecognizer *)sgr;
 -(void)downSwipe:(UISwipeGestureRecognizer *)sgr;
 
-@property (nonatomic, retain) NSMutableArray            *signs;
-@property (nonatomic, assign) UIView                    *viewToAnimate;
-@property (nonatomic, retain) UIView                    *signOverlayView;
-@property (nonatomic, retain) UISwipeGestureRecognizer  *downSwipeGestureRecognizer;
+@property (nonatomic, strong) NSMutableArray            *signs;
+@property (nonatomic, unsafe_unretained) UIView                    *viewToAnimate;
+@property (nonatomic, strong) UIView                    *signOverlayView;
+@property (nonatomic, strong) UISwipeGestureRecognizer  *downSwipeGestureRecognizer;
 
-@property (nonatomic, retain) SignTableViewCell         *dummyCell;
+@property (nonatomic, strong) SignTableViewCell         *dummyCell;
 
 @end
 
@@ -60,16 +60,6 @@
 @synthesize downSwipeGestureRecognizer  = _downSwipeGestureRecognizer;
 @synthesize dummyCell                   = _dummyCell;
 
--(void)dealloc
-{
-    self.scrollView         = nil;
-    self.tableView          = nil;
-    self.signs              = nil;
-    self.signOverlayView    = nil;
-    self.dummyCell          = nil;
-    
-    [super dealloc];
-}
 
 #pragma mark -
 #pragma mark Initialization Stuff
@@ -91,7 +81,6 @@
         upRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(upSwipe:)];
         [upRecognizer setDirection:UISwipeGestureRecognizerDirectionUp];
         [self addGestureRecognizer:upRecognizer];
-        [upRecognizer release];
         
         NSUInteger numSigns = [self.datasource numberOfResultsInSection:kDirectionPlaceSection];
         self.signs = [NSMutableArray arrayWithCapacity:numSigns];
@@ -134,7 +123,6 @@
         sv.clipsToBounds = NO;
         
         self.scrollView = sv;
-        [sv release];
     }
     return _scrollView;
 }
@@ -150,7 +138,6 @@
         bigStreetSignView.backgroundColor = [UIColor clearColor];
         bigStreetSignView.reflectionSlope = kShadowSlope;
         self.tableView = bigStreetSignView;
-        [bigStreetSignView release];
     }
     return _tableView;
 }
@@ -200,7 +187,7 @@
     
     SignTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
     if (!cell) {
-        cell = [[[SignTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID] autorelease];
+        cell = [[SignTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
     
     return cell;
@@ -370,7 +357,6 @@
     {
         SignTableViewCell *tvc = [[SignTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
         self.dummyCell = tvc;
-        [tvc release];
     }
     
     return _dummyCell;
@@ -386,7 +372,6 @@
         tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(downSwipe:)];
         tapRecognizer.numberOfTapsRequired = 1;
         [v addGestureRecognizer:tapRecognizer]; 
-        [tapRecognizer release];
         
         //also add a down swipe recognizer, but due to a bug in Apple's implementation (I think)
         //we have to add and remove everytime the sign overlay is added and removed from hierarchy
@@ -394,7 +379,6 @@
         v.backgroundColor = [UIColor clearColor];
         
         self.signOverlayView = v;
-        [v release];
     }
     
     return _signOverlayView;
@@ -409,7 +393,6 @@
         [downRecognizer setDirection:UISwipeGestureRecognizerDirectionDown];
         
         self.downSwipeGestureRecognizer = downRecognizer;
-        [downRecognizer release];
     }
     
     return _downSwipeGestureRecognizer;
@@ -454,11 +437,11 @@
 {
     Direction *direction = (Direction *)item;
     
-    StreetSignView *ssv = [[[StreetSignView alloc] initWithFrame:self.scrollView.frame 
+    StreetSignView *ssv = [[StreetSignView alloc] initWithFrame:self.scrollView.frame 
                                                    withDirection:direction                                             
                                              withReflectionSlope:kShadowSlope 
                                                        startingX:245 
-                                                       useShadow:YES] autorelease];
+                                                       useShadow:YES];
     
     ssv.backgroundColor = [UIColor clearColor];
     
@@ -692,10 +675,10 @@
 -(void)scrollSigns;
 
 //properties for editing signs in place
-@property (nonatomic, retain) BlankSignView     *heldSign;
-@property (nonatomic, retain) NSMutableArray    *signFrames;
+@property (nonatomic, strong) BlankSignView     *heldSign;
+@property (nonatomic, strong) NSMutableArray    *signFrames;
 @property (nonatomic, assign) NSUInteger        heldIndex;
-@property (nonatomic, retain) NSTimer           *timer;
+@property (nonatomic, strong) NSTimer           *timer;
 
 @end
 
@@ -708,14 +691,6 @@
 @synthesize heldIndex       = _heldIndex;
 @synthesize timer           = _timer;
 
--(void)dealloc
-{
-    self.heldSign   = nil;
-    self.signFrames = nil;
-    self.timer      = nil;
-    
-    [super dealloc];
-}
 
 
 #define kWidthOfSmallSign 130.0
@@ -948,7 +923,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
     }
     
     //Move signs to reflect the change
-    id itemToMove = [[self.signs objectAtIndex:fromIndex] retain];
+    id itemToMove = [self.signs objectAtIndex:fromIndex];
     [self.signs removeObjectAtIndex:fromIndex];
     
     //They are changing the start location. If this is not a true move, add a new sign for the current location
@@ -961,19 +936,17 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
     
     //perform move        
     [self.signs insertObject:itemToMove atIndex:toIndex];
-    [itemToMove release]; 
     
     [self updateSignsAndFramesAnimated:YES];
 }
 
 -(void)stopsList:(StopsList *)sl movedStop:(Location *)location fromIndex:(NSUInteger)fromIndex toReplaceStop:(Location *)loc atIndex:(NSUInteger)index
 {
-    id itemToMove = [[self.signs objectAtIndex:fromIndex] retain];
+    id itemToMove = [self.signs objectAtIndex:fromIndex];
     [self.signs removeObjectAtIndex:fromIndex];
         
     //perform move        
     [self.signs replaceObjectAtIndex:index withObject:itemToMove];
-    [itemToMove release]; 
     
     CGSize size = self.scrollView.contentSize;
     size.width = self.sizeOfSign*self.signs.count;
@@ -1052,11 +1025,9 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
     lpgr.minimumPressDuration = 0.3;
     lpgr.delegate = self;
     [ssv addGestureRecognizer:lpgr];
-    [lpgr release];
     
     [self.signs insertObject:ssv atIndex:index];
     [self.scrollView addSubview:ssv];
-    [ssv release];
     
     CGSize size = self.scrollView.contentSize;
     size.width = self.sizeOfSign*self.signs.count;
@@ -1177,8 +1148,8 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
              ];
             
             self.heldSign = nil;
-        default:
             break;
+        
     }
 }
 

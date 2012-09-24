@@ -22,8 +22,8 @@
 
 -(void)finalizeGraphics;
 
-@property (nonatomic, retain, readwrite) StopsList      *stops;
-@property (nonatomic, retain) NSMutableArray            *stopGraphics;
+@property (nonatomic, strong, readwrite) StopsList      *stops;
+@property (nonatomic, strong) NSMutableArray            *stopGraphics;
 
 @end
 
@@ -35,22 +35,14 @@
 @synthesize stopGraphics    = _stopGraphics;
 @synthesize isEditable      = _editable;
 
--(void)dealloc
-{
-    self.stops              = nil;
-    self.directions         = nil;
-    self.stopGraphics       = nil;
-    
-    [super dealloc];
-}
 
 -(id)init
 {
     self = [super init];
     if(self)
     {        
-        self.stops = [[[StopsList alloc] initWithName:NSLocalizedString(@"Stops", nil) 
-                                           withItems:nil] autorelease];
+        self.stops = [[StopsList alloc] initWithName:NSLocalizedString(@"Stops", nil) 
+                                           withItems:nil];
         self.isEditable = YES;
     }
     
@@ -165,7 +157,6 @@
             [_envelope unionWithEnvelope:ftrEnv];
         }
         
-        [ftrEnv release];
     }
     
     [_envelope expandByFactor:1.4];
@@ -238,7 +229,6 @@
         
         [self addStop:destinationLocation];
         
-        [destinationLocation release];
     }
     
     return self;

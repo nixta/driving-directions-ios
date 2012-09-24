@@ -44,7 +44,6 @@
 	self.view = iv;
 	
 	// release because the main view will retain it
-	[iv release];
 }
 
 // Override to allow orientations other than the default portrait orientation.
@@ -91,7 +90,6 @@
 
 - (void)dealloc {
 	[[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
-    [super dealloc];
 }
 
 

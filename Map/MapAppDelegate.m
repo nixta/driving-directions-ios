@@ -13,6 +13,7 @@
 #import "MapShareUtility.h"
 
 #import <SystemConfiguration/SystemConfiguration.h>
+#import <MapKit/MapKit.h>
 
 #import <sys/socket.h>
 #import <netinet/in.h>
@@ -25,7 +26,7 @@
 
 - (BOOL)validNetworkConnection;
 
-@property (nonatomic, retain) AGSJSONRequestOperation *organizationOp;
+@property (nonatomic, strong) AGSJSONRequestOperation *organizationOp;
 
 @end
 
@@ -38,6 +39,55 @@
 
 #pragma mark -
 #pragma mark UIApplicationDelegate
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    // Are we being launched by Maps to show a route?
+    if ([MKDirectionsRequest isDirectionsRequestURL:url]) {
+        
+        // Decode the directions request from the launch URL.
+        MKDirectionsRequest *request = [[MKDirectionsRequest alloc] initWithContentsOfURL:url];
+        MKMapItem *startItem = [request source];
+        MKMapItem *endItem = [request destination];
+        
+        AGSPoint *startPoint = nil;
+        AGSPoint *endPoint = nil;
+        
+        if ([startItem isCurrentLocation]) {
+            
+            endPoint = [self convertCoordinatesToPoint:endItem.placemark.coordinate];
+            
+            // Get directions to end place from current location.
+            //            MyPlace *endPlace = [[MyPlace alloc] initWithName:endItem.name coordinate:endItem.placemark.coordinate];
+            //            [self.mapViewController routeFromCurrentLocationToPlace:endPlace];
+            
+        } else if ([endItem isCurrentLocation]) {
+            
+            startPoint = [self convertCoordinatesToPoint:startItem.placemark.coordinate];
+            
+            // Get directions from start place to current location.
+            //            MyPlace *startPlace = [[MyPlace alloc] initWithName:startItem.name coordinate:startItem.placemark.coordinate];
+            //            [self.mapViewController routeFromPlaceToCurrentLocation:startPlace];
+            
+        } else {
+            
+            endPoint = [self convertCoordinatesToPoint:endItem.placemark.coordinate];
+            startPoint = [self convertCoordinatesToPoint:startItem.placemark.coordinate];
+            
+            // Get directions between the start and end location.
+            //            MyPlace *startPlace = [[MyPlace alloc] initWithName:startItem.name coordinate:startItem.placemark.coordinate];
+            //            MyPlace *endPlace = [[MyPlace alloc] initWithName:endItem.name coordinate:endItem.placemark.coordinate];
+            //            [self.mapViewController routeFromPlace:startPlace toPlace:endPlace];
+        }
+        
+        [self.routeDelegate appleMapsCalled:startPoint withEnd:endPoint];
+        
+        return YES;
+    }
+    
+    return NO;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {	
     [self loadSplashScreen];
@@ -48,11 +98,11 @@
 	// at this point, our splash screen is loaded so the AlertView shows
 	// on top of it
 	if (![self validNetworkConnection]) {
-        self.networkAlertView = [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"No Internet Connection", nil)
+        self.networkAlertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"No Internet Connection", nil)
                                                             message:NSLocalizedString(@"NoInternetError", nil)
                                                            delegate:nil
                                                   cancelButtonTitle:NSLocalizedString(@"Try again", nil)
-                                                  otherButtonTitles:nil] autorelease];
+                                                  otherButtonTitles:nil];
         self.networkAlertView.delegate = self;
         [self.networkAlertView show];
         
@@ -89,7 +139,7 @@
 -(KeychainWrapper *)keychainWrapper
 {
 	if (_keychainWrapper == nil) {
-		self.keychainWrapper = [[[KeychainWrapper alloc] init] autorelease];
+		self.keychainWrapper = [[KeychainWrapper alloc] init];
 	}
 	
 	return _keychainWrapper;
@@ -168,12 +218,12 @@
 #pragma mark App Settings Creation (Overrides)  
 -(AppSettings *)createAppSettings
 {
-    return [[[MapAppSettings alloc] init] autorelease];
+    return [[MapAppSettings alloc] init];
 }
 
 -(AppSettings *)createAppSettingsWithJSON:(NSDictionary *)JSON
 {
-    return [[[MapAppSettings alloc] initWithJSON:JSON] autorelease];
+    return [[MapAppSettings alloc] initWithJSON:JSON];
 }
 
 #pragma mark -
@@ -184,9 +234,9 @@
         
     //if map is already loaded, go ahead and start the routing mode
     if (mvc.mapLoaded) {
-        MapShareUtility *msi = [[[MapShareUtility alloc] initWithUrl:url 
+        MapShareUtility *msi = [[MapShareUtility alloc] initWithUrl:url 
                                                 withSpatialReference:mvc.mapView.spatialReference 
-                                                          locatorURL:[NSURL URLWithString:self.config.locatorServiceUrl]] autorelease];
+                                                          locatorURL:[NSURL URLWithString:self.config.locatorServiceUrl]];
         
         [mvc shareInformationWithMap:msi];
     }
@@ -261,9 +311,6 @@
     self.testOrganizations = [NSArray arrayWithObjects: org, attOrg, teapotOrg, nil];
     
     //[sfOrg release];
-    [attOrg release];
-    [org release];
-    [teapotOrg release];
     
     MapViewController *mvc = (MapViewController *)self.viewController;
     [mvc chooseFromOrganizations:self.testOrganizations];
@@ -281,17 +328,7 @@
                                          otherButtonTitles:nil];
     
     [alert show];
-    [alert release];
 }
 
-- (void)dealloc
-{
-    self.keychainWrapper = nil;
-    self.networkAlertView = nil;
-    self.organizationOp = nil;
-    self.testOrganizations = nil;
-    
-    [super dealloc];
-}
 
 @end

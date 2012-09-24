@@ -13,12 +13,6 @@
 @synthesize detail = _detail;
 @synthesize contactRef = _contactRef;
 
--(void)dealloc
-{
-    self.detail = nil;
-    
-    [super dealloc];
-}
 
 //Since a contact uses the detail for his address, use that to search
 -(NSString *)searchString
@@ -32,7 +26,7 @@
 
 -(BOOL)canMakeCall
 {
-    ABMultiValueRef phones =(NSString*)ABRecordCopyValue(self.contactRef, kABPersonPhoneProperty);
+    ABMultiValueRef phones =(__bridge ABMultiValueRef)((NSString*)CFBridgingRelease(ABRecordCopyValue(self.contactRef, kABPersonPhoneProperty)));
     BOOL canCall = (ABMultiValueGetCount(phones) > 0);
     CFRelease(phones);
     return canCall;
@@ -42,11 +36,10 @@
 {
     NSMutableArray *phoneNumbersArray = [NSMutableArray arrayWithCapacity:2];
     
-    ABMultiValueRef phones =(NSString*)ABRecordCopyValue(self.contactRef, kABPersonPhoneProperty);
+    ABMultiValueRef phones =(__bridge ABMultiValueRef)((NSString*)CFBridgingRelease(ABRecordCopyValue(self.contactRef, kABPersonPhoneProperty)));
     for(CFIndex i = 0; i < ABMultiValueGetCount(phones); i++) {
-        NSString *phone = (NSString *)ABMultiValueCopyValueAtIndex(phones, i);
+        NSString *phone = (NSString *)CFBridgingRelease(ABMultiValueCopyValueAtIndex(phones, i));
         [phoneNumbersArray addObject:phone];
-        [phone release];
     }
     
     CFRelease(phones);

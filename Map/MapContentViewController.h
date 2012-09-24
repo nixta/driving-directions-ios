@@ -34,7 +34,7 @@
     UIBarButtonItem             *_mapButton;
     UIBarButtonItem             *_settingsButton;
     
-    id<ChangeBasemapsDelegate>  _changeBasemapDelegate;
+    id<ChangeBasemapsDelegate>  __unsafe_unretained _changeBasemapDelegate;
     
     @private
     
@@ -49,17 +49,17 @@
 }
 
 /*Interface Builder Ux Elements */
-@property (nonatomic, retain) IBOutlet UITableView          *tableView;
-@property (nonatomic, retain) IBOutlet UINavigationBar      *navBar;
-@property (nonatomic, retain) IBOutlet UINavigationItem     *navItem;
-@property (nonatomic, retain) IBOutlet UIView               *settingsView;
-@property (nonatomic, retain) IBOutlet UILabel              *signInLabel;
+@property (nonatomic, strong) IBOutlet UITableView          *tableView;
+@property (nonatomic, strong) IBOutlet UINavigationBar      *navBar;
+@property (nonatomic, strong) IBOutlet UINavigationItem     *navItem;
+@property (nonatomic, strong) IBOutlet UIView               *settingsView;
+@property (nonatomic, strong) IBOutlet UILabel              *signInLabel;
 
 /*Misc. UX Elements */
-@property (nonatomic, retain) UIBarButtonItem               *mapButton;
-@property (nonatomic, retain) UIBarButtonItem               *settingsButton;
+@property (nonatomic, strong) UIBarButtonItem               *mapButton;
+@property (nonatomic, strong) UIBarButtonItem               *settingsButton;
 
-@property (nonatomic, assign) id<ChangeBasemapsDelegate>    changeBasemapDelegate;
+@property (nonatomic, unsafe_unretained) id<ChangeBasemapsDelegate>    changeBasemapDelegate;
 
 -(IBAction)settingsButtonTapped:(id)sender;
 

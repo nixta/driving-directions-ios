@@ -75,7 +75,6 @@
                                                                 withDatasource:directions];
         dsv.delegate = self;
         self.directionsView = dsv;
-        [dsv release];
         
         [self.view addSubview:self.directionsView];
     }
@@ -121,7 +120,6 @@
         self.planningRoute.stops.delegate = ssv;
         
         self.stopsView = ssv;
-        [ssv release];
     }
     if (self.stopsView.superview == nil) {
         [self.view addSubview:self.stopsView];

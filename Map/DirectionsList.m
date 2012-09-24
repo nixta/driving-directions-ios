@@ -15,11 +15,11 @@
 
 @interface DirectionsList () 
 
-@property (nonatomic, retain, readwrite) Direction      *currentDirection;
-@property (nonatomic, retain, readwrite) AGSGeometry    *mergedGeometry;
-@property (nonatomic, retain, readwrite) NSMutableArray *stopDirections;
+@property (nonatomic, strong, readwrite) Direction      *currentDirection;
+@property (nonatomic, strong, readwrite) AGSGeometry    *mergedGeometry;
+@property (nonatomic, strong, readwrite) NSMutableArray *stopDirections;
 
-@property (nonatomic, retain) StopsList                 *stopsList;
+@property (nonatomic, strong) StopsList                 *stopsList;
 
 @end
 
@@ -31,16 +31,6 @@
 
 @synthesize stopsList           = _stopsList;
 
--(void)dealloc
-{
-    self.currentDirection   = nil;
-    self.mergedGeometry     = nil;
-    self.stopDirections     = nil;
-    
-    self.stopsList          = nil;
-    
-    [super dealloc];
-}
 
 - (id)init
 {
@@ -66,14 +56,12 @@
         
         [overviewDirection retrieveMapImageOfSize:CGSizeMake(640, 480)];
         [self addItem:overviewDirection];
-        [overviewDirection release];
         
         //Create the first depart direction here. If there are subsequent departs, we are going
         //to strip them out of the list of directions since they are redundant with the Arrive direction
         AGSDirectionGraphic *departGraphic = [directionSet.graphics objectAtIndex:0];
         Direction *departDirection = [[Direction alloc] initWithDirectionGraphic:departGraphic];
         [self addItem:departDirection];
-        [departDirection release];
         
         //add depart stop into stopDirections. It's actually indexed as 1 since OverviewDirection is direction 0
         [self.stopDirections addObject:[NSNumber numberWithInt:1]];
@@ -100,7 +88,6 @@
                     newDirection.abbreviatedName = [[self.stopsList stopAtIndex:currentStop++] searchString];
                 }
                 
-                [newDirection release];
             }
         }
         

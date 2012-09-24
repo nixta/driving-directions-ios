@@ -52,20 +52,13 @@
 
 - (void)dealloc {
     
-    self.locationLabel = nil;
-    self.addressLabel = nil;
     
-    self.hideButton = nil;
-    self.actionButton = nil;
-    self.fullViewButton = nil;
     
 
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kLocationUpdatedAddress object:self.location];
     self.location = nil;
     
-    self.accessoryButton = nil;
     
-    [super dealloc];
 }
 
 -(id)initWithLocation:(Location *)location calloutType:(MapAppState)aType
@@ -88,7 +81,6 @@
         locLabel.textColor = [UIColor whiteColor];
         locLabel.backgroundColor = [UIColor clearColor];
         self.locationLabel = locLabel;
-        [locLabel release];
         
         UILabel *addrLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         addrLabel.font = [UIFont fontWithName:@"Helvetica" size:14.0];
@@ -98,7 +90,6 @@
         addrLabel.textColor = [UIColor whiteColor];
         addrLabel.backgroundColor = [UIColor clearColor];
         self.addressLabel = addrLabel;
-        [addrLabel release];
         
         UIButton *hideButton = [UIButton buttonWithType:UIButtonTypeCustom];
         hideButton.frame = CGRectMake(0, 0, 25, 25);
@@ -143,7 +134,6 @@
         [sc addTarget:self action:scSelector forControlEvents:UIControlEventValueChanged];
         self.stopSegmentedControl = sc;
         
-        [sc release];
         
         if ([self.location respondsToSelector:@selector(name)] && self.location.name != nil) {
             self.locationLabel.text = self.location.name;
@@ -187,8 +177,7 @@
     //remove observer from location
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kLocationUpdatedAddress object:self.location];
     
-    [_location release];
-    _location = [location retain];
+    _location = location;
     
     //add observer for new location
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationUpdatedAddress:) name:kLocationUpdatedAddress object:self.location];

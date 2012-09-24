@@ -39,7 +39,7 @@ email: contracts@esri.com
 -(void)setupSegmentedControl;
 
 @property (nonatomic, copy) NSString            *contactsName;
-@property (nonatomic, assign) ArcGISAppDelegate *app;
+@property (nonatomic, unsafe_unretained) ArcGISAppDelegate *app;
 
 @end
 
@@ -97,10 +97,8 @@ email: contracts@esri.com
         nb.barStyle = UIBarStyleBlackOpaque;
         UINavigationItem *navItem = [[UINavigationItem alloc] init];
         [nb pushNavigationItem:navItem animated:NO];
-        [navItem release];
         
         self.navBar = nb;
-        [nb release];
         
         [self.view addSubview:self.navBar];
         
@@ -225,8 +223,8 @@ email: contracts@esri.com
     {
         cell = [tableView dequeueReusableCellWithIdentifier:DefaultCellIdentifier];
         if (cell == nil) {
-            cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle 
-                                           reuseIdentifier:DefaultCellIdentifier] autorelease];
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle 
+                                           reuseIdentifier:DefaultCellIdentifier];
         }
         
         cell.textLabel.text = currentNamedGeometry.name;
@@ -351,12 +349,12 @@ email: contracts@esri.com
 
 -(NSString *)nameForRecord:(ABRecordRef)record
 {
-    NSString *firstName = [(NSString *)ABRecordCopyValue(record, kABPersonFirstNameProperty) autorelease];
+    NSString *firstName = (NSString *)CFBridgingRelease(ABRecordCopyValue(record, kABPersonFirstNameProperty));
     if (!firstName) {
         firstName = @"";
     }
     
-    NSString *lastName = [(NSString *)ABRecordCopyValue(record, kABPersonLastNameProperty) autorelease];
+    NSString *lastName = (NSString *)CFBridgingRelease(ABRecordCopyValue(record, kABPersonLastNameProperty));
     if(!lastName)
     {
         lastName = @"";
@@ -386,7 +384,6 @@ email: contracts@esri.com
                                                                        style:UIBarButtonItemStylePlain target:self 
                                                                       action:@selector(doneEditing)];
         self.doneButton = aDoneButton;
-        [aDoneButton release];
     }
     
     return _doneButton;
@@ -400,7 +397,6 @@ email: contracts@esri.com
                                                                         style:UIBarButtonItemStylePlain target:self 
                                                                        action:@selector(editMode)];
         self.editButton = anEditButton;
-        [anEditButton release];
     }
     
     return _editButton;
@@ -483,17 +479,6 @@ email: contracts@esri.com
 }
 
 
-- (void)dealloc {	
-    self.navBar = nil;
-    self.segmentedControl = nil;
-    self.bookmarkTableView = nil;
-    self.toolbar = nil;
-    self.editButton = nil;
-    self.doneButton = nil;
-    self.contactsName = nil;
-
-    [super dealloc];
-}
 
 
 @end

@@ -25,7 +25,6 @@
     
     self.backgroundColor = [UIColor clearColor];
     
-    [iv release];
 }
 
 @end

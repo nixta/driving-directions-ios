@@ -25,7 +25,7 @@
 
 -(void)finalizeWebMapDownloadWithSuccess:(BOOL)success;
 
-@property (nonatomic, retain) AGSJSONRequestOperation *orgOperation;
+@property (nonatomic, strong) AGSJSONRequestOperation *orgOperation;
 
 @end
 
@@ -45,20 +45,6 @@
 
 @synthesize orgOperation = _orgOperation;
 
--(void)dealloc
-{
-    self.name = nil;
-    self.portalName = nil;
-    self.locatorUrlString = nil;
-    self.basemapGalleryGroupQuery = nil;
-    
-    self.webmap = nil;
-    self.orgOperation = nil;
-    self.defaultEnvelope = nil;
-    self.icon = nil;
-    
-    [super dealloc];
-}
 
 - (id)init
 {
@@ -74,7 +60,7 @@
 {
     if(_webmap == nil)
     {
-        AGSCredential *credential = [[[AGSCredential alloc] initWithUser:@"mobileios" password:@"bazinga"] autorelease];
+        AGSCredential *credential = [[AGSCredential alloc] initWithUser:@"mobileios" password:@"bazinga"];
         //AGSCredential *credential = [[[AGSCredential alloc] initWithUser:@"mobile_org" password:@"dev.team"] autorelease];
         //AGSCredential *credential = nil;
         credential.authType = AGSAuthenticationTypeToken;
@@ -188,7 +174,7 @@
 {
     if(_webmap == nil)
     {
-        AGSCredential *credential = [[[AGSCredential alloc] initWithUser:@"mobile_org" password:@"dev.team"] autorelease];
+        AGSCredential *credential = [[AGSCredential alloc] initWithUser:@"mobile_org" password:@"dev.team"];
         credential.authType = AGSAuthenticationTypeToken;
         //credential.tokenUrl = [NSURL URLWithString:@"https://www.arcgis.com/sharing/generateToken"];
         
@@ -224,7 +210,7 @@
 {
     if(_webmap == nil)
     {
-        AGSCredential *credential = [[[AGSCredential alloc] initWithUser:@"mobile_org" password:@"dev.team"] autorelease];
+        AGSCredential *credential = [[AGSCredential alloc] initWithUser:@"mobile_org" password:@"dev.team"];
         credential.authType = AGSAuthenticationTypeToken;
         //credential.tokenUrl = [NSURL URLWithString:@"https://www.arcgis.com/sharing/generateToken"];
         
@@ -250,7 +236,7 @@
 {
     if(_webmap == nil)
     {
-        AGSCredential *credential = [[[AGSCredential alloc] initWithUser:@"mobileios" password:@"bazinga"] autorelease];
+        AGSCredential *credential = [[AGSCredential alloc] initWithUser:@"mobileios" password:@"bazinga"];
         credential.authType = AGSAuthenticationTypeToken;
         //credential.tokenUrl = [NSURL URLWithString:@"https://www.arcgis.com/sharing/generateToken"];
         
@@ -276,7 +262,7 @@
 {
     if(_webmap == nil)
     {
-        AGSCredential *credential = [[[AGSCredential alloc] initWithUser:@"mobileios" password:@"bazinga"] autorelease];
+        AGSCredential *credential = [[AGSCredential alloc] initWithUser:@"mobileios" password:@"bazinga"];
         credential.authType = AGSAuthenticationTypeToken;
         //credential.tokenUrl = [NSURL URLWithString:@"https://www.arcgis.com/sharing/generateToken"];
         

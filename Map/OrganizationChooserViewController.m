@@ -12,7 +12,7 @@
 
 @interface OrganizationChooserViewController ()
 
-@property (nonatomic, retain) NSArray *organizations;
+@property (nonatomic, strong) NSArray *organizations;
 
 @end
 
@@ -25,15 +25,6 @@
 @synthesize delegate = _delegate;
 @synthesize selectedIndex = _selectedIndex;
 
--(void)dealloc
-{
-    self.tableView = nil;
-    self.finishButton = nil;
-    
-    self.organizations = nil;
-    
-    [super dealloc];
-}
 
 -(id)initWithOrganizations:(NSArray *)organizations
 {
@@ -101,7 +92,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIDString];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIDString] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIDString];
     }
     
     Organization *org = [self.organizations objectAtIndex:indexPath.row];

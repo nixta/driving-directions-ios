@@ -15,9 +15,9 @@
 
 @interface RouteSolver () 
 
-@property (nonatomic, retain) AGSRouteTask              *routeTask;
-@property (nonatomic, retain) AGSRouteTaskParameters    *routeTaskParams;
-@property (nonatomic, retain) Route                     *routeToSolve;
+@property (nonatomic, strong) AGSRouteTask              *routeTask;
+@property (nonatomic, strong) AGSRouteTaskParameters    *routeTaskParams;
+@property (nonatomic, strong) Route                     *routeToSolve;
 
 @end
 
@@ -30,15 +30,6 @@
 @synthesize routeTask = _routeTask;
 @synthesize delegate = _delegate;
 
--(void)dealloc
-{
-    self.routeTask = nil;
-    self.routeTaskParams = nil;
-    self.routeToSolve = nil;
-    self.routingServiceUrl = nil;
-    self.spatialReference = nil;
-    [super dealloc];
-}
 
 #pragma mark -
 #pragma mark AGSRouteTaskDelegate
@@ -92,7 +83,6 @@
         stopDirection.icon = ((Location *)[self.routeToSolve.stops stopAtIndex:i++]).icon;
     }
     
-    [dl release];
     
     if([self.delegate respondsToSelector:@selector(routeSolver:didSolveRoute:)])
     {

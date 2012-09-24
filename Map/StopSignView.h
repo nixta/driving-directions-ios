@@ -23,7 +23,7 @@
     UIImageView *_imageView;
 }
 
-@property (nonatomic, retain) Location *location;
+@property (nonatomic, strong) Location *location;
 
 -(id)initWithFrame:(CGRect)frame withLocation:(Location *)location;
 

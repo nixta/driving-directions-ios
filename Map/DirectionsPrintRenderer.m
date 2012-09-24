@@ -23,12 +23,6 @@
 
 @synthesize directions = _directions;
 
--(void)dealloc
-{
-    self.directions = nil;
-    
-    [super dealloc];
-}
 
 -(id)initWithDirections:(DirectionsList *)list
 {

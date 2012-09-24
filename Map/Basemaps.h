@@ -42,19 +42,19 @@
     BOOL                        _isDownloading;
     BOOL                        _finishedDownloading;
     
-    id<BasemapDelegate>         _delegate;
+    id<BasemapDelegate>         __unsafe_unretained _delegate;
     
     AGSJSONRequestOperation     *_esriGroupIdOp;
     AGSJSONRequestOperation     *_baseMapsOp;
     
-    ArcGISAppDelegate           *_app;
+    ArcGISAppDelegate           *__unsafe_unretained _app;
 }
 
 /*properties to indicate status of download */
 @property (nonatomic, assign) BOOL                  isDownloading;
 @property (nonatomic, assign) BOOL                  finishedDownloading;
 
-@property (nonatomic, assign) id<BasemapDelegate>   delegate;
+@property (nonatomic, unsafe_unretained) id<BasemapDelegate>   delegate;
 
 
 /*default initializer */
@@ -85,10 +85,10 @@
     BOOL            _isDefaultBasemap;
 }
 
-@property (nonatomic, retain, readonly) ContentItem     *contentItem;
-@property (nonatomic, retain, readonly) NSString        *title;
-@property (nonatomic, retain, readonly) NSString        *urlString;
-@property (nonatomic, retain) UIImage                   *basemapIcon;
+@property (nonatomic, strong, readonly) ContentItem     *contentItem;
+@property (nonatomic, strong, readonly) NSString        *title;
+@property (nonatomic, strong, readonly) NSString        *urlString;
+@property (nonatomic, strong) UIImage                   *basemapIcon;
 @property (nonatomic, assign) BOOL                      isDefaultBasemap;
 
 

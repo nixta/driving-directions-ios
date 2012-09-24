@@ -14,7 +14,7 @@
 
 @interface GeocodeService ()
 
-@property (nonatomic, assign) ArcGISAppDelegate *app;
+@property (nonatomic, unsafe_unretained) ArcGISAppDelegate *app;
 
 @end
 
@@ -144,7 +144,7 @@
     
     self.findPlaceOperation = operation;
     
-    return [operation autorelease];
+    return operation;
 }
 
 - (void)findPlaceOperation:(NSOperation*)op didComplete:(NSDictionary *)json {
@@ -154,7 +154,7 @@
     id tmp = [json valueForKey:@"spatialReference"];    
     if (tmp && tmp != [NSNull null])
     {
-        spatialReference = [[[AGSSpatialReference alloc] initWithJSON:tmp] autorelease]; 
+        spatialReference = [[AGSSpatialReference alloc] initWithJSON:tmp]; 
     }
     
     NSArray *jsonArray = [json valueForKey:@"candidates"];
@@ -164,7 +164,6 @@
         FindPlaceCandidate *place = [[FindPlaceCandidate alloc] initWithJSON:placeJson withSpatialReference:spatialReference];
         [places addObject:place];
         
-        [place release];
     }
     
     if ([self.delegate respondsToSelector:@selector(geocodeService:operation:didFindPlace:)])
@@ -186,11 +185,6 @@
 
 -(void) dealloc{
 	self.delegate = nil;
-	self.responseString = nil;
-    self.findAddressLocator = nil;
-    self.findAddressOperation = nil;
-    self.findPlaceOperation = nil;
-	[super dealloc];
 }
 
 @end
@@ -244,18 +238,10 @@
 - (void)decodeWithJSON:(NSDictionary *)json {
     self.name = [json valueForKey:@"name"];
     self.score = [json valueForKey:@"score"];
-    self.location = [[[AGSPoint alloc] initWithJSON:[json valueForKey:@"location"]] autorelease];
-    self.extent = [[[AGSEnvelope alloc] initWithJSON:[json valueForKey:@"extent"]] autorelease];
+    self.location = [[AGSPoint alloc] initWithJSON:[json valueForKey:@"location"]];
+    self.extent = [[AGSEnvelope alloc] initWithJSON:[json valueForKey:@"extent"]];
 }
 
 
--(void) dealloc
-{
-	self.name = nil;
-    self.score = nil;
-    self.location = nil;
-    self.extent = nil;
-	[super dealloc];
-}
 
 @end

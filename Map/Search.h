@@ -22,7 +22,7 @@
 }
 
 @property (nonatomic, copy) NSString    *name;
-@property (nonatomic, retain) UIImage   *icon;
+@property (nonatomic, strong) UIImage   *icon;
 
 -(id)initWithName:(NSString *)name;
 

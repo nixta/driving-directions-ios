@@ -34,7 +34,7 @@
                              options:0
                                range:NSMakeRange(0, [temp length])];
 	
-    return [temp autorelease];
+    return temp;
 }
 
 -(NSString *) htmlDecode {
@@ -61,7 +61,7 @@
                              options:0
                                range:NSMakeRange(0, [temp length])];
 	
-    return [temp autorelease];
+    return temp;
 }
 
 @end

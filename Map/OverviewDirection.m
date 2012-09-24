@@ -21,12 +21,6 @@
 
 @synthesize stops = _stops;
 
--(void)dealloc
-{
-    self.stops = nil;
-    
-    [super dealloc];
-}
 
 -(id)initWithDirectionSet:(AGSDirectionSet *)directionSet stops:(StopsList *)stops
 {
@@ -51,7 +45,6 @@
 
         AGSGraphic *graphicCopy = [l.graphic copy];
         [self.graphicsLayer addGraphic:graphicCopy];
-        [graphicCopy release];
     }    
     [super retrieveMapImageOfSize:size];    
 }

@@ -169,5 +169,6 @@ dependencies: /Users/albe5259/Projects/navigator/Map/Legend.m \
   /Users/albe5259/Projects/navigator/Map/AppSettings.h \
   /Users/albe5259/Projects/navigator/Map/OnlineApplication.h \
   /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
+  /Users/albe5259/Projects/navigator/Map/../../ArcGIS_iOS_3/Headers/NSDictionary+AGSAdditions.h \
   /Users/albe5259/Projects/navigator/Map/MapLayerInfo+AppAdditions.h \
   /Users/albe5259/Projects/navigator/Map/AGSDynamicMapServiceLayer+LayerVisibilityAdditions.h

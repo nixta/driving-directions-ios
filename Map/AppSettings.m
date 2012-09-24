@@ -20,18 +20,12 @@
 {
     self = [super init];
     if (self) {
-        self.arcGISOnlineConnection = [[[ArcGISOnlineConnection alloc] init] autorelease];
+        self.arcGISOnlineConnection = [[ArcGISOnlineConnection alloc] init];
     }
     
     return self;
 }
 
--(void)dealloc
-{
-    self.arcGISOnlineConnection = nil;
-    
-    [super dealloc];
-}
 
 
 #pragma mark -
@@ -39,7 +33,7 @@
 
 - (void)decodeWithJSON:(NSDictionary *)json 
 {
-	self.arcGISOnlineConnection = [[[ArcGISOnlineConnection alloc]initWithJSON:[json objectForKey:@"arcgisOnlineConnection"]] autorelease];
+	self.arcGISOnlineConnection = [[ArcGISOnlineConnection alloc]initWithJSON:[json objectForKey:@"arcgisOnlineConnection"]];
 }
 
 - (id)initWithJSON:(NSDictionary *)json {

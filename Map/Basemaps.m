@@ -37,17 +37,17 @@
 -(BasemapInfo *)defaultBasemap;
 -(void)finishWithSuccess:(BOOL)success;
 
-@property (nonatomic, assign) ArcGISAppDelegate         *app;
-@property (nonatomic, retain) SearchResponse            *searchResponse;
+@property (nonatomic, unsafe_unretained) ArcGISAppDelegate         *app;
+@property (nonatomic, strong) SearchResponse            *searchResponse;
 
 /*Collection of basemap items */
-@property (nonatomic, retain) NSMutableArray            *basemapInfos;
+@property (nonatomic, strong) NSMutableArray            *basemapInfos;
 
 /*ESRI group ID for basemaps group */
-@property (nonatomic, retain) NSString                  *groupID;
+@property (nonatomic, strong) NSString                  *groupID;
 
-@property (nonatomic, retain) AGSJSONRequestOperation   *esriGroupIdOp;
-@property (nonatomic, retain) AGSJSONRequestOperation   *baseMapsOp;
+@property (nonatomic, strong) AGSJSONRequestOperation   *esriGroupIdOp;
+@property (nonatomic, strong) AGSJSONRequestOperation   *baseMapsOp;
 
 @end
 
@@ -114,7 +114,6 @@
     {
         NSMutableArray* newArray = [[NSMutableArray alloc] init];
         self.basemapInfos = newArray;
-        [newArray release];
     }
 	
 	return _basemapInfos;
@@ -160,7 +159,7 @@
 	//create the url request, complete with token and referer, if signed in
 	NSURLRequest *contentReq = [connection requestForUrlString:urlString withHost:nil];
     
-    self.esriGroupIdOp = [[[AGSJSONRequestOperation alloc] initWithRequest:contentReq] autorelease];
+    self.esriGroupIdOp = [[AGSJSONRequestOperation alloc] initWithRequest:contentReq];
     self.esriGroupIdOp.target = self;
     self.esriGroupIdOp.action = @selector(esriBaseMapsGroupOperation:didSucceed:);
     self.esriGroupIdOp.errorAction = @selector(esriBaseMapsGroupOperation:didFailWithError:);
@@ -170,7 +169,6 @@
 - (void)esriBaseMapsGroupOperation:(AGSJSONRequestOperation*)op didSucceed:(NSDictionary*)json {
     SearchResponse* searchResults = [[SearchResponse alloc] initWithJSON:json];
     self.searchResponse = searchResults;
-    [searchResults release];
 	
 	//results from connecting to the group ESRI
     NSArray *items = [AGSJSONUtility decodeFromDictionary:json withKey:@"results" fromClass:[Group class]];
@@ -216,7 +214,7 @@
 	//create the url request, complete with token and referer, if signed in
 	NSURLRequest *contentReq = [connection requestForUrlString:urlString withHost:nil];
     
-    self.baseMapsOp = [[[AGSJSONRequestOperation alloc] initWithRequest:contentReq] autorelease];
+    self.baseMapsOp = [[AGSJSONRequestOperation alloc] initWithRequest:contentReq];
     self.baseMapsOp.target = self;
     self.baseMapsOp.action = @selector(baseMapsItemsOperation:didSucceed:);
     self.baseMapsOp.errorAction = @selector(baseMapsItemsOperation:didFailWithError:);
@@ -235,8 +233,8 @@
     NSArray *items = [AGSJSONUtility decodeFromDictionary:json withKey:@"results" fromClass:[ContentItem class]];
     
     //sort the items with most recent first (sort on 'uploaded' property and descending)
-    NSMutableArray *sortedItems = [[items mutableCopy] autorelease];
-    NSSortDescriptor *descriptor = [[[NSSortDescriptor alloc] initWithKey:@"uploaded" ascending:NO] autorelease];
+    NSMutableArray *sortedItems = [items mutableCopy];
+    NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"uploaded" ascending:NO];
     [sortedItems sortUsingDescriptors:[NSArray arrayWithObject:descriptor]];
     
     items = sortedItems;
@@ -254,7 +252,6 @@
             
             BasemapInfo *basemapInfo = [[BasemapInfo alloc] initWithTitle:item.title urlString:urlString contentItem:item];
             [self.basemapInfos addObject:basemapInfo];
-            [basemapInfo release];
         }
     }
     
@@ -270,9 +267,9 @@
 
 -(BasemapInfo *)defaultBasemap
 {
-    BasemapInfo *defaultBasemap =  [[[BasemapInfo alloc] initWithTitle:NSLocalizedString(@"Default Basemap", nil) 
+    BasemapInfo *defaultBasemap =  [[BasemapInfo alloc] initWithTitle:NSLocalizedString(@"Default Basemap", nil) 
                                                              urlString:nil 
-                                                           contentItem:nil] autorelease];
+                                                           contentItem:nil];
     
     defaultBasemap.isDefaultBasemap = YES;
     return defaultBasemap;
@@ -298,17 +295,11 @@
 #pragma mark Memory Management
 - (void)dealloc {
     
-    self.basemapInfos = nil;
-    self.searchResponse = nil;
-	self.groupID = nil;
     
     [self.esriGroupIdOp cancel];
-    self.esriGroupIdOp = nil;
     
     [self.baseMapsOp cancel];
-    self.baseMapsOp = nil;
     
-    [super dealloc];
 }
 
 @end
@@ -316,9 +307,9 @@
 
 @interface BasemapInfo () 
 
-@property (nonatomic, retain, readwrite) ContentItem *contentItem;
-@property (nonatomic, retain, readwrite) NSString *title;
-@property (nonatomic, retain, readwrite) NSString *urlString;
+@property (nonatomic, strong, readwrite) ContentItem *contentItem;
+@property (nonatomic, strong, readwrite) NSString *title;
+@property (nonatomic, strong, readwrite) NSString *urlString;
 
 @end
 
@@ -330,15 +321,6 @@
 @synthesize basemapIcon = _basemapIcon;
 @synthesize isDefaultBasemap = _isDefaultBasemap;
 
--(void)dealloc
-{
-    self.contentItem = nil;
-    self.title = nil;
-    self.urlString = nil;
-    self.basemapIcon = nil;
-    
-    [super dealloc];
-}
 
 -(id)initWithTitle:(NSString *)title urlString:(NSString *)urlString contentItem:(ContentItem *)contentItem
 {

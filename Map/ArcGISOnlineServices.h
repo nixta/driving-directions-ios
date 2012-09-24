@@ -42,7 +42,7 @@
     NSString    *_token;
     NSInteger   _expires;
 }
-@property (nonatomic, retain) NSString  *token;
+@property (nonatomic, strong) NSString  *token;
 @property (nonatomic, assign) NSInteger expires;
 
 @end
@@ -63,13 +63,13 @@
     NSMutableArray  *_groups;
 }
 
-@property (nonatomic, retain) NSString          *userName;
-@property (nonatomic, retain) NSString          *fullName;
-@property (nonatomic, retain) NSString          *description;
-@property (nonatomic, retain) NSString          *email;
-@property (nonatomic, retain) NSString          *organization;
-@property (nonatomic, retain) NSString          *defaultGroupId;
-@property (nonatomic, retain) NSMutableArray    *groups;
+@property (nonatomic, strong) NSString          *userName;
+@property (nonatomic, strong) NSString          *fullName;
+@property (nonatomic, strong) NSString          *description;
+@property (nonatomic, strong) NSString          *email;
+@property (nonatomic, strong) NSString          *organization;
+@property (nonatomic, strong) NSString          *defaultGroupId;
+@property (nonatomic, strong) NSMutableArray    *groups;
 
 @end
 
@@ -94,21 +94,21 @@
     UIImage         *_groupIcon;
 }
 
-@property (nonatomic, retain) NSString          *groupId;
-@property (nonatomic, retain) NSString          *title;
-@property (nonatomic, retain) NSString          *description;
-@property (nonatomic, retain) NSString          *snippet;
-@property (nonatomic, retain) NSString          *phone;
-@property (nonatomic, retain) NSString          *thumbnail;
-@property (nonatomic, retain) NSString          *owner;
+@property (nonatomic, strong) NSString          *groupId;
+@property (nonatomic, strong) NSString          *title;
+@property (nonatomic, strong) NSString          *description;
+@property (nonatomic, strong) NSString          *snippet;
+@property (nonatomic, strong) NSString          *phone;
+@property (nonatomic, strong) NSString          *thumbnail;
+@property (nonatomic, strong) NSString          *owner;
 @property (nonatomic, assign) double            created;
-@property (nonatomic, retain) NSString          *featuredItemsId;
+@property (nonatomic, strong) NSString          *featuredItemsId;
 @property (nonatomic, assign) bool              isPublic;
 @property (nonatomic, assign) bool              isInvitationOnly;
 @property (nonatomic, assign) bool              isOrganization;
-@property (nonatomic, retain) NSMutableArray    *members;
-@property (nonatomic, retain) NSMutableArray    *tags;
-@property (nonatomic, retain) UIImage           *groupIcon;
+@property (nonatomic, strong) NSMutableArray    *members;
+@property (nonatomic, strong) NSMutableArray    *tags;
+@property (nonatomic, strong) UIImage           *groupIcon;
 
 -(NSString *)groupThumbnailURLString;
 
@@ -123,8 +123,8 @@
     NSString *_memberType;
 }
 
-@property (nonatomic, retain) NSString *userName;
-@property (nonatomic, retain) NSString *memberType;
+@property (nonatomic, strong) NSString *userName;
+@property (nonatomic, strong) NSString *memberType;
 
 @end
 
@@ -176,9 +176,9 @@
     double      _created;
 }
 
-@property (nonatomic, retain) NSString  *userName;
-@property (nonatomic, retain) NSString  *folderId;
-@property (nonatomic, retain) NSString  *title;
+@property (nonatomic, strong) NSString  *userName;
+@property (nonatomic, strong) NSString  *folderId;
+@property (nonatomic, strong) NSString  *title;
 @property (nonatomic, assign) double    created;
 
 @end

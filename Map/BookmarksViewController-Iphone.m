@@ -46,7 +46,6 @@
                                 style:UIBarButtonItemStylePlain target:self 
                                 action:@selector(goBackToMap)];
 	self.mapButton = aMapButton;
-	[aMapButton release];
 	
 	[self currentNavItem].leftBarButtonItem = self.mapButton;
 }
@@ -76,10 +75,5 @@
 	[self dismissModalViewControllerAnimated:YES];
 }
 
--(void)dealloc
-{
-	self.mapButton = nil;
-	[super dealloc];
-}
 
 @end

@@ -64,9 +64,9 @@
 }
 
 @property (assign) BOOL                             open;
-@property (retain) SectionHeaderView                *headerView;
-@property (nonatomic, retain) LegendLayer           *legendLayer;
-@property (nonatomic, assign, readonly) NSString    *title;
+@property (strong) SectionHeaderView                *headerView;
+@property (nonatomic, strong) LegendLayer           *legendLayer;
+@property (nonatomic, unsafe_unretained, readonly) NSString    *title;
 
 -(NSUInteger)numberOfEntries;
 -(LegendElement *)elementAtIndex:(NSUInteger)index;

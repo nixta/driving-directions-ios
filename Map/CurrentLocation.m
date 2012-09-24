@@ -11,7 +11,7 @@
 
 @interface CurrentLocation () 
 
-@property (nonatomic, retain) CLLocationManager *locationManager;
+@property (nonatomic, strong) CLLocationManager *locationManager;
 
 @end
 
@@ -24,8 +24,6 @@
 -(void)dealloc
 {
     self.locationManager.delegate = nil;
-    self.locationManager = nil;
-    [super dealloc];
 }
 
 #pragma mark -
@@ -65,7 +63,7 @@
     if(_updatingPoint)
         return;
     
-    self.locationManager = [[[CLLocationManager alloc] init] autorelease];
+    self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     
     [self.locationManager startUpdatingLocation];
@@ -105,10 +103,10 @@
     AGSSpatialReference *sr = [AGSSpatialReference webMercatorSpatialReference];
     AGSPoint *esriPoint = [AGSPoint pointWithX:-13046166.549800 y:4036562.568769 spatialReference:sr];
     
-    SimulatedCurrentLocation *esriLocation = [[[SimulatedCurrentLocation alloc] initWithPoint:esriPoint 
+    SimulatedCurrentLocation *esriLocation = [[SimulatedCurrentLocation alloc] initWithPoint:esriPoint 
                                                         aName:@"  Current Location" 
                                                        anIcon:[UIImage imageNamed:@"ArcGIS.bundle/GpsDisplay.png"]
-                                                   locatorURL:url] autorelease];
+                                                   locatorURL:url];
     return esriLocation;
 #else
     return [[[CurrentLocation alloc] initWithIcon:[UIImage imageNamed:@"AddressPin.png"] 

@@ -41,8 +41,8 @@ typedef enum
     
     AGSAddressCandidate         *_addressCandidate;
     
-    id<LocationDelegate>        _delegate;
-    id<LocationRouteDelegate>   _routeDelegate;
+    id<LocationDelegate>        __unsafe_unretained _delegate;
+    id<LocationRouteDelegate>   __unsafe_unretained _routeDelegate;
     
     LocationGraphic             *_graphic;
     
@@ -60,18 +60,18 @@ typedef enum
     BOOL                        _finishedFindPlace;
 }
 
-@property (nonatomic, retain) AGSGeometry                   *geometry;
+@property (nonatomic, strong) AGSGeometry                   *geometry;
 @property (nonatomic, copy)   NSString                      *name;
-@property (nonatomic, retain) UIImage                       *icon;
-@property (nonatomic, retain) NSURL                         *locatorUrl;
-@property (nonatomic, retain) LocationGraphic               *graphic;
+@property (nonatomic, strong) UIImage                       *icon;
+@property (nonatomic, strong) NSURL                         *locatorUrl;
+@property (nonatomic, strong) LocationGraphic               *graphic;
 
 @property (nonatomic, assign) LocationType                  locationType;
 
-@property (nonatomic, retain) AGSAddressCandidate           *addressCandidate;
+@property (nonatomic, strong) AGSAddressCandidate           *addressCandidate;
 
-@property (nonatomic, assign) id<LocationDelegate>          delegate;
-@property (nonatomic, assign) id<LocationRouteDelegate>     routeDelegate;
+@property (nonatomic, unsafe_unretained) id<LocationDelegate>          delegate;
+@property (nonatomic, unsafe_unretained) id<LocationRouteDelegate>     routeDelegate;
 
 /*Use this when you don't necessarily have an actual point, but rather an address or place name */
 -(id)initWithName:(NSString *)name anIcon:(UIImage *)icon locatorURL:(NSURL *)url;

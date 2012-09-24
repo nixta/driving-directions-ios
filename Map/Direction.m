@@ -11,11 +11,11 @@
 
 @interface Direction () 
 
-@property (nonatomic, retain) UIImage *graphicImage;
-@property (nonatomic, retain) NSOperation *graphicOp;
-@property (nonatomic, retain) NSOperation *mapOp;
-@property (nonatomic, retain) AGSGraphicsLayer *graphicsLayer;
-@property (nonatomic, retain) AGSDynamicMapServiceLayer *basemapLayer;
+@property (nonatomic, strong) UIImage *graphicImage;
+@property (nonatomic, strong) NSOperation *graphicOp;
+@property (nonatomic, strong) NSOperation *mapOp;
+@property (nonatomic, strong) AGSGraphicsLayer *graphicsLayer;
+@property (nonatomic, strong) AGSDynamicMapServiceLayer *basemapLayer;
 
 -(void)finishWithSuccess;
 -(UIImage *)imageForDirectionManeuver:(AGSNADirectionsManeuver)maneuever;
@@ -44,21 +44,8 @@
     [self.graphicOp cancel];
     [self.mapOp cancel];
     
-    self.geometry = nil;
-    self.name = nil;
-    self.icon = nil;
-    self.mapImage = nil;
-    self.distanceString = nil;
-    self.etaString = nil;
-    self.abbreviatedName = nil;
     
-    self.graphicsLayer = nil;
-    self.basemapLayer = nil;
-    self.graphicImage = nil;
-    self.graphicOp = nil;
-    self.mapOp = nil;
     
-    [super dealloc];
 }
 
 -(id)initWithSegment:(AGSPolyline *)lineSegment directionText:(NSString *)direction anIcon:(UIImage *)icon;
@@ -100,7 +87,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:DirectionCellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:DirectionCellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:DirectionCellIdentifier];
     }
     
     cell.textLabel.numberOfLines = 0;
@@ -136,7 +123,6 @@
                                                                             frame:CGRectMake(0, 0, size.width, size.height) mapWrapAround:YES];
     
     self.graphicOp = [self.graphicsLayer exportMapImage:graphicparams];
-    [graphicparams release];
     
     
     NSURL *mapUrl = [NSURL URLWithString:@"http://services.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer"]; 
@@ -145,7 +131,6 @@
     dmsl.renderNativeResolution = NO;
     
     self.basemapLayer = dmsl;
-    [dmsl release];
     
     AGSExportImageParams *mapparams = [[AGSExportImageParams alloc] initWithEnvelope:env 
                                                                        timeExtent:nil 
@@ -153,7 +138,6 @@
                                                                             frame:CGRectMake(0, 0, size.width, size.height) mapWrapAround:YES];
     
     self.mapOp = [self.basemapLayer exportMapImage:mapparams];
-    [mapparams release];
 }
 
 #pragma mark -

@@ -22,13 +22,6 @@
 @synthesize distanceLabel       = _distanceLabel;
 @synthesize isCurrentLocation   = _isCurrentLocation;
 
--(void)dealloc
-{
-    self.view = nil;
-    self.iconImageView = nil;
-    self.nameLabel = nil;
-    self.distanceLabel = nil;
-}
 
 -(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -43,12 +36,10 @@
         UIView *v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 295, 44)];
         v.backgroundColor = [UIColor clearColor];
         self.view = v;
-        [v release];
                 
         UIImageView *iv = [[UIImageView alloc] initWithFrame:CGRectZero];
         iv.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
         self.iconImageView = iv;
-        [iv release];
         
         [self.view addSubview:self.iconImageView];
         
@@ -61,7 +52,6 @@
         aDistanceLabel.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
         
         self.distanceLabel = aDistanceLabel;
-        [aDistanceLabel release];
         
         [self.view addSubview:self.distanceLabel];
         
@@ -74,7 +64,6 @@
         aNameLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         
         self.nameLabel = aNameLabel;
-        [aNameLabel release];
         
         [self.view addSubview:self.nameLabel];
         

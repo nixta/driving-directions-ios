@@ -75,7 +75,6 @@
         // Set up the tap gesture recognizer.
         UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(toggleOpen:)];
         [self addGestureRecognizer:tapGesture];
-        [tapGesture release];
 
         _delegate = aDelegate;        
         self.userInteractionEnabled = YES;
@@ -119,14 +118,14 @@
         
         
         // Create and configure the disclosure button.
-        _disclosureButton = [[UIButton buttonWithType:UIButtonTypeCustom] retain];
+        _disclosureButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _disclosureButton.frame = CGRectMake(0.0, (self.frame.size.height - toggleButtonWidthHeight)/2, toggleButtonWidthHeight, toggleButtonWidthHeight);
         [_disclosureButton setImage:[UIImage imageNamed:@"MaxMinLayerTriangle.png"] forState:UIControlStateNormal];
         [_disclosureButton setImage:[UIImage imageNamed:@"MaxMinLayerTriangle-Open.png"] forState:UIControlStateSelected];
         [_disclosureButton addTarget:self action:@selector(toggleOpen:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_disclosureButton];
         
-        self.aSwitch = [[[UISwitch alloc] initWithFrame:CGRectMake(switchXOrigin, (self.frame.size.height - switchHeight)/2, switchWidth, switchHeight)] autorelease];
+        self.aSwitch = [[UISwitch alloc] initWithFrame:CGRectMake(switchXOrigin, (self.frame.size.height - switchHeight)/2, switchWidth, switchHeight)];
         self.aSwitch.on = YES;
         [self.aSwitch addTarget:self action:@selector(switchToggled:) forControlEvents:UIControlEventValueChanged];
         [self addSubview:self.aSwitch];
@@ -174,14 +173,6 @@
 }
 
 
-- (void)dealloc {
-    
-    self.titleLabel = nil;
-    self.disclosureButton = nil;
-    self.aSwitch = nil;
-    
-    [super dealloc];
-}
 
 
 @end

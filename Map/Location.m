@@ -19,13 +19,13 @@
 
 @interface Location () 
 
-@property (nonatomic, retain) NSOperation           *locatorOperation;
-@property (nonatomic, retain) AGSLocator            *locator;
+@property (nonatomic, strong) NSOperation           *locatorOperation;
+@property (nonatomic, strong) AGSLocator            *locator;
 
-@property (nonatomic, retain) GeocodeService        *geocodeService;
-@property (nonatomic, retain) AGSAddressCandidate   *updateAddressCandidate;
-@property (nonatomic, retain) FindPlaceCandidate    *findPlaceCandidate;
-@property (nonatomic, retain) UIImage               *defaultIcon;
+@property (nonatomic, strong) GeocodeService        *geocodeService;
+@property (nonatomic, strong) AGSAddressCandidate   *updateAddressCandidate;
+@property (nonatomic, strong) FindPlaceCandidate    *findPlaceCandidate;
+@property (nonatomic, strong) UIImage               *defaultIcon;
 
 -(void)finishUpdatePoint;
 -(AGSSymbol *)symbolForGraphic;
@@ -60,23 +60,10 @@
     [self.locatorOperation cancel];
     
     [self.graphic clearLocation];
-    self.graphic = nil;
     
-    self.geometry = nil;
-    self.name = nil;
-    self.icon = nil;
-    self.addressCandidate = nil;
     
-    self.locator = nil;
-    self.locatorOperation = nil;
-    self.locatorUrl = nil;
-    self.defaultIcon = nil;
     
-    self.geocodeService = nil;
-    self.updateAddressCandidate = nil;
-    self.findPlaceCandidate = nil;
     
-    [super dealloc];
 }
 
 - (id)init
@@ -155,7 +142,7 @@
         MapAppDelegate *app = (MapAppDelegate *)[[UIApplication sharedApplication] delegate];
         MapAppSettings *settings = (MapAppSettings *)app.appSettings;
         
-        self.geocodeService = [[[GeocodeService alloc] init] autorelease];
+        self.geocodeService = [[GeocodeService alloc] init];
         self.geocodeService.delegate = self;
 #warning Big hack right now
         self.geocodeService.addressLocatorString = settings.organization.locatorUrlString;
@@ -328,8 +315,7 @@
 
 -(void)setGeometry:(AGSGeometry *)geometry
 {
-    [_geometry autorelease];
-    _geometry = [geometry retain];
+    _geometry = geometry;
     
     self.graphic.geometry = _geometry;
     if(self.graphic.layer != nil)
@@ -419,12 +405,12 @@
     
     //pick the best scoring location and use that as our location
     if (self.updateAddressCandidate.score >= [self.findPlaceCandidate.score intValue]) {
-        self.geometry = [[self.updateAddressCandidate.location mutableCopy] autorelease];
+        self.geometry = [self.updateAddressCandidate.location mutableCopy];
     }
     else
     {
         self.name = self.findPlaceCandidate.name;
-        self.geometry = [[self.findPlaceCandidate.location mutableCopy] autorelease];
+        self.geometry = [self.findPlaceCandidate.location mutableCopy];
     }
     
     //get rid of all geocode service related items
@@ -519,7 +505,7 @@
     NSDictionary *geomJSON = [json objectForKey:@"geometry"];
     if(geomJSON)
     {
-        self.geometry = [[[AGSPoint alloc] initWithJSON:geomJSON] autorelease];
+        self.geometry = [[AGSPoint alloc] initWithJSON:geomJSON];
     }
     
     self.name = [AGSJSONUtility getStringFromDictionary:json withKey:@"name"];
@@ -557,7 +543,7 @@
 #pragma mark NSCopying
 - (id)copyWithZone:(NSZone *)zone
 {
-    AGSPoint *ptCopy = [(AGSPoint *)[self.geometry copy] autorelease];
+    AGSPoint *ptCopy = (AGSPoint *)[self.geometry copy];
     Location *copyLocation = [[Location alloc] initWithPoint:ptCopy
                                                        aName:self.name 
                                                       anIcon:self.defaultIcon 

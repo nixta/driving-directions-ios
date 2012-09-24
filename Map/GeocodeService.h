@@ -15,7 +15,7 @@
 
 @interface GeocodeService : NSObject <AGSLocatorDelegate> {
 	
-    id<GeocodeServiceDelegate>  _delegate;
+    id<GeocodeServiceDelegate>  __unsafe_unretained _delegate;
 	NSString                    *_responseString;
     
     AGSLocator                  *_findAddressLocator;
@@ -30,15 +30,15 @@
     
     @private
     
-    ArcGISAppDelegate *_app;
+    ArcGISAppDelegate *__unsafe_unretained _app;
 }
 
-@property (nonatomic, assign) id<GeocodeServiceDelegate>    delegate;
-@property (nonatomic, retain) NSString                      *responseString;
+@property (nonatomic, unsafe_unretained) id<GeocodeServiceDelegate>    delegate;
+@property (nonatomic, strong) NSString                      *responseString;
 @property (nonatomic, copy) NSString                        *addressLocatorString;
-@property (nonatomic, retain) AGSLocator                    *findAddressLocator;
-@property (nonatomic, retain) NSOperation                   *findAddressOperation;
-@property (nonatomic, retain) NSOperation                   *findPlaceOperation;
+@property (nonatomic, strong) AGSLocator                    *findAddressLocator;
+@property (nonatomic, strong) NSOperation                   *findAddressOperation;
+@property (nonatomic, strong) NSOperation                   *findPlaceOperation;
 @property (nonatomic, assign) BOOL                          useSingleLine;
 
 - (NSOperation *)findAddressCandidates:(NSString *)searchString withSpatialReference:(AGSSpatialReference *)spatialReference;
@@ -88,8 +88,8 @@
 -(id)initWithJSON:(NSDictionary *)json withSpatialReference:(AGSSpatialReference *)spatialReference;
 
 @property (nonatomic, copy) NSString *name;
-@property (nonatomic, retain) NSNumber *score;
-@property (nonatomic, retain) AGSPoint *location;
-@property (nonatomic, retain) AGSEnvelope *extent;
+@property (nonatomic, strong) NSNumber *score;
+@property (nonatomic, strong) AGSPoint *location;
+@property (nonatomic, strong) AGSEnvelope *extent;
 
 @end

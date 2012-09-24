@@ -22,7 +22,7 @@
 
 @interface Route : NSObject <LocationDelegate>
 {
-    id<RouteStopsDelegate>  _delegate;
+    id<RouteStopsDelegate>  __unsafe_unretained _delegate;
     DirectionsList          *_directions;
     StopsList               *_stops;
     
@@ -33,10 +33,10 @@
     NSUInteger              _numberOfStopsToPrep;
 }
 
-@property (nonatomic, retain, readonly) StopsList       *stops;
+@property (nonatomic, strong, readonly) StopsList       *stops;
 
-@property (nonatomic, assign) id<RouteStopsDelegate>    delegate;
-@property (nonatomic, retain) DirectionsList            *directions;
+@property (nonatomic, unsafe_unretained) id<RouteStopsDelegate>    delegate;
+@property (nonatomic, strong) DirectionsList            *directions;
 @property (nonatomic, assign) BOOL                      isEditable;
 
 

@@ -34,6 +34,6 @@
 }
 
 /* button to get back to main map page  */
-@property (nonatomic, retain) UIBarButtonItem *mapButton;
+@property (nonatomic, strong) UIBarButtonItem *mapButton;
 
 @end

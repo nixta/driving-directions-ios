@@ -23,21 +23,21 @@
     NSString                    *_portalName;
     NSString                    *_locatorUrlString;
     
-    id<OrganizationDelegate>    _delegate;
+    id<OrganizationDelegate>    __unsafe_unretained _delegate;
     AGSJSONRequestOperation     *_orgOperation;
 }
 
-@property (nonatomic, retain) AGSWebMap                 *webmap;
+@property (nonatomic, strong) AGSWebMap                 *webmap;
 @property (nonatomic, readonly) BOOL                    webmapLoaded;
-@property (nonatomic, retain) UIImage                   *icon;
-@property (nonatomic, retain) AGSEnvelope               *defaultEnvelope;
+@property (nonatomic, strong) UIImage                   *icon;
+@property (nonatomic, strong) AGSEnvelope               *defaultEnvelope;
 
 @property (nonatomic, copy) NSString                    *name;
 @property (nonatomic, copy) NSString                    *locatorUrlString;
 @property (nonatomic, copy) NSString                    *basemapGalleryGroupQuery;
 @property (nonatomic, copy) NSString                    *portalName;
 
-@property (nonatomic, assign) id<OrganizationDelegate>  delegate;
+@property (nonatomic, unsafe_unretained) id<OrganizationDelegate>  delegate;
 
 -(void)retrieveOrganizationWebmap;
 -(NSURL *)routeUrl;

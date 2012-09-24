@@ -12,8 +12,8 @@
 
 @interface StopSignView () 
 
-@property (nonatomic, retain) UILabel  *nameLabel;
-@property (nonatomic, retain) UIImageView *imageView;
+@property (nonatomic, strong) UILabel  *nameLabel;
+@property (nonatomic, strong) UIImageView *imageView;
 
 -(void)locationUpdatedAddress:(NSNotification *)n;
 
@@ -31,10 +31,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kLocationUpdatedAddress object:self.location];
     self.location   = nil;
     
-    self.nameLabel  = nil;
-    self.imageView  = nil;
     
-    [super dealloc];
 }
 
 -(id)initWithFrame:(CGRect)frame withLocation:(Location *)location
@@ -47,7 +44,7 @@
     
     if(self)
     {
-        _location = [location retain];
+        _location = location;
         
         [[NSNotificationCenter defaultCenter] addObserver:self 
                                                  selector:@selector(locationUpdatedAddress:) 
@@ -74,11 +71,9 @@
         label.font = [UIFont fontWithName:@"Arial-BoldMT" size:12.0]; 
         label.textAlignment = UITextAlignmentCenter;
         self.nameLabel = label;
-        [label release];
         
         UIImageView *iv = [[UIImageView alloc] initWithFrame:imageRect];;
         self.imageView = iv;
-        [iv release];
     }
     
     return self;
@@ -99,10 +94,9 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self 
                                                     name:kLocationUpdatedAddress 
                                                   object:self.location];
-	[_location release];
     
     //retain new location and add an observer onto address update
-	_location = [location retain];
+	_location = location;
     
     //if not set to nil, add new observer and redraw
     if (location) {

@@ -13,7 +13,7 @@
 //returns a normalized version of the symbol. Normalized meaning the offset is changed to (0,0)
 -(AGSSymbol *)normalize
 {
-    return [[self copy] autorelease];
+    return [self copy];
 }
 
 
@@ -28,7 +28,7 @@
     ms.xoffset = 0;
     ms.yoffset = 0;
     
-    return [ms autorelease];
+    return ms;
 }
 
 
@@ -57,7 +57,7 @@
         ms.yoffset -= yDelta;
     }
     
-    return [cs autorelease];
+    return cs;
 }
 
 @end

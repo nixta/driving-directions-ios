@@ -57,14 +57,14 @@
     UIButton                        *_disclosureButton;
     UISwitch                        *_aSwitch;
     NSInteger                       _section;
-    id<SectionHeaderViewDelegate>   _delegate;
+    id<SectionHeaderViewDelegate>   __unsafe_unretained _delegate;
 }
 
-@property (nonatomic, retain) UILabel                           *titleLabel;
-@property (nonatomic, retain) UIButton                          *disclosureButton;
-@property (nonatomic, retain) UISwitch                          *aSwitch;
+@property (nonatomic, strong) UILabel                           *titleLabel;
+@property (nonatomic, strong) UIButton                          *disclosureButton;
+@property (nonatomic, strong) UISwitch                          *aSwitch;
 @property (nonatomic, assign) NSInteger                         section;
-@property (nonatomic, assign) id <SectionHeaderViewDelegate>    delegate;
+@property (nonatomic, unsafe_unretained) id <SectionHeaderViewDelegate>    delegate;
 
 -(id)initWithFrame:(CGRect)frame title:(NSString*)title section:(NSInteger)sectionNumber delegate:(id <SectionHeaderViewDelegate>)aDelegate;
 -(void)toggleOpenWithUserAction:(BOOL)userAction;

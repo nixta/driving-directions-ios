@@ -23,14 +23,6 @@
 @synthesize appSettings = _appSettings;
 @synthesize chooserVC = _chooserVC;
 
--(void)dealloc
-{
-    self.tableView = nil;
-    self.appSettings = nil;
-    self.chooserVC = nil;
-    
-    [super dealloc];
-}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -107,7 +99,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
     
     //Needs to be redone! Just a skeleton
@@ -136,7 +128,6 @@
         
         OrganizationChooserViewController *ocvc = [[OrganizationChooserViewController alloc] initWithOrganizations:mad.testOrganizations];
         self.chooserVC = ocvc;
-        [ocvc release];
         
         self.chooserVC.selectedIndex = currentOrgIndex;
         self.chooserVC.delegate = self;

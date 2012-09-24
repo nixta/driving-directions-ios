@@ -24,14 +24,14 @@
     
     NSArray                         *_organizations;
     NSUInteger                      _selectedIndex;
-    id<OrganizationChooserDelegate> _delegate;
+    id<OrganizationChooserDelegate> __unsafe_unretained _delegate;
 }
 
-@property (nonatomic, retain) IBOutlet UITableView              *tableView;
-@property (nonatomic, retain) IBOutlet UIButton                 *finishButton;
+@property (nonatomic, strong) IBOutlet UITableView              *tableView;
+@property (nonatomic, strong) IBOutlet UIButton                 *finishButton;
 @property (nonatomic, assign) NSUInteger                        selectedIndex;
 
-@property (nonatomic, assign) id<OrganizationChooserDelegate>   delegate;
+@property (nonatomic, unsafe_unretained) id<OrganizationChooserDelegate>   delegate;
 
 -(id)initWithOrganizations:(NSArray *)organizations;
 -(IBAction)finishButtonPressed:(id)sender;

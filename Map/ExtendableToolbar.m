@@ -10,8 +10,8 @@
 
 @interface ExtendableToolbar () 
 
-@property (nonatomic, retain) UIView        *contentView;
-@property (nonatomic, retain) UIToolbar     *toolbar;
+@property (nonatomic, strong) UIView        *contentView;
+@property (nonatomic, strong) UIToolbar     *toolbar;
 
 @end
 
@@ -28,15 +28,6 @@
 
 @synthesize contentView = _contentView;
 
--(void)dealloc
-{
-    self.toolbar                = nil;
-    self.toolsView              = nil;
-    self.contentView            = nil;
-    self.selectedButtonArrow    = nil;
-    
-    [super dealloc];
-}
 
 //The advanced toolbar allows a user to show extended tools from a bar button.  There are two options for the toolbar
 //that can be configured at initialization. One is that the extended tools show below the toolbar and the toolbar
@@ -56,12 +47,10 @@
         UIView *aToolView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, kSizeOfToolbar)];
         aToolView.backgroundColor = [UIColor clearColor];
         self.toolsView = aToolView;
-        [aToolView release];
         
         UIToolbar *tb = [[UIToolbar alloc] initWithFrame:self.toolsView.frame];
         tb.barStyle = UIBarStyleBlackOpaque;
         self.toolbar = tb;
-        [tb release];
         
         [self.toolsView addSubview:self.toolbar];
         
@@ -71,7 +60,6 @@
         cv.backgroundColor = [UIColor clearColor];
         
         self.contentView = cv;
-        [cv release];
         
         CGFloat yOrigin = _showToolsBelow ? (kSizeOfToolbar-kSizeOfArrow-1) : (kSizeOfToolbar-kSizeOfArrow);
         
@@ -80,7 +68,6 @@
         iv.image = _showToolsBelow ? [UIImage imageNamed:@"selected.png"] : [UIImage imageNamed:@"upselected.png"];
         
         self.selectedButtonArrow = iv;
-        [iv release];
     }
     return self;
 }
@@ -183,8 +170,7 @@
 		[_supplementalToolsView removeFromSuperview];
 	}
 	
-	[_supplementalToolsView autorelease];
-	_supplementalToolsView = [supplementalToolsView retain];
+	_supplementalToolsView = supplementalToolsView;
 	
 	_supplementalToolsView.alpha = 1;
     

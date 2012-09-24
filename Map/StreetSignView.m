@@ -22,12 +22,6 @@
 
 @synthesize direction = _direction;
 
--(void)dealloc
-{
-    self.direction = nil;
-    
-    [super dealloc];
-}
 
 - (id)initWithFrame:(CGRect)frame
 {

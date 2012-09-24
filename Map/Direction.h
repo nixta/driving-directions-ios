@@ -26,17 +26,17 @@
     NSString                *_etaString;
     NSString                *_abbreviatedName;
     
-    id<DirectionDelegate>   _delegate;
+    id<DirectionDelegate>   __unsafe_unretained _delegate;
 }
 
-@property (nonatomic, retain) AGSGeometry               *geometry;
+@property (nonatomic, strong) AGSGeometry               *geometry;
 @property (nonatomic, copy)   NSString                  *name;
-@property (nonatomic, retain) UIImage                   *icon;
-@property (nonatomic, retain) UIImage                   *mapImage;
+@property (nonatomic, strong) UIImage                   *icon;
+@property (nonatomic, strong) UIImage                   *mapImage;
 @property (nonatomic, copy) NSString                    *distanceString;
 @property (nonatomic, copy) NSString                    *etaString;
 @property (nonatomic, copy) NSString                    *abbreviatedName;
-@property (nonatomic, assign) id<DirectionDelegate>     delegate;
+@property (nonatomic, unsafe_unretained) id<DirectionDelegate>     delegate;
 
 -(id)initWithDirectionGraphic:(AGSDirectionGraphic *)directionGraphic;
 -(void)retrieveMapImageOfSize:(CGSize)size;

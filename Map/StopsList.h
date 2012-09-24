@@ -26,11 +26,11 @@
     NSMutableArray      *_displacedStops;
     CurrentLocation     *_currentLocation;
     
-    id<StopsDelegate>   _delegate;
+    id<StopsDelegate>   __unsafe_unretained _delegate;
 }
 
-@property (nonatomic, retain) NSMutableArray    *displacedStops;
-@property (nonatomic, assign) id<StopsDelegate> delegate;
+@property (nonatomic, strong) NSMutableArray    *displacedStops;
+@property (nonatomic, unsafe_unretained) id<StopsDelegate> delegate;
 
 -(void)addStop:(Location *)location;
 -(void)insertStop:(Location *)stop atIndex:(NSUInteger)index;

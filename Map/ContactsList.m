@@ -19,8 +19,8 @@
 
 @interface ContactsList () 
 
-@property (nonatomic, retain, readwrite) NSArray            *sectionTitles;
-@property (nonatomic, retain, readwrite) NSMutableArray     *sections;
+@property (nonatomic, strong, readwrite) NSArray            *sectionTitles;
+@property (nonatomic, strong, readwrite) NSMutableArray     *sections;
 
 -(NSString *)sectionTitleForRecord:(ABRecordRef)record;
 
@@ -31,13 +31,6 @@
 @synthesize sectionTitles = _sectionTitles;
 @synthesize sections = _sections;
 
--(void)dealloc
-{
-    self.sectionTitles = nil;
-    self.sections = nil;
-    
-    [super dealloc];
-}
 
 -(id)initWithName:(NSString *)name withItems:(NSMutableArray *)items
 {
@@ -88,12 +81,12 @@
 
 -(NSString *)sectionTitleForRecord:(ABRecordRef)record
 {
-    NSString *firstName = [(NSString *)ABRecordCopyValue(record, kABPersonFirstNameProperty) autorelease];
+    NSString *firstName = (NSString *)CFBridgingRelease(ABRecordCopyValue(record, kABPersonFirstNameProperty));
     if (!firstName) {
         firstName = @"";
     }
     
-    NSString *lastName = [(NSString *)ABRecordCopyValue(record, kABPersonLastNameProperty) autorelease];
+    NSString *lastName = (NSString *)CFBridgingRelease(ABRecordCopyValue(record, kABPersonLastNameProperty));
     if(!lastName)
     {
         lastName = @"";
