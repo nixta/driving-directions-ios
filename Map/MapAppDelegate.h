@@ -31,4 +31,6 @@
 @property (nonatomic, strong) UIAlertView     *networkAlertView;
 @property (nonatomic, strong) NSArray         *testOrganizations;
 
+- (AGSPoint*)convertCoordinatesToPoint:(CLLocationCoordinate2D)coordinates;
+
 @end

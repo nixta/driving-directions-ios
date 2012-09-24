@@ -80,12 +80,23 @@
             //            [self.mapViewController routeFromPlace:startPlace toPlace:endPlace];
         }
         
-        [self.routeDelegate appleMapsCalled:startPoint withEnd:endPoint];
+        //[self.routeDelegate appleMapsCalled:startPoint withEnd:endPoint];
         
         return YES;
     }
     
     return NO;
+}
+
+- (AGSPoint*)convertCoordinatesToPoint:(CLLocationCoordinate2D)coordinates
+{
+    AGSSpatialReference *wgsReference = [[AGSSpatialReference alloc] initWithWKID:4326];
+    AGSSpatialReference *webMercatorSpatialReference = [[AGSSpatialReference alloc] initWithWKID:102100];
+    AGSPoint *point = [[AGSPoint alloc] initWithX:coordinates.longitude y:coordinates.latitude spatialReference:wgsReference];
+    AGSGeometryEngine *engine = [[AGSGeometryEngine alloc] init];
+    AGSPoint *webMercatorPoint = (AGSPoint*)[engine projectGeometry:point toSpatialReference:webMercatorSpatialReference];
+    
+    return webMercatorPoint;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
