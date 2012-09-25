@@ -33,6 +33,8 @@
 
 @property (nonatomic, unsafe_unretained) id<OrganizationChooserDelegate>   delegate;
 
+@property (nonatomic,strong) NSTimer *timer;
+
 -(id)initWithOrganizations:(NSArray *)organizations;
 -(IBAction)finishButtonPressed:(id)sender;
 

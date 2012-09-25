@@ -60,13 +60,8 @@
 {
     if(_webmap == nil)
     {
-        AGSCredential *credential = [[AGSCredential alloc] initWithUser:@"mobileios" password:@"bazinga"];
-        //AGSCredential *credential = [[[AGSCredential alloc] initWithUser:@"mobile_org" password:@"dev.team"] autorelease];
-        //AGSCredential *credential = nil;
-        credential.authType = AGSAuthenticationTypeToken;
-        //credential.tokenUrl = [NSURL URLWithString:@"https://www.arcgis.com/sharing/generateToken"];
-        
-        self.webmap = [AGSWebMap webMapWithItemId:kDefaultWebMapId credential:credential];
+        // public webmap
+        self.webmap = [AGSWebMap webMapWithItemId:kDefaultWebMapId credential:nil];
         self.webmap.delegate = self;
     }
     else if(self.webmapLoaded)
@@ -97,6 +92,7 @@
 -(NSURL *)routeUrl
 {    
     //US Route Server
+    // looking for the world routing service
     return [NSURL URLWithString:@"http://tasks.arcgisonline.com/ArcGIS/rest/services/NetworkAnalysis/ESRI_Route_NA/NAServer/Route"];
 }
 

@@ -109,8 +109,8 @@
                                                    locatorURL:url];
     return esriLocation;
 #else
-    return [[[CurrentLocation alloc] initWithIcon:[UIImage imageNamed:@"AddressPin.png"] 
-                                       locatorURL:url] autorelease];
+    return [[CurrentLocation alloc] initWithIcon:[UIImage imageNamed:@"AddressPin.png"] 
+                                       locatorURL:url];
 #endif
 }
 

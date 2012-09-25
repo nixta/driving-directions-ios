@@ -735,6 +735,9 @@
 		882A01F1160BD23D00027BE2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 882A01EA160BCE3100027BE2 /* Default-568h@2x.png */; };
 		882A01F2160BD32B00027BE2 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A01EF160BD16A00027BE2 /* libstdc++.dylib */; };
 		882A01F51610D6AA00027BE2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A01F41610D6AA00027BE2 /* MapKit.framework */; };
+		88CFA5AD16123DAF0084EB93 /* PlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5A716123DAF0084EB93 /* PlayController.m */; };
+		88CFA5AE16123DAF0084EB93 /* PlayInternetSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5A916123DAF0084EB93 /* PlayInternetSound.m */; };
+		88CFA5AF16123DAF0084EB93 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5AC16123DAF0084EB93 /* SoundManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1120,6 +1123,13 @@
 		882A01EF160BD16A00027BE2 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		882A01F31610BD8400027BE2 /* NSDictionary+AGSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+AGSAdditions.h"; path = "../../ArcGIS_iOS_3/Headers/NSDictionary+AGSAdditions.h"; sourceTree = "<group>"; };
 		882A01F41610D6AA00027BE2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		88CFA5A616123DAF0084EB93 /* PlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayController.h; sourceTree = "<group>"; };
+		88CFA5A716123DAF0084EB93 /* PlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayController.m; sourceTree = "<group>"; };
+		88CFA5A816123DAF0084EB93 /* PlayInternetSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayInternetSound.h; sourceTree = "<group>"; };
+		88CFA5A916123DAF0084EB93 /* PlayInternetSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayInternetSound.m; sourceTree = "<group>"; };
+		88CFA5AA16123DAF0084EB93 /* SoundDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundDelegate.h; sourceTree = "<group>"; };
+		88CFA5AB16123DAF0084EB93 /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		88CFA5AC16123DAF0084EB93 /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1334,6 +1344,7 @@
 		78342C99140D9CB400B0F354 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				88CFA5A516123DAE0084EB93 /* Audio */,
 				882A01F31610BD8400027BE2 /* NSDictionary+AGSAdditions.h */,
 				78342CA8140D9CB500B0F354 /* ArcGIS.bundle */,
 				78342CA2140D9CB400B0F354 /* MapAppDelegate.h */,
@@ -1820,6 +1831,20 @@
 				78F26830142259B800107A7C /* InputAlertViewDelegate.h */,
 			);
 			name = "Bookmark Utilities";
+			sourceTree = "<group>";
+		};
+		88CFA5A516123DAE0084EB93 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				88CFA5A616123DAF0084EB93 /* PlayController.h */,
+				88CFA5A716123DAF0084EB93 /* PlayController.m */,
+				88CFA5A816123DAF0084EB93 /* PlayInternetSound.h */,
+				88CFA5A916123DAF0084EB93 /* PlayInternetSound.m */,
+				88CFA5AA16123DAF0084EB93 /* SoundDelegate.h */,
+				88CFA5AB16123DAF0084EB93 /* SoundManager.h */,
+				88CFA5AC16123DAF0084EB93 /* SoundManager.m */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2497,6 +2522,9 @@
 				78BFC28114A119A5001F1522 /* NSNull+Additions.m in Sources */,
 				78BFC28614A13303001F1522 /* MapViewController+PlanningRouting.m in Sources */,
 				786557F514ABF77E00AB9C8B /* StopSignView.m in Sources */,
+				88CFA5AD16123DAF0084EB93 /* PlayController.m in Sources */,
+				88CFA5AE16123DAF0084EB93 /* PlayInternetSound.m in Sources */,
+				88CFA5AF16123DAF0084EB93 /* SoundManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1071,6 +1071,18 @@
         self.shareWithMapUrl = nil;
     }
     
+    // hide all the layers besides the basemap
+    NSArray *mapLayerViews = [self.mapView.mapLayerViews allKeys];    
+    for (int i=0; i < mapLayerViews.count; i++) {
+        UIView *layer = (UIView *)[mapLayerViews objectAtIndex:i];
+        @try {
+            layer.hidden = YES;
+        }
+        @catch (NSException *exception) {
+            
+        }        
+    }
+    
     self.mapAppSettings.legend = [[Legend alloc] initWithMapLayerInfos:webMap.operationalLayers 
                                                             withMapView:self.mapView];
     [self.mapAppSettings.legend buildLegend];

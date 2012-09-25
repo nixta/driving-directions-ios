@@ -25,6 +25,8 @@
 @synthesize delegate = _delegate;
 @synthesize selectedIndex = _selectedIndex;
 
+@synthesize timer = _timer;
+
 
 -(id)initWithOrganizations:(NSArray *)organizations
 {
@@ -61,6 +63,17 @@
     
     //self.view.backgroundColor = [UIColor offWhiteColor];
     //self.tableView.backgroundColor = [UIColor offWhiteColor];
+    
+    
+    // bypass the login screen for now
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self
+                                                selector:@selector(requestTimerReady) userInfo:nil repeats:NO];
+    
+    
+}
+
+- (void)requestTimerReady {
+    [self.delegate organizationChooser:self didChooseOrganization:[self.organizations objectAtIndex:0]];
 }
 
 - (void)viewDidUnload
