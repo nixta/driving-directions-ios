@@ -4,39 +4,36 @@ r1
 cCheck dependencies
 cProcessInfoPlistFile /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/Info.plist "Map copy-Info.plist"
 cProcessPCH /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-fdvrqhnlrsfxjbbybawrotpgqopz/Map-Prefix.pch.pth Map/Map-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/SectionInfo.o /Users/albe5259/Projects/navigator/Map/SectionInfo.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/UIColor+Additions.o /Users/albe5259/Projects/navigator/Map/UIColor+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/Direction.o /Users/albe5259/Projects/navigator/Map/Direction.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/DrawableList.o /Users/albe5259/Projects/navigator/Map/DrawableList.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ContentItem.o /Users/albe5259/Projects/navigator/Map/ContentItem.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/UIToolbar+MapAdditions.o /Users/albe5259/Projects/navigator/Map/UIToolbar+MapAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/LocationGraphic.o /Users/albe5259/Projects/navigator/Map/LocationGraphic.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/MapViewController+MapTapping.o /Users/albe5259/Projects/navigator/Map/MapViewController+MapTapping.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/main.o /Users/albe5259/Projects/navigator/Map/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/MapAppDelegate.o /Users/albe5259/Projects/navigator/Map/MapAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/BookmarksViewController.o /Users/albe5259/Projects/navigator/Map/BookmarksViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/BookmarksViewController-Iphone.o /Users/albe5259/Projects/navigator/Map/BookmarksViewController-Iphone.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/GeocodeService.o /Users/albe5259/Projects/navigator/Map/GeocodeService.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/MapViewController.o /Users/albe5259/Projects/navigator/Map/MapViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ContactsManager.o /Users/albe5259/Projects/navigator/Map/ContactsManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/UIToolbar+MapAdditions.o /Users/albe5259/Projects/navigator/Map/UIToolbar+MapAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/MapContentViewController.o /Users/albe5259/Projects/navigator/Map/MapContentViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/UIColor+Additions.o /Users/albe5259/Projects/navigator/Map/UIColor+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/BookmarksViewController-Iphone.o /Users/albe5259/Projects/navigator/Map/BookmarksViewController-Iphone.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/BookmarksViewController.o /Users/albe5259/Projects/navigator/Map/BookmarksViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISMobileConfig.o /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ContactsManager.o /Users/albe5259/Projects/navigator/Map/ContactsManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/GeocodeService.o /Users/albe5259/Projects/navigator/Map/GeocodeService.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/Location.o /Users/albe5259/Projects/navigator/Map/Location.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/Organization.o /Users/albe5259/Projects/navigator/Map/Organization.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/BasemapsViewController.o /Users/albe5259/Projects/navigator/Map/BasemapsViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/BasemapsTableViewCell.o /Users/albe5259/Projects/navigator/Map/BasemapsTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/SectionHeaderView.o /Users/albe5259/Projects/navigator/Map/SectionHeaderView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/SectionInfo.o /Users/albe5259/Projects/navigator/Map/SectionInfo.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISOnlineConnection.o /Users/albe5259/Projects/navigator/Map/ArcGISOnlineConnection.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/Basemaps.o /Users/albe5259/Projects/navigator/Map/Basemaps.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/NSDictionary+Additions.o /Users/albe5259/Projects/navigator/Map/NSDictionary+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISOnlineServices.o /Users/albe5259/Projects/navigator/Map/ArcGISOnlineServices.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/Basemaps.o /Users/albe5259/Projects/navigator/Map/Basemaps.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/NSString+html.o /Users/albe5259/Projects/navigator/Map/NSString+html.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/NSDictionary+Additions.o /Users/albe5259/Projects/navigator/Map/NSDictionary+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ContentItem.o /Users/albe5259/Projects/navigator/Map/ContentItem.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/KeychainWrapper.o /Users/albe5259/Projects/navigator/Map/KeychainWrapper.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISAppDelegate.o /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/AppSettings.o /Users/albe5259/Projects/navigator/Map/AppSettings.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/SplashImageVC.o /Users/albe5259/Projects/navigator/Map/SplashImageVC.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISAppDelegate.o /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/MapAppSettings.o /Users/albe5259/Projects/navigator/Map/MapAppSettings.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/KeychainWrapper.o /Users/albe5259/Projects/navigator/Map/KeychainWrapper.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/AGSGeometry+AppAdditions.o /Users/albe5259/Projects/navigator/Map/AGSGeometry+AppAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/MapViewController+MapTapping.o /Users/albe5259/Projects/navigator/Map/MapViewController+MapTapping.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/InputAlertView.o /Users/albe5259/Projects/navigator/Map/InputAlertView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/SettingsViewController.o /Users/albe5259/Projects/navigator/Map/SettingsViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/LocationBookmark.o /Users/albe5259/Projects/navigator/Map/LocationBookmark.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -45,95 +42,98 @@ cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-norm
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/AGSWebMap+Additions.o /Users/albe5259/Projects/navigator/Map/../Map/AGSWebMap+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/IconDownloader.o /Users/albe5259/Projects/navigator/Map/IconDownloader.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/CurrentLocation.o /Users/albe5259/Projects/navigator/Map/CurrentLocation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/Direction.o /Users/albe5259/Projects/navigator/Map/Direction.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/DirectionsList.o /Users/albe5259/Projects/navigator/Map/DirectionsList.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/DrawableList.o /Users/albe5259/Projects/navigator/Map/DrawableList.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/DrawableCollection.o /Users/albe5259/Projects/navigator/Map/DrawableCollection.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/Bookmarks.o /Users/albe5259/Projects/navigator/Map/Bookmarks.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/NSString+NSString_Additions.o /Users/albe5259/Projects/navigator/Map/NSString+NSString_Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ContactsManager+ContactsManager_DrawableList.o /Users/albe5259/Projects/navigator/Map/ContactsManager+ContactsManager_DrawableList.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/Bookmarks.o /Users/albe5259/Projects/navigator/Map/Bookmarks.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/LocationGraphic.o /Users/albe5259/Projects/navigator/Map/LocationGraphic.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/NSString+NSString_Additions.o /Users/albe5259/Projects/navigator/Map/NSString+NSString_Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ContactLocationBookmark.o /Users/albe5259/Projects/navigator/Map/ContactLocationBookmark.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/MapViewController+Search.o /Users/albe5259/Projects/navigator/Map/MapViewController+Search.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/UIImage+AppAdditions.o /Users/albe5259/Projects/navigator/Map/UIImage+AppAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/DirectionsPrintRenderer.o /Users/albe5259/Projects/navigator/Map/DirectionsPrintRenderer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/OverviewDirection.o /Users/albe5259/Projects/navigator/Map/OverviewDirection.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ContactsList.o /Users/albe5259/Projects/navigator/Map/ContactsList.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/RecentSearches.o /Users/albe5259/Projects/navigator/Map/RecentSearches.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ContactsList.o /Users/albe5259/Projects/navigator/Map/ContactsList.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/MapShareUtility.o /Users/albe5259/Projects/navigator/Map/MapShareUtility.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/AGSDynamicMapServiceLayer+LayerVisibilityAdditions.o /Users/albe5259/Projects/navigator/Map/AGSDynamicMapServiceLayer+LayerVisibilityAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/Legend.o /Users/albe5259/Projects/navigator/Map/Legend.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/MapLayerInfo+AppAdditions.o /Users/albe5259/Projects/navigator/Map/MapLayerInfo+AppAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/AGSDynamicMapServiceLayer+LayerVisibilityAdditions.o /Users/albe5259/Projects/navigator/Map/AGSDynamicMapServiceLayer+LayerVisibilityAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/OrganizationChooserViewController.o /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/StreetSignView.o /Users/albe5259/Projects/navigator/Map/StreetSignView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/RouteSolverSettings.o /Users/albe5259/Projects/navigator/Map/RouteSolverSettings.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/BlankSignView.o /Users/albe5259/Projects/navigator/Map/BlankSignView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/SignsView.o /Users/albe5259/Projects/navigator/Map/SignsView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/SignTableView.o /Users/albe5259/Projects/navigator/Map/SignTableView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/LocationCalloutView.o /Users/albe5259/Projects/navigator/Map/LocationCalloutView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/SignsView.o /Users/albe5259/Projects/navigator/Map/SignsView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/Route.o /Users/albe5259/Projects/navigator/Map/Route.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/SignTableViewCell.o /Users/albe5259/Projects/navigator/Map/SignTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/LocationCalloutView.o /Users/albe5259/Projects/navigator/Map/LocationCalloutView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/RouteSolver.o /Users/albe5259/Projects/navigator/Map/RouteSolver.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/DrawableResultsTableView.o /Users/albe5259/Projects/navigator/Map/DrawableResultsTableView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/SignTableViewCell.o /Users/albe5259/Projects/navigator/Map/SignTableViewCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ExtendableToolbar.o /Users/albe5259/Projects/navigator/Map/ExtendableToolbar.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/DrawableResultsTableView.o /Users/albe5259/Projects/navigator/Map/DrawableResultsTableView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/UIBarButtonItem+AppAdditions.o /Users/albe5259/Projects/navigator/Map/UIBarButtonItem+AppAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ToggleSegmentedControl.o /Users/albe5259/Projects/navigator/Map/ToggleSegmentedControl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/PassThroughView.o /Users/albe5259/Projects/navigator/Map/PassThroughView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/AGSSymbol+AppAdditions.o /Users/albe5259/Projects/navigator/Map/AGSSymbol+AppAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/StopsList.o /Users/albe5259/Projects/navigator/Map/StopsList.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/StopSignView.o /Users/albe5259/Projects/navigator/Map/StopSignView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/NSNull+Additions.o /Users/albe5259/Projects/navigator/Map/NSNull+Additions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/StopsList.o /Users/albe5259/Projects/navigator/Map/StopsList.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/MapViewController+PlanningRouting.o /Users/albe5259/Projects/navigator/Map/MapViewController+PlanningRouting.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/StopSignView.o /Users/albe5259/Projects/navigator/Map/StopSignView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/Navigator normal i386
 cGenerateDSYMFile /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app.dSYM /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/Navigator
 cCopyStringsFile /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/en.lproj/InfoPlist.strings Map/en.lproj/InfoPlist.strings
 cCompileXIB /Users/albe5259/Projects/navigator/Map/en.lproj/MainWindow.xib
+cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapContentViewController.xib
 cCpResource Map/ArcGIS.bundle build/Debug-iphonesimulator/Navigator.app/ArcGIS.bundle
 cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib
-cCpResource Map/Resources/Images/ChangeBasemap.png build/Debug-iphonesimulator/Navigator.app/ChangeBasemap.png
-cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/DrawableContainerViewController.xib
-cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapContentViewController.xib
 cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapLegendViewController.xib
+cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/DrawableContainerViewController.xib
+cCpResource Map/Resources/Images/ChangeBasemap.png build/Debug-iphonesimulator/Navigator.app/ChangeBasemap.png
 cCpResource Map/Resources/Images/ChangeBasemap@2x.png build/Debug-iphonesimulator/Navigator.app/ChangeBasemap@2x.png
-cCpResource Map/Resources/Images/CurrentLocation.png build/Debug-iphonesimulator/Navigator.app/CurrentLocation.png
-cCpResource Map/Resources/Images/ContentControllerMap@2x.png build/Debug-iphonesimulator/Navigator.app/ContentControllerMap@2x.png
-cCpResource Map/Resources/Images/CurrentLocation@2x.png build/Debug-iphonesimulator/Navigator.app/CurrentLocation@2x.png
 cCpResource Map/Resources/Images/ContentControllerMap.png build/Debug-iphonesimulator/Navigator.app/ContentControllerMap.png
+cCpResource Map/Resources/Images/ContentControllerMap@2x.png build/Debug-iphonesimulator/Navigator.app/ContentControllerMap@2x.png
 cCpResource Map/Resources/Images/CurrentLocationEnabled.png build/Debug-iphonesimulator/Navigator.app/CurrentLocationEnabled.png
+cCpResource Map/Resources/Images/CurrentLocation.png build/Debug-iphonesimulator/Navigator.app/CurrentLocation.png
+cCpResource Map/Resources/Images/CurrentLocation@2x.png build/Debug-iphonesimulator/Navigator.app/CurrentLocation@2x.png
 cCpResource Map/Resources/Images/CurrentLocationEnabled@2x.png build/Debug-iphonesimulator/Navigator.app/CurrentLocationEnabled@2x.png
+cCpResource Map/Resources/Images/CurrentLocationSelected.png build/Debug-iphonesimulator/Navigator.app/CurrentLocationSelected.png
 cCpResource Map/Resources/Images/CurrentLocationSelected@2x.png build/Debug-iphonesimulator/Navigator.app/CurrentLocationSelected@2x.png
 cCpResource Map/Resources/Images/MagnifyingGlass.png build/Debug-iphonesimulator/Navigator.app/MagnifyingGlass.png
-cCpResource Map/Resources/Images/Map.png build/Debug-iphonesimulator/Navigator.app/Map.png
-cCpResource Map/Resources/Images/Map@2x.png build/Debug-iphonesimulator/Navigator.app/Map@2x.png
-cCpResource Map/Resources/Images/CurrentLocationSelected.png build/Debug-iphonesimulator/Navigator.app/CurrentLocationSelected.png
-cCpResource Map/Resources/Images/settings.png build/Debug-iphonesimulator/Navigator.app/settings.png
 cCpResource Map/Resources/Images/MagnifyingGlass@2x.png build/Debug-iphonesimulator/Navigator.app/MagnifyingGlass@2x.png
-cCpResource Map/Resources/Images/settings@2x.png build/Debug-iphonesimulator/Navigator.app/settings@2x.png
+cCpResource Map/Resources/Images/Map@2x.png build/Debug-iphonesimulator/Navigator.app/Map@2x.png
+cCpResource Map/Resources/Images/Map.png build/Debug-iphonesimulator/Navigator.app/Map.png
+cCpResource Map/Resources/Images/settings.png build/Debug-iphonesimulator/Navigator.app/settings.png
 cCpResource Map/Resources/Images/Toolbar.png build/Debug-iphonesimulator/Navigator.app/Toolbar.png
+cCpResource Map/Resources/Images/settings@2x.png build/Debug-iphonesimulator/Navigator.app/settings@2x.png
 cCpResource Map/Resources/Images/Toolbar@2x.png build/Debug-iphonesimulator/Navigator.app/Toolbar@2x.png
-cCpResource Map/Resources/Images/Info.png build/Debug-iphonesimulator/Navigator.app/Info.png
 cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/BookmarksViewController.xib
+cCpResource Map/Resources/Images/Info.png build/Debug-iphonesimulator/Navigator.app/Info.png
 cCpResource Map/Resources/Images/Info@2x.png build/Debug-iphonesimulator/Navigator.app/Info@2x.png
-cCpResource Map/Resources/Images/SampleMapThumb.png build/Debug-iphonesimulator/Navigator.app/SampleMapThumb.png
 cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/BasemapsViewController.xib
+cCpResource Map/Resources/Images/basemaps_mask.png build/Debug-iphonesimulator/Navigator.app/basemaps_mask.png
+cCpResource Map/Resources/Images/SampleMapThumb.png build/Debug-iphonesimulator/Navigator.app/SampleMapThumb.png
 cCpResource Map/Resources/Images/Default.png build/Debug-iphonesimulator/Navigator.app/Default.png
 cCpResource Map/Resources/Images/Default@2x.png build/Debug-iphonesimulator/Navigator.app/Default@2x.png
-cCpResource Map/Resources/Images/bookmarks@2x.png build/Debug-iphonesimulator/Navigator.app/bookmarks@2x.png
-cCpResource Map/Resources/Images/hidepin.png build/Debug-iphonesimulator/Navigator.app/hidepin.png
 cCpResource Map/Resources/Images/bookmarks.png build/Debug-iphonesimulator/Navigator.app/bookmarks.png
+cCpResource Map/Resources/Images/hidepin.png build/Debug-iphonesimulator/Navigator.app/hidepin.png
+cCpResource Map/Resources/Images/bookmarks@2x.png build/Debug-iphonesimulator/Navigator.app/bookmarks@2x.png
 cCpResource Map/Resources/Images/hidepin@2x.png build/Debug-iphonesimulator/Navigator.app/hidepin@2x.png
-cCpResource Map/Resources/Images/basemaps_mask.png build/Debug-iphonesimulator/Navigator.app/basemaps_mask.png
 cCpResource Map/Resources/Images/WhiteChevron.png build/Debug-iphonesimulator/Navigator.app/WhiteChevron.png
 cCpResource Map/Resources/Images/WhiteChevron@2x.png build/Debug-iphonesimulator/Navigator.app/WhiteChevron@2x.png
-cCpResource Map/Resources/Images/PinOvalBlueTableView@2x.png build/Debug-iphonesimulator/Navigator.app/PinOvalBlueTableView@2x.png
-cCpResource Map/Resources/Images/LayerContent.png build/Debug-iphonesimulator/Navigator.app/LayerContent.png
-cCpResource Map/Resources/Images/ActionSheet@2x.png build/Debug-iphonesimulator/Navigator.app/ActionSheet@2x.png
 cCpResource Map/Resources/Images/PinOvalBlueTableView.png build/Debug-iphonesimulator/Navigator.app/PinOvalBlueTableView.png
+cCpResource Map/Resources/Images/PinOvalBlueTableView@2x.png build/Debug-iphonesimulator/Navigator.app/PinOvalBlueTableView@2x.png
 cCpResource Map/Resources/Images/ActionSheet.png build/Debug-iphonesimulator/Navigator.app/ActionSheet.png
-cCpResource Map/Resources/Images/LayerContent@2x.png build/Debug-iphonesimulator/Navigator.app/LayerContent@2x.png
+cCpResource Map/Resources/Images/ActionSheet@2x.png build/Debug-iphonesimulator/Navigator.app/ActionSheet@2x.png
+cCpResource Map/Resources/Images/LayerContent.png build/Debug-iphonesimulator/Navigator.app/LayerContent.png
 cCpResource Map/Resources/Images/Routing.png build/Debug-iphonesimulator/Navigator.app/Routing.png
+cCpResource Map/Resources/Images/LayerContent@2x.png build/Debug-iphonesimulator/Navigator.app/LayerContent@2x.png
 cCpResource Map/Resources/Images/Routing@2x.png build/Debug-iphonesimulator/Navigator.app/Routing@2x.png
 cCpResource Map/Resources/Images/Switch.png build/Debug-iphonesimulator/Navigator.app/Switch.png
+cCpResource Map/Resources/Images/RouteBar.png build/Debug-iphonesimulator/Navigator.app/RouteBar.png
 cCpResource Map/Resources/Images/Switch@2x.png build/Debug-iphonesimulator/Navigator.app/Switch@2x.png
 cCpResource Map/Resources/Images/RouteBar@2x.png build/Debug-iphonesimulator/Navigator.app/RouteBar@2x.png
-cCpResource Map/Resources/Images/RouteBar.png build/Debug-iphonesimulator/Navigator.app/RouteBar.png
 cCpResource Map/Resources/Images/MaxMinLayer-Open.png build/Debug-iphonesimulator/Navigator.app/MaxMinLayer-Open.png
 cCpResource Map/Resources/Images/MaxMinLayer-Open@2x.png build/Debug-iphonesimulator/Navigator.app/MaxMinLayer-Open@2x.png
 cCpResource Map/Resources/Images/MaxMinLayer.png build/Debug-iphonesimulator/Navigator.app/MaxMinLayer.png
@@ -142,80 +142,80 @@ cCpResource Map/Resources/Images/OverlayChevron.png build/Debug-iphonesimulator/
 cCpResource Map/Resources/Images/OverlayChevron@2x.png build/Debug-iphonesimulator/Navigator.app/OverlayChevron@2x.png
 cCpResource Map/Resources/Images/MaxMinLayerTriangle-Open.png build/Debug-iphonesimulator/Navigator.app/MaxMinLayerTriangle-Open.png
 cCpResource Map/Resources/Images/MaxMinLayerTriangle-Open@2x.png build/Debug-iphonesimulator/Navigator.app/MaxMinLayerTriangle-Open@2x.png
-cCpResource Map/Resources/Images/MaxMinLayerTriangle.png build/Debug-iphonesimulator/Navigator.app/MaxMinLayerTriangle.png
-cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/BasemapsTableViewCell.xib
 cCpResource Map/Resources/Images/MaxMinLayerTriangle@2x.png build/Debug-iphonesimulator/Navigator.app/MaxMinLayerTriangle@2x.png
+cCpResource Map/Resources/Images/MaxMinLayerTriangle.png build/Debug-iphonesimulator/Navigator.app/MaxMinLayerTriangle.png
 cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/SettingsViewController.xib
+cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/BasemapsTableViewCell.xib
 cCpResource Map/Resources/Images/GreenPin.png build/Debug-iphonesimulator/Navigator.app/GreenPin.png
 cCpResource Map/Resources/Images/GreenPin@2x.png build/Debug-iphonesimulator/Navigator.app/GreenPin@2x.png
-cCpResource Map/Resources/Images/RedPin@2x.png build/Debug-iphonesimulator/Navigator.app/RedPin@2x.png
-cCpResource Map/Resources/Images/RedPin.png build/Debug-iphonesimulator/Navigator.app/RedPin.png
-cCpResource Map/Resources/Images/Refresh@2x.png build/Debug-iphonesimulator/Navigator.app/Refresh@2x.png
 cCpResource Map/Resources/Images/Refresh.png build/Debug-iphonesimulator/Navigator.app/Refresh.png
-cCpResource Map/Resources/Images/LeftArrow.png build/Debug-iphonesimulator/Navigator.app/LeftArrow.png
+cCpResource Map/Resources/Images/RedPin.png build/Debug-iphonesimulator/Navigator.app/RedPin.png
+cCpResource Map/Resources/Images/RedPin@2x.png build/Debug-iphonesimulator/Navigator.app/RedPin@2x.png
+cCpResource Map/Resources/Images/Refresh@2x.png build/Debug-iphonesimulator/Navigator.app/Refresh@2x.png
 cCpResource Map/Resources/Images/LeftArrow@2x.png build/Debug-iphonesimulator/Navigator.app/LeftArrow@2x.png
+cCpResource Map/Resources/Images/LeftArrow.png build/Debug-iphonesimulator/Navigator.app/LeftArrow.png
 cCpResource Map/Resources/Images/RightArrow.png build/Debug-iphonesimulator/Navigator.app/RightArrow.png
 cCpResource Map/Resources/Images/RightArrow@2x.png build/Debug-iphonesimulator/Navigator.app/RightArrow@2x.png
-cCpResource Map/Resources/Images/PullDownTabA@2x.png build/Debug-iphonesimulator/Navigator.app/PullDownTabA@2x.png
 cCpResource Map/Resources/Images/PullDownTabA.png build/Debug-iphonesimulator/Navigator.app/PullDownTabA.png
+cCpResource Map/Resources/Images/PullDownTabA@2x.png build/Debug-iphonesimulator/Navigator.app/PullDownTabA@2x.png
 cCpResource Map/Resources/Images/ContactPin.png build/Debug-iphonesimulator/Navigator.app/ContactPin.png
 cCpResource Map/Resources/Images/ContactPin@2x.png build/Debug-iphonesimulator/Navigator.app/ContactPin@2x.png
 cCpResource Map/Resources/Images/AddressPin.png build/Debug-iphonesimulator/Navigator.app/AddressPin.png
 cCpResource Map/Resources/Images/AddressPin@2x.png build/Debug-iphonesimulator/Navigator.app/AddressPin@2x.png
 cCpResource Map/Resources/Images/BookmarkPin.png build/Debug-iphonesimulator/Navigator.app/BookmarkPin.png
-cCpResource Map/Resources/Images/PlacePin.png build/Debug-iphonesimulator/Navigator.app/PlacePin.png
 cCpResource Map/Resources/Images/BookmarkPin@2x.png build/Debug-iphonesimulator/Navigator.app/BookmarkPin@2x.png
+cCpResource Map/Resources/Images/PlacePin.png build/Debug-iphonesimulator/Navigator.app/PlacePin.png
 cCpResource Map/Resources/Images/PlacePin@2x.png build/Debug-iphonesimulator/Navigator.app/PlacePin@2x.png
 cCompileXIB /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.xib
 cCpResource Map/Resources/TestImages/SF_Icon.png build/Debug-iphonesimulator/Navigator.app/SF_Icon.png
 cCpResource Map/Resources/TestImages/SF_Icon@2x.png build/Debug-iphonesimulator/Navigator.app/SF_Icon@2x.png
 cCpResource Map/Resources/TestImages/wells_icon.png build/Debug-iphonesimulator/Navigator.app/wells_icon.png
 cCpResource Map/Resources/TestImages/wells_icon@2x.png build/Debug-iphonesimulator/Navigator.app/wells_icon@2x.png
+cCpResource Map/Resources/TestImages/Default_icon.png build/Debug-iphonesimulator/Navigator.app/Default_icon.png
 cCpResource Map/Resources/TestImages/Default_icon@2x.png build/Debug-iphonesimulator/Navigator.app/Default_icon@2x.png
 cCpResource Map/Resources/Images/map_button.png build/Debug-iphonesimulator/Navigator.app/map_button.png
-cCpResource Map/Resources/TestImages/Default_icon.png build/Debug-iphonesimulator/Navigator.app/Default_icon.png
 cCpResource Map/Resources/Images/map_button@2x.png build/Debug-iphonesimulator/Navigator.app/map_button@2x.png
-cCpResource "Map/Resources/Images/Directions Icons/BearLeft.png" build/Debug-iphonesimulator/Navigator.app/BearLeft.png
 cCpResource "Map/Resources/Images/Directions Icons/BearLeft@2x.png" build/Debug-iphonesimulator/Navigator.app/BearLeft@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/BearRight.png" build/Debug-iphonesimulator/Navigator.app/BearRight.png
+cCpResource "Map/Resources/Images/Directions Icons/BearLeft.png" build/Debug-iphonesimulator/Navigator.app/BearLeft.png
 cCpResource "Map/Resources/Images/Directions Icons/BearRight@2x.png" build/Debug-iphonesimulator/Navigator.app/BearRight@2x.png
-cCpResource "Map/Resources/Images/Directions Icons/GetOffFerry@2x.png" build/Debug-iphonesimulator/Navigator.app/GetOffFerry@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/GetOffFerry.png" build/Debug-iphonesimulator/Navigator.app/GetOffFerry.png
+cCpResource "Map/Resources/Images/Directions Icons/GetOffFerry@2x.png" build/Debug-iphonesimulator/Navigator.app/GetOffFerry@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/GetOnRoundabout.png" build/Debug-iphonesimulator/Navigator.app/GetOnRoundabout.png
-cCpResource "Map/Resources/Images/Directions Icons/GetOnRoundabout@2x.png" build/Debug-iphonesimulator/Navigator.app/GetOnRoundabout@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/HighwayChange.png" build/Debug-iphonesimulator/Navigator.app/HighwayChange.png
-cCpResource "Map/Resources/Images/Directions Icons/HighwayChange@2x.png" build/Debug-iphonesimulator/Navigator.app/HighwayChange@2x.png
+cCpResource "Map/Resources/Images/Directions Icons/GetOnRoundabout@2x.png" build/Debug-iphonesimulator/Navigator.app/GetOnRoundabout@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/MergeOntoHighway.png" build/Debug-iphonesimulator/Navigator.app/MergeOntoHighway.png
 cCpResource "Map/Resources/Images/Directions Icons/MergeOntoHighway@2x.png" build/Debug-iphonesimulator/Navigator.app/MergeOntoHighway@2x.png
+cCpResource "Map/Resources/Images/Directions Icons/HighwayChange@2x.png" build/Debug-iphonesimulator/Navigator.app/HighwayChange@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/StraightArrow.png" build/Debug-iphonesimulator/Navigator.app/StraightArrow.png
 cCpResource "Map/Resources/Images/Directions Icons/StraightArrow@2x.png" build/Debug-iphonesimulator/Navigator.app/StraightArrow@2x.png
+cCpResource "Map/Resources/Images/Directions Icons/TakeExit.png" build/Debug-iphonesimulator/Navigator.app/TakeExit.png
 cCpResource "Map/Resources/Images/Directions Icons/TakeCenterFork.png" build/Debug-iphonesimulator/Navigator.app/TakeCenterFork.png
 cCpResource "Map/Resources/Images/Directions Icons/TakeCenterFork@2x.png" build/Debug-iphonesimulator/Navigator.app/TakeCenterFork@2x.png
-cCpResource "Map/Resources/Images/Directions Icons/TakeExit.png" build/Debug-iphonesimulator/Navigator.app/TakeExit.png
 cCpResource "Map/Resources/Images/Directions Icons/TakeExit@2x.png" build/Debug-iphonesimulator/Navigator.app/TakeExit@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/TakeFerry.png" build/Debug-iphonesimulator/Navigator.app/TakeFerry.png
 cCpResource "Map/Resources/Images/Directions Icons/TakeFerry@2x.png" build/Debug-iphonesimulator/Navigator.app/TakeFerry@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/TakeForkLeft.png" build/Debug-iphonesimulator/Navigator.app/TakeForkLeft.png
 cCpResource "Map/Resources/Images/Directions Icons/TakeForkLeft@2x.png" build/Debug-iphonesimulator/Navigator.app/TakeForkLeft@2x.png
-cCpResource "Map/Resources/Images/Directions Icons/TakeForkRight@2x.png" build/Debug-iphonesimulator/Navigator.app/TakeForkRight@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/TakeForkRight.png" build/Debug-iphonesimulator/Navigator.app/TakeForkRight.png
-cCpResource "Map/Resources/Images/Directions Icons/TakeRampLeft.png" build/Debug-iphonesimulator/Navigator.app/TakeRampLeft.png
+cCpResource "Map/Resources/Images/Directions Icons/TakeForkRight@2x.png" build/Debug-iphonesimulator/Navigator.app/TakeForkRight@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/TakeRampLeft@2x.png" build/Debug-iphonesimulator/Navigator.app/TakeRampLeft@2x.png
-cCpResource "Map/Resources/Images/Directions Icons/TakeRampRight.png" build/Debug-iphonesimulator/Navigator.app/TakeRampRight.png
+cCpResource "Map/Resources/Images/Directions Icons/TakeRampLeft.png" build/Debug-iphonesimulator/Navigator.app/TakeRampLeft.png
 cCpResource "Map/Resources/Images/Directions Icons/TakeRampRight@2x.png" build/Debug-iphonesimulator/Navigator.app/TakeRampRight@2x.png
+cCpResource "Map/Resources/Images/Directions Icons/TakeRampRight.png" build/Debug-iphonesimulator/Navigator.app/TakeRampRight.png
+cCpResource "Map/Resources/Images/Directions Icons/TurnLeft.png" build/Debug-iphonesimulator/Navigator.app/TurnLeft.png
 cCpResource "Map/Resources/Images/Directions Icons/TurnLeft@2x.png" build/Debug-iphonesimulator/Navigator.app/TurnLeft@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/TurnRight.png" build/Debug-iphonesimulator/Navigator.app/TurnRight.png
-cCpResource "Map/Resources/Images/Directions Icons/TurnLeft.png" build/Debug-iphonesimulator/Navigator.app/TurnLeft.png
-cCpResource "Map/Resources/Images/Directions Icons/TurnRight@2x.png" build/Debug-iphonesimulator/Navigator.app/TurnRight@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/TurnSharpLeft.png" build/Debug-iphonesimulator/Navigator.app/TurnSharpLeft.png
+cCpResource "Map/Resources/Images/Directions Icons/TurnRight@2x.png" build/Debug-iphonesimulator/Navigator.app/TurnRight@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/TurnSharpLeft@2x.png" build/Debug-iphonesimulator/Navigator.app/TurnSharpLeft@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/TurnSharpRight.png" build/Debug-iphonesimulator/Navigator.app/TurnSharpRight.png
 cCpResource "Map/Resources/Images/Directions Icons/TurnSharpRight@2x.png" build/Debug-iphonesimulator/Navigator.app/TurnSharpRight@2x.png
 cCpResource "Map/Resources/Images/Directions Icons/UTurn.png" build/Debug-iphonesimulator/Navigator.app/UTurn.png
-cCpResource Map/Resources/Images/leftArrowButton.png build/Debug-iphonesimulator/Navigator.app/leftArrowButton.png
 cCpResource "Map/Resources/Images/Directions Icons/UTurn@2x.png" build/Debug-iphonesimulator/Navigator.app/UTurn@2x.png
-cCpResource Map/Resources/Images/rightArrowButton.png build/Debug-iphonesimulator/Navigator.app/rightArrowButton.png
+cCpResource Map/Resources/Images/leftArrowButton.png build/Debug-iphonesimulator/Navigator.app/leftArrowButton.png
 cCpResource Map/Resources/Images/leftArrowButton@2x.png build/Debug-iphonesimulator/Navigator.app/leftArrowButton@2x.png
+cCpResource Map/Resources/Images/rightArrowButton.png build/Debug-iphonesimulator/Navigator.app/rightArrowButton.png
 cCpResource Map/Resources/Images/rightArrowButton@2x.png build/Debug-iphonesimulator/Navigator.app/rightArrowButton@2x.png
 cCpResource Map/Resources/Images/list.png build/Debug-iphonesimulator/Navigator.app/list.png
 cCpResource Map/Resources/Images/list@2x.png build/Debug-iphonesimulator/Navigator.app/list@2x.png
@@ -227,9 +227,9 @@ cCpResource Map/Resources/Images/selected.png build/Debug-iphonesimulator/Naviga
 cCpResource Map/Resources/Images/selected@2x.png build/Debug-iphonesimulator/Navigator.app/selected@2x.png
 cCpResource Map/Resources/Images/upselected.png build/Debug-iphonesimulator/Navigator.app/upselected.png
 cCpResource Map/Resources/Images/upselected@2x.png build/Debug-iphonesimulator/Navigator.app/upselected@2x.png
-cCpResource Map/Resources/Images/icon.png build/Debug-iphonesimulator/Navigator.app/icon.png
-cCpResource Map/Resources/Images/GPSDisplayStart@2x.png build/Debug-iphonesimulator/Navigator.app/GPSDisplayStart@2x.png
 cCpResource Map/Resources/Images/GPSDisplayStart.png build/Debug-iphonesimulator/Navigator.app/GPSDisplayStart.png
+cCpResource Map/Resources/Images/GPSDisplayStart@2x.png build/Debug-iphonesimulator/Navigator.app/GPSDisplayStart@2x.png
+cCpResource Map/Resources/Images/icon.png build/Debug-iphonesimulator/Navigator.app/icon.png
 cCpResource Map/Resources/Images/icon@2x.png build/Debug-iphonesimulator/Navigator.app/icon@2x.png
 cCpResource Map/Resources/TestImages/att_logo.png build/Debug-iphonesimulator/Navigator.app/att_logo.png
 cCpResource Map/Resources/TestImages/att_logo@2x.png build/Debug-iphonesimulator/Navigator.app/att_logo@2x.png
@@ -1232,9 +1232,9 @@ t1348503226
 s2065
 
 N/Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.m
-c00000000506086BA00000000000028D2
-t1348503226
-s10450
+c000000005061FE8A000000000000294A
+t1348599434
+s10570
 
 N/Users/albe5259/Projects/navigator/Map/ArcGISOnlineConnection.h
 c00000000506086BA0000000000001366
@@ -2457,9 +2457,9 @@ t1319738420
 s20564
 
 N/Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib
-c000000005060A63B000000000005B597
-t1348511291
-s374167
+c000000005060C0AF000000000005B72A
+t1348518063
+s374570
 
 N/Users/albe5259/Projects/navigator/Map/Resources/Nibs/SettingsViewController.xib
 c000000004EA99C340000000000002B39
@@ -2732,7 +2732,7 @@ t1348503226
 s305
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app
-t1348511293
+t1348597115
 s5270
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app.dSYM
@@ -2968,8 +2968,8 @@ t1348181116
 s1231
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/MapViewController.nib
-t1348511293
-s2927
+t1348597115
+s2922
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/MaxMinLayer-Open.png
 t1348181115
@@ -3931,7 +3931,7 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies336d23cfdd10b641^e50c25cfdd10b641^--1(21%IDEActivityLogMessage2@62"Missing dependency target "ArcGIS-sim (from ArcGIS.xcodeproj)"-370204111#18446744073709551615#0#-1#-----0#1#0#--18"Check dependencies36"EBDDCF5B-7812-4EB9-88B3-8C875A1F0800-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciescede150a3612b641^50c7170a3612b641^--1(21%IDEActivityLogMessage2@62"Missing dependency target "ArcGIS-sim (from ArcGIS.xcodeproj)"-370292234#18446744073709551615#0#-1#-----0#1#0#--18"Check dependencies36"DA428840-15B7-462B-A96E-A33E8EC1C39D-
 
 CCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/AGSDynamicMapServiceLayer+LayerVisibilityAdditions.o /Users/albe5259/Projects/navigator/Map/AGSDynamicMapServiceLayer+LayerVisibilityAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s370196077.366188
@@ -4019,8 +4019,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.m4ab7c15abe10b641^75580d5bbe10b641^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.m0000000000000000^3504"CompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISAppDelegate.o Map/ArcGISAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/include -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/DerivedSources/i386 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-fdvrqhnlrsfxjbbybawrotpgqopz/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISAppDelegate.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISAppDelegate.dia -c /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISAppDelegate.o36"3D713618-72A6-4EE5-A99E-0EE22412AC85-
 
 CCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISMobileConfig.o /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s370196059.023046
-e370196059.211700
+s370292234.156702
+e370292234.446913
 r1
 xCompileC
 xbuild/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISMobileConfig.o
@@ -4029,7 +4029,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.m8811065bbe10b641^ec34365bbe10b641^---0#0#0#-19%DVTDocumentLocation2@75"file://localhost/Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.m0000000000000000^3510"CompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISMobileConfig.o Map/ArcGISMobileConfig.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/include -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/DerivedSources/i386 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-fdvrqhnlrsfxjbbybawrotpgqopz/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISMobileConfig.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISMobileConfig.dia -c /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISMobileConfig.o36"57335A45-4086-47A8-B2C4-B6E1E9A5A562-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection67"Compile /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.m423e280a3612b641^5969720a3612b641^---0#0#0#-19%DVTDocumentLocation2@75"file://localhost/Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.m0000000000000000^3510"CompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISMobileConfig.o Map/ArcGISMobileConfig.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/include -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/DerivedSources/i386 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-fdvrqhnlrsfxjbbybawrotpgqopz/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISMobileConfig.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISMobileConfig.dia -c /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISMobileConfig.o36"492461C0-CE14-4759-9F77-373C1B0D602F-
 
 CCompileC build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/ArcGISOnlineConnection.o /Users/albe5259/Projects/navigator/Map/ArcGISOnlineConnection.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s370196059.258696
@@ -5200,12 +5200,12 @@ x/Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapLegendViewController.x
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compiling /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapLegendViewController.xibbda82dfbd30bb641^591529fcd30bb641^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapLegendViewController.xib0000000000000000^926"CompileXIB Map/Resources/Nibs/MapLegendViewController.xib    cd /Users/albe5259/Projects/navigator    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/MapLegendViewController.nib /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapLegendViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"CEC1C21B-B72E-4EBC-85B5-D003E7B16B00-
 
 CCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib
-s370204092.353422
-e370204093.986276
+s370289915.600692
+e370289915.736704
 r1
 xCompileXIB
 x/Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compiling /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib6c975abcdd10b641^a27dfcbddd10b641^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib0000000000000000^908"CompileXIB Map/Resources/Nibs/MapViewController.xib    cd /Users/albe5259/Projects/navigator    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/MapViewController.nib /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"F11A78C6-5BA3-4ECD-AC2E-7336366415D0-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compiling /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib72dc99fb2c12b641^4a99bcfb2c12b641^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib0000000000000000^908"CompileXIB Map/Resources/Nibs/MapViewController.xib    cd /Users/albe5259/Projects/navigator    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/MapViewController.nib /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk36"9D04B35F-CD0E-43E0-8273-732E206EE6EB-
 
 CCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/SettingsViewController.xib
 s369873916.163261
@@ -6493,24 +6493,24 @@ xbuild/Debug-iphonesimulator/Navigator.app/wells_icon@2x.png
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/Debug-iphonesimulator/Navigator.app/wells_icon@2x.png204250fcd30bb641^52d752fcd30bb641^---0#0#0#-19%DVTDocumentLocation2@110"file://localhost/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/wells_icon@2x.png000000000080d041^624"CpResource "Map/Resources/TestImages/wells_icon@2x.png" "build/Debug-iphonesimulator/Navigator.app/wells_icon@2x.png"    cd /Users/albe5259/Projects/navigator    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/Users/albe5259/Projects/navigator/Map/Resources/TestImages/wells_icon@2x.png" /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app36"B4FF7FDE-FA62-452A-ACB7-F10969661C1B-
 
 CGenerateDSYMFile /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app.dSYM /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/Navigator
-s370202286.077079
-e370202287.130980
+s370292235.269070
+e370292236.111560
 r1
 xGenerateDSYMFile
 x/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app.dSYM
 x/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/Navigator
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Generating /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app.dSYMbbd513aed610b641^6e8821afd610b641^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app.dSYM/0000000000000000^625"GenerateDSYMFile build/Debug-iphonesimulator/Navigator.app.dSYM build/Debug-iphonesimulator/Navigator.app/Navigator    cd /Users/albe5259/Projects/navigator    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/Navigator -o /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app.dSYM36"82EFEF68-76CC-4371-962E-E514DAE98EBC-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Generating /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app.dSYMa5f4440b3612b641^c98f1c0c3612b641^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app.dSYM/0000000000000000^625"GenerateDSYMFile build/Debug-iphonesimulator/Navigator.app.dSYM build/Debug-iphonesimulator/Navigator.app/Navigator    cd /Users/albe5259/Projects/navigator    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/Navigator -o /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app.dSYM36"CDE2B9B0-85D4-4C9F-8D13-8ECB88D49859-
 
 CLd /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/Navigator normal i386
-s370202285.424707
-e370202286.069601
+s370292234.453765
+e370292235.261894
 r1
 xLd
 x/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/Navigator
 xnormal
 xi386
 old: warning: instance method 'isEmpty' in category from /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/AGSGeometry+AppAdditions.o overrides method from class in /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/ArcGIS(AGSGeometry.o)
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Link /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/Navigator3dd26cadd610b641^84d411aed610b641^-302"ld: warning: instance method 'isEmpty' in category from /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/AGSGeometry+AppAdditions.o overrides method from class in /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/ArcGIS(AGSGeometry.o)1(21%IDEActivityLogMessage2@288"Instance method 'isEmpty' in category from /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/AGSGeometry+AppAdditions.o overrides method from class in /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/ArcGIS(AGSGeometry.o)-370202285#0#302#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--0#0#0#--1740"Ld build/Debug-iphonesimulator/Navigator.app/Navigator normal i386    cd /Users/albe5259/Projects/navigator    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator -F/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -filelist /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/Navigator.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -lstdc++ -lz -all_load -ObjC -framework ArcGIS -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=4.3 -framework MapKit -lstdc++ -framework MessageUI -lxml2 -framework SystemConfiguration -framework Security -framework AddressBook -framework AddressBookUI -framework UIKit -framework Foundation -framework CoreGraphics -framework CoreText -framework CoreLocation -framework MediaPlayer -framework MobileCoreServices -framework QuartzCore -o /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/Navigator36"22DB70F8-B133-4052-9049-0D0E208B7119-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Link /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/Navigator2d43740a3612b641^950d430b3612b641^-302"ld: warning: instance method 'isEmpty' in category from /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/AGSGeometry+AppAdditions.o overrides method from class in /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/ArcGIS(AGSGeometry.o)1(21%IDEActivityLogMessage2@288"Instance method 'isEmpty' in category from /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/AGSGeometry+AppAdditions.o overrides method from class in /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/ArcGIS(AGSGeometry.o)-370292234#0#302#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--0#0#0#--1740"Ld build/Debug-iphonesimulator/Navigator.app/Navigator normal i386    cd /Users/albe5259/Projects/navigator    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -L/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator -F/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -filelist /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Objects-normal/i386/Navigator.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -lstdc++ -lz -all_load -ObjC -framework ArcGIS -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=4.3 -framework MapKit -lstdc++ -framework MessageUI -lxml2 -framework SystemConfiguration -framework Security -framework AddressBook -framework AddressBookUI -framework UIKit -framework Foundation -framework CoreGraphics -framework CoreText -framework CoreLocation -framework MediaPlayer -framework MobileCoreServices -framework QuartzCore -o /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/Navigator36"814E9033-E850-4942-BA6D-4158C06160EB-
 
 CProcessInfoPlistFile /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app/Info.plist "Map copy-Info.plist"
 s369958950.947493
@@ -6592,10 +6592,10 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection29"Precompile Map/Map-Prefix.pch9e97865abe10b641^b6bfbf5abe10b641^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Users/albe5259/Projects/navigator/Map/Map-Prefix.pch0000000000000000^3477"ProcessPCH /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-fdvrqhnlrsfxjbbybawrotpgqopz/Map-Prefix.pch.pth Map/Map-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -mios-simulator-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/Navigator-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/include -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/DerivedSources/i386 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-SourceSim.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad --serialize-diagnostics /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-fdvrqhnlrsfxjbbybawrotpgqopz/Map-Prefix.pch.dia -c /Users/albe5259/Projects/navigator/Map/Map-Prefix.pch -o /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-fdvrqhnlrsfxjbbybawrotpgqopz/Map-Prefix.pch.pth -MMD -MT dependencies -MF /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-fdvrqhnlrsfxjbbybawrotpgqopz/Map-Prefix.pch.d36"496B3075-8992-4F08-A1C3-D7DDCDE0F616-
 
 CTouch /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app
-s370204093.994390
-e370204094.000143
+s370292236.153740
+e370292236.157757
 r1
 xTouch
 x/Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Touch /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app7fa2febddd10b641^070a00bedd10b641^---0#0#0#--384"Touch build/Debug-iphonesimulator/Navigator.app    cd /Users/albe5259/Projects/navigator    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app36"EA136954-C5D9-4810-9BB0-5428E65C8D55-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Touch /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.appa969270c3612b641^9d63280c3612b641^---0#0#0#--384"Touch build/Debug-iphonesimulator/Navigator.app    cd /Users/albe5259/Projects/navigator    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/albe5259/Projects/navigator/build/Debug-iphonesimulator/Navigator.app36"BBEF01B6-5490-4950-8EA2-6396D3CF9084-
 

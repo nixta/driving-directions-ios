@@ -44,10 +44,12 @@
         //
         
         //Original values...
-        self.geocodeServiceUrl = @"http://tasks.arcgisonline.com/ArcGIS/rest/services/Locators/TA_Streets_US/GeocodeServer";
-        self.geometryServiceUrl = @"http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer";
+        //self.geocodeServiceUrl = @"http://tasks.arcgisonline.com/ArcGIS/rest/services/Locators/TA_Streets_US/GeocodeServer";
+        self.geocodeServiceUrl = @"http://tasks.arcgis.com/ArcGIS/rest/services/WorldLocator/GeocodeServer";
         self.locatorServiceUrl = @"http://tasks.arcgis.com/ArcGIS/rest/services/WorldLocator/geocodeserver";
         self.worldLocatorServiceUrl = @"http://tasks.arcgis.com/ArcGIS/rest/services/WorldLocator/LocationServer";
+        
+        self.geometryServiceUrl = @"http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer";
         self.esriGlobalAccount = @"https://webaccounts.esri.com/cas/index.cfm?fuseaction=Registration.ShowForm&ReturnURL=https%3A%2F%2Fwww.arcgis.com%2Fhome%2Fsignup.html&FailURL=http%3A%2F%2Fwww.arcgis.com&appId=RC10SB959G";
         self.arcgisRegistrationUrl = @"https://www.arcgis.com/sharing/community/signup";
         
