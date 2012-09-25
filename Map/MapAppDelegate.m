@@ -294,6 +294,7 @@
 {
     NSLog(@"Did Succeed getting org information!");
     
+    
     //MapAppSettings *mas = (MapAppSettings *)self.appSettings;
     
     Organization *org = [[Organization alloc] initWithJSON:json];

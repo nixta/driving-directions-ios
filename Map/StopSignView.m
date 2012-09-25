@@ -26,13 +26,7 @@
 @synthesize nameLabel   = _nameLabel;
 @synthesize imageView   = _imageView;
 
--(void)dealloc
-{
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:kLocationUpdatedAddress object:self.location];
-    self.location   = nil;
-    
-    
-}
+
 
 -(id)initWithFrame:(CGRect)frame withLocation:(Location *)location
 {
