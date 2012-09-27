@@ -36,6 +36,7 @@
 @synthesize networkAlertView = _networkAlertView;
 @synthesize organizationOp = _organizationOp;
 @synthesize testOrganizations = _testOrganizations;
+@synthesize routeDelegate = _routeDelegate;
 
 #pragma mark -
 #pragma mark UIApplicationDelegate
@@ -54,8 +55,10 @@
         AGSPoint *endPoint = nil;
         
         if ([startItem isCurrentLocation]) {
-            
+           // MKMapItem *current = [MKMapItem mapItemForCurrentLocation];
             endPoint = [self convertCoordinatesToPoint:endItem.placemark.coordinate];
+            //startPoint = [self convertCoordinatesToPoint:current.placemark.coordinate];
+            
             
             // Get directions to end place from current location.
             //            MyPlace *endPlace = [[MyPlace alloc] initWithName:endItem.name coordinate:endItem.placemark.coordinate];
@@ -80,7 +83,7 @@
             //            [self.mapViewController routeFromPlace:startPlace toPlace:endPlace];
         }
         
-        //[self.routeDelegate appleMapsCalled:startPoint withEnd:endPoint];
+        [self.routeDelegate appleMapsCalled:startPoint withEnd:endPoint];
         
         return YES;
     }
@@ -127,18 +130,7 @@
 	
 	[self performSelector:@selector(launchMethod:) withObject:appDict afterDelay:0.0];
     
-    /*
-     NSURL *openWithURL = [launchOptions objectForKey:UIApplicationLaunchOptionsURLKey];
-     if (openWithURL)
-     {   
-     //verify we have the correct scheme
-     if (![[openWithURL scheme] isEqualToString:kArcGISURLScheme] &&
-     ![[openWithURL scheme] isEqualToString:kArcGISPortalURLScheme])
-     {
-     return NO;
-     }
-     }  */
-    
+       
 	return YES;
 }
 
@@ -265,26 +257,6 @@
 {
     [super urisOperation:op completedWithResults:results];
     
-    MapAppSettings *mas = (MapAppSettings *)self.appSettings;
-    
-    /*if(mas.organization)
-    {
-        NSLog(@"Already have an organization");
-    }
-    else
-    {
-        NSURL *url = [NSURL URLWithString:@"http://dev.arcgis.com/sharing/accounts/self"];
-        //NSURLRequest *contentReq = [NSURLRequest requestWithURL:url];
-        
-        NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:@"json", @"f", nil];
-        
-        self.organizationOp = [[[AGSJSONRequestOperation alloc] initWithURL:url queryParameters:params] autorelease];
-        self.organizationOp.target = self;
-        self.organizationOp.action = @selector(orgOperation:didSucceed:);
-        self.organizationOp.errorAction = @selector(orgOperation:didFailWithError:);
-        [[AGSRequestOperation sharedOperationQueue] addOperation:self.organizationOp];
-    }   */
-    
     [self orgOperation:nil didSucceed:nil];
 }
 
@@ -300,35 +272,12 @@
     Organization *org = [[Organization alloc] initWithJSON:json];
     org.name = @"Guest";
     org.icon = [UIImage imageNamed:@"Default_icon.png"];
-    //mas.organization = org;
     
-    /*SanFranciscoOrganization *sfOrg = [[SanFranciscoOrganization alloc] initWithJSON:json];
-    sfOrg.name = @"City of San Francisco";
-    sfOrg.icon = [UIImage imageNamed:@"SF_Icon.png"];  
-    
-    PoliceOrganization *polOrg = [[PoliceOrganization alloc] initWithJSON:json];
-    polOrg.name = @"Registered Offenders";
-    polOrg.icon = [UIImage imageNamed:@"Default_icon.png"];
-     */
-    
-    ATTOrganization *attOrg = [[ATTOrganization alloc] initWithJSON:json];
-    attOrg.name = @"AT&T Ca. Cell Towers";
-    attOrg.icon = [UIImage imageNamed:@"att_logo.png"];
-    
-    TeapotOrganization *teapotOrg = [[TeapotOrganization alloc] initWithJSON:json];
-    teapotOrg.name = @"Teapot Dome";
-    teapotOrg.icon = [UIImage imageNamed:@"wells_icon.png"];
-    teapotOrg.locatorUrlString = @"http://na.arcgis.com/arcgis/rest/services/Oil_Wells/GeocodeServer";
-    
-    self.testOrganizations = [NSArray arrayWithObjects: org, attOrg, teapotOrg, nil];
-    
-    //[sfOrg release];
+    self.testOrganizations = [NSArray arrayWithObjects: org, nil];
     
     MapViewController *mvc = (MapViewController *)self.viewController;
     [mvc chooseFromOrganizations:self.testOrganizations];
     
-    /*mas.organization.delegate = (MapViewController *)self.viewController;
-    [mas.organization retrieveOrganizationWebmap]; */
 }
 
 -(void)orgOperation:(AGSJSONRequestOperation*)op didFailWithError:(NSError*)error

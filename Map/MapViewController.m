@@ -166,24 +166,7 @@
 #pragma mark -
 #pragma mark End of View Lifetime
 
-- (void)dealloc
-{
-    if (_observingGPS) {
-        [self.mapView.gps removeObserver:self forKeyPath:gpsAutoPanKey];
-        [self.mapView.gps removeObserver:self forKeyPath:gpsEnabledKey];
-        _observingGPS = NO;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -208,6 +191,7 @@
 {
     [super viewDidLoad];
     
+    
 	self.mapView.wrapAround = YES;
 	self.mapView.showMagnifierOnTapAndHold = YES;
 	self.mapView.layerDelegate = self;
@@ -222,6 +206,9 @@
     [self setupSearchUx];
     
     [self showActivityIndicator:YES];
+    
+    RoutingSampleAppDelegate *appDelegate = (RoutingSampleAppDelegate *)[[UIApplication sharedApplication] delegate];
+    appDelegate.routeDelegate = self;
 }
 
 

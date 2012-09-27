@@ -15,6 +15,8 @@
 #import "OnlineApplication.h"
 #import "ArcGIS+App.h"
 
+#import "routingDelegate.h"
+
 @class MapViewController;
 @class KeyChainWrapper;
 
@@ -32,5 +34,6 @@
 @property (nonatomic, strong) NSArray         *testOrganizations;
 
 - (AGSPoint*)convertCoordinatesToPoint:(CLLocationCoordinate2D)coordinates;
+@property (nonatomic, retain) id <routingDelegate> routeDelegate;
 
 @end

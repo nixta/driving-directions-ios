@@ -169,6 +169,7 @@ dependencies: /Users/albe5259/Projects/navigator/Map/MapAppDelegate.m \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
   /Users/albe5259/Projects/navigator/Map/AppSettings.h \
   /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
+  /Users/albe5259/Projects/navigator/Map/routingDelegate.h \
   /Users/albe5259/Projects/navigator/Map/MapViewController.h \
   /Users/albe5259/Projects/navigator/Map/Organization.h \
   /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.h \

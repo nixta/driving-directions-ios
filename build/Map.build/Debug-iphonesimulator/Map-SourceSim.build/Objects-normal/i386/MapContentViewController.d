@@ -176,6 +176,7 @@ dependencies: \
   /Users/albe5259/Projects/navigator/Map/IconDownloader.h \
   /Users/albe5259/Projects/navigator/Map/Legend.h \
   /Users/albe5259/Projects/navigator/Map/MapAppDelegate.h \
+  /Users/albe5259/Projects/navigator/Map/routingDelegate.h \
   /Users/albe5259/Projects/navigator/Map/MapAppSettings.h \
   /Users/albe5259/Projects/navigator/Map/DrawableContainerDelegate.h \
   /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \

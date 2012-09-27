@@ -196,6 +196,7 @@ dependencies: /Users/albe5259/Projects/navigator/Map/MapViewController.m \
   /Users/albe5259/Projects/navigator/Map/MapSettings.h \
   /Users/albe5259/Projects/navigator/Map/MapSettingsBase.h \
   /Users/albe5259/Projects/navigator/Map/MapAppDelegate.h \
+  /Users/albe5259/Projects/navigator/Map/routingDelegate.h \
   /Users/albe5259/Projects/navigator/Map/MapAppSettings.h \
   /Users/albe5259/Projects/navigator/Map/UIToolbar+MapAdditions.h \
   /Users/albe5259/Projects/navigator/Map/UIColor+Additions.h \

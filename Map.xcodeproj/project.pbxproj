@@ -1130,6 +1130,7 @@
 		88CFA5AA16123DAF0084EB93 /* SoundDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundDelegate.h; sourceTree = "<group>"; };
 		88CFA5AB16123DAF0084EB93 /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
 		88CFA5AC16123DAF0084EB93 /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+		88CFA5CE1615177B0084EB93 /* routingDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = routingDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1363,6 +1364,7 @@
 				7878C12E141A6B5F000ACBBD /* Users and Organizations */,
 				78342CC0140DAC4100B0F354 /* Utililty */,
 				782FFD671427A0C800E02896 /* WebMap Related */,
+				88CFA5CE1615177B0084EB93 /* routingDelegate.h */,
 			);
 			path = Map;
 			sourceTree = "<group>";
