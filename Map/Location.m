@@ -54,17 +54,6 @@
 @synthesize delegate                = _delegate;
 @synthesize routeDelegate           = _routeDelegate;
 
--(void)dealloc
-{
-    
-    [self.locatorOperation cancel];
-    
-    [self.graphic clearLocation];
-    
-    
-    
-    
-}
 
 - (id)init
 {

@@ -23,6 +23,8 @@
 #import "Location.h"
 #import "Route.h"
 #import "RouteSolver.h"
+#import "routingDelegate.h"
+#import "Location.h"
 
 @class MapAppDelegate;
 @class MapContentViewController;
@@ -49,7 +51,7 @@
                                                     AGSWebMapDelegate, OrganizationDelegate, LocationCalloutDelegate, 
                                                     UIActionSheetDelegate, ChangeBasemapsDelegate, RouteSolverDelegate,
                                                     AGSGPSInfoTemplateDelegate, SignsViewDelegate, MFMailComposeViewControllerDelegate, 
-                                                    OrganizationChooserDelegate, DrawableContainerDelegate> 
+                                                    OrganizationChooserDelegate, DrawableContainerDelegate, routingDelegate>
 {
     /*Ux IB Elements */
     AGSMapView                          *_mapView;
@@ -195,6 +197,8 @@
 @property (nonatomic, assign) BOOL                                  mapLoaded;
 @property (nonatomic, copy) NSURL                                   *shareWithMapUrl;
 @property (nonatomic, copy) NSString                                *callbackString;
+
+@property (nonatomic, unsafe_unretained) id<LocationCalloutDelegate>   delegate;
 
 -(IBAction)locateMeButtonPressed:(id)sender;
 -(IBAction)layersButtonPressed:(id)sender;

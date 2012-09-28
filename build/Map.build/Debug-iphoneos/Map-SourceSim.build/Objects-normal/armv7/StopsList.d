@@ -178,4 +178,5 @@ dependencies: /Users/albe5259/Projects/navigator/Map/StopsList.m \
   /Users/albe5259/Projects/navigator/Map/CurrentLocation.h \
   /Users/albe5259/Projects/navigator/Map/LocationGraphic.h \
   /Users/albe5259/Projects/navigator/Map/NSNull+Additions.h \
-  /Users/albe5259/Projects/navigator/Map/MapAppDelegate.h
+  /Users/albe5259/Projects/navigator/Map/MapAppDelegate.h \
+  /Users/albe5259/Projects/navigator/Map/routingDelegate.h

@@ -177,6 +177,7 @@ dependencies: \
   /Users/albe5259/Projects/navigator/Map/Organization.h \
   /Users/albe5259/Projects/navigator/Map/UIColor+Additions.h \
   /Users/albe5259/Projects/navigator/Map/MapAppDelegate.h \
+  /Users/albe5259/Projects/navigator/Map/routingDelegate.h \
   /Users/albe5259/Projects/navigator/Map/MapViewController.h \
   /Users/albe5259/Projects/navigator/Map/LocationCalloutView.h \
   /Users/albe5259/Projects/navigator/Map/BlankSignView.h \

@@ -163,6 +163,8 @@
 
 @synthesize orgChooserVC                = _orgChooserVC;
 
+@synthesize delegate                    = _delegate;
+
 #pragma mark -
 #pragma mark End of View Lifetime
 
@@ -207,10 +209,31 @@
     
     [self showActivityIndicator:YES];
     
-    RoutingSampleAppDelegate *appDelegate = (RoutingSampleAppDelegate *)[[UIApplication sharedApplication] delegate];
+    MapAppDelegate *appDelegate = (MapAppDelegate *)[[UIApplication sharedApplication] delegate];
     appDelegate.routeDelegate = self;
 }
 
+- (void) appleMapsCalled:(AGSPoint *)pStart withEnd:(AGSPoint*)pEnd
+{
+    // show the point and route in the map
+#warning fix this
+    
+    if (pStart == nil) {
+        pStart = self.mapView.gps.currentPoint;
+    }
+    
+    if (pEnd == nil) {
+        pEnd = self.mapView.gps.currentPoint;
+    }
+    
+    Location *passedLocation = [[Location alloc] initWithPoint:pEnd
+                                                         aName:nil
+                                                        anIcon:[UIImage imageNamed:@"AddressPin.png"]
+                                                    locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]];
+    
+    [self directToLocationFromCurrentLocation:passedLocation];
+    //[self routeButtonPressed:nil];
+}
 
 - (void)viewDidUnload
 {

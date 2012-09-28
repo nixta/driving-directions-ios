@@ -174,6 +174,7 @@ dependencies: \
   /Users/albe5259/Projects/navigator/Map/DrawableContainerDelegate.h \
   /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
   /Users/albe5259/Projects/navigator/Map/MapAppDelegate.h \
+  /Users/albe5259/Projects/navigator/Map/routingDelegate.h \
   /Users/albe5259/Projects/navigator/Map/UIColor+Additions.h \
   /Users/albe5259/Projects/navigator/Map/ContactsManager.h \
   /Users/albe5259/Projects/navigator/Map/DrawableList.h \
