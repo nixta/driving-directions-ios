@@ -54,6 +54,8 @@
 #pragma mark -
 #pragma mark UIApplicationDelegate
 
+///
+/// Called by Apple Maps
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 {
     // Are we being launched by Maps to show a route?
@@ -68,32 +70,20 @@
         AGSPoint *endPoint = nil;
         
         if ([startItem isCurrentLocation]) {
-           // MKMapItem *current = [MKMapItem mapItemForCurrentLocation];
+           
             endPoint = [self convertCoordinatesToPoint:endItem.placemark.coordinate];
-            //startPoint = [self convertCoordinatesToPoint:current.placemark.coordinate];
             
-            
-            // Get directions to end place from current location.
-            //            MyPlace *endPlace = [[MyPlace alloc] initWithName:endItem.name coordinate:endItem.placemark.coordinate];
-            //            [self.mapViewController routeFromCurrentLocationToPlace:endPlace];
             
         } else if ([endItem isCurrentLocation]) {
             
             startPoint = [self convertCoordinatesToPoint:startItem.placemark.coordinate];
-            
-            // Get directions from start place to current location.
-            //            MyPlace *startPlace = [[MyPlace alloc] initWithName:startItem.name coordinate:startItem.placemark.coordinate];
-            //            [self.mapViewController routeFromPlaceToCurrentLocation:startPlace];
+         
             
         } else {
             
             endPoint = [self convertCoordinatesToPoint:endItem.placemark.coordinate];
             startPoint = [self convertCoordinatesToPoint:startItem.placemark.coordinate];
-            
-            // Get directions between the start and end location.
-            //            MyPlace *startPlace = [[MyPlace alloc] initWithName:startItem.name coordinate:startItem.placemark.coordinate];
-            //            MyPlace *endPlace = [[MyPlace alloc] initWithName:endItem.name coordinate:endItem.placemark.coordinate];
-            //            [self.mapViewController routeFromPlace:startPlace toPlace:endPlace];
+        
         }
         
         [self.routeDelegate appleMapsCalled:startPoint withEnd:endPoint];

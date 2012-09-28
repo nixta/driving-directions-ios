@@ -243,7 +243,7 @@
 /*Returns a url string for location that can be passed to other apps */
 -(NSString *)urlStringWithUrlScheme:(NSString *)scheme
 {
-#warning Fill me in!
+
     return @"Test String";
 }
 

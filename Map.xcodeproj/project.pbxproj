@@ -892,7 +892,6 @@
 		78469608141ECDD200847AB6 /* ContentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentItem.m; sourceTree = "<group>"; };
 		7846960A141ECE2200847AB6 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
 		7846960B141ECE2200847AB6 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
-		7846961B141FB08000847AB6 /* ArcGIS+App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ArcGIS+App.h"; sourceTree = "<group>"; };
 		78469632141FCFB700847AB6 /* ArcGISAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcGISAppDelegate.h; sourceTree = "<group>"; };
 		78469633141FCFB700847AB6 /* ArcGISAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcGISAppDelegate.m; sourceTree = "<group>"; };
 		78469635141FD0D800847AB6 /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
@@ -1508,7 +1507,6 @@
 				78EEEDC914903D7900EBE720 /* Custom Controls */,
 				78342CC1140DAC6200B0F354 /* UIToolbar+MapAdditions.h */,
 				78342CC2140DAC6200B0F354 /* UIToolbar+MapAdditions.m */,
-				7846961B141FB08000847AB6 /* ArcGIS+App.h */,
 				785139491447AB33008D0E34 /* NSString+NSString_Additions.h */,
 				7851394A1447AB33008D0E34 /* NSString+NSString_Additions.m */,
 				78D13FA5144F994F00E8970A /* UIImage+AppAdditions.h */,
