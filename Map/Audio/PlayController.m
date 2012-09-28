@@ -80,11 +80,6 @@
 }
 
 
-- (void)dealloc {
-    [super dealloc];
-	
-	[self.sounds release];
-}
 
 - (IBAction) donePressed
 {
@@ -150,7 +145,7 @@
 	self.nextButton.hidden = NO;
 	self.theScore.text = [[NSString alloc] initWithFormat:@"Score: %d", score ];
     
-    [self.theScore release];
+    
 }
 
 -(IBAction) nextPressed
@@ -176,7 +171,7 @@
         NSLog(@"request replied %@", get );
     }
     
-	[stringScore release];
+	
 	[self loopStart];
 }
 
@@ -290,7 +285,7 @@
 	self.answerThirdButton.hidden = NO;
 	
     NSUserDefaults *myPrefs = [NSUserDefaults standardUserDefaults];
-    NSString * stringScore = [[[NSString alloc] initWithFormat:@"%d", score] autorelease];
+    NSString * stringScore = [[NSString alloc] initWithFormat:@"%d", score];
     [myPrefs setValue:stringScore forKey:@"score"];
     
     //[stringScore release];
@@ -310,7 +305,6 @@
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Game Over" message:@"Would you like to start again"
                                                        delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
         [alert show];
-        [alert release];
         
         score = 0;        
         failed = 0;

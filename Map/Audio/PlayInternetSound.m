@@ -16,13 +16,13 @@
 
 - (void) playOneSound:(NSString *)pathSound
 { 
-       
+      
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:pathSound]];
     NSData *soundData = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
     
     NSError *error;
     
-    self.player = [[[AVAudioPlayer alloc] initWithData:soundData error:&error] autorelease];
+    self.player = [[AVAudioPlayer alloc] initWithData:soundData error:&error];
        
     // Set the volume (range is 0 to 1)
     self.player.volume = 0.6f;

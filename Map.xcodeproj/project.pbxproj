@@ -735,9 +735,21 @@
 		882A01F1160BD23D00027BE2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 882A01EA160BCE3100027BE2 /* Default-568h@2x.png */; };
 		882A01F2160BD32B00027BE2 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A01EF160BD16A00027BE2 /* libstdc++.dylib */; };
 		882A01F51610D6AA00027BE2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A01F41610D6AA00027BE2 /* MapKit.framework */; };
+		8868F9561616325400FB9238 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8868F9551616325400FB9238 /* CFNetwork.framework */; };
 		88CFA5AD16123DAF0084EB93 /* PlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5A716123DAF0084EB93 /* PlayController.m */; };
 		88CFA5AE16123DAF0084EB93 /* PlayInternetSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5A916123DAF0084EB93 /* PlayInternetSound.m */; };
 		88CFA5AF16123DAF0084EB93 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5AC16123DAF0084EB93 /* SoundManager.m */; };
+		88CFA5D116162B7D0084EB93 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5D016162B7D0084EB93 /* AudioStreamer.m */; };
+		88CFA5D316162DAC0084EB93 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CFA5D216162DAB0084EB93 /* AVFoundation.framework */; };
+		88CFA5D516162DBB0084EB93 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CFA5D416162DBA0084EB93 /* AudioToolbox.framework */; };
+		88CFA5D616162EBB0084EB93 /* PlayInternetSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5A916123DAF0084EB93 /* PlayInternetSound.m */; };
+		88CFA5D716162EBC0084EB93 /* PlayInternetSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5A916123DAF0084EB93 /* PlayInternetSound.m */; };
+		88CFA5D816162ECB0084EB93 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5D016162B7D0084EB93 /* AudioStreamer.m */; };
+		88CFA5D916162ECB0084EB93 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5D016162B7D0084EB93 /* AudioStreamer.m */; };
+		88CFA5DA16162ECF0084EB93 /* PlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5A716123DAF0084EB93 /* PlayController.m */; };
+		88CFA5DB16162ECF0084EB93 /* PlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5A716123DAF0084EB93 /* PlayController.m */; };
+		88CFA5DC16162ED50084EB93 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5AC16123DAF0084EB93 /* SoundManager.m */; };
+		88CFA5DD16162ED50084EB93 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5AC16123DAF0084EB93 /* SoundManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1122,6 +1134,7 @@
 		882A01EF160BD16A00027BE2 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		882A01F31610BD8400027BE2 /* NSDictionary+AGSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+AGSAdditions.h"; path = "../../ArcGIS_iOS_3/Headers/NSDictionary+AGSAdditions.h"; sourceTree = "<group>"; };
 		882A01F41610D6AA00027BE2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8868F9551616325400FB9238 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		88CFA5A616123DAF0084EB93 /* PlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayController.h; sourceTree = "<group>"; };
 		88CFA5A716123DAF0084EB93 /* PlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayController.m; sourceTree = "<group>"; };
 		88CFA5A816123DAF0084EB93 /* PlayInternetSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayInternetSound.h; sourceTree = "<group>"; };
@@ -1130,6 +1143,10 @@
 		88CFA5AB16123DAF0084EB93 /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
 		88CFA5AC16123DAF0084EB93 /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
 		88CFA5CE1615177B0084EB93 /* routingDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = routingDelegate.h; sourceTree = "<group>"; };
+		88CFA5CF16162B7D0084EB93 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
+		88CFA5D016162B7D0084EB93 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
+		88CFA5D216162DAB0084EB93 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		88CFA5D416162DBA0084EB93 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1160,6 +1177,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8868F9561616325400FB9238 /* CFNetwork.framework in Frameworks */,
+				88CFA5D516162DBB0084EB93 /* AudioToolbox.framework in Frameworks */,
+				88CFA5D316162DAC0084EB93 /* AVFoundation.framework in Frameworks */,
 				882A01F51610D6AA00027BE2 /* MapKit.framework in Frameworks */,
 				882A01F2160BD32B00027BE2 /* libstdc++.dylib in Frameworks */,
 				78BA0CF61458C0CF00530ADD /* MessageUI.framework in Frameworks */,
@@ -1297,6 +1317,9 @@
 		78342C7A140D9CB400B0F354 = {
 			isa = PBXGroup;
 			children = (
+				8868F9551616325400FB9238 /* CFNetwork.framework */,
+				88CFA5D416162DBA0084EB93 /* AudioToolbox.framework */,
+				88CFA5D216162DAB0084EB93 /* AVFoundation.framework */,
 				882A01F41610D6AA00027BE2 /* MapKit.framework */,
 				882A01EF160BD16A00027BE2 /* libstdc++.dylib */,
 				882A01ED160BD15300027BE2 /* libz.dylib */,
@@ -1836,6 +1859,8 @@
 		88CFA5A516123DAE0084EB93 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				88CFA5CF16162B7D0084EB93 /* AudioStreamer.h */,
+				88CFA5D016162B7D0084EB93 /* AudioStreamer.m */,
 				88CFA5A616123DAF0084EB93 /* PlayController.h */,
 				88CFA5A716123DAF0084EB93 /* PlayController.m */,
 				88CFA5A816123DAF0084EB93 /* PlayInternetSound.h */,
@@ -2525,6 +2550,7 @@
 				88CFA5AD16123DAF0084EB93 /* PlayController.m in Sources */,
 				88CFA5AE16123DAF0084EB93 /* PlayInternetSound.m in Sources */,
 				88CFA5AF16123DAF0084EB93 /* SoundManager.m in Sources */,
+				88CFA5D116162B7D0084EB93 /* AudioStreamer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2609,6 +2635,10 @@
 				78BFC28214A119A5001F1522 /* NSNull+Additions.m in Sources */,
 				78BFC28714A13303001F1522 /* MapViewController+PlanningRouting.m in Sources */,
 				786557F614ABF77E00AB9C8B /* StopSignView.m in Sources */,
+				88CFA5D616162EBB0084EB93 /* PlayInternetSound.m in Sources */,
+				88CFA5D816162ECB0084EB93 /* AudioStreamer.m in Sources */,
+				88CFA5DA16162ECF0084EB93 /* PlayController.m in Sources */,
+				88CFA5DC16162ED50084EB93 /* SoundManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2693,6 +2723,10 @@
 				78BFC28314A119A5001F1522 /* NSNull+Additions.m in Sources */,
 				78BFC28814A13303001F1522 /* MapViewController+PlanningRouting.m in Sources */,
 				786557F714ABF77E00AB9C8B /* StopSignView.m in Sources */,
+				88CFA5D716162EBC0084EB93 /* PlayInternetSound.m in Sources */,
+				88CFA5D916162ECB0084EB93 /* AudioStreamer.m in Sources */,
+				88CFA5DB16162ECF0084EB93 /* PlayController.m in Sources */,
+				88CFA5DD16162ED50084EB93 /* SoundManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

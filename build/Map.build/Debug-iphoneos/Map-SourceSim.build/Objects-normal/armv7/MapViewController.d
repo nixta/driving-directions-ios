@@ -188,6 +188,8 @@ dependencies: /Users/albe5259/Projects/navigator/Map/MapViewController.m \
   /Users/albe5259/Projects/navigator/Map/PassThroughView.h \
   /Users/albe5259/Projects/navigator/Map/StopsList.h \
   /Users/albe5259/Projects/navigator/Map/DrawableList.h \
+  /Users/albe5259/Projects/navigator/Map/Audio/PlayInternetSound.h \
+  /Users/albe5259/Projects/navigator/Map/Audio/AudioStreamer.h \
   /Users/albe5259/Projects/navigator/Map/Route.h \
   /Users/albe5259/Projects/navigator/Map/RouteSolver.h \
   /Users/albe5259/Projects/navigator/Map/routingDelegate.h \

@@ -18,6 +18,7 @@
 #import <UIKit/UIKit.h>
 #import "PassThroughView.h"
 #import "StopsList.h"
+#import "PlayInternetSound.h"
 
 @class BlankSignView;
 @class DrawableList;
@@ -71,6 +72,7 @@
 
 @property (nonatomic, unsafe_unretained) id<SignsViewDelegate>             delegate;
 @property (nonatomic, unsafe_unretained) id<DrawableContainerDataSource>   datasource;
+
 
 @end
 
