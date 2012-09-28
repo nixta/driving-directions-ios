@@ -104,8 +104,9 @@
     
     //Needs to be redone! Just a skeleton
     if (indexPath.section == 0) {
-        cell.textLabel.text = [NSString stringWithFormat:@"Signed in with %@", self.appSettings.organization.name];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        cell.textLabel.text = @"";
+        
+       
     }
     else
     {

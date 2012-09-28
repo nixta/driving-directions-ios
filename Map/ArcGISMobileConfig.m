@@ -21,7 +21,6 @@
 
 @synthesize sharing = _sharing;
 @synthesize legend = _legend;
-@synthesize bingMapsKey = _bingMapsKey;
 @synthesize basemapsGroupQueries = _basemapsGroupQueries;
 @synthesize featuredMapsGroupQueries = _featuredMapsGroupQueries;
 @synthesize tokenExpiration = _tokenExpiration;
@@ -43,8 +42,7 @@
         // in the json dictionary
         //
         
-        //Original values...
-        //self.geocodeServiceUrl = @"http://tasks.arcgisonline.com/ArcGIS/rest/services/Locators/TA_Streets_US/GeocodeServer";
+        //Original values...        
         self.geocodeServiceUrl = @"http://tasks.arcgis.com/ArcGIS/rest/services/WorldLocator/GeocodeServer";
         self.locatorServiceUrl = @"http://tasks.arcgis.com/ArcGIS/rest/services/WorldLocator/geocodeserver";
         self.worldLocatorServiceUrl = @"http://tasks.arcgis.com/ArcGIS/rest/services/WorldLocator/LocationServer";
@@ -56,7 +54,7 @@
         //v2.0 values (for original ArcGIS Portal implementation)
         self.sharing = @"http://www.arcgis.com/sharing";
         self.legend = @"http://www.arcgis.com/sharing/tools/legend";
-        self.bingMapsKey = @"ApW8SZU7fZGUZ9eoEfyp6nJZdrcVM7s2TMWqtDx7PWEh74OZBN1lHVaAiZf-fUwZ";
+        
         self.basemapsGroupQueries = @"title:\"ArcGIS Online Basemaps\" AND owner:esri";
         self.featuredMapsGroupQueries = @"\"ESRI Featured Content\" AND owner:esri";
         self.tokenExpiration = 525600;
@@ -157,12 +155,6 @@
 		self.legend = tmp;
 	}
 	
-	// bingMapsKey
-	tmp = [AGSJSONUtility getStringFromDictionary:properties withKey:@"bingMapsKey"];
-	if (tmp != nil){
-		self.bingMapsKey = tmp;
-	}
-	
 	// basemapsGroupQueries
 	tmp = [AGSJSONUtility getStringFromDictionary:properties withKey:@"basemapsGroupQueries"];
 	if (tmp != nil){
@@ -246,7 +238,6 @@
                                 self.ecasRegistrationUrl, @"ecasRegistration",
                                 self.sharing, @"sharing",
                                 self.legend, @"legend",
-                                self.bingMapsKey, @"bingMapsKey",
                                 self.basemapsGroupQueries, @"basemapsGroupQueries",
                                 self.featuredMapsGroupQueries, @"featuredMapsGroupQueries",
                                 [NSNumber numberWithUnsignedInt:self.tokenExpiration], @"tokenExpiration",

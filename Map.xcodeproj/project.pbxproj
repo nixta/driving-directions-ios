@@ -1051,7 +1051,6 @@
 		78B929A91419459C002415AB /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		78B929AA1419459C002415AB /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		78BA0D771458C0CF00530ADD /* Navigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		78BA0D7A1458C0D000530ADD /* Map copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Map copy-Info.plist"; path = "/Users/scot6460/Documents/iOS/Map/Map copy-Info.plist"; sourceTree = "<absolute>"; };
 		78BA0E3F1458C17500530ADD /* Directions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Directions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78BA0E5F1458C7BE00530ADD /* Legend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Legend.h; sourceTree = "<group>"; };
 		78BA0E601458C7BE00530ADD /* Legend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Legend.m; sourceTree = "<group>"; };
@@ -1306,7 +1305,6 @@
 				78342C99140D9CB400B0F354 /* Map */,
 				78342C88140D9CB400B0F354 /* Frameworks */,
 				78342C86140D9CB400B0F354 /* Products */,
-				78BA0D7A1458C0D000530ADD /* Map copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};

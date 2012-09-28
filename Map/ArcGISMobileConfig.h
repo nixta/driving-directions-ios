@@ -20,7 +20,6 @@
     NSString *_ecasRegistrationUrl;
     NSString *_sharing;
     NSString *_legend;
-    NSString *_bingMapsKey;
     NSString *_basemapsGroupQueries;
     NSString *_featuredMapsGroupQueries;
     NSInteger _tokenExpiration;
@@ -42,7 +41,6 @@
 @property (nonatomic, strong) NSString *ecasRegistrationUrl;
 @property (nonatomic, strong) NSString *sharing;
 @property (nonatomic, strong) NSString *legend;
-@property (nonatomic, strong) NSString *bingMapsKey;
 @property (nonatomic, strong) NSString *basemapsGroupQueries;
 @property (nonatomic, strong) NSString *featuredMapsGroupQueries;
 @property (nonatomic, assign) NSInteger tokenExpiration;

@@ -121,8 +121,8 @@ static NSUInteger kBasemapSection = 0;
     //has to be here for iOS 5
     self.tableView.sectionHeaderHeight = 44.0;
     
-    self.settingsView.backgroundColor = [UIColor blackColor];
-    self.signInLabel.text = [NSString stringWithFormat:@"Signed in with %@", self.appSettings.organization.name];
+    //self.settingsView.backgroundColor = [UIColor blackColor];
+    //self.signInLabel.text = [NSString stringWithFormat:@"Signed in with %@", self.appSettings.organization.name];
     
     if (!self.appSettings.legend.finishedDownloading) {
         [self generateLegend];
@@ -287,34 +287,16 @@ static NSUInteger kBasemapSection = 0;
 
 -(UIView*)tableView:(UITableView*)tableView viewForHeaderInSection:(NSInteger)section{
 
-    if (section == kBasemapSection)
-        return nil;
-           
-    SectionInfo *sectionInfo = [self.layersArray objectAtIndex:[self adjustedIndexForSection:section]];
-    if (!sectionInfo.headerView) {
-        sectionInfo.headerView = [[SectionHeaderView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.tableView.bounds.size.width, 44) 
-                                                                     title:sectionInfo.title
-                                                                   section:section 
-                                                                  delegate:self];
-    }
+    return nil;
     
-	return sectionInfo.headerView;
+    
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    if (section == kBasemapSection)
-        return 0;
+    return 0;
     
-    SectionInfo *sectionInfo = [self.layersArray objectAtIndex:[self adjustedIndexForSection:section]];
-    if (!sectionInfo.headerView) {
-        sectionInfo.headerView = [[SectionHeaderView alloc] initWithFrame:CGRectMake(0.0, 0.0, self.tableView.bounds.size.width, 44) 
-                                                                     title:sectionInfo.title
-                                                                   section:section 
-                                                                  delegate:self];
-    }
-    
-	return sectionInfo.headerView.frame.size.height;
+   
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;
@@ -341,6 +323,7 @@ static NSUInteger kBasemapSection = 0;
     UITableViewCell *cell;
     
     if (indexPath.section == kBasemapSection) {
+        
         cell = [tableView dequeueReusableCellWithIdentifier:BasemapCellIdentifier];
         if (cell == nil)
         {

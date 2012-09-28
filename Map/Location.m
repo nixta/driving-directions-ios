@@ -133,7 +133,7 @@
         
         self.geocodeService = [[GeocodeService alloc] init];
         self.geocodeService.delegate = self;
-#warning Big hack right now
+
         self.geocodeService.addressLocatorString = settings.organization.locatorUrlString;
         self.geocodeService.useSingleLine = (settings.organization.locatorUrlString == nil);
     }
@@ -142,7 +142,7 @@
     _finishedFindAddress = NO;
     _finishedFindPlace = NO;
     
-#warning Using a default spatial reference right now... Needs to match map
+    //Using a default spatial reference right now... Needs to match map
     [self.geocodeService findAddressCandidates:[self searchString] withSpatialReference:[AGSSpatialReference webMercatorSpatialReference]];
     [self.geocodeService findPlace:self.name withSpatialReference:[AGSSpatialReference webMercatorSpatialReference]];
 }

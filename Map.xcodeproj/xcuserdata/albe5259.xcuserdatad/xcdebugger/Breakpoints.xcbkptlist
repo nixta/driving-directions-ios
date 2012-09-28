@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/MapContentViewController.m"
-         timestampString = "370303948.676519"
+         timestampString = "370550241.947137"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "446"
-         endingLineNumber = "446"
+         startingLineNumber = "429"
+         endingLineNumber = "429"
          landmarkName = "-sectionHeaderView:toggledUISwitch:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -46,39 +46,13 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Map/RouteSolver.m"
-         timestampString = "370305491.093083"
+         filePath = "Map/MapContentViewController.m"
+         timestampString = "370550241.947137"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "66"
-         endingLineNumber = "66"
-         landmarkName = "-routeTask:operation:didSolveWithResult:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/LocationCalloutView.m"
-         timestampString = "370544026.849453"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "214"
-         endingLineNumber = "214"
-         landmarkName = "-directMeHereButtonPressed:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/MapViewController.m"
-         timestampString = "370544920.727742"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1183"
-         endingLineNumber = "1183"
-         landmarkName = "-directToLocationFromCurrentLocation:"
+         startingLineNumber = "360"
+         endingLineNumber = "360"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

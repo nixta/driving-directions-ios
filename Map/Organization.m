@@ -12,14 +12,11 @@
 #import "ArcGISMobileConfig.h"
 #import "ArcGISOnlineConnection.h"
 
-//non-bing
-//#define kTestWebMapId @"3b980cd6778646eda8c7c6fb7fbc2e24"
 
-//#define kTestWebMapId @"a03a49082c1c4e869c6349d9cdccf2a3"
 
-#define kDefaultWebMapId @"15d033f017454856a0fb65f56b9c5a15"
+//#define kDefaultWebMapId @"15d033f017454856a0fb65f56b9c5a15"
+#define kDefaultWebMapId @"5b84b12a666c477db2842bb5800d87c7"
 
-//#define kTestWebMapId @"2f036a00c8f0425a830c5fa70f32b1b3"
 
 @interface Organization () 
 
@@ -124,11 +121,6 @@
      [self finalizeWebMapDownloadWithSuccess:NO];
 }
 
--(NSString*)bingAppId
-{
-    ArcGISAppDelegate *app = [[UIApplication sharedApplication] delegate];
-    return app.config.bingMapsKey;
-}
 
 #pragma mark -
 #pragma mark AGSCoding

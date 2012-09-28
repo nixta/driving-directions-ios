@@ -215,9 +215,8 @@
 
 - (void) appleMapsCalled:(AGSPoint *)pStart withEnd:(AGSPoint*)pEnd
 {
-    // show the point and route in the map
-#warning fix this
-    
+    // show the point and route in the map, this is the delegate called from Apple Maps
+    // we always assume the user selects their currect point as start and the end point is the destination.
     if (pStart == nil) {
         pStart = self.mapView.gps.currentPoint;
     }
