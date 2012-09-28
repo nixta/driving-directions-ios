@@ -23,7 +23,7 @@ email: contracts@esri.com
 #import "MapAppDelegate.h"
 #import "UIColor+Additions.h"
 #import "ContactsManager.h"
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
 #import "DrawableList.h"
 #import "NamedGeometry.h"
 

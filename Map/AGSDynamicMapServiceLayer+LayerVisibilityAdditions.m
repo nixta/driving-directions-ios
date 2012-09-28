@@ -8,7 +8,7 @@
 
 #import "AGSDynamicMapServiceLayer+LayerVisibilityAdditions.h"
 #import "MapLayerInfo+AppAdditions.h"
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
 
 @implementation AGSDynamicMapServiceLayer (LayerVisibilityAdditions)
 

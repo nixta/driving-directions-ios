@@ -448,7 +448,7 @@
                                                        startingX:245 
                                                        useShadow:YES];
     
-    //%20
+    // Enable voice
     NSMutableString *cleanDirection = [[NSMutableString alloc] initWithString:direction.name];
     [cleanDirection replaceOccurrencesOfString:@" " withString:@"%20" options:0 range:NSMakeRange(0, [cleanDirection length])];
     

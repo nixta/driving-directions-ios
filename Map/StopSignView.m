@@ -9,6 +9,7 @@
 #import "StopSignView.h"
 #import "Location.h"
 #import "CurrentLocation.h"
+#import "MapStates.h"
 
 @interface StopSignView () 
 

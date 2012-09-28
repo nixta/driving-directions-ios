@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
 #import "ContentItem.h"
 
 //

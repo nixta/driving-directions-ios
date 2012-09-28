@@ -6,7 +6,7 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
 
 @interface AGSGeometry (AppAdditions)
 

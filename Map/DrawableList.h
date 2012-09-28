@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "DrawableContainerDelegate.h"
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
 
 /*
  List of drawable 'TableViewDrawable' items. 

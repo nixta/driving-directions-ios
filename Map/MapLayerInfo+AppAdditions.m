@@ -7,7 +7,7 @@
 //
 
 #import "MapLayerInfo+AppAdditions.h"
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
 
 @interface AGSWebMapLayerInfo ()
 

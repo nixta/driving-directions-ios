@@ -222,8 +222,8 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
     
     //
     // encode username and password in case they contain special characters
-    NSString *escapedUsername = [AGSCredential ags_sanitizeString:credential.user];
-    NSString *escapedPW = [AGSCredential ags_sanitizeString:credential.password];
+    NSString *escapedUsername = credential.user;
+    NSString *escapedPW = credential.password;
     
     NSString* queryString = [NSString stringWithFormat:@"f=json&client=referer&referer=%@&username=%@&password=%@&expiration=%u",
                               _referer,

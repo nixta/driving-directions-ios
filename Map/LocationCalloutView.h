@@ -13,7 +13,8 @@
 #import <UIKit/UIKit.h>
 #import "BlankSignView.h"
 #import "Location.h"
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
+#import "MapStates.h"
 
 @class Location;
 @protocol LocationCalloutDelegate;

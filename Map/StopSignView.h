@@ -11,7 +11,7 @@
  */
 
 #import "BlankSignView.h"
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
 
 @class Location;
 

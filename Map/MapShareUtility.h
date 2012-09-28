@@ -16,7 +16,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
 
 typedef enum {
     MapShareInterfaceShareLocation,

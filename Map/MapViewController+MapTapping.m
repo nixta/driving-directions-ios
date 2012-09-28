@@ -3,8 +3,20 @@
 //  Map
 //
 //  Created by Scott Sirowy on 9/14/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+/*
+ Copyright © 2012 Esri
+ 
+ All rights reserved under the copyright laws of the United States
+ and applicable international laws, treaties, and conventions.
+ 
+ You may freely redistribute and use this sample code, with or
+ without modification, provided you include the original copyright
+ notice and use restrictions.
+ 
+ See the use restrictions at http://help.arcgis.com/en/sdk/10.0/usageRestrictions.htm
+ 
+ */
+
 #import "MapViewController.h"
 #import "MapViewController+MapTapping.h"
 #import "MapViewController+PlanningRouting.h"
@@ -21,8 +33,10 @@
 
 #import "InputAlertView.h"
 
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
 #import "AGSGeometry+AppAdditions.h"
+#import "ArcGISMobileConfig.h"
+#import "ArcGISAppDelegate.h"
 
 @interface MapViewController () 
 

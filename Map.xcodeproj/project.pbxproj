@@ -1135,6 +1135,7 @@
 		882A01F31610BD8400027BE2 /* NSDictionary+AGSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+AGSAdditions.h"; path = "../../ArcGIS_iOS_3/Headers/NSDictionary+AGSAdditions.h"; sourceTree = "<group>"; };
 		882A01F41610D6AA00027BE2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8868F9551616325400FB9238 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8868F9581616480500FB9238 /* MapStates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapStates.h; sourceTree = "<group>"; };
 		88CFA5A616123DAF0084EB93 /* PlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayController.h; sourceTree = "<group>"; };
 		88CFA5A716123DAF0084EB93 /* PlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayController.m; sourceTree = "<group>"; };
 		88CFA5A816123DAF0084EB93 /* PlayInternetSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayInternetSound.h; sourceTree = "<group>"; };
@@ -1614,6 +1615,7 @@
 		7846963B14201CE200847AB6 /* App Settings */ = {
 			isa = PBXGroup;
 			children = (
+				8868F9581616480500FB9238 /* MapStates.h */,
 				7846963C14201D0200847AB6 /* MapAppSettings.h */,
 				7846963D14201D0200847AB6 /* MapAppSettings.m */,
 				78EA4E7E14686DAA003B5B95 /* RouteSolverSettings.h */,

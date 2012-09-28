@@ -55,7 +55,8 @@
 #import "AppSettings.h"
 #import "ArcGISOnlineServices.h"
 #import "ArcGISOnlineConnection.h"
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
+#import "ArcGISAppDelegate.h"
 
 #define kAppIconHeight 128
 

@@ -7,7 +7,7 @@
 //
 
 #import "AGSWebMap+Additions.h"
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
 
 
 @implementation AGSWebMap (AGSWebMap_Additions)

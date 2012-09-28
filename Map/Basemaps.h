@@ -19,7 +19,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
 
 /*
  Model object for a list of basemaps. Object is responsible for

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
 
 @interface ContentItem : NSObject <AGSCoding> {
 	NSString        *_itemId;

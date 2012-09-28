@@ -3,9 +3,19 @@
 //  Map
 //
 //  Created by Scott Sirowy on 9/23/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
-
+/*
+ Copyright © 2012 Esri
+ 
+ All rights reserved under the copyright laws of the United States
+ and applicable international laws, treaties, and conventions.
+ 
+ You may freely redistribute and use this sample code, with or
+ without modification, provided you include the original copyright
+ notice and use restrictions.
+ 
+ See the use restrictions at http://help.arcgis.com/en/sdk/10.0/usageRestrictions.htm
+ 
+ */
 /*
  Wrapper for a list of directions. Builds a reorganized data structure
  for the set of AGSDirections that are passed in. Derived from the drawable

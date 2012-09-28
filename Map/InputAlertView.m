@@ -20,7 +20,7 @@
  */
 
 #import "InputAlertView.h"
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
 
 //private methods
 @interface InputAlertView ()

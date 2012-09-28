@@ -6,7 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "ArcGIS+App.h"
+#import <ArcGIS/ArcGIS.h>
 
 /*
  Enter description here

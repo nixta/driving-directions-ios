@@ -1,6 +1,5 @@
 dependencies: /Users/albe5259/Projects/navigator/Map/Basemaps.m \
   /Users/albe5259/Projects/navigator/Map/Basemaps.h \
-  /Users/albe5259/Projects/navigator/Map/ArcGIS+App.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \
@@ -165,13 +164,12 @@ dependencies: /Users/albe5259/Projects/navigator/Map/Basemaps.m \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/NSURLConnection+AGSAdditions.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayer.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
-  /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.h \
   /Users/albe5259/Projects/navigator/Map/AppSettings.h \
-  /Users/albe5259/Projects/navigator/Map/OnlineApplication.h \
-  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
   /Users/albe5259/Projects/navigator/Map/ContentItem.h \
   /Users/albe5259/Projects/navigator/Map/ArcGISOnlineServices.h \
   /Users/albe5259/Projects/navigator/Map/ArcGISOnlineConnection.h \
+  /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.h \
+  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
   /Users/albe5259/Projects/navigator/Map/MapAppSettings.h \
   /Users/albe5259/Projects/navigator/Map/DrawableContainerDelegate.h \
   /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
