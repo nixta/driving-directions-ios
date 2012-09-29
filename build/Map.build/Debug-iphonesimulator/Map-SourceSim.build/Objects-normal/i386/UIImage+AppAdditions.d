@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/albe5259/Projects/navigator/Map/UIImage+AppAdditions.m \
-  /Users/albe5259/Projects/navigator/Map/UIImage+AppAdditions.h
+  /Users/alpascual/Projects/navigation/Map/UIImage+AppAdditions.m \
+  /Users/alpascual/Projects/navigation/Map/UIImage+AppAdditions.h

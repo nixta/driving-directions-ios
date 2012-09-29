@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/albe5259/Projects/navigator/Map/UIToolbar+MapAdditions.m \
-  /Users/albe5259/Projects/navigator/Map/UIToolbar+MapAdditions.h
+  /Users/alpascual/Projects/navigation/Map/UIToolbar+MapAdditions.m \
+  /Users/alpascual/Projects/navigation/Map/UIToolbar+MapAdditions.h

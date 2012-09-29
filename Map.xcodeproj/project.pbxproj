@@ -141,7 +141,6 @@
 		786D77A714BE65DF00FDDA6C /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 786D77A314BE65DF00FDDA6C /* icon@2x.png */; };
 		786D77A814BE65DF00FDDA6C /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 786D77A314BE65DF00FDDA6C /* icon@2x.png */; };
 		786D77A914BE65DF00FDDA6C /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 786D77A314BE65DF00FDDA6C /* icon@2x.png */; };
-		786D77AB14BE66A800FDDA6C /* libArcGIS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 781A258E14A3BA78000808A8 /* libArcGIS.a */; };
 		786D77BD14BE70BF00FDDA6C /* att_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 786D77BB14BE70BF00FDDA6C /* att_logo.png */; };
 		786D77BE14BE70BF00FDDA6C /* att_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 786D77BB14BE70BF00FDDA6C /* att_logo.png */; };
 		786D77BF14BE70BF00FDDA6C /* att_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 786D77BB14BE70BF00FDDA6C /* att_logo.png */; };
@@ -752,51 +751,6 @@
 		88CFA5DD16162ED50084EB93 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5AC16123DAF0084EB93 /* SoundManager.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		781A258714A3BA78000808A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 781A257C14A3BA77000808A8 /* ArcGIS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = "ArcGIS-armv6";
-		};
-		781A258914A3BA78000808A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 781A257C14A3BA77000808A8 /* ArcGIS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4B40C156129749A800F50EFC;
-			remoteInfo = "ArcGIS-armv7";
-		};
-		781A258B14A3BA78000808A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 781A257C14A3BA77000808A8 /* ArcGIS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = AF4E383E11B988A600E1984B;
-			remoteInfo = "ArcGIS-sim";
-		};
-		781A258D14A3BA78000808A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 781A257C14A3BA77000808A8 /* ArcGIS.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4B6B126111BB1D3900E40699;
-			remoteInfo = "ArcGIS-fat";
-		};
-		781A258F14A3C0AE000808A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 781A257C14A3BA77000808A8 /* ArcGIS.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = AF4E379511B988A600E1984B;
-			remoteInfo = "ArcGIS-sim";
-		};
-		781A259114A3C0B4000808A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 781A257C14A3BA77000808A8 /* ArcGIS.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4B6B11B711BB1D3900E40699;
-			remoteInfo = "ArcGIS-fat";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		780382E914462CC30066BF3E /* ContactsManager+ContactsManager_DrawableList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactsManager+ContactsManager_DrawableList.h"; sourceTree = "<group>"; };
 		780382EA14462CC30066BF3E /* ContactsManager+ContactsManager_DrawableList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactsManager+ContactsManager_DrawableList.m"; sourceTree = "<group>"; };
@@ -817,7 +771,6 @@
 		7814840C14841CAA0002B33D /* SignTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignTableViewCell.m; sourceTree = "<group>"; };
 		7814BED8142BB64600753F21 /* Refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Refresh.png; path = Resources/Images/Refresh.png; sourceTree = "<group>"; };
 		7814BED9142BB64600753F21 /* Refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Refresh@2x.png"; path = "Resources/Images/Refresh@2x.png"; sourceTree = "<group>"; };
-		781A257C14A3BA77000808A8 /* ArcGIS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ArcGIS.xcodeproj; path = ../../SDK/ArcGIS/ArcGIS.xcodeproj; sourceTree = "<group>"; };
 		781F832E14290D5B00D063A5 /* MaxMinLayerTriangle-Open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MaxMinLayerTriangle-Open.png"; path = "Resources/Images/MaxMinLayerTriangle-Open.png"; sourceTree = "<group>"; };
 		781F832F14290D5B00D063A5 /* MaxMinLayerTriangle-Open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MaxMinLayerTriangle-Open@2x.png"; path = "Resources/Images/MaxMinLayerTriangle-Open@2x.png"; sourceTree = "<group>"; };
 		781F833014290D5B00D063A5 /* MaxMinLayerTriangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MaxMinLayerTriangle.png; path = Resources/Images/MaxMinLayerTriangle.png; sourceTree = "<group>"; };
@@ -1203,7 +1156,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				786D77AB14BE66A800FDDA6C /* libArcGIS.a in Frameworks */,
 				78BA0DBE1458C17500530ADD /* MessageUI.framework in Frameworks */,
 				78BA0DBF1458C17500530ADD /* libxml2.dylib in Frameworks */,
 				78BA0DC01458C17500530ADD /* libstdc++.dylib in Frameworks */,
@@ -1274,17 +1226,6 @@
 			name = "Throwaway Testing Images";
 			sourceTree = "<group>";
 		};
-		781A257D14A3BA77000808A8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				781A258814A3BA78000808A8 /* libArcGIS-armv6.a */,
-				781A258A14A3BA78000808A8 /* libArcGIS-armv7.a */,
-				781A258C14A3BA78000808A8 /* libArcGIS-sim.a */,
-				781A258E14A3BA78000808A8 /* libArcGIS.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		782FFD671427A0C800E02896 /* WebMap Related */ = {
 			isa = PBXGroup;
 			children = (
@@ -1324,7 +1265,6 @@
 				882A01EF160BD16A00027BE2 /* libstdc++.dylib */,
 				882A01ED160BD15300027BE2 /* libz.dylib */,
 				882A01EA160BCE3100027BE2 /* Default-568h@2x.png */,
-				781A257C14A3BA77000808A8 /* ArcGIS.xcodeproj */,
 				78342C99140D9CB400B0F354 /* Map */,
 				78342C88140D9CB400B0F354 /* Frameworks */,
 				78342C86140D9CB400B0F354 /* Products */,
@@ -1903,7 +1843,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				781A259014A3C0AE000808A8 /* PBXTargetDependency */,
 			);
 			name = "Map-SourceSim";
 			productName = Map;
@@ -1921,7 +1860,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				781A259214A3C0B4000808A8 /* PBXTargetDependency */,
 			);
 			name = "Map-Source";
 			productName = Map;
@@ -1946,12 +1884,6 @@
 			mainGroup = 78342C7A140D9CB400B0F354;
 			productRefGroup = 78342C86140D9CB400B0F354 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 781A257D14A3BA77000808A8 /* Products */;
-					ProjectRef = 781A257C14A3BA77000808A8 /* ArcGIS.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				78342C84140D9CB400B0F354 /* Map-SDK */,
@@ -1960,37 +1892,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		781A258814A3BA78000808A8 /* libArcGIS-armv6.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libArcGIS-armv6.a";
-			remoteRef = 781A258714A3BA78000808A8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		781A258A14A3BA78000808A8 /* libArcGIS-armv7.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libArcGIS-armv7.a";
-			remoteRef = 781A258914A3BA78000808A8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		781A258C14A3BA78000808A8 /* libArcGIS-sim.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libArcGIS-sim.a";
-			remoteRef = 781A258B14A3BA78000808A8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		781A258E14A3BA78000808A8 /* libArcGIS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libArcGIS.a;
-			remoteRef = 781A258D14A3BA78000808A8 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		78342C83140D9CB400B0F354 /* Resources */ = {
@@ -2731,19 +2632,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		781A259014A3C0AE000808A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ArcGIS-sim";
-			targetProxy = 781A258F14A3C0AE000808A8 /* PBXContainerItemProxy */;
-		};
-		781A259214A3C0B4000808A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ArcGIS-fat";
-			targetProxy = 781A259114A3C0B4000808A8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		78342C9C140D9CB400B0F354 /* InfoPlist.strings */ = {
