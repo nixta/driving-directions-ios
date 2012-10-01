@@ -65,19 +65,4 @@
 @end
 
 
-//For Testing Purposes
-@interface SanFranciscoOrganization : Organization 
-@end
-
-//For testing purposes
-@interface PoliceOrganization : Organization 
-@end
-
-//For Testing Purposes
-@interface ATTOrganization : Organization 
-@end
-
-//For Testing Purposes
-@interface TeapotOrganization : Organization 
-@end
 
