@@ -256,7 +256,6 @@
 		8868F96C161A027A00FB9238 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8868F9551616325400FB9238 /* CFNetwork.framework */; };
 		8868F96D161A028600FB9238 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CFA5D216162DAB0084EB93 /* AVFoundation.framework */; };
 		8868F96E161A029200FB9238 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A01F41610D6AA00027BE2 /* MapKit.framework */; };
-		8868F971161A06B800FB9238 /* NearByViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8868F970161A06B800FB9238 /* NearByViewController.m */; };
 		88CFA5D716162EBC0084EB93 /* PlayInternetSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5A916123DAF0084EB93 /* PlayInternetSound.m */; };
 		88CFA5D916162ECB0084EB93 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5D016162B7D0084EB93 /* AudioStreamer.m */; };
 		88CFA5DB16162ECF0084EB93 /* PlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5A716123DAF0084EB93 /* PlayController.m */; };
@@ -601,8 +600,6 @@
 		8868F960161A00C800FB9238 /* NearByView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearByView.xib; sourceTree = "<group>"; };
 		8868F968161A024200FB9238 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		8868F969161A024300FB9238 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		8868F96F161A06B800FB9238 /* NearByViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NearByViewController.h; sourceTree = "<group>"; };
-		8868F970161A06B800FB9238 /* NearByViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NearByViewController.m; sourceTree = "<group>"; };
 		88CFA5A616123DAF0084EB93 /* PlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayController.h; sourceTree = "<group>"; };
 		88CFA5A716123DAF0084EB93 /* PlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayController.m; sourceTree = "<group>"; };
 		88CFA5A816123DAF0084EB93 /* PlayInternetSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayInternetSound.h; sourceTree = "<group>"; };
@@ -777,7 +774,6 @@
 		78342C99140D9CB400B0F354 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				8868F965161A013000FB9238 /* Nearby */,
 				88CFA5A516123DAE0084EB93 /* Audio */,
 				882A01F31610BD8400027BE2 /* NSDictionary+AGSAdditions.h */,
 				78342CA8140D9CB500B0F354 /* ArcGIS.bundle */,
@@ -1269,15 +1265,6 @@
 			name = "Bookmark Utilities";
 			sourceTree = "<group>";
 		};
-		8868F965161A013000FB9238 /* Nearby */ = {
-			isa = PBXGroup;
-			children = (
-				8868F96F161A06B800FB9238 /* NearByViewController.h */,
-				8868F970161A06B800FB9238 /* NearByViewController.m */,
-			);
-			path = Nearby;
-			sourceTree = "<group>";
-		};
 		88CFA5A516123DAE0084EB93 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -1587,7 +1574,6 @@
 				88CFA5D916162ECB0084EB93 /* AudioStreamer.m in Sources */,
 				88CFA5DB16162ECF0084EB93 /* PlayController.m in Sources */,
 				88CFA5DD16162ED50084EB93 /* SoundManager.m in Sources */,
-				8868F971161A06B800FB9238 /* NearByViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

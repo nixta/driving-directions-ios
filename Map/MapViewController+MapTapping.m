@@ -358,7 +358,6 @@
         }
     }
     
-    [actionSheet addButtonWithTitle:NSLocalizedString(@"Add Bookmark", nil)]; nextIndex++;
     [actionSheet addButtonWithTitle:NSLocalizedString(@"Share Location", nil)]; nextIndex++;
     
     [actionSheet addButtonWithTitle:NSLocalizedString(@"Cancel", nil)];

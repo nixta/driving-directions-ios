@@ -79,7 +79,7 @@
 									<object class="IBUIButton" id="67619467">
 										<reference key="NSNextResponder" ref="599849602"/>
 										<int key="NSvFlags">292</int>
-										<string key="NSFrame">{{44, 3}, {34, 34}}</string>
+										<string key="NSFrame">{{48, 3}, {34, 34}}</string>
 										<reference key="NSSuperview" ref="599849602"/>
 										<reference key="NSWindow"/>
 										<string key="NSReuseIdentifierKey">_NS:222</string>
@@ -119,7 +119,7 @@
 									<object class="IBUIButton" id="255003014">
 										<reference key="NSNextResponder" ref="599849602"/>
 										<int key="NSvFlags">292</int>
-										<string key="NSFrame">{{5, 3}, {34, 34}}</string>
+										<string key="NSFrame">{{9, 3}, {34, 34}}</string>
 										<reference key="NSSuperview" ref="599849602"/>
 										<reference key="NSWindow"/>
 										<reference key="NSNextKeyView" ref="67619467"/>
@@ -150,7 +150,7 @@
 										<reference key="IBUIFont" ref="87911410"/>
 									</object>
 								</array>
-								<string key="NSFrame">{{235, 7}, {81, 40}}</string>
+								<string key="NSFrame">{{231, 7}, {85, 40}}</string>
 								<reference key="NSSuperview" ref="375160532"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="255003014"/>
@@ -4725,16 +4725,25 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">39</int>
+			<int key="maxID">42</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">AGSMapView</string>
+					<string key="superclassName">UIView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/AGSMapView.h</string>
+					</object>
+				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">MapViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="layersButtonPressed:">id</string>
 						<string key="locateMeButtonPressed:">id</string>
+						<string key="nearByButtonPresses:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="layersButtonPressed:">
@@ -4743,6 +4752,10 @@ AAgAAAAIAAIACAACAAAAAgAAAAEAAQABAAE</bytes>
 						</object>
 						<object class="IBActionInfo" key="locateMeButtonPressed:">
 							<string key="name">locateMeButtonPressed:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="nearByButtonPresses:">
+							<string key="name">nearByButtonPresses:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</dictionary>

@@ -241,8 +241,7 @@
                                                         anIcon:[UIImage imageNamed:@"AddressPin.png"]
                                                     locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]];
     
-    [self directToLocationFromCurrentLocation:passedLocation];
-    //[self routeButtonPressed:nil];
+    [self directToLocationFromCurrentLocation:passedLocation];    
 }
 
 - (void)viewDidUnload
@@ -383,7 +382,7 @@
         sb.tintColor = [UIColor blackColor];
         sb.placeholder = NSLocalizedString(@"Enter address, place name, etc", nil);
         sb.delegate = self;
-        sb.showsBookmarkButton = YES;
+        
         self.searchBar = sb;
     }
     
@@ -836,6 +835,7 @@
     [self toggleLocateMeAutoPan];
 }
 
+
 -(void)toggleLocateMeAutoPan
 {
     //The gps state will change based on the current state.  There are two states we'll switch
@@ -1159,11 +1159,11 @@
                 [self makePhoneCallForContactLocation:(ContactLocationBookmark *)tappedLocation];
                 break;
             case 1:    //Bookmarks!
-                [self wantBookmarkForLocation:tappedLocation];
-                break;
-            case 2:    //Share Location via email
                 [self shareLocationViaEmail:tappedLocation];
                 break;
+//            case 2:    //Share Location via email
+//                [self shareLocationViaEmail:tappedLocation];
+//                break;
             default:
                 break;
         }

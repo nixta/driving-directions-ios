@@ -20,7 +20,7 @@
 #import <ArcGIS/ArcGIS.h>
 
 /*
- Enter description here
+ Extending the WebMaps from teh library.
  */
 
 @interface AGSWebMap (AGSWebMap_Additions)

@@ -107,7 +107,8 @@
 -(void)layoutSubviews
 {
     
-    self.internetSound = [[PlayInternetSound alloc] init];
+#warning Delete the classes as well for this method
+    //self.internetSound = [[PlayInternetSound alloc] init];
     
     if (self.scrollView.superview == nil) {
         [self setupScrollView];
@@ -459,14 +460,16 @@
                                                        startingX:245 
                                                        useShadow:YES];
     
+    #warning Delete
     // Enable voice
-    NSMutableString *cleanDirection = [[NSMutableString alloc] initWithString:direction.name];
-    [cleanDirection replaceOccurrencesOfString:@" " withString:@"%20" options:0 range:NSMakeRange(0, [cleanDirection length])];
-    
-    //http://translate.google.com/translate_tts?ie=UTF-8&q=Starting&tl=en&total=1&idx=0&textlen=8&prev=input
-    NSString *wordToPlay = [[NSString alloc] initWithFormat:@"http://translate.google.com/translate_tts?ie=UTF-8&q=%@&tl=en", cleanDirection];
-    
-    [self.internetSound playOneSound:wordToPlay];
+//    NSMutableString *cleanDirection = [[NSMutableString alloc] initWithString:direction.name];
+//    [cleanDirection replaceOccurrencesOfString:@" " withString:@"%20" options:0 range:NSMakeRange(0, [cleanDirection length])];
+//    
+//    //http://translate.google.com/translate_tts?ie=UTF-8&q=Starting&tl=en&total=1&idx=0&textlen=8&prev=input
+//    NSString *wordToPlay = [[NSString alloc] initWithFormat:@"http://translate.google.com/translate_tts?ie=UTF-8&q=%@&tl=en", cleanDirection];
+//    
+//
+//    [self.internetSound playOneSound:wordToPlay];
     
     ssv.backgroundColor = [UIColor clearColor];
     

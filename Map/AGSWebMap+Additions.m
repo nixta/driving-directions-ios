@@ -21,6 +21,7 @@
 #import <ArcGIS/ArcGIS.h>
 
 
+// Extending the AGSWebMaps from the library
 @implementation AGSWebMap (AGSWebMap_Additions)
 
 -(NSString *)title

@@ -102,12 +102,12 @@
         addrLabel.backgroundColor = [UIColor clearColor];
         self.addressLabel = addrLabel;
         
-        UIButton *hideButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        hideButton.frame = CGRectMake(0, 0, 25, 25);
-        hideButton.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-        [hideButton setImage:[UIImage imageNamed:@"hidepin.png"] forState:UIControlStateNormal];
-        [hideButton addTarget:self action:@selector(hidePinButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
-        self.hideButton = hideButton;
+//        UIButton *hideButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//        hideButton.frame = CGRectMake(0, 0, 25, 25);
+//        hideButton.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+//        [hideButton setImage:[UIImage imageNamed:@"hidepin.png"] forState:UIControlStateNormal];
+//        [hideButton addTarget:self action:@selector(hidePinButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+//        self.hideButton = hideButton;
         
         UIButton *actionButton = [UIButton buttonWithType:UIButtonTypeCustom];
         actionButton.frame = CGRectMake(0, 0, 25, 25);

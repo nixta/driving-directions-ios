@@ -72,15 +72,10 @@
     
     self.finishButton.enabled = (self.organizations.count > 0);
     
-    //self.view.backgroundColor = [UIColor offWhiteColor];
-    //self.tableView.backgroundColor = [UIColor offWhiteColor];
-    
-    
     // bypass the login screen for now
+    // the organization controller is in case you want to connect to arcgis.com
     self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self
-                                                selector:@selector(requestTimerReady) userInfo:nil repeats:NO];
-    
-    
+                                                selector:@selector(requestTimerReady) userInfo:nil repeats:NO];    
 }
 
 - (void)requestTimerReady {

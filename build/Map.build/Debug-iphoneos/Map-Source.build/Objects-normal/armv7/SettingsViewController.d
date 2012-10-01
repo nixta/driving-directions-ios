@@ -196,4 +196,5 @@ dependencies: \
   /Users/albe5259/Projects/navigator/Map/Audio/PlayInternetSound.h \
   /Users/albe5259/Projects/navigator/Map/Audio/AudioStreamer.h \
   /Users/albe5259/Projects/navigator/Map/Route.h \
-  /Users/albe5259/Projects/navigator/Map/RouteSolver.h
+  /Users/albe5259/Projects/navigator/Map/RouteSolver.h \
+  /Users/albe5259/Projects/navigator/Map/Nearby/NearByViewController.h
