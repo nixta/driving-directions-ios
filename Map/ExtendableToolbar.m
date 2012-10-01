@@ -3,7 +3,7 @@
 //  AdvancedToolbar
 //
 //  Created by Scott Sirowy on 12/4/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2011 ESRI. All rights reserved.
 //
 
 #import "ExtendableToolbar.h"

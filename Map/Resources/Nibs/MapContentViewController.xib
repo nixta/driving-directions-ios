@@ -113,7 +113,7 @@
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
-					<object class="IBUILabel" id="449335015">
+					<object class="IBUILabel" id="508867452">
 						<reference key="NSNextResponder" ref="982834122"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{55, 31}, {195, 21}}</string>
@@ -136,12 +136,14 @@
 						<int key="IBUIBaselineAdjustment">0</int>
 						<int key="IBUITextAlignment">1</int>
 						<object class="IBUIFontDescription" key="IBUIFontDescription">
-							<int key="type">1</int>
-							<double key="pointSize">17</double>
+							<string key="name">TimesNewRomanPSMT</string>
+							<string key="family">Times New Roman</string>
+							<int key="traits">0</int>
+							<double key="pointSize">25</double>
 						</object>
 						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">Helvetica</string>
-							<double key="NSSize">17</double>
+							<string key="NSName">TimesNewRomanPSMT</string>
+							<double key="NSSize">25</double>
 							<int key="NSfFlags">16</int>
 						</object>
 						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
@@ -150,7 +152,7 @@
 				<string key="NSFrameSize">{320, 416}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="449335015"/>
+				<reference key="NSNextKeyView" ref="508867452"/>
 				<string key="NSReuseIdentifierKey">_NS:180</string>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
@@ -243,7 +245,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="119457019"/>
 							<reference ref="683958560"/>
-							<reference ref="449335015"/>
+							<reference ref="508867452"/>
 						</object>
 						<reference key="parent" ref="0"/>
 						<string key="objectName">View</string>
@@ -270,7 +272,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">58</int>
-						<reference key="object" ref="449335015"/>
+						<reference key="object" ref="508867452"/>
 						<reference key="parent" ref="982834122"/>
 					</object>
 				</object>

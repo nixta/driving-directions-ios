@@ -3,7 +3,7 @@
 //  Map
 //
 //  Created by Scott Sirowy on 8/30/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 ESRI. All rights reserved.
 /*
  
  All rights reserved under the copyright laws of the United States

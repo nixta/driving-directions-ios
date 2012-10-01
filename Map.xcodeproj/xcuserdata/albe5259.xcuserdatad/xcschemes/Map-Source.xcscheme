@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "78BA0CB31458C0CF00530ADD"
-            BuildableName = "Navigator.app"
-            BlueprintName = "Map-SourceSim"
+            BlueprintIdentifier = "78BA0D7B1458C17500530ADD"
+            BuildableName = "Directions.app"
+            BlueprintName = "Map-Source"
             ReferencedContainer = "container:Map.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -51,9 +51,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "78BA0CB31458C0CF00530ADD"
-            BuildableName = "Navigator.app"
-            BlueprintName = "Map-SourceSim"
+            BlueprintIdentifier = "78BA0D7B1458C17500530ADD"
+            BuildableName = "Directions.app"
+            BlueprintName = "Map-Source"
             ReferencedContainer = "container:Map.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -3,7 +3,7 @@
 //  Geography Tutor
 //
 //  Created by Al Pascual on 12/22/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Copyright 2010 ESRI. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
