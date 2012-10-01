@@ -342,6 +342,8 @@
     //remove any text in keyboard
     self.searchBar.text = nil;
     
+    //self.searchBar.showsBookmarkButton = YES;
+
     [self setCalloutShown:NO];
     
     [self showResultsList:NO];
@@ -397,6 +399,7 @@
     [self showMapListButton:YES withPlanningButton:YES animated:YES];
     [self.mapListButton setImage:[UIImage imageNamed:@"list.png"]];
     
+    //self.searchBar.showsBookmarkButton = YES;
 }
 
 -(void)showResultsList:(BOOL)show
@@ -422,7 +425,7 @@
     UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace 
                                                                                    target:nil 
                                                                                    action:nil];
-    NSArray *items = [NSArray arrayWithObjects:flexibleSpace, self.mapListButton, nil];
+    NSArray *items = [NSArray arrayWithObjects:self.planningButton, flexibleSpace, self.mapListButton, nil];
     self.extendableToolbar.items = items;
     
     if(self.searchBar.superview == nil)

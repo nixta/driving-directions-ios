@@ -97,7 +97,7 @@
     }
 }
 
--(NSURL *)routeUrl
+-(NSURL *)routeUrlbase
 {    
     //US Route Server
     // looking for the world routing service

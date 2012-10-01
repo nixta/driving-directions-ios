@@ -191,7 +191,6 @@ dependencies: \
   /Users/albe5259/Projects/navigator/Map/Route.h \
   /Users/albe5259/Projects/navigator/Map/RouteSolver.h \
   /Users/albe5259/Projects/navigator/Map/routingDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/Nearby/NearByViewController.h \
   /Users/albe5259/Projects/navigator/Map/MapViewController+MapTapping.h \
   /Users/albe5259/Projects/navigator/Map/CurrentLocation.h \
   /Users/albe5259/Projects/navigator/Map/DirectionsList.h

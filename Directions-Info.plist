@@ -10,14 +10,10 @@
 	<array>
 		<dict>
 			<key>CFBundleTypeName</key>
-			<string>ArcGIS Directions Stops List</string>
-			<key>CFBundleTypeRole</key>
-			<string>Editor</string>
-			<key>LSHandlerRank</key>
-			<string>Owner</string>
+			<string>MKDirectionsRequest</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>com.esri.Directions.stopslist.csv</string>
+				<string>com.apple.maps.directionsrequest</string>
 			</array>
 		</dict>
 	</array>
@@ -54,6 +50,11 @@
 	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MKDirectionsApplicationSupportedModes</key>
+	<array>
+		<string>MKDirectionsModeCar</string>
+		<string>MKDirectionsModeOther</string>
+	</array>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
 	<key>UIStatusBarHidden</key>
