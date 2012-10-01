@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/OrganizationChooserViewController.m"
-         timestampString = "370293046.72774"
+         timestampString = "370566165.500008"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "136"
-         endingLineNumber = "136"
+         startingLineNumber = "147"
+         endingLineNumber = "147"
          landmarkName = "-finishButtonPressed:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/StopSignView.m"
-         timestampString = "370560713.081575"
+         timestampString = "370566165.500008"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "97"
-         endingLineNumber = "97"
+         startingLineNumber = "108"
+         endingLineNumber = "108"
          landmarkName = "-setLocation:"
          landmarkType = "5">
       </FileBreakpoint>
