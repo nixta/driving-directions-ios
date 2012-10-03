@@ -256,10 +256,6 @@
 		8868F96C161A027A00FB9238 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8868F9551616325400FB9238 /* CFNetwork.framework */; };
 		8868F96D161A028600FB9238 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CFA5D216162DAB0084EB93 /* AVFoundation.framework */; };
 		8868F96E161A029200FB9238 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A01F41610D6AA00027BE2 /* MapKit.framework */; };
-		88CFA5D716162EBC0084EB93 /* PlayInternetSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5A916123DAF0084EB93 /* PlayInternetSound.m */; };
-		88CFA5D916162ECB0084EB93 /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5D016162B7D0084EB93 /* AudioStreamer.m */; };
-		88CFA5DB16162ECF0084EB93 /* PlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5A716123DAF0084EB93 /* PlayController.m */; };
-		88CFA5DD16162ED50084EB93 /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88CFA5AC16123DAF0084EB93 /* SoundManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -600,16 +596,7 @@
 		8868F960161A00C800FB9238 /* NearByView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearByView.xib; sourceTree = "<group>"; };
 		8868F968161A024200FB9238 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		8868F969161A024300FB9238 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		88CFA5A616123DAF0084EB93 /* PlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayController.h; sourceTree = "<group>"; };
-		88CFA5A716123DAF0084EB93 /* PlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayController.m; sourceTree = "<group>"; };
-		88CFA5A816123DAF0084EB93 /* PlayInternetSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayInternetSound.h; sourceTree = "<group>"; };
-		88CFA5A916123DAF0084EB93 /* PlayInternetSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayInternetSound.m; sourceTree = "<group>"; };
-		88CFA5AA16123DAF0084EB93 /* SoundDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundDelegate.h; sourceTree = "<group>"; };
-		88CFA5AB16123DAF0084EB93 /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
-		88CFA5AC16123DAF0084EB93 /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
 		88CFA5CE1615177B0084EB93 /* routingDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = routingDelegate.h; sourceTree = "<group>"; };
-		88CFA5CF16162B7D0084EB93 /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
-		88CFA5D016162B7D0084EB93 /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
 		88CFA5D216162DAB0084EB93 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		88CFA5D416162DBA0084EB93 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -774,7 +761,6 @@
 		78342C99140D9CB400B0F354 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				88CFA5A516123DAE0084EB93 /* Audio */,
 				882A01F31610BD8400027BE2 /* NSDictionary+AGSAdditions.h */,
 				78342CA8140D9CB500B0F354 /* ArcGIS.bundle */,
 				78342CA2140D9CB400B0F354 /* MapAppDelegate.h */,
@@ -1265,22 +1251,6 @@
 			name = "Bookmark Utilities";
 			sourceTree = "<group>";
 		};
-		88CFA5A516123DAE0084EB93 /* Audio */ = {
-			isa = PBXGroup;
-			children = (
-				88CFA5CF16162B7D0084EB93 /* AudioStreamer.h */,
-				88CFA5D016162B7D0084EB93 /* AudioStreamer.m */,
-				88CFA5A616123DAF0084EB93 /* PlayController.h */,
-				88CFA5A716123DAF0084EB93 /* PlayController.m */,
-				88CFA5A816123DAF0084EB93 /* PlayInternetSound.h */,
-				88CFA5A916123DAF0084EB93 /* PlayInternetSound.m */,
-				88CFA5AA16123DAF0084EB93 /* SoundDelegate.h */,
-				88CFA5AB16123DAF0084EB93 /* SoundManager.h */,
-				88CFA5AC16123DAF0084EB93 /* SoundManager.m */,
-			);
-			path = Audio;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1570,10 +1540,6 @@
 				78BFC28314A119A5001F1522 /* NSNull+Additions.m in Sources */,
 				78BFC28814A13303001F1522 /* MapViewController+PlanningRouting.m in Sources */,
 				786557F714ABF77E00AB9C8B /* StopSignView.m in Sources */,
-				88CFA5D716162EBC0084EB93 /* PlayInternetSound.m in Sources */,
-				88CFA5D916162ECB0084EB93 /* AudioStreamer.m in Sources */,
-				88CFA5DB16162ECF0084EB93 /* PlayController.m in Sources */,
-				88CFA5DD16162ED50084EB93 /* SoundManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

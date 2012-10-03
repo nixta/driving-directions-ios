@@ -29,7 +29,6 @@
 #import <UIKit/UIKit.h>
 #import "PassThroughView.h"
 #import "StopsList.h"
-#import "PlayInternetSound.h"
 
 @class BlankSignView;
 @class DrawableList;
