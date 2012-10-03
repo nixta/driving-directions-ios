@@ -202,6 +202,7 @@
 - (void) getBaseMaps
 {
 	
+    // This could be done using the WIDeskViewController that return the items instead of the urls
 	NSString *urlString = 
 	[NSString stringWithFormat:@"search?q=group:%@ AND type:'web map'&sortField=name&sortOrder=desc&num=50&f=json", _groupID];
     
@@ -246,8 +247,13 @@
             NSString *agolLoc = [ArcGISOnlineConnection portalSharingLocation];
             NSString *urlString = [NSString stringWithFormat:@"%@/content/items/%@/data", agolLoc, item.itemId];
             
-            BasemapInfo *basemapInfo = [[BasemapInfo alloc] initWithTitle:item.title urlString:urlString contentItem:item];
-            [self.basemapInfos addObject:basemapInfo];
+            NSLog(@"BaseMap title %@", item.title);            
+           
+            // If the basemap isn't bing
+            if ( [self foundSubstring:item.title find:@"Bing"] == NO) {            
+                BasemapInfo *basemapInfo = [[BasemapInfo alloc] initWithTitle:item.title urlString:urlString contentItem:item];
+                [self.basemapInfos addObject:basemapInfo];
+            }
         }
     }
     
@@ -256,6 +262,17 @@
     
     // nil out to release data
     self.baseMapsOp = nil;
+}
+
+-(BOOL) foundSubstring:(NSString*)originalString find:(NSString*)toFind
+{
+    
+    NSRange isRange = [originalString rangeOfString:toFind options:NSCaseInsensitiveSearch];
+    if(isRange.location == 0) {
+        return YES;
+    }
+
+    return NO;
 }
 
 #pragma mark -

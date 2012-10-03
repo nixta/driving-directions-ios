@@ -249,13 +249,13 @@
 		78F72B5F145F6178009269BC /* Default_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 78F72B59145F6178009269BC /* Default_icon@2x.png */; };
 		78F82B31149A853100C83034 /* AGSSymbol+AppAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F82B2E149A853100C83034 /* AGSSymbol+AppAdditions.m */; };
 		882A01EB160BCE3100027BE2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 882A01EA160BCE3100027BE2 /* Default-568h@2x.png */; };
-		8868F963161A00C900FB9238 /* NearByView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8868F960161A00C800FB9238 /* NearByView.xib */; };
 		8868F966161A018800FB9238 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A01EF160BD16A00027BE2 /* libstdc++.dylib */; };
 		8868F967161A024200FB9238 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CFA5D416162DBA0084EB93 /* AudioToolbox.framework */; };
 		8868F96B161A024400FB9238 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8868F969161A024300FB9238 /* CoreAudio.framework */; };
 		8868F96C161A027A00FB9238 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8868F9551616325400FB9238 /* CFNetwork.framework */; };
 		8868F96D161A028600FB9238 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CFA5D216162DAB0084EB93 /* AVFoundation.framework */; };
 		8868F96E161A029200FB9238 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A01F41610D6AA00027BE2 /* MapKit.framework */; };
+		8868F977161C9A7100FB9238 /* WIDeskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8868F976161C9A7100FB9238 /* WIDeskViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -593,9 +593,10 @@
 		882A01F41610D6AA00027BE2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		8868F9551616325400FB9238 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		8868F9581616480500FB9238 /* MapStates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapStates.h; sourceTree = "<group>"; };
-		8868F960161A00C800FB9238 /* NearByView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NearByView.xib; sourceTree = "<group>"; };
 		8868F968161A024200FB9238 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		8868F969161A024300FB9238 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		8868F975161C9A7100FB9238 /* WIDeskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIDeskViewController.h; sourceTree = "<group>"; };
+		8868F976161C9A7100FB9238 /* WIDeskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIDeskViewController.m; sourceTree = "<group>"; };
 		88CFA5CE1615177B0084EB93 /* routingDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = routingDelegate.h; sourceTree = "<group>"; };
 		88CFA5D216162DAB0084EB93 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		88CFA5D416162DBA0084EB93 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -1043,7 +1044,6 @@
 				789197581415B7BD00E85321 /* MapViewController.xib */,
 				789197591415B7BD00E85321 /* DrawableContainerViewController.xib */,
 				78342CA5140D9CB400B0F354 /* MainWindow.xib */,
-				8868F960161A00C800FB9238 /* NearByView.xib */,
 			);
 			name = Nibs;
 			sourceTree = "<group>";
@@ -1119,6 +1119,8 @@
 		7878C159141ACD70000ACBBD /* Basemaps */ = {
 			isa = PBXGroup;
 			children = (
+				8868F975161C9A7100FB9238 /* WIDeskViewController.h */,
+				8868F976161C9A7100FB9238 /* WIDeskViewController.m */,
 				784695DF141EC7D000847AB6 /* Basemaps.h */,
 				784695E0141EC7D000847AB6 /* Basemaps.m */,
 				78FCC111141E769A005926F6 /* BasemapsTableViewCell.h */,
@@ -1452,7 +1454,6 @@
 				786D77BF14BE70BF00FDDA6C /* att_logo.png in Resources */,
 				786D77C214BE70BF00FDDA6C /* att_logo@2x.png in Resources */,
 				882A01EB160BCE3100027BE2 /* Default-568h@2x.png in Resources */,
-				8868F963161A00C900FB9238 /* NearByView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1540,6 +1541,7 @@
 				78BFC28314A119A5001F1522 /* NSNull+Additions.m in Sources */,
 				78BFC28814A13303001F1522 /* MapViewController+PlanningRouting.m in Sources */,
 				786557F714ABF77E00AB9C8B /* StopSignView.m in Sources */,
+				8868F977161C9A7100FB9238 /* WIDeskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

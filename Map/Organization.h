@@ -22,6 +22,9 @@
 
 @protocol OrganizationDelegate;
 
+//#define kDefaultWebMapId @"15d033f017454856a0fb65f56b9c5a15"
+#define kDefaultWebMapId @"5b84b12a666c477db2842bb5800d87c7"
+
 @interface Organization : NSObject <AGSWebMapDelegate, AGSCoding>
 {
     AGSWebMap                   *_webmap;

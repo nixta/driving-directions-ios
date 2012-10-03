@@ -66,6 +66,7 @@
 -(NSInteger)numberOfBasemaps;
 
 -(BasemapInfo *)basemapAtIndex:(NSUInteger)index;
+-(BOOL) foundSubstring:(NSString*)originalString find:(NSString*)toFind;
 
 @end
 
