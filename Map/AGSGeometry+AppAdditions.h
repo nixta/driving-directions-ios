@@ -21,7 +21,7 @@
 
 @interface AGSGeometry (AppAdditions)
 
--(BOOL)isEmpty;
+
 -(AGSPoint *)getLocationPoint;
 -(AGSGeometryType)geometryType;
 -(AGSPoint *)head;

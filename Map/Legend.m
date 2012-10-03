@@ -19,7 +19,7 @@
  */
 
 #import "Legend.h"
-#warning This was NSDictionary+AGSAdditions.h
+
 #import "NSDictionary+Additions.h"
 #import "MapLayerInfo+AppAdditions.h"
 #import "ArcGISMobileConfig.h"

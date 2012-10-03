@@ -12,7 +12,6 @@
 #import "MapAppSettings.h"
 #import "UIColor+Additions.h"
 #import "Basemaps.h"
-#import "AGSWebMap+Additions.h"
 #import <ArcGIS/ArcGIS.h>
 #import "ContentItem.h"
 

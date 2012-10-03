@@ -99,7 +99,7 @@
     }
     
     //Create basemaps model object
-#warning Returne the onlineBasemapArray 
+//#warning Return the onlineBasemapArray to finish this implementation.
 }
 
 

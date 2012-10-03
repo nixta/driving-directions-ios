@@ -81,19 +81,7 @@
     {
         self.routeSolverSettings = [[RouteSolverSettings alloc] init];
     }
-    
-#warning Commented Out for now. Needs to be moved to organization
-    /*
-    NSDictionary *webMapJSON = [json objectForKey:@"currentMap"];
-    if (webMapJSON) {
-        self.currentMap = [[[AGSWebMap alloc] initWithJSON:webMapJSON] autorelease];
-    }
-    
-    NSDictionary *extentJSON = [json objectForKey:@"savedExtent"];
-    if (webMapJSON) {
-        self.savedExtent = [[[AGSEnvelope alloc] initWithJSON:extentJSON] autorelease];
-    }
-     */
+
 }
 
 - (id)initWithJSON:(NSDictionary *)json {
@@ -121,8 +109,6 @@
         [json setObject:[self.savedExtent encodeToJSON] forKey:@"savedExtent"];
     }
     
-    
-#warning Still need to do custom basemap!!
     
 	return json;
 }

@@ -21,29 +21,7 @@
 
 @implementation AGSGeometry (AppAdditions)
 
--(BOOL)isEmpty
-{
-    BOOL bIsEmpty = YES;
-    if ([self isKindOfClass:[AGSPoint class]]){
-		AGSPoint *p = (AGSPoint*)self;
-		
-        bIsEmpty = (isinf(p.x) || isinf(p.y) ||
-                    isnan(p.x) || isnan(p.y));
-	}
-	
-	else if ([self isKindOfClass:[AGSPolyline class]]){
-		bIsEmpty = [((AGSPolyline*)self) numPaths];
-	}
-	else if ([self isKindOfClass:[AGSPolygon class]]){
-		bIsEmpty = [((AGSPolygon*)self) numRings];
-	}
-	else{
-		// multipoints...
-        bIsEmpty = ([((AGSMultipoint*)self) numPoints] <= 0);
-	}
-    
-    return bIsEmpty;
-}
+
 
 //gets a single point for any geometry type.
 //returns the center point of the envelope for

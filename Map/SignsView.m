@@ -603,19 +603,6 @@
     cell.iconImageView.image = dir.icon;
     cell.nameLabel.text = dir.abbreviatedName;
 
-# warning Testing a different color for highlighted direction
-    /*
-     if (indexPath.row == 1) {
-     //cell.view.backgroundColor = [UIColor colorWithRed:(253.0/255.0) green:(218.0/255.0) blue:(113.0/255.0) alpha:1.0];
-     cell.view.backgroundColor = [UIColor colorWithRed:(192.0/255.0) green:(192.0/255.0) blue:(192.0/255.0) alpha:1.0];
-     cell.distanceLabel.textColor = [UIColor blackColor];
-     cell.nameLabel.textColor = [UIColor blackColor];
-     }
-     else{
-     cell.view.backgroundColor = [UIColor clearColor];
-     cell.distanceLabel.textColor = [UIColor whiteColor];
-     cell.nameLabel.textColor = [UIColor whiteColor];
-     } */
     
     CGRect cellFrame = cell.view.frame;
     CGRect nameFrame = cell.nameLabel.frame;

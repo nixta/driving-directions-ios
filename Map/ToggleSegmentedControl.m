@@ -19,15 +19,4 @@
     }
 }
 
-/*-(void)setSelectedSegmentIndex:(NSInteger)selectedSegmentIndex
-{
-    // Trigger UIControlEventValueChanged even when re-tapping the selected segment.
-    if (selectedSegmentIndex==self.selectedSegmentIndex) {
-        [super setSelectedSegmentIndex:UISegmentedControlNoSegment]; // notify first
-        //[self sendActionsForControlEvents:UIControlEventValueChanged]; // then unset
-    } else {
-        [super setSelectedSegmentIndex:selectedSegmentIndex]; 
-    }
-}  */
-
 @end

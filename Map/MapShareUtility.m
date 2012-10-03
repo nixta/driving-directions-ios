@@ -48,7 +48,7 @@
     {
         NSString *rawStopString = nil;
         
-#warning Needs to be done in a much better way... i.e error handling, better parsing, etc
+        //Needs to be done in a much better way... i.e error handling, better parsing, etc
         if ([url isFileURL]) {
             NSString *csvData = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
             NSMutableArray *rows = [self parseCSVString:csvData];
@@ -57,7 +57,7 @@
             for(int i = 0; i < rows.count; i++)
             {
                 NSArray *stop = [rows objectAtIndex:i];
-                rawStopString = [rawStopString stringByAppendingFormat:[stop componentsJoinedByString:@"/"]];
+                rawStopString = [rawStopString stringByAppendingString:[stop componentsJoinedByString:@"/"]];
                 rawStopString = [rawStopString stringByAppendingString:@"/"];
                 NSLog(@"New string: %@", rawStopString);
             }

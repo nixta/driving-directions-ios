@@ -848,15 +848,16 @@
     //gps won't have been enabled yet
     
     AGSGPS *gps = self.mapView.gps;
-#warning Check for maploaded?!
-    if (!gps.enabled)
-    {
-        [self enableGpsAutoPan];
-    }
-    else //gps is enabled
-    {
-        //disable gps
-        [gps stop];
+    if ( self.mapView.loaded) {        
+        if (!gps.enabled)
+        {
+            [self enableGpsAutoPan];
+        }
+        else //gps is enabled
+        {
+            //disable gps
+            [gps stop];
+        }
     }
 }
 
@@ -1060,7 +1061,7 @@
     if (self.mapAppSettings.savedExtent) {
         [self.mapView zoomToEnvelope:self.mapAppSettings.savedExtent animated:NO];
     }
-    #warning Remove once portal API is implemented
+    
     else if(self.mapAppSettings.organization.defaultEnvelope)
     {
         [self.mapView zoomToEnvelope:self.mapAppSettings.organization.defaultEnvelope animated:NO];

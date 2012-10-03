@@ -128,13 +128,6 @@
     self.mapView.callout.margin = CGSizeMake(0, 0);
     self.mapView.callout.highlight = nil;
     self.mapView.callout.cornerRadius = [LocationCalloutView radius];
-        
-#warning Commented out stuff!
-    /*
-     AGSGeometryEngine *geometryEngine = [AGSGeometryEngine defaultGeometryEngine];
-     AGSPoint *normalizedGeometry = (self.mapView.wrapAround) ? (AGSPoint *)[geometryEngine normalizeCentralMeridianOfGeometry:location] : location;
-     [self startQueryOperationsForPoint:normalizedGeometry];
-     */
     
     [self.mapView showCalloutAtPoint:(AGSPoint *)location.geometry forGraphic:location.graphic animated:YES];
     

@@ -116,7 +116,6 @@
 		78BA0D9F1458C17500530ADD /* LocationBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 785634311423F1610040586A /* LocationBookmark.m */; };
 		78BA0DA01458C17500530ADD /* Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D53BFD14241095005B0D82 /* Search.m */; };
 		78BA0DA11458C17500530ADD /* UserSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D53C0114241372005B0D82 /* UserSearchResults.m */; };
-		78BA0DA21458C17500530ADD /* AGSWebMap+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 782FFD6414279E1600E02896 /* AGSWebMap+Additions.m */; };
 		78BA0DA41458C17500530ADD /* IconDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CBDBDA142981C100BEFB46 /* IconDownloader.m */; };
 		78BA0DA51458C17500530ADD /* CurrentLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 784E9AFA142A4F95006F5937 /* CurrentLocation.m */; };
 		78BA0DA81458C17500530ADD /* Direction.m in Sources */ = {isa = PBXBuildFile; fileRef = 7858321C142D326B006E0D95 /* Direction.m */; };
@@ -295,8 +294,6 @@
 		782C85B314B64DF500221A65 /* Directions-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Directions-Info.plist"; sourceTree = SOURCE_ROOT; };
 		782EBF9214869F4A00A69AEE /* DrawableResultsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawableResultsTableView.h; sourceTree = "<group>"; };
 		782EBF9314869F4A00A69AEE /* DrawableResultsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawableResultsTableView.m; sourceTree = "<group>"; };
-		782FFD6314279E1600E02896 /* AGSWebMap+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AGSWebMap+Additions.h"; path = "Map/AGSWebMap+Additions.h"; sourceTree = "<group>"; };
-		782FFD6414279E1600E02896 /* AGSWebMap+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AGSWebMap+Additions.m"; path = "Map/AGSWebMap+Additions.m"; sourceTree = "<group>"; };
 		78340030142CF20E00DDC5B6 /* LeftArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LeftArrow.png; path = Resources/Images/LeftArrow.png; sourceTree = "<group>"; };
 		78340031142CF20E00DDC5B6 /* LeftArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "LeftArrow@2x.png"; path = "Resources/Images/LeftArrow@2x.png"; sourceTree = "<group>"; };
 		78340032142CF20E00DDC5B6 /* RightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RightArrow.png; path = Resources/Images/RightArrow.png; sourceTree = "<group>"; };
@@ -682,16 +679,6 @@
 			name = "Throwaway Testing Images";
 			sourceTree = "<group>";
 		};
-		782FFD671427A0C800E02896 /* WebMap Related */ = {
-			isa = PBXGroup;
-			children = (
-				782FFD6314279E1600E02896 /* AGSWebMap+Additions.h */,
-				782FFD6414279E1600E02896 /* AGSWebMap+Additions.m */,
-			);
-			name = "WebMap Related";
-			path = ..;
-			sourceTree = "<group>";
-		};
 		782FFD6B1427AE7100E02896 /* Routing */ = {
 			isa = PBXGroup;
 			children = (
@@ -779,7 +766,6 @@
 				78342C9A140D9CB400B0F354 /* Supporting Files */,
 				7878C12E141A6B5F000ACBBD /* Users and Organizations */,
 				78342CC0140DAC4100B0F354 /* Utililty */,
-				782FFD671427A0C800E02896 /* WebMap Related */,
 				88CFA5CE1615177B0084EB93 /* routingDelegate.h */,
 			);
 			path = Map;
@@ -1499,7 +1485,6 @@
 				78BA0D9F1458C17500530ADD /* LocationBookmark.m in Sources */,
 				78BA0DA01458C17500530ADD /* Search.m in Sources */,
 				78BA0DA11458C17500530ADD /* UserSearchResults.m in Sources */,
-				78BA0DA21458C17500530ADD /* AGSWebMap+Additions.m in Sources */,
 				78BA0DA41458C17500530ADD /* IconDownloader.m in Sources */,
 				78BA0DA51458C17500530ADD /* CurrentLocation.m in Sources */,
 				78BA0DA81458C17500530ADD /* Direction.m in Sources */,
