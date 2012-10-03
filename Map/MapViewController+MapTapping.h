@@ -27,7 +27,7 @@
 @class ContactLocationBookmark;
 @class Location;
 
-@interface MapViewController (MapViewController_MapTapping) <InputAlertViewDelegate, AGSPopupsContainerDelegate>
+@interface MapViewController (MapViewController_MapTapping) <AGSPopupsContainerDelegate>
 
 -(Location *)defaultLocationForPoint:(AGSPoint *)point;
 -(void)dropPinForLocation:(Location *)location;

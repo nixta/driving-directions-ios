@@ -38,9 +38,7 @@
 #import "OverviewDirection.h"
 #import "DirectionsPrintRenderer.h"
 #import "TabbedResultsViewController.h"
-#import "Bookmarks.h"
 #import "Route.h"
-#import "ContactsManager+ContactsManager_DrawableList.h"
 #import "MapShareUtility.h"
 #import "Legend.h"
 #import "Route.h"
@@ -53,13 +51,11 @@
 
 #import "OrganizationChooserViewController.h"
 
-#import "ContactLocationBookmark.h"
 #import "Location.h"
 
 #import "Search.h"
 #import "UserSearchResults.h"
 
-#import "BookmarksViewController-Iphone.h"
 
 #define gpsAutoPanKey          @"autoPanMode"
 #define gpsEnabledKey          @"enabled"
@@ -1092,18 +1088,8 @@
         self.shareWithMapUrl = nil;
     }
     
-    // hide all the layers besides the basemap
-    NSArray *mapLayerViews = [self.mapView.mapLayerViews allKeys];    
-    for (int i=0; i < mapLayerViews.count; i++) {
-        UIView *layer = (UIView *)[mapLayerViews objectAtIndex:i];
-        @try {
-            layer.hidden = YES;
-        }
-        @catch (NSException *exception) {
-            
-        }        
-    }
     
+        
     self.mapAppSettings.legend = [[Legend alloc] initWithMapLayerInfos:webMap.operationalLayers 
                                                             withMapView:self.mapView];
     [self.mapAppSettings.legend buildLegend];
@@ -1133,16 +1119,6 @@
 -(NSUInteger)getAdjustedIndexForMapTapIndex:(NSUInteger)buttonIndex
 {
     NSUInteger adjusted = buttonIndex;
-    
-    ContactLocationBookmark *cl = (ContactLocationBookmark *)self.locationCallout.location;
-    
-    //adjust index if we can't make a call out
-    if (![self canMakePhoneCalls] || 
-        ![self.locationCallout.location isKindOfClass:[ContactLocationBookmark class]] || 
-        ![cl canMakeCall]) 
-    {
-        adjusted++;
-    }
     
     return adjusted;
 }

@@ -17,6 +17,7 @@
  
  */
 #import "MapViewController.h"
+#import "LocationBookmark.h"
 
 /*
  Category for all search related tasks on the map view.

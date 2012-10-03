@@ -23,14 +23,9 @@
 #import "MapSettings.h"
 #import "NSDictionary+Additions.h"
 #import "Location.h"
-#import "ContactsManager.h"
-#import "Bookmarks.h"
-#import "ContactsManager+ContactsManager_DrawableList.h"
-#import "ContactsManager.h"
 #import "Route.h"
 #import "Search.h"
 #import "RecentSearches.h"
-#import "ContactsList.h"
 #import "Organization.h"
 #import "RouteSolverSettings.h"
 
@@ -51,8 +46,6 @@
         self.recentSearches = [[RecentSearches alloc] initWithName:NSLocalizedString(@"Recent Searches", nil) 
                                                         withItems:nil];
         
-        self.bookmarks = [[Bookmarks alloc] init];
-        
         self.routeSolverSettings = [[RouteSolverSettings alloc] init];
         
         self.customBasemap = nil;
@@ -70,8 +63,6 @@
     [super decodeWithJSON:json];
     
     self.recentSearches = [[RecentSearches alloc] initWithJSON:[json objectForKey:@"recentSearches"]];
-    
-    self.bookmarks = [[Bookmarks alloc] initWithJSON:[json objectForKey:@"bookmarks"]];
     
     NSDictionary *solverJSON = [json objectForKey:@"routeSolverSettings"];
     if (solverJSON) {
@@ -99,8 +90,6 @@
     
     [json setObject:[self.recentSearches encodeToJSON] forKey:@"recentSearches"];
 
-    [json setObject:[self.bookmarks encodeToJSON] forKey:@"bookmarks"];
-    
     /*if (self.currentMap) {
         [json setObject:[self.currentMap encodeToJSON] forKey:@"currentMap"];
     }  */
@@ -113,27 +102,9 @@
 	return json;
 }
 
-#pragma mark -
-#pragma mark Lazy Loads
--(DrawableList *)contacts
-{
-    if(_contacts == nil)
-    {
-        self.contacts = [[ContactsManager sharedContactsManager] drawableContactsList];
-    }
-    
-    return _contacts;
-}
 
-#pragma mark -
-#pragma Public Methods
--(void)addBookmark:(Location *)bookmark withCustomName:(NSString *)name withExtent:(AGSEnvelope *)envelope
-{
-    bookmark.name = name;
-    bookmark.icon = [UIImage imageNamed:@"BookmarkPin.png"];
-    
-    [self.bookmarks addBookmark:bookmark];
-}
+
+
  
 -(void)addRecentSearch:(Search *)recentSearch onlyUniqueEntries:(BOOL)unique;
 {

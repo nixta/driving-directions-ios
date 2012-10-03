@@ -26,12 +26,8 @@
 #import "UserSearchResults.h"
 #import "Location.h"
 #import "CurrentLocation.h"
-#import "ContactLocationBookmark.h"
-#import "LocationBookmark.h"
 #import "LocationGraphic.h"
 #import "StopsList.h"
-
-#import "InputAlertView.h"
 
 #import <ArcGIS/ArcGIS.h>
 #import "AGSGeometry+AppAdditions.h"
@@ -178,7 +174,7 @@
 {
     //just in case we were waiting for the gps, remove the observer for currentPoint
     //since we have a point.  This may be called twice, but it shouldn't hurt.
-    [self removeGPSObserver];
+   // [self removeGPSObserver];
 	
     // cancel any identify going on because we will kick off a new one anyway even if the 
 	// user clicks on the same identify graphic.
@@ -343,13 +339,6 @@
     
     NSInteger nextIndex = 0;
     
-    if ([self canMakePhoneCalls] && [self.locationCallout.location isKindOfClass:[ContactLocationBookmark class]]) {
-        ContactLocationBookmark *cl = (ContactLocationBookmark *)self.locationCallout.location;
-        if ([cl canMakeCall]) {
-            [actionSheet addButtonWithTitle:NSLocalizedString(@"Call", nil)];
-            nextIndex++;
-        }
-    }
     
     [actionSheet addButtonWithTitle:NSLocalizedString(@"Share Location", nil)]; nextIndex++;
     
@@ -362,15 +351,7 @@
     [actionSheet showInView:self.view];
 }
 
--(void)wantBookmarkForLocation:(Location *)location
-{
-    InputAlertView *bookmarkAlertView = 
-    [InputAlertView inputAlertViewWithTitle:NSLocalizedString(@"New Bookmark", nil) 
-                           initialFieldText:NSLocalizedString(@"Enter bookmark name", nil)
-                                   delegate:self];
-    
-    [bookmarkAlertView show];  
-}
+
 
 -(void)locationCalloutView:(LocationCalloutView *)lv directToLocation:(Location *)location
 {
@@ -450,16 +431,7 @@
     return [_app shouldAutorotateToInterfaceOrientation:interfaceOrientation];
 }
 
--(void)inputAlerViewDidDismissWithText:(NSString *)text
-{
-    LocationBookmark *locationBookmark = [[LocationBookmark alloc] initWithLocation:self.locationCallout.location 
-                                                                             extent:self.mapView.visibleArea.envelope];
-    
-    [[self mapAppSettings] addBookmark:locationBookmark 
-                        withCustomName:text 
-                            withExtent:self.mapView.visibleArea.envelope];
-    
-}
+
 
 #pragma mark -
 #pragma mark Calling Methods
@@ -471,30 +443,9 @@
     return ([app canOpenURL:[NSURL URLWithString:@"tel:+44-1234-567890"]]);
 }
 
--(void)makePhoneCallForContactLocation:(ContactLocationBookmark *)location
-{
-    NSArray *phoneNumbers = [location contactPhoneNumbers];
-    
-#warning TODO.  Deal with multiple numbers if we have to.
-    
-    NSString *phoneLinkString = [NSString stringWithFormat:@"tel:%@", [phoneNumbers objectAtIndex:0]];
-    phoneLinkString = [phoneLinkString stringByReplacingOccurrencesOfString:@" " withString:@""];
-    NSURL *phoneLinkURL = [NSURL URLWithString:phoneLinkString];
-    [[UIApplication sharedApplication] openURL:phoneLinkURL];
-}
 
-#pragma mark -
-#pragma mark Misc Tapping Methods
 
--(void)removeGPSObserver
-{
-#warning Commented Out for now!
-    /*
-    @try {
-        [self.mapView.gps removeObserver:self forKeyPath:gpsCurrentLocationKey];
-    }
-    @catch (NSException * e) {
-    }   */   
-}
+
+
 
 @end

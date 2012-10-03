@@ -19,7 +19,6 @@
 
 #import "UserSearchResults.h"
 #import "Search.h"
-#import "Bookmarks.h"
 #import "Location.h"
 #import "LocationGraphic.h"
 
@@ -62,24 +61,24 @@
 -(void)refineResultsUsingSearchFilter:(NSString *)filterString
 {
     //clear old results
-    [self clear];
-    
-    if (filterString == nil || filterString.length == 0) {
-        [self addList:self.recentSearches];
-        return;
-    }
-    
-    //else, filter all relevant lists
-    for (int i = 0; i < [self.localCollection numberOfLists]; i++)
-    {
-        DrawableList *list = [self.localCollection listAtIndex:i];
-        DrawableList *filteredList = [list drawableListFilteredBy:filterString];
-        
-        //only add back to viewable list if we have some items
-        if ([filteredList numberOfItems] > 0)
-            [self addList:filteredList];
-        
-    }
+//    [self clear];
+//    
+//    if (filterString == nil || filterString.length == 0) {
+//        [self addList:self.recentSearches];
+//        return;
+//    }
+//    
+//    //else, filter all relevant lists
+//    for (int i = 0; i < [self.localCollection numberOfLists]; i++)
+//    {
+//        DrawableList *list = [self.localCollection listAtIndex:i];
+//        DrawableList *filteredList = [list drawableListFilteredBy:filterString];
+//        
+//        //only add back to viewable list if we have some items
+//        if ([filteredList numberOfItems] > 0)
+//            [self addList:filteredList];
+//        
+//    }
 }
 
 -(AGSMutableEnvelope *)envelopeInMapView:(AGSMapView *)mapView

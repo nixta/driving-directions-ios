@@ -168,7 +168,7 @@ static int kNumberOfLayersInFeatureCollection = 4;
     if(!_finishedDownloading)
         return nil;
     
-    #warning Return something from legend layers
+    //Return something from legend layers
     return nil;
 }
 

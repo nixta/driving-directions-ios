@@ -4,10 +4,7 @@
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/UIToolbar+MapAdditions.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/UIColor+Additions.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/MapContentViewController.o
-/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/BookmarksViewController-Iphone.o
-/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/BookmarksViewController.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/GeocodeService.o
-/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/ContactsManager.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/ArcGISMobileConfig.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/Location.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/Organization.o
@@ -28,9 +25,7 @@
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/SplashImageVC.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/MapViewController+MapTapping.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/AGSGeometry+AppAdditions.o
-/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/InputAlertView.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/SettingsViewController.o
-/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/LocationBookmark.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/Search.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/UserSearchResults.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/IconDownloader.o
@@ -39,17 +34,13 @@
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/DirectionsList.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/DrawableList.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/DrawableCollection.o
-/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/Bookmarks.o
-/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/ContactsManager+ContactsManager_DrawableList.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/LocationGraphic.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/NSString+NSString_Additions.o
-/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/ContactLocationBookmark.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/MapViewController+Search.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/UIImage+AppAdditions.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/DirectionsPrintRenderer.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/OverviewDirection.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/RecentSearches.o
-/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/ContactsList.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/MapShareUtility.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/Legend.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/MapLayerInfo+AppAdditions.o
@@ -75,3 +66,4 @@
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/MapViewController+PlanningRouting.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/StopSignView.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/WIDeskViewController.o
+/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphonesimulator/Map-Source.build/Objects-normal/i386/LocationBookmark.o

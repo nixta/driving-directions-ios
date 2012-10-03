@@ -87,10 +87,7 @@
 		78BA0D801458C17500530ADD /* UIToolbar+MapAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78342CC2140DAC6200B0F354 /* UIToolbar+MapAdditions.m */; };
 		78BA0D811458C17500530ADD /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78693254140EA27B00B96F3F /* UIColor+Additions.m */; };
 		78BA0D821458C17500530ADD /* MapContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869325F140EA99C00B96F3F /* MapContentViewController.m */; };
-		78BA0D841458C17500530ADD /* BookmarksViewController-Iphone.m in Sources */ = {isa = PBXBuildFile; fileRef = 78391DBE141182050096B725 /* BookmarksViewController-Iphone.m */; };
-		78BA0D851458C17500530ADD /* BookmarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78391DC0141182050096B725 /* BookmarksViewController.m */; };
 		78BA0D871458C17500530ADD /* GeocodeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 789197931416761400E85321 /* GeocodeService.m */; };
-		78BA0D881458C17500530ADD /* ContactsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78919797141678B200E85321 /* ContactsManager.m */; };
 		78BA0D891458C17500530ADD /* ArcGISMobileConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7891979A14167A4600E85321 /* ArcGISMobileConfig.m */; };
 		78BA0D8A1458C17500530ADD /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 78852EEF14167AA00023CD0F /* Location.m */; };
 		78BA0D8B1458C17500530ADD /* Organization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7878C131141A6B86000ACBBD /* Organization.m */; };
@@ -111,9 +108,7 @@
 		78BA0D9A1458C17500530ADD /* SplashImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 784696401420213900847AB6 /* SplashImageVC.m */; };
 		78BA0D9B1458C17500530ADD /* MapViewController+MapTapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C80742142114CF00C4987C /* MapViewController+MapTapping.m */; };
 		78BA0D9C1458C17500530ADD /* AGSGeometry+AppAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C807451421393000C4987C /* AGSGeometry+AppAdditions.m */; };
-		78BA0D9D1458C17500530ADD /* InputAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F2682F142259B800107A7C /* InputAlertView.m */; };
 		78BA0D9E1458C17500530ADD /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 783742121423AE400085A15A /* SettingsViewController.m */; };
-		78BA0D9F1458C17500530ADD /* LocationBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 785634311423F1610040586A /* LocationBookmark.m */; };
 		78BA0DA01458C17500530ADD /* Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D53BFD14241095005B0D82 /* Search.m */; };
 		78BA0DA11458C17500530ADD /* UserSearchResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D53C0114241372005B0D82 /* UserSearchResults.m */; };
 		78BA0DA41458C17500530ADD /* IconDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CBDBDA142981C100BEFB46 /* IconDownloader.m */; };
@@ -122,17 +117,13 @@
 		78BA0DA91458C17500530ADD /* DirectionsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 78583227142D3F70006E0D95 /* DirectionsList.m */; };
 		78BA0DAA1458C17500530ADD /* DrawableList.m in Sources */ = {isa = PBXBuildFile; fileRef = 780501B7142FD7460048B099 /* DrawableList.m */; };
 		78BA0DAB1458C17500530ADD /* DrawableCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 780501BD142FDFD60048B099 /* DrawableCollection.m */; };
-		78BA0DAE1458C17500530ADD /* Bookmarks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7857FCB01443564700BBE1A6 /* Bookmarks.m */; };
-		78BA0DB11458C17500530ADD /* ContactsManager+ContactsManager_DrawableList.m in Sources */ = {isa = PBXBuildFile; fileRef = 780382EA14462CC30066BF3E /* ContactsManager+ContactsManager_DrawableList.m */; };
 		78BA0DB21458C17500530ADD /* LocationGraphic.m in Sources */ = {isa = PBXBuildFile; fileRef = 785139471447A399008D0E34 /* LocationGraphic.m */; };
 		78BA0DB31458C17500530ADD /* NSString+NSString_Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7851394A1447AB33008D0E34 /* NSString+NSString_Additions.m */; };
-		78BA0DB41458C17500530ADD /* ContactLocationBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 782069281448982E002CD9F1 /* ContactLocationBookmark.m */; };
 		78BA0DB51458C17500530ADD /* MapViewController+Search.m in Sources */ = {isa = PBXBuildFile; fileRef = 789C0A341448E26F00C4CFA3 /* MapViewController+Search.m */; };
 		78BA0DB61458C17500530ADD /* UIImage+AppAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D13FA6144F994F00E8970A /* UIImage+AppAdditions.m */; };
 		78BA0DB71458C17500530ADD /* DirectionsPrintRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F2A6171450CB1E0027DC56 /* DirectionsPrintRenderer.m */; };
 		78BA0DB81458C17500530ADD /* OverviewDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F2A61A1450E9B70027DC56 /* OverviewDirection.m */; };
 		78BA0DB91458C17500530ADD /* RecentSearches.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F2A6311451E9930027DC56 /* RecentSearches.m */; };
-		78BA0DBB1458C17500530ADD /* ContactsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B830191455DE0C0038D6CF /* ContactsList.m */; };
 		78BA0DBC1458C17500530ADD /* MapShareUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F09FE9145629D600075819 /* MapShareUtility.m */; };
 		78BA0DBE1458C17500530ADD /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C8073D1421085600C4987C /* MessageUI.framework */; };
 		78BA0DBF1458C17500530ADD /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C8073F1421087C00C4987C /* libxml2.dylib */; };
@@ -255,11 +246,10 @@
 		8868F96D161A028600FB9238 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CFA5D216162DAB0084EB93 /* AVFoundation.framework */; };
 		8868F96E161A029200FB9238 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A01F41610D6AA00027BE2 /* MapKit.framework */; };
 		8868F977161C9A7100FB9238 /* WIDeskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8868F976161C9A7100FB9238 /* WIDeskViewController.m */; };
+		8868F97B161CE91400FB9238 /* LocationBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 8868F97A161CE91400FB9238 /* LocationBookmark.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		780382E914462CC30066BF3E /* ContactsManager+ContactsManager_DrawableList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ContactsManager+ContactsManager_DrawableList.h"; sourceTree = "<group>"; };
-		780382EA14462CC30066BF3E /* ContactsManager+ContactsManager_DrawableList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ContactsManager+ContactsManager_DrawableList.m"; sourceTree = "<group>"; };
 		780382F7144631D90066BF3E /* ContactPin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ContactPin.png; path = Resources/Images/ContactPin.png; sourceTree = "<group>"; };
 		780382F8144631DC0066BF3E /* ContactPin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ContactPin@2x.png"; path = "Resources/Images/ContactPin@2x.png"; sourceTree = "<group>"; };
 		780501B6142FD7460048B099 /* DrawableList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawableList.h; sourceTree = "<group>"; };
@@ -283,8 +273,6 @@
 		781F833114290D5B00D063A5 /* MaxMinLayerTriangle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MaxMinLayerTriangle@2x.png"; path = "Resources/Images/MaxMinLayerTriangle@2x.png"; sourceTree = "<group>"; };
 		781F83411429133400D063A5 /* BasemapsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BasemapsTableViewCell.xib; path = Resources/Nibs/BasemapsTableViewCell.xib; sourceTree = "<group>"; };
 		781F83421429133400D063A5 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = Resources/Nibs/SettingsViewController.xib; sourceTree = "<group>"; };
-		782069271448982E002CD9F1 /* ContactLocationBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactLocationBookmark.h; sourceTree = "<group>"; };
-		782069281448982E002CD9F1 /* ContactLocationBookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactLocationBookmark.m; sourceTree = "<group>"; };
 		78286C861428111800705A3F /* MaxMinLayer-Open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MaxMinLayer-Open.png"; path = "Resources/Images/MaxMinLayer-Open.png"; sourceTree = "<group>"; };
 		78286C871428111800705A3F /* MaxMinLayer-Open@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "MaxMinLayer-Open@2x.png"; path = "Resources/Images/MaxMinLayer-Open@2x.png"; sourceTree = "<group>"; };
 		78286C881428111800705A3F /* MaxMinLayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MaxMinLayer.png; path = Resources/Images/MaxMinLayer.png; sourceTree = "<group>"; };
@@ -322,10 +310,6 @@
 		783742121423AE400085A15A /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		78383817146865A7007C00C2 /* map_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_button.png; path = Resources/Images/map_button.png; sourceTree = "<group>"; };
 		78383818146865A7007C00C2 /* map_button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "map_button@2x.png"; path = "Resources/Images/map_button@2x.png"; sourceTree = "<group>"; };
-		78391DBD141182050096B725 /* BookmarksViewController-Iphone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BookmarksViewController-Iphone.h"; sourceTree = "<group>"; };
-		78391DBE141182050096B725 /* BookmarksViewController-Iphone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BookmarksViewController-Iphone.m"; sourceTree = "<group>"; };
-		78391DBF141182050096B725 /* BookmarksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarksViewController.h; sourceTree = "<group>"; };
-		78391DC0141182050096B725 /* BookmarksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarksViewController.m; sourceTree = "<group>"; };
 		7841C190147C313B006871F1 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
 		7841C191147C313B006871F1 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
 		784695BD141EA3A400847AB6 /* basemaps_mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = basemaps_mask.png; path = Resources/Images/basemaps_mask.png; sourceTree = "<group>"; };
@@ -378,10 +362,6 @@
 		785139471447A399008D0E34 /* LocationGraphic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationGraphic.m; sourceTree = "<group>"; };
 		785139491447AB33008D0E34 /* NSString+NSString_Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSString_Additions.h"; sourceTree = "<group>"; };
 		7851394A1447AB33008D0E34 /* NSString+NSString_Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSString_Additions.m"; sourceTree = "<group>"; };
-		785634301423F1610040586A /* LocationBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationBookmark.h; sourceTree = "<group>"; };
-		785634311423F1610040586A /* LocationBookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationBookmark.m; sourceTree = "<group>"; };
-		7857FCAF1443564700BBE1A6 /* Bookmarks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bookmarks.h; sourceTree = "<group>"; };
-		7857FCB01443564700BBE1A6 /* Bookmarks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bookmarks.m; sourceTree = "<group>"; };
 		7858321B142D326B006E0D95 /* Direction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Direction.h; sourceTree = "<group>"; };
 		7858321C142D326B006E0D95 /* Direction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Direction.m; sourceTree = "<group>"; };
 		78583226142D3F70006E0D95 /* DirectionsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionsList.h; sourceTree = "<group>"; };
@@ -500,8 +480,6 @@
 		789197771415B7EA00E85321 /* Toolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Toolbar@2x.png"; path = "Resources/Images/Toolbar@2x.png"; sourceTree = "<group>"; };
 		789197921416761400E85321 /* GeocodeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeocodeService.h; sourceTree = "<group>"; };
 		789197931416761400E85321 /* GeocodeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeocodeService.m; sourceTree = "<group>"; };
-		78919796141678B200E85321 /* ContactsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsManager.h; sourceTree = "<group>"; };
-		78919797141678B200E85321 /* ContactsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsManager.m; sourceTree = "<group>"; };
 		7891979914167A4600E85321 /* ArcGISMobileConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcGISMobileConfig.h; sourceTree = "<group>"; };
 		7891979A14167A4600E85321 /* ArcGISMobileConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcGISMobileConfig.m; sourceTree = "<group>"; };
 		789C0A331448E26F00C4CFA3 /* MapViewController+Search.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapViewController+Search.h"; sourceTree = "<group>"; };
@@ -513,8 +491,6 @@
 		78A389E9148701EA00FB57E6 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = list.png; path = Resources/Images/list.png; sourceTree = "<group>"; };
 		78A389EA148701EA00FB57E6 /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "list@2x.png"; path = "Resources/Images/list@2x.png"; sourceTree = "<group>"; };
 		78ADFD4314180E5B00A771AF /* BookmarksViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BookmarksViewController.xib; path = Resources/Nibs/BookmarksViewController.xib; sourceTree = "<group>"; };
-		78B830181455DE0C0038D6CF /* ContactsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsList.h; sourceTree = "<group>"; };
-		78B830191455DE0C0038D6CF /* ContactsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsList.m; sourceTree = "<group>"; };
 		78B929A91419459C002415AB /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		78B929AA1419459C002415AB /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		78BA0E3F1458C17500530ADD /* Directions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Directions.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -564,9 +540,6 @@
 		78EEEDCB14903DAD00EBE720 /* ToggleSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToggleSegmentedControl.m; sourceTree = "<group>"; };
 		78F09FE8145629D600075819 /* MapShareUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapShareUtility.h; sourceTree = "<group>"; };
 		78F09FE9145629D600075819 /* MapShareUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapShareUtility.m; sourceTree = "<group>"; };
-		78F2682E142259B800107A7C /* InputAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputAlertView.h; sourceTree = "<group>"; };
-		78F2682F142259B800107A7C /* InputAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputAlertView.m; sourceTree = "<group>"; };
-		78F26830142259B800107A7C /* InputAlertViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputAlertViewDelegate.h; sourceTree = "<group>"; };
 		78F2A6161450CB1E0027DC56 /* DirectionsPrintRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DirectionsPrintRenderer.h; sourceTree = "<group>"; };
 		78F2A6171450CB1E0027DC56 /* DirectionsPrintRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DirectionsPrintRenderer.m; sourceTree = "<group>"; };
 		78F2A6191450E9B70027DC56 /* OverviewDirection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverviewDirection.h; sourceTree = "<group>"; };
@@ -594,6 +567,8 @@
 		8868F969161A024300FB9238 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		8868F975161C9A7100FB9238 /* WIDeskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIDeskViewController.h; sourceTree = "<group>"; };
 		8868F976161C9A7100FB9238 /* WIDeskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIDeskViewController.m; sourceTree = "<group>"; };
+		8868F979161CE91400FB9238 /* LocationBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationBookmark.h; sourceTree = "<group>"; };
+		8868F97A161CE91400FB9238 /* LocationBookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationBookmark.m; sourceTree = "<group>"; };
 		88CFA5CE1615177B0084EB93 /* routingDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = routingDelegate.h; sourceTree = "<group>"; };
 		88CFA5D216162DAB0084EB93 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		88CFA5D416162DBA0084EB93 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -749,6 +724,7 @@
 		78342C99140D9CB400B0F354 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				8868F978161CE90F00FB9238 /* LocationBookmark */,
 				882A01F31610BD8400027BE2 /* NSDictionary+AGSAdditions.h */,
 				78342CA8140D9CB500B0F354 /* ArcGIS.bundle */,
 				78342CA2140D9CB400B0F354 /* MapAppDelegate.h */,
@@ -902,23 +878,6 @@
 				78BFC28014A119A5001F1522 /* NSNull+Additions.m */,
 			);
 			name = Utililty;
-			sourceTree = "<group>";
-		};
-		78391DB8141181E40096B725 /* Bookmarks */ = {
-			isa = PBXGroup;
-			children = (
-				78FC3A261460779C007B5AB5 /* Bookmark Utilities */,
-				78FC3A2514607784007B5AB5 /* Contacts */,
-				785634301423F1610040586A /* LocationBookmark.h */,
-				785634311423F1610040586A /* LocationBookmark.m */,
-				78391DBD141182050096B725 /* BookmarksViewController-Iphone.h */,
-				78391DBE141182050096B725 /* BookmarksViewController-Iphone.m */,
-				78391DBF141182050096B725 /* BookmarksViewController.h */,
-				78391DC0141182050096B725 /* BookmarksViewController.m */,
-				7857FCAF1443564700BBE1A6 /* Bookmarks.h */,
-				7857FCB01443564700BBE1A6 /* Bookmarks.m */,
-			);
-			name = Bookmarks;
 			sourceTree = "<group>";
 		};
 		784695C8141EA9BB00847AB6 /* Legend/Content Control */ = {
@@ -1126,7 +1085,6 @@
 				78D53BFD14241095005B0D82 /* Search.m */,
 				78D53C0014241372005B0D82 /* UserSearchResults.h */,
 				78D53C0114241372005B0D82 /* UserSearchResults.m */,
-				78391DB8141181E40096B725 /* Bookmarks */,
 			);
 			name = Search;
 			sourceTree = "<group>";
@@ -1214,29 +1172,13 @@
 			name = Sharing;
 			sourceTree = "<group>";
 		};
-		78FC3A2514607784007B5AB5 /* Contacts */ = {
+		8868F978161CE90F00FB9238 /* LocationBookmark */ = {
 			isa = PBXGroup;
 			children = (
-				782069271448982E002CD9F1 /* ContactLocationBookmark.h */,
-				782069281448982E002CD9F1 /* ContactLocationBookmark.m */,
-				78919796141678B200E85321 /* ContactsManager.h */,
-				78919797141678B200E85321 /* ContactsManager.m */,
-				780382E914462CC30066BF3E /* ContactsManager+ContactsManager_DrawableList.h */,
-				780382EA14462CC30066BF3E /* ContactsManager+ContactsManager_DrawableList.m */,
-				78B830181455DE0C0038D6CF /* ContactsList.h */,
-				78B830191455DE0C0038D6CF /* ContactsList.m */,
+				8868F979161CE91400FB9238 /* LocationBookmark.h */,
+				8868F97A161CE91400FB9238 /* LocationBookmark.m */,
 			);
-			name = Contacts;
-			sourceTree = "<group>";
-		};
-		78FC3A261460779C007B5AB5 /* Bookmark Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				78F2682E142259B800107A7C /* InputAlertView.h */,
-				78F2682F142259B800107A7C /* InputAlertView.m */,
-				78F26830142259B800107A7C /* InputAlertViewDelegate.h */,
-			);
-			name = "Bookmark Utilities";
+			path = LocationBookmark;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1456,10 +1398,7 @@
 				78BA0D801458C17500530ADD /* UIToolbar+MapAdditions.m in Sources */,
 				78BA0D811458C17500530ADD /* UIColor+Additions.m in Sources */,
 				78BA0D821458C17500530ADD /* MapContentViewController.m in Sources */,
-				78BA0D841458C17500530ADD /* BookmarksViewController-Iphone.m in Sources */,
-				78BA0D851458C17500530ADD /* BookmarksViewController.m in Sources */,
 				78BA0D871458C17500530ADD /* GeocodeService.m in Sources */,
-				78BA0D881458C17500530ADD /* ContactsManager.m in Sources */,
 				78BA0D891458C17500530ADD /* ArcGISMobileConfig.m in Sources */,
 				78BA0D8A1458C17500530ADD /* Location.m in Sources */,
 				78BA0D8B1458C17500530ADD /* Organization.m in Sources */,
@@ -1480,9 +1419,7 @@
 				78BA0D9A1458C17500530ADD /* SplashImageVC.m in Sources */,
 				78BA0D9B1458C17500530ADD /* MapViewController+MapTapping.m in Sources */,
 				78BA0D9C1458C17500530ADD /* AGSGeometry+AppAdditions.m in Sources */,
-				78BA0D9D1458C17500530ADD /* InputAlertView.m in Sources */,
 				78BA0D9E1458C17500530ADD /* SettingsViewController.m in Sources */,
-				78BA0D9F1458C17500530ADD /* LocationBookmark.m in Sources */,
 				78BA0DA01458C17500530ADD /* Search.m in Sources */,
 				78BA0DA11458C17500530ADD /* UserSearchResults.m in Sources */,
 				78BA0DA41458C17500530ADD /* IconDownloader.m in Sources */,
@@ -1491,17 +1428,13 @@
 				78BA0DA91458C17500530ADD /* DirectionsList.m in Sources */,
 				78BA0DAA1458C17500530ADD /* DrawableList.m in Sources */,
 				78BA0DAB1458C17500530ADD /* DrawableCollection.m in Sources */,
-				78BA0DAE1458C17500530ADD /* Bookmarks.m in Sources */,
-				78BA0DB11458C17500530ADD /* ContactsManager+ContactsManager_DrawableList.m in Sources */,
 				78BA0DB21458C17500530ADD /* LocationGraphic.m in Sources */,
 				78BA0DB31458C17500530ADD /* NSString+NSString_Additions.m in Sources */,
-				78BA0DB41458C17500530ADD /* ContactLocationBookmark.m in Sources */,
 				78BA0DB51458C17500530ADD /* MapViewController+Search.m in Sources */,
 				78BA0DB61458C17500530ADD /* UIImage+AppAdditions.m in Sources */,
 				78BA0DB71458C17500530ADD /* DirectionsPrintRenderer.m in Sources */,
 				78BA0DB81458C17500530ADD /* OverviewDirection.m in Sources */,
 				78BA0DB91458C17500530ADD /* RecentSearches.m in Sources */,
-				78BA0DBB1458C17500530ADD /* ContactsList.m in Sources */,
 				78BA0DBC1458C17500530ADD /* MapShareUtility.m in Sources */,
 				78BA0E621458C7BE00530ADD /* Legend.m in Sources */,
 				78BA0E6A1458D33200530ADD /* MapLayerInfo+AppAdditions.m in Sources */,
@@ -1527,6 +1460,7 @@
 				78BFC28814A13303001F1522 /* MapViewController+PlanningRouting.m in Sources */,
 				786557F714ABF77E00AB9C8B /* StopSignView.m in Sources */,
 				8868F977161C9A7100FB9238 /* WIDeskViewController.m in Sources */,
+				8868F97B161CE91400FB9238 /* LocationBookmark.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

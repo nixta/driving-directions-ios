@@ -21,15 +21,9 @@
 #import "MapViewController+MapTapping.h"
 #import "Location.h"
 #import "LocationGraphic.h"
-#import "LocationBookmark.h"
-#import "BookmarksViewController.h"
-#import "BookmarksViewController-Iphone.h"
 #import "Search.h"
 #import "MapAppSettings.h"
 #import "UserSearchResults.h"
-#import "Bookmarks.h"
-#import "ContactLocationBookmark.h"
-#import "ContactsList.h"
 #import "DrawableResultsTableView.h"
 #import "ExtendableToolbar.h"
 #import "UIBarButtonItem+AppAdditions.h"
@@ -131,14 +125,7 @@
         self.searchBar.text = result.name;
         [self searchBarSearchButtonClicked:self.searchBar];
     }
-    //Search mode - from bookmark page or they've tapped on a result *before* actually
-    //committing to a full search... Just show location on map without other results
-    else if([viewController isKindOfClass:[BookmarksViewController class]])
-    {
-        [self dismissModalViewControllerAnimated:YES];
-        [self initalizeSearchResultsWithLocation:(Location *)result];
-        [self setSearchState:MapSearchStateMap withKeyboard:NO animated:YES];
-    }
+    
     //if we are looking at filtered results, set up a new search results list with only
     //the item they chose
     else if(self.resultsTableView.resultsDataSource == self.localFilteredResults)
@@ -275,21 +262,7 @@
     }
 }
 
--(void)searchBarBookmarkButtonClicked:(UISearchBar *)searchBar
-{    
-    BookmarksViewController *bmvc = [[BookmarksViewController_Iphone alloc] initUsingNavigationControllerStack:NO];
-    bmvc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    bmvc.bookmarkDataSource = self.mapAppSettings.bookmarks;
-    bmvc.bookmarkDelegate = self;
-    bmvc.contactDelegate = self;
-    bmvc.contactDataSource = self.mapAppSettings.contacts;
-    [self presentModalViewController:bmvc animated:YES];
-    
-    //If the text changes as a result of pressing the 'Bookmarks', the searchBar will
-    //call the beginEditing delegate.  Since we don't want to begin editing
-    //after pressing Bookmarks here, use a flag to ignore
-    //_ignoreBeginEditing = YES;
-}
+
 
 
 #pragma mark -
@@ -368,17 +341,7 @@
         self.resultsTableView.resultsDataSource = self.searchResults;
     }
     //show experience for filtering through list of items
-    else
-    {
-        //set up user search results with some local data that they can immediately search on
-        DrawableCollection *locals = [[DrawableCollection alloc] initWithList:self.mapAppSettings.bookmarks];
-        [locals addList:self.mapAppSettings.contacts];
-        
-        self.localFilteredResults = [[UserSearchResults alloc] initWithRecents:self.mapAppSettings.recentSearches 
-                                                                localCollection:locals];
-        
-        self.resultsTableView.resultsDataSource = self.localFilteredResults;
-    }
+   
     
     //only show bookmarks button if there is nothing to show
     self.searchBar.showsBookmarkButton = (self.searchBar.text.length == 0);
@@ -498,8 +461,8 @@
         
         for(AGSAddressCandidate *addr in places)
         {
-            LocationBookmark *newLoc = [[LocationBookmark alloc] initWithName:addr.addressString 
-                                                                       anIcon:[UIImage imageNamed:@"AddressPin.png"] 
+            LocationBookmark *newLoc = [[LocationBookmark alloc] initWithName:addr.addressString
+                                                                       anIcon:[UIImage imageNamed:@"AddressPin.png"]
                                                                    locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]];
             newLoc.addressCandidate = addr;
             newLoc.geometry = [addr.location copy];
@@ -527,18 +490,6 @@
         
         DrawableList *placeList = [[DrawableList alloc] initWithName:NSLocalizedString(@"Places", nil) 
                                                           withItems:nil];
-        
-        for(FindPlaceCandidate *place in places)
-        {
-            LocationBookmark *newLoc = [[LocationBookmark alloc] initWithName:place.name 
-                                                                       anIcon:[UIImage imageNamed:@"PlacePin.png"] 
-                                                                   locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]];
-            
-            newLoc.geometry = [place.location copy];
-            newLoc.envelope = [place.extent copy];
-            
-            [placeList addItem:newLoc];
-        }
         
         [self.searchResults addList:placeList];
         

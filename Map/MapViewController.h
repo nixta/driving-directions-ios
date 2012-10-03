@@ -27,7 +27,6 @@
 #import "OrganizationChooserViewController.h"
 #import "DrawableContainerDelegate.h"
 #import "LocationCalloutView.h"
-#import "InputAlertViewDelegate.h"
 #import "BasemapsViewController.h"
 #import "TabbedResultsViewController.h"
 #import "SignsView.h"
