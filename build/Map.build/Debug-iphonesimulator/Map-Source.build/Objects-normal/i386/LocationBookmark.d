@@ -1,5 +1,6 @@
-dependencies: /Users/albe5259/Projects/navigator/Map/LocationBookmark.m \
-  /Users/albe5259/Projects/navigator/Map/LocationBookmark.h \
+dependencies: \
+  /Users/albe5259/Projects/navigator/Map/LocationBookmark/LocationBookmark.m \
+  /Users/albe5259/Projects/navigator/Map/LocationBookmark/LocationBookmark.h \
   /Users/albe5259/Projects/navigator/Map/Location.h \
   /Users/albe5259/Projects/navigator/Map/NamedGeometry.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
