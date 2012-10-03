@@ -168,8 +168,6 @@ dependencies: /Users/albe5259/Projects/navigator/Map/UserSearchResults.m \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
   /Users/albe5259/Projects/navigator/Map/DrawableCollection.h \
   /Users/albe5259/Projects/navigator/Map/Search.h \
-  /Users/albe5259/Projects/navigator/Map/Bookmarks.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableList.h \
   /Users/albe5259/Projects/navigator/Map/Location.h \
   /Users/albe5259/Projects/navigator/Map/NamedGeometry.h \
   /Users/albe5259/Projects/navigator/Map/GeocodeService.h \

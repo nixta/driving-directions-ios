@@ -132,8 +132,6 @@ static NSUInteger kBasemapSection = 0;
     //has to be here for iOS 5
     self.tableView.sectionHeaderHeight = 44.0;
     
-    //self.settingsView.backgroundColor = [UIColor blackColor];
-    //self.signInLabel.text = [NSString stringWithFormat:@"Signed in with %@", self.appSettings.organization.name];
     
     if (!self.appSettings.legend.finishedDownloading) {
         [self generateLegend];
@@ -207,19 +205,7 @@ static NSUInteger kBasemapSection = 0;
     return _mapButton;
 }
 
--(UIBarButtonItem *)settingsButton
-{
-    if(_settingsButton == nil)
-    {
-        UIBarButtonItem *bbi = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"settings.png"] 
-                                                                style:UIBarButtonItemStyleBordered 
-                                                               target:self 
-                                                               action:@selector(settingsButtonTapped:)];
-        self.settingsButton = bbi;
-    }
-    
-    return _settingsButton;
-}
+
 
 -(UIView *)waitingView
 {

@@ -176,7 +176,6 @@ dependencies: \
   /Users/albe5259/Projects/navigator/Map/NamedGeometry.h \
   /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
   /Users/albe5259/Projects/navigator/Map/MapStates.h \
-  /Users/albe5259/Projects/navigator/Map/InputAlertViewDelegate.h \
   /Users/albe5259/Projects/navigator/Map/BasemapsViewController.h \
   /Users/albe5259/Projects/navigator/Map/Basemaps.h \
   /Users/albe5259/Projects/navigator/Map/IconDownloader.h \
@@ -189,19 +188,14 @@ dependencies: \
   /Users/albe5259/Projects/navigator/Map/Route.h \
   /Users/albe5259/Projects/navigator/Map/RouteSolver.h \
   /Users/albe5259/Projects/navigator/Map/routingDelegate.h \
+  /Users/albe5259/Projects/navigator/Map/LocationBookmark/LocationBookmark.h \
   /Users/albe5259/Projects/navigator/Map/MapViewController+MapTapping.h \
   /Users/albe5259/Projects/navigator/Map/LocationGraphic.h \
-  /Users/albe5259/Projects/navigator/Map/LocationBookmark.h \
-  /Users/albe5259/Projects/navigator/Map/BookmarksViewController.h \
-  /Users/albe5259/Projects/navigator/Map/BookmarksViewController-Iphone.h \
   /Users/albe5259/Projects/navigator/Map/Search.h \
   /Users/albe5259/Projects/navigator/Map/MapAppSettings.h \
   /Users/albe5259/Projects/navigator/Map/AppSettings.h \
   /Users/albe5259/Projects/navigator/Map/UserSearchResults.h \
   /Users/albe5259/Projects/navigator/Map/DrawableCollection.h \
-  /Users/albe5259/Projects/navigator/Map/Bookmarks.h \
-  /Users/albe5259/Projects/navigator/Map/ContactLocationBookmark.h \
-  /Users/albe5259/Projects/navigator/Map/ContactsList.h \
   /Users/albe5259/Projects/navigator/Map/DrawableResultsTableView.h \
   /Users/albe5259/Projects/navigator/Map/ExtendableToolbar.h \
   /Users/albe5259/Projects/navigator/Map/UIBarButtonItem+AppAdditions.h \

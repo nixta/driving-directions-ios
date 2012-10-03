@@ -50,7 +50,7 @@
     
     self.envelope = [[AGSEnvelope alloc] initWithJSON:[json objectForKey:@"envelope"]];
     
-#warning Added because encoding/decoding image was making image larger
+    //Added because encoding/decoding image was making image larger
     self.icon = [UIImage imageNamed:@"BookmarkPin.png"];
 }
 

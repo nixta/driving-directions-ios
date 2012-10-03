@@ -183,7 +183,6 @@ dependencies: \
   /Users/albe5259/Projects/navigator/Map/NamedGeometry.h \
   /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
   /Users/albe5259/Projects/navigator/Map/MapStates.h \
-  /Users/albe5259/Projects/navigator/Map/InputAlertViewDelegate.h \
   /Users/albe5259/Projects/navigator/Map/BasemapsViewController.h \
   /Users/albe5259/Projects/navigator/Map/Basemaps.h \
   /Users/albe5259/Projects/navigator/Map/IconDownloader.h \

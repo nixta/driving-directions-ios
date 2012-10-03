@@ -173,13 +173,9 @@ dependencies: /Users/albe5259/Projects/navigator/Map/MapAppSettings.m \
   /Users/albe5259/Projects/navigator/Map/Location.h \
   /Users/albe5259/Projects/navigator/Map/NamedGeometry.h \
   /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
-  /Users/albe5259/Projects/navigator/Map/ContactsManager.h \
-  /Users/albe5259/Projects/navigator/Map/Bookmarks.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableList.h \
-  /Users/albe5259/Projects/navigator/Map/ContactsManager+ContactsManager_DrawableList.h \
   /Users/albe5259/Projects/navigator/Map/Route.h \
   /Users/albe5259/Projects/navigator/Map/Search.h \
   /Users/albe5259/Projects/navigator/Map/RecentSearches.h \
-  /Users/albe5259/Projects/navigator/Map/ContactsList.h \
+  /Users/albe5259/Projects/navigator/Map/DrawableList.h \
   /Users/albe5259/Projects/navigator/Map/Organization.h \
   /Users/albe5259/Projects/navigator/Map/RouteSolverSettings.h

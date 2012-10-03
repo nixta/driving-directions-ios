@@ -276,9 +276,13 @@ static const UInt8 kKeychainItemIdentifier[]    = "com.esri.ArcGISMobileUI\0";
         //  and the other values were added to the keychainData dictionary previously.
         
         // No pointer to the newly-added items is needed, so pass NULL for the second parameter:
-        NSMutableDictionary *dict = [self dictionaryToSecItemFormat:self.keychainData];
-        OSStatus status = SecItemAdd((__bridge CFDictionaryRef)dict, NULL);
-        NSAssert(status == noErr, @"Couldn't add the Keychain Item." );
+        
+  
+        //Removed the test
+//        NSMutableDictionary *dict = [self dictionaryToSecItemFormat:self.keychainData];
+
+//        OSStatus status = SecItemAdd((__bridge CFDictionaryRef)dict, NULL);
+//        NSAssert(status == noErr, @"Couldn't add the Keychain Item." );
     }
 }
 

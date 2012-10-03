@@ -172,5 +172,4 @@ dependencies: \
   /Users/albe5259/Projects/navigator/Map/DrawableContainerDelegate.h \
   /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
   /Users/albe5259/Projects/navigator/Map/UIColor+Additions.h \
-  /Users/albe5259/Projects/navigator/Map/AGSWebMap+Additions.h \
   /Users/albe5259/Projects/navigator/Map/ContentItem.h
