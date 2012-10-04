@@ -43,6 +43,7 @@
 @property (nonatomic, strong) KeychainWrapper *keychainWrapper;
 @property (nonatomic, strong) UIAlertView     *networkAlertView;
 @property (nonatomic, strong) NSArray         *testOrganizations;
+@property (nonatomic, strong) AGSMapView      *mapView;
 
 - (AGSPoint*)convertCoordinatesToPoint:(CLLocationCoordinate2D)coordinates;
 @property (nonatomic, retain) id <routingDelegate> routeDelegate;

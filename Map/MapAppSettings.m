@@ -31,7 +31,8 @@
 
 @implementation MapAppSettings
 
-@synthesize recentSearches = _recentSearches;@synthesize bookmarks = _bookmarks;
+@synthesize recentSearches = _recentSearches;
+@synthesize bookmarks = _bookmarks;
 @synthesize contacts = _contacts;
 @synthesize customBasemap = _customBasemap;
 @synthesize savedExtent = _savedExtent;

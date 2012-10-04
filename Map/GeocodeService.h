@@ -24,7 +24,7 @@
 @class GeocodeServiceParameters;
 @class ArcGISAppDelegate;
 
-@interface GeocodeService : NSObject <AGSLocatorDelegate> {
+@interface GeocodeService : NSObject <AGSLocatorDelegate, AGSFindTaskDelegate> {
 	
     id<GeocodeServiceDelegate>  __unsafe_unretained _delegate;
 	NSString                    *_responseString;
@@ -51,6 +51,7 @@
 @property (nonatomic, strong) NSOperation                   *findAddressOperation;
 @property (nonatomic, strong) NSOperation                   *findPlaceOperation;
 @property (nonatomic, assign) BOOL                          useSingleLine;
+
 
 - (NSOperation *)findAddressCandidates:(NSString *)searchString withSpatialReference:(AGSSpatialReference *)spatialReference;
 - (NSOperation *)findPlace:(NSString *)searchString withSpatialReference:(AGSSpatialReference *)spatialReference;

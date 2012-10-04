@@ -50,6 +50,7 @@
 @synthesize organizationOp = _organizationOp;
 @synthesize testOrganizations = _testOrganizations;
 @synthesize routeDelegate = _routeDelegate;
+@synthesize mapView = _mapView;
 
 #pragma mark -
 #pragma mark UIApplicationDelegate

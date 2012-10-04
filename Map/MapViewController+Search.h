@@ -18,12 +18,15 @@
  */
 #import "MapViewController.h"
 #import "LocationBookmark.h"
+#import <ArcGIS/ArcGIS.h>
 
 /*
  Category for all search related tasks on the map view.
  */
 
 @interface MapViewController (Search) <UISearchBarDelegate, GeocodeServiceDelegate, LocationDelegate>
+
+@property (nonatomic,strong) AGSLocator *locator;
 
 -(void)dropPinForSearchLocation:(Location *)location;
 -(void)dropPinForSearchLocation:(Location *)location zoomToLocation:(BOOL)zoom;

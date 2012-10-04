@@ -39,6 +39,7 @@
 @synthesize findPlaceOperation = _findPlaceOperation;
 @synthesize useSingleLine = _useSingleLine;
 
+
 //private properties
 @synthesize app = _app;
 
@@ -69,6 +70,45 @@
         //if we're already finding an address, cancel it
         [self.findAddressOperation cancel];
     }
+    
+    
+    // Searching first with the new Geocoder at
+#warning needs to include the bbox
+    // This is a work around until the new ArcGIS Runtime for iOS is available with a class
+    // that supports passing an extent for searching.
+    if ( self.app.config.geocoderServiceUrlNew != nil ) {
+        
+        MapAppDelegate *appDelegate = (MapAppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+        AGSGeometryEngine *geoEngine = [AGSGeometryEngine defaultGeometryEngine];
+        AGSEnvelope *wgsEnvelope = (AGSEnvelope*)[geoEngine projectGeometry:appDelegate.mapView.visibleArea.envelope toSpatialReference:[AGSSpatialReference spatialReferenceWithWKID:4326]];
+        
+        NSMutableString *bbox = [[NSMutableString alloc] initWithFormat:@"%f,%f,%f,%f", wgsEnvelope.xmin,
+        wgsEnvelope.ymin,wgsEnvelope.xmax,wgsEnvelope.ymax ];
+        
+        [bbox replaceOccurrencesOfString:@","
+                                    withString:@"%2C"
+                                    options:0
+                                    range:NSMakeRange(0, [bbox length])];
+        
+        NSMutableString *cleanSearchString = [[NSMutableString alloc] initWithString:searchString];
+        [cleanSearchString replaceOccurrencesOfString:@" "
+                                           withString:@"+"
+                                              options:0
+                                                range:NSMakeRange(0, [cleanSearchString length])];
+        
+        NSMutableString *requestString = [[NSMutableString alloc] initWithString:self.app.config.geocoderServiceUrlNew];
+        [requestString appendFormat:@"?Text=%@", cleanSearchString];
+        //&outFields=&outSR=&bbox=&f=pjson
+        [requestString appendFormat:@"&outFields=&outSR=%d&bbox=%@&f=pjson", appDelegate.mapView.spatialReference.wkid ,bbox];
+        
+        
+        NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:requestString]];
+        NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+        NSString *get = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+
+    }
+    
 
     // Search for address using AddressLocator (AGSLocator)
     if(!self.findAddressLocator)
@@ -189,6 +229,13 @@
     {
         [self.delegate geocodeService:self operation:op didFailFindPlace:error];
     }
+}
+
+#pragma mark -
+#pragma mark Find Results
+- (void)findTask:(AGSFindTask *)findTask operation:(NSOperation*)op didExecuteWithFindResults:(NSArray *)results
+{
+    NSLog(@"Find results %@", results);
 }
 
 #pragma mark -

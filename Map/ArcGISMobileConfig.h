@@ -62,6 +62,7 @@
 @property (nonatomic, strong) NSString *portalName;
 @property (nonatomic, strong) NSString *defaultMap;
 @property (nonatomic, strong) AGSEnvelope *defaultMapExtent;
+@property (nonatomic, strong) NSString *geocoderServiceUrlNew;
 
 +(ArcGISMobileConfig *)defaultConfig;
 

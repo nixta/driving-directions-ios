@@ -218,6 +218,8 @@
     
     MapAppDelegate *appDelegate = (MapAppDelegate *)[[UIApplication sharedApplication] delegate];
     appDelegate.routeDelegate = self;
+    
+    appDelegate.mapView = self.mapView;
 }
 
 - (void) appleMapsCalled:(AGSPoint *)pStart withEnd:(AGSPoint*)pEnd

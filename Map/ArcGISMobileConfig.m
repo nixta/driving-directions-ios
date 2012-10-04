@@ -42,6 +42,7 @@
 @synthesize portalName = _portalName;
 @synthesize defaultMap = _defaultMap;
 @synthesize defaultMapExtent = _defaultMapExtent;
+@synthesize geocoderServiceUrlNew = _geocoderServiceUrlNew;
 
 -(id)init{
 	if (self = [super init]){
@@ -77,6 +78,8 @@
         self.defaultMap = @"{\"operationalLayers\":[],\"baseMap\":{\"baseMapLayers\":[{\"id\":\"defaultBasemap\",\"opacity\":1,\"visibility\":true,\"url\":\"http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer\"}],\"title\":\"Topographic\"},\"version\":\"1.2\"}";
         self.defaultMapExtent = [[AGSEnvelope alloc]initWithXmin:-135.7032 ymin:-3.4998 xmax:-56.1622 ymax:64.592 spatialReference:[AGSSpatialReference spatialReferenceWithWKID:4326 WKT:nil]];
         self.ecasRegistrationUrl = @"https://ecasapi.esri.com/1.0/accounts";
+        
+        self.geocoderServiceUrlNew = @"http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/find";
 	}
 
 	return self;

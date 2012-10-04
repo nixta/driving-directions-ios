@@ -34,6 +34,8 @@
 
 @interface MapViewController () 
 
+//@synthesize locator = _locator;
+
 -(void)removeOldResults;
 
 -(void)startSearchProcessAnimated:(BOOL)animated;
@@ -236,9 +238,16 @@
                           withSpatialReference:self.mapView.spatialReference];
     _searchesInProgress++;
     
+    
     [self.geocodeService findPlace:self.searchBar.text 
               withSpatialReference:self.mapView.spatialReference];
-    _searchesInProgress++;  
+    _searchesInProgress++;
+    
+//    // pass the extent as well
+//    if ( self.locator == nil) {
+//        self.locator = [AGSLocator locatorWithURL: [[NSURL alloc] initWithString:self.mapAppSettings.organization.locatorUrlString]];
+//        self.locator lo
+//    }
 }
 
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText
