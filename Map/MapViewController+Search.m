@@ -498,7 +498,7 @@
     if (places != nil && places.count > 0) {
         
         DrawableList *placeList = [[DrawableList alloc] initWithName:NSLocalizedString(@"Places", nil) 
-                                                          withItems:nil];
+                                                          withItems:places];
         
         [self.searchResults addList:placeList];
         
