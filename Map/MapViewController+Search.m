@@ -518,7 +518,7 @@
 {
     if (places != nil && places.count > 0) {
         
-        DrawableList *addrList = [[DrawableList alloc] initWithName:NSLocalizedString(@"Closest", nil)
+        DrawableList *addrList = [[DrawableList alloc] initWithName:NSLocalizedString(@"NearBy", nil)
                                                           withItems:nil];
         
         for(FindPOI *addr in places)

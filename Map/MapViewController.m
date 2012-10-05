@@ -420,7 +420,8 @@
 {
     if(_routeSettingsButton == nil)
     {
-        UIBarButtonItem *bbi = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"settings.png"] 
+        // removed route settings button
+        UIBarButtonItem *bbi = [[UIBarButtonItem alloc] initWithImage:[[UIImage alloc] init] //[UIImage imageNamed:@"settings.png"]
                                                                 style:UIBarButtonItemStylePlain 
                                                                target:self action:@selector(routeSettingsButtonPressed:)];
         
@@ -1135,11 +1136,11 @@
         
         switch (adjustedIndex) {
             case 0:    //Call!
-                [self makePhoneCallForContactLocation:(ContactLocationBookmark *)tappedLocation];
-                break;
-            case 1:    //Bookmarks!
                 [self shareLocationViaEmail:tappedLocation];
                 break;
+//            case 1:    //Bookmarks!
+//                
+//                break;
 //            case 2:    //Share Location via email
 //                [self shareLocationViaEmail:tappedLocation];
 //                break;
