@@ -220,6 +220,8 @@
     appDelegate.routeDelegate = self;
     
     appDelegate.mapView = self.mapView;
+    
+    [self.mapView.gps start];
 }
 
 - (void) appleMapsCalled:(AGSPoint *)pStart withEnd:(AGSPoint*)pEnd

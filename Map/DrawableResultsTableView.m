@@ -72,10 +72,16 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView 
 {
-    return [self.resultsDataSource numberOfResultTypes];
+    @try
+    {
+        return [self.resultsDataSource numberOfResultTypes];
+    }
+    @catch (NSException * e) {
+        return 0;
+    }
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {    
     return [self.resultsDataSource numberOfResultsInSection:section];
 }

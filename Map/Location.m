@@ -332,8 +332,13 @@
 {	
     self.locatorOperation = nil;
     self.addressCandidate = candidate;
-        
+    
+    if ( candidate.address == nil)
+        return;
+#warning This line sometimes causes a crash!
+   
     [[NSNotificationCenter defaultCenter] postNotificationName:kLocationUpdatedAddress object:self];
+   
 }
 
 /** Tells the delegate that @c %AGSLocator encountered an error while finding an address candidate

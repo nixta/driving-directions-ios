@@ -71,6 +71,7 @@
     [super viewDidLoad];
     
     self.finishButton.enabled = (self.organizations.count > 0);
+    self.view.hidden = YES;
     
     // bypass the login screen for now
     // the organization controller is in case you want to connect to arcgis.com

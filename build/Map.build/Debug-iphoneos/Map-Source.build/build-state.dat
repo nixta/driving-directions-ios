@@ -5,40 +5,35 @@ cCheck dependencies
 cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist build/Debug-iphoneos/Directions.app/ResourceRules.plist
 cProcessInfoPlistFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Info.plist Directions-Info.plist
 cProcessPCH /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch.pth Map/Map-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.o /Users/albe5259/Projects/navigator/Map/MapViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/RouteSolver.o /Users/albe5259/Projects/navigator/Map/RouteSolver.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignTableViewCell.o /Users/albe5259/Projects/navigator/Map/SignTableViewCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSDictionary+Additions.o /Users/albe5259/Projects/navigator/Map/NSDictionary+Additions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/AppSettings.o /Users/albe5259/Projects/navigator/Map/AppSettings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/StreetSignView.o /Users/albe5259/Projects/navigator/Map/StreetSignView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/RecentSearches.o /Users/albe5259/Projects/navigator/Map/RecentSearches.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapLayerInfo+AppAdditions.o /Users/albe5259/Projects/navigator/Map/MapLayerInfo+AppAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/main.o /Users/albe5259/Projects/navigator/Map/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapAppDelegate.o /Users/albe5259/Projects/navigator/Map/MapAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIToolbar+MapAdditions.o /Users/albe5259/Projects/navigator/Map/UIToolbar+MapAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIColor+Additions.o /Users/albe5259/Projects/navigator/Map/UIColor+Additions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapContentViewController.o /Users/albe5259/Projects/navigator/Map/MapContentViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/GeocodeService.o /Users/albe5259/Projects/navigator/Map/GeocodeService.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.o /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.o /Users/albe5259/Projects/navigator/Map/Location.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.o /Users/albe5259/Projects/navigator/Map/MapViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Organization.o /Users/albe5259/Projects/navigator/Map/Organization.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SectionInfo.o /Users/albe5259/Projects/navigator/Map/SectionInfo.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISOnlineServices.o /Users/albe5259/Projects/navigator/Map/ArcGISOnlineServices.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapAppSettings.o /Users/albe5259/Projects/navigator/Map/MapAppSettings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/AppSettings.o /Users/albe5259/Projects/navigator/Map/AppSettings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Search.o /Users/albe5259/Projects/navigator/Map/Search.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/main.o /Users/albe5259/Projects/navigator/Map/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIColor+Additions.o /Users/albe5259/Projects/navigator/Map/UIColor+Additions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapAppDelegate.o /Users/albe5259/Projects/navigator/Map/MapAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapContentViewController.o /Users/albe5259/Projects/navigator/Map/MapContentViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.o /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/GeocodeService.o /Users/albe5259/Projects/navigator/Map/GeocodeService.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.o /Users/albe5259/Projects/navigator/Map/Location.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/BasemapsViewController.o /Users/albe5259/Projects/navigator/Map/BasemapsViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/BasemapsTableViewCell.o /Users/albe5259/Projects/navigator/Map/BasemapsTableViewCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SectionHeaderView.o /Users/albe5259/Projects/navigator/Map/SectionHeaderView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SectionInfo.o /Users/albe5259/Projects/navigator/Map/SectionInfo.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Basemaps.o /Users/albe5259/Projects/navigator/Map/Basemaps.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSDictionary+Additions.o /Users/albe5259/Projects/navigator/Map/NSDictionary+Additions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISOnlineConnection.o /Users/albe5259/Projects/navigator/Map/ArcGISOnlineConnection.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISOnlineServices.o /Users/albe5259/Projects/navigator/Map/ArcGISOnlineServices.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSString+html.o /Users/albe5259/Projects/navigator/Map/NSString+html.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Basemaps.o /Users/albe5259/Projects/navigator/Map/Basemaps.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ContentItem.o /Users/albe5259/Projects/navigator/Map/ContentItem.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/KeychainWrapper.o /Users/albe5259/Projects/navigator/Map/KeychainWrapper.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISAppDelegate.o /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapAppSettings.o /Users/albe5259/Projects/navigator/Map/MapAppSettings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SplashImageVC.o /Users/albe5259/Projects/navigator/Map/SplashImageVC.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+MapTapping.o /Users/albe5259/Projects/navigator/Map/MapViewController+MapTapping.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/AGSGeometry+AppAdditions.o /Users/albe5259/Projects/navigator/Map/AGSGeometry+AppAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SettingsViewController.o /Users/albe5259/Projects/navigator/Map/SettingsViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Search.o /Users/albe5259/Projects/navigator/Map/Search.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+MapTapping.o /Users/albe5259/Projects/navigator/Map/MapViewController+MapTapping.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UserSearchResults.o /Users/albe5259/Projects/navigator/Map/UserSearchResults.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/IconDownloader.o /Users/albe5259/Projects/navigator/Map/IconDownloader.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/CurrentLocation.o /Users/albe5259/Projects/navigator/Map/CurrentLocation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -46,27 +41,32 @@ cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/D
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DirectionsList.o /Users/albe5259/Projects/navigator/Map/DirectionsList.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableList.o /Users/albe5259/Projects/navigator/Map/DrawableList.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableCollection.o /Users/albe5259/Projects/navigator/Map/DrawableCollection.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/LocationGraphic.o /Users/albe5259/Projects/navigator/Map/LocationGraphic.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSString+NSString_Additions.o /Users/albe5259/Projects/navigator/Map/NSString+NSString_Additions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.o /Users/albe5259/Projects/navigator/Map/MapViewController+Search.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/LocationGraphic.o /Users/albe5259/Projects/navigator/Map/LocationGraphic.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIImage+AppAdditions.o /Users/albe5259/Projects/navigator/Map/UIImage+AppAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.o /Users/albe5259/Projects/navigator/Map/MapViewController+Search.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DirectionsPrintRenderer.o /Users/albe5259/Projects/navigator/Map/DirectionsPrintRenderer.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OverviewDirection.o /Users/albe5259/Projects/navigator/Map/OverviewDirection.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapShareUtility.o /Users/albe5259/Projects/navigator/Map/MapShareUtility.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Legend.o /Users/albe5259/Projects/navigator/Map/Legend.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapShareUtility.o /Users/albe5259/Projects/navigator/Map/MapShareUtility.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/RecentSearches.o /Users/albe5259/Projects/navigator/Map/RecentSearches.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/AGSDynamicMapServiceLayer+LayerVisibilityAdditions.o /Users/albe5259/Projects/navigator/Map/AGSDynamicMapServiceLayer+LayerVisibilityAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapLayerInfo+AppAdditions.o /Users/albe5259/Projects/navigator/Map/MapLayerInfo+AppAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OrganizationChooserViewController.o /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/RouteSolverSettings.o /Users/albe5259/Projects/navigator/Map/RouteSolverSettings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/StreetSignView.o /Users/albe5259/Projects/navigator/Map/StreetSignView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/BlankSignView.o /Users/albe5259/Projects/navigator/Map/BlankSignView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignsView.o /Users/albe5259/Projects/navigator/Map/SignsView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignTableView.o /Users/albe5259/Projects/navigator/Map/SignTableView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/LocationCalloutView.o /Users/albe5259/Projects/navigator/Map/LocationCalloutView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Route.o /Users/albe5259/Projects/navigator/Map/Route.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/RouteSolver.o /Users/albe5259/Projects/navigator/Map/RouteSolver.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignTableViewCell.o /Users/albe5259/Projects/navigator/Map/SignTableViewCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.o /Users/albe5259/Projects/navigator/Map/DrawableResultsTableView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ExtendableToolbar.o /Users/albe5259/Projects/navigator/Map/ExtendableToolbar.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIBarButtonItem+AppAdditions.o /Users/albe5259/Projects/navigator/Map/UIBarButtonItem+AppAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ToggleSegmentedControl.o /Users/albe5259/Projects/navigator/Map/ToggleSegmentedControl.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ExtendableToolbar.o /Users/albe5259/Projects/navigator/Map/ExtendableToolbar.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/PassThroughView.o /Users/albe5259/Projects/navigator/Map/PassThroughView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIBarButtonItem+AppAdditions.o /Users/albe5259/Projects/navigator/Map/UIBarButtonItem+AppAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/AGSSymbol+AppAdditions.o /Users/albe5259/Projects/navigator/Map/AGSSymbol+AppAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/StopsList.o /Users/albe5259/Projects/navigator/Map/StopsList.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSNull+Additions.o /Users/albe5259/Projects/navigator/Map/NSNull+Additions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -78,25 +78,25 @@ cLd /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Direc
 cGenerateDSYMFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app.dSYM /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions
 cCopyStringsFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/en.lproj/InfoPlist.strings Map/en.lproj/InfoPlist.strings
 cCompileXIB /Users/albe5259/Projects/navigator/Map/en.lproj/MainWindow.xib
-cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapContentViewController.xib
 cCpResource Map/ArcGIS.bundle build/Debug-iphoneos/Directions.app/ArcGIS.bundle
 cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapLegendViewController.xib
+cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapContentViewController.xib
 cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ChangeBasemap.png Map/Resources/Images/ChangeBasemap.png
 cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/DrawableContainerViewController.xib
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ChangeBasemap@2x.png Map/Resources/Images/ChangeBasemap@2x.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ChangeBasemap.png Map/Resources/Images/ChangeBasemap.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ContentControllerMap.png Map/Resources/Images/ContentControllerMap.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ContentControllerMap@2x.png Map/Resources/Images/ContentControllerMap@2x.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/CurrentLocation.png Map/Resources/Images/CurrentLocation.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/CurrentLocation@2x.png Map/Resources/Images/CurrentLocation@2x.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/CurrentLocation.png Map/Resources/Images/CurrentLocation.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ContentControllerMap@2x.png Map/Resources/Images/ContentControllerMap@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/CurrentLocationEnabled.png Map/Resources/Images/CurrentLocationEnabled.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/CurrentLocationEnabled@2x.png Map/Resources/Images/CurrentLocationEnabled@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/CurrentLocationSelected.png Map/Resources/Images/CurrentLocationSelected.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/CurrentLocationSelected@2x.png Map/Resources/Images/CurrentLocationSelected@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MagnifyingGlass.png Map/Resources/Images/MagnifyingGlass.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MagnifyingGlass@2x.png Map/Resources/Images/MagnifyingGlass@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Map.png Map/Resources/Images/Map.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Map@2x.png Map/Resources/Images/Map@2x.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MagnifyingGlass@2x.png Map/Resources/Images/MagnifyingGlass@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/settings.png Map/Resources/Images/settings.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Toolbar.png Map/Resources/Images/Toolbar.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/settings@2x.png Map/Resources/Images/settings@2x.png
@@ -110,8 +110,8 @@ cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Default.png Map/Resources/Images/Default.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Default@2x.png Map/Resources/Images/Default@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/bookmarks.png Map/Resources/Images/bookmarks.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/bookmarks@2x.png Map/Resources/Images/bookmarks@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/hidepin.png Map/Resources/Images/hidepin.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/bookmarks@2x.png Map/Resources/Images/bookmarks@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/hidepin@2x.png Map/Resources/Images/hidepin@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/WhiteChevron.png Map/Resources/Images/WhiteChevron.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/WhiteChevron@2x.png Map/Resources/Images/WhiteChevron@2x.png
@@ -120,30 +120,30 @@ cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ActionSheet.png Map/Resources/Images/ActionSheet.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ActionSheet@2x.png Map/Resources/Images/ActionSheet@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/LayerContent.png Map/Resources/Images/LayerContent.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/LayerContent@2x.png Map/Resources/Images/LayerContent@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Routing.png Map/Resources/Images/Routing.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Switch.png Map/Resources/Images/Switch.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Routing@2x.png Map/Resources/Images/Routing@2x.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/LayerContent@2x.png Map/Resources/Images/LayerContent@2x.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Switch.png Map/Resources/Images/Switch.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Switch@2x.png Map/Resources/Images/Switch@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/RouteBar.png Map/Resources/Images/RouteBar.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/RouteBar@2x.png Map/Resources/Images/RouteBar@2x.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MaxMinLayer-Open.png Map/Resources/Images/MaxMinLayer-Open.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MaxMinLayer-Open@2x.png Map/Resources/Images/MaxMinLayer-Open@2x.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MaxMinLayer-Open.png Map/Resources/Images/MaxMinLayer-Open.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MaxMinLayer.png Map/Resources/Images/MaxMinLayer.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MaxMinLayer@2x.png Map/Resources/Images/MaxMinLayer@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/OverlayChevron.png Map/Resources/Images/OverlayChevron.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/OverlayChevron@2x.png Map/Resources/Images/OverlayChevron@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MaxMinLayerTriangle-Open.png Map/Resources/Images/MaxMinLayerTriangle-Open.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MaxMinLayerTriangle-Open@2x.png Map/Resources/Images/MaxMinLayerTriangle-Open@2x.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MaxMinLayerTriangle.png Map/Resources/Images/MaxMinLayerTriangle.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MaxMinLayerTriangle@2x.png Map/Resources/Images/MaxMinLayerTriangle@2x.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MaxMinLayerTriangle-Open@2x.png Map/Resources/Images/MaxMinLayerTriangle-Open@2x.png
 cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/BasemapsTableViewCell.xib
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MaxMinLayerTriangle.png Map/Resources/Images/MaxMinLayerTriangle.png
 cCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/SettingsViewController.xib
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/GreenPin.png Map/Resources/Images/GreenPin.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/GreenPin@2x.png Map/Resources/Images/GreenPin@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/RedPin.png Map/Resources/Images/RedPin.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/RedPin@2x.png Map/Resources/Images/RedPin@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Refresh.png Map/Resources/Images/Refresh.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/RedPin@2x.png Map/Resources/Images/RedPin@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Refresh@2x.png Map/Resources/Images/Refresh@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/LeftArrow.png Map/Resources/Images/LeftArrow.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/LeftArrow@2x.png Map/Resources/Images/LeftArrow@2x.png
@@ -152,23 +152,23 @@ cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/PullDownTabA.png Map/Resources/Images/PullDownTabA.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/PullDownTabA@2x.png Map/Resources/Images/PullDownTabA@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ContactPin.png Map/Resources/Images/ContactPin.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ContactPin@2x.png Map/Resources/Images/ContactPin@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/AddressPin.png Map/Resources/Images/AddressPin.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ContactPin@2x.png Map/Resources/Images/ContactPin@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/AddressPin@2x.png Map/Resources/Images/AddressPin@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/BookmarkPin.png Map/Resources/Images/BookmarkPin.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/BookmarkPin@2x.png Map/Resources/Images/BookmarkPin@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/PlacePin.png Map/Resources/Images/PlacePin.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/PlacePin@2x.png Map/Resources/Images/PlacePin@2x.png
 cCompileXIB /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.xib
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/SF_Icon.png Map/Resources/TestImages/SF_Icon.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/SF_Icon@2x.png Map/Resources/TestImages/SF_Icon@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/wells_icon.png Map/Resources/TestImages/wells_icon.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/SF_Icon.png Map/Resources/TestImages/SF_Icon.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/wells_icon@2x.png Map/Resources/TestImages/wells_icon@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Default_icon.png Map/Resources/TestImages/Default_icon.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Default_icon@2x.png Map/Resources/TestImages/Default_icon@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/map_button.png Map/Resources/Images/map_button.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/map_button@2x.png Map/Resources/Images/map_button@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/BearLeft.png "Map/Resources/Images/Directions Icons/BearLeft.png"
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/map_button@2x.png Map/Resources/Images/map_button@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/BearLeft@2x.png "Map/Resources/Images/Directions Icons/BearLeft@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/BearRight.png "Map/Resources/Images/Directions Icons/BearRight.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/BearRight@2x.png "Map/Resources/Images/Directions Icons/BearRight@2x.png"
@@ -178,46 +178,46 @@ cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/GetOnRoundabout@2x.png "Map/Resources/Images/Directions Icons/GetOnRoundabout@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/HighwayChange.png "Map/Resources/Images/Directions Icons/HighwayChange.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/HighwayChange@2x.png "Map/Resources/Images/Directions Icons/HighwayChange@2x.png"
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MergeOntoHighway.png "Map/Resources/Images/Directions Icons/MergeOntoHighway.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MergeOntoHighway@2x.png "Map/Resources/Images/Directions Icons/MergeOntoHighway@2x.png"
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MergeOntoHighway.png "Map/Resources/Images/Directions Icons/MergeOntoHighway.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/StraightArrow.png "Map/Resources/Images/Directions Icons/StraightArrow.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/StraightArrow@2x.png "Map/Resources/Images/Directions Icons/StraightArrow@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeCenterFork.png "Map/Resources/Images/Directions Icons/TakeCenterFork.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeCenterFork@2x.png "Map/Resources/Images/Directions Icons/TakeCenterFork@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeExit.png "Map/Resources/Images/Directions Icons/TakeExit.png"
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeExit@2x.png "Map/Resources/Images/Directions Icons/TakeExit@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeFerry.png "Map/Resources/Images/Directions Icons/TakeFerry.png"
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeExit@2x.png "Map/Resources/Images/Directions Icons/TakeExit@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeFerry@2x.png "Map/Resources/Images/Directions Icons/TakeFerry@2x.png"
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeForkLeft@2x.png "Map/Resources/Images/Directions Icons/TakeForkLeft@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeForkLeft.png "Map/Resources/Images/Directions Icons/TakeForkLeft.png"
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeForkLeft@2x.png "Map/Resources/Images/Directions Icons/TakeForkLeft@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeForkRight.png "Map/Resources/Images/Directions Icons/TakeForkRight.png"
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeForkRight@2x.png "Map/Resources/Images/Directions Icons/TakeForkRight@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeRampLeft.png "Map/Resources/Images/Directions Icons/TakeRampLeft.png"
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeRampLeft@2x.png "Map/Resources/Images/Directions Icons/TakeRampLeft@2x.png"
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeForkRight@2x.png "Map/Resources/Images/Directions Icons/TakeForkRight@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeRampRight.png "Map/Resources/Images/Directions Icons/TakeRampRight.png"
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TurnLeft.png "Map/Resources/Images/Directions Icons/TurnLeft.png"
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeRampLeft@2x.png "Map/Resources/Images/Directions Icons/TakeRampLeft@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TakeRampRight@2x.png "Map/Resources/Images/Directions Icons/TakeRampRight@2x.png"
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TurnLeft.png "Map/Resources/Images/Directions Icons/TurnLeft.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TurnLeft@2x.png "Map/Resources/Images/Directions Icons/TurnLeft@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TurnRight.png "Map/Resources/Images/Directions Icons/TurnRight.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TurnRight@2x.png "Map/Resources/Images/Directions Icons/TurnRight@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TurnSharpLeft.png "Map/Resources/Images/Directions Icons/TurnSharpLeft.png"
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TurnSharpLeft@2x.png "Map/Resources/Images/Directions Icons/TurnSharpLeft@2x.png"
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TurnSharpRight.png "Map/Resources/Images/Directions Icons/TurnSharpRight.png"
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/UTurn.png "Map/Resources/Images/Directions Icons/UTurn.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TurnSharpRight@2x.png "Map/Resources/Images/Directions Icons/TurnSharpRight@2x.png"
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TurnSharpRight.png "Map/Resources/Images/Directions Icons/TurnSharpRight.png"
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/TurnSharpLeft@2x.png "Map/Resources/Images/Directions Icons/TurnSharpLeft@2x.png"
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/UTurn.png "Map/Resources/Images/Directions Icons/UTurn.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/UTurn@2x.png "Map/Resources/Images/Directions Icons/UTurn@2x.png"
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/leftArrowButton@2x.png Map/Resources/Images/leftArrowButton@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/leftArrowButton.png Map/Resources/Images/leftArrowButton.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/leftArrowButton@2x.png Map/Resources/Images/leftArrowButton@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/rightArrowButton.png Map/Resources/Images/rightArrowButton.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/rightArrowButton@2x.png Map/Resources/Images/rightArrowButton@2x.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/list.png Map/Resources/Images/list.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/list@2x.png Map/Resources/Images/list@2x.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/list.png Map/Resources/Images/list.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/speedometer.png "Map/Resources/Images/Directions Icons/speedometer.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/speedometer@2x.png "Map/Resources/Images/Directions Icons/speedometer@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/GoHereButton.png Map/Resources/Images/GoHereButton.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/GoHereButton@2x.png Map/Resources/Images/GoHereButton@2x.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/selected@2x.png Map/Resources/Images/selected@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/selected.png Map/Resources/Images/selected.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/selected@2x.png Map/Resources/Images/selected@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/upselected.png Map/Resources/Images/upselected.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/upselected@2x.png Map/Resources/Images/upselected@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/GPSDisplayStart.png Map/Resources/Images/GPSDisplayStart.png
@@ -225,8 +225,8 @@ cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/icon.png Map/Resources/Images/icon.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/icon@2x.png Map/Resources/Images/icon@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/att_logo.png Map/Resources/TestImages/att_logo.png
-cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Default-568h@2x.png Default-568h@2x.png
 cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/att_logo@2x.png Map/Resources/TestImages/att_logo@2x.png
+cCopyPNGFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Default-568h@2x.png Default-568h@2x.png
 cProcessProductPackaging "/Users/albe5259/Library/MobileDevice/Provisioning Profiles/A06785FB-2015-4258-A491-6019175D8E62.mobileprovision" /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/embedded.mobileprovision
 cProcessProductPackaging "/Users/albe5259/Library/MobileDevice/Provisioning Profiles/A06785FB-2015-4258-A491-6019175D8E62.mobileprovision" /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/embedded.mobileprovision
 cTouch /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app
@@ -1389,9 +1389,9 @@ t1348865403
 s1202
 
 N/Users/albe5259/Projects/navigator/Map/DrawableResultsTableView.m
-c0000000050660D7B000000000000109E
-t1348865403
-s4254
+c00000000506F635300000000000010ED
+t1349477203
+s4333
 
 N/Users/albe5259/Projects/navigator/Map/ExtendableToolbar.h
 c000000005069C73A00000000000006DF
@@ -1449,9 +1449,9 @@ t1348865956
 s3829
 
 N/Users/albe5259/Projects/navigator/Map/Location.m
-c00000000506617DD0000000000004705
-t1348868061
-s18181
+c00000000506F67260000000000004769
+t1349478182
+s18281
 
 N/Users/albe5259/Projects/navigator/Map/LocationBookmark/LocationBookmark.h
 c0000000050660FA4000000000000032D
@@ -1584,9 +1584,9 @@ t1349372047
 s1249
 
 N/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m
-c00000000506F428100000000000044AC
-t1349468801
-s17580
+c00000000506F684200000000000044B0
+t1349478466
+s17584
 
 N/Users/albe5259/Projects/navigator/Map/MapViewController.h
 c00000000506CA89F00000000000028F8
@@ -1594,9 +1594,9 @@ t1349298335
 s10488
 
 N/Users/albe5259/Projects/navigator/Map/MapViewController.m
-c00000000506F5691000000000000D8FC
-t1349473937
-s55548
+c00000000506F685D000000000000D9EF
+t1349478493
+s55791
 
 N/Users/albe5259/Projects/navigator/Map/NSDictionary+Additions.h
 c000000005066281C00000000000005D9
@@ -1664,14 +1664,14 @@ t1348872220
 s1760
 
 N/Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.m
-c000000005069F5B10000000000001148
-t1349121457
-s4424
+c00000000506F68C20000000000001164
+t1349478594
+s4452
 
 N/Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.xib
-c000000005062026500000000000037B7
-t1348600421
-s14263
+c00000000506F693400000000000037BF
+t1349478708
+s14271
 
 N/Users/albe5259/Projects/navigator/Map/OverviewDirection.h
 c0000000050660F56000000000000034D
@@ -2384,9 +2384,9 @@ t1319738420
 s20564
 
 N/Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib
-c00000000506A0905000000000005B7EF
-t1349126405
-s374767
+c00000000506F679E000000000005B6FF
+t1349478302
+s374527
 
 N/Users/albe5259/Projects/navigator/Map/Resources/Nibs/SettingsViewController.xib
 c000000005069C102000000000000259F
@@ -2674,11 +2674,11 @@ t1349296176
 s667
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app
-t1349302424
+t1349478710
 s5372
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app.dSYM
-t1349302421
+t1349478708
 s102
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ActionSheet.png
@@ -2806,8 +2806,8 @@ t1349302423
 s13949
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions
-t1349302424
-s8732800
+t1349478710
+s8740592
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/DrawableContainerViewController.nib
 t1349302422
@@ -2862,8 +2862,8 @@ t1349302423
 s2060
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Info.plist
-t1349302418
-s1703
+t1349474910
+s1676
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Info.png
 t1349302421
@@ -2906,16 +2906,16 @@ t1349302421
 s3642
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MapContentViewController.nib
-t1349302423
-s2100
+t1349474916
+s1629
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MapLegendViewController.nib
 t1349302423
 s1231
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MapViewController.nib
-t1349302423
-s2926
+t1349478498
+s2925
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MaxMinLayer-Open.png
 t1349302423
@@ -2958,8 +2958,8 @@ t1349302423
 s2015
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/OrganizationChooserViewController.nib
-t1349302423
-s2724
+t1349478709
+s2729
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/OverlayChevron.png
 t1349302423
@@ -2978,7 +2978,7 @@ t1349302423
 s3721
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/PkgInfo
-t1349302418
+t1349474910
 s8
 
 N/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/PlacePin.png
@@ -3306,7 +3306,7 @@ t1349302423
 s22338
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions.xcent
-t1349302424
+t1349474916
 s418
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/AGSDynamicMapServiceLayer+LayerVisibilityAdditions.o
@@ -3326,32 +3326,32 @@ t1349302419
 s13456
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISAppDelegate.o
-t1349302419
-s121932
+t1349474911
+s121964
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.o
-t1349302418
-s52580
+t1349474911
+s54076
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISOnlineConnection.o
-t1349302419
-s108216
+t1349474911
+s108248
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISOnlineServices.o
 t1349302419
 s89088
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Basemaps.o
-t1349302419
-s143176
+t1349474911
+s143208
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/BasemapsTableViewCell.o
 t1349302418
 s70128
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/BasemapsViewController.o
-t1349302419
-s133812
+t1349474911
+s133724
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/BlankSignView.o
 t1349302418
@@ -3362,7 +3362,7 @@ t1349302419
 s50920
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/CurrentLocation.o
-t1349302418
+t1349474911
 s32716
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Direction.o
@@ -3375,7 +3375,7 @@ t1349302418
 s8572
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DirectionsList.o
-t1349302419
+t1349474911
 s92912
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DirectionsPrintRenderer.o
@@ -3383,7 +3383,7 @@ t1349302419
 s20676
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableCollection.o
-t1349302419
+t1349474911
 s30476
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableList.o
@@ -3391,16 +3391,16 @@ t1349302419
 s33004
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.o
-t1349302420
-s92108
+t1349477203
+s93216
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ExtendableToolbar.o
 t1349302419
 s92252
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/GeocodeService.o
-t1349302418
-s119852
+t1349474911
+s154372
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/IconDownloader.o
 t1349302419
@@ -3411,67 +3411,67 @@ t1349302419
 s29640
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Legend.o
-t1349302419
-s196276
+t1349474912
+s196308
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.o
-t1349302418
-s178512
+t1349478496
+s178816
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/LocationBookmark.o
-t1349302420
+t1349474912
 s23228
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/LocationCalloutView.o
-t1349302419
-s133748
+t1349474912
+s133660
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/LocationGraphic.o
-t1349302419
+t1349474911
 s80656
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapAppDelegate.o
-t1349302418
-s173480
+t1349474911
+s174544
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapAppSettings.o
-t1349302419
+t1349474911
 s122808
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapContentViewController.o
-t1349302418
-s183496
+t1349474911
+s182568
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapLayerInfo+AppAdditions.o
 t1349302419
 s103588
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapShareUtility.o
-t1349302418
+t1349474911
 s43184
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+MapTapping.o
-t1349302419
-s185960
+t1349474911
+s186000
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+PlanningRouting.o
-t1349302420
+t1349474912
 s132212
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.o
-t1349302419
-s181448
+t1349478496
+s185152
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.o
-t1349302418
-s345596
+t1349478496
+s344776
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSDictionary+Additions.o
 t1349302418
 s6492
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSNull+Additions.o
-t1349302420
+t1349474912
 s9516
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSString+NSString_Additions.o
@@ -3483,15 +3483,15 @@ t1349302418
 s9256
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Organization.o
-t1349302418
+t1349474911
 s119984
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OrganizationChooserViewController.o
-t1349302419
-s124876
+t1349478594
+s125076
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OverviewDirection.o
-t1349302419
+t1349474911
 s87200
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/PassThroughView.o
@@ -3503,11 +3503,11 @@ t1349302419
 s10204
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Route.o
-t1349302419
+t1349474912
 s116356
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/RouteSolver.o
-t1349302419
+t1349474911
 s107016
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/RouteSolverSettings.o
@@ -3519,27 +3519,27 @@ t1349302419
 s20348
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SectionHeaderView.o
-t1349302418
-s89056
+t1349474911
+s88840
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SectionInfo.o
 t1349302419
 s80596
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SettingsViewController.o
-t1349302419
-s157368
+t1349474911
+s157376
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignTableView.o
 t1349302419
 s77376
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignTableViewCell.o
-t1349302419
-s84056
+t1349474911
+s83960
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignsView.o
-t1349302418
+t1349474912
 s228660
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SplashImageVC.o
@@ -3547,12 +3547,12 @@ t1349302418
 s75640
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/StopSignView.o
-t1349302420
-s88408
+t1349474912
+s88320
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/StopsList.o
-t1349302420
-s121908
+t1349474912
+s130428
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/StreetSignView.o
 t1349302418
@@ -3579,7 +3579,7 @@ t1349302418
 s70052
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UserSearchResults.o
-t1349302419
+t1349474911
 s105264
 
 N/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/WIDeskViewController.o
@@ -3808,15 +3808,16 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies35b30ade911fb641^32e99fde911fb641^-488"Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.2(21%IDEActivityLogMessage2@224"Code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.-371167710#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-20"Code Signing Warning--2@224"Code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.-371167710#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-20"Code Signing Warning--0#1#0#--18"Check dependencies36"A5AEEB5E-4B42-4133-8E1F-358185DB744D-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies34676dd1a11fb641^7fbe6dd1a11fb641^-488"Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.2(21%IDEActivityLogMessage2@224"Code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.-371171793#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-20"Code Signing Warning--2@224"Code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.-371171793#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-20"Code Signing Warning--0#1#0#--18"Check dependencies36"D22A1784-EA46-4E0E-A870-765D856E4A11-
 
 CCodeSign /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app
-s371167716.219524
-e371167716.932937
+s371171509.752745
+e371171510.096934
 r1
 xCodeSign
 x/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"CodeSign build/Debug-iphoneos/Directions.appbc4138e4911fb641^13d6eee4911fb641^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/0000000000000000^783"CodeSign build/Debug-iphoneos/Directions.app    cd /Users/albe5259/Projects/navigator    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign 11337a5157aa07f743d82a20a09e19c475fb7ca3 --resource-rules=/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ResourceRules.plist --entitlements /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions.xcent /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app36"74DF7099-E154-4C02-BD86-20D90E6997DF-
+o/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app: replacing existing signature
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"CodeSign build/Debug-iphoneos/Directions.appfcc5c0b5a01fb641^31d118b6a01fb641^-100"/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app: replacing existing signature-0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/0000000000000000^783"CodeSign build/Debug-iphoneos/Directions.app    cd /Users/albe5259/Projects/navigator    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign 11337a5157aa07f743d82a20a09e19c475fb7ca3 --resource-rules=/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ResourceRules.plist --entitlements /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions.xcent /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app36"C59ECE06-D2B3-458C-97FD-B966FCC2C86F-
 
 CCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/AGSDynamicMapServiceLayer+LayerVisibilityAdditions.o /Users/albe5259/Projects/navigator/Map/AGSDynamicMapServiceLayer+LayerVisibilityAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s370995219.542598
@@ -4076,8 +4077,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/albe5259/Projects/navigator/Map/DrawableList.m59345113f01cb641^bc3d8013f01cb641^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Users/albe5259/Projects/navigator/Map/DrawableList.m0000000000000000^3316"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableList.o Map/DrawableList.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableList.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableList.dia -c /Users/albe5259/Projects/navigator/Map/DrawableList.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableList.o36"C8B04D68-1010-4CE9-9D87-ED7250B57B6A-
 
 CCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.o /Users/albe5259/Projects/navigator/Map/DrawableResultsTableView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s370995219.779073
-e370995220.011182
+s371170003.394500
+e371170003.518873
 r1
 xCompileC
 xbuild/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.o
@@ -4086,7 +4087,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/albe5259/Projects/navigator/Map/DrawableResultsTableView.med9bc713f01cb641^31b40a14f01cb641^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/albe5259/Projects/navigator/Map/DrawableResultsTableView.m0000000000000000^3388"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.o Map/DrawableResultsTableView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.dia -c /Users/albe5259/Projects/navigator/Map/DrawableResultsTableView.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.o36"79BFE5D0-E2DF-4E3A-B8DE-286B47DFB941-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/albe5259/Projects/navigator/Map/DrawableResultsTableView.m6e1465d39a1fb641^41d584d39a1fb641^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/albe5259/Projects/navigator/Map/DrawableResultsTableView.m0000000000000000^3388"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.o Map/DrawableResultsTableView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.dia -c /Users/albe5259/Projects/navigator/Map/DrawableResultsTableView.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.o36"23111204-C485-4771-9A26-66F6B60FB2C1-
 
 CCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ExtendableToolbar.o /Users/albe5259/Projects/navigator/Map/ExtendableToolbar.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s370995219.789620
@@ -4173,8 +4174,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Compile /Users/albe5259/Projects/navigator/Map/Legend.m6f67afdf911fb641^59a31ae0911fb641^---0#0#0#-19%DVTDocumentLocation2@63"file://localhost/Users/albe5259/Projects/navigator/Map/Legend.m0000000000000000^3280"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Legend.o Map/Legend.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Legend.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Legend.dia -c /Users/albe5259/Projects/navigator/Map/Legend.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Legend.o36"E040E4F5-7FFF-4DB0-BE65-93080F73CBA3-
 
 CCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.o /Users/albe5259/Projects/navigator/Map/Location.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s371167710.684012
-e371167711.203521
+s371171295.828862
+e371171296.025887
 r1
 xCompileC
 xbuild/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.o
@@ -4183,7 +4184,11 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Compile /Users/albe5259/Projects/navigator/Map/Location.mc93bafde911fb641^371a34df911fb641^---0#0#0#-19%DVTDocumentLocation2@65"file://localhost/Users/albe5259/Projects/navigator/Map/Location.m0000000000000000^3292"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.o Map/Location.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.dia -c /Users/albe5259/Projects/navigator/Map/Location.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.o36"749AD001-DBF7-4B4B-87A4-CE1A7ADEDC3C-
+o/Users/albe5259/Projects/navigator/Map/Location.m:338:2: warning: This line sometimes causes a crash! [-W#warnings]
+o#warning This line sometimes causes a crash!
+o ^
+o1 warning generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Compile /Users/albe5259/Projects/navigator/Map/Location.m404ed4df9f1fb641^b4cc06e09f1fb641^-185"/Users/albe5259/Projects/navigator/Map/Location.m:338:2: warning: This line sometimes causes a crash! [-W#warnings]#warning This line sometimes causes a crash! ^1 warning generated.1(36%IDEClangDiagnosticActivityLogMessage2@35"This line sometimes causes a crash!-371171296#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@65"file://localhost/Users/albe5259/Projects/navigator/Map/Location.m0000000000000000^337#1#337#1#10514#0#18"#warning Directive--0#0#0#-19%DVTDocumentLocation4@65"file://localhost/Users/albe5259/Projects/navigator/Map/Location.m0000000000000000^3292"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.o Map/Location.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.dia -c /Users/albe5259/Projects/navigator/Map/Location.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.o36"4061DE53-6D70-419C-BE46-B839D20C2D15-
 
 CCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/LocationBookmark.o /Users/albe5259/Projects/navigator/Map/LocationBookmark/LocationBookmark.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s371167712.104166
@@ -4358,8 +4363,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/albe5259/Projects/navigator/Map/MapViewController+PlanningRouting.meab2ecdf911fb641^e7a833e0911fb641^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+PlanningRouting.m0000000000000000^3442"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+PlanningRouting.o Map/MapViewController+PlanningRouting.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+PlanningRouting.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+PlanningRouting.dia -c /Users/albe5259/Projects/navigator/Map/MapViewController+PlanningRouting.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+PlanningRouting.o36"0572D216-61E8-46A7-97B4-BA9C181F8598-
 
 CCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.o /Users/albe5259/Projects/navigator/Map/MapViewController+Search.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s371167711.580455
-e371167711.969523
+s371171295.835027
+e371171296.054914
 r1
 xCompileC
 xbuild/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.o
@@ -4435,11 +4440,11 @@ o/Users/albe5259/Projects/navigator/Map/MapViewController+Search.h:29:42: note: 
 o@property (nonatomic,strong) AGSLocator *locator;
 o                                         ^
 o11 warnings generated.
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/albe5259/Projects/navigator/Map/MapViewController+Search.m01c194df911fb641^e272fcdf911fb641^-5060"/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:299:28: warning: performSelector may cause a leak because its selector is unknown [-Warc-performSelector-leaks]    [self.resultsTableView performSelector:tableViewSel];                           ^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:299:44: note: used here    [self.resultsTableView performSelector:tableViewSel];                                           ^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:432:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)removeOldResults^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:39:1: note: method 'removeOldResults' declared here-(void)removeOldResults;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:302:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)endSearchProcessAnimated:(BOOL)animated^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:42:1: note: method 'endSearchProcessAnimated:' declared here-(void)endSearchProcessAnimated:(BOOL)animated;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:362:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)setupSearchForMapAnimated:(BOOL)animated^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:43:1: note: method 'setupSearchForMapAnimated:' declared here-(void)setupSearchForMapAnimated:(BOOL)animated;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:341:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)setupSearchForListAnimated:(BOOL)animated^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:44:1: note: method 'setupSearchForListAnimated:' declared here-(void)setupSearchForListAnimated:(BOOL)animated;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:407:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)showMapListButton:(BOOL)show withPlanningButton:(BOOL)showPlanningButton animated:(BOOL)animated^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:46:1: note: method 'showMapListButton:withPlanningButton:animated:' declared here-(void)showMapListButton:(BOOL)show withPlanningButton:(BOOL)showPlanningButton animated:(BOOL)animated;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:377:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)showResultsList:(BOOL)show^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:47:1: note: method 'showResultsList:' declared here-(void)showResultsList:(BOOL)show;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:150:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)initalizeSearchResultsWithLocation:(Location *)location^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:49:1: note: method 'initalizeSearchResultsWithLocation:' declared here-(void)initalizeSearchResultsWithLocation:(Location *)location;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:115:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)showCurrentSearchResultWithZoom:(BOOL)zoom^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:51:1: note: method 'showCurrentSearchResultWithZoom:' declared here-(void)showCurrentSearchResultWithZoom:(BOOL)zoom;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:55:17: warning: property 'locator' requires method 'locator' to be defined - use @dynamic or provide a method implementation in this category [-Wobjc-property-implementation]@implementation MapViewController (Search)                ^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.h:29:42: note: property declared here@property (nonatomic,strong) AGSLocator *locator;                                         ^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:55:17: warning: property 'locator' requires method 'setLocator:' to be defined - use @dynamic or provide a method implementation in this category [-Wobjc-property-implementation]@implementation MapViewController (Search)                ^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.h:29:42: note: property declared here@property (nonatomic,strong) AGSLocator *locator;                                         ^11 warnings generated.11(36%IDEClangDiagnosticActivityLogMessage2@64"PerformSelector may cause a leak because its selector is unknown-371167711#18446744073709551615#0#1(2@9"Used here-371167711#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^298#43#298#43#9440#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^298#27#298#27#9424#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371167711#18446744073709551615#0#1(2@39"Method 'removeOldResults' declared here-371167711#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^38#0#38#0#979#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^431#0#431#0#13487#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371167711#18446744073709551615#0#1(2@48"Method 'endSearchProcessAnimated:' declared here-371167711#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^41#0#41#0#1055#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^301#0#301#0#9458#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371167711#18446744073709551615#0#1(2@49"Method 'setupSearchForMapAnimated:' declared here-371167711#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^42#0#42#0#1103#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^361#0#361#0#11290#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371167711#18446744073709551615#0#1(2@50"Method 'setupSearchForListAnimated:' declared here-371167711#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^43#0#43#0#1152#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^340#0#340#0#10523#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371167711#18446744073709551615#0#1(2@69"Method 'showMapListButton:withPlanningButton:animated:' declared here-371167711#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^45#0#45#0#1203#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^406#0#406#0#12795#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371167711#18446744073709551615#0#1(2@39"Method 'showResultsList:' declared here-371167711#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^46#0#46#0#1308#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^376#0#376#0#11786#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371167711#18446744073709551615#0#1(2@58"Method 'initalizeSearchResultsWithLocation:' declared here-371167711#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^48#0#48#0#1344#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^149#0#149#0#4527#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371167711#18446744073709551615#0#1(2@55"Method 'showCurrentSearchResultWithZoom:' declared here-371167711#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^50#0#50#0#1409#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^114#0#114#0#3173#0#14"Semantic Issue--2@125"Property 'locator' requires method 'locator' to be defined - use @dynamic or provide a method implementation in this category-371167711#18446744073709551615#0#1(2@22"Property declared here-371167711#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.h0000000000000000^28#41#28#41#795#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^54#16#54#16#1483#0#14"Semantic Issue--2@129"Property 'locator' requires method 'setLocator:' to be defined - use @dynamic or provide a method implementation in this category-371167711#18446744073709551615#0#1(2@22"Property declared here-371167711#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.h0000000000000000^28#41#28#41#795#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^54#16#54#16#1483#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^3388"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.o Map/MapViewController+Search.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.dia -c /Users/albe5259/Projects/navigator/Map/MapViewController+Search.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.o36"237EC877-F22C-4142-9BCC-15F4674A4425-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/albe5259/Projects/navigator/Map/MapViewController+Search.mc0e9d5df9f1fb641^730e0ee09f1fb641^-5060"/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:299:28: warning: performSelector may cause a leak because its selector is unknown [-Warc-performSelector-leaks]    [self.resultsTableView performSelector:tableViewSel];                           ^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:299:44: note: used here    [self.resultsTableView performSelector:tableViewSel];                                           ^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:432:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)removeOldResults^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:39:1: note: method 'removeOldResults' declared here-(void)removeOldResults;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:302:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)endSearchProcessAnimated:(BOOL)animated^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:42:1: note: method 'endSearchProcessAnimated:' declared here-(void)endSearchProcessAnimated:(BOOL)animated;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:362:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)setupSearchForMapAnimated:(BOOL)animated^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:43:1: note: method 'setupSearchForMapAnimated:' declared here-(void)setupSearchForMapAnimated:(BOOL)animated;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:341:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)setupSearchForListAnimated:(BOOL)animated^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:44:1: note: method 'setupSearchForListAnimated:' declared here-(void)setupSearchForListAnimated:(BOOL)animated;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:407:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)showMapListButton:(BOOL)show withPlanningButton:(BOOL)showPlanningButton animated:(BOOL)animated^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:46:1: note: method 'showMapListButton:withPlanningButton:animated:' declared here-(void)showMapListButton:(BOOL)show withPlanningButton:(BOOL)showPlanningButton animated:(BOOL)animated;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:377:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)showResultsList:(BOOL)show^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:47:1: note: method 'showResultsList:' declared here-(void)showResultsList:(BOOL)show;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:150:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)initalizeSearchResultsWithLocation:(Location *)location^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:49:1: note: method 'initalizeSearchResultsWithLocation:' declared here-(void)initalizeSearchResultsWithLocation:(Location *)location;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:115:1: warning: category is implementing a method which will also be implemented by its primary class [-Wobjc-protocol-method-implementation]-(void)showCurrentSearchResultWithZoom:(BOOL)zoom^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:51:1: note: method 'showCurrentSearchResultWithZoom:' declared here-(void)showCurrentSearchResultWithZoom:(BOOL)zoom;^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:55:17: warning: property 'locator' requires method 'locator' to be defined - use @dynamic or provide a method implementation in this category [-Wobjc-property-implementation]@implementation MapViewController (Search)                ^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.h:29:42: note: property declared here@property (nonatomic,strong) AGSLocator *locator;                                         ^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m:55:17: warning: property 'locator' requires method 'setLocator:' to be defined - use @dynamic or provide a method implementation in this category [-Wobjc-property-implementation]@implementation MapViewController (Search)                ^/Users/albe5259/Projects/navigator/Map/MapViewController+Search.h:29:42: note: property declared here@property (nonatomic,strong) AGSLocator *locator;                                         ^11 warnings generated.11(36%IDEClangDiagnosticActivityLogMessage2@64"PerformSelector may cause a leak because its selector is unknown-371171296#18446744073709551615#0#1(2@9"Used here-371171296#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^298#43#298#43#9442#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^298#27#298#27#9426#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371171296#18446744073709551615#0#1(2@39"Method 'removeOldResults' declared here-371171296#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^38#0#38#0#979#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^431#0#431#0#13491#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371171296#18446744073709551615#0#1(2@48"Method 'endSearchProcessAnimated:' declared here-371171296#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^41#0#41#0#1055#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^301#0#301#0#9460#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371171296#18446744073709551615#0#1(2@49"Method 'setupSearchForMapAnimated:' declared here-371171296#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^42#0#42#0#1103#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^361#0#361#0#11294#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371171296#18446744073709551615#0#1(2@50"Method 'setupSearchForListAnimated:' declared here-371171296#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^43#0#43#0#1152#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^340#0#340#0#10525#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371171296#18446744073709551615#0#1(2@69"Method 'showMapListButton:withPlanningButton:animated:' declared here-371171296#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^45#0#45#0#1203#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^406#0#406#0#12799#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371171296#18446744073709551615#0#1(2@39"Method 'showResultsList:' declared here-371171296#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^46#0#46#0#1308#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^376#0#376#0#11790#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371171296#18446744073709551615#0#1(2@58"Method 'initalizeSearchResultsWithLocation:' declared here-371171296#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^48#0#48#0#1344#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^149#0#149#0#4527#0#14"Semantic Issue--2@85"Category is implementing a method which will also be implemented by its primary class-371171296#18446744073709551615#0#1(2@55"Method 'showCurrentSearchResultWithZoom:' declared here-371171296#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^50#0#50#0#1409#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^114#0#114#0#3173#0#14"Semantic Issue--2@125"Property 'locator' requires method 'locator' to be defined - use @dynamic or provide a method implementation in this category-371171296#18446744073709551615#0#1(2@22"Property declared here-371171296#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.h0000000000000000^28#41#28#41#795#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^54#16#54#16#1483#0#14"Semantic Issue--2@129"Property 'locator' requires method 'setLocator:' to be defined - use @dynamic or provide a method implementation in this category-371171296#18446744073709551615#0#1(2@22"Property declared here-371171296#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.h0000000000000000^28#41#28#41#795#0#14"Semantic Issue--1#27"com.apple.dt.IDE.diagnostic3@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^54#16#54#16#1483#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@81"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController+Search.m0000000000000000^3388"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.o Map/MapViewController+Search.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.dia -c /Users/albe5259/Projects/navigator/Map/MapViewController+Search.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.o36"80807D06-302C-4340-A7A5-3B4C18DCA5C5-
 
 CCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.o /Users/albe5259/Projects/navigator/Map/MapViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s371167710.681080
-e371167711.448008
+s371171295.828665
+e371171296.173824
 r1
 xCompileC
 xbuild/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.o
@@ -4448,7 +4453,17 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/albe5259/Projects/navigator/Map/MapViewController.m0684aede911fb641^70b172df911fb641^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController.m0000000000000000^3346"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.o Map/MapViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.dia -c /Users/albe5259/Projects/navigator/Map/MapViewController.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.o36"7C9993C7-748A-441C-A658-79C0C805057A-
+o/Users/albe5259/Projects/navigator/Map/MapViewController.m:406:2: warning: Delete this code, is for multi-route [-W#warnings]
+o#warning Delete this code, is for multi-route
+o ^
+o/Users/albe5259/Projects/navigator/Map/MapViewController.m:782:2: warning: Delete the comment out code, this is Multi-Route [-W#warnings]
+o#warning Delete the comment out code, this is Multi-Route
+o ^
+o/Users/albe5259/Projects/navigator/Map/MapViewController.m:1159:2: warning: Delete this code, this is for MultiRoute [-W#warnings]
+o#warning Delete this code, this is for MultiRoute
+o ^
+o3 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/albe5259/Projects/navigator/Map/MapViewController.m043dd4df9f1fb641^f17e2ce09f1fb641^-580"/Users/albe5259/Projects/navigator/Map/MapViewController.m:406:2: warning: Delete this code, is for multi-route [-W#warnings]#warning Delete this code, is for multi-route ^/Users/albe5259/Projects/navigator/Map/MapViewController.m:782:2: warning: Delete the comment out code, this is Multi-Route [-W#warnings]#warning Delete the comment out code, this is Multi-Route ^/Users/albe5259/Projects/navigator/Map/MapViewController.m:1159:2: warning: Delete this code, this is for MultiRoute [-W#warnings]#warning Delete this code, this is for MultiRoute ^3 warnings generated.3(36%IDEClangDiagnosticActivityLogMessage2@36"Delete this code, is for multi-route-371171296#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@74"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController.m0000000000000000^405#1#405#1#14254#0#18"#warning Directive--2@48"Delete the comment out code, this is Multi-Route-371171296#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@74"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController.m0000000000000000^781#1#781#1#28654#0#18"#warning Directive--2@40"Delete this code, this is for MultiRoute-371171296#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@74"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController.m0000000000000000^1158#1#1158#1#41114#0#18"#warning Directive--0#0#0#-19%DVTDocumentLocation4@74"file://localhost/Users/albe5259/Projects/navigator/Map/MapViewController.m0000000000000000^3346"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.o Map/MapViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.dia -c /Users/albe5259/Projects/navigator/Map/MapViewController.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.o36"32CC458D-EC64-4C60-9C82-65E8166C0433-
 
 CCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSDictionary+Additions.o /Users/albe5259/Projects/navigator/Map/NSDictionary+Additions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s370995218.910253
@@ -4516,8 +4531,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Compile /Users/albe5259/Projects/navigator/Map/Organization.m884c1ddf911fb641^f6255fdf911fb641^---0#0#0#-19%DVTDocumentLocation2@69"file://localhost/Users/albe5259/Projects/navigator/Map/Organization.m0000000000000000^3316"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Organization.o Map/Organization.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Organization.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Organization.dia -c /Users/albe5259/Projects/navigator/Map/Organization.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Organization.o36"3B02BCE1-77BA-4A35-A77A-CC624C01212B-
 
 CCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OrganizationChooserViewController.o /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s370995219.577673
-e370995219.813897
+s371171394.359848
+e371171394.484291
 r1
 xCompileC
 xbuild/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OrganizationChooserViewController.o
@@ -4526,7 +4541,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.mfe0b9413f01cb641^685cd013f01cb641^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.m0000000000000000^3442"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OrganizationChooserViewController.o Map/OrganizationChooserViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OrganizationChooserViewController.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OrganizationChooserViewController.dia -c /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OrganizationChooserViewController.o36"A110FA12-2122-41FF-A4B7-7F5156D4CCF8-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.mc93a5c42a01fb641^05fb7b42a01fb641^---0#0#0#-19%DVTDocumentLocation2@90"file://localhost/Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.m0000000000000000^3442"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OrganizationChooserViewController.o Map/OrganizationChooserViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OrganizationChooserViewController.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OrganizationChooserViewController.dia -c /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OrganizationChooserViewController.o36"57FEB350-8830-4D7A-A972-87E42894A066-
 
 CCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OverviewDirection.o /Users/albe5259/Projects/navigator/Map/OverviewDirection.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s371167711.639110
@@ -4875,12 +4890,12 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Compile /Users/albe5259/Projects/navigator/Map/main.md5776612f01cb641^61c26c12f01cb641^---0#0#0#-19%DVTDocumentLocation2@61"file://localhost/Users/albe5259/Projects/navigator/Map/main.m0000000000000000^3268"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/main.o Map/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-bhkumoaxvcaujhesyursdjyfpkza/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/main.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/main.dia -c /Users/albe5259/Projects/navigator/Map/main.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/main.o36"DF808212-7894-4713-BA1F-FAFA20CBCF89-
 
 CCompileXIB /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.xib
-s370995223.504117
-e370995223.631965
+s371171508.973810
+e371171509.705630
 r1
 xCompileXIB
 x/Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.xib
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compiling /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.xib3e238117f01cb641^0fd4a117f01cb641^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.xib0000000000000000^854"CompileXIB Map/OrganizationChooserViewController.xib    cd /Users/albe5259/Projects/navigator    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/OrganizationChooserViewController.nib /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk36"81F15886-9A26-4F9A-BABF-CAA84542AEE1-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compiling /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.xib3e5df9b4a01fb641^6aa5b4b5a01fb641^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.xib0000000000000000^854"CompileXIB Map/OrganizationChooserViewController.xib    cd /Users/albe5259/Projects/navigator    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/OrganizationChooserViewController.nib /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk36"8CE0D544-6AF0-445A-BF69-6C25E0A807E2-
 
 CCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/BasemapsTableViewCell.xib
 s370995223.318677
@@ -4931,12 +4946,12 @@ x/Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapLegendViewController.x
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compiling /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapLegendViewController.xib81948c15f01cb641^2f301317f01cb641^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapLegendViewController.xib0000000000000000^854"CompileXIB Map/Resources/Nibs/MapLegendViewController.xib    cd /Users/albe5259/Projects/navigator    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MapLegendViewController.nib /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapLegendViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk36"AD4928EA-7DD9-41B7-9394-2057080F4DC1-
 
 CCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib
-s370995221.548866
-e370995223.231616
+s371171297.491731
+e371171298.076268
 r1
 xCompileXIB
 x/Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compiling /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib07958c15f01cb641^b85a3b17f01cb641^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib0000000000000000^836"CompileXIB Map/Resources/Nibs/MapViewController.xib    cd /Users/albe5259/Projects/navigator    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MapViewController.nib /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk36"CA4290B0-D081-4BFA-BA11-260F4B5E317E-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compiling /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib8cf57de19f1fb641^388713e29f1fb641^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib0000000000000000^836"CompileXIB Map/Resources/Nibs/MapViewController.xib    cd /Users/albe5259/Projects/navigator    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/MapViewController.nib /Users/albe5259/Projects/navigator/Map/Resources/Nibs/MapViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk36"6914437C-E14E-4A88-A3D5-F9E100C0A74B-
 
 CCompileXIB /Users/albe5259/Projects/navigator/Map/Resources/Nibs/SettingsViewController.xib
 s370995223.332174
@@ -6233,17 +6248,17 @@ xbuild/Debug-iphoneos/Directions.app/ArcGIS.bundle
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy build/Debug-iphoneos/Directions.app/ArcGIS.bundle68968c15f01cb641^9c699215f01cb641^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ArcGIS.bundle000000000080d041^545"CpResource Map/ArcGIS.bundle build/Debug-iphoneos/Directions.app/ArcGIS.bundle    cd /Users/albe5259/Projects/navigator    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/albe5259/Projects/navigator/Map/ArcGIS.bundle /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app36"A86A8D5B-7E20-40B0-951B-9DE16167AB8B-
 
 CGenerateDSYMFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app.dSYM /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions
-s371167713.191290
-e371167714.225308
+s371171793.507508
+e371171794.215682
 r1
 xGenerateDSYMFile
 x/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app.dSYM
 x/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Generating /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app.dSYM5f0c31e1911fb641^19af39e2911fb641^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app.dSYM/0000000000000000^596"GenerateDSYMFile build/Debug-iphoneos/Directions.app.dSYM build/Debug-iphoneos/Directions.app/Directions    cd /Users/albe5259/Projects/navigator    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions -o /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app.dSYM36"F81CAD2B-C77D-48C4-A125-8C86FA1CA555-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Generating /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app.dSYM8bfd81d1a11fb641^a83737d2a11fb641^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app.dSYM/0000000000000000^596"GenerateDSYMFile build/Debug-iphoneos/Directions.app.dSYM build/Debug-iphoneos/Directions.app/Directions    cd /Users/albe5259/Projects/navigator    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions -o /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app.dSYM36"C99A1AEA-B03D-4B92-8FFE-C34DCC45F366-
 
 CLd /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions normal armv7
-s371167712.227399
-e371167713.183466
+s371171394.491101
+e371171395.041242
 r1
 xLd
 x/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions
@@ -6251,7 +6266,7 @@ xnormal
 xarmv7
 old: warning: directory not found for option '-L$ArcGIS_Common'
 old: warning: directory not found for option '-L/Users/albe5259/Projects/navigator/build/Debug'
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Link /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions054e3ae0911fb641^7ffb2ee1911fb641^-158"ld: warning: directory not found for option '-L$ArcGIS_Common'ld: warning: directory not found for option '-L/Users/albe5259/Projects/navigator/build/Debug'2(21%IDEActivityLogMessage2@49"Directory not found for option '-L$ArcGIS_Common'-371167712#0#63#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@81"Directory not found for option '-L/Users/albe5259/Projects/navigator/build/Debug'-371167712#63#95#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--0#0#0#--1787"Ld build/Debug-iphoneos/Directions.app/Directions normal armv7    cd /Users/albe5259/Projects/navigator    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -L/Users/albe5259/Projects/navigator/build/Debug-iphoneos "-L$ArcGIS_Common" -L/Users/albe5259/Projects/navigator/build/Debug -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -filelist /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Directions.LinkFileList -dead_strip -ObjC -all_load -lstdc++ -lz -framework ArcGIS -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=4.3 -framework MapKit -framework AVFoundation -framework CFNetwork -framework CoreAudio -framework AudioToolbox -lstdc++ -framework MessageUI -lxml2 -framework SystemConfiguration -framework Security -framework AddressBook -framework AddressBookUI -framework UIKit -framework Foundation -framework CoreGraphics -framework CoreText -framework CoreLocation -framework MediaPlayer -framework MobileCoreServices -framework QuartzCore -o /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions36"12378633-F348-4D9B-B7F2-925B6F13B949-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Link /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions3ecd7d42a01fb641^43910a43a01fb641^-158"ld: warning: directory not found for option '-L$ArcGIS_Common'ld: warning: directory not found for option '-L/Users/albe5259/Projects/navigator/build/Debug'2(21%IDEActivityLogMessage2@49"Directory not found for option '-L$ArcGIS_Common'-371171394#0#63#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@81"Directory not found for option '-L/Users/albe5259/Projects/navigator/build/Debug'-371171394#63#95#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--0#0#0#--1787"Ld build/Debug-iphoneos/Directions.app/Directions normal armv7    cd /Users/albe5259/Projects/navigator    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -L/Users/albe5259/Projects/navigator/build/Debug-iphoneos "-L$ArcGIS_Common" -L/Users/albe5259/Projects/navigator/build/Debug -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -filelist /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Directions.LinkFileList -dead_strip -ObjC -all_load -lstdc++ -lz -framework ArcGIS -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=4.3 -framework MapKit -framework AVFoundation -framework CFNetwork -framework CoreAudio -framework AudioToolbox -lstdc++ -framework MessageUI -lxml2 -framework SystemConfiguration -framework Security -framework AddressBook -framework AddressBookUI -framework UIKit -framework Foundation -framework CoreGraphics -framework CoreText -framework CoreLocation -framework MediaPlayer -framework MobileCoreServices -framework QuartzCore -o /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions36"289956B1-E096-4E61-9DA3-67FB2D015A53-
 
 CProcessInfoPlistFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Info.plist Directions-Info.plist
 s371167710.650976
@@ -6297,10 +6312,10 @@ x/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.bu
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection209"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist build/Map.build/Debug-iphoneos/Map-Source.build/Directions.xcent645c35e4911fb641^cb3036e4911fb641^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions.xcent0000000000000000^726"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist build/Map.build/Debug-iphoneos/Map-Source.build/Directions.xcent    cd /Users/albe5259/Projects/navigator    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist -entitlements -format xml -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions.xcent36"A62D6002-7514-4459-9178-647FA0CD1029-
 
 CTouch /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app
-s371167716.191286
-e371167716.200217
+s371171509.729916
+e371171509.734979
 r1
 xTouch
 x/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Touch /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app790631e4911fb641^e14133e4911fb641^---0#0#0#--365"Touch build/Debug-iphoneos/Directions.app    cd /Users/albe5259/Projects/navigator    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app36"77CAA444-874B-426C-9424-9FD8DBA05A9B-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Touch /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app57e9bab5a01fb641^3d28bcb5a01fb641^---0#0#0#--365"Touch build/Debug-iphoneos/Directions.app    cd /Users/albe5259/Projects/navigator    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app36"DDF15CBC-720B-4FBA-B3A1-F07864585A6E-
 

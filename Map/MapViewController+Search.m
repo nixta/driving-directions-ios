@@ -209,7 +209,7 @@
     [self.searchBar resignFirstResponder];
     
     //only show bookmarks button if there is nothing to show
-    self.searchBar.showsBookmarkButton = (self.searchBar.text.length == 0);
+    //self.searchBar.showsBookmarkButton = (self.searchBar.text.length == 0);
     
     Search *newSearch = [[Search alloc] initWithName:searchBar.text];
     [self.mapAppSettings addRecentSearch:newSearch onlyUniqueEntries:YES];
@@ -353,7 +353,7 @@
    
     
     //only show bookmarks button if there is nothing to show
-    self.searchBar.showsBookmarkButton = (self.searchBar.text.length == 0);
+    //self.searchBar.showsBookmarkButton = (self.searchBar.text.length == 0);
     
     [self showResultsList:YES];
     [self.mapListButton setImage:[UIImage imageNamed:@"Map.png"]];

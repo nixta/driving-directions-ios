@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/OrganizationChooserViewController.m"
-         timestampString = "370818727.168759"
+         timestampString = "371171400.15354"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "142"
-         endingLineNumber = "142"
+         startingLineNumber = "143"
+         endingLineNumber = "143"
          landmarkName = "-finishButtonPressed:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,11 +47,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/Location.m"
-         timestampString = "370993053.498468"
+         timestampString = "371171400.15354"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "355"
-         endingLineNumber = "355"
+         startingLineNumber = "360"
+         endingLineNumber = "360"
          landmarkName = "-geocodeService:operation:didFindLocationsForAddress:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/Location.m"
-         timestampString = "371066350.757944"
+         timestampString = "371171400.15354"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "540"
-         endingLineNumber = "540"
+         startingLineNumber = "545"
+         endingLineNumber = "545"
          landmarkName = "-encodeToJSON"
          landmarkType = "5">
       </FileBreakpoint>
@@ -131,6 +131,45 @@
          startingLineNumber = "382"
          endingLineNumber = "382"
          landmarkName = "-decodeWithJSON:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Map/Location.m"
+         timestampString = "371170351.146042"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "334"
+         endingLineNumber = "334"
+         landmarkName = "-locator:operation:didFindAddressForLocation:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Map/MapViewController.m"
+         timestampString = "371171791.796349"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "1370"
+         endingLineNumber = "1370"
+         landmarkName = "-shareLocationViaEmail:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Map/MapViewController.m"
+         timestampString = "371171810.280492"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "1357"
+         endingLineNumber = "1357"
+         landmarkName = "-shareDirectionsViaEmail"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
