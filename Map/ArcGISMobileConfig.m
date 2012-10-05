@@ -80,7 +80,7 @@
         self.ecasRegistrationUrl = @"https://ecasapi.esri.com/1.0/accounts";
         
         self.geocoderServiceUrlNew = @"http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer";
-        //self.geocoderServiceUrlNew = @"http://ec2-54-242-51-73.compute-1.amazonaws.com:6080/arcgis/rest/services/WorldGazetteerComposite/GeocodeServer";
+        
 	}
 
 	return self;

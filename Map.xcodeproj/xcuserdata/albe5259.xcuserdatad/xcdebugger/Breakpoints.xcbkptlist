@@ -138,19 +138,6 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/GeocodeService.m"
-         timestampString = "371084263.02937"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "149"
-         endingLineNumber = "149"
-         landmarkName = "-requestOp:completedWithResultsGeocoder:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/GeocodeService.m"
          timestampString = "371156170.122904"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
