@@ -371,7 +371,7 @@
     label.text = bmInfo.title;
     label.backgroundColor = [UIColor clearColor];
     label.font = [UIFont systemFontOfSize:16];
-    label.textAlignment = UITextAlignmentCenter;
+    label.textAlignment = NSTextAlignmentCenter;
     [view addSubview:label];
 }
                             
@@ -441,7 +441,7 @@
         currentLabel.font = [UIFont boldSystemFontOfSize:12.0];
         currentLabel.backgroundColor = [UIColor clearColor];
         currentLabel.textColor = [UIColor whiteColor];
-        currentLabel.textAlignment = UITextAlignmentCenter;
+        currentLabel.textAlignment = NSTextAlignmentCenter;
         currentLabel.text = NSLocalizedString(@"Current", nil);
         
         [cbv addSubview:currentLabel];

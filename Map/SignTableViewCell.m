@@ -59,7 +59,7 @@
         aDistanceLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:14.0];
         aDistanceLabel.textColor = [UIColor whiteColor];
         aDistanceLabel.backgroundColor = [UIColor clearColor];
-        aDistanceLabel.textAlignment = UITextAlignmentRight;
+        aDistanceLabel.textAlignment = NSTextAlignmentRight;
         aDistanceLabel.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
         
         self.distanceLabel = aDistanceLabel;
@@ -71,7 +71,7 @@
         aNameLabel.font = [UIFont fontWithName:@"Verdana-Bold" size:14.0];
         aNameLabel.textColor = [UIColor whiteColor];
         aNameLabel.backgroundColor = [UIColor clearColor];
-        aNameLabel.textAlignment = UITextAlignmentLeft;
+        aNameLabel.textAlignment = NSTextAlignmentLeft;
         aNameLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
         
         self.nameLabel = aNameLabel;

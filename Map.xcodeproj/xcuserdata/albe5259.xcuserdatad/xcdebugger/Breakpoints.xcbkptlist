@@ -46,19 +46,6 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Map/MapContentViewController.m"
-         timestampString = "370995960.807223"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "357"
-         endingLineNumber = "357"
-         landmarkName = "-tableView:cellForRowAtIndexPath:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
          filePath = "Map/Location.m"
          timestampString = "370993053.498468"
          startingColumnNumber = "9223372036854775807"
@@ -99,24 +86,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/GeocodeService.m"
-         timestampString = "371156170.122904"
+         timestampString = "371167910.591493"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "262"
-         endingLineNumber = "262"
-         landmarkName = "-findTask:operation:didExecuteWithFindResults:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/GeocodeService.m"
-         timestampString = "371083827.490976"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "139"
-         endingLineNumber = "139"
+         startingLineNumber = "140"
+         endingLineNumber = "140"
          landmarkName = "-requestOp:completedWithResultsGeocoder:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -124,25 +98,12 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Map/MapViewController+Search.m"
-         timestampString = "371084043.158343"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "498"
-         endingLineNumber = "498"
-         landmarkName = "-geocodeService:operation:didFindPlace:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
          filePath = "Map/GeocodeService.m"
-         timestampString = "371156170.122904"
+         timestampString = "371167910.591493"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "292"
-         endingLineNumber = "292"
+         startingLineNumber = "293"
+         endingLineNumber = "293"
          landmarkName = "-initWithJSON:withSpatialReference:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -151,11 +112,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/GeocodeService.m"
-         timestampString = "371156170.122904"
+         timestampString = "371167910.591493"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "323"
-         endingLineNumber = "323"
+         startingLineNumber = "324"
+         endingLineNumber = "324"
          landmarkName = "-decodeWithJSON:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -164,38 +125,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/GeocodeService.m"
-         timestampString = "371156170.122904"
+         timestampString = "371167910.591493"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "381"
-         endingLineNumber = "381"
+         startingLineNumber = "382"
+         endingLineNumber = "382"
          landmarkName = "-decodeWithJSON:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/MapViewController+Search.m"
-         timestampString = "371156082.191337"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "519"
-         endingLineNumber = "519"
-         landmarkName = "-geocodeService:operation:didFindPOI:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/GeocodeService.m"
-         timestampString = "371162026.663535"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "244"
-         endingLineNumber = "244"
-         landmarkName = "-findPlaceOperation:didComplete:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

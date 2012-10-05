@@ -75,7 +75,7 @@
         label.backgroundColor = [UIColor clearColor];
         label.textColor = [UIColor whiteColor];
         label.font = [UIFont fontWithName:@"Arial-BoldMT" size:12.0]; 
-        label.textAlignment = UITextAlignmentCenter;
+        label.textAlignment = NSTextAlignmentCenter;
         self.nameLabel = label;
         
         UIImageView *iv = [[UIImageView alloc] initWithFrame:imageRect];;

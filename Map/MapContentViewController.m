@@ -356,14 +356,14 @@ static NSUInteger kBasemapSection = 0;
             cell.imageView.image = le.swatch;
             cell.textLabel.text = le.title;
             cell.textLabel.font = [UIFont systemFontOfSize:16];
-            cell.textLabel.textAlignment = UITextAlignmentLeft;
+            cell.textLabel.textAlignment = NSTextAlignmentLeft;
         }
         else
         {
             cell.imageView.image = nil;
             cell.textLabel.text = NSLocalizedString(@"No legend information is available", nil);
             cell.textLabel.font = [UIFont fontWithName:@"Helvetica-Oblique" size:[UIFont systemFontSize]];
-            cell.textLabel.textAlignment = UITextAlignmentCenter;
+            cell.textLabel.textAlignment = NSTextAlignmentCenter;
         }
         
         cell.accessoryType = UITableViewCellAccessoryNone;

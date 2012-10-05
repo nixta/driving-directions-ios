@@ -87,7 +87,7 @@
         
         UILabel *locLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         locLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:17.0];
-        locLabel.textAlignment = UITextAlignmentCenter;
+        locLabel.textAlignment = NSTextAlignmentCenter;
         locLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
         locLabel.textColor = [UIColor whiteColor];
         locLabel.backgroundColor = [UIColor clearColor];
@@ -95,7 +95,7 @@
         
         UILabel *addrLabel = [[UILabel alloc] initWithFrame:CGRectZero];
         addrLabel.font = [UIFont fontWithName:@"Helvetica" size:14.0];
-        addrLabel.textAlignment = UITextAlignmentCenter;
+        addrLabel.textAlignment = NSTextAlignmentCenter;
         addrLabel.numberOfLines = 3;
         addrLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleBottomMargin;
         addrLabel.textColor = [UIColor whiteColor];

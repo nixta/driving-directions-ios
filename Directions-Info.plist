@@ -53,7 +53,6 @@
 	<key>MKDirectionsApplicationSupportedModes</key>
 	<array>
 		<string>MKDirectionsModeCar</string>
-		<string>MKDirectionsModeOther</string>
 	</array>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>

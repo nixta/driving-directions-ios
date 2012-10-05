@@ -401,20 +401,21 @@
     return _resultsTableView;
 }
 
--(UIBarButtonItem *)planningButton
-{
-    if(_planningButton == nil)
-    {
-        //Using a custom signature for the selector so we can pass important information to the extendable
-        //toolbar about the location of the button on the toolbar itself
-        UIBarButtonItem *pb = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
-                                                                          target:self 
-                                                                          action:@selector(planningButtonPressed:event:)];
-        self.planningButton = pb;
-    }
-    
-    return _planningButton;
-}
+#warning Delete this code, is for multi-route
+//-(UIBarButtonItem *)planningButton
+//{
+//    if(_planningButton == nil)
+//    {
+//        //Using a custom signature for the selector so we can pass important information to the extendable
+//        //toolbar about the location of the button on the toolbar itself
+//        UIBarButtonItem *pb = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
+//                                                                          target:self 
+//                                                                          action:@selector(planningButtonPressed:event:)];
+//        self.planningButton = pb;
+//    }
+//    
+//    return _planningButton;
+//}
 
 -(UIBarButtonItem *)routeSettingsButton
 {
@@ -520,7 +521,7 @@
     {
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, kHeightOfToolbar)];
         label.font = [UIFont boldSystemFontOfSize:19.0];
-        label.textAlignment = UITextAlignmentCenter;
+        label.textAlignment = NSTextAlignmentCenter;
         label.backgroundColor = [UIColor clearColor];
         label.textColor = [UIColor whiteColor];
         
@@ -776,11 +777,12 @@
 
 -(void)routeActionButtonPressed:(id)sender
 {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil 
+#warning Delete the comment out code, this is Multi-Route
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
                                                              delegate:self 
                                                     cancelButtonTitle:NSLocalizedString(@"Cancel", nil) 
                                                destructiveButtonTitle:nil 
-                                                    otherButtonTitles:NSLocalizedString(@"Modify Route", nil),
+                                                    otherButtonTitles:/*NSLocalizedString(@"Modify Route", nil),*/
                                                                       NSLocalizedString(@"Share Directions via Email", nil), 
                                                                       NSLocalizedString(@"Print Directions", nil), nil];
     
@@ -1151,13 +1153,15 @@
     else if(actionSheet.tag == kRouteActionSheetTag)
     {
         switch (buttonIndex) {
-            case 0:     //wants to modify route by going into planning mode
-                [self modifyRouteButtonPressed:nil];
-                break;
-            case 1:    //Share Directions Via Email
+                
+#warning Delete this code, this is for MultiRoute
+//            case 0:     //wants to modify route by going into planning mode
+//                [self modifyRouteButtonPressed:nil];
+//                break;
+            case 0:    //Share Directions Via Email
                 [self shareDirectionsViaEmail];
                 break;
-            case 2:    //Print Directions
+            case 1:    //Print Directions
                 [self printDirections];
                 break;
             default:

@@ -98,7 +98,7 @@
         
         CGSize constrainedSize = [title sizeWithFont:[UIFont boldSystemFontOfSize:16.0] 
                                   constrainedToSize:CGSizeMake(titleLabelWidth, 20000.0f) 
-                                      lineBreakMode:UILineBreakModeWordWrap];
+                                      lineBreakMode:NSLineBreakByWordWrapping];
         
         if (constrainedSize.height > titleLabelFrame.size.height) {
             titleLabelFrame.size.height = constrainedSize.height;

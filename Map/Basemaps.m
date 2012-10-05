@@ -143,7 +143,7 @@
     //NSString *queryString = self.app.config.basemapsGroupQueries;
     MapAppSettings *mas = (MapAppSettings *)self.app.appSettings;
     
-#warning Modified while not using organizations
+
     NSString *queryString = @"title:\"ArcGIS Online Basemaps\" AND owner:esri";  //mas.organization.basemapGalleryGroupQuery;
     
     NSString* urlString = [NSString stringWithFormat:@"community/groups?q=%@&f=json", queryString];
