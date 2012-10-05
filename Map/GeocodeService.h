@@ -80,6 +80,12 @@
 - (void)geocodeService:(GeocodeService *)geocodeService operation:(NSOperation*)op didFailFindPlace:(NSError *)error;
 
 //
+// findPOI
+//
+- (void)geocodeService:(GeocodeService *)geocodeService operation:(NSOperation*)op didFindPOI:(NSArray *)places;
+- (void)geocodeService:(GeocodeService *)geocodeService operation:(NSOperation*)op didFailFindPOI:(NSError *)error;
+
+//
 //reverseAddressMatch
 //
 //- (void)geocodeService:(GeocodeService *)geocodeService operation:(NSOperation*)op didFindAddressForLocation:(AGSAddressCandidate *)candidates;
@@ -91,6 +97,22 @@
 #pragma mark GeocodeServiceResult
 
 @interface FindPlaceCandidate : NSObject <AGSCoding>{
+	NSString *_name;
+	NSNumber *_score;
+    AGSPoint *_location;
+    AGSEnvelope *_extent;
+}
+
+-(id)initWithJSON:(NSDictionary *)json withSpatialReference:(AGSSpatialReference *)spatialReference;
+
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, strong) NSNumber *score;
+@property (nonatomic, strong) AGSPoint *location;
+@property (nonatomic, strong) AGSEnvelope *extent;
+
+@end
+
+@interface FindPOI : NSObject <AGSCoding>{
 	NSString *_name;
 	NSNumber *_score;
     AGSPoint *_location;

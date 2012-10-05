@@ -498,7 +498,7 @@
     if (places != nil && places.count > 0) {
         
         DrawableList *placeList = [[DrawableList alloc] initWithName:NSLocalizedString(@"Places", nil) 
-                                                          withItems:places];
+                                                          withItems:nil];
         
         [self.searchResults addList:placeList];
         
@@ -513,4 +513,36 @@
     [self searchFinishedExecuting];
 }
 
+
+- (void)geocodeService:(GeocodeService *)geocodeService operation:(NSOperation*)op didFindPOI:(NSArray *)places
+{
+    if (places != nil && places.count > 0) {
+        
+        DrawableList *addrList = [[DrawableList alloc] initWithName:NSLocalizedString(@"Closest", nil)
+                                                          withItems:nil];
+        
+        for(FindPOI *addr in places)
+        {
+            LocationBookmark *newLoc = [[LocationBookmark alloc] initWithName:addr.name
+                                                                       anIcon:[UIImage imageNamed:@"AddressPin.png"]
+                                                                   locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]];
+            newLoc.addressCandidate = nil;
+            newLoc.geometry = addr.location;
+            
+            [addrList addItem:newLoc];
+        }
+        
+        [self.searchResults addList:addrList];
+        
+        [self.resultsTableView reloadData];
+    }
+    
+    [self searchFinishedExecuting];
+}
+
+- (void)geocodeService:(GeocodeService *)geocodeService operation:(NSOperation*)op didFailFindPOI:(NSError *)error
+{
+    //Couldn't find any places... just continue executing
+    [self searchFinishedExecuting];
+}
 @end

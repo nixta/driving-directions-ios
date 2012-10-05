@@ -76,40 +76,40 @@
 #warning needs to be replace when the new ArcGIS Runtime SDK is available.
     // This is a work around until the new ArcGIS Runtime for iOS is available with a class
     // that supports passing an extent for searching.
-//    if ( self.app.config.geocoderServiceUrlNew != nil ) {
-//        
-//        MapAppDelegate *appDelegate = (MapAppDelegate *)[[UIApplication sharedApplication] delegate];
-//    
-//        AGSGeometryEngine *geoEngine = [AGSGeometryEngine defaultGeometryEngine];
-//        AGSEnvelope *wgsEnvelope = (AGSEnvelope*)[geoEngine projectGeometry:appDelegate.mapView.visibleArea.envelope toSpatialReference:[AGSSpatialReference spatialReferenceWithWKID:4326]];
-//        
-//        NSMutableString *bbox = [[NSMutableString alloc] initWithFormat:@"%f,%f,%f,%f", wgsEnvelope.xmin,
-//        wgsEnvelope.ymin,wgsEnvelope.xmax,wgsEnvelope.ymax ];
-//        
-//        [bbox replaceOccurrencesOfString:@","
-//                                    withString:@"%2C"
-//                                    options:0
-//                                    range:NSMakeRange(0, [bbox length])];
-//        
-//        NSMutableString *cleanSearchString = [[NSMutableString alloc] initWithString:searchString];
-//        [cleanSearchString replaceOccurrencesOfString:@" "
-//                                           withString:@"+"
-//                                              options:0
-//                                                range:NSMakeRange(0, [cleanSearchString length])];
-//        
-//        NSMutableString *requestString = [[NSMutableString alloc] initWithString:self.app.config.geocoderServiceUrlNew];
-//        [requestString appendFormat:@"/find?Text=%@", cleanSearchString];
-//        //&outFields=&outSR=&bbox=&f=pjson
-//        [requestString appendFormat:@"&outFields=&outSR=%d&bbox=%@&f=pjson", appDelegate.mapView.spatialReference.wkid ,bbox];
-//        
-//        // Replace with AGSJSONRequestOperation
-//        AGSJSONRequestOperation *requestOp = [[AGSJSONRequestOperation alloc]initWithURL:[NSURL URLWithString:requestString]];
-//        requestOp.target = self;
-//        requestOp.action = @selector(requestOp:completedWithResultsGeocoder:);
-//        //requestOp.errorAction = @selector(urisOperation:didFailWithError:);
-//        [[AGSRequestOperation sharedOperationQueue] addOperation:requestOp];
-//        
-//    }
+    if ( self.app.config.geocoderServiceUrlNew != nil ) {
+        
+        MapAppDelegate *appDelegate = (MapAppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+        AGSGeometryEngine *geoEngine = [AGSGeometryEngine defaultGeometryEngine];
+        AGSEnvelope *wgsEnvelope = (AGSEnvelope*)[geoEngine projectGeometry:appDelegate.mapView.visibleArea.envelope toSpatialReference:[AGSSpatialReference spatialReferenceWithWKID:4326]];
+        
+        NSMutableString *bbox = [[NSMutableString alloc] initWithFormat:@"%f,%f,%f,%f", wgsEnvelope.xmin,
+        wgsEnvelope.ymin,wgsEnvelope.xmax,wgsEnvelope.ymax ];
+        
+        [bbox replaceOccurrencesOfString:@","
+                                    withString:@"%2C"
+                                    options:0
+                                    range:NSMakeRange(0, [bbox length])];
+        
+        NSMutableString *cleanSearchString = [[NSMutableString alloc] initWithString:searchString];
+        [cleanSearchString replaceOccurrencesOfString:@" "
+                                           withString:@"+"
+                                              options:0
+                                                range:NSMakeRange(0, [cleanSearchString length])];
+        
+        NSMutableString *requestString = [[NSMutableString alloc] initWithString:self.app.config.geocoderServiceUrlNew];
+        [requestString appendFormat:@"/find?Text=%@", cleanSearchString];
+        //&outFields=&outSR=&bbox=&f=pjson
+        [requestString appendFormat:@"&outFields=&outSR=%d&bbox=%@&f=pjson", appDelegate.mapView.spatialReference.wkid ,bbox];
+        
+        // Replace with AGSJSONRequestOperation
+        AGSJSONRequestOperation *requestOp = [[AGSJSONRequestOperation alloc]initWithURL:[NSURL URLWithString:requestString]];
+        requestOp.target = self;
+        requestOp.action = @selector(requestOp:completedWithResultsGeocoder:);
+        
+        [[AGSRequestOperation sharedOperationQueue] addOperation:requestOp];
+        
+    }
     
 
     // Search for address using AddressLocator (AGSLocator)
@@ -146,12 +146,12 @@
     
     for (NSDictionary *placeJson in jsonArray) {
         
-        FindPlaceCandidate *place = [[FindPlaceCandidate alloc] initWithJSON:placeJson withSpatialReference:spatialReference];
-        [places addObject:place];
+        FindPOI *poi = [[FindPOI alloc] initWithJSON:placeJson withSpatialReference:spatialReference];
+        [places addObject:poi];
         
     }
-    
-    [self.delegate geocodeService:self operation:op didFindPlace:places];
+   //call poi delegate here
+    [self.delegate geocodeService:self operation:op didFindPOI:places];
 }
 
 // Locator delegate methods
@@ -260,6 +260,8 @@
 - (void)findTask:(AGSFindTask *)findTask operation:(NSOperation*)op didExecuteWithFindResults:(NSArray *)results
 {
     NSLog(@"Find results %@", results);
+    
+    
 }
 
 #pragma mark -
@@ -321,6 +323,66 @@
     self.name = [json valueForKey:@"name"];
     self.score = [json valueForKey:@"score"];
     self.location = [[AGSPoint alloc] initWithJSON:[json valueForKey:@"location"]];
+    self.extent = [[AGSEnvelope alloc] initWithJSON:[json valueForKey:@"extent"]];
+}
+
+
+
+@end
+
+#pragma mark -
+#pragma mark FindPOI
+
+@implementation FindPOI
+
+@synthesize name = _name;
+@synthesize score = _score;
+@synthesize location = _location;
+@synthesize extent = _extent;
+
+
+-(id)initWithJSON:(NSDictionary *)json withSpatialReference:(AGSSpatialReference *)spatialReference
+{
+    if (self = [self initWithJSON:json])
+    {
+        //use the spatialReference with our location
+        self.location = [AGSPoint pointWithX:self.location.x y:self.location.y spatialReference:spatialReference];
+        self.extent = [AGSEnvelope envelopeWithXmin:self.extent.xmin
+                                               ymin:self.extent.ymin
+                                               xmax:self.extent.xmax
+                                               ymax:self.extent.ymax
+                                   spatialReference:spatialReference];
+    }
+    
+    return self;
+}
+
+- (id)initWithJSON:(NSDictionary *)json {
+    if (self = [super init]) {
+        [self decodeWithJSON:json];
+    }
+    
+    return self;
+}
+
+- (NSDictionary*)encodeToJSON {
+	NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+	
+    [NSDictionary safeSetObjectInDictionary:dict object:self.name withKey:@"name"];
+    [NSDictionary safeSetObjectInDictionary:dict object:self.score withKey:@"score"];
+	[dict setValue:[self.location encodeToJSON] forKey:@"location"];
+	[dict setValue:[self.extent encodeToJSON] forKey:@"extent"];
+	
+	return dict;
+}
+
+- (void)decodeWithJSON:(NSDictionary *)json {
+    self.name = [json valueForKey:@"name"];
+    
+    AGSGraphic *feature = [[AGSGraphic alloc] initWithJSON:[json valueForKey:@"feature"]];
+    
+    self.score = [[feature attributes] objectForKey:@"Score"];
+    self.location = (AGSPoint*)feature.geometry;
     self.extent = [[AGSEnvelope alloc] initWithJSON:[json valueForKey:@"extent"]];
 }
 
