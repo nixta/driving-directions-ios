@@ -224,19 +224,6 @@
          landmarkName = "-directToLocationFromTwoPoints:andEnd:"
          landmarkType = "5">
       </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/MapViewController.m"
-         timestampString = "371419797.671234"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "498"
-         endingLineNumber = "498"
-         landmarkName = "-mapListButton"
-         landmarkType = "5">
-      </FileBreakpoint>
    </FileBreakpoints>
    <SymbolicBreakpoints>
       <AddressBreakpoint

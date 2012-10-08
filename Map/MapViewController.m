@@ -324,16 +324,16 @@
         [aView addSubview:self.activityIndicator];
         
         self.routingCancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        self.routingCancelButton.frame = CGRectMake(20, aView.frame.size.height-150, aView.frame.size.width/3, 50);
+        self.routingCancelButton.frame = CGRectMake((aView.frame.size.width/2)-50, aView.frame.size.height-160, 100, 40);
         [self.routingCancelButton.layer setMasksToBounds:YES];
         [self.routingCancelButton.layer setCornerRadius:10.0f];
         [self.routingCancelButton.layer setBackgroundColor:[UIColor grayColor].CGColor];
         [self.routingCancelButton setBackgroundColor:[UIColor grayColor]];
         [self.routingCancelButton setAlpha:0.3];
         
-        self.routingCancelButton.titleLabel.text = @"Cancel";
+        self.routingCancelButton.titleLabel.text = NSLocalizedString(@"Cancel", nil);
         [self.routingCancelButton setTitleColor:[UIColor blackColor] forState: UIControlStateNormal];
-        [self.routingCancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
+        [self.routingCancelButton setTitle:NSLocalizedString(@"Cancel", nil) forState:UIControlStateNormal];
         self.routingCancelButton.titleLabel.textColor = [UIColor blackColor];
         
         [self.routingCancelButton addTarget:self action:@selector(cancelTapped:) forControlEvents:UIControlEventTouchUpInside];
