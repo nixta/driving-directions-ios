@@ -35,7 +35,7 @@
     BOOL                            _tableViewMinimized;
 }
 
-@property (nonatomic, unsafe_unretained) id<DrawableContainerDataSource> resultsDataSource;
+@property (nonatomic, strong) id<DrawableContainerDataSource> resultsDataSource;
 @property (nonatomic, unsafe_unretained) id<DrawableContainerDelegate> resultsDelegate;
 
 -(void)minimize;

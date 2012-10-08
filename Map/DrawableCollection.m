@@ -64,6 +64,9 @@
 
 -(NSUInteger)numberOfLists
 {
+    if ( self.lists == nil)
+        return 0;
+    
     return self.lists.count;
 }
 

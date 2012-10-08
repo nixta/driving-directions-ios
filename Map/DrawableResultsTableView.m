@@ -74,6 +74,7 @@
 {
     @try
     {
+        NSLog(@"resultDataSource %@ with count", self.resultsDataSource);
         return [self.resultsDataSource numberOfResultTypes];
     }
     @catch (NSException * e) {
