@@ -211,6 +211,19 @@
          landmarkName = "-appleMapsCalled:withEnd:"
          landmarkType = "5">
       </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Map/MapViewController.m"
+         timestampString = "371416405.636985"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "1224"
+         endingLineNumber = "1224"
+         landmarkName = "-directToLocationFromTwoPoints:andEnd:"
+         landmarkType = "5">
+      </FileBreakpoint>
    </FileBreakpoints>
    <SymbolicBreakpoints>
       <AddressBreakpoint
