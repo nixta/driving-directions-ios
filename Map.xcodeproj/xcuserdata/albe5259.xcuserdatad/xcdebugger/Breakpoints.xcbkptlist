@@ -151,11 +151,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/MapViewController.m"
-         timestampString = "371412168.974985"
+         timestampString = "371412693.808189"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1418"
-         endingLineNumber = "1418"
+         startingLineNumber = "1422"
+         endingLineNumber = "1422"
          landmarkName = "-shareLocationViaEmail:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -164,11 +164,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/MapViewController.m"
-         timestampString = "371412168.974985"
+         timestampString = "371412693.808189"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1399"
-         endingLineNumber = "1399"
+         startingLineNumber = "1403"
+         endingLineNumber = "1403"
          landmarkName = "-shareDirectionsViaEmail"
          landmarkType = "5">
       </FileBreakpoint>
