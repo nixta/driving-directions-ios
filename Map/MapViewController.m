@@ -202,6 +202,7 @@
 {
     [super viewDidLoad];
     
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
     
 	self.mapView.wrapAround = YES;
 	self.mapView.showMagnifierOnTapAndHold = YES;
@@ -404,9 +405,10 @@
 -(UISearchBar *)searchBar
 {
     if (_searchBar == nil) {
-        //CGFloat widthOfBarButton = [UIBarButtonItem width];
+        CGFloat widthOfBarButton = [UIBarButtonItem width];
         
-        UISearchBar *sb = [[UISearchBar alloc]initWithFrame:CGRectMake(1, 1, self.view.frame.size.width, 40)];
+        UISearchBar *sb = [[UISearchBar alloc]initWithFrame:CGRectMake(widthOfBarButton, 1, self.view.frame.size.width - widthOfBarButton, 40)];
+        //UISearchBar *sb = [[UISearchBar alloc]initWithFrame:CGRectMake(1, 1, self.view.frame.size.width, 40)];
         sb.tintColor = [UIColor blackColor];
         sb.placeholder = NSLocalizedString(@"Enter address, place name, etc", nil);
         sb.delegate = self;

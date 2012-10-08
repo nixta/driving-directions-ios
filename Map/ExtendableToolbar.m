@@ -46,10 +46,12 @@
         
         UIView *aToolView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, kSizeOfToolbar)];
         aToolView.backgroundColor = [UIColor clearColor];
+        
         self.toolsView = aToolView;
         
         UIToolbar *tb = [[UIToolbar alloc] initWithFrame:self.toolsView.frame];
         tb.barStyle = UIBarStyleBlackOpaque;
+        tb.tintColor = [UIColor blackColor];
         self.toolbar = tb;
         
         [self.toolsView addSubview:self.toolbar];
