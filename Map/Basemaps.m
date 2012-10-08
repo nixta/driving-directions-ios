@@ -139,11 +139,7 @@
 //
 - (void) getESRIGroupID
 {
-	// String to grab basic info for ESRI Group
-    //NSString *queryString = self.app.config.basemapsGroupQueries;
-    MapAppSettings *mas = (MapAppSettings *)self.app.appSettings;
-    
-
+	
     NSString *queryString = @"title:\"ArcGIS Online Basemaps\" AND owner:esri";  //mas.organization.basemapGalleryGroupQuery;
     
     NSString* urlString = [NSString stringWithFormat:@"community/groups?q=%@&f=json", queryString];

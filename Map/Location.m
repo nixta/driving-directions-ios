@@ -335,7 +335,8 @@
     
     if ( candidate.address == nil)
         return;
-#warning This line sometimes causes a crash!
+    
+    //TODO: This line sometimes causes a crash!
    
     [[NSNotificationCenter defaultCenter] postNotificationName:kLocationUpdatedAddress object:self];
    

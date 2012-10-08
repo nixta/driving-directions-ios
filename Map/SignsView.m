@@ -42,6 +42,7 @@
 #define kEditingConstant 20.0
 
 #define kDirectionPlaceSection 0
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
 
 @interface SignsView () 
 
@@ -78,6 +79,12 @@
 -(id)initWithOffset:(CGFloat)offset withAdjoiningView:(UIView *)view withDatasource:(id<DrawableContainerDataSource>)datasource
 {
     CGRect rect = CGRectMake(0, 0, 320, 416);
+
+    if( IS_IPHONE_5 )
+    {
+        rect = CGRectMake(0, 0, 320, 516);
+    }
+    
     rect.origin.y = offset;
     
     self = [super initWithFrame:rect];

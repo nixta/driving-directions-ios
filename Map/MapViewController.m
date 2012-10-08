@@ -433,21 +433,6 @@
     return _resultsTableView;
 }
 
-#warning Delete this code, is for multi-route
-//-(UIBarButtonItem *)planningButton
-//{
-//    if(_planningButton == nil)
-//    {
-//        //Using a custom signature for the selector so we can pass important information to the extendable
-//        //toolbar about the location of the button on the toolbar itself
-//        UIBarButtonItem *pb = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose
-//                                                                          target:self 
-//                                                                          action:@selector(planningButtonPressed:event:)];
-//        self.planningButton = pb;
-//    }
-//    
-//    return _planningButton;
-//}
 
 -(UIBarButtonItem *)routeSettingsButton
 {
@@ -809,13 +794,12 @@
 
 -(void)routeActionButtonPressed:(id)sender
 {
-#warning Delete the comment out code, this is Multi-Route
+
     UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil
                                                              delegate:self 
                                                     cancelButtonTitle:NSLocalizedString(@"Cancel", nil) 
                                                destructiveButtonTitle:nil 
-                                                    otherButtonTitles:/*NSLocalizedString(@"Modify Route", nil),*/
-                                                                      NSLocalizedString(@"Share Directions via Email", nil), 
+                                                    otherButtonTitles:NSLocalizedString(@"Share Directions via Email", nil),
                                                                       NSLocalizedString(@"Print Directions", nil), nil];
     
     actionSheet.actionSheetStyle = UIActionSheetStyleBlackTranslucent;
@@ -1174,12 +1158,7 @@
             case 0:    //Call!
                 [self shareLocationViaEmail:tappedLocation];
                 break;
-//            case 1:    //Bookmarks!
-//                
-//                break;
-//            case 2:    //Share Location via email
-//                [self shareLocationViaEmail:tappedLocation];
-//                break;
+
             default:
                 break;
         }
@@ -1188,10 +1167,7 @@
     {
         switch (buttonIndex) {
                 
-#warning Delete this code, this is for MultiRoute
-//            case 0:     //wants to modify route by going into planning mode
-//                [self modifyRouteButtonPressed:nil];
-//                break;
+
             case 0:    //Share Directions Via Email
                 [self shareDirectionsViaEmail];
                 break;
