@@ -376,9 +376,9 @@
 -(UISearchBar *)searchBar
 {
     if (_searchBar == nil) {
-        CGFloat widthOfBarButton = [UIBarButtonItem width];
+        //CGFloat widthOfBarButton = [UIBarButtonItem width];
         
-        UISearchBar *sb = [[UISearchBar alloc]initWithFrame:CGRectMake(widthOfBarButton, 1, self.view.frame.size.width - widthOfBarButton, 40)];
+        UISearchBar *sb = [[UISearchBar alloc]initWithFrame:CGRectMake(1, 1, self.view.frame.size.width, 40)];
         sb.tintColor = [UIColor blackColor];
         sb.placeholder = NSLocalizedString(@"Enter address, place name, etc", nil);
         sb.delegate = self;
@@ -1426,6 +1426,14 @@
 {
 	MFMailComposeViewController *composer = [[MFMailComposeViewController alloc] init];
 	composer.mailComposeDelegate = self;
+  
+    if([MFMailComposeViewController canSendMail] == NO )
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Email isn't setup",nil) message:NSLocalizedString(@"Email needs to be set up before being used by the app", nil) delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alert show];
+        return;
+    }
+        
 	
     //Add picture of overview
     UIImage *mapImage = [[self.currentRoute.directions directionAtIndex:0] mapImage];
@@ -1455,6 +1463,12 @@
 	MFMailComposeViewController *composer = [[MFMailComposeViewController alloc] init];
 	composer.mailComposeDelegate = self;
 	
+    if([MFMailComposeViewController canSendMail] == NO )
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Email isn't setup",nil) message:NSLocalizedString(@"Email needs to be set up before being used by the app", nil) delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alert show];
+        return;
+    }
     
     //Fill out the message subject
     [composer setSubject:NSLocalizedString(@"I've shared my location using ArcGIS Navigator", nil)];
