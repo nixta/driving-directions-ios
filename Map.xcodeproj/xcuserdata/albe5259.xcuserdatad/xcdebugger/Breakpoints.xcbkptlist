@@ -151,11 +151,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/MapViewController.m"
-         timestampString = "371406953.790467"
+         timestampString = "371412168.974985"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1399"
-         endingLineNumber = "1399"
+         startingLineNumber = "1418"
+         endingLineNumber = "1418"
          landmarkName = "-shareLocationViaEmail:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -164,11 +164,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/MapViewController.m"
-         timestampString = "371406953.790467"
+         timestampString = "371412168.974985"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1380"
-         endingLineNumber = "1380"
+         startingLineNumber = "1399"
+         endingLineNumber = "1399"
          landmarkName = "-shareDirectionsViaEmail"
          landmarkType = "5">
       </FileBreakpoint>
@@ -183,6 +183,32 @@
          startingLineNumber = "123"
          endingLineNumber = "123"
          landmarkName = "-routeStops:didFinishWithStopGraphics:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Map/MapAppDelegate.m"
+         timestampString = "371408346.854164"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "73"
+         endingLineNumber = "73"
+         landmarkName = "-application:openURL:sourceApplication:annotation:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Map/MapViewController.m"
+         timestampString = "371410351.524999"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "233"
+         endingLineNumber = "233"
+         landmarkName = "-appleMapsCalled:withEnd:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

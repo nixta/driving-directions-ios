@@ -208,6 +208,8 @@
 @property (nonatomic, copy) NSURL                                   *shareWithMapUrl;
 @property (nonatomic, copy) NSString                                *callbackString;
 
+@property (nonatomic, strong) UIButton                              *routingCancelButton;
+
 @property (nonatomic, unsafe_unretained) id<LocationCalloutDelegate>   delegate;
 
 -(IBAction)locateMeButtonPressed:(id)sender;

@@ -172,6 +172,8 @@
 
 @synthesize delegate                    = _delegate;
 
+@synthesize routingCancelButton         = _routingCancelButton;
+
 #pragma mark -
 #pragma mark End of View Lifetime
 
@@ -320,10 +322,25 @@
         
         [aView addSubview:self.activityIndicator];
         
+        self.routingCancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        self.routingCancelButton.frame = CGRectMake(20, aView.frame.size.height-150, aView.frame.size.width/3, 60);
+        [self.routingCancelButton.layer setMasksToBounds:YES];
+        [self.routingCancelButton.layer setCornerRadius:10.0f];
+        [self.routingCancelButton.layer setBackgroundColor:[UIColor grayColor].CGColor];
+        
+        self.routingCancelButton.titleLabel.text = @"Cancel";
+        self.routingCancelButton.titleLabel.textColor = [UIColor blackColor];
+        
+        [self.routingCancelButton addTarget:self action:@selector(cancelTapped:) forControlEvents:UIControlEventTouchUpInside];
+        
         self.activityIndicatorView = aView;
     }
     
     return _activityIndicatorView;
+}
+
+-(void)cancelTapped:(id)sender {
+     [self showActivityIndicator:NO];
 }
 
 -(UIView *)planningToolsView
@@ -950,10 +967,12 @@
     
 	if (!show){
 		[self.activityIndicator stopAnimating];
+        [self.routingCancelButton removeFromSuperview];
         [self.activityIndicatorView removeFromSuperview];
 	}
 	else {
-		[self.activityIndicator startAnimating];
+		[self.activityIndicator startAnimating];        
+        [self.activityIndicatorView addSubview:self.routingCancelButton];
 	}
 	self.activityIndicatorView.hidden = !show;
 }
