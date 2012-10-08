@@ -151,11 +151,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/MapViewController.m"
-         timestampString = "371405149.532538"
+         timestampString = "371406953.790467"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1370"
-         endingLineNumber = "1370"
+         startingLineNumber = "1399"
+         endingLineNumber = "1399"
          landmarkName = "-shareLocationViaEmail:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -164,11 +164,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/MapViewController.m"
-         timestampString = "371405149.532538"
+         timestampString = "371406953.790467"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1357"
-         endingLineNumber = "1357"
+         startingLineNumber = "1380"
+         endingLineNumber = "1380"
          landmarkName = "-shareDirectionsViaEmail"
          landmarkType = "5">
       </FileBreakpoint>
@@ -176,13 +176,13 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "Map/ExtendableToolbar.m"
-         timestampString = "371404687.253295"
+         filePath = "Map/RouteSolver.m"
+         timestampString = "371407167.968373"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "99"
-         endingLineNumber = "99"
-         landmarkName = "-showTools:fromRect:animated:"
+         startingLineNumber = "123"
+         endingLineNumber = "123"
+         landmarkName = "-routeStops:didFinishWithStopGraphics:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

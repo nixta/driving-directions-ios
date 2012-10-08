@@ -215,7 +215,8 @@
 
 -(void)shareInformationWithMap:(MapShareUtility *)msi;
 
--(void)directToLocationFromCurrentLocation:(Location *)location; 
+-(void)directToLocationFromCurrentLocation:(Location *)location;
+-(void)directToLocationFromTwoPoints:(Location *)startLocation andEnd:(Location*)endLocation;
 
 -(void)showActivityIndicator:(BOOL)show;
 

@@ -236,12 +236,19 @@
         pEnd = self.mapView.gps.currentPoint;
     }
     
-    Location *passedLocation = [[Location alloc] initWithPoint:pEnd
+    Location *startLocation = [[Location alloc] initWithPoint:pStart
+                                                      aName:nil
+                                                     anIcon:[UIImage imageNamed:@"AddressPin.png"]
+                                                 locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]];
+    
+    Location *endLocation = [[Location alloc] initWithPoint:pEnd
                                                          aName:nil
                                                         anIcon:[UIImage imageNamed:@"AddressPin.png"]
                                                     locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]];
     
-    [self directToLocationFromCurrentLocation:passedLocation];    
+    [self directToLocationFromTwoPoints:startLocation andEnd:endLocation];
+    
+    //[self directToLocationFromCurrentLocation:passedLocation];
 }
 
 - (void)viewDidUnload
@@ -1181,6 +1188,22 @@
     [self showActivityIndicator:YES];
     
     SimpleRoute *simpleABRoute = [[SimpleRoute alloc] initWithDestination:location];
+   
+    
+    [self.routeSolver solveRoute:simpleABRoute];
+    
+    //Route solver retains... we can get rid of here
+}
+
+-(void)directToLocationFromTwoPoints:(Location *)startLocation andEnd:(Location*)endLocation
+{
+    _appState = MapAppStateRoute;
+    
+    [self showActivityIndicator:YES];
+    
+    SimpleRoute *simpleABRoute = [[SimpleRoute alloc] initWithDestination:startLocation];
+    [simpleABRoute addStop:endLocation];
+    
     
     [self.routeSolver solveRoute:simpleABRoute];
     
@@ -1363,6 +1386,12 @@
             [self displayComposerSheetForSharingDirections];
         }
     }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Email isn't setup",nil) message:NSLocalizedString(@"Email needs to be set up before being used by the app", nil) delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alert show];
+        
+    }
 }
 
 -(void)shareLocationViaEmail:(Location *)location
@@ -1375,6 +1404,12 @@
         {
             [self displayComposerSheetForSharingLocation:location];
         }
+    }
+    else 
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Email isn't setup",nil) message:NSLocalizedString(@"Email needs to be set up before being used by the app", nil) delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alert show];
+        
     }
 }
 
