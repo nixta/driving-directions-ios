@@ -202,7 +202,7 @@
 {
     [super viewDidLoad];
     
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    //[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
     
 	self.mapView.wrapAround = YES;
 	self.mapView.showMagnifierOnTapAndHold = YES;
@@ -307,6 +307,7 @@
 -(UIView *)activityIndicatorView
 {
     if (_activityIndicatorView == nil) {
+       
         UIView *aView = [[UIView alloc]initWithFrame:self.view.bounds];
         aView.hidden = YES;
         aView.userInteractionEnabled = YES;
@@ -1595,7 +1596,10 @@
     
     self.orgChooserVC = vc;
     
-    [self presentModalViewController:self.orgChooserVC animated:YES];
+    // Selects the first organization for the webmap
+    [self.orgChooserVC requestTimerReady];
+    return;
+   
 }
 
 -(void)organizationChooser:(OrganizationChooserViewController *)orgVC didChooseOrganization:(Organization *)organization

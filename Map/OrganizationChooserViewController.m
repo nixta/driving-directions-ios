@@ -70,6 +70,8 @@
 {
     [super viewDidLoad];
     
+    //[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    
     self.finishButton.enabled = (self.organizations.count > 0);
     self.view.hidden = YES;
     

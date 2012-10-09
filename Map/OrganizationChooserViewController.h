@@ -48,6 +48,7 @@
 
 -(id)initWithOrganizations:(NSArray *)organizations;
 -(IBAction)finishButtonPressed:(id)sender;
+-(void)requestTimerReady;
 
 @end
 

@@ -84,6 +84,19 @@
     {
         rect = CGRectMake(0, 0, 320, 516);
     }
+    // it can also be done this way
+//    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+//    {
+//        CGSize result = [[UIScreen mainScreen] bounds].size;
+//        if(result.height == 480)
+//        {
+//            // iPhone Classic
+//        }
+//        if(result.height == 568)
+//        {
+//            // iPhone 5
+//        }
+//    }
     
     rect.origin.y = offset;
     
