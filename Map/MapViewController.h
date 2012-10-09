@@ -61,7 +61,7 @@
                                                     AGSWebMapDelegate, OrganizationDelegate, LocationCalloutDelegate, 
                                                     UIActionSheetDelegate, ChangeBasemapsDelegate, RouteSolverDelegate,
                                                     AGSGPSInfoTemplateDelegate, SignsViewDelegate, MFMailComposeViewControllerDelegate, 
-                                                    OrganizationChooserDelegate, DrawableContainerDelegate, routingDelegate>
+                                                    OrganizationChooserDelegate, DrawableContainerDelegate, routingDelegate, UISearchBarDelegate>
 {
     /*Ux IB Elements */
     AGSMapView                          *_mapView;
@@ -209,6 +209,8 @@
 @property (nonatomic, copy) NSString                                *callbackString;
 
 @property (nonatomic, strong) UIButton                              *routingCancelButton;
+
+@property (nonatomic,strong) IBOutlet UISearchBar                   *uiSearchBar;
 
 @property (nonatomic, unsafe_unretained) id<LocationCalloutDelegate>   delegate;
 

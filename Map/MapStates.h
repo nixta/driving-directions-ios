@@ -13,7 +13,6 @@
  */
 typedef enum {
     MapAppStateSimple = 0,     //Simple   State:  User can search, and get routed to a location via their current location
-    MapAppStatePlanning,       //Planning State:  User can search, but also create/edit custom routes with multiple stops, optimizatinons, etc
     MapAppStateRoute,          //In routing mode... likely showing a route on the screen
 } MapAppState;
 

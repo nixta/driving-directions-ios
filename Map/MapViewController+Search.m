@@ -177,10 +177,10 @@
     return YES;
 }
 
--(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
+/*-(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
 {      
     [self setSearchState:MapSearchStateList withKeyboard:YES animated:YES];
-}
+}  */
 
 -(void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
 {
@@ -288,10 +288,6 @@
     //should be set to no search before being called
     if(_searchState != MapSearchStateDefault)
         return;
-
-    //show planning tools again if we have to
-    if(_appState == MapAppStatePlanning)
-        [self.extendableToolbar showTools:YES fromRect:CGRectZero animated:YES];
     
     [self.searchLayer removeAllGraphics];
     [self.searchLayer dataChanged];
@@ -299,8 +295,9 @@
     //reset back to old imaget
     [self.mapListButton setImage:[UIImage imageNamed:@"Map.png"]];
     
-    //don't show buttons anumore
-    [self showMapListButton:NO withPlanningButton:YES animated:animated];
+    // Al Delete
+//    //don't show buttons anumore
+//    [self showMapListButton:NO withPlanningButton:YES animated:animated];
     
     //Kill keyboard if up
     [self.searchBar resignFirstResponder];
@@ -326,8 +323,9 @@
 {    
     [self.extendableToolbar showTools:NO fromRect:CGRectZero animated:YES];
     
-    //make room for button by moving search bar over
-    [self showMapListButton:YES withPlanningButton:NO animated:animated];
+    //Al Delete
+//    //make room for button by moving search bar over
+//    [self showMapListButton:YES withPlanningButton:NO animated:animated];
     
     //if we already have search items, show them in list
     if ([self.searchResults totalNumberOfItems] > 0) {
@@ -348,11 +346,8 @@
     [self.searchBar resignFirstResponder];
     [self showResultsList:NO];
     
-    //show planning tools again if we have to
-    if(_appState == MapAppStatePlanning)
-        [self.extendableToolbar showTools:YES fromRect:CGRectZero animated:YES];
-    
-    [self showMapListButton:YES withPlanningButton:YES animated:YES];
+    // Al Delete
+    //[self showMapListButton:YES withPlanningButton:YES animated:YES];
     [self.mapListButton setImage:[UIImage imageNamed:@"list.png"]];
     
     //self.searchBar.showsBookmarkButton = YES;
@@ -368,7 +363,8 @@
     {
         if(self.resultsTableView.superview == nil)
         {
-            [self.view insertSubview:self.resultsTableView belowSubview:self.extendableToolbar];
+            //[self.view insertSubview:self.resultsTableView belowSubview:self.extendableToolbar];
+            [self.view addSubview:self.resultsTableView];
         }
         
         [self.resultsTableView reloadData];
@@ -388,30 +384,31 @@
         [self.extendableToolbar.toolsView addSubview:self.searchBar];
 }
 
--(void)showMapListButton:(BOOL)show withPlanningButton:(BOOL)showPlanningButton animated:(BOOL)animated
-{
-    CGFloat widthOfButton = [UIBarButtonItem width];
-    
-    //don't animate the width as it looks weird
-    CGRect sbRect = self.searchBar.frame;
-    sbRect.size.width = self.view.frame.size.width - (show*widthOfButton + showPlanningButton*widthOfButton);
-    self.searchBar.frame = sbRect;
-    
-    sbRect.origin.x = (showPlanningButton) ? widthOfButton : 0;
-    
-    if(animated)
-    {
-        [UIView animateWithDuration:.1 animations:^
-        {
-            self.searchBar.frame = sbRect;
-        }
-         ];
-    }
-    else
-    {
-        self.searchBar.frame = sbRect;
-    }
-}
+//AL Delete
+//-(void)showMapListButton:(BOOL)show withPlanningButton:(BOOL)showPlanningButton animated:(BOOL)animated
+//{
+//    CGFloat widthOfButton = [UIBarButtonItem width];
+//    
+//    //don't animate the width as it looks weird
+//    CGRect sbRect = self.searchBar.frame;
+//    sbRect.size.width = self.view.frame.size.width - (show*widthOfButton + showPlanningButton*widthOfButton);
+//    self.searchBar.frame = sbRect;
+//    
+//    sbRect.origin.x = (showPlanningButton) ? widthOfButton : 0;
+//    
+//    if(animated)
+//    {
+//        [UIView animateWithDuration:.1 animations:^
+//        {
+//            self.searchBar.frame = sbRect;
+//        }
+//         ];
+//    }
+//    else
+//    {
+//        self.searchBar.frame = sbRect;
+//    }
+//}
 
 -(void)removeOldResults
 {

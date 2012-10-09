@@ -124,13 +124,6 @@
             scArray = [NSArray arrayWithObjects:@"Go here", nil];
             scSelector = @selector(directMeHereButtonPressed:);
         }
-        else if(_calloutType == MapAppStatePlanning)
-        {
-            //scArray = [NSArray arrayWithObjects:@"Start", @"Transit", @"Destination", nil];
-            //scArray = [NSArray arrayWithObjects:@"Start", @"Stop", @"Finish", nil];
-            scArray = [NSArray arrayWithObjects:@"Start", @"Stop", @"Destination", nil];
-            scSelector = @selector(locationStopChanged:);
-        }
             
         ToggleSegmentedControl *sc = [[ToggleSegmentedControl alloc] initWithItems:scArray];
         sc.segmentedControlStyle = UISegmentedControlStyleBar;

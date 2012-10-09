@@ -73,13 +73,10 @@
 
 -(void)routeActionButtonPressed:(id)sender;
 -(void)routeFinishedButtonPressed:(id)sender;
--(void)modifyRouteButtonPressed:(id)sender;
 -(void)routeRefreshButtonPressed:(id)sender;
 -(void)routeSettingsButtonPressed:(id)sender;
 -(void)routeButtonPressed:(id)sender;
 -(void)clearRouteButtonPressed:(id)sender;
-
--(void)planningButtonPressed:(id)sender event:(UIEvent *)event;
 
 -(void)setupRoutingUx;
 
@@ -173,6 +170,7 @@
 @synthesize delegate                    = _delegate;
 
 @synthesize routingCancelButton         = _routingCancelButton;
+@synthesize uiSearchBar                 = _uiSearchBar;
 
 #pragma mark -
 #pragma mark End of View Lifetime
@@ -387,36 +385,46 @@
      return _mapContentVC;
  }  
 
--(ExtendableToolbar *)extendableToolbar
-{
-    if(_extendableToolbar == nil)
-    {
-        CGFloat sizeOfToolbar = 44;
-        ExtendableToolbar *etb = [[ExtendableToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, sizeOfToolbar) showToolsBelowToolbar:NO];
-        
-        etb.supplementalToolsView = self.planningToolsView;
-        
-        self.extendableToolbar = etb;
-    }
-    
-    return _extendableToolbar;
-}
+//AL Delete
+//-(ExtendableToolbar *)extendableToolbar
+//{
+//    if(_extendableToolbar == nil)
+//    {
+//        CGFloat sizeOfToolbar = 44;
+//        ExtendableToolbar *etb = [[ExtendableToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, sizeOfToolbar) showToolsBelowToolbar:NO];
+//        
+//        etb.supplementalToolsView = self.planningToolsView;
+//        
+//        self.extendableToolbar = etb;
+//    }
+//    
+//    return _extendableToolbar;
+//}
 
 -(UISearchBar *)searchBar
 {
     if (_searchBar == nil) {
-        CGFloat widthOfBarButton = [UIBarButtonItem width];
         
-        UISearchBar *sb = [[UISearchBar alloc]initWithFrame:CGRectMake(widthOfBarButton, 1, self.view.frame.size.width - widthOfBarButton, 40)];
-        //UISearchBar *sb = [[UISearchBar alloc]initWithFrame:CGRectMake(1, 1, self.view.frame.size.width, 40)];
-        sb.tintColor = [UIColor blackColor];
-        sb.placeholder = NSLocalizedString(@"Enter address, place name, etc", nil);
-        sb.delegate = self;
+        //AL Delete
+//        CGFloat widthOfBarButton = [UIBarButtonItem width];
+//        
+//        UISearchBar *sb = [[UISearchBar alloc]initWithFrame:CGRectMake(widthOfBarButton, 1, self.view.frame.size.width - widthOfBarButton, 40)];
+//        //UISearchBar *sb = [[UISearchBar alloc]initWithFrame:CGRectMake(1, 1, self.view.frame.size.width, 40)];
+//        sb.tintColor = [UIColor blackColor];
+//        sb.placeholder = NSLocalizedString(@"Enter address, place name, etc", nil);
+//        sb.delegate = self;
         
-        self.searchBar = sb;
+        self.searchBar = self.uiSearchBar;
+        self.searchBar.delegate = self;
     }
     
     return _searchBar;
+}
+
+#pragma UISearchBar delegate
+- (void)searchBarResultsListButtonClicked:(UISearchBar *)searchBar
+{
+    [self setSearchState:MapSearchStateList withKeyboard:NO animated:YES];
 }
 
 -(DrawableResultsTableView *)resultsTableView
@@ -734,35 +742,6 @@
             
 #pragma mark -
 #pragma mark Button Interaction
--(void)planningButtonPressed:(id)sender event:(UIEvent *)event
-{
-    //get rect from touched view
-    CGRect rect = [[event.allTouches anyObject] view].frame;
-    
-    BOOL showPlanning = (_appState != MapAppStatePlanning);
-    [self.extendableToolbar showTools:showPlanning fromRect:rect animated:YES];
-    _appState = showPlanning ? MapAppStatePlanning : MapAppStateSimple;
-    
-    //add/remove graphics as necessary
-    if(showPlanning)
-    {
-        //add graphics to map
-        [self.planningRoute.stops addStopsToLayer:self.planningLayer showCurrentLocation:NO];
-        
-        AGSEnvelope *planningEnv = [self.planningRoute envelopeInMapView:self.mapView];
-        if (planningEnv) {
-            [self.mapView zoomToEnvelope:planningEnv animated:YES];
-        }
-    }
-    else
-    {
-        [self.planningLayer removeAllGraphics];
-    }
-    
-    [self showStopSigns:showPlanning];
-    
-    [self.planningLayer dataChanged];
-}
 
 -(void)layersButtonPressed:(id)sender
 {
@@ -785,11 +764,6 @@
         
         self.callbackString = nil;
     }
-}
-
--(void)modifyRouteButtonPressed:(id)sender
-{
-    [self endRouteModeToState:MapAppStatePlanning animated:YES];
 }
 
 -(void)routeActionButtonPressed:(id)sender
@@ -917,21 +891,6 @@
         //shortcut planning if user has only sent a destination...
         if (self.planningRoute.stops.numberOfStops == 2 && [self.planningRoute routesFromCurrentLocation]) {
             [self routeButtonPressed:nil];
-        }
-        //go into planning mode
-        else
-        {
-            [self.extendableToolbar showTools:YES fromRect:CGRectZero animated:YES];
-            [self.planningRoute.stops addStopsToLayer:self.planningLayer showCurrentLocation:NO];
-            
-            [self.planningLayer dataChanged];
-            
-            _appState = MapAppStatePlanning;
-            self.routeButton.enabled = [self.planningRoute canRoute];
-            
-            [self showStopSigns:YES];
-            
-            [self.mapView zoomToEnvelope:[self.planningRoute envelopeInMapView:self.mapView] animated:YES];
         }
     }
     //sharing a location
@@ -1225,35 +1184,10 @@
     //remove all graphics from the route layer
     [self.routeLayer removeAllGraphics];
     [self.routeLayer dataChanged];
-    
-    //show/hide planning tools as appropriate
-    BOOL isPlanning =  (_appState == MapAppStatePlanning);
-    [self.extendableToolbar showTools:isPlanning fromRect:CGRectZero animated:animated];
-    
+        
     //unconditionally remove all graphics from planning layer
     [self.planningLayer removeAllGraphics];
     [self.planningLayer dataChanged];
-
-    //user wants to modify route... Make current route equal to the planning route...
-    //This will blow away old planned route if there was one (i.e if user planned route,
-    //got out of planning, simple routed, then wanted to modify simple route)
-    if(isPlanning)
-    {
-        self.planningRoute = self.currentRoute;
-        
-        //zoom to route
-        AGSEnvelope *planningEnv = [self.planningRoute envelopeInMapView:self.mapView];
-        if (planningEnv) {
-            [self.mapView zoomToEnvelope:planningEnv animated:YES];
-        }
-        
-        //add stops back to layer... removing current location if exists
-        [self.planningRoute.stops addStopsToLayer:self.planningLayer showCurrentLocation:NO];
-        
-        [self showStopSigns:YES];
-        
-        self.routeButton.enabled = [self.planningRoute canRoute];
-    }
 
     self.currentRoute = nil;
     [self showSearchLayer:YES];

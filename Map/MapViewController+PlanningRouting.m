@@ -117,9 +117,6 @@
         return;
     }
     
-    if (_appState != MapAppStatePlanning)
-        return;
-    
     //show stops view below map in sign form
     if(_stopsView == nil)
     {
