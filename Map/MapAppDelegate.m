@@ -20,7 +20,6 @@
 
 #import "MapAppDelegate.h"
 #import "MapViewController.h"
-#import "KeychainWrapper.h"
 #import "MapAppSettings.h"
 #import "MapShareUtility.h"
 #import "ArcGISMobileConfig.h"
@@ -45,7 +44,7 @@
 
 @implementation MapAppDelegate
 
-@synthesize keychainWrapper = _keychainWrapper;
+
 @synthesize networkAlertView = _networkAlertView;
 @synthesize organizationOp = _organizationOp;
 @synthesize testOrganizations = _testOrganizations;
@@ -140,19 +139,7 @@
 	return YES;
 }
 
-#pragma mark -
-#pragma mark Keychain stuff
 
-//lazy load keychain wrapper
-
--(KeychainWrapper *)keychainWrapper
-{
-	if (_keychainWrapper == nil) {
-		self.keychainWrapper = [[KeychainWrapper alloc] init];
-	}
-	
-	return _keychainWrapper;
-}
 
 #pragma mark -
 #pragma mark NetworkConnection

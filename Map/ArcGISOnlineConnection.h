@@ -34,10 +34,7 @@
 @property (nonatomic, strong) NSString          *token;
 @property (nonatomic, unsafe_unretained) ArcGISAppDelegate *app;
 
-/// <summary>
-/// Gets a flag indicating whether the connection has a valid token.
-/// </summary>
-- (BOOL)isSignedIn;
+
 
 /// <summary>
 /// Connects to the ArcGIS Online server and obtains a token for subsequent

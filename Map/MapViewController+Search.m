@@ -35,6 +35,8 @@
 
 @implementation MapViewController (Search)
 
+@dynamic locator;
+
 -(void)searchFinishedExecuting
 {
     @synchronized(self)
@@ -277,6 +279,7 @@
     
     //depending on whether keyboard is up or not, make sure tableview fits properly
     SEL tableViewSel = (keyboard) ? @selector(minimize) : @selector(maximize);
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     [self.resultsTableView performSelector:tableViewSel];
 }
 

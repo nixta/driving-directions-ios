@@ -23,7 +23,6 @@
 #import "ArcGISMobileConfig.h"
 #import "AppSettings.h"
 #import "NSDictionary+Additions.h"
-#import "KeychainWrapper.h"
 #import "OnlineApplication.h"
 #import "AppSettings.h"
 
@@ -75,21 +74,6 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
     NSString *password = @"";
     NSString *user = @"";
     
-    KeychainWrapper *kcw = nil;
-    if ([self.app conformsToProtocol:@protocol(OnlineApplication)]) {
-        id<OnlineApplication> onlineApp = (id<OnlineApplication>)self.app;
-        kcw = onlineApp.keychainWrapper;
-    }
-    
-    if ([kcw isLoggedIn])
-    {
-        password = [kcw getPassword];
-        user = [kcw getUser];
-
-        //get saved token...
-        self.token = [AGSJSONUtility getStringFromDictionary:json withKey:@"token"];
-    }
-
     self.credential = [NSURLCredential credentialWithUser:user password:password persistence:NSURLCredentialPersistenceNone];
 }
 
@@ -113,22 +97,11 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
 #pragma mark -
 #pragma mark ArcGISOnlineConnection
 
-- (BOOL)isSignedIn
-{
-    KeychainWrapper *kcw = nil;
-    if ([self.app conformsToProtocol:@protocol(OnlineApplication)]) {
-        id<OnlineApplication> onlineApp = (id<OnlineApplication>)self.app;
-        kcw = onlineApp.keychainWrapper;
-    }
-    return ([kcw isLoggedIn] && self.token != nil && self.token.length > 0);
-}
+
 
 - (BOOL)signInWithCredential:(NSURLCredential*)credential error:(NSError **)error
 {
-    if ([self isSignedIn] != NO)
-    {
-        [self signOut];
-    }
+    
     
     TokenResponse *tokenResponse = nil;
     
@@ -166,14 +139,6 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
     self.credential = credential;
     self.token = tokenResponse.token;
     
-    //store successful username/password to the keychain...
-    KeychainWrapper *kcw = nil;
-    if ([self.app conformsToProtocol:@protocol(OnlineApplication)]) {
-        id<OnlineApplication> onlineApp = (id<OnlineApplication>)self.app;
-        kcw = onlineApp.keychainWrapper;
-    }
-    [kcw setPassword:credential.password forUser:credential.user];
-    
     //save app state so we save the token.
     //this will prevent issues at startup if the app crashes
     //and doesn't save the token
@@ -191,16 +156,6 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
     self.token = nil;
     self.credential = nil;
     
-    KeychainWrapper *kcw = nil;
-    if ([self.app conformsToProtocol:@protocol(OnlineApplication)]) {
-        id<OnlineApplication> onlineApp = (id<OnlineApplication>)self.app;
-        kcw = onlineApp.keychainWrapper;
-    }
-    
-    if ([kcw isLoggedIn])
-    {
-        [kcw resetKeychainItem];        
-    }
 }
 
 /// <summary>
@@ -327,37 +282,14 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
     urlString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	urlString = [urlString stringByReplacingOccurrencesOfString:@"'" withString:@"%22"];
     
-    //use token stuff if we're signed in and we're NOT using an alternate host
-    if ([self isSignedIn] && !host)
-    {
-        //check to see if we have an '?' in the url...
-        //if we do, then to separator needs to be a "&";
-        //if not, then the separator needs to be a "?"
-        NSString *separator = @"&";
-        NSRange range = [urlString rangeOfString:@"?"];
-        if (range.location == NSNotFound)
-            separator = @"?";
-
-        NSString *secureURL = [NSString stringWithFormat:@"%@/%@%@token=%@",
-                               hostLocation,
-                               urlString,
-                               separator,
-                               self.token];
-        
-        //NSLog(@"SecureURL = %@", secureURL);
-        
-        NSMutableURLRequest *req = [[NSMutableURLRequest alloc] initWithURL:[[NSURL URLWithString:secureURL] standardizedURL]];
-        [req setValue:_referer forHTTPHeaderField:@"Referer"];
-        request = req;        
-    }
-    else {
+   
         urlString = [NSString stringWithFormat:@"%@/%@",
                      hostLocation,
                      urlString];
         
         NSURLRequest *req = [[NSURLRequest alloc] initWithURL: [[NSURL URLWithString:urlString] standardizedURL]];
         request = req;        
-    }
+    
     
     return request;
 }

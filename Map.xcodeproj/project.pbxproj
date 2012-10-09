@@ -101,7 +101,6 @@
 		78BA0D931458C17500530ADD /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 784695F8141ECCAB00847AB6 /* NSDictionary+Additions.m */; };
 		78BA0D941458C17500530ADD /* NSString+html.m in Sources */ = {isa = PBXBuildFile; fileRef = 78469605141ECD5E00847AB6 /* NSString+html.m */; };
 		78BA0D951458C17500530ADD /* ContentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 78469608141ECDD200847AB6 /* ContentItem.m */; };
-		78BA0D961458C17500530ADD /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7846960B141ECE2200847AB6 /* KeychainWrapper.m */; };
 		78BA0D971458C17500530ADD /* ArcGISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78469633141FCFB700847AB6 /* ArcGISAppDelegate.m */; };
 		78BA0D981458C17500530ADD /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 78469636141FD0D800847AB6 /* AppSettings.m */; };
 		78BA0D991458C17500530ADD /* MapAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 7846963D14201D0200847AB6 /* MapAppSettings.m */; };
@@ -330,8 +329,6 @@
 		78469605141ECD5E00847AB6 /* NSString+html.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+html.m"; sourceTree = "<group>"; };
 		78469607141ECDD200847AB6 /* ContentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentItem.h; sourceTree = "<group>"; };
 		78469608141ECDD200847AB6 /* ContentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentItem.m; sourceTree = "<group>"; };
-		7846960A141ECE2200847AB6 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
-		7846960B141ECE2200847AB6 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		78469632141FCFB700847AB6 /* ArcGISAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcGISAppDelegate.h; sourceTree = "<group>"; };
 		78469633141FCFB700847AB6 /* ArcGISAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcGISAppDelegate.m; sourceTree = "<group>"; };
 		78469635141FD0D800847AB6 /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
@@ -926,8 +923,6 @@
 				789197931416761400E85321 /* GeocodeService.m */,
 				7846963F1420213800847AB6 /* SplashImageVC.h */,
 				784696401420213900847AB6 /* SplashImageVC.m */,
-				7846960A141ECE2200847AB6 /* KeychainWrapper.h */,
-				7846960B141ECE2200847AB6 /* KeychainWrapper.m */,
 				784695E3141EC8C100847AB6 /* ArcGISOnlineConnection.h */,
 				784695E4141EC8C100847AB6 /* ArcGISOnlineConnection.m */,
 				784695E5141EC8C100847AB6 /* ArcGISOnlineServices.h */,
@@ -1412,7 +1407,6 @@
 				78BA0D931458C17500530ADD /* NSDictionary+Additions.m in Sources */,
 				78BA0D941458C17500530ADD /* NSString+html.m in Sources */,
 				78BA0D951458C17500530ADD /* ContentItem.m in Sources */,
-				78BA0D961458C17500530ADD /* KeychainWrapper.m in Sources */,
 				78BA0D971458C17500530ADD /* ArcGISAppDelegate.m in Sources */,
 				78BA0D981458C17500530ADD /* AppSettings.m in Sources */,
 				78BA0D991458C17500530ADD /* MapAppSettings.m in Sources */,

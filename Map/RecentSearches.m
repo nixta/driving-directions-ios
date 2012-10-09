@@ -22,7 +22,7 @@
 
 @interface DrawableList () 
 
-@property (nonatomic, retain, readwrite) NSMutableArray  *items;
+@property (nonatomic, strong, readwrite) NSMutableArray  *items;
 
 @end
 

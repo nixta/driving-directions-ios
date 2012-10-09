@@ -32,15 +32,13 @@
 @class KeyChainWrapper;
 
 @interface MapAppDelegate : ArcGISAppDelegate <UIApplicationDelegate, OnlineApplication, UIAlertViewDelegate>
-{
-    KeychainWrapper         *_keychainWrapper;
+{    
     UIAlertView             *_networkAlertView;
     NSArray                 *_testOrganizations;
     
     AGSJSONRequestOperation *_organizationOp;
 }
 
-@property (nonatomic, strong) KeychainWrapper *keychainWrapper;
 @property (nonatomic, strong) UIAlertView     *networkAlertView;
 @property (nonatomic, strong) NSArray         *testOrganizations;
 @property (nonatomic, strong) AGSMapView      *mapView;
