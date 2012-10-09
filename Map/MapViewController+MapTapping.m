@@ -34,13 +34,7 @@
 #import "ArcGISMobileConfig.h"
 #import "ArcGISAppDelegate.h"
 
-@interface MapViewController () 
 
--(void)removeGPSObserver;
--(void)resetForNewTap;
--(void)populatePopupInfosUsingGraphics:(NSDictionary *)graphics;
--(BOOL)startIdentifyOnMapView:(AGSMapView *)mapView screenPoint:(CGPoint)screen mapPoint:(AGSPoint *)mappoint graphics:(NSDictionary *)graphics;
-@end
 
 @implementation MapViewController (MapViewController_MapTapping)
 

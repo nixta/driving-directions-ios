@@ -32,25 +32,6 @@
 
 #define kPointTargetScale 10000.0
 
-@interface MapViewController () 
-
-//@synthesize locator = _locator;
-
--(void)removeOldResults;
-
--(void)startSearchProcessAnimated:(BOOL)animated;
--(void)endSearchProcessAnimated:(BOOL)animated;
--(void)setupSearchForMapAnimated:(BOOL)animated;
--(void)setupSearchForListAnimated:(BOOL)animated;
-
--(void)showMapListButton:(BOOL)show withPlanningButton:(BOOL)showPlanningButton animated:(BOOL)animated;
--(void)showResultsList:(BOOL)show;
-
--(void)initalizeSearchResultsWithLocation:(Location *)location;
-
--(void)showCurrentSearchResultWithZoom:(BOOL)zoom;
-
-@end
 
 @implementation MapViewController (Search)
 
