@@ -437,7 +437,16 @@
     return ([app canOpenURL:[NSURL URLWithString:@"tel:+44-1234-567890"]]);
 }
 
+-(void)wantBookmarkForLocation:(Location *)location
+{
+    return;
+}
 
+
+-(void)makePhoneCallForContactLocation:(ContactLocationBookmark *)location
+{
+    return;
+}
 
 
 

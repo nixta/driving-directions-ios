@@ -38,7 +38,8 @@
 
 -(void)wantBookmarkForLocation:(Location *)location;
 
--(BOOL)canMakePhoneCalls;
+
 -(void)makePhoneCallForContactLocation:(ContactLocationBookmark *)location;
 
+-(BOOL)canMakePhoneCalls;
 @end

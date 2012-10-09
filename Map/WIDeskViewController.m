@@ -119,4 +119,14 @@
 }
 
 
+- (void)handleDocumentOpenURL:(NSURL *)url
+{
+    return;
+}
+
+- (void)handleApplicationURL:(NSURL *)url
+{
+    return;
+}
+
 @end

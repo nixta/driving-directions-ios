@@ -169,5 +169,9 @@
     return self.recentSearches;
 }
 
+-(void)addBookmark:(Location *)bookmark withCustomName:(NSString *)name withExtent:(AGSEnvelope *)envelope
+{
+    return;
+}
 
 @end

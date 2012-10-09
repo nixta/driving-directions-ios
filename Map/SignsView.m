@@ -1065,6 +1065,11 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
     CGPoint location = [longPressGestureRecognizer locationInView:self.scrollView];
     
     switch (longPressGestureRecognizer.state) {
+        case UIGestureRecognizerStatePossible:
+        case UIGestureRecognizerStateFailed:
+        case UIGestureRecognizerStateCancelled:
+            break;
+            
         case UIGestureRecognizerStateBegan:
             self.heldSign = bsv;
             _heldIndex = _originalHeldIndex = [self frameIndexForTileIndex:self.heldSign.index];
@@ -1170,6 +1175,8 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
             
             self.heldSign = nil;
             break;
+            
+            
         
     }
 }
