@@ -307,7 +307,6 @@
 -(UIView *)activityIndicatorView
 {
     if (_activityIndicatorView == nil) {
-       
         UIView *aView = [[UIView alloc]initWithFrame:self.view.bounds];
         aView.hidden = YES;
         aView.userInteractionEnabled = YES;
@@ -1596,10 +1595,9 @@
     
     self.orgChooserVC = vc;
     
-    // Selects the first organization for the webmap
     [self.orgChooserVC requestTimerReady];
     return;
-   
+    
 }
 
 -(void)organizationChooser:(OrganizationChooserViewController *)orgVC didChooseOrganization:(Organization *)organization
