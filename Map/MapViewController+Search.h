@@ -38,5 +38,6 @@
 -(void)mapListButtonPressed:(id)sender;
 
 -(void)searchFinishedExecuting;
+- (void)setSearchIcon;
 
 @end

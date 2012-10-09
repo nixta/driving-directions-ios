@@ -319,13 +319,31 @@
     self.localFilteredResults = nil;
 }
 
--(void)setupSearchForListAnimated:(BOOL)animated
-{    
-    [self.extendableToolbar showTools:NO fromRect:CGRectZero animated:YES];
+- (void)setSearchIcon {
+   
+//    UITextField *searchField = nil;
+//    for (UIView *subview in self.searchBar.subviews) {
+//        if ([subview isKindOfClass:[UITextField class]]) {
+//            searchField = (UITextField *)subview;
+//            break;
+//        }
+//    }
+//    
+//    if (searchField) {
+//        UIImage *image = [UIImage imageNamed: @"Map@2x.png"];
+//        UIImageView *iView = [[UIImageView alloc] initWithImage:image];
+//        searchField.rightView = iView;
+//       
+//    }
     
-    //Al Delete
-//    //make room for button by moving search bar over
-//    [self showMapListButton:YES withPlanningButton:NO animated:animated];
+    [self.searchBar setShowsCancelButton:YES];
+    [self.searchBar setShowsSearchResultsButton:NO];
+}
+
+-(void)setupSearchForListAnimated:(BOOL)animated
+{
+   
+    [self setSearchIcon];
     
     //if we already have search items, show them in list
     if ([self.searchResults totalNumberOfItems] > 0) {

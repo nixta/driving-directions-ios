@@ -434,6 +434,14 @@
     [self setSearchState:_searchState withKeyboard:NO animated:YES];
 }
 
+- (void)searchBarCancelButtonClicked:(UISearchBar *) searchBar
+{
+    [self.searchBar setShowsCancelButton:NO];
+    [self.searchBar setShowsSearchResultsButton:YES];
+    
+    [self searchBarResultsListButtonClicked:searchBar];
+}
+
 -(DrawableResultsTableView *)resultsTableView
 {
     if(_resultsTableView == nil)
