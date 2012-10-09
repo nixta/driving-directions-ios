@@ -424,7 +424,14 @@
 #pragma UISearchBar delegate
 - (void)searchBarResultsListButtonClicked:(UISearchBar *)searchBar
 {
-    [self setSearchState:MapSearchStateList withKeyboard:NO animated:YES];
+    if ( _searchState == MapSearchStateList)
+        _searchState = MapSearchStateMap;
+    else
+        _searchState = MapSearchStateList;
+    
+    NSLog(@"State %u", _searchState);
+    
+    [self setSearchState:_searchState withKeyboard:NO animated:YES];
 }
 
 -(DrawableResultsTableView *)resultsTableView
