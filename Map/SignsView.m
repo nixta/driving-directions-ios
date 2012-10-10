@@ -82,7 +82,7 @@
 
     if( IS_IPHONE_5 )
     {
-        rect = CGRectMake(0, 0, 320, 516);
+        rect = CGRectMake(0, 0, 320, 500);
     }
     // it can also be done this way
 //    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)

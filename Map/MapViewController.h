@@ -211,6 +211,7 @@
 @property (nonatomic, strong) UIButton                              *routingCancelButton;
 
 @property (nonatomic,strong) IBOutlet UISearchBar                   *uiSearchBar;
+@property (nonatomic,strong) IBOutlet UIToolbar                      *uiTabBar;
 
 @property (nonatomic, unsafe_unretained) id<LocationCalloutDelegate>   delegate;
 

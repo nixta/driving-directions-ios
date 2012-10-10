@@ -385,37 +385,13 @@
      return _mapContentVC;
  }  
 
-//AL Delete
-//-(ExtendableToolbar *)extendableToolbar
-//{
-//    if(_extendableToolbar == nil)
-//    {
-//        CGFloat sizeOfToolbar = 44;
-//        ExtendableToolbar *etb = [[ExtendableToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, sizeOfToolbar) showToolsBelowToolbar:NO];
-//        
-//        etb.supplementalToolsView = self.planningToolsView;
-//        
-//        self.extendableToolbar = etb;
-//    }
-//    
-//    return _extendableToolbar;
-//}
-
 -(UISearchBar *)searchBar
 {
     if (_searchBar == nil) {
         
-        //AL Delete
-//        CGFloat widthOfBarButton = [UIBarButtonItem width];
-//        
-//        UISearchBar *sb = [[UISearchBar alloc]initWithFrame:CGRectMake(widthOfBarButton, 1, self.view.frame.size.width - widthOfBarButton, 40)];
-//        //UISearchBar *sb = [[UISearchBar alloc]initWithFrame:CGRectMake(1, 1, self.view.frame.size.width, 40)];
-//        sb.tintColor = [UIColor blackColor];
-//        sb.placeholder = NSLocalizedString(@"Enter address, place name, etc", nil);
-//        sb.delegate = self;
-        
         self.searchBar = self.uiSearchBar;
         self.searchBar.delegate = self;
+        self.uiTabBar.hidden = YES;
     }
     
     return _searchBar;
@@ -715,7 +691,9 @@
 #pragma mark Toolbar Setup
 -(void)setupRoutingUx
 {
-    [self.searchBar removeFromSuperview];
+    //Al Delete
+    //[self.searchBar removeFromSuperview];
+    self.searchBar.hidden = YES;
     
     NSMutableArray *toolbarItems = [NSMutableArray arrayWithCapacity:3];
     
@@ -749,7 +727,9 @@
     if (self.routeOverviewLabel.superview == nil) {
         [self.view addSubview:self.routeOverviewLabel];
         self.routeOverviewLabel.text = NSLocalizedString(@"Overview", nil);
-    } 
+    }
+    
+    self.uiTabBar.hidden = NO;
     
     //hide the search and identify layers until we are done
     [self showSearchLayer:NO];
@@ -761,6 +741,12 @@
 -(void)layersButtonPressed:(id)sender
 {
     [self presentModalViewController:self.mapContentVC animated:YES];
+}
+
+
+-(IBAction)routeFinishedButtonPressedAction:(id)sender
+{
+    [self routeFinishedButtonPressed:sender];
 }
 
 -(void)routeFinishedButtonPressed:(id)sender
@@ -779,6 +765,10 @@
         
         self.callbackString = nil;
     }
+}
+
+-(IBAction)routeActionButtonPressedAction:(id)sender {
+    [self routeActionButtonPressed:sender];
 }
 
 -(void)routeActionButtonPressed:(id)sender
@@ -1195,6 +1185,9 @@
     
     [self.routeOverviewLabel removeFromSuperview];
     [self setupSearchUx];
+    
+    self.uiTabBar.hidden = YES;
+    self.searchBar.hidden = NO;
     
     //remove all graphics from the route layer
     [self.routeLayer removeAllGraphics];

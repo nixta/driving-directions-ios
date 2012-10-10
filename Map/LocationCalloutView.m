@@ -61,15 +61,11 @@
 @synthesize addressString = _addressString;
 @synthesize delegate = _delegate;
 
-// Al Delete
-//- (void)dealloc {
-//    
-//
-//    [[NSNotificationCenter defaultCenter] removeObserver:self name:kLocationUpdatedAddress object:self.location];
-//    self.location = nil;
-//    
-//    
-//}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kLocationUpdatedAddress object:self.location];
+    self.location = nil;    
+}
 
 -(id)initWithLocation:(Location *)location calloutType:(MapAppState)aType
 {
