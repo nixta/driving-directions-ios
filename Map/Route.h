@@ -1,8 +1,3 @@
-//
-//  RouteStops.h
-//  Map
-//
-//  Created by Scott Sirowy on 11/22/11.
 /*
  Copyright © 2012 Esri
  

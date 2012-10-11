@@ -1,7 +1,5 @@
 /*
- Basemaps.m
- ArcGISMobile
- COPYRIGHT 2011 ESRI
+ Copyright © 2012 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.

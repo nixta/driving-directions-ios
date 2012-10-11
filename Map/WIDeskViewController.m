@@ -1,6 +1,4 @@
 /*
- WIViewController.m
- Westerville Inspection Demo -- Esri 2012 Dev Summit
  Copyright © 2012 Esri
  
  All rights reserved under the copyright laws of the United States
@@ -13,7 +11,6 @@
  See the use restrictions at http://help.arcgis.com/en/sdk/10.0/usageRestrictions.htm
  
  */
-
 
 #import <ArcGIS/ArcGIS.h>
 

@@ -1,8 +1,3 @@
-//
-//  Direction.h
-//  Map
-//
-//  Created by Scott Sirowy on 9/23/11.
 /*
  Copyright © 2012 Esri
  
@@ -16,6 +11,7 @@
  See the use restrictions at http://help.arcgis.com/en/sdk/10.0/usageRestrictions.htm
  
  */
+
 #import <Foundation/Foundation.h>
 #import "NamedGeometry.h"
 #import <ArcGIS/ArcGIS.h>

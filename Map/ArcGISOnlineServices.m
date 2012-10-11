@@ -1,8 +1,3 @@
-//
-//  ArcGISOnlineServices.m
-//  ArcGISMobile
-//
-//  Created by Mark Dostal on 2/22/10.
 /*
  Copyright © 2012 Esri
  

@@ -1,8 +1,3 @@
-//
-//  GeocodeService.m
-//  ArcGISMobile
-//
-//  Created by Mark Dostal on 6/14/11.
 /*
  Copyright © 2012 Esri
  

@@ -1,8 +1,3 @@
-//
-//  MapViewController.m
-//  Map
-//
-//  Created by Scott Sirowy on 8/30/11.
 /*
  Copyright © 2012 Esri
  
@@ -25,7 +20,6 @@
 #import "MapSettings.h"
 #import "MapAppDelegate.h"
 #import "MapAppSettings.h"
-#import "UIToolbar+MapAdditions.h"
 #import "UIColor+Additions.h"
 #import "DrawableResultsTableView.h"
 #import "MapContentViewController.h"
@@ -46,7 +40,7 @@
 #import "SignsView.h"
 #import "LocationGraphic.h"
 #import "AGSGeometry+AppAdditions.h"
-#import "ExtendableToolbar.h"
+
 #import "UIBarButtonItem+AppAdditions.h"
 
 #import "OrganizationChooserViewController.h"
@@ -210,10 +204,6 @@
 	self.mapView.gps.infoTemplateDelegate = self;
 	self.mapView.backgroundColor = [UIColor darkBackgroundColor];
     
-    if(self.extendableToolbar.superview == nil)
-        [self.view addSubview:self.extendableToolbar];
-    
-    [self setupSearchUx];
     
     [self showActivityIndicator:YES];
     
@@ -346,27 +336,7 @@
      [self showActivityIndicator:NO];
 }
 
--(UIView *)planningToolsView
-{
-    if(_planningToolsView == nil)
-    {        
-        UIToolbar *tb = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, [ExtendableToolbar heightOfSupplementalToolsView])];
-        tb.barStyle = UIBarStyleBlackTranslucent;
-        
-        UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace 
-                                                                                       target:nil action:nil];
-        
-        UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
-                                                                                       target:nil action:nil];
-        fixedSpace.width = 10;
-        
-        tb.items = [NSArray arrayWithObjects:self.routeSettingsButton, fixedSpace, self.clearRouteButton, flexibleSpace, self.routeButton, nil];
-                                
-        self.planningToolsView = tb;
-    }
-    
-    return _planningToolsView;
-}
+
 
  -(UINavigationController *)mapContentVC
  {
@@ -719,10 +689,7 @@
     }
     
     [toolbarItems addObject:self.routeFinishedButton];
-    
-    self.extendableToolbar.items = toolbarItems;
-    
-    [self.extendableToolbar showTools:NO fromRect:CGRectZero animated:YES];
+   
     
     if (self.routeOverviewLabel.superview == nil) {
         [self.view addSubview:self.routeOverviewLabel];
@@ -1184,7 +1151,6 @@
     _appState = (state == MapAppStateRoute) ? MapAppStateSimple : state;
     
     [self.routeOverviewLabel removeFromSuperview];
-    [self setupSearchUx];
     
     self.uiTabBar.hidden = YES;
     self.searchBar.hidden = NO;

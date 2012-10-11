@@ -1,9 +1,3 @@
-//
-//  MapAppDelegate.m
-//  Map
-//
-//  Created by Scott Sirowy on 8/30/11.
-//  Copyright 2011 ESRI. All rights reserved.
 /*
  Copyright © 2012 Esri
  

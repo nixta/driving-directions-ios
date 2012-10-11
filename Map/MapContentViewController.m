@@ -1,9 +1,3 @@
-
-//
-//  MapContentViewController.m
-//  Map
-//
-//  Created by Scott Sirowy on 8/31/11.
 /*
  Copyright © 2012 Esri
  
@@ -24,7 +18,7 @@
 #import "Organization.h"
 #import "MapLegendViewController.h"
 #import "UIColor+Additions.h"
-#import "UIToolbar+MapAdditions.h"
+
 
 #import "BasemapsViewController.h"
 #import "BasemapsTableViewCell.h"

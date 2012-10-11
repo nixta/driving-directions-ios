@@ -1,10 +1,3 @@
-//
-//  NamedGeometryContainerDelegate.h
-//  Map
-//
-//  Created by Scott Sirowy on 9/15/11.
-//  Copyright 2011 ESRI. All rights reserved.
-//
 /*
  WIArrowCalloutView.m
  Westerville Inspection Demo -- Esri 2012 Dev Summit

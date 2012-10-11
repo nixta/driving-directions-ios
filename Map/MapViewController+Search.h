@@ -1,8 +1,3 @@
-//
-//  MapViewController+Search.h
-//  Map
-//
-//  Created by Scott Sirowy on 10/14/11.
 /*
  Copyright © 2012 Esri
  
@@ -32,7 +27,6 @@
 -(void)dropPinForSearchLocation:(Location *)location zoomToLocation:(BOOL)zoom;
 -(void)dropPinForSearchLocation:(Location *)location zoomToLocation:(BOOL)zoom showCallout:(BOOL)showCallout;
 
--(void)setupSearchUx;
 -(void)setSearchState:(MapSearchState)state withKeyboard:(BOOL)keyboard animated:(BOOL)animated;
 
 -(void)mapListButtonPressed:(id)sender;

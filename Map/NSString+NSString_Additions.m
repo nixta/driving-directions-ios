@@ -1,8 +1,3 @@
-//
-//  NSString+NSString_Additions.m
-//  Map
-//
-//  Created by Scott Sirowy on 10/13/11.
 /*
  Copyright © 2012 Esri
  

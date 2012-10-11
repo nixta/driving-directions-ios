@@ -1,21 +1,15 @@
 /*
- Legend.h
- ArcGISMobile
- COPYRIGHT 2011 ESRI
+ Copyright © 2012 Esri
  
- TRADE SECRETS: ESRI PROPRIETARY AND CONFIDENTIAL
- Unpublished material - all rights reserved under the
- Copyright Laws of the United States and applicable international
- laws, treaties, and conventions.
+ All rights reserved under the copyright laws of the United States
+ and applicable international laws, treaties, and conventions.
  
- For additional information, contact:
- Environmental Systems Research Institute, Inc.
- Attn: Contracts and Legal Services Department
- 380 New York Street
- Redlands, California, 92373
- USA
+ You may freely redistribute and use this sample code, with or
+ without modification, provided you include the original copyright
+ notice and use restrictions.
  
- email: contracts@esri.com
+ See the use restrictions at http://help.arcgis.com/en/sdk/10.0/usageRestrictions.htm
+ 
  */
 
 #import <Foundation/Foundation.h>

@@ -1,7 +1,6 @@
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/main.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapAppDelegate.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.o
-/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIToolbar+MapAdditions.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIColor+Additions.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapContentViewController.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/GeocodeService.o
@@ -18,7 +17,6 @@
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSDictionary+Additions.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSString+html.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ContentItem.o
-/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/KeychainWrapper.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISAppDelegate.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/AppSettings.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapAppSettings.o
@@ -56,7 +54,6 @@
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/RouteSolver.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignTableViewCell.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.o
-/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ExtendableToolbar.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIBarButtonItem+AppAdditions.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ToggleSegmentedControl.o
 /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/PassThroughView.o

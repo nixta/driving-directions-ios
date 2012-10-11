@@ -1,8 +1,3 @@
-//
-//  AGSGeometry+AppAdditions.h
-//  ArcGISMobile
-//
-//  Created by ryan3374 on 12/9/10.
 /*
  Copyright © 2012 Esri
  

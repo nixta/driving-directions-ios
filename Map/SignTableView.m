@@ -1,8 +1,3 @@
-//
-//  SignTableView.m
-//  StreetSignTest
-//
-//  Created by Scott Sirowy on 11/17/11.
 /*
  Copyright © 2012 Esri
  

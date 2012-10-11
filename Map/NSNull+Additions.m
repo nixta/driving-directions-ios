@@ -1,8 +1,3 @@
-//
-//  NSNull+Additions.m
-//  Map
-//
-//  Created by Scott Sirowy on 12/20/11.
 /*
  Copyright © 2012 Esri
  

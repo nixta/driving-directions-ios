@@ -25,7 +25,6 @@
 #import "MapAppSettings.h"
 #import "UserSearchResults.h"
 #import "DrawableResultsTableView.h"
-#import "ExtendableToolbar.h"
 #import "UIBarButtonItem+AppAdditions.h"
 #import "ArcGISAppDelegate.h"
 #import "ArcGISMobileConfig.h"
@@ -191,9 +190,7 @@
 {
     [self.searchBar resignFirstResponder];
     
-    //only show bookmarks button if there is nothing to show
-    //self.searchBar.showsBookmarkButton = (self.searchBar.text.length == 0);
-    
+       
     Search *newSearch = [[Search alloc] initWithName:searchBar.text];
     [self.mapAppSettings addRecentSearch:newSearch onlyUniqueEntries:YES];
     
@@ -389,44 +386,7 @@
     }
 }
 
-//Add the Search Ux onto the screen
--(void)setupSearchUx
-{    
-    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace 
-                                                                                   target:nil 
-                                                                                   action:nil];
-    NSArray *items = [NSArray arrayWithObjects:self.planningButton, flexibleSpace, self.mapListButton, nil];
-    self.extendableToolbar.items = items;
-    
-    if(self.searchBar.superview == nil)
-        [self.extendableToolbar.toolsView addSubview:self.searchBar];
-}
 
-//AL Delete
-//-(void)showMapListButton:(BOOL)show withPlanningButton:(BOOL)showPlanningButton animated:(BOOL)animated
-//{
-//    CGFloat widthOfButton = [UIBarButtonItem width];
-//    
-//    //don't animate the width as it looks weird
-//    CGRect sbRect = self.searchBar.frame;
-//    sbRect.size.width = self.view.frame.size.width - (show*widthOfButton + showPlanningButton*widthOfButton);
-//    self.searchBar.frame = sbRect;
-//    
-//    sbRect.origin.x = (showPlanningButton) ? widthOfButton : 0;
-//    
-//    if(animated)
-//    {
-//        [UIView animateWithDuration:.1 animations:^
-//        {
-//            self.searchBar.frame = sbRect;
-//        }
-//         ];
-//    }
-//    else
-//    {
-//        self.searchBar.frame = sbRect;
-//    }
-//}
 
 -(void)removeOldResults
 {

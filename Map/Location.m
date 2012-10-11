@@ -1,8 +1,3 @@
-//
-//  Location.m
-//  Map
-//
-//  Created by Scott Sirowy on 9/6/11.
 /*
  Copyright © 2012 Esri
  

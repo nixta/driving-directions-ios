@@ -1,8 +1,3 @@
-//
-//  ArcGISOnlineConnection.m
-//  ArcGISMobile
-//
-//  Created by Mark Dostal on 2/22/10.
 /*
  Copyright © 2012 Esri
  
@@ -105,37 +100,11 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
     
     TokenResponse *tokenResponse = nil;
     
-    // First obtain a token using the credentials.
-//    try
-//    {
-    
-    //
-    //this is the method which actually logs in.  This would need to be synchronous??  (ok for now)
+       //this is the method which actually logs in.  This would need to be synchronous??  (ok for now)
     //
     tokenResponse = [ArcGISOnlineConnection generateToken:credential error:error];
     if (tokenResponse == nil || tokenResponse.token == nil)
         return NO;
-//    }
-//    catch (Exception ex)
-//    {
-//        System.Diagnostics.Debug.WriteLine(ex.Message);
-//        return false;
-//    }
-    
-    // Get information about the user.
-//    User* user = nil;
-////    try
-////    {
-//    user = [ArcGisOnlineConnection GetUserInfo:credentials.UserName token:tokenResponse.Token];
-//    if (user == nil)
-//        return NO;
-//    }
-//    catch (Exception ex)
-//    {
-//        System.Diagnostics.Debug.WriteLine(ex.Message);
-//        return false;
-//    }
-    
     self.credential = credential;
     self.token = tokenResponse.token;
     

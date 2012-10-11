@@ -1,8 +1,3 @@
-//
-//  LocationCalloutView.m
-//  Map
-//
-//  Created by Scott Sirowy on 11/21/11.
 /*
  Copyright © 2012 Esri
  

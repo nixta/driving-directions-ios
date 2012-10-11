@@ -1,8 +1,3 @@
-//
-//  MapLayerInfo+AppAdditions.m
-//  ArcGISMobile
-//
-//  Created by Mark Dostal on 1/25/11.
 /*
  Copyright © 2012 Esri
  

@@ -1,8 +1,3 @@
-//
-//  MapViewController+MapTapping.h
-//  Map
-//
-//  Created by Scott Sirowy on 9/14/11.
 /*
  Copyright © 2012 Esri
  

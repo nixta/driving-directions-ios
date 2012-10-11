@@ -1,8 +1,3 @@
-//
-//  ContentItem.h
-//  ArcGISMobile
-//
-//  Created by ryan3374 on 1/6/10.
 /*
  Copyright © 2012 Esri
  

@@ -1,8 +1,3 @@
-//
-//  MapShareUtility.h
-//  Map
-//
-//  Created by Scott Sirowy on 10/24/11.
 /*
  Copyright © 2012 Esri
  

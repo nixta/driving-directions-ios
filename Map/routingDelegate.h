@@ -1,9 +1,3 @@
-//
-//  routingDelegate.h
-//  Map
-//
-//  Created by Al Pascual on 9/27/12.
-//
 /*
  Copyright © 2012 Esri
  

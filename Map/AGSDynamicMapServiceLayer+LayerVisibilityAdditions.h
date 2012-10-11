@@ -1,8 +1,3 @@
-//
-//  AGSDynamicMapServiceLayer+LayerVisibilityAdditions.h
-//  ArcGISMobile
-//
-//  Created by Scott Sirowy on 6/22/11.
 /*
  Copyright © 2012 Esri
  

@@ -197,7 +197,6 @@ dependencies: \
   /Users/albe5259/Projects/navigator/Map/UserSearchResults.h \
   /Users/albe5259/Projects/navigator/Map/DrawableCollection.h \
   /Users/albe5259/Projects/navigator/Map/DrawableResultsTableView.h \
-  /Users/albe5259/Projects/navigator/Map/ExtendableToolbar.h \
   /Users/albe5259/Projects/navigator/Map/UIBarButtonItem+AppAdditions.h \
   /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.h \
   /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h
