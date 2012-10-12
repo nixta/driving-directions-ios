@@ -28,12 +28,6 @@
 
 @implementation StopSignView
 
-@synthesize location    = _location;
-
-@synthesize nameLabel   = _nameLabel;
-@synthesize imageView   = _imageView;
-
-
 
 -(id)initWithFrame:(CGRect)frame withLocation:(Location *)location
 {

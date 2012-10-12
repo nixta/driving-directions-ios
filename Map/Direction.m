@@ -30,21 +30,6 @@
 
 @implementation Direction
 
-@synthesize geometry        = _geometry;
-@synthesize name            = _name;
-@synthesize icon            = _icon;
-@synthesize mapImage        = _mapImage;
-@synthesize delegate        = _delegate;
-@synthesize distanceString  = _distanceString;
-@synthesize etaString       = _etaString;
-@synthesize abbreviatedName = _abbreviatedName;
-
-@synthesize graphicsLayer   = _graphicsLayer;
-@synthesize basemapLayer    = _basemapLayer;
-@synthesize graphicImage    = _graphicImage;
-@synthesize graphicOp       = _graphicOp;
-@synthesize mapOp           = _mapOp;
-
 -(void)dealloc
 {
     [self.graphicOp cancel];

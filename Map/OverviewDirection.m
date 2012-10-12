@@ -25,8 +25,6 @@
 
 @implementation OverviewDirection
 
-@synthesize stops = _stops;
-
 
 -(id)initWithDirectionSet:(AGSDirectionSet *)directionSet stops:(StopsList *)stops
 {

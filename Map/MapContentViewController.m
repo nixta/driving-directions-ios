@@ -50,26 +50,6 @@ static NSUInteger kBasemapSection = 0;
 
 @implementation MapContentViewController
 
-@synthesize tableView = _tableView;
-@synthesize navBar = _navBar;
-@synthesize navItem = _navItem;
-@synthesize settingsView = _settingsView;
-@synthesize signInLabel = _signInLabel;
-
-@synthesize mapButton = _mapButton;
-@synthesize settingsButton = _settingsButton;
-
-@synthesize changeBasemapDelegate = _changeBasemapDelegate;
-
-//private properties
-@synthesize basemapsVC = _basemapsVC;
-@synthesize basemapsTableViewCell = _basemapsTableViewCell;
-@synthesize settingsVC = _settingsVC;
-@synthesize layersArray = _layersArray;
-@synthesize waitingView = _waitingView;
-@synthesize activityIndicator = _activityIndicator;
-@synthesize appSettings = _appSettings;
-
 #pragma mark -
 #pragma mark Init/Dealloc Methods
 

@@ -26,9 +26,6 @@
 
 @implementation DirectionsPrintRenderer
 
-@synthesize directions = _directions;
-
-
 -(id)initWithDirections:(DirectionsList *)list
 {
     self = [super init];

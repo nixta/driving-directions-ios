@@ -31,13 +31,6 @@
 
 @implementation DirectionsList
 
-@synthesize currentDirection    = _currentDirection;
-@synthesize mergedGeometry      = _mergedGeometry;
-@synthesize stopDirections      = _stopDirections;
-
-@synthesize stopsList           = _stopsList;
-
-
 - (id)init
 {
     return [self initWithDirectionSet:nil stops:nil];

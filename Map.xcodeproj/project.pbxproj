@@ -97,7 +97,6 @@
 		78BA0D911458C17500530ADD /* ArcGISOnlineConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 784695E4141EC8C100847AB6 /* ArcGISOnlineConnection.m */; };
 		78BA0D921458C17500530ADD /* ArcGISOnlineServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 784695E6141EC8C100847AB6 /* ArcGISOnlineServices.m */; };
 		78BA0D931458C17500530ADD /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 784695F8141ECCAB00847AB6 /* NSDictionary+Additions.m */; };
-		78BA0D941458C17500530ADD /* NSString+html.m in Sources */ = {isa = PBXBuildFile; fileRef = 78469605141ECD5E00847AB6 /* NSString+html.m */; };
 		78BA0D951458C17500530ADD /* ContentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 78469608141ECDD200847AB6 /* ContentItem.m */; };
 		78BA0D971458C17500530ADD /* ArcGISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78469633141FCFB700847AB6 /* ArcGISAppDelegate.m */; };
 		78BA0D981458C17500530ADD /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 78469636141FD0D800847AB6 /* AppSettings.m */; };
@@ -221,7 +220,6 @@
 		78BA0E3B1458C17500530ADD /* PlacePin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7851393E1447A17D008D0E34 /* PlacePin@2x.png */; };
 		78BA0E621458C7BE00530ADD /* Legend.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BA0E601458C7BE00530ADD /* Legend.m */; };
 		78BA0E6A1458D33200530ADD /* MapLayerInfo+AppAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BA0E681458D33200530ADD /* MapLayerInfo+AppAdditions.m */; };
-		78BA0E6E1458D36C00530ADD /* AGSDynamicMapServiceLayer+LayerVisibilityAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BA0E6C1458D36C00530ADD /* AGSDynamicMapServiceLayer+LayerVisibilityAdditions.m */; };
 		78BFC28314A119A5001F1522 /* NSNull+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BFC28014A119A5001F1522 /* NSNull+Additions.m */; };
 		78BFC28814A13303001F1522 /* MapViewController+PlanningRouting.m in Sources */ = {isa = PBXBuildFile; fileRef = 78BFC28514A13303001F1522 /* MapViewController+PlanningRouting.m */; };
 		78CA001D147D6EB3008446BA /* RouteSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = 78CA001A147D6EB3008446BA /* RouteSolver.m */; };
@@ -243,7 +241,7 @@
 		8868F96D161A028600FB9238 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CFA5D216162DAB0084EB93 /* AVFoundation.framework */; };
 		8868F96E161A029200FB9238 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A01F41610D6AA00027BE2 /* MapKit.framework */; };
 		8868F977161C9A7100FB9238 /* WIDeskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8868F976161C9A7100FB9238 /* WIDeskViewController.m */; };
-		8868F97B161CE91400FB9238 /* LocationBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 8868F97A161CE91400FB9238 /* LocationBookmark.m */; };
+		88DE34011628A9BA00D5D93B /* LocationMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DE34001628A9BA00D5D93B /* LocationMarker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -321,15 +319,12 @@
 		784695E6141EC8C100847AB6 /* ArcGISOnlineServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcGISOnlineServices.m; sourceTree = "<group>"; };
 		784695F7141ECCAB00847AB6 /* NSDictionary+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Additions.h"; sourceTree = "<group>"; };
 		784695F8141ECCAB00847AB6 /* NSDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Additions.m"; sourceTree = "<group>"; };
-		78469604141ECD5E00847AB6 /* NSString+html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+html.h"; sourceTree = "<group>"; };
-		78469605141ECD5E00847AB6 /* NSString+html.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+html.m"; sourceTree = "<group>"; };
 		78469607141ECDD200847AB6 /* ContentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentItem.h; sourceTree = "<group>"; };
 		78469608141ECDD200847AB6 /* ContentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentItem.m; sourceTree = "<group>"; };
 		78469632141FCFB700847AB6 /* ArcGISAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcGISAppDelegate.h; sourceTree = "<group>"; };
 		78469633141FCFB700847AB6 /* ArcGISAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcGISAppDelegate.m; sourceTree = "<group>"; };
 		78469635141FD0D800847AB6 /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
 		78469636141FD0D800847AB6 /* AppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSettings.m; sourceTree = "<group>"; };
-		78469638141FEBB600847AB6 /* OnlineApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlineApplication.h; sourceTree = "<group>"; };
 		7846963914201C2600847AB6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7846963C14201D0200847AB6 /* MapAppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAppSettings.h; sourceTree = "<group>"; };
 		7846963D14201D0200847AB6 /* MapAppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAppSettings.m; sourceTree = "<group>"; };
@@ -489,8 +484,6 @@
 		78BA0E601458C7BE00530ADD /* Legend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Legend.m; sourceTree = "<group>"; };
 		78BA0E671458D33200530ADD /* MapLayerInfo+AppAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapLayerInfo+AppAdditions.h"; sourceTree = "<group>"; };
 		78BA0E681458D33200530ADD /* MapLayerInfo+AppAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapLayerInfo+AppAdditions.m"; sourceTree = "<group>"; };
-		78BA0E6B1458D36C00530ADD /* AGSDynamicMapServiceLayer+LayerVisibilityAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AGSDynamicMapServiceLayer+LayerVisibilityAdditions.h"; sourceTree = "<group>"; };
-		78BA0E6C1458D36C00530ADD /* AGSDynamicMapServiceLayer+LayerVisibilityAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AGSDynamicMapServiceLayer+LayerVisibilityAdditions.m"; sourceTree = "<group>"; };
 		78BD1D051431317300C43674 /* PullDownTabA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PullDownTabA.png; path = Resources/Images/PullDownTabA.png; sourceTree = "<group>"; };
 		78BD1D061431317300C43674 /* PullDownTabA@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PullDownTabA@2x.png"; path = "Resources/Images/PullDownTabA@2x.png"; sourceTree = "<group>"; };
 		78BFC27F14A119A5001F1522 /* NSNull+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+Additions.h"; sourceTree = "<group>"; };
@@ -558,11 +551,11 @@
 		8868F969161A024300FB9238 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		8868F975161C9A7100FB9238 /* WIDeskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIDeskViewController.h; sourceTree = "<group>"; };
 		8868F976161C9A7100FB9238 /* WIDeskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIDeskViewController.m; sourceTree = "<group>"; };
-		8868F979161CE91400FB9238 /* LocationBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationBookmark.h; sourceTree = "<group>"; };
-		8868F97A161CE91400FB9238 /* LocationBookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationBookmark.m; sourceTree = "<group>"; };
-		88CFA5CE1615177B0084EB93 /* routingDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = routingDelegate.h; sourceTree = "<group>"; };
+		88CFA5CE1615177B0084EB93 /* RoutingDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoutingDelegate.h; sourceTree = "<group>"; };
 		88CFA5D216162DAB0084EB93 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		88CFA5D416162DBA0084EB93 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		88DE33FF1628A9BA00D5D93B /* LocationMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationMarker.h; path = Map/LocationMarker/LocationMarker.h; sourceTree = SOURCE_ROOT; };
+		88DE34001628A9BA00D5D93B /* LocationMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationMarker.m; path = Map/LocationMarker/LocationMarker.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -715,7 +708,7 @@
 		78342C99140D9CB400B0F354 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				8868F978161CE90F00FB9238 /* LocationBookmark */,
+				8868F978161CE90F00FB9238 /* LocationMarker */,
 				882A01F31610BD8400027BE2 /* NSDictionary+AGSAdditions.h */,
 				78342CA8140D9CB500B0F354 /* ArcGIS.bundle */,
 				78342CA2140D9CB400B0F354 /* MapAppDelegate.h */,
@@ -733,7 +726,7 @@
 				78342C9A140D9CB400B0F354 /* Supporting Files */,
 				7878C12E141A6B5F000ACBBD /* Users and Organizations */,
 				78342CC0140DAC4100B0F354 /* Utililty */,
-				88CFA5CE1615177B0084EB93 /* routingDelegate.h */,
+				88CFA5CE1615177B0084EB93 /* RoutingDelegate.h */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -932,7 +925,6 @@
 				78469633141FCFB700847AB6 /* ArcGISAppDelegate.m */,
 				78469635141FD0D800847AB6 /* AppSettings.h */,
 				78469636141FD0D800847AB6 /* AppSettings.m */,
-				78469638141FEBB600847AB6 /* OnlineApplication.h */,
 			);
 			name = "App Delegate";
 			sourceTree = "<group>";
@@ -1092,14 +1084,10 @@
 		78BA0E5D1458C76500530ADD /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				78BA0E6B1458D36C00530ADD /* AGSDynamicMapServiceLayer+LayerVisibilityAdditions.h */,
-				78BA0E6C1458D36C00530ADD /* AGSDynamicMapServiceLayer+LayerVisibilityAdditions.m */,
 				78BA0E671458D33200530ADD /* MapLayerInfo+AppAdditions.h */,
 				78BA0E681458D33200530ADD /* MapLayerInfo+AppAdditions.m */,
 				78C807441421393000C4987C /* AGSGeometry+AppAdditions.h */,
 				78C807451421393000C4987C /* AGSGeometry+AppAdditions.m */,
-				78469604141ECD5E00847AB6 /* NSString+html.h */,
-				78469605141ECD5E00847AB6 /* NSString+html.m */,
 				784695F7141ECCAB00847AB6 /* NSDictionary+Additions.h */,
 				784695F8141ECCAB00847AB6 /* NSDictionary+Additions.m */,
 				78693253140EA27B00B96F3F /* UIColor+Additions.h */,
@@ -1157,12 +1145,13 @@
 			name = Sharing;
 			sourceTree = "<group>";
 		};
-		8868F978161CE90F00FB9238 /* LocationBookmark */ = {
+		8868F978161CE90F00FB9238 /* LocationMarker */ = {
 			isa = PBXGroup;
 			children = (
-				8868F979161CE91400FB9238 /* LocationBookmark.h */,
-				8868F97A161CE91400FB9238 /* LocationBookmark.m */,
+				88DE33FF1628A9BA00D5D93B /* LocationMarker.h */,
+				88DE34001628A9BA00D5D93B /* LocationMarker.m */,
 			);
+			name = LocationMarker;
 			path = LocationBookmark;
 			sourceTree = "<group>";
 		};
@@ -1394,7 +1383,6 @@
 				78BA0D911458C17500530ADD /* ArcGISOnlineConnection.m in Sources */,
 				78BA0D921458C17500530ADD /* ArcGISOnlineServices.m in Sources */,
 				78BA0D931458C17500530ADD /* NSDictionary+Additions.m in Sources */,
-				78BA0D941458C17500530ADD /* NSString+html.m in Sources */,
 				78BA0D951458C17500530ADD /* ContentItem.m in Sources */,
 				78BA0D971458C17500530ADD /* ArcGISAppDelegate.m in Sources */,
 				78BA0D981458C17500530ADD /* AppSettings.m in Sources */,
@@ -1421,7 +1409,6 @@
 				78BA0DBC1458C17500530ADD /* MapShareUtility.m in Sources */,
 				78BA0E621458C7BE00530ADD /* Legend.m in Sources */,
 				78BA0E6A1458D33200530ADD /* MapLayerInfo+AppAdditions.m in Sources */,
-				78BA0E6E1458D36C00530ADD /* AGSDynamicMapServiceLayer+LayerVisibilityAdditions.m in Sources */,
 				7808CA8A145F2101007DC3B6 /* OrganizationChooserViewController.m in Sources */,
 				78EA4E8214686DAA003B5B95 /* RouteSolverSettings.m in Sources */,
 				78F69BFB1469F1D20041716B /* StreetSignView.m in Sources */,
@@ -1442,7 +1429,7 @@
 				78BFC28814A13303001F1522 /* MapViewController+PlanningRouting.m in Sources */,
 				786557F714ABF77E00AB9C8B /* StopSignView.m in Sources */,
 				8868F977161C9A7100FB9238 /* WIDeskViewController.m in Sources */,
-				8868F97B161CE91400FB9238 /* LocationBookmark.m in Sources */,
+				88DE34011628A9BA00D5D93B /* LocationMarker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

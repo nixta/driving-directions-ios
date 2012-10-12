@@ -17,10 +17,6 @@
 
 @implementation RouteSolverSettings
 
-@synthesize transportationType = _transportationType;
-@synthesize avoidTollRoads = _avoidTollRoads;
-@synthesize avoidHighways  = _avoidHighways;
-
 - (id)initWithJSON:(NSDictionary *)json
 {
     self = [self init];

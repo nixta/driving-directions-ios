@@ -34,11 +34,6 @@
 
 @implementation StopsList
 
-@synthesize displacedStops  = _displacedStops;
-@synthesize delegate        = _delegate;
-@synthesize currentLocation = _currentLocation;
-
-
 -(id)initWithName:(NSString *)name withItems:(NSMutableArray *)items
 {
     self = [super initWithName:name withItems:items];

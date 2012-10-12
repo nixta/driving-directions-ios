@@ -22,13 +22,6 @@
 
 @implementation SignTableViewCell
 
-@synthesize view                = _view;
-@synthesize iconImageView       = _iconImageView;
-@synthesize nameLabel           = _nameLabel;
-@synthesize distanceLabel       = _distanceLabel;
-@synthesize isCurrentLocation   = _isCurrentLocation;
-
-
 -(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

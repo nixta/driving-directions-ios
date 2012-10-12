@@ -29,12 +29,6 @@
 
 @implementation MapShareUtility
 
-@synthesize shareType       = _shareType;
-@synthesize route           = _route;
-@synthesize shareLocation   = _shareLocation;
-@synthesize callbackString  = _callbackString;
-
-
 //Url string that app was called with, and spatial reference of actual map
 -(id)initWithUrl:(NSURL *)url withSpatialReference:(AGSSpatialReference *)spatialReference locatorURL:(NSURL *)locatorURL
 {

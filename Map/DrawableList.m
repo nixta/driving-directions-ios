@@ -24,10 +24,6 @@
 
 @implementation DrawableList
 
-@synthesize items = _items;
-@synthesize name = _name;
-@synthesize currentIndex = _currentIndex;
-
 
 - (id)init
 {

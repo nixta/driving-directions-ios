@@ -26,13 +26,6 @@
 
 @implementation BlankSignView
 
-@synthesize reflectionSlope = _reflectionSlope;
-@synthesize xShadow         = _xShadow;
-@synthesize xIntercept      = _xIntercept;
-@synthesize index           = _index;
-@synthesize editable        = _editable;
-
-
 - (id)initWithFrame:(CGRect)frame
 {
     return [self initWithFrame:frame withReflectionSlope:0 startingX:0 useShadow:YES editable:YES];

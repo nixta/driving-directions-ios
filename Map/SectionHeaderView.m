@@ -60,12 +60,6 @@
 @implementation SectionHeaderView
 
 
-@synthesize titleLabel = _titleLabel;
-@synthesize disclosureButton = _disclosureButton;
-@synthesize aSwitch = _aSwitch;
-@synthesize delegate = _delegate;
-@synthesize section = _section;
-
 -(id)initWithFrame:(CGRect)frame title:(NSString*)title section:(NSInteger)sectionNumber delegate:(id <SectionHeaderViewDelegate>)aDelegate {
     
     self = [super initWithFrame:frame];

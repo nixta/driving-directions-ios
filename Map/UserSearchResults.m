@@ -29,11 +29,6 @@
 
 @implementation UserSearchResults
 
-@synthesize localCollection = _localCollection;
-@synthesize recentSearches = _recentSearches;
-@synthesize envelope = _envelope;
-
-
 - (id)init
 {
     return [self initWithRecents:nil localCollection:[DrawableCollection collection]];

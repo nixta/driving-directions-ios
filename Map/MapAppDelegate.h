@@ -17,15 +17,14 @@
 
 #import <UIKit/UIKit.h>
 #import "ArcGISAppDelegate.h"
-#import "OnlineApplication.h"
 #import <ArcGIS/ArcGIS.h>
 
-#import "routingDelegate.h"
+#import "RoutingDelegate.h"
 
 @class MapViewController;
-@class KeyChainWrapper;
 
-@interface MapAppDelegate : ArcGISAppDelegate <UIApplicationDelegate, OnlineApplication, UIAlertViewDelegate>
+
+@interface MapAppDelegate : ArcGISAppDelegate <UIApplicationDelegate, UIAlertViewDelegate>
 {    
     UIAlertView             *_networkAlertView;
     NSArray                 *_testOrganizations;
@@ -38,6 +37,6 @@
 @property (nonatomic, strong) AGSMapView      *mapView;
 
 - (AGSPoint*)convertCoordinatesToPoint:(CLLocationCoordinate2D)coordinates;
-@property (nonatomic, retain) id <routingDelegate> routeDelegate;
+@property (nonatomic, retain) id <RoutingDelegate> routeDelegate;
 
 @end

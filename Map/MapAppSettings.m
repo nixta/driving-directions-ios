@@ -25,14 +25,6 @@
 
 @implementation MapAppSettings
 
-@synthesize recentSearches = _recentSearches;
-@synthesize bookmarks = _bookmarks;
-@synthesize contacts = _contacts;
-@synthesize customBasemap = _customBasemap;
-@synthesize savedExtent = _savedExtent;
-@synthesize legend = _legend;
-@synthesize routeSolverSettings = _routeSolverSettings;
-@synthesize organization = _organization;
 
 - (id)init
 {

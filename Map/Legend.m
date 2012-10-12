@@ -18,7 +18,6 @@
 #import "MapLayerInfo+AppAdditions.h"
 #import "ArcGISMobileConfig.h"
 #import "ArcGISAppDelegate.h"
-#import "AGSDynamicMapServiceLayer+LayerVisibilityAdditions.h"
 
 #pragma mark -
 #pragma mark Legend Implementation
@@ -88,18 +87,6 @@
 @end
 
 @implementation Legend
-
-@synthesize layerInfos = _layerInfos;
-@synthesize delegate = _delegate;
-@synthesize isDownloading = _isDownloading;
-@synthesize finishedDownloading = _finishedDownloading;
-
-
-@synthesize layerNames = _layerNames;
-@synthesize legendLayers = _legendLayers;
-@synthesize currentMapServiceInfo = _currentMapServiceInfo;
-@synthesize soapConnection = _soapConnection;
-@synthesize responseString = _responseString;
 
 static int kNumberOfLayersInFeatureCollection = 4;
 
@@ -800,12 +787,13 @@ mapServiceLayerInfos:mapServiceLayerInfos
             
             //else, the visibility is YES if the layerID is contained withing the visible layers
             //array AND if the map's scale observes the scale dependency for the layer
-            else {
-                //first determine if layer is actually contained AND layer is within visible scales
-                NSArray *visibleLayersInDynamicMSL = [dynamicMSL allVisibleLayersForMapLayerInfo:self.mapLayerInfo inMapView:mapView];
-                isVisible = [visibleLayersInDynamicMSL containsObject:[NSNumber numberWithInt:self.mapServiceLayerInfo.layerId]] &&
-                                                                     [self isVisibleWithScaleOnMapView:mapView];
-            }
+            // Al Delete
+//            else {
+//                //first determine if layer is actually contained AND layer is within visible scales
+//                NSArray *visibleLayersInDynamicMSL = [dynamicMSL allVisibleLayersForMapLayerInfo:self.mapLayerInfo inMapView:mapView];
+//                isVisible = [visibleLayersInDynamicMSL containsObject:[NSNumber numberWithInt:self.mapServiceLayerInfo.layerId]] &&
+//                                                                     [self isVisibleWithScaleOnMapView:mapView];
+//            }
         }
     }
 

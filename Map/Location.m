@@ -43,27 +43,6 @@
 
 @implementation Location
 
-@synthesize geometry                = _geometry;
-@synthesize name                    = _name;
-@synthesize icon                    = _icon;
-@synthesize locatorUrl              = _locatorUrl;
-@synthesize graphic                 = _graphic;
-@synthesize locationType            = _locationType;
-
-@synthesize locatorOperation        = _locatorOperation;
-@synthesize locator                 = _locator;
-
-@synthesize geocodeService          = _geocodeService;
-@synthesize updateAddressCandidate  = _updateAddressCandidate;
-@synthesize findPlaceCandidate      = _findPlaceCandidate;
-@synthesize defaultIcon             = _defaultIcon;
-
-@synthesize addressCandidate        = _addressCandidate;
-
-@synthesize delegate                = _delegate;
-@synthesize routeDelegate           = _routeDelegate;
-
-
 - (id)init
 {
     return [self initWithPoint:nil aName:nil anIcon:nil locatorURL:nil];

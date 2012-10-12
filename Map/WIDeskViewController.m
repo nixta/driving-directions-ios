@@ -22,10 +22,6 @@
 
 @implementation WIDeskViewController
 
-@synthesize portal = _portal;
-@synthesize webMap = _webMap;
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];

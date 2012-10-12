@@ -27,13 +27,6 @@
 
 @implementation ArcGISAppDelegate
 
-@synthesize window = _window;
-@synthesize viewController=_viewController;
-@synthesize config = _config;
-@synthesize appSettings = _appSettings;
-@synthesize splashVC = _splashVC;
-@synthesize launchOptions = _launchOptions;
-@synthesize isIPad = _isIpad;
 
 /* AppSettings key - used to save/restore the app settings (will be a JSON NSDictionary)  */
 NSString *kAppSettingsKey = @"AppSettings";	// preferences key to obtain our app settings

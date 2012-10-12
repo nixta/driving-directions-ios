@@ -429,7 +429,7 @@
         
         for(AGSAddressCandidate *addr in places)
         {
-            LocationBookmark *newLoc = [[LocationBookmark alloc] initWithName:addr.addressString
+            LocationMarker *newLoc = [[LocationMarker alloc] initWithName:addr.addressString
                                                                        anIcon:[UIImage imageNamed:@"AddressPin.png"]
                                                                    locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]];
             newLoc.addressCandidate = addr;
@@ -482,7 +482,7 @@
         
         for(FindPOI *addr in places)
         {
-            LocationBookmark *newLoc = [[LocationBookmark alloc] initWithName:addr.name
+            LocationMarker *newLoc = [[LocationMarker alloc] initWithName:addr.name
                                                                        anIcon:[UIImage imageNamed:@"AddressPin.png"]
                                                                    locatorURL:[NSURL URLWithString:_app.config.locatorServiceUrl]];
             newLoc.addressCandidate = nil;

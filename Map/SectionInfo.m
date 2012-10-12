@@ -57,11 +57,6 @@
 
 @implementation SectionInfo
 
-@synthesize open = _open;
-@synthesize legendLayer = _legendLayer;
-@synthesize headerView = _headerView;
-@synthesize title = _title;
-
 - init {
 	
 	self = [super init];

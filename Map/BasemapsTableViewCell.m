@@ -16,7 +16,6 @@
 
 @implementation BasemapsTableViewCell
 
-@synthesize view = _view;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

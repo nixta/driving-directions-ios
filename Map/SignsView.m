@@ -55,20 +55,6 @@
 
 @implementation SignsView
 
-@synthesize scrollView                  = _scrollView;
-@synthesize tableView                   = _tableView;
-@synthesize signs                       = _signs;
-
-@synthesize viewToAnimate               = _viewToAnimate;
-@synthesize delegate                    = _delegate;
-@synthesize datasource                  = _datasource;
-@synthesize signOverlayView             = _signOverlayView;
-
-@synthesize downSwipeGestureRecognizer  = _downSwipeGestureRecognizer;
-@synthesize dummyCell                   = _dummyCell;
-
-
-
 #pragma mark -
 #pragma mark Initialization Stuff
 -(id)initWithOffset:(CGFloat)offset withAdjoiningView:(UIView *)view withDatasource:(id<DrawableContainerDataSource>)datasource

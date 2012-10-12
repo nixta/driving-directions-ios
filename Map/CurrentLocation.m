@@ -23,8 +23,6 @@
 
 @implementation CurrentLocation
 
-@synthesize locationManager = _locationManager;
-
 #pragma mark -
 #pragma mark Cleanup
 -(void)dealloc

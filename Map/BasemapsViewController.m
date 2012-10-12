@@ -52,17 +52,6 @@
 
 @implementation BasemapsViewController
 
-@synthesize scrollView = _scrollView;
-@synthesize basemaps = _basemaps;
-@synthesize delegate = _delegate;
-
-@synthesize views = _views;
-@synthesize activityIndicator = _activityIndicator;
-@synthesize watchdogTimer = _watchdogTimer;
-@synthesize currentBasemapView = _currentBasemapView;
-@synthesize imageDownloadsInProgress = _imageDownloadsInProgress;
-@synthesize basemapButtons = _basemapButtons;
-
 #pragma mark -
 #pragma mark Init/Dealloc Methods
 

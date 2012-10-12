@@ -35,13 +35,6 @@
 
 @implementation Route
 
-@synthesize stops           = _stops;
-@synthesize delegate        = _delegate;
-@synthesize directions      = _directions;
-@synthesize stopGraphics    = _stopGraphics;
-@synthesize isEditable      = _editable;
-
-
 -(id)init
 {
     self = [super init];

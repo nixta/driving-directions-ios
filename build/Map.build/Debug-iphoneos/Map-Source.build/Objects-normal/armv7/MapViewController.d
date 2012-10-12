@@ -188,7 +188,7 @@ dependencies: /Users/albe5259/Projects/navigator/Map/MapViewController.m \
   /Users/albe5259/Projects/navigator/Map/routingDelegate.h \
   /Users/albe5259/Projects/navigator/Map/MapViewController+MapTapping.h \
   /Users/albe5259/Projects/navigator/Map/MapViewController+Search.h \
-  /Users/albe5259/Projects/navigator/Map/LocationBookmark/LocationBookmark.h \
+  /Users/albe5259/Projects/navigator/Map/LocationMarker/LocationMarker.h \
   /Users/albe5259/Projects/navigator/Map/MapViewController+PlanningRouting.h \
   /Users/albe5259/Projects/navigator/Map/MapSettings.h \
   /Users/albe5259/Projects/navigator/Map/MapSettingsBase.h \

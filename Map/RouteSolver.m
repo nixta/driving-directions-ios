@@ -29,14 +29,6 @@
 
 @implementation RouteSolver
 
-@synthesize routingServiceUrl = _routingServiceUrl;
-@synthesize spatialReference = _spatialReference;
-@synthesize routeTaskParams = _routeTaskParams;
-@synthesize routeToSolve = _routeToSolve;
-@synthesize routeTask = _routeTask;
-@synthesize delegate = _delegate;
-
-
 #pragma mark -
 #pragma mark AGSRouteTaskDelegate
 - (void)routeTask:(AGSRouteTask *)routeTask operation:(NSOperation *)op didRetrieveDefaultRouteTaskParameters:(AGSRouteTaskParameters *)routeParams {

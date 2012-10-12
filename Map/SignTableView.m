@@ -22,7 +22,6 @@
 
 @implementation SignTableView
 
-@synthesize tableView = _tableView;
 
 -(void)dealloc
 {

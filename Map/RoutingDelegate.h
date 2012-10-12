@@ -15,7 +15,7 @@
 #import <Foundation/Foundation.h>
 #import <ArcGIS/ArcGIS.h>
 
-@protocol routingDelegate <NSObject>
+@protocol RoutingDelegate <NSObject>
 
 - (void) appleMapsCalled:(AGSPoint *)pStart withEnd:(AGSPoint*)pEnd;
 

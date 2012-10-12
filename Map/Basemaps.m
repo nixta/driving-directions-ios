@@ -47,19 +47,6 @@
 
 @implementation Basemaps
 
-@synthesize basemapInfos = _basemapInfos;
-@synthesize searchResponse = _searchResponse;
-@synthesize groupID = _groupID;
-
-@synthesize isDownloading = _isDownloading;
-@synthesize finishedDownloading = _finishedDownloading;
-
-@synthesize delegate = _delegate;
-
-@synthesize esriGroupIdOp =_esriGroupIdOp;
-@synthesize baseMapsOp = _baseMapsOp;
-
-@synthesize app = _app;
 
 #pragma mark -
 #pragma mark Public Interface

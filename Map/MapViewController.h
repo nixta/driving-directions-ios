@@ -56,7 +56,7 @@
                                                     AGSWebMapDelegate, OrganizationDelegate, LocationCalloutDelegate, 
                                                     UIActionSheetDelegate, ChangeBasemapsDelegate, RouteSolverDelegate,
                                                     AGSGPSInfoTemplateDelegate, SignsViewDelegate, MFMailComposeViewControllerDelegate, 
-                                                    OrganizationChooserDelegate, DrawableContainerDelegate, routingDelegate, UISearchBarDelegate>
+                                                    OrganizationChooserDelegate, DrawableContainerDelegate, RoutingDelegate, UISearchBarDelegate>
 {
     /*Ux IB Elements */
     AGSMapView                          *_mapView;

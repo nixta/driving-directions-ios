@@ -19,8 +19,6 @@
 
 @implementation DrawableResultsTableView
 
-@synthesize resultsDataSource   = _resultsDataSource;
-@synthesize resultsDelegate     = _resultsDelegate;
 
 -(id)initWithFrame:(CGRect)frame style:(UITableViewStyle)style
 {

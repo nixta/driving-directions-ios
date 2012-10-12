@@ -17,10 +17,6 @@
 
 @implementation Search
 
-@synthesize name = _name;
-@synthesize icon = _icon;
-
-
 -(id)initWithName:(NSString *)name
 {
     self = [super init];

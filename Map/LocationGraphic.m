@@ -17,8 +17,6 @@
 
 @implementation LocationGraphic
 
-@synthesize location = _location;
-
 -(id)initWithGeometry:(AGSGeometry *)geometry symbol:(AGSSymbol *)symbol attributes:(NSMutableDictionary *)attributes infoTemplateDelegate:(id<AGSInfoTemplateDelegate>)infoTemplateDelegate
 {
     return [super initWithGeometry:geometry symbol:symbol attributes:attributes infoTemplateDelegate:infoTemplateDelegate];

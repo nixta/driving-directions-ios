@@ -18,7 +18,6 @@
 #import "ArcGISMobileConfig.h"
 #import "AppSettings.h"
 #import "NSDictionary+Additions.h"
-#import "OnlineApplication.h"
 #import "AppSettings.h"
 
 @interface ArcGISOnlineConnection ()

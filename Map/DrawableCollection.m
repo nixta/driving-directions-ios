@@ -23,9 +23,6 @@
 
 @implementation DrawableCollection
 
-@synthesize lists = _lists;
-@synthesize currentIndex = _currentIndex;
-
 
 +(DrawableCollection *)collection
 {

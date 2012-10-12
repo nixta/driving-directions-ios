@@ -43,20 +43,6 @@
 
 @implementation LocationCalloutView
 
-@synthesize locationLabel = _locationLabel;
-@synthesize addressLabel = _addressLabel;
-@synthesize hideButton = _hideButton;
-@synthesize actionButton = _actionButton;
-@synthesize accessoryButton = _accessoryButton;
-@synthesize fullViewButton = _fullViewButton;
-@synthesize stopSegmentedControl = _stopSegmentedControl;
-
-@synthesize location = _location;
-
-@synthesize addressString = _addressString;
-@synthesize delegate = _delegate;
-
-
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kLocationUpdatedAddress object:self.location];
     self.location = nil;    

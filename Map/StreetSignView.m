@@ -26,9 +26,6 @@
 
 @implementation StreetSignView
 
-@synthesize direction = _direction;
-
-
 - (id)initWithFrame:(CGRect)frame
 {
     return [self initWithFrame:frame withDirection:nil withReflectionSlope:0 startingX:0 useShadow:NO];

@@ -17,27 +17,6 @@
 
 @implementation ContentItem
 
-@synthesize itemId = _itemId;
-@synthesize item = _item;
-@synthesize itemType = _itemType;
-@synthesize contentType = _contentType;
-@synthesize title = _title;
-@synthesize type = _type;
-@synthesize thumbnail = _thumbnail;
-@synthesize access = _access;
-@synthesize owner = _owner;
-@synthesize size = _size;
-@synthesize description = _description;
-@synthesize snippet = _snippet;
-@synthesize extent = _extent;
-@synthesize uploaded = _uploaded;
-@synthesize name = _name;
-@synthesize avgRating = _avgRating;
-@synthesize tags = _tags;
-@synthesize numComments = _numComments;
-@synthesize numRatings = _numRatings;
-@synthesize numViews = _numViews;
-
 #pragma mark -
 #pragma mark AGSCoding
 

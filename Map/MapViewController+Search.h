@@ -12,7 +12,7 @@
  
  */
 #import "MapViewController.h"
-#import "LocationBookmark.h"
+#import "LocationMarker.h"
 #import <ArcGIS/ArcGIS.h>
 
 /*

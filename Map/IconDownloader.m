@@ -62,12 +62,6 @@
 
 @implementation IconDownloader
 
-@synthesize delegate = _delegate;
-@synthesize irop = _irop;
-@synthesize content = _content;
-@synthesize indexPathInTableView = _indexPathInTableView;
-@synthesize size = _size;
-
 #pragma mark
 
 -(id)init{

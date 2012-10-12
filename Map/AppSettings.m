@@ -18,8 +18,6 @@
 
 @implementation AppSettings
 
-@synthesize arcGISOnlineConnection = _arcGISOnlineConnection;
-
 #pragma mark -
 #pragma mark Lifetime
 - (id)init

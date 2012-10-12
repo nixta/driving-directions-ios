@@ -25,10 +25,6 @@
 
 @implementation SettingsViewController
 
-@synthesize tableView = _tableView;
-@synthesize appSettings = _appSettings;
-@synthesize chooserVC = _chooserVC;
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -122,50 +118,5 @@
     return cell;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    MapAppDelegate *mad = (MapAppDelegate *)[[UIApplication sharedApplication] delegate];
-    MapAppSettings *mas = (MapAppSettings *)mad.appSettings;
-    
-    if (indexPath.section == kLoginSection) {
-        
-        NSUInteger currentOrgIndex = [mad.testOrganizations indexOfObject:mas.organization];
-        
-        OrganizationChooserViewController *ocvc = [[OrganizationChooserViewController alloc] initWithOrganizations:mad.testOrganizations];
-        self.chooserVC = ocvc;
-        
-        self.chooserVC.selectedIndex = currentOrgIndex;
-        self.chooserVC.delegate = self;
-        
-        [self presentModalViewController:self.chooserVC animated:YES];
-    }
-    else if(indexPath.section == kSearchSection)
-    {
-        [mas clearRecentSearches];
-        //Clear recent routes and search history
-    }
-}
-
--(void)organizationChooser:(OrganizationChooserViewController *)orgVC didChooseOrganization:(Organization *)organization
-{
-    //clearly a hack job... Whole thing is created for a demo... Remove immediately after!
-    MapAppDelegate *mad = (MapAppDelegate *)[[UIApplication sharedApplication] delegate];
-    MapViewController *mvc = (MapViewController *)mad.viewController;
-    MapAppSettings *mas = (MapAppSettings *)mad.appSettings;
-
-    NSUInteger currentOrgIndex = [mad.testOrganizations indexOfObject:mas.organization];
-    
-    //animate only if they picked same service!
-    [self dismissModalViewControllerAnimated:(currentOrgIndex == orgVC.selectedIndex)];
-    
-    if (currentOrgIndex != orgVC.selectedIndex) {
-        [self.navigationController popViewControllerAnimated:YES];
-        [mvc showActivityIndicator:YES];
-        
-        [mvc organizationChooser:orgVC didChooseOrganization:organization];
-    }
-}
 
 @end
