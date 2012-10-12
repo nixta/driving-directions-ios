@@ -309,13 +309,6 @@
 
 @implementation BasemapInfo
 
-@synthesize contentItem = _contentItem;
-@synthesize title = _title;
-@synthesize urlString = _urlString;
-@synthesize basemapIcon = _basemapIcon;
-@synthesize isDefaultBasemap = _isDefaultBasemap;
-
-
 -(id)initWithTitle:(NSString *)title urlString:(NSString *)urlString contentItem:(ContentItem *)contentItem
 {
     self = [super init];

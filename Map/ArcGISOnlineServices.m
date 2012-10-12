@@ -21,9 +21,6 @@
 
 @implementation TokenResponse
 
-@synthesize token = _token;
-@synthesize expires = _expires;
-
 - (void)decodeWithJSON:(NSDictionary *)json {
 	self.token = [AGSJSONUtility getStringFromDictionary:json withKey:@"token"];
     self.expires = [[json valueForKey:@"expires"]intValue];
@@ -54,13 +51,6 @@
 
 @implementation User
 
-@synthesize userName = _userName;
-@synthesize fullName = _fullName;
-@synthesize description = _description;
-@synthesize email = _email;
-@synthesize organization = _organization;
-@synthesize defaultGroupId = _defaultGroupId;
-@synthesize groups = _groups;
 
 - (void)decodeWithJSON:(NSDictionary *)json {
 	self.userName = [AGSJSONUtility getStringFromDictionary:json withKey:@"username"];
@@ -102,9 +92,6 @@
 
 @implementation Member
 
-@synthesize userName = _userName;
-@synthesize memberType = _memberType;
-
 - (void)decodeWithJSON:(NSDictionary *)json {
 	self.userName = [AGSJSONUtility getStringFromDictionary:json withKey:@"username"];
 	self.memberType = [AGSJSONUtility getStringFromDictionary:json withKey:@"memberType"];
@@ -135,21 +122,6 @@
 
 @implementation Group
 
-@synthesize groupId = _groupId;
-@synthesize title = _title;
-@synthesize description = _description;
-@synthesize snippet = _snippet;
-@synthesize phone = _phone;
-@synthesize thumbnail = _thumbnail;
-@synthesize owner = _owner;
-@synthesize created = _created;
-@synthesize featuredItemsId = _featuredItemsId;
-@synthesize isPublic = _isPublic;
-@synthesize isInvitationOnly = _isInvitationOnly;
-@synthesize isOrganization = _isOrganization;
-@synthesize members = _members;
-@synthesize tags = _tags;
-@synthesize groupIcon = _groupIcon;
 
 - (void)decodeWithJSON:(NSDictionary *)json {
 	self.groupId = [AGSJSONUtility getStringFromDictionary:json withKey:@"id"];
@@ -249,12 +221,6 @@
 
 @implementation SearchResponse
 
-@synthesize total = _total;
-@synthesize start = _start;
-@synthesize num = _num;
-@synthesize nextStart = _nextStart;
-//@synthesize results = _results;
-
 - (void)decodeWithJSON:(NSDictionary *)json {
 	self.total = [[json valueForKey:@"total"]intValue];
     self.start = [[json valueForKey:@"start"]intValue];
@@ -296,10 +262,6 @@
 
 @implementation ContentFolder
 
-@synthesize userName = _userName;
-@synthesize folderId = _folderId;
-@synthesize title = _title;
-@synthesize created = _created;
 
 - (void)decodeWithJSON:(NSDictionary *)json {
 	self.folderId = [AGSJSONUtility getStringFromDictionary:json withKey:@"id"];

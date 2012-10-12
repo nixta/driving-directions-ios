@@ -29,14 +29,6 @@
 
 @implementation OrganizationChooserViewController
 
-@synthesize tableView = _tableView;
-@synthesize finishButton = _finishButton;
-
-@synthesize organizations = _organizations;
-@synthesize delegate = _delegate;
-@synthesize selectedIndex = _selectedIndex;
-
-
 -(id)initWithOrganizations:(NSArray *)organizations
 {
     self = [super initWithNibName:@"OrganizationChooserViewController" bundle:nil];

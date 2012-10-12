@@ -26,18 +26,6 @@
 
 @implementation GeocodeService
 
-@synthesize delegate = _delegate;
-@synthesize responseString = _responseString;
-@synthesize findAddressLocator = _findAddressLocator;
-@synthesize addressLocatorString = _addressLocatorString;
-@synthesize findAddressOperation = _findAddressOperation;
-@synthesize findPlaceOperation = _findPlaceOperation;
-@synthesize useSingleLine = _useSingleLine;
-
-
-//private properties
-@synthesize app = _app;
-
 #pragma mark -
 #pragma mark NSURLConnection
 
@@ -274,12 +262,6 @@
 
 @implementation FindPlaceCandidate
 
-@synthesize name = _name;
-@synthesize score = _score;
-@synthesize location = _location;
-@synthesize extent = _extent;
-
-
 -(id)initWithJSON:(NSDictionary *)json withSpatialReference:(AGSSpatialReference *)spatialReference
 {
     if (self = [self initWithJSON:json])
@@ -330,12 +312,6 @@
 #pragma mark FindPOI
 
 @implementation FindPOI
-
-@synthesize name = _name;
-@synthesize score = _score;
-@synthesize location = _location;
-@synthesize extent = _extent;
-
 
 -(id)initWithJSON:(NSDictionary *)json withSpatialReference:(AGSSpatialReference *)spatialReference
 {

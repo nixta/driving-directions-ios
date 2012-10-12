@@ -36,10 +36,6 @@
 
 static NSString* _referer = @"www.esri.com/arcgismobile";
 
-@synthesize credential = _credential;
-@synthesize token = _token;
-@synthesize app = _app;
-
 -(id)init
 {
 	if (self = [super init])

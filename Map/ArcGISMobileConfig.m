@@ -17,28 +17,6 @@
 
 @implementation ArcGISMobileConfig
 
-@synthesize geometryServiceUrl = _geometryServiceUrl;
-@synthesize geocodeServiceUrl = _geocodeServiceUrl;
-@synthesize locatorServiceUrl = _locatorServiceUrl;
-@synthesize worldLocatorServiceUrl = _worldLocatorServiceUrl;
-@synthesize esriGlobalAccount = _esriGlobalAccount;
-@synthesize arcgisRegistrationUrl = _arcgisRegistrationUrl;
-@synthesize ecasRegistrationUrl = _ecasRegistrationUrl;
-
-@synthesize sharing = _sharing;
-@synthesize legend = _legend;
-@synthesize basemapsGroupQueries = _basemapsGroupQueries;
-@synthesize featuredMapsGroupQueries = _featuredMapsGroupQueries;
-@synthesize tokenExpiration = _tokenExpiration;
-@synthesize showSocialMediaLinks = _showSocialMediaLinks;
-@synthesize enableBitly = _enableBitly;
-@synthesize bitlyLogin = _bitlyLogin;
-@synthesize bitlyKey = _bitlyKey;
-@synthesize portalName = _portalName;
-@synthesize defaultMap = _defaultMap;
-@synthesize defaultMapExtent = _defaultMapExtent;
-@synthesize geocoderServiceUrlNew = _geocoderServiceUrlNew;
-
 -(id)init{
 	if (self = [super init]){
         //

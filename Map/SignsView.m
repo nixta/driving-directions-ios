@@ -686,14 +686,6 @@
 
 @implementation StopsSignsView
 
-@synthesize editDelegate    = _editDelegate;
-
-@synthesize heldSign        = _heldSign;
-@synthesize signFrames      = _signFrames;
-@synthesize heldIndex       = _heldIndex;
-@synthesize timer           = _timer;
-
-
 
 #define kWidthOfSmallSign 130.0
 -(CGFloat)sizeOfSign

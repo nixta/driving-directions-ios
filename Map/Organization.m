@@ -38,20 +38,6 @@
 
 @implementation Organization
 
-@synthesize webmap = _webmap;
-@synthesize webmapLoaded = _webmapLoaded;
-@synthesize icon = _icon;
-@synthesize defaultEnvelope = _defaultEnvelope;
-
-@synthesize name = _name;
-@synthesize basemapGalleryGroupQuery = _basemapGalleryGroupQuery;
-@synthesize portalName = _portalName;
-@synthesize locatorUrlString = _locatorUrlString;
-
-@synthesize delegate = _delegate;
-
-@synthesize orgOperation = _orgOperation;
-
 
 - (id)init
 {

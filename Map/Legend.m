@@ -692,15 +692,6 @@ mapServiceLayerInfos:mapServiceLayerInfos
 
 @implementation LegendLayer
 
-@synthesize groups = _groups;
-@synthesize elements = _elements;
-@synthesize allVisibleElements = _allVisibleElements;
-@synthesize level = _level;
-@synthesize title = _title;
-@synthesize mapLayerInfo = _mapLayerInfo;
-@synthesize baseLayer = _baseLayer;
-@synthesize mapServiceLayerInfo = _mapServiceLayerInfo;
-
 //utility method to add a new group to the layer
 -(void)addGroup:(LegendLayer *)ll
 {
@@ -865,10 +856,6 @@ mapServiceLayerInfos:mapServiceLayerInfos
 #pragma mark Legend Element Implementation
 
 @implementation LegendElement
-
-@synthesize title = _title;
-@synthesize swatch = _swatch;
-@synthesize level = _level;
 
 -(id)initWithTitle:(NSString *)aTitle withSwatch:(UIImage *)aSwatch
 {
