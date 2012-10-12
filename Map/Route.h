@@ -34,8 +34,7 @@
     
     @private
     NSMutableArray          *_stopGraphics;
-    
-    BOOL                    _editable;
+   
     NSUInteger              _numberOfStopsToPrep;
 }
 

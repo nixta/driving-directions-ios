@@ -54,18 +54,6 @@ static NSString *kDefaultPortalUrl = @"http://www.arcgis.com";
 	
 	[self performSelector:@selector(launchMethod:) withObject:appDict afterDelay:0.0];
     
-    /*
-	NSURL *openWithURL = [launchOptions objectForKey:UIApplicationLaunchOptionsURLKey];
-    if (openWithURL)
-    {   
-        //verify we have the correct scheme
-        if (![[openWithURL scheme] isEqualToString:kArcGISURLScheme] &&
-            ![[openWithURL scheme] isEqualToString:kArcGISPortalURLScheme])
-		{
-			return NO;
-		}
-    }  */
-    
 	return YES;
 }
 

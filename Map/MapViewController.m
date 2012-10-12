@@ -93,6 +93,8 @@
 /*Routing properties */
 @property (nonatomic, strong) RouteSolver                           *routeSolver;
 
+@property (nonatomic,strong) AGSWebMap                              *webmap;
+
 //Temporary!!
 @property (nonatomic, strong) OrganizationChooserViewController     *orgChooserVC;
 
@@ -122,7 +124,10 @@
 }
 
 #pragma mark - View lifecycle
-
+- (void)tableView:(UITableView*)tv numberOfRowsInSection:(NSInteger)section
+{
+    NSLog(@"Who is calling me");
+}
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -146,9 +151,18 @@
     appDelegate.routeDelegate = self;
     
     appDelegate.mapView = self.mapView;
+    self.webmap = [AGSWebMap webMapWithItemId:kDefaultWebMapId credential:nil];
+    self.webmap.delegate = self;
     
     [self.mapView.gps start];
 }
+
+#pragma mark WebMapDelegate
+- (void)webMapDidLoad:(AGSWebMap *)webMap
+{
+    [self setWebMap:self.webmap];
+}
+
 
 - (void) appleMapsCalled:(AGSPoint *)pStart withEnd:(AGSPoint*)pEnd
 {
@@ -210,6 +224,8 @@
     
     [super viewDidUnload];
 }
+
+
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
@@ -892,8 +908,12 @@
 
 -(void)organization:(Organization *)org didDownloadWebmap:(AGSWebMap *)webmap
 {    
+    [self setWebMap:webmap];
+}
+
+- (void) setWebMap:(AGSWebMap*)webmap
+{
     //make map controller the delegate now
-    webmap.delegate = self;
     [webmap openIntoMapView:self.mapView];
     
     //clear out...
@@ -916,23 +936,18 @@
 #pragma mark -
 #pragma mark AGSWebMapDelegate Methods
 
-/*
- Using web map delegate load method here to load new basemap.  The actual
- webmap for the organization is loaded somewhere else
- */
-- (void)webMapDidLoad:(AGSWebMap *)webMap
-{
-    //load current map (the organization web map) with the new basemap
-    [self.mapAppSettings.organization.webmap openIntoMapView:self.mapView withAlternateBaseMap:webMap.baseMap];
-}
-
 -(void)didOpenWebMap:(AGSWebMap*)webMap intoMapView:(AGSMapView*)mapView
 {
+    if (self.app.config == nil)
+    {
+        self.app.config = [[ArcGISMobileConfig alloc] init];
+    }
+    
     if(_routeSolver == nil)
     {
         //by intializing, we are automatically going out to get defaults
         self.routeSolver = [[RouteSolver alloc] initWithSpatialReference:self.mapView.spatialReference 
-                                                        routingServiceUrl:self.mapAppSettings.organization.routeUrl];
+                                                        routingServiceUrl:self.app.config.routeUrl];
         self.routeSolver.delegate = self;
     }
     

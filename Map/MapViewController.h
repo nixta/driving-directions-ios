@@ -52,7 +52,7 @@
  Main view controller and interface for Directions app  
  */
 
-@interface MapViewController : UIViewController     <AGSMapViewLayerDelegate, AGSMapViewTouchDelegate, AGSMapViewCalloutDelegate,
+@interface MapViewController : UIViewController     <AGSMapViewLayerDelegate, AGSMapViewTouchDelegate, AGSMapViewCalloutDelegate, AGSWebMapDelegate,
                                                     AGSWebMapDelegate, OrganizationDelegate, LocationCalloutDelegate, 
                                                     UIActionSheetDelegate, ChangeBasemapsDelegate, RouteSolverDelegate,
                                                     AGSGPSInfoTemplateDelegate, SignsViewDelegate, MFMailComposeViewControllerDelegate, 
@@ -219,6 +219,7 @@
 -(void)directToLocationFromTwoPoints:(Location *)startLocation andEnd:(Location*)endLocation;
 
 -(void)showActivityIndicator:(BOOL)show;
+-(void) setWebMap:(AGSWebMap*)webmap;
 
 //Temporary!!
 -(void)chooseFromOrganizations:(NSArray *)organizations;

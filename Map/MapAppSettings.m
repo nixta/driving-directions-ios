@@ -25,7 +25,6 @@
 
 @implementation MapAppSettings
 
-
 - (id)init
 {
     self = [super init];

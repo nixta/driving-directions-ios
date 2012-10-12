@@ -56,6 +56,7 @@
     
     
     //Removed POI until the geocoder is ready
+    
     // Searching first with the new Geocoder at
 //#warning needs to be replace when the new ArcGIS Runtime SDK is available.
 //    // This is a work around until the new ArcGIS Runtime for iOS is available with a class

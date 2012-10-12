@@ -38,7 +38,6 @@
 
 @implementation MapAppDelegate
 
-
 #pragma mark -
 #pragma mark UIApplicationDelegate
 
@@ -95,8 +94,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {	
-    [self loadSplashScreen];
-    
+    //[self loadSplashScreen];
+        
     //[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
@@ -115,13 +114,19 @@
         
 		return NO;
     }
-	
-	NSDictionary *appDict = [NSDictionary dictionaryWithObjectsAndKeys:
-							 application, @"app",
-							 launchOptions, @"options",
-							 nil];						
-	
-	[self performSelector:@selector(launchMethod:) withObject:appDict afterDelay:0.0];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // Override point for customization after application launch.
+    self.viewController = [[MapViewController alloc] initWithNibName:@"MapViewController" bundle:nil];
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
+    
+//	NSDictionary *appDict = [NSDictionary dictionaryWithObjectsAndKeys:
+//							 application, @"app",
+//							 launchOptions, @"options",
+//							 nil];						
+//	
+//	[self performSelector:@selector(launchMethod:) withObject:appDict afterDelay:0.0];
     
        
 	return YES;
@@ -246,10 +251,7 @@
 -(void)orgOperation:(AGSJSONRequestOperation *)op didSucceed:(NSDictionary*)json 
 {
     NSLog(@"Did Succeed getting org information!");
-    
-    
-    //MapAppSettings *mas = (MapAppSettings *)self.appSettings;
-    
+        
     Organization *org = [[Organization alloc] initWithJSON:json];
     org.name = @"Guest";
     org.icon = [UIImage imageNamed:@"Default_icon.png"];
