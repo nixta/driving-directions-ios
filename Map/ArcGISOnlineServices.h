@@ -1,8 +1,3 @@
-//
-//  ArcGISOnlineServices.h
-//  ArcGISMobile
-//
-//  Created by Mark Dostal on 2/22/10.
 /*
  Copyright © 2012 Esri
  
@@ -16,7 +11,6 @@
  See the use restrictions at http://help.arcgis.com/en/sdk/10.0/usageRestrictions.htm
  
  */
-
 #import <Foundation/Foundation.h>
 #import <ArcGIS/ArcGIS.h>
 #import "ContentItem.h"

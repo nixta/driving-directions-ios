@@ -1,8 +1,3 @@
-//
-//  ArcGISMobileConfig.h
-//  ArcGISMobile
-//
-//  Created by Mark Dostal on 4/26/11.
 /*
  Copyright © 2012 Esri
  

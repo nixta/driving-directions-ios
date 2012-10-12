@@ -1,8 +1,3 @@
-//
-//  RouteSolverSettings.h
-//  Map
-//
-//  Created by Scott Sirowy on 11/4/11.
 /*
 
  Copyright © 2012 Esri

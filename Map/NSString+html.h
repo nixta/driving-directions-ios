@@ -1,8 +1,3 @@
-//
-//  NSString+html.h
-//  ArcGISMobile
-//
-//  Created by Mark Dostal on 6/15/10.
 /*
  Copyright © 2012 Esri
  

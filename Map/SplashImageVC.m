@@ -1,8 +1,3 @@
-    //
-//  SplashImageVC.m
-//  ArcGISMobile
-//
-//  Created by Eric Ito on 7/21/10.
 /*
  Copyright © 2012 Esri
  

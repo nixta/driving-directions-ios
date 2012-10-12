@@ -33,7 +33,6 @@
 		787FDC26147B0592006CEFCB /* SignsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 787FDC1E147B0592006CEFCB /* SignsView.m */; };
 		787FDC29147B0592006CEFCB /* SignTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 787FDC20147B0592006CEFCB /* SignTableView.m */; };
 		787FDC2E147B0C71006CEFCB /* LocationCalloutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 787FDC2B147B0C71006CEFCB /* LocationCalloutView.m */; };
-		7883B28B148E8CCD00E68173 /* ExtendableToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7883B288148E8CCD00E68173 /* ExtendableToolbar.m */; };
 		7883B2A9148E9A2A00E68173 /* UIBarButtonItem+AppAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7883B2A6148E9A2A00E68173 /* UIBarButtonItem+AppAdditions.m */; };
 		7883B2B2148E9D2600E68173 /* selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 7883B2AE148E9D2600E68173 /* selected.png */; };
 		7883B2B5148E9D2600E68173 /* selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7883B2AF148E9D2600E68173 /* selected@2x.png */; };
@@ -84,7 +83,6 @@
 		78BA0D7D1458C17500530ADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78342C9F140D9CB400B0F354 /* main.m */; };
 		78BA0D7E1458C17500530ADD /* MapAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78342CA3140D9CB400B0F354 /* MapAppDelegate.m */; };
 		78BA0D7F1458C17500530ADD /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78342CAB140D9CB500B0F354 /* MapViewController.m */; };
-		78BA0D801458C17500530ADD /* UIToolbar+MapAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78342CC2140DAC6200B0F354 /* UIToolbar+MapAdditions.m */; };
 		78BA0D811458C17500530ADD /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 78693254140EA27B00B96F3F /* UIColor+Additions.m */; };
 		78BA0D821458C17500530ADD /* MapContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7869325F140EA99C00B96F3F /* MapContentViewController.m */; };
 		78BA0D871458C17500530ADD /* GeocodeService.m in Sources */ = {isa = PBXBuildFile; fileRef = 789197931416761400E85321 /* GeocodeService.m */; };
@@ -101,7 +99,6 @@
 		78BA0D931458C17500530ADD /* NSDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 784695F8141ECCAB00847AB6 /* NSDictionary+Additions.m */; };
 		78BA0D941458C17500530ADD /* NSString+html.m in Sources */ = {isa = PBXBuildFile; fileRef = 78469605141ECD5E00847AB6 /* NSString+html.m */; };
 		78BA0D951458C17500530ADD /* ContentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 78469608141ECDD200847AB6 /* ContentItem.m */; };
-		78BA0D961458C17500530ADD /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7846960B141ECE2200847AB6 /* KeychainWrapper.m */; };
 		78BA0D971458C17500530ADD /* ArcGISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78469633141FCFB700847AB6 /* ArcGISAppDelegate.m */; };
 		78BA0D981458C17500530ADD /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 78469636141FD0D800847AB6 /* AppSettings.m */; };
 		78BA0D991458C17500530ADD /* MapAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 7846963D14201D0200847AB6 /* MapAppSettings.m */; };
@@ -304,8 +301,6 @@
 		78342CA8140D9CB500B0F354 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ArcGIS.bundle; sourceTree = "<group>"; };
 		78342CAA140D9CB500B0F354 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		78342CAB140D9CB500B0F354 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		78342CC1140DAC6200B0F354 /* UIToolbar+MapAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+MapAdditions.h"; sourceTree = "<group>"; };
-		78342CC2140DAC6200B0F354 /* UIToolbar+MapAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+MapAdditions.m"; sourceTree = "<group>"; };
 		783742111423AE400085A15A /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		783742121423AE400085A15A /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		78383817146865A7007C00C2 /* map_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = map_button.png; path = Resources/Images/map_button.png; sourceTree = "<group>"; };
@@ -330,8 +325,6 @@
 		78469605141ECD5E00847AB6 /* NSString+html.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+html.m"; sourceTree = "<group>"; };
 		78469607141ECDD200847AB6 /* ContentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentItem.h; sourceTree = "<group>"; };
 		78469608141ECDD200847AB6 /* ContentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentItem.m; sourceTree = "<group>"; };
-		7846960A141ECE2200847AB6 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
-		7846960B141ECE2200847AB6 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		78469632141FCFB700847AB6 /* ArcGISAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArcGISAppDelegate.h; sourceTree = "<group>"; };
 		78469633141FCFB700847AB6 /* ArcGISAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArcGISAppDelegate.m; sourceTree = "<group>"; };
 		78469635141FD0D800847AB6 /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
@@ -405,8 +398,6 @@
 		7880A05714280D8B0026B1BD /* Switch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Switch@2x.png"; path = "Resources/Images/Switch@2x.png"; sourceTree = "<group>"; };
 		7880A05C14280E3C0026B1BD /* RouteBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RouteBar.png; path = Resources/Images/RouteBar.png; sourceTree = "<group>"; };
 		7880A05D14280E3C0026B1BD /* RouteBar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RouteBar@2x.png"; path = "Resources/Images/RouteBar@2x.png"; sourceTree = "<group>"; };
-		7883B287148E8CCD00E68173 /* ExtendableToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtendableToolbar.h; sourceTree = "<group>"; };
-		7883B288148E8CCD00E68173 /* ExtendableToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtendableToolbar.m; sourceTree = "<group>"; };
 		7883B2A5148E9A2A00E68173 /* UIBarButtonItem+AppAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+AppAdditions.h"; sourceTree = "<group>"; };
 		7883B2A6148E9A2A00E68173 /* UIBarButtonItem+AppAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+AppAdditions.m"; sourceTree = "<group>"; };
 		7883B2AE148E9D2600E68173 /* selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = selected.png; path = Resources/Images/selected.png; sourceTree = "<group>"; };
@@ -862,8 +853,6 @@
 			isa = PBXGroup;
 			children = (
 				78EEEDC914903D7900EBE720 /* Custom Controls */,
-				78342CC1140DAC6200B0F354 /* UIToolbar+MapAdditions.h */,
-				78342CC2140DAC6200B0F354 /* UIToolbar+MapAdditions.m */,
 				785139491447AB33008D0E34 /* NSString+NSString_Additions.h */,
 				7851394A1447AB33008D0E34 /* NSString+NSString_Additions.m */,
 				78D13FA5144F994F00E8970A /* UIImage+AppAdditions.h */,
@@ -926,8 +915,6 @@
 				789197931416761400E85321 /* GeocodeService.m */,
 				7846963F1420213800847AB6 /* SplashImageVC.h */,
 				784696401420213900847AB6 /* SplashImageVC.m */,
-				7846960A141ECE2200847AB6 /* KeychainWrapper.h */,
-				7846960B141ECE2200847AB6 /* KeychainWrapper.m */,
 				784695E3141EC8C100847AB6 /* ArcGISOnlineConnection.h */,
 				784695E4141EC8C100847AB6 /* ArcGISOnlineConnection.m */,
 				784695E5141EC8C100847AB6 /* ArcGISOnlineServices.h */,
@@ -1153,8 +1140,6 @@
 		78EEEDC914903D7900EBE720 /* Custom Controls */ = {
 			isa = PBXGroup;
 			children = (
-				7883B287148E8CCD00E68173 /* ExtendableToolbar.h */,
-				7883B288148E8CCD00E68173 /* ExtendableToolbar.m */,
 				78EEEDCA14903DAD00EBE720 /* ToggleSegmentedControl.h */,
 				78EEEDCB14903DAD00EBE720 /* ToggleSegmentedControl.m */,
 			);
@@ -1395,7 +1380,6 @@
 				78BA0D7D1458C17500530ADD /* main.m in Sources */,
 				78BA0D7E1458C17500530ADD /* MapAppDelegate.m in Sources */,
 				78BA0D7F1458C17500530ADD /* MapViewController.m in Sources */,
-				78BA0D801458C17500530ADD /* UIToolbar+MapAdditions.m in Sources */,
 				78BA0D811458C17500530ADD /* UIColor+Additions.m in Sources */,
 				78BA0D821458C17500530ADD /* MapContentViewController.m in Sources */,
 				78BA0D871458C17500530ADD /* GeocodeService.m in Sources */,
@@ -1412,7 +1396,6 @@
 				78BA0D931458C17500530ADD /* NSDictionary+Additions.m in Sources */,
 				78BA0D941458C17500530ADD /* NSString+html.m in Sources */,
 				78BA0D951458C17500530ADD /* ContentItem.m in Sources */,
-				78BA0D961458C17500530ADD /* KeychainWrapper.m in Sources */,
 				78BA0D971458C17500530ADD /* ArcGISAppDelegate.m in Sources */,
 				78BA0D981458C17500530ADD /* AppSettings.m in Sources */,
 				78BA0D991458C17500530ADD /* MapAppSettings.m in Sources */,
@@ -1450,7 +1433,6 @@
 				78CA001D147D6EB3008446BA /* RouteSolver.m in Sources */,
 				7814840F14841CAB0002B33D /* SignTableViewCell.m in Sources */,
 				782EBF9614869F4A00A69AEE /* DrawableResultsTableView.m in Sources */,
-				7883B28B148E8CCD00E68173 /* ExtendableToolbar.m in Sources */,
 				7883B2A9148E9A2A00E68173 /* UIBarButtonItem+AppAdditions.m in Sources */,
 				78EEEDCE14903DAD00EBE720 /* ToggleSegmentedControl.m in Sources */,
 				78756E4B149A65D000C20D8B /* PassThroughView.m in Sources */,

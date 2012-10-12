@@ -1,8 +1,3 @@
-//
-//  NSString+NSString_Additions.h
-//  Map
-//
-//  Created by Scott Sirowy on 10/13/11.
 /*
  Copyright © 2012 Esri
  
@@ -16,7 +11,6 @@
  See the use restrictions at http://help.arcgis.com/en/sdk/10.0/usageRestrictions.htm
  
  */
-
 #import <Foundation/Foundation.h>
 
 @interface NSString (NSString_Additions)

@@ -212,7 +212,6 @@ dependencies: /Users/albe5259/Projects/navigator/Map/MapViewController.m \
   /Users/albe5259/Projects/navigator/Map/MapShareUtility.h \
   /Users/albe5259/Projects/navigator/Map/LocationGraphic.h \
   /Users/albe5259/Projects/navigator/Map/AGSGeometry+AppAdditions.h \
-  /Users/albe5259/Projects/navigator/Map/ExtendableToolbar.h \
   /Users/albe5259/Projects/navigator/Map/UIBarButtonItem+AppAdditions.h \
   /Users/albe5259/Projects/navigator/Map/Search.h \
   /Users/albe5259/Projects/navigator/Map/UserSearchResults.h \

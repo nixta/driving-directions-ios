@@ -189,7 +189,6 @@ dependencies: /Users/albe5259/Projects/navigator/Map/MapAppDelegate.m \
   /Users/albe5259/Projects/navigator/Map/DrawableList.h \
   /Users/albe5259/Projects/navigator/Map/Route.h \
   /Users/albe5259/Projects/navigator/Map/RouteSolver.h \
-  /Users/albe5259/Projects/navigator/Map/KeychainWrapper.h \
   /Users/albe5259/Projects/navigator/Map/MapAppSettings.h \
   /Users/albe5259/Projects/navigator/Map/AppSettings.h \
   /Users/albe5259/Projects/navigator/Map/MapShareUtility.h \

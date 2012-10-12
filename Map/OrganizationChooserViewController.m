@@ -36,8 +36,6 @@
 @synthesize delegate = _delegate;
 @synthesize selectedIndex = _selectedIndex;
 
-@synthesize timer = _timer;
-
 
 -(id)initWithOrganizations:(NSArray *)organizations
 {
@@ -70,13 +68,11 @@
 {
     [super viewDidLoad];
     
-    self.finishButton.enabled = (self.organizations.count > 0);
-    self.view.hidden = YES;
+    // Hides the status bar.
+    //[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
     
-    // bypass the login screen for now
-    // the organization controller is in case you want to connect to arcgis.com
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self
-                                                selector:@selector(requestTimerReady) userInfo:nil repeats:NO];    
+    self.finishButton.enabled = (self.organizations.count > 0);
+    self.view.hidden = YES;        
 }
 
 - (void)requestTimerReady {

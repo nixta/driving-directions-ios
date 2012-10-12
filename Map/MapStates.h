@@ -1,10 +1,16 @@
-//
-//  MapStates.h
-//  Map
-//
-//  Created by Al Pascual on 9/28/12.
-//
-//
+/*
+ Copyright © 2012 Esri
+ 
+ All rights reserved under the copyright laws of the United States
+ and applicable international laws, treaties, and conventions.
+ 
+ You may freely redistribute and use this sample code, with or
+ without modification, provided you include the original copyright
+ notice and use restrictions.
+ 
+ See the use restrictions at http://help.arcgis.com/en/sdk/10.0/usageRestrictions.htm
+ 
+ */
 
 #import <Foundation/Foundation.h>
 
@@ -13,7 +19,6 @@
  */
 typedef enum {
     MapAppStateSimple = 0,     //Simple   State:  User can search, and get routed to a location via their current location
-    MapAppStatePlanning,       //Planning State:  User can search, but also create/edit custom routes with multiple stops, optimizatinons, etc
     MapAppStateRoute,          //In routing mode... likely showing a route on the screen
 } MapAppState;
 

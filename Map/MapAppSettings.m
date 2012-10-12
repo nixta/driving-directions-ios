@@ -1,9 +1,3 @@
-//
-//  MapAppSettings.m
-//  Map
-//
-//  Created by Scott Sirowy on 9/13/11.
-
 /*
 
  Copyright © 2012 Esri
@@ -169,5 +163,9 @@
     return self.recentSearches;
 }
 
+-(void)addBookmark:(Location *)bookmark withCustomName:(NSString *)name withExtent:(AGSEnvelope *)envelope
+{
+    return;
+}
 
 @end

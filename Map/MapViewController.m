@@ -1,8 +1,3 @@
-//
-//  MapViewController.m
-//  Map
-//
-//  Created by Scott Sirowy on 8/30/11.
 /*
  Copyright © 2012 Esri
  
@@ -25,7 +20,6 @@
 #import "MapSettings.h"
 #import "MapAppDelegate.h"
 #import "MapAppSettings.h"
-#import "UIToolbar+MapAdditions.h"
 #import "UIColor+Additions.h"
 #import "DrawableResultsTableView.h"
 #import "MapContentViewController.h"
@@ -46,7 +40,7 @@
 #import "SignsView.h"
 #import "LocationGraphic.h"
 #import "AGSGeometry+AppAdditions.h"
-#import "ExtendableToolbar.h"
+
 #import "UIBarButtonItem+AppAdditions.h"
 
 #import "OrganizationChooserViewController.h"
@@ -73,13 +67,10 @@
 
 -(void)routeActionButtonPressed:(id)sender;
 -(void)routeFinishedButtonPressed:(id)sender;
--(void)modifyRouteButtonPressed:(id)sender;
 -(void)routeRefreshButtonPressed:(id)sender;
 -(void)routeSettingsButtonPressed:(id)sender;
 -(void)routeButtonPressed:(id)sender;
 -(void)clearRouteButtonPressed:(id)sender;
-
--(void)planningButtonPressed:(id)sender event:(UIEvent *)event;
 
 -(void)setupRoutingUx;
 
@@ -173,6 +164,7 @@
 @synthesize delegate                    = _delegate;
 
 @synthesize routingCancelButton         = _routingCancelButton;
+@synthesize uiSearchBar                 = _uiSearchBar;
 
 #pragma mark -
 #pragma mark End of View Lifetime
@@ -202,7 +194,7 @@
 {
     [super viewDidLoad];
     
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    //[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
     
 	self.mapView.wrapAround = YES;
 	self.mapView.showMagnifierOnTapAndHold = YES;
@@ -212,10 +204,6 @@
 	self.mapView.gps.infoTemplateDelegate = self;
 	self.mapView.backgroundColor = [UIColor darkBackgroundColor];
     
-    if(self.extendableToolbar.superview == nil)
-        [self.view addSubview:self.extendableToolbar];
-    
-    [self setupSearchUx];
     
     [self showActivityIndicator:YES];
     
@@ -348,27 +336,7 @@
      [self showActivityIndicator:NO];
 }
 
--(UIView *)planningToolsView
-{
-    if(_planningToolsView == nil)
-    {        
-        UIToolbar *tb = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, [ExtendableToolbar heightOfSupplementalToolsView])];
-        tb.barStyle = UIBarStyleBlackTranslucent;
-        
-        UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace 
-                                                                                       target:nil action:nil];
-        
-        UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
-                                                                                       target:nil action:nil];
-        fixedSpace.width = 10;
-        
-        tb.items = [NSArray arrayWithObjects:self.routeSettingsButton, fixedSpace, self.clearRouteButton, flexibleSpace, self.routeButton, nil];
-                                
-        self.planningToolsView = tb;
-    }
-    
-    return _planningToolsView;
-}
+
 
  -(UINavigationController *)mapContentVC
  {
@@ -387,36 +355,37 @@
      return _mapContentVC;
  }  
 
--(ExtendableToolbar *)extendableToolbar
-{
-    if(_extendableToolbar == nil)
-    {
-        CGFloat sizeOfToolbar = 44;
-        ExtendableToolbar *etb = [[ExtendableToolbar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, sizeOfToolbar) showToolsBelowToolbar:NO];
-        
-        etb.supplementalToolsView = self.planningToolsView;
-        
-        self.extendableToolbar = etb;
-    }
-    
-    return _extendableToolbar;
-}
-
 -(UISearchBar *)searchBar
 {
     if (_searchBar == nil) {
-        CGFloat widthOfBarButton = [UIBarButtonItem width];
         
-        UISearchBar *sb = [[UISearchBar alloc]initWithFrame:CGRectMake(widthOfBarButton, 1, self.view.frame.size.width - widthOfBarButton, 40)];
-        //UISearchBar *sb = [[UISearchBar alloc]initWithFrame:CGRectMake(1, 1, self.view.frame.size.width, 40)];
-        sb.tintColor = [UIColor blackColor];
-        sb.placeholder = NSLocalizedString(@"Enter address, place name, etc", nil);
-        sb.delegate = self;
-        
-        self.searchBar = sb;
+        self.searchBar = self.uiSearchBar;
+        self.searchBar.delegate = self;
+        self.uiTabBar.hidden = YES;
     }
     
     return _searchBar;
+}
+
+#pragma UISearchBar delegate
+- (void)searchBarResultsListButtonClicked:(UISearchBar *)searchBar
+{
+    if ( _searchState == MapSearchStateList)
+        _searchState = MapSearchStateMap;
+    else
+        _searchState = MapSearchStateList;
+    
+    NSLog(@"State %u", _searchState);
+    
+    [self setSearchState:_searchState withKeyboard:NO animated:YES];
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *) searchBar
+{
+    [self.searchBar setShowsCancelButton:NO];
+    [self.searchBar setShowsSearchResultsButton:YES];
+    
+    [self searchBarResultsListButtonClicked:searchBar];
 }
 
 -(DrawableResultsTableView *)resultsTableView
@@ -692,7 +661,9 @@
 #pragma mark Toolbar Setup
 -(void)setupRoutingUx
 {
-    [self.searchBar removeFromSuperview];
+    //Al Delete
+    //[self.searchBar removeFromSuperview];
+    self.searchBar.hidden = YES;
     
     NSMutableArray *toolbarItems = [NSMutableArray arrayWithCapacity:3];
     
@@ -718,15 +689,14 @@
     }
     
     [toolbarItems addObject:self.routeFinishedButton];
-    
-    self.extendableToolbar.items = toolbarItems;
-    
-    [self.extendableToolbar showTools:NO fromRect:CGRectZero animated:YES];
+   
     
     if (self.routeOverviewLabel.superview == nil) {
         [self.view addSubview:self.routeOverviewLabel];
         self.routeOverviewLabel.text = NSLocalizedString(@"Overview", nil);
-    } 
+    }
+    
+    self.uiTabBar.hidden = NO;
     
     //hide the search and identify layers until we are done
     [self showSearchLayer:NO];
@@ -734,39 +704,16 @@
             
 #pragma mark -
 #pragma mark Button Interaction
--(void)planningButtonPressed:(id)sender event:(UIEvent *)event
-{
-    //get rect from touched view
-    CGRect rect = [[event.allTouches anyObject] view].frame;
-    
-    BOOL showPlanning = (_appState != MapAppStatePlanning);
-    [self.extendableToolbar showTools:showPlanning fromRect:rect animated:YES];
-    _appState = showPlanning ? MapAppStatePlanning : MapAppStateSimple;
-    
-    //add/remove graphics as necessary
-    if(showPlanning)
-    {
-        //add graphics to map
-        [self.planningRoute.stops addStopsToLayer:self.planningLayer showCurrentLocation:NO];
-        
-        AGSEnvelope *planningEnv = [self.planningRoute envelopeInMapView:self.mapView];
-        if (planningEnv) {
-            [self.mapView zoomToEnvelope:planningEnv animated:YES];
-        }
-    }
-    else
-    {
-        [self.planningLayer removeAllGraphics];
-    }
-    
-    [self showStopSigns:showPlanning];
-    
-    [self.planningLayer dataChanged];
-}
 
 -(void)layersButtonPressed:(id)sender
 {
     [self presentModalViewController:self.mapContentVC animated:YES];
+}
+
+
+-(IBAction)routeFinishedButtonPressedAction:(id)sender
+{
+    [self routeFinishedButtonPressed:sender];
 }
 
 -(void)routeFinishedButtonPressed:(id)sender
@@ -787,9 +734,8 @@
     }
 }
 
--(void)modifyRouteButtonPressed:(id)sender
-{
-    [self endRouteModeToState:MapAppStatePlanning animated:YES];
+-(IBAction)routeActionButtonPressedAction:(id)sender {
+    [self routeActionButtonPressed:sender];
 }
 
 -(void)routeActionButtonPressed:(id)sender
@@ -917,21 +863,6 @@
         //shortcut planning if user has only sent a destination...
         if (self.planningRoute.stops.numberOfStops == 2 && [self.planningRoute routesFromCurrentLocation]) {
             [self routeButtonPressed:nil];
-        }
-        //go into planning mode
-        else
-        {
-            [self.extendableToolbar showTools:YES fromRect:CGRectZero animated:YES];
-            [self.planningRoute.stops addStopsToLayer:self.planningLayer showCurrentLocation:NO];
-            
-            [self.planningLayer dataChanged];
-            
-            _appState = MapAppStatePlanning;
-            self.routeButton.enabled = [self.planningRoute canRoute];
-            
-            [self showStopSigns:YES];
-            
-            [self.mapView zoomToEnvelope:[self.planningRoute envelopeInMapView:self.mapView] animated:YES];
         }
     }
     //sharing a location
@@ -1220,40 +1151,17 @@
     _appState = (state == MapAppStateRoute) ? MapAppStateSimple : state;
     
     [self.routeOverviewLabel removeFromSuperview];
-    [self setupSearchUx];
+    
+    self.uiTabBar.hidden = YES;
+    self.searchBar.hidden = NO;
     
     //remove all graphics from the route layer
     [self.routeLayer removeAllGraphics];
     [self.routeLayer dataChanged];
-    
-    //show/hide planning tools as appropriate
-    BOOL isPlanning =  (_appState == MapAppStatePlanning);
-    [self.extendableToolbar showTools:isPlanning fromRect:CGRectZero animated:animated];
-    
+        
     //unconditionally remove all graphics from planning layer
     [self.planningLayer removeAllGraphics];
     [self.planningLayer dataChanged];
-
-    //user wants to modify route... Make current route equal to the planning route...
-    //This will blow away old planned route if there was one (i.e if user planned route,
-    //got out of planning, simple routed, then wanted to modify simple route)
-    if(isPlanning)
-    {
-        self.planningRoute = self.currentRoute;
-        
-        //zoom to route
-        AGSEnvelope *planningEnv = [self.planningRoute envelopeInMapView:self.mapView];
-        if (planningEnv) {
-            [self.mapView zoomToEnvelope:planningEnv animated:YES];
-        }
-        
-        //add stops back to layer... removing current location if exists
-        [self.planningRoute.stops addStopsToLayer:self.planningLayer showCurrentLocation:NO];
-        
-        [self showStopSigns:YES];
-        
-        self.routeButton.enabled = [self.planningRoute canRoute];
-    }
 
     self.currentRoute = nil;
     [self showSearchLayer:YES];
@@ -1595,7 +1503,9 @@
     
     self.orgChooserVC = vc;
     
-    [self presentModalViewController:self.orgChooserVC animated:YES];
+    [self.orgChooserVC requestTimerReady];
+    return;
+    
 }
 
 -(void)organizationChooser:(OrganizationChooserViewController *)orgVC didChooseOrganization:(Organization *)organization

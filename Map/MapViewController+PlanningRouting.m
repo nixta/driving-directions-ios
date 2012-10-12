@@ -1,8 +1,3 @@
-//
-//  MapViewController+PlanningRouting.m
-//  Map
-//
-//  Created by Scott Sirowy on 12/20/11.
 /*
  Copyright © 2012 Esri
  
@@ -116,9 +111,6 @@
         [self.stopsView setExpanded:NO animated:YES];
         return;
     }
-    
-    if (_appState != MapAppStatePlanning)
-        return;
     
     //show stops view below map in sign form
     if(_stopsView == nil)

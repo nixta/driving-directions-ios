@@ -1,8 +1,3 @@
-//
-//  RouteSolver.h
-//  Map
-//
-//  Created by Scott Sirowy on 11/23/11.
 /*
  Copyright © 2012 Esri
  
@@ -16,7 +11,6 @@
  See the use restrictions at http://help.arcgis.com/en/sdk/10.0/usageRestrictions.htm
  
  */
-
 /*
  Responsible for getting route parameters, setting them up correctly,
  and solving a route passed in. Uses delegation to pass back information

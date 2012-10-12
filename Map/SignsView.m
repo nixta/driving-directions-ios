@@ -1,8 +1,3 @@
-//
-//  SignContainerView.m
-//  StreetSignTest
-//
-//  Created by Scott Sirowy on 11/18/11.
 /*
  Copyright © 2012 Esri
  
@@ -82,8 +77,21 @@
 
     if( IS_IPHONE_5 )
     {
-        rect = CGRectMake(0, 0, 320, 516);
+        rect = CGRectMake(0, 0, 320, 500);
     }
+    // it can also be done this way
+//    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+//    {
+//        CGSize result = [[UIScreen mainScreen] bounds].size;
+//        if(result.height == 480)
+//        {
+//            // iPhone Classic
+//        }
+//        if(result.height == 568)
+//        {
+//            // iPhone 5
+//        }
+//    }
     
     rect.origin.y = offset;
     
@@ -1052,6 +1060,11 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
     CGPoint location = [longPressGestureRecognizer locationInView:self.scrollView];
     
     switch (longPressGestureRecognizer.state) {
+        case UIGestureRecognizerStatePossible:
+        case UIGestureRecognizerStateFailed:
+        case UIGestureRecognizerStateCancelled:
+            break;
+            
         case UIGestureRecognizerStateBegan:
             self.heldSign = bsv;
             _heldIndex = _originalHeldIndex = [self frameIndexForTileIndex:self.heldSign.index];
@@ -1157,6 +1170,8 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
             
             self.heldSign = nil;
             break;
+            
+            
         
     }
 }

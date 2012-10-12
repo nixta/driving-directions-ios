@@ -1,8 +1,3 @@
-//
-//  MapViewController.h
-//  Map
-//
-//  Created by Scott Sirowy on 8/30/11.
 /*
  Copyright © 2012 Esri
  
@@ -61,7 +56,7 @@
                                                     AGSWebMapDelegate, OrganizationDelegate, LocationCalloutDelegate, 
                                                     UIActionSheetDelegate, ChangeBasemapsDelegate, RouteSolverDelegate,
                                                     AGSGPSInfoTemplateDelegate, SignsViewDelegate, MFMailComposeViewControllerDelegate, 
-                                                    OrganizationChooserDelegate, DrawableContainerDelegate, routingDelegate>
+                                                    OrganizationChooserDelegate, DrawableContainerDelegate, routingDelegate, UISearchBarDelegate>
 {
     /*Ux IB Elements */
     AGSMapView                          *_mapView;
@@ -209,6 +204,9 @@
 @property (nonatomic, copy) NSString                                *callbackString;
 
 @property (nonatomic, strong) UIButton                              *routingCancelButton;
+
+@property (nonatomic,strong) IBOutlet UISearchBar                   *uiSearchBar;
+@property (nonatomic,strong) IBOutlet UIToolbar                      *uiTabBar;
 
 @property (nonatomic, unsafe_unretained) id<LocationCalloutDelegate>   delegate;
 

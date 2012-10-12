@@ -1,8 +1,3 @@
-//
-//  StopSignView.m
-//  Map
-//
-//  Created by Scott Sirowy on 12/28/11.
 /*
  Copyright © 2012 Esri
  

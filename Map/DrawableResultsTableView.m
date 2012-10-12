@@ -1,8 +1,3 @@
-//
-//  DrawableResultsTableView.m
-//  Map
-//
-//  Created by Scott Sirowy on 11/30/11.
 /*
  Copyright © 2012 Esri
  

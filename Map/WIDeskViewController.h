@@ -1,6 +1,4 @@
 /*
- WIViewController.h
- Westerville Inspection Demo -- Esri 2012 Dev Summit
  Copyright © 2012 Esri
  
  All rights reserved under the copyright laws of the United States

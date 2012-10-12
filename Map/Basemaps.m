@@ -1,7 +1,5 @@
 /*
- Basemaps.m
- ArcGISMobile
- COPYRIGHT 2011 ESRI
+ Copyright © 2012 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -138,12 +136,12 @@
 // in getBaseMaps.
 //
 - (void) getESRIGroupID
-{
-	
+{	
     NSString *queryString = @"title:\"ArcGIS Online Basemaps\" AND owner:esri";  //mas.organization.basemapGalleryGroupQuery;
     
     NSString* urlString = [NSString stringWithFormat:@"community/groups?q=%@&f=json", queryString];
     
+    _app.appSettings = self.app.appSettings;
     ArcGISOnlineConnection *connection = _app.appSettings.arcGISOnlineConnection;
 	
     //NSLog(@"connection url: %@", urlString);

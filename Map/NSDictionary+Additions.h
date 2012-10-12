@@ -1,8 +1,3 @@
-//
-//  NSDictionary+Additions.h
-//  Map
-//
-//  Created by Scott Sirowy on 9/12/11.
 /*
  Copyright © 2012 Esri
  

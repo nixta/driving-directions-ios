@@ -1,8 +1,3 @@
-//
-//  MapLayerInfo+AppAdditions.m
-//  ArcGISMobile
-//
-//  Created by Mark Dostal on 1/25/11.
 /*
  Copyright © 2012 Esri
  
@@ -20,11 +15,6 @@
 #import "MapLayerInfo+AppAdditions.h"
 #import <ArcGIS/ArcGIS.h>
 
-@interface AGSWebMapLayerInfo ()
-
--(AGSMapServiceInfo *)getMSI:(AGSMapView *)mapView;
-
-@end
 
 @implementation AGSWebMapLayerInfo (AppAdditions)
 

@@ -1,8 +1,3 @@
-//
-//  MapContentViewController.h
-//  Map
-//
-//  Created by Scott Sirowy on 8/31/11.
 /*
  Copyright © 2012 Esri
  

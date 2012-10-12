@@ -1,8 +1,3 @@
-//
-//  RecentSearches.m
-//  Map
-//
-//  Created by Scott Sirowy on 10/21/11.
 /*
  Copyright © 2012 Esri
  
@@ -22,7 +17,7 @@
 
 @interface DrawableList () 
 
-@property (nonatomic, retain, readwrite) NSMutableArray  *items;
+@property (nonatomic, strong, readwrite) NSMutableArray  *items;
 
 @end
 

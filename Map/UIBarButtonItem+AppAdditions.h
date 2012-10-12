@@ -1,8 +1,3 @@
-//
-//  UIBarButtonItem+AppAdditions.h
-//  Map
-//
-//  Created by Scott Sirowy on 12/6/11.
 /*
  Copyright © 2012 Esri
  
@@ -16,6 +11,7 @@
  See the use restrictions at http://help.arcgis.com/en/sdk/10.0/usageRestrictions.htm
  
  */
+
 #import <UIKit/UIKit.h>
 
 @interface UIBarButtonItem (AppAdditions)

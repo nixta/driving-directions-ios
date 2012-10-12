@@ -1,8 +1,3 @@
-//
-//  MapViewController+MapTapping.m
-//  Map
-//
-//  Created by Scott Sirowy on 9/14/11.
 /*
  Copyright © 2012 Esri
  
@@ -34,13 +29,7 @@
 #import "ArcGISMobileConfig.h"
 #import "ArcGISAppDelegate.h"
 
-@interface MapViewController () 
 
--(void)removeGPSObserver;
--(void)resetForNewTap;
--(void)populatePopupInfosUsingGraphics:(NSDictionary *)graphics;
--(BOOL)startIdentifyOnMapView:(AGSMapView *)mapView screenPoint:(CGPoint)screen mapPoint:(AGSPoint *)mappoint graphics:(NSDictionary *)graphics;
-@end
 
 @implementation MapViewController (MapViewController_MapTapping)
 
@@ -443,7 +432,16 @@
     return ([app canOpenURL:[NSURL URLWithString:@"tel:+44-1234-567890"]]);
 }
 
+-(void)wantBookmarkForLocation:(Location *)location
+{
+    return;
+}
 
+
+-(void)makePhoneCallForContactLocation:(ContactLocationBookmark *)location
+{
+    return;
+}
 
 
 

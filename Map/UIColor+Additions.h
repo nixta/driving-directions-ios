@@ -1,8 +1,3 @@
-//
-//  UIColor+Additions.h
-//  ArcGISMobile
-//
-//  Created by ryan3374 on 11/11/10.
 /*
  Copyright © 2012 Esri
  

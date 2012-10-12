@@ -1,8 +1,3 @@
-//
-//  LocationCalloutView.m
-//  Map
-//
-//  Created by Scott Sirowy on 11/21/11.
 /*
  Copyright © 2012 Esri
  
@@ -61,15 +56,10 @@
 @synthesize addressString = _addressString;
 @synthesize delegate = _delegate;
 
-- (void)dealloc {
-    
-    
-    
 
+- (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kLocationUpdatedAddress object:self.location];
-    self.location = nil;
-    
-    
+    self.location = nil;    
 }
 
 -(id)initWithLocation:(Location *)location calloutType:(MapAppState)aType
@@ -123,13 +113,6 @@
         {
             scArray = [NSArray arrayWithObjects:@"Go here", nil];
             scSelector = @selector(directMeHereButtonPressed:);
-        }
-        else if(_calloutType == MapAppStatePlanning)
-        {
-            //scArray = [NSArray arrayWithObjects:@"Start", @"Transit", @"Destination", nil];
-            //scArray = [NSArray arrayWithObjects:@"Start", @"Stop", @"Finish", nil];
-            scArray = [NSArray arrayWithObjects:@"Start", @"Stop", @"Destination", nil];
-            scSelector = @selector(locationStopChanged:);
         }
             
         ToggleSegmentedControl *sc = [[ToggleSegmentedControl alloc] initWithItems:scArray];

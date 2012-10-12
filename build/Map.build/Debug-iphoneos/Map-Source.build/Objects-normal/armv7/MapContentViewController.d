@@ -181,7 +181,6 @@ dependencies: \
   /Users/albe5259/Projects/navigator/Map/Organization.h \
   /Users/albe5259/Projects/navigator/Map/MapLegendViewController.h \
   /Users/albe5259/Projects/navigator/Map/UIColor+Additions.h \
-  /Users/albe5259/Projects/navigator/Map/UIToolbar+MapAdditions.h \
   /Users/albe5259/Projects/navigator/Map/BasemapsTableViewCell.h \
   /Users/albe5259/Projects/navigator/Map/SettingsViewController.h \
   /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.h \

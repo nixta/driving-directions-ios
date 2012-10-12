@@ -1,8 +1,3 @@
-//
-//  DirectionsList.h
-//  Map
-//
-//  Created by Scott Sirowy on 9/23/11.
 /*
  Copyright © 2012 Esri
  

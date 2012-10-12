@@ -1,9 +1,3 @@
-//
-//  MapAppDelegate.m
-//  Map
-//
-//  Created by Scott Sirowy on 8/30/11.
-//  Copyright 2011 ESRI. All rights reserved.
 /*
  Copyright © 2012 Esri
  
@@ -20,7 +14,6 @@
 
 #import "MapAppDelegate.h"
 #import "MapViewController.h"
-#import "KeychainWrapper.h"
 #import "MapAppSettings.h"
 #import "MapShareUtility.h"
 #import "ArcGISMobileConfig.h"
@@ -45,7 +38,7 @@
 
 @implementation MapAppDelegate
 
-@synthesize keychainWrapper = _keychainWrapper;
+
 @synthesize networkAlertView = _networkAlertView;
 @synthesize organizationOp = _organizationOp;
 @synthesize testOrganizations = _testOrganizations;
@@ -110,7 +103,7 @@
 {	
     [self loadSplashScreen];
     
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    //[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
     
@@ -140,19 +133,7 @@
 	return YES;
 }
 
-#pragma mark -
-#pragma mark Keychain stuff
 
-//lazy load keychain wrapper
-
--(KeychainWrapper *)keychainWrapper
-{
-	if (_keychainWrapper == nil) {
-		self.keychainWrapper = [[KeychainWrapper alloc] init];
-	}
-	
-	return _keychainWrapper;
-}
 
 #pragma mark -
 #pragma mark NetworkConnection

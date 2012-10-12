@@ -25,34 +25,16 @@
 #import "MapAppSettings.h"
 #import "UserSearchResults.h"
 #import "DrawableResultsTableView.h"
-#import "ExtendableToolbar.h"
 #import "UIBarButtonItem+AppAdditions.h"
 #import "ArcGISAppDelegate.h"
 #import "ArcGISMobileConfig.h"
 
 #define kPointTargetScale 10000.0
 
-@interface MapViewController () 
-
-//@synthesize locator = _locator;
-
--(void)removeOldResults;
-
--(void)startSearchProcessAnimated:(BOOL)animated;
--(void)endSearchProcessAnimated:(BOOL)animated;
--(void)setupSearchForMapAnimated:(BOOL)animated;
--(void)setupSearchForListAnimated:(BOOL)animated;
-
--(void)showMapListButton:(BOOL)show withPlanningButton:(BOOL)showPlanningButton animated:(BOOL)animated;
--(void)showResultsList:(BOOL)show;
-
--(void)initalizeSearchResultsWithLocation:(Location *)location;
-
--(void)showCurrentSearchResultWithZoom:(BOOL)zoom;
-
-@end
 
 @implementation MapViewController (Search)
+
+@dynamic locator;
 
 -(void)searchFinishedExecuting
 {
@@ -194,10 +176,10 @@
     return YES;
 }
 
--(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
+/*-(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
 {      
     [self setSearchState:MapSearchStateList withKeyboard:YES animated:YES];
-}
+}  */
 
 -(void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
 {
@@ -208,9 +190,7 @@
 {
     [self.searchBar resignFirstResponder];
     
-    //only show bookmarks button if there is nothing to show
-    //self.searchBar.showsBookmarkButton = (self.searchBar.text.length == 0);
-    
+       
     Search *newSearch = [[Search alloc] initWithName:searchBar.text];
     [self.mapAppSettings addRecentSearch:newSearch onlyUniqueEntries:YES];
     
@@ -296,6 +276,7 @@
     
     //depending on whether keyboard is up or not, make sure tableview fits properly
     SEL tableViewSel = (keyboard) ? @selector(minimize) : @selector(maximize);
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     [self.resultsTableView performSelector:tableViewSel];
 }
 
@@ -304,10 +285,6 @@
     //should be set to no search before being called
     if(_searchState != MapSearchStateDefault)
         return;
-
-    //show planning tools again if we have to
-    if(_appState == MapAppStatePlanning)
-        [self.extendableToolbar showTools:YES fromRect:CGRectZero animated:YES];
     
     [self.searchLayer removeAllGraphics];
     [self.searchLayer dataChanged];
@@ -315,8 +292,9 @@
     //reset back to old imaget
     [self.mapListButton setImage:[UIImage imageNamed:@"Map.png"]];
     
-    //don't show buttons anumore
-    [self showMapListButton:NO withPlanningButton:YES animated:animated];
+    // Al Delete
+//    //don't show buttons anumore
+//    [self showMapListButton:NO withPlanningButton:YES animated:animated];
     
     //Kill keyboard if up
     [self.searchBar resignFirstResponder];
@@ -338,12 +316,31 @@
     self.localFilteredResults = nil;
 }
 
--(void)setupSearchForListAnimated:(BOOL)animated
-{    
-    [self.extendableToolbar showTools:NO fromRect:CGRectZero animated:YES];
+- (void)setSearchIcon {
+   
+//    UITextField *searchField = nil;
+//    for (UIView *subview in self.searchBar.subviews) {
+//        if ([subview isKindOfClass:[UITextField class]]) {
+//            searchField = (UITextField *)subview;
+//            break;
+//        }
+//    }
+//    
+//    if (searchField) {
+//        UIImage *image = [UIImage imageNamed: @"Map@2x.png"];
+//        UIImageView *iView = [[UIImageView alloc] initWithImage:image];
+//        searchField.rightView = iView;
+//       
+//    }
     
-    //make room for button by moving search bar over
-    [self showMapListButton:YES withPlanningButton:NO animated:animated];
+    [self.searchBar setShowsCancelButton:YES];
+    [self.searchBar setShowsSearchResultsButton:NO];
+}
+
+-(void)setupSearchForListAnimated:(BOOL)animated
+{
+   
+    [self setSearchIcon];
     
     //if we already have search items, show them in list
     if ([self.searchResults totalNumberOfItems] > 0) {
@@ -364,11 +361,8 @@
     [self.searchBar resignFirstResponder];
     [self showResultsList:NO];
     
-    //show planning tools again if we have to
-    if(_appState == MapAppStatePlanning)
-        [self.extendableToolbar showTools:YES fromRect:CGRectZero animated:YES];
-    
-    [self showMapListButton:YES withPlanningButton:YES animated:YES];
+    // Al Delete
+    //[self showMapListButton:YES withPlanningButton:YES animated:YES];
     [self.mapListButton setImage:[UIImage imageNamed:@"list.png"]];
     
     //self.searchBar.showsBookmarkButton = YES;
@@ -384,50 +378,15 @@
     {
         if(self.resultsTableView.superview == nil)
         {
-            [self.view insertSubview:self.resultsTableView belowSubview:self.extendableToolbar];
+            //[self.view insertSubview:self.resultsTableView belowSubview:self.extendableToolbar];
+            [self.view addSubview:self.resultsTableView];
         }
         
         [self.resultsTableView reloadData];
     }
 }
 
-//Add the Search Ux onto the screen
--(void)setupSearchUx
-{    
-    UIBarButtonItem *flexibleSpace = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace 
-                                                                                   target:nil 
-                                                                                   action:nil];
-    NSArray *items = [NSArray arrayWithObjects:self.planningButton, flexibleSpace, self.mapListButton, nil];
-    self.extendableToolbar.items = items;
-    
-    if(self.searchBar.superview == nil)
-        [self.extendableToolbar.toolsView addSubview:self.searchBar];
-}
 
--(void)showMapListButton:(BOOL)show withPlanningButton:(BOOL)showPlanningButton animated:(BOOL)animated
-{
-    CGFloat widthOfButton = [UIBarButtonItem width];
-    
-    //don't animate the width as it looks weird
-    CGRect sbRect = self.searchBar.frame;
-    sbRect.size.width = self.view.frame.size.width - (show*widthOfButton + showPlanningButton*widthOfButton);
-    self.searchBar.frame = sbRect;
-    
-    sbRect.origin.x = (showPlanningButton) ? widthOfButton : 0;
-    
-    if(animated)
-    {
-        [UIView animateWithDuration:.1 animations:^
-        {
-            self.searchBar.frame = sbRect;
-        }
-         ];
-    }
-    else
-    {
-        self.searchBar.frame = sbRect;
-    }
-}
 
 -(void)removeOldResults
 {
