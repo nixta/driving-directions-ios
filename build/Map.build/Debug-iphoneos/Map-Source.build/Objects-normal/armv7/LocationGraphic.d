@@ -167,4 +167,5 @@ dependencies: /Users/albe5259/Projects/navigator/Map/LocationGraphic.m \
   /Users/albe5259/Projects/navigator/Map/Location.h \
   /Users/albe5259/Projects/navigator/Map/NamedGeometry.h \
   /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
-  /Users/albe5259/Projects/navigator/Map/GeocodeService.h
+  /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
+  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h

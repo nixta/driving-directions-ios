@@ -172,5 +172,4 @@ dependencies: /Users/albe5259/Projects/navigator/Map/Basemaps.m \
   /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
   /Users/albe5259/Projects/navigator/Map/MapAppSettings.h \
   /Users/albe5259/Projects/navigator/Map/DrawableContainerDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
-  /Users/albe5259/Projects/navigator/Map/Organization.h
+  /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h

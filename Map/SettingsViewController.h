@@ -24,8 +24,7 @@
 
 @interface SettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
-    UITableView     *_tableView;
-    MapAppSettings  *appSettings;   
+    UITableView     *_tableView;       
 }
 
 @property (nonatomic, strong) IBOutlet UITableView  *tableView;

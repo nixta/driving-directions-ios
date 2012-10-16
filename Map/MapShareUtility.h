@@ -33,7 +33,7 @@ typedef enum {
 
 @interface MapShareUtility : NSObject
 {
-    MapShareInterfaceType   shareType;
+    
     
     Route                   *_route;
     Location                *_shareLocation;

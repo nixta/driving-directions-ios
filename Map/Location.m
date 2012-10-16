@@ -117,6 +117,7 @@
     {
         MapAppDelegate *app = (MapAppDelegate *)[[UIApplication sharedApplication] delegate];
         MapAppSettings *settings = (MapAppSettings *)app.appSettings;
+        NSLog(@"extent of settings %@",settings.savedExtent);
         
         self.geocodeService = [[GeocodeService alloc] init];
         self.geocodeService.delegate = self;

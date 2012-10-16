@@ -170,5 +170,4 @@ dependencies: \
   /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.h \
   /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
   /Users/albe5259/Projects/navigator/Map/AppSettings.h \
-  /Users/albe5259/Projects/navigator/Map/NSDictionary+Additions.h \
-  /Users/albe5259/Projects/navigator/Map/OnlineApplication.h
+  /Users/albe5259/Projects/navigator/Map/NSDictionary+Additions.h

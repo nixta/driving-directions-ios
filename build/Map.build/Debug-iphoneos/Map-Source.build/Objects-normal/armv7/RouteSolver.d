@@ -169,6 +169,7 @@ dependencies: /Users/albe5259/Projects/navigator/Map/RouteSolver.m \
   /Users/albe5259/Projects/navigator/Map/NamedGeometry.h \
   /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
   /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
+  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
   /Users/albe5259/Projects/navigator/Map/DrawableContainerDelegate.h \
   /Users/albe5259/Projects/navigator/Map/DirectionsList.h \
   /Users/albe5259/Projects/navigator/Map/DrawableList.h \
