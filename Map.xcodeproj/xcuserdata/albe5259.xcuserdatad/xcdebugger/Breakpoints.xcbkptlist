@@ -125,11 +125,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/MapViewController.m"
-         timestampString = "372030588.67119"
+         timestampString = "372115535.811443"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1147"
-         endingLineNumber = "1147"
+         startingLineNumber = "1152"
+         endingLineNumber = "1152"
          landmarkName = "-routeSolverDidFailToInitialize:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -138,11 +138,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/MapViewController.m"
-         timestampString = "372030588.67119"
+         timestampString = "372115535.811443"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1152"
-         endingLineNumber = "1152"
+         startingLineNumber = "1157"
+         endingLineNumber = "1157"
          landmarkName = "-routeSolver:didSolveRoute:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -151,11 +151,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/MapViewController.m"
-         timestampString = "372030588.67119"
+         timestampString = "372115535.811443"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "994"
-         endingLineNumber = "994"
+         startingLineNumber = "999"
+         endingLineNumber = "999"
          landmarkName = "-webMap:didFailToLoadWithError:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -274,32 +274,6 @@
          startingLineNumber = "134"
          endingLineNumber = "134"
          landmarkName = "-viewDidUnload"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/MapViewController.m"
-         timestampString = "372098379.819719"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "878"
-         endingLineNumber = "878"
-         landmarkName = "-basemapsViewController:wantsToChangeToNewBasemap:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/MapViewController.m"
-         timestampString = "372098430.850068"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "904"
-         endingLineNumber = "904"
-         landmarkName = "-setWebMap:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

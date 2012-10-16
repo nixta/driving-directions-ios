@@ -897,11 +897,16 @@
 
 -(void)organization:(Organization *)org didDownloadWebmap:(AGSWebMap *)webmap
 {    
-    [self setWebMap:webmap];
+    //[self setWebMap:webmap];
+    [self setWebMap:self.customBasemap];
 }
 
 - (void) setWebMap:(AGSWebMap*)webmap
 {
+    // Al The customBasemap is the one that if has been assigned has the new basemap to use
+    if ( self.customBasemap != nil)
+        webmap = self.customBasemap;
+    
     if (_changingBasemap) {
         [self.webmap openIntoMapView:self.mapView withAlternateBaseMap:webmap.baseMap];
     }
