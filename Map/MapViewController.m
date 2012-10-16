@@ -55,6 +55,8 @@
 
 #define kPrintWithIcons        1
 
+#define IS_IPHONE_5 ( fabs( ( double )[ [ UIScreen mainScreen ] bounds ].size.height - ( double )568 ) < DBL_EPSILON )
+
 @interface MapViewController () 
 
 -(void)toggleLocateMeAutoPan;
@@ -143,6 +145,11 @@
     self.webmap.delegate = self;
     
     [self.mapView.gps start];
+    
+    if ( IS_IPHONE_5)
+    {
+        self.logo.transform = CGAffineTransformMakeTranslation(0, 90);
+    }
 }
 
 #pragma mark WebMapDelegate

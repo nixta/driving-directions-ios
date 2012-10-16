@@ -60,11 +60,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/MapViewController.m"
-         timestampString = "372009112.414552"
+         timestampString = "372116994.398958"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "638"
-         endingLineNumber = "638"
+         startingLineNumber = "645"
+         endingLineNumber = "645"
          landmarkName = "-setupRoutingUx"
          landmarkType = "5">
       </FileBreakpoint>
@@ -112,11 +112,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/MapViewController.m"
-         timestampString = "372009112.414552"
+         timestampString = "372116854.695714"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "107"
-         endingLineNumber = "107"
+         startingLineNumber = "109"
+         endingLineNumber = "109"
          landmarkName = "-didReceiveMemoryWarning"
          landmarkType = "5">
       </FileBreakpoint>
@@ -125,37 +125,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Map/MapViewController.m"
-         timestampString = "372115535.811443"
+         timestampString = "372116994.398958"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1152"
-         endingLineNumber = "1152"
-         landmarkName = "-routeSolverDidFailToInitialize:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/MapViewController.m"
-         timestampString = "372115535.811443"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1157"
-         endingLineNumber = "1157"
-         landmarkName = "-routeSolver:didSolveRoute:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/MapViewController.m"
-         timestampString = "372115535.811443"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "999"
-         endingLineNumber = "999"
+         startingLineNumber = "1006"
+         endingLineNumber = "1006"
          landmarkName = "-webMap:didFailToLoadWithError:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -196,71 +170,6 @@
          startingLineNumber = "461"
          endingLineNumber = "461"
          landmarkName = "-geocodeService:operation:didFindPlace:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/MapViewController+Search.m"
-         timestampString = "372027104.819769"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "427"
-         endingLineNumber = "427"
-         landmarkName = "-geocodeService:operation:didFindLocationsForAddress:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/GeocodeService.m"
-         timestampString = "372028022.448021"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "51"
-         endingLineNumber = "51"
-         landmarkName = "-findAddressCandidates:withSpatialReference:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/GeocodeService.m"
-         timestampString = "372030842.916777"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "124"
-         endingLineNumber = "124"
-         landmarkName = "-requestOp:completedWithResultsGeocoder:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/GeocodeService.m"
-         timestampString = "372030851.248657"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "106"
-         endingLineNumber = "106"
-         landmarkName = "-findAddressCandidates:withSpatialReference:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "Map/GeocodeService.m"
-         timestampString = "372031084.344442"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "145"
-         endingLineNumber = "145"
-         landmarkName = "-locator:operation:didFindLocationsForAddress:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint

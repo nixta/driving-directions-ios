@@ -210,6 +210,8 @@
 
 @property (nonatomic, unsafe_unretained) id<LocationCalloutDelegate>   delegate;
 
+@property (nonatomic, strong) IBOutlet UIImageView                  *logo;
+
 -(IBAction)locateMeButtonPressed:(id)sender;
 -(IBAction)layersButtonPressed:(id)sender;
 
