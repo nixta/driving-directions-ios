@@ -21,7 +21,6 @@
 #import "ArcGISMobileConfig.h"
 
 #import "MapAppSettings.h"
-#import "Organization.h"
 
 //anonymous helper methods
 @interface Basemaps ()
@@ -129,7 +128,7 @@
     NSString* urlString = [NSString stringWithFormat:@"community/groups?q=%@&f=json", queryString];
     
     _app.appSettings = self.app.appSettings;
-    ArcGISOnlineConnection *connection = _app.appSettings.arcGISOnlineConnection;
+    ArcGISOnlineConnection *connection = [[ArcGISOnlineConnection alloc] init]; 
 	
     //NSLog(@"connection url: %@", urlString);
     
@@ -187,8 +186,8 @@
 	NSString *urlString = 
 	[NSString stringWithFormat:@"search?q=group:%@ AND type:'web map'&sortField=name&sortOrder=desc&num=50&f=json", _groupID];
     
-    ArcGISOnlineConnection *connection = self.app.appSettings.arcGISOnlineConnection;
-    
+    ArcGISOnlineConnection *connection = [[ArcGISOnlineConnection alloc] init];
+       
 	//create the url request, complete with token and referer, if signed in
 	NSURLRequest *contentReq = [connection requestForUrlString:urlString withHost:nil];
     

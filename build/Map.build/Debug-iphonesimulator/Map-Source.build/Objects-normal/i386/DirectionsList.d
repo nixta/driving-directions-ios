@@ -173,4 +173,5 @@ dependencies: /Users/albe5259/Projects/navigator/Map/DirectionsList.m \
   /Users/albe5259/Projects/navigator/Map/NSString+NSString_Additions.h \
   /Users/albe5259/Projects/navigator/Map/StopsList.h \
   /Users/albe5259/Projects/navigator/Map/Location.h \
-  /Users/albe5259/Projects/navigator/Map/GeocodeService.h
+  /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
+  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h

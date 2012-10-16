@@ -191,8 +191,8 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
 
 + (NSURLConnection *)generateURLConnection:(NSString *)urlString withDelegate:(id)delegate withHost:(NSString *)host
 {
-    ArcGISAppDelegate *_app = (ArcGISAppDelegate *)[UIApplication sharedApplication].delegate;
-    ArcGISOnlineConnection *connection = _app.appSettings.arcGISOnlineConnection;
+    
+    ArcGISOnlineConnection *connection = [[ArcGISOnlineConnection alloc] init];
 	
     //NSLog(@"connection url: %@", urlString);
     
@@ -210,8 +210,8 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
 +(NSDictionary *)getDataFromUrl:(NSString *)urlString
 {
     //append token, if necessary
-    ArcGISAppDelegate *_app = (ArcGISAppDelegate *)[UIApplication sharedApplication].delegate;
-    ArcGISOnlineConnection *connection = _app.appSettings.arcGISOnlineConnection;
+   
+    ArcGISOnlineConnection *connection = [[ArcGISOnlineConnection alloc] init];
     
     NSURLRequest *request = [connection requestForUrlString:urlString withHost:nil];
     

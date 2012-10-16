@@ -16,8 +16,7 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import "WIDeskViewController.h"
-#import "Organization.h"
-
+#import "ArcGISMobileConfig.h"
 
 
 @implementation WIDeskViewController

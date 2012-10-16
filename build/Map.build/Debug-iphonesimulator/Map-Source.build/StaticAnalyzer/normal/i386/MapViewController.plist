@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+ <key>files</key>
+ <array>
+  <string>/Users/albe5259/Projects/navigator/Map/MapViewController.h</string>
+ </array>
+ <key>diagnostics</key>
+ <array>
+  <dict>
+   <key>path</key>
+   <array>
+    <dict>
+     <key>kind</key><string>event</string>
+     <key>location</key>
+     <dict>
+      <key>line</key><integer>132</integer>
+      <key>col</key><integer>41</integer>
+      <key>file</key><integer>0</integer>
+     </dict>
+     <key>ranges</key>
+     <array>
+       <array>
+        <dict>
+         <key>line</key><integer>132</integer>
+         <key>col</key><integer>41</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+        <dict>
+         <key>line</key><integer>132</integer>
+         <key>col</key><integer>59</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+       </array>
+     </array>
+     <key>depth</key><integer>0</integer>
+     <key>extended_message</key>
+     <string>Instance variable &apos;_searchesInProgress&apos; in class &apos;MapViewController&apos; is never used by the methods in its @implementation (although it may be used by category methods)</string>
+     <key>message</key>
+<string>Instance variable &apos;_searchesInProgress&apos; in class &apos;MapViewController&apos; is never used by the methods in its @implementation (although it may be used by category methods)</string>
+    </dict>
+   </array>
+   <key>description</key><string>Instance variable &apos;_searchesInProgress&apos; in class &apos;MapViewController&apos; is never used by the methods in its @implementation (although it may be used by category methods)</string>
+   <key>category</key><string>Optimization</string>
+   <key>type</key><string>Unused instance variable</string>
+  <key>location</key>
+  <dict>
+   <key>line</key><integer>132</integer>
+   <key>col</key><integer>41</integer>
+   <key>file</key><integer>0</integer>
+  </dict>
+  </dict>
+  <dict>
+   <key>path</key>
+   <array>
+    <dict>
+     <key>kind</key><string>event</string>
+     <key>location</key>
+     <dict>
+      <key>line</key><integer>133</integer>
+      <key>col</key><integer>41</integer>
+      <key>file</key><integer>0</integer>
+     </dict>
+     <key>ranges</key>
+     <array>
+       <array>
+        <dict>
+         <key>line</key><integer>133</integer>
+         <key>col</key><integer>41</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+        <dict>
+         <key>line</key><integer>133</integer>
+         <key>col</key><integer>65</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+       </array>
+     </array>
+     <key>depth</key><integer>0</integer>
+     <key>extended_message</key>
+     <string>Instance variable &apos;_currentSearchResultIndex&apos; in class &apos;MapViewController&apos; is never used by the methods in its @implementation (although it may be used by category methods)</string>
+     <key>message</key>
+<string>Instance variable &apos;_currentSearchResultIndex&apos; in class &apos;MapViewController&apos; is never used by the methods in its @implementation (although it may be used by category methods)</string>
+    </dict>
+   </array>
+   <key>description</key><string>Instance variable &apos;_currentSearchResultIndex&apos; in class &apos;MapViewController&apos; is never used by the methods in its @implementation (although it may be used by category methods)</string>
+   <key>category</key><string>Optimization</string>
+   <key>type</key><string>Unused instance variable</string>
+  <key>location</key>
+  <dict>
+   <key>line</key><integer>133</integer>
+   <key>col</key><integer>41</integer>
+   <key>file</key><integer>0</integer>
+  </dict>
+  </dict>
+  <dict>
+   <key>path</key>
+   <array>
+    <dict>
+     <key>kind</key><string>event</string>
+     <key>location</key>
+     <dict>
+      <key>line</key><integer>136</integer>
+      <key>col</key><integer>41</integer>
+      <key>file</key><integer>0</integer>
+     </dict>
+     <key>ranges</key>
+     <array>
+       <array>
+        <dict>
+         <key>line</key><integer>136</integer>
+         <key>col</key><integer>41</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+        <dict>
+         <key>line</key><integer>136</integer>
+         <key>col</key><integer>53</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+       </array>
+     </array>
+     <key>depth</key><integer>0</integer>
+     <key>extended_message</key>
+     <string>Instance variable &apos;_calloutShown&apos; in class &apos;MapViewController&apos; is never used by the methods in its @implementation (although it may be used by category methods)</string>
+     <key>message</key>
+<string>Instance variable &apos;_calloutShown&apos; in class &apos;MapViewController&apos; is never used by the methods in its @implementation (although it may be used by category methods)</string>
+    </dict>
+   </array>
+   <key>description</key><string>Instance variable &apos;_calloutShown&apos; in class &apos;MapViewController&apos; is never used by the methods in its @implementation (although it may be used by category methods)</string>
+   <key>category</key><string>Optimization</string>
+   <key>type</key><string>Unused instance variable</string>
+  <key>location</key>
+  <dict>
+   <key>line</key><integer>136</integer>
+   <key>col</key><integer>41</integer>
+   <key>file</key><integer>0</integer>
+  </dict>
+  </dict>
+  <dict>
+   <key>path</key>
+   <array>
+    <dict>
+     <key>kind</key><string>event</string>
+     <key>location</key>
+     <dict>
+      <key>line</key><integer>137</integer>
+      <key>col</key><integer>41</integer>
+      <key>file</key><integer>0</integer>
+     </dict>
+     <key>ranges</key>
+     <array>
+       <array>
+        <dict>
+         <key>line</key><integer>137</integer>
+         <key>col</key><integer>41</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+        <dict>
+         <key>line</key><integer>137</integer>
+         <key>col</key><integer>60</integer>
+         <key>file</key><integer>0</integer>
+        </dict>
+       </array>
+     </array>
+     <key>depth</key><integer>0</integer>
+     <key>extended_message</key>
+     <string>Instance variable &apos;_isShowingGPSCallout&apos; in class &apos;MapViewController&apos; is never used by the methods in its @implementation (although it may be used by category methods)</string>
+     <key>message</key>
+<string>Instance variable &apos;_isShowingGPSCallout&apos; in class &apos;MapViewController&apos; is never used by the methods in its @implementation (although it may be used by category methods)</string>
+    </dict>
+   </array>
+   <key>description</key><string>Instance variable &apos;_isShowingGPSCallout&apos; in class &apos;MapViewController&apos; is never used by the methods in its @implementation (although it may be used by category methods)</string>
+   <key>category</key><string>Optimization</string>
+   <key>type</key><string>Unused instance variable</string>
+  <key>location</key>
+  <dict>
+   <key>line</key><integer>137</integer>
+   <key>col</key><integer>41</integer>
+   <key>file</key><integer>0</integer>
+  </dict>
+  </dict>
+ </array>
+</dict>
+</plist>

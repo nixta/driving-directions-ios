@@ -194,7 +194,7 @@
             if (![layer isKindOfClass:[AGSFeatureLayer class]])
                 continue;
             
-            AGSPopupInfo *layerPopup =  [[self mapAppSettings].organization.webmap popupInfoForFeatureLayer:(AGSFeatureLayer *)layer];
+            AGSPopupInfo *layerPopup =  [self.webmap popupInfoForFeatureLayer:(AGSFeatureLayer *)layer];
             
             //only add stuff if there is a popup for the layer
             if (layerPopup) {

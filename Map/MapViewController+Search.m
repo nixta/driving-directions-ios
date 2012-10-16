@@ -34,7 +34,8 @@
 
 @implementation MapViewController (Search)
 
-@dynamic locator;
+//@dynamic locator;
+
 
 -(void)searchFinishedExecuting
 {
@@ -190,6 +191,7 @@
 {
     [self.searchBar resignFirstResponder];
     
+    ArcGISMobileConfig *mobileConfig = [ArcGISMobileConfig defaultConfig];
        
     Search *newSearch = [[Search alloc] initWithName:searchBar.text];
     [self.mapAppSettings addRecentSearch:newSearch onlyUniqueEntries:YES];
@@ -205,8 +207,8 @@
     {
         self.geocodeService = [[GeocodeService alloc] init];
         self.geocodeService.delegate = self;
-        self.geocodeService.addressLocatorString = self.mapAppSettings.organization.locatorUrlString;
-        self.geocodeService.useSingleLine = (self.mapAppSettings.organization.locatorUrlString == nil);
+        self.geocodeService.addressLocatorString = mobileConfig.locatorServiceUrl;
+        self.geocodeService.useSingleLine = YES;// (mobileConfig.locatorServiceUrl == nil);
     }
     
     [self removeOldResults];

@@ -19,7 +19,6 @@
 
 #import "MapAppDelegate.h"
 #import "MapAppSettings.h"
-#import "Organization.h"
 #import "MapStates.h"
 
 
@@ -122,8 +121,13 @@
         self.geocodeService = [[GeocodeService alloc] init];
         self.geocodeService.delegate = self;
 
-        self.geocodeService.addressLocatorString = settings.organization.locatorUrlString;
-        self.geocodeService.useSingleLine = (settings.organization.locatorUrlString == nil);
+        if (app.config == nil)
+        {
+            app.config = [[ArcGISMobileConfig alloc] init];
+        }
+        
+        self.geocodeService.addressLocatorString = app.config.locatorServiceUrl;
+        self.geocodeService.useSingleLine = YES; // (app.config.locatorServiceUrl == nil);
     }
     
     //set flags

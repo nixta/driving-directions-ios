@@ -46,6 +46,25 @@ static NSString *kDefaultPortalUrl = @"http://www.arcgis.com";
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     [self loadSplashScreen];
+    
+    // load the stored preference of the user's last app settings from a previous launch
+	NSString *sAppSettings = [[NSUserDefaults standardUserDefaults] objectForKey:kAppSettingsKey];
+	if (sAppSettings == nil)
+	{
+		// user has not launched this app, create default app settings
+		self.appSettings = [self createAppSettings];
+		
+        // register our preference selection data to be archived
+        sAppSettings = [[self.appSettings encodeToJSON] AGSJSONRepresentation];
+        NSDictionary *appSettingsDictionary = [NSDictionary dictionaryWithObject:sAppSettings forKey:kAppSettingsKey];
+        [[NSUserDefaults standardUserDefaults] registerDefaults:appSettingsDictionary];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+	}
+	else
+	{
+        self.appSettings = [self createAppSettingsWithJSON:[sAppSettings AGSJSONValue]];
+	}
+
     	
 	NSDictionary *appDict = [NSDictionary dictionaryWithObjectsAndKeys:
 							 application, @"app",

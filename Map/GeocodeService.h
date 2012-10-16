@@ -21,7 +21,7 @@
 
 @interface GeocodeService : NSObject <AGSLocatorDelegate, AGSFindTaskDelegate> {
 	
-    id<GeocodeServiceDelegate>  __unsafe_unretained _delegate;
+    id<GeocodeServiceDelegate>   _delegate;
 	NSString                    *_responseString;
     
     AGSLocator                  *_findAddressLocator;
@@ -36,10 +36,10 @@
     
     @private
     
-    ArcGISAppDelegate *__unsafe_unretained _app;
+    ArcGISAppDelegate *         _app;
 }
 
-@property (nonatomic, unsafe_unretained) id<GeocodeServiceDelegate>    delegate;
+@property (nonatomic, strong) id<GeocodeServiceDelegate>    delegate;
 @property (nonatomic, strong) NSString                      *responseString;
 @property (nonatomic, copy) NSString                        *addressLocatorString;
 @property (nonatomic, strong) AGSLocator                    *findAddressLocator;

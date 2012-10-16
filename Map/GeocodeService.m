@@ -20,7 +20,7 @@
 
 @interface GeocodeService ()
 
-@property (nonatomic, unsafe_unretained) ArcGISAppDelegate *app;
+@property (nonatomic, strong) ArcGISAppDelegate *app;
 
 @end
 

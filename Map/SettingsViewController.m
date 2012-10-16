@@ -14,9 +14,7 @@
 
 #import "SettingsViewController.h"
 #import "MapAppSettings.h"
-#import "Organization.h"
 #import "UIColor+Additions.h"
-#import "OrganizationChooserViewController.h"
 #import "MapAppDelegate.h"
 #import "MapViewController.h"
 
