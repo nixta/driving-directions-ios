@@ -13,7 +13,7 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "OrganizationChooserViewController.h"
+
 
 /*
  Displays and controls all settings object for the Map Navigator app.
@@ -22,15 +22,14 @@
 
 @class MapAppSettings;
 
-@interface SettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, OrganizationChooserDelegate>
+@interface SettingsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
     UITableView     *_tableView;
-    MapAppSettings  *appSettings;
-    OrganizationChooserViewController *_chooserVC;
+    MapAppSettings  *appSettings;   
 }
 
 @property (nonatomic, strong) IBOutlet UITableView  *tableView;
 @property (nonatomic, strong) MapAppSettings        *appSettings;
-@property (nonatomic, strong) OrganizationChooserViewController *chooserVC;
+
 
 @end

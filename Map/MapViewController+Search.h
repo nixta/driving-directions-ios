@@ -21,7 +21,8 @@
 
 @interface MapViewController (Search) <UISearchBarDelegate, GeocodeServiceDelegate, LocationDelegate>
 
-@property (nonatomic,strong) AGSLocator *locator;
+//@property (nonatomic,strong) AGSLocator *locator;
+
 
 -(void)dropPinForSearchLocation:(Location *)location;
 -(void)dropPinForSearchLocation:(Location *)location zoomToLocation:(BOOL)zoom;

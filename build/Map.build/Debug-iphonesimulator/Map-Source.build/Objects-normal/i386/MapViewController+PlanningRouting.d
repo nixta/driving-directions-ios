@@ -166,8 +166,6 @@ dependencies: \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/NSURLConnection+AGSAdditions.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayer.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
-  /Users/albe5259/Projects/navigator/Map/Organization.h \
-  /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.h \
   /Users/albe5259/Projects/navigator/Map/DrawableContainerDelegate.h \
   /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
   /Users/albe5259/Projects/navigator/Map/LocationCalloutView.h \
@@ -175,6 +173,7 @@ dependencies: \
   /Users/albe5259/Projects/navigator/Map/Location.h \
   /Users/albe5259/Projects/navigator/Map/NamedGeometry.h \
   /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
+  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
   /Users/albe5259/Projects/navigator/Map/MapStates.h \
   /Users/albe5259/Projects/navigator/Map/BasemapsViewController.h \
   /Users/albe5259/Projects/navigator/Map/Basemaps.h \

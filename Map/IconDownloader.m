@@ -84,9 +84,8 @@
 {
     //NSLog(@"icon url: %@", urlString);
     
-    ArcGISAppDelegate *_app = (ArcGISAppDelegate*)[UIApplication sharedApplication].delegate;
-    ArcGISOnlineConnection *connection = _app.appSettings.arcGISOnlineConnection;
-	
+    ArcGISOnlineConnection *connection = [[ArcGISOnlineConnection alloc] init];
+    
     //NSLog(@"connection url: %@", urlString);
     
 	//create the url request, complete with token and referer, if signed in

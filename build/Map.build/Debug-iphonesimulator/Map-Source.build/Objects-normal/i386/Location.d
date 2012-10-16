@@ -167,6 +167,7 @@ dependencies: /Users/albe5259/Projects/navigator/Map/Location.m \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
   /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
   /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
+  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
   /Users/albe5259/Projects/navigator/Map/LocationGraphic.h \
   /Users/albe5259/Projects/navigator/Map/NSDictionary+Additions.h \
   /Users/albe5259/Projects/navigator/Map/AGSSymbol+AppAdditions.h \
@@ -176,5 +177,4 @@ dependencies: /Users/albe5259/Projects/navigator/Map/Location.m \
   /Users/albe5259/Projects/navigator/Map/MapAppSettings.h \
   /Users/albe5259/Projects/navigator/Map/AppSettings.h \
   /Users/albe5259/Projects/navigator/Map/DrawableContainerDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/Organization.h \
   /Users/albe5259/Projects/navigator/Map/MapStates.h

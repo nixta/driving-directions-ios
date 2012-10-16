@@ -177,10 +177,8 @@ dependencies: \
   /Users/albe5259/Projects/navigator/Map/AppSettings.h \
   /Users/albe5259/Projects/navigator/Map/DrawableContainerDelegate.h \
   /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
-  /Users/albe5259/Projects/navigator/Map/Organization.h \
   /Users/albe5259/Projects/navigator/Map/MapLegendViewController.h \
   /Users/albe5259/Projects/navigator/Map/UIColor+Additions.h \
   /Users/albe5259/Projects/navigator/Map/BasemapsTableViewCell.h \
   /Users/albe5259/Projects/navigator/Map/SettingsViewController.h \
-  /Users/albe5259/Projects/navigator/Map/OrganizationChooserViewController.h \
   /Users/albe5259/Projects/navigator/Map/SectionInfo.h

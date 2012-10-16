@@ -165,4 +165,4 @@ dependencies: \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayer.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
   /Users/albe5259/Projects/navigator/Map/WIDeskViewController.h \
-  /Users/albe5259/Projects/navigator/Map/Organization.h
+  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h

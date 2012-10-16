@@ -18,8 +18,6 @@
 #import <ArcGIS/ArcGIS.h>
 
 //included so compiler doesn't complain about protocol definitions
-#import "Organization.h"
-#import "OrganizationChooserViewController.h"
 #import "DrawableContainerDelegate.h"
 #import "LocationCalloutView.h"
 #import "BasemapsViewController.h"
@@ -53,10 +51,10 @@
  */
 
 @interface MapViewController : UIViewController     <AGSMapViewLayerDelegate, AGSMapViewTouchDelegate, AGSMapViewCalloutDelegate, AGSWebMapDelegate,
-                                                    AGSWebMapDelegate, OrganizationDelegate, LocationCalloutDelegate, 
+                                                    AGSWebMapDelegate, LocationCalloutDelegate, 
                                                     UIActionSheetDelegate, ChangeBasemapsDelegate, RouteSolverDelegate,
                                                     AGSGPSInfoTemplateDelegate, SignsViewDelegate, MFMailComposeViewControllerDelegate, 
-                                                    OrganizationChooserDelegate, DrawableContainerDelegate, RoutingDelegate, UISearchBarDelegate>
+                                                     DrawableContainerDelegate, RoutingDelegate, UISearchBarDelegate>
 {
     /*Ux IB Elements */
     AGSMapView                          *_mapView;
@@ -207,6 +205,8 @@
 
 @property (nonatomic,strong) IBOutlet UISearchBar                   *uiSearchBar;
 @property (nonatomic,strong) IBOutlet UIToolbar                      *uiTabBar;
+
+@property (nonatomic,strong) AGSWebMap                              *webmap;
 
 @property (nonatomic, unsafe_unretained) id<LocationCalloutDelegate>   delegate;
 

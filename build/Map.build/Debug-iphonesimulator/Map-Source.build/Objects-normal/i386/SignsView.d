@@ -172,6 +172,7 @@ dependencies: /Users/albe5259/Projects/navigator/Map/SignsView.m \
   /Users/albe5259/Projects/navigator/Map/Location.h \
   /Users/albe5259/Projects/navigator/Map/NamedGeometry.h \
   /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
+  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
   /Users/albe5259/Projects/navigator/Map/BlankSignView.h \
   /Users/albe5259/Projects/navigator/Map/SignTableView.h \
   /Users/albe5259/Projects/navigator/Map/StreetSignView.h \

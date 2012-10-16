@@ -15,7 +15,6 @@
 #import "MapContentViewController.h"
 #import "MapAppDelegate.h"
 #import "MapAppSettings.h"
-#import "Organization.h"
 #import "MapLegendViewController.h"
 #import "UIColor+Additions.h"
 
@@ -118,6 +117,14 @@ static NSUInteger kBasemapSection = 0;
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    if(self.mapButton == nil)
+    {
+        self.mapButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Map", nil)
+                                                          style:UIBarButtonItemStyleBordered
+                                                         target:self
+                                                         action:@selector(mapButtonPressed:)];
+    }
+    
     self.navigationItem.leftBarButtonItem = self.mapButton;
     self.navigationItem.rightBarButtonItem = self.settingsButton;
 }
@@ -153,58 +160,54 @@ static NSUInteger kBasemapSection = 0;
     return (MapAppSettings *)app.appSettings;
 }
 
--(BasemapsViewController *)basemapsVC
-{
-    if(_basemapsVC == nil)
-    {
-        BasemapsViewController *bmvc = [[BasemapsViewController alloc] initWithNibName:@"BasemapsViewController" bundle:nil];
-        bmvc.delegate = self;
-        self.basemapsVC = bmvc;
-    }
-    
-    return _basemapsVC;
-}
-
--(UIBarButtonItem *)mapButton
-{
-    if(_mapButton == nil)
-    {
-        UIBarButtonItem *bbi = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Map", nil) 
-                                                                style:UIBarButtonItemStyleBordered 
-                                                               target:self 
-                                                               action:@selector(mapButtonPressed:)];
-        self.mapButton = bbi;
-    }
-    
-    return _mapButton;
-}
+//-(BasemapsViewController *)basemapsVC
+//{
+//    if(self.basemapsVC == nil)
+//    {
+//        self.basemapsVC = [[BasemapsViewController alloc] initWithNibName:@"BasemapsViewController" bundle:nil];
+//        self.basemapsVC.delegate = self;       
+//    }
+//    
+//    return self.basemapsVC;
+//}
+//
+//-(UIBarButtonItem *)mapButton
+//{
+//    if(self.mapButton == nil)
+//    {
+//        self.mapButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"Map", nil) 
+//                                                                style:UIBarButtonItemStyleBordered 
+//                                                               target:self 
+//                                                               action:@selector(mapButtonPressed:)];        
+//    }
+//    
+//    return self.mapButton;
+//}
 
 
 
--(UIView *)waitingView
-{
-    if(_waitingView == nil)
-    {
-        //waiting view is a somewhat translucent black screen
-        UIView *view = [[UIView alloc]initWithFrame:self.navigationController.view.bounds];
-        view.userInteractionEnabled = YES;
-        view.opaque = NO;
-        view.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:.65];
-        view.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        
-        //The black screen includes a moving activity indicator
-        self.activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-        self.activityIndicator.center = CGPointMake(view.bounds.size.width/2, view.bounds.size.height/2);
-        self.activityIndicator.userInteractionEnabled = NO;
-        [self.activityIndicator stopAnimating];
-        
-        [view addSubview:self.activityIndicator];
-        
-        self.waitingView = view;
-    }
-    
-    return _waitingView;
-}
+//-(UIView *)waitingView
+//{
+//    if(self.waitingView == nil)
+//    {
+//        //waiting view is a somewhat translucent black screen
+//        self.waitingView = [[UIView alloc]initWithFrame:self.navigationController.view.bounds];
+//        self.waitingView.userInteractionEnabled = YES;
+//        self.waitingView.opaque = NO;
+//        self.waitingView.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:.65];
+//        self.waitingView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+//        
+//        //The black screen includes a moving activity indicator
+//        self.activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+//        self.activityIndicator.center = CGPointMake(self.waitingView.bounds.size.width/2, self.waitingView.bounds.size.height/2);
+//        self.activityIndicator.userInteractionEnabled = NO;
+//        [self.activityIndicator stopAnimating];
+//        
+//        [self.waitingView addSubview:self.activityIndicator];
+//    }
+//    
+//    return self.waitingView;
+//}
 
 #pragma mark -
 #pragma mark Button Interaction etc.
@@ -311,6 +314,11 @@ static NSUInteger kBasemapSection = 0;
             //for retainment purposes
             self.basemapsTableViewCell = (BasemapsTableViewCell *)cell;
             
+            if (self.basemapsVC.view == nil) {
+                self.basemapsVC = [[BasemapsViewController alloc] initWithNibName:@"BasemapsViewController" bundle:nil];
+                self.basemapsVC.delegate = self;
+            }
+            
             //add a new view controller's view to cell. This media controller will control behavior for the cell
             [self.basemapsTableViewCell.view addSubview:self.basemapsVC.view];
         }
@@ -397,7 +405,7 @@ static NSUInteger kBasemapSection = 0;
 
 -(void)sectionHeaderView:(SectionHeaderView *)sectionHeaderView toggledUISwitch:(UISwitch *)aSwitch
 {
-    UIView *layer = (UIView *)[_mapLayerViews objectForKey:sectionHeaderView.titleLabel.text];
+    UIView *layer = (UIView *)[self.mapLayerViews objectForKey:sectionHeaderView.titleLabel.text];
     layer.hidden = !layer.hidden;
     
     
@@ -421,8 +429,28 @@ static NSUInteger kBasemapSection = 0;
         [self.changeBasemapDelegate basemapsViewController:bmvc wantsToChangeToNewBasemap:basemap];
     }
     
-    [self.navigationController.view addSubview:self.waitingView];
-    [self.activityIndicator startAnimating];
+    if(self.waitingView == nil)
+    {
+        //waiting view is a somewhat translucent black screen
+        self.waitingView = [[UIView alloc]initWithFrame:self.navigationController.view.bounds];
+        self.waitingView.userInteractionEnabled = YES;
+        self.waitingView.opaque = NO;
+        self.waitingView.backgroundColor = [[UIColor blackColor]colorWithAlphaComponent:.65];
+        self.waitingView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+        
+        //The black screen includes a moving activity indicator
+        self.activityIndicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        self.activityIndicator.center = CGPointMake(self.waitingView.bounds.size.width/2, self.waitingView.bounds.size.height/2);
+        self.activityIndicator.userInteractionEnabled = NO;
+        [self.activityIndicator stopAnimating];
+        
+        [self.waitingView addSubview:self.activityIndicator];
+    }
+    
+    else {
+        [self.navigationController.view addSubview:self.waitingView];
+        [self.activityIndicator startAnimating];
+    }
 }
 
 #pragma mark -

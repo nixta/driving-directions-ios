@@ -15,6 +15,7 @@
 #import <Foundation/Foundation.h>
 #import <ArcGIS/ArcGIS.h>
 
+#define kDefaultWebMapId @"5b84b12a666c477db2842bb5800d87c7"
 
 @interface ArcGISMobileConfig : NSObject <AGSCoding> {
 	NSString *_geometryServiceUrl;

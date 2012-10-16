@@ -16,6 +16,7 @@
 #import "NamedGeometry.h"
 #import <ArcGIS/ArcGIS.h>
 #import "GeocodeService.h"
+#import "ArcGISMobileConfig.h"
 
 @protocol LocationDelegate;
 @protocol LocationRouteDelegate;

@@ -80,6 +80,8 @@
 {     
      [self.currentBasemapView removeFromSuperview];
      UIView *bmView = [self.views objectAtIndex:_currentBasemap];
+    if ( bmView == nil)
+        bmView = [self.views objectAtIndex:0];
      [bmView addSubview:self.currentBasemapView];
 }
 

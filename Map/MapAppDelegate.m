@@ -100,6 +100,11 @@
     
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque animated:NO];
     
+    if ( self.appSettings == nil)
+    {
+        self.appSettings = [self createAppSettings];
+    }
+    
 	// check for network conncetion
 	// at this point, our splash screen is loaded so the AlertView shows
 	// on top of it
@@ -237,31 +242,34 @@
     return YES;
 }
 
-#pragma mark -
-#pragma mark Config Download
--(void) urisOperation:(NSOperation*)op completedWithResults:(NSDictionary*)results
-{
-    [super urisOperation:op completedWithResults:results];
-    
-    [self orgOperation:nil didSucceed:nil];
-}
+// Al Delete
+//#pragma mark -
+//#pragma mark Config Download
+//-(void) urisOperation:(NSOperation*)op completedWithResults:(NSDictionary*)results
+//{
+//    [super urisOperation:op completedWithResults:results];
+//    
+//    [self orgOperation:nil didSucceed:nil];
+//}
 
-#pragma mark -
-#pragma mark Organization Download Data
--(void)orgOperation:(AGSJSONRequestOperation *)op didSucceed:(NSDictionary*)json 
-{
-    NSLog(@"Did Succeed getting org information!");
-        
-    Organization *org = [[Organization alloc] initWithJSON:json];
-    org.name = @"Guest";
-    org.icon = [UIImage imageNamed:@"Default_icon.png"];
-    
-    self.testOrganizations = [NSArray arrayWithObjects: org, nil];
-    
-    MapViewController *mvc = (MapViewController *)self.viewController;
-    [mvc chooseFromOrganizations:self.testOrganizations];
-    
-}
+
+//Al Delete
+//#pragma mark -
+//#pragma mark Organization Download Data
+//-(void)orgOperation:(AGSJSONRequestOperation *)op didSucceed:(NSDictionary*)json 
+//{
+//    NSLog(@"Did Succeed getting org information!");
+//        
+//    Organization *org = [[Organization alloc] initWithJSON:json];
+//    org.name = @"Guest";
+//    org.icon = [UIImage imageNamed:@"Default_icon.png"];
+//    
+//    self.testOrganizations = [NSArray arrayWithObjects: org, nil];
+//    
+//    MapViewController *mvc = (MapViewController *)self.viewController;
+//    [mvc chooseFromOrganizations:self.testOrganizations];
+//    
+//}
 
 -(void)orgOperation:(AGSJSONRequestOperation*)op didFailWithError:(NSError*)error
 {

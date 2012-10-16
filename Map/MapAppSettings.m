@@ -20,7 +20,6 @@
 #import "Route.h"
 #import "Search.h"
 #import "RecentSearches.h"
-#import "Organization.h"
 #import "RouteSolverSettings.h"
 
 @implementation MapAppSettings

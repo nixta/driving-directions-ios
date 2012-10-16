@@ -169,6 +169,7 @@ dependencies: /Users/albe5259/Projects/navigator/Map/OverviewDirection.m \
   /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
   /Users/albe5259/Projects/navigator/Map/Location.h \
   /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
+  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
   /Users/albe5259/Projects/navigator/Map/LocationGraphic.h \
   /Users/albe5259/Projects/navigator/Map/StopsList.h \
   /Users/albe5259/Projects/navigator/Map/DrawableList.h \

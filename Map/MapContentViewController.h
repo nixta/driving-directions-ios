@@ -40,13 +40,13 @@
     UIBarButtonItem             *_mapButton;
     UIBarButtonItem             *_settingsButton;
     
-    id<ChangeBasemapsDelegate>  __unsafe_unretained _changeBasemapDelegate;
+    id<ChangeBasemapsDelegate>  _changeBasemapDelegate;
     
     @private
     
     NSDictionary                *_mapLayerViews;
     BasemapsTableViewCell       *_basemapsTableViewCell;
-    BasemapsViewController      *_basemapsVC;
+    
     SettingsViewController      *_settingsVC;
     NSMutableArray              *_layersArray;
     UIView                      *_waitingView;
@@ -63,9 +63,12 @@
 
 /*Misc. UX Elements */
 @property (nonatomic, strong) UIBarButtonItem               *mapButton;
+
 @property (nonatomic, strong) UIBarButtonItem               *settingsButton;
 
-@property (nonatomic, unsafe_unretained) id<ChangeBasemapsDelegate>    changeBasemapDelegate;
+@property (nonatomic, strong) id<ChangeBasemapsDelegate>    changeBasemapDelegate;
+
+@property (nonatomic, strong) NSDictionary                  *mapLayerViews;
 
 -(IBAction)settingsButtonTapped:(id)sender;
 

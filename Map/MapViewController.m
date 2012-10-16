@@ -23,7 +23,6 @@
 #import "UIColor+Additions.h"
 #import "DrawableResultsTableView.h"
 #import "MapContentViewController.h"
-#import "Organization.h"
 #import "CurrentLocation.h"
 #import "ArcGISMobileConfig.h"
 #import "StopsList.h"
@@ -43,7 +42,6 @@
 
 #import "UIBarButtonItem+AppAdditions.h"
 
-#import "OrganizationChooserViewController.h"
 
 #import "Location.h"
 
@@ -93,11 +91,6 @@
 /*Routing properties */
 @property (nonatomic, strong) RouteSolver                           *routeSolver;
 
-@property (nonatomic,strong) AGSWebMap                              *webmap;
-
-//Temporary!!
-@property (nonatomic, strong) OrganizationChooserViewController     *orgChooserVC;
-
 @end
 
 @implementation MapViewController
@@ -123,11 +116,6 @@
     }
 }
 
-#pragma mark - View lifecycle
-- (void)tableView:(UITableView*)tv numberOfRowsInSection:(NSInteger)section
-{
-    NSLog(@"Who is calling me");
-}
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -889,11 +877,12 @@
 {
     _changingBasemap = YES;
     
+            
     self.mapAppSettings.savedExtent = self.mapView.visibleArea.envelope;
     
     if (basemap.isDefaultBasemap) {
         self.mapAppSettings.customBasemap = nil;
-        [self.mapAppSettings.organization.webmap openIntoMapView:self.mapView];
+        [self.webmap openIntoMapView:self.mapView];
     }
     else
     {
@@ -908,13 +897,23 @@
 
 -(void)organization:(Organization *)org didDownloadWebmap:(AGSWebMap *)webmap
 {    
-    [self setWebMap:webmap];
+    //[self setWebMap:webmap];
+    [self setWebMap:self.customBasemap];
 }
 
 - (void) setWebMap:(AGSWebMap*)webmap
 {
-    //make map controller the delegate now
-    [webmap openIntoMapView:self.mapView];
+    // Al The customBasemap is the one that if has been assigned has the new basemap to use
+    if ( self.customBasemap != nil)
+        webmap = self.customBasemap;
+    
+    if (_changingBasemap) {
+        [self.webmap openIntoMapView:self.mapView withAlternateBaseMap:webmap.baseMap];
+    }
+    else{
+        //make map controller the delegate now
+        [webmap openIntoMapView:self.mapView];
+    }
     
     //clear out...
     self.mapContentVC = nil;
@@ -962,10 +961,6 @@
         [self.mapView zoomToEnvelope:self.mapAppSettings.savedExtent animated:NO];
     }
     
-    else if(self.mapAppSettings.organization.defaultEnvelope)
-    {
-        [self.mapView zoomToEnvelope:self.mapAppSettings.organization.defaultEnvelope animated:NO];
-    }
     //if we are changing the basemap, we need to inform the basemap controller
     //the basemap has been successfully changed
     if(_changingBasemap)
@@ -1443,29 +1438,31 @@
     }
 }
 
-#pragma mark -
-#pragma mark Organization Chooser Stuff (Temporary!!)
--(void)chooseFromOrganizations:(NSArray *)organizations
-{
-    OrganizationChooserViewController *vc = [[OrganizationChooserViewController alloc] initWithOrganizations:organizations];
-    vc.delegate = self;
-    vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    
-    self.orgChooserVC = vc;
-    
-    [self.orgChooserVC requestTimerReady];
-    return;
-    
-}
+// Al Delete
 
--(void)organizationChooser:(OrganizationChooserViewController *)orgVC didChooseOrganization:(Organization *)organization
-{
-    [self dismissModalViewControllerAnimated:YES];
-    self.orgChooserVC = nil;
-    
-    self.mapAppSettings.organization = organization;
-    organization.delegate = self;
-    [organization retrieveOrganizationWebmap];
-}
+//#pragma mark -
+//#pragma mark Organization Chooser Stuff (Temporary!!)
+//-(void)chooseFromOrganizations:(NSArray *)organizations
+//{
+//    OrganizationChooserViewController *vc = [[OrganizationChooserViewController alloc] initWithOrganizations:organizations];
+//    vc.delegate = self;
+//    vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//    
+//    self.orgChooserVC = vc;
+//    
+//    [self.orgChooserVC requestTimerReady];
+//    return;
+//    
+//}
+//
+//-(void)organizationChooser:(OrganizationChooserViewController *)orgVC didChooseOrganization:(Organization *)organization
+//{
+//    [self dismissModalViewControllerAnimated:YES];
+//    self.orgChooserVC = nil;
+//    
+//    self.mapAppSettings.organization = organization;
+//    organization.delegate = self;
+//    [organization retrieveOrganizationWebmap];
+//}
 
 @end
