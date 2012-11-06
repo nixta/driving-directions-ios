@@ -1,5 +1,6 @@
-dependencies: /Users/albe5259/Projects/navigator/Map/RouteSolver.m \
-  /Users/albe5259/Projects/navigator/Map/RouteSolver.h \
+dependencies: \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RouteSolver.m \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RouteSolver.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \
@@ -164,14 +165,14 @@ dependencies: /Users/albe5259/Projects/navigator/Map/RouteSolver.m \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/NSURLConnection+AGSAdditions.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayer.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
-  /Users/albe5259/Projects/navigator/Map/Route.h \
-  /Users/albe5259/Projects/navigator/Map/Location.h \
-  /Users/albe5259/Projects/navigator/Map/NamedGeometry.h \
-  /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
-  /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
-  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableContainerDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/DirectionsList.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableList.h \
-  /Users/albe5259/Projects/navigator/Map/StopsList.h \
-  /Users/albe5259/Projects/navigator/Map/Direction.h
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Route.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Location.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NamedGeometry.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/TableViewDrawable.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/GeocodeService.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableContainerDelegate.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DirectionsList.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableList.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/StopsList.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Direction.h

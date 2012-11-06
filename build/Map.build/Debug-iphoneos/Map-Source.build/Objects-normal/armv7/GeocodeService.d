@@ -1,5 +1,6 @@
-dependencies: /Users/albe5259/Projects/navigator/Map/GeocodeService.m \
-  /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
+dependencies: \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/GeocodeService.m \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/GeocodeService.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \
@@ -164,8 +165,8 @@ dependencies: /Users/albe5259/Projects/navigator/Map/GeocodeService.m \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/NSURLConnection+AGSAdditions.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayer.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
-  /Users/albe5259/Projects/navigator/Map/MapAppDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/RoutingDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
-  /Users/albe5259/Projects/navigator/Map/NSDictionary+Additions.h
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapAppDelegate.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISAppDelegate.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RoutingDelegate.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NSDictionary+Additions.h

@@ -1,1 +1,2 @@
-dependencies: /Users/albe5259/Projects/navigator/Map/main.m
+dependencies: \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/main.m

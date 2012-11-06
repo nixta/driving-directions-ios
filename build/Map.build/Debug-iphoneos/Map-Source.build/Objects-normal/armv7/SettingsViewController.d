@@ -1,8 +1,8 @@
 dependencies: \
-  /Users/albe5259/Projects/navigator/Map/SettingsViewController.m \
-  /Users/albe5259/Projects/navigator/Map/SettingsViewController.h \
-  /Users/albe5259/Projects/navigator/Map/MapAppSettings.h \
-  /Users/albe5259/Projects/navigator/Map/AppSettings.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SettingsViewController.m \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SettingsViewController.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapAppSettings.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/AppSettings.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \
@@ -167,28 +167,28 @@ dependencies: \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/NSURLConnection+AGSAdditions.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayer.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableContainerDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
-  /Users/albe5259/Projects/navigator/Map/UIColor+Additions.h \
-  /Users/albe5259/Projects/navigator/Map/MapAppDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/RoutingDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/MapViewController.h \
-  /Users/albe5259/Projects/navigator/Map/LocationCalloutView.h \
-  /Users/albe5259/Projects/navigator/Map/BlankSignView.h \
-  /Users/albe5259/Projects/navigator/Map/Location.h \
-  /Users/albe5259/Projects/navigator/Map/NamedGeometry.h \
-  /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
-  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
-  /Users/albe5259/Projects/navigator/Map/MapStates.h \
-  /Users/albe5259/Projects/navigator/Map/BasemapsViewController.h \
-  /Users/albe5259/Projects/navigator/Map/Basemaps.h \
-  /Users/albe5259/Projects/navigator/Map/IconDownloader.h \
-  /Users/albe5259/Projects/navigator/Map/TabbedResultsViewController.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableContainerViewController.h \
-  /Users/albe5259/Projects/navigator/Map/SignsView.h \
-  /Users/albe5259/Projects/navigator/Map/PassThroughView.h \
-  /Users/albe5259/Projects/navigator/Map/StopsList.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableList.h \
-  /Users/albe5259/Projects/navigator/Map/Route.h \
-  /Users/albe5259/Projects/navigator/Map/RouteSolver.h
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableContainerDelegate.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/TableViewDrawable.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UIColor+Additions.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapAppDelegate.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISAppDelegate.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RoutingDelegate.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/LocationCalloutView.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/BlankSignView.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Location.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NamedGeometry.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/GeocodeService.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapStates.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/BasemapsViewController.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Basemaps.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/IconDownloader.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/TabbedResultsViewController.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableContainerViewController.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SignsView.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/PassThroughView.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/StopsList.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableList.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Route.h \
+  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RouteSolver.h
