@@ -53,7 +53,12 @@
         self.ecasRegistrationUrl = @"https://ecasapi.esri.com/1.0/accounts";
         
         self.geocoderServiceUrlNew = @"http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer";
-        self.routeUrl = [NSURL URLWithString:@"http://tasks.arcgisonline.com/ArcGIS/rest/services/NetworkAnalysis/ESRI_Route_NA/NAServer/Route"];
+        
+        // European Routing Service
+        self.routeUrl = [NSURL URLWithString:@"http://tasks.arcgisonline.com/ArcGIS/rest/services/NetworkAnalysis/ESRI_Route_EU/NAServer/Route"];
+        
+        // North America Routing
+        //@"http://tasks.arcgisonline.com/ArcGIS/rest/services/NetworkAnalysis/ESRI_Route_NA/NAServer/Route"];
 	}
 
 	return self;

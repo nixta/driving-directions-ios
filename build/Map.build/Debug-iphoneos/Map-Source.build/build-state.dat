@@ -2,94 +2,94 @@ TMap-Source
 v5
 r1
 cCheck dependencies
-cProcessInfoPlistFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Info.plist Directions-Info.plist
 cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/ResourceRules.plist build/Debug-iphoneos/Directions.app/ResourceRules.plist
+cProcessInfoPlistFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Info.plist Directions-Info.plist
 cProcessPCH /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-ceasdwaansomdteuilogtybkdoki/Map-Prefix.pch.pth Map/Map-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapAppDelegate.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/main.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIColor+Additions.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UIColor+Additions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapContentViewController.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapContentViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/GeocodeService.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/GeocodeService.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapAppDelegate.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/GeocodeService.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/GeocodeService.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Location.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/BasemapsViewController.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/BasemapsViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/BasemapsTableViewCell.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/BasemapsTableViewCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SectionHeaderView.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SectionHeaderView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SectionInfo.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SectionInfo.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Basemaps.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Basemaps.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISOnlineConnection.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISOnlineConnection.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Basemaps.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Basemaps.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISOnlineServices.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISOnlineServices.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSDictionary+Additions.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NSDictionary+Additions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ContentItem.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ContentItem.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISAppDelegate.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/AppSettings.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/AppSettings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISAppDelegate.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapAppSettings.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapAppSettings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SplashImageVC.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SplashImageVC.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+MapTapping.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController+MapTapping.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/AGSGeometry+AppAdditions.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/AGSGeometry+AppAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SettingsViewController.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SettingsViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Search.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Search.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UserSearchResults.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UserSearchResults.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/IconDownloader.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/IconDownloader.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Search.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Search.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/CurrentLocation.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/CurrentLocation.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Direction.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Direction.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DirectionsList.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DirectionsList.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableList.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableList.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSString+NSString_Additions.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NSString+NSString_Additions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableCollection.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableCollection.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/LocationGraphic.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/LocationGraphic.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSString+NSString_Additions.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NSString+NSString_Additions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController+Search.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIImage+AppAdditions.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UIImage+AppAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DirectionsPrintRenderer.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DirectionsPrintRenderer.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OverviewDirection.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/OverviewDirection.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DirectionsPrintRenderer.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DirectionsPrintRenderer.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/RecentSearches.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RecentSearches.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapShareUtility.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapShareUtility.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Legend.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Legend.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapLayerInfo+AppAdditions.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapLayerInfo+AppAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/RouteSolverSettings.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RouteSolverSettings.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapLayerInfo+AppAdditions.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapLayerInfo+AppAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Legend.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Legend.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/StreetSignView.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/StreetSignView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/BlankSignView.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/BlankSignView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignsView.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SignsView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignTableView.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SignTableView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/LocationCalloutView.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/LocationCalloutView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Route.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Route.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignTableView.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SignTableView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/RouteSolver.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RouteSolver.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignTableViewCell.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SignTableViewCell.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableResultsTableView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIBarButtonItem+AppAdditions.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UIBarButtonItem+AppAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ToggleSegmentedControl.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ToggleSegmentedControl.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/PassThroughView.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/PassThroughView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/AGSSymbol+AppAdditions.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/AGSSymbol+AppAdditions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/PassThroughView.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/PassThroughView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/StopsList.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/StopsList.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSNull+Additions.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NSNull+Additions.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+PlanningRouting.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController+PlanningRouting.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/StopSignView.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/StopSignView.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/WIDeskViewController.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/WIDeskViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/LocationMarker.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/LocationMarker/LocationMarker.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/WIDeskViewController.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/WIDeskViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cLd /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Directions normal armv7
 cGenerateDSYMFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app.dSYM /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Directions
-cCompileXIB /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/en.lproj/MainWindow.xib
 cCopyStringsFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/en.lproj/InfoPlist.strings Map/en.lproj/InfoPlist.strings
+cCompileXIB /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/en.lproj/MainWindow.xib
 cCompileXIB /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Resources/Nibs/MapContentViewController.xib
-cCompileXIB /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Resources/Nibs/MapLegendViewController.xib
-cCompileXIB /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Resources/Nibs/MapViewController.xib
 cCpResource Map/ArcGIS.bundle build/Debug-iphoneos/Directions.app/ArcGIS.bundle
+cCompileXIB /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Resources/Nibs/MapViewController.xib
+cCompileXIB /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Resources/Nibs/MapLegendViewController.xib
 cCompileXIB /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Resources/Nibs/DrawableContainerViewController.xib
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/ChangeBasemap.png Map/Resources/Images/ChangeBasemap.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/ChangeBasemap@2x.png Map/Resources/Images/ChangeBasemap@2x.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/ContentControllerMap.png Map/Resources/Images/ContentControllerMap.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/ContentControllerMap@2x.png Map/Resources/Images/ContentControllerMap@2x.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/ContentControllerMap.png Map/Resources/Images/ContentControllerMap.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/CurrentLocation.png Map/Resources/Images/CurrentLocation.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/CurrentLocation@2x.png Map/Resources/Images/CurrentLocation@2x.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/CurrentLocationEnabled.png Map/Resources/Images/CurrentLocationEnabled.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/CurrentLocationEnabled@2x.png Map/Resources/Images/CurrentLocationEnabled@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/CurrentLocationSelected.png Map/Resources/Images/CurrentLocationSelected.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/CurrentLocationEnabled.png Map/Resources/Images/CurrentLocationEnabled.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/CurrentLocationSelected@2x.png Map/Resources/Images/CurrentLocationSelected@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/MagnifyingGlass.png Map/Resources/Images/MagnifyingGlass.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/MagnifyingGlass@2x.png Map/Resources/Images/MagnifyingGlass@2x.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Map@2x.png Map/Resources/Images/Map@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Map.png Map/Resources/Images/Map.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Map@2x.png Map/Resources/Images/Map@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/settings.png Map/Resources/Images/settings.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Toolbar.png Map/Resources/Images/Toolbar.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/settings@2x.png Map/Resources/Images/settings@2x.png
@@ -99,64 +99,64 @@ cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/b
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Info@2x.png Map/Resources/Images/Info@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/SampleMapThumb.png Map/Resources/Images/SampleMapThumb.png
 cCompileXIB /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Resources/Nibs/BasemapsViewController.xib
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/basemaps_mask.png Map/Resources/Images/basemaps_mask.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Default.png Map/Resources/Images/Default.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/basemaps_mask.png Map/Resources/Images/basemaps_mask.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Default@2x.png Map/Resources/Images/Default@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/bookmarks.png Map/Resources/Images/bookmarks.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/bookmarks@2x.png Map/Resources/Images/bookmarks@2x.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/hidepin@2x.png Map/Resources/Images/hidepin@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/hidepin.png Map/Resources/Images/hidepin.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/WhiteChevron.png Map/Resources/Images/WhiteChevron.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/WhiteChevron@2x.png Map/Resources/Images/WhiteChevron@2x.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/hidepin@2x.png Map/Resources/Images/hidepin@2x.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/WhiteChevron.png Map/Resources/Images/WhiteChevron.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/PinOvalBlueTableView.png Map/Resources/Images/PinOvalBlueTableView.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/PinOvalBlueTableView@2x.png Map/Resources/Images/PinOvalBlueTableView@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/ActionSheet.png Map/Resources/Images/ActionSheet.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/ActionSheet@2x.png Map/Resources/Images/ActionSheet@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/LayerContent.png Map/Resources/Images/LayerContent.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/ActionSheet@2x.png Map/Resources/Images/ActionSheet@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/LayerContent@2x.png Map/Resources/Images/LayerContent@2x.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Routing.png Map/Resources/Images/Routing.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Routing@2x.png Map/Resources/Images/Routing@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Switch.png Map/Resources/Images/Switch.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Routing.png Map/Resources/Images/Routing.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Switch@2x.png Map/Resources/Images/Switch@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/RouteBar.png Map/Resources/Images/RouteBar.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/RouteBar@2x.png Map/Resources/Images/RouteBar@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/MaxMinLayer-Open.png Map/Resources/Images/MaxMinLayer-Open.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/MaxMinLayer.png Map/Resources/Images/MaxMinLayer.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/MaxMinLayer-Open@2x.png Map/Resources/Images/MaxMinLayer-Open@2x.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/OverlayChevron.png Map/Resources/Images/OverlayChevron.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/MaxMinLayer@2x.png Map/Resources/Images/MaxMinLayer@2x.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/MaxMinLayer-Open@2x.png Map/Resources/Images/MaxMinLayer-Open@2x.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/MaxMinLayer.png Map/Resources/Images/MaxMinLayer.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/OverlayChevron.png Map/Resources/Images/OverlayChevron.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/OverlayChevron@2x.png Map/Resources/Images/OverlayChevron@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/MaxMinLayerTriangle-Open.png Map/Resources/Images/MaxMinLayerTriangle-Open.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/MaxMinLayerTriangle-Open@2x.png Map/Resources/Images/MaxMinLayerTriangle-Open@2x.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/MaxMinLayerTriangle@2x.png Map/Resources/Images/MaxMinLayerTriangle@2x.png
-cCompileXIB /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Resources/Nibs/BasemapsTableViewCell.xib
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/MaxMinLayerTriangle.png Map/Resources/Images/MaxMinLayerTriangle.png
+cCompileXIB /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Resources/Nibs/BasemapsTableViewCell.xib
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/MaxMinLayerTriangle@2x.png Map/Resources/Images/MaxMinLayerTriangle@2x.png
 cCompileXIB /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Resources/Nibs/SettingsViewController.xib
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/GreenPin.png Map/Resources/Images/GreenPin.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/GreenPin@2x.png Map/Resources/Images/GreenPin@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/RedPin.png Map/Resources/Images/RedPin.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/RedPin@2x.png Map/Resources/Images/RedPin@2x.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Refresh@2x.png Map/Resources/Images/Refresh@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Refresh.png Map/Resources/Images/Refresh.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/LeftArrow.png Map/Resources/Images/LeftArrow.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Refresh@2x.png Map/Resources/Images/Refresh@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/LeftArrow@2x.png Map/Resources/Images/LeftArrow@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/RightArrow.png Map/Resources/Images/RightArrow.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/RightArrow@2x.png Map/Resources/Images/RightArrow@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/PullDownTabA.png Map/Resources/Images/PullDownTabA.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/PullDownTabA@2x.png Map/Resources/Images/PullDownTabA@2x.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/AddressPin.png Map/Resources/Images/AddressPin.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/ContactPin.png Map/Resources/Images/ContactPin.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/ContactPin@2x.png Map/Resources/Images/ContactPin@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/AddressPin@2x.png Map/Resources/Images/AddressPin@2x.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/ContactPin@2x.png Map/Resources/Images/ContactPin@2x.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/AddressPin.png Map/Resources/Images/AddressPin.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/BookmarkPin.png Map/Resources/Images/BookmarkPin.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/BookmarkPin@2x.png Map/Resources/Images/BookmarkPin@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/PlacePin.png Map/Resources/Images/PlacePin.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/PlacePin@2x.png Map/Resources/Images/PlacePin@2x.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/SF_Icon@2x.png Map/Resources/TestImages/SF_Icon@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/SF_Icon.png Map/Resources/TestImages/SF_Icon.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/wells_icon.png Map/Resources/TestImages/wells_icon.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/wells_icon@2x.png Map/Resources/TestImages/wells_icon@2x.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/SF_Icon@2x.png Map/Resources/TestImages/SF_Icon@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Default_icon.png Map/Resources/TestImages/Default_icon.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/wells_icon@2x.png Map/Resources/TestImages/wells_icon@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Default_icon@2x.png Map/Resources/TestImages/Default_icon@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/map_button.png Map/Resources/Images/map_button.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/map_button@2x.png Map/Resources/Images/map_button@2x.png
@@ -176,49 +176,49 @@ cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/b
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/StraightArrow@2x.png "Map/Resources/Images/Directions Icons/StraightArrow@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeCenterFork.png "Map/Resources/Images/Directions Icons/TakeCenterFork.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeCenterFork@2x.png "Map/Resources/Images/Directions Icons/TakeCenterFork@2x.png"
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeExit@2x.png "Map/Resources/Images/Directions Icons/TakeExit@2x.png"
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeFerry.png "Map/Resources/Images/Directions Icons/TakeFerry.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeExit.png "Map/Resources/Images/Directions Icons/TakeExit.png"
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeForkLeft.png "Map/Resources/Images/Directions Icons/TakeForkLeft.png"
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeFerry.png "Map/Resources/Images/Directions Icons/TakeFerry.png"
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeExit@2x.png "Map/Resources/Images/Directions Icons/TakeExit@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeFerry@2x.png "Map/Resources/Images/Directions Icons/TakeFerry@2x.png"
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeForkLeft.png "Map/Resources/Images/Directions Icons/TakeForkLeft.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeForkLeft@2x.png "Map/Resources/Images/Directions Icons/TakeForkLeft@2x.png"
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeForkRight@2x.png "Map/Resources/Images/Directions Icons/TakeForkRight@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeForkRight.png "Map/Resources/Images/Directions Icons/TakeForkRight.png"
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeForkRight@2x.png "Map/Resources/Images/Directions Icons/TakeForkRight@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeRampLeft@2x.png "Map/Resources/Images/Directions Icons/TakeRampLeft@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeRampLeft.png "Map/Resources/Images/Directions Icons/TakeRampLeft.png"
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeRampRight@2x.png "Map/Resources/Images/Directions Icons/TakeRampRight@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeRampRight.png "Map/Resources/Images/Directions Icons/TakeRampRight.png"
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TakeRampRight@2x.png "Map/Resources/Images/Directions Icons/TakeRampRight@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TurnLeft.png "Map/Resources/Images/Directions Icons/TurnLeft.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TurnLeft@2x.png "Map/Resources/Images/Directions Icons/TurnLeft@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TurnRight.png "Map/Resources/Images/Directions Icons/TurnRight.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TurnRight@2x.png "Map/Resources/Images/Directions Icons/TurnRight@2x.png"
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TurnSharpLeft.png "Map/Resources/Images/Directions Icons/TurnSharpLeft.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TurnSharpLeft@2x.png "Map/Resources/Images/Directions Icons/TurnSharpLeft@2x.png"
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TurnSharpLeft.png "Map/Resources/Images/Directions Icons/TurnSharpLeft.png"
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TurnSharpRight.png "Map/Resources/Images/Directions Icons/TurnSharpRight.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/UTurn.png "Map/Resources/Images/Directions Icons/UTurn.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TurnSharpRight@2x.png "Map/Resources/Images/Directions Icons/TurnSharpRight@2x.png"
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/TurnSharpRight.png "Map/Resources/Images/Directions Icons/TurnSharpRight.png"
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/leftArrowButton.png Map/Resources/Images/leftArrowButton.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/UTurn@2x.png "Map/Resources/Images/Directions Icons/UTurn@2x.png"
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/leftArrowButton.png Map/Resources/Images/leftArrowButton.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/leftArrowButton@2x.png Map/Resources/Images/leftArrowButton@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/rightArrowButton.png Map/Resources/Images/rightArrowButton.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/list@2x.png Map/Resources/Images/list@2x.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/list.png Map/Resources/Images/list.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/rightArrowButton@2x.png Map/Resources/Images/rightArrowButton@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/speedometer.png "Map/Resources/Images/Directions Icons/speedometer.png"
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/list.png Map/Resources/Images/list.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/speedometer@2x.png "Map/Resources/Images/Directions Icons/speedometer@2x.png"
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/GoHereButton.png Map/Resources/Images/GoHereButton.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/list@2x.png Map/Resources/Images/list@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/GoHereButton@2x.png Map/Resources/Images/GoHereButton@2x.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/GoHereButton.png Map/Resources/Images/GoHereButton.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/speedometer@2x.png "Map/Resources/Images/Directions Icons/speedometer@2x.png"
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/selected.png Map/Resources/Images/selected.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/selected@2x.png Map/Resources/Images/selected@2x.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/upselected@2x.png Map/Resources/Images/upselected@2x.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/upselected.png Map/Resources/Images/upselected.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/GPSDisplayStart.png Map/Resources/Images/GPSDisplayStart.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/upselected.png Map/Resources/Images/upselected.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/upselected@2x.png Map/Resources/Images/upselected@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/GPSDisplayStart@2x.png Map/Resources/Images/GPSDisplayStart@2x.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/icon@2x.png Map/Resources/Images/icon@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/icon.png Map/Resources/Images/icon.png
-cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/att_logo@2x.png Map/Resources/TestImages/att_logo@2x.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/icon@2x.png Map/Resources/Images/icon@2x.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/att_logo.png Map/Resources/TestImages/att_logo.png
 cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Default-568h@2x.png Default-568h@2x.png
+cCopyPNGFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/att_logo@2x.png Map/Resources/TestImages/att_logo@2x.png
 cProcessProductPackaging "/Users/albe5259/Library/MobileDevice/Provisioning Profiles/A06785FB-2015-4258-A491-6019175D8E62.mobileprovision" /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/embedded.mobileprovision
 cProcessProductPackaging "/Users/albe5259/Library/MobileDevice/Provisioning Profiles/A06785FB-2015-4258-A491-6019175D8E62.mobileprovision" /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/embedded.mobileprovision
 cTouch /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app
@@ -1170,15 +1170,30 @@ c00000000509975A9000000000009FE92
 t1352234409
 s654994
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/AGSGeometry+AppAdditions.h
+c00000000509975A90000000000000253
+t1352234409
+s595
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/AGSGeometry+AppAdditions.m
 c00000000509975A900000000000008DE
 t1352234409
 s2270
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/AGSSymbol+AppAdditions.h
+c00000000509975A900000000000002A7
+t1352234409
+s679
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/AGSSymbol+AppAdditions.m
 c00000000509975A900000000000006BC
 t1352234409
 s1724
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/AppSettings.h
+c00000000509975A900000000000002BD
+t1352234409
+s701
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/AppSettings.m
 c00000000509975A900000000000005BF
@@ -1190,115 +1205,240 @@ c00000000509975A900000000000004C8
 t1352234409
 s1224
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISAppDelegate.h
+c00000000509975A900000000000006EE
+t1352234409
+s1774
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISAppDelegate.m
 c00000000509975A90000000000003D2F
 t1352234409
 s15663
 
-N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.m
-c00000000509975A90000000000002604
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.h
+c00000000509975A90000000000000985
 t1352234409
-s9732
+s2437
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.m
+c00000000509BE7D700000000000026C1
+t1352394711
+s9921
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISOnlineConnection.h
+c00000000509975A90000000000001407
+t1352234409
+s5127
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISOnlineConnection.m
 c00000000509975A90000000000004F2C
 t1352234409
 s20268
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISOnlineServices.h
+c00000000509975A90000000000001614
+t1352234409
+s5652
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISOnlineServices.m
 c00000000509975A90000000000002819
 t1352234409
 s10265
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Basemaps.h
+c00000000509975A90000000000000A4A
+t1352234409
+s2634
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Basemaps.m
 c00000000509975A90000000000002857
 t1352234409
 s10327
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/BasemapsTableViewCell.h
+c00000000509975A90000000000000289
+t1352234409
+s649
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/BasemapsTableViewCell.m
 c00000000509975A90000000000000386
 t1352234409
 s902
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/BasemapsViewController.h
+c00000000509975A900000000000006DC
+t1352234409
+s1756
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/BasemapsViewController.m
 c00000000509975A90000000000003666
 t1352234409
 s13926
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/BlankSignView.h
+c00000000509975A90000000000000592
+t1352234409
+s1426
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/BlankSignView.m
 c00000000509975A9000000000000224F
 t1352234409
 s8783
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ContentItem.h
+c00000000509975A90000000000000921
+t1352234409
+s2337
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ContentItem.m
 c00000000509975A9000000000000154C
 t1352234409
 s5452
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/CurrentLocation.h
+c00000000509975A90000000000000447
+t1352234409
+s1095
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/CurrentLocation.m
 c00000000509975A90000000000000F32
 t1352234409
 s3890
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Direction.h
+c00000000509975A900000000000007C0
+t1352234409
+s1984
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Direction.m
 c00000000509975A900000000000032A0
 t1352234409
 s12960
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DirectionsList.h
+c00000000509975A90000000000000625
+t1352234409
+s1573
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DirectionsList.m
 c00000000509975A90000000000001214
 t1352234409
 s4628
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DirectionsPrintRenderer.h
+c00000000509975A900000000000002DB
+t1352234409
+s731
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DirectionsPrintRenderer.m
 c00000000509975A90000000000000D41
 t1352234409
 s3393
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableCollection.h
+c00000000509975A900000000000005FB
+t1352234409
+s1531
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableCollection.m
 c00000000509975A90000000000001244
 t1352234409
 s4676
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableContainerDelegate.h
+c00000000509975A9000000000000058A
+t1352234409
+s1418
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableContainerViewController.h
+c00000000509975A900000000000006B8
+t1352234409
+s1720
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableList.h
+c00000000509975A90000000000000660
+t1352234409
+s1632
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableList.m
 c00000000509975A900000000000012C8
 t1352234409
 s4808
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableResultsTableView.h
+c00000000509975A90000000000000451
+t1352234409
+s1105
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableResultsTableView.m
 c00000000509975A90000000000001077
 t1352234409
 s4215
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/GeocodeService.h
+c00000000509975A900000000000010CD
+t1352234409
+s4301
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/GeocodeService.m
 c00000000509975A90000000000003308
 t1352234409
 s13064
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/IconDownloader.h
+c00000000509975A90000000000000FA8
+t1352234409
+s4008
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/IconDownloader.m
 c00000000509975A90000000000001BF0
 t1352234409
 s7152
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Legend.h
+c00000000509975A9000000000000135B
+t1352234409
+s4955
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Legend.m
 c00000000509975A90000000000007CCE
 t1352234409
 s31950
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Location.h
+c00000000509975A90000000000000ED0
+t1352234409
+s3792
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Location.m
 c00000000509975A900000000000044A7
 t1352234409
 s17575
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/LocationCalloutView.h
+c00000000509975A90000000000000BD8
+t1352234409
+s3032
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/LocationCalloutView.m
 c00000000509975A9000000000000419F
 t1352234409
 s16799
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/LocationGraphic.h
+c00000000509975A900000000000002C4
+t1352234409
+s708
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/LocationGraphic.m
 c00000000509975A90000000000000369
 t1352234409
 s873
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/LocationMarker/LocationMarker.h
+c00000000509975A900000000000002DC
+t1352234409
+s732
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/LocationMarker/LocationMarker.m
 c00000000509975A9000000000000065C
@@ -1310,75 +1450,175 @@ c00000000509975A90000000000000138
 t1352234409
 s312
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapAppDelegate.h
+c00000000509975A90000000000000489
+t1352234409
+s1161
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapAppDelegate.m
 c00000000509975A900000000000023F3
 t1352234409
 s9203
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapAppSettings.h
+c00000000509975A900000000000007BF
+t1352234409
+s1983
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapAppSettings.m
 c00000000509975A90000000000000EDD
 t1352234409
 s3805
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapContentViewController.h
+c00000000509975A90000000000000B39
+t1352234409
+s2873
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapContentViewController.m
 c00000000509975A90000000000003EAF
 t1352234409
 s16047
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapLayerInfo+AppAdditions.h
+c00000000509975A900000000000003AC
+t1352234409
+s940
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapLayerInfo+AppAdditions.m
 c00000000509975A900000000000011E7
 t1352234409
 s4583
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapLegendViewController.h
+c00000000509975A900000000000004F2
+t1352234409
+s1266
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapSettings.h
+c00000000509975A900000000000005C6
+t1352234409
+s1478
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapSettingsBase.h
+c00000000509975A90000000000000423
+t1352234409
+s1059
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapShareUtility.h
+c00000000509975A9000000000000061A
+t1352234409
+s1562
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapShareUtility.m
 c00000000509975A90000000000002D80
 t1352234409
 s11648
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapStates.h
+c00000000509975A90000000000000451
+t1352234409
+s1105
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController+MapTapping.h
+c00000000509975A9000000000000043D
+t1352234409
+s1085
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController+MapTapping.m
 c00000000509975A90000000000003D8B
 t1352234409
 s15755
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController+PlanningRouting.h
+c00000000509975A900000000000002FB
+t1352234409
+s763
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController+PlanningRouting.m
 c00000000509975A90000000000000EDF
 t1352234409
 s3807
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController+Search.h
+c00000000509975A9000000000000048D
+t1352234409
+s1165
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController+Search.m
 c00000000509975A90000000000003DE0
 t1352234409
 s15840
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController.h
+c00000000509975A90000000000002A74
+t1352234409
+s10868
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController.m
 c00000000509975A9000000000000C7F8
 t1352234409
 s51192
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NSDictionary+Additions.h
+c00000000509975A90000000000000586
+t1352234409
+s1414
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NSDictionary+Additions.m
 c00000000509975A900000000000003FA
 t1352234409
 s1018
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NSNull+Additions.h
+c00000000509975A90000000000000269
+t1352234409
+s617
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NSNull+Additions.m
 c00000000509975A900000000000002EE
 t1352234409
 s750
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NSString+NSString_Additions.h
+c00000000509975A90000000000000226
+t1352234409
+s550
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NSString+NSString_Additions.m
 c00000000509975A900000000000002AD
 t1352234409
 s685
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NamedGeometry.h
+c00000000509975A9000000000000033D
+t1352234409
+s829
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/OverviewDirection.h
+c00000000509975A900000000000002FE
+t1352234409
+s766
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/OverviewDirection.m
 c00000000509975A90000000000000645
 t1352234409
 s1605
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/PassThroughView.h
+c00000000509975A90000000000000232
+t1352234409
+s562
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/PassThroughView.m
 c00000000509975A90000000000000444
 t1352234409
 s1092
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RecentSearches.h
+c00000000509975A90000000000000247
+t1352234409
+s583
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RecentSearches.m
 c00000000509975A90000000000000429
@@ -2115,100 +2355,215 @@ c00000000509975A90000000000003B59
 t1352234409
 s15193
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Route.h
+c00000000509975A900000000000007DD
+t1352234409
+s2013
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Route.m
 c00000000509975A90000000000001867
 t1352234409
 s6247
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RouteSolver.h
+c00000000509975A90000000000000779
+t1352234409
+s1913
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RouteSolver.m
 c00000000509975A90000000000001386
 t1352234409
 s4998
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RouteSolverSettings.h
+c00000000509975A9000000000000056C
+t1352234409
+s1388
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RouteSolverSettings.m
 c00000000509975A900000000000006DC
 t1352234409
 s1756
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RoutingDelegate.h
+c00000000509975A9000000000000024E
+t1352234409
+s590
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Search.h
+c00000000509975A90000000000000384
+t1352234409
+s900
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Search.m
 c00000000509975A90000000000000703
 t1352234409
 s1795
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SectionHeaderView.h
+c00000000509975A90000000000000FA4
+t1352234409
+s4004
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SectionHeaderView.m
 c00000000509975A90000000000001BCC
 t1352234409
 s7116
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SectionInfo.h
+c00000000509975A90000000000000CF3
+t1352234409
+s3315
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SectionInfo.m
 c00000000509975A90000000000000DB0
 t1352234409
 s3504
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SettingsViewController.h
+c00000000509975A90000000000000383
+t1352234409
+s899
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SettingsViewController.m
 c00000000509975A90000000000000B20
 t1352234409
 s2848
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SignTableView.h
+c00000000509975A9000000000000040D
+t1352234409
+s1037
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SignTableView.m
 c00000000509975A90000000000000858
 t1352234409
 s2136
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SignTableViewCell.h
+c00000000509975A900000000000003E5
+t1352234409
+s997
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SignTableViewCell.m
 c00000000509975A90000000000001123
 t1352234409
 s4387
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SignsView.h
+c00000000509975A90000000000001136
+t1352234409
+s4406
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SignsView.m
 c00000000509975A90000000000009B68
 t1352234409
 s39784
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SplashImageVC.h
+c00000000509975A90000000000000223
+t1352234409
+s547
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SplashImageVC.m
 c00000000509975A90000000000000C44
 t1352234409
 s3140
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/StopSignView.h
+c00000000509975A9000000000000031A
+t1352234409
+s794
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/StopSignView.m
 c00000000509975A900000000000010C1
 t1352234409
 s4289
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/StopsList.h
+c00000000509975A90000000000000B7E
+t1352234409
+s2942
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/StopsList.m
 c00000000509975A90000000000003105
 t1352234409
 s12549
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/StreetSignView.h
+c00000000509975A90000000000000336
+t1352234409
+s822
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/StreetSignView.m
 c00000000509975A900000000000019B8
 t1352234409
 s6584
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/TabbedResultsViewController.h
+c00000000509975A90000000000000443
+t1352234409
+s1091
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/TableViewDrawable.h
+c00000000509975A9000000000000033E
+t1352234409
+s830
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ToggleSegmentedControl.h
+c00000000509975A900000000000001F5
+t1352234409
+s501
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ToggleSegmentedControl.m
 c00000000509975A9000000000000035F
 t1352234409
 s863
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UIBarButtonItem+AppAdditions.h
+c00000000509975A900000000000001FB
+t1352234409
+s507
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UIBarButtonItem+AppAdditions.m
 c00000000509975A9000000000000029C
 t1352234409
 s668
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UIColor+Additions.h
+c00000000509975A9000000000000023B
+t1352234409
+s571
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UIColor+Additions.m
 c00000000509975A9000000000000042C
 t1352234409
 s1068
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UIImage+AppAdditions.h
+c00000000509975A90000000000000212
+t1352234409
+s530
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UIImage+AppAdditions.m
 c00000000509975A90000000000000A6A
 t1352234409
 s2666
 
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UserSearchResults.h
+c00000000509975A90000000000000558
+t1352234409
+s1368
+
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UserSearchResults.m
 c00000000509975A900000000000011E4
 t1352234409
 s4580
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/WIDeskViewController.h
+c00000000509975A90000000000000443
+t1352234409
+s1091
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/WIDeskViewController.m
 c00000000509975A90000000000000EC1
@@ -2230,12 +2585,17 @@ c00000000509975A90000000000000250
 t1352234409
 s592
 
-N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/routingDelegate.h
+c00000000509975A9000000000000024E
 t1352234409
+s590
+
+N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app
+t1352392586
 s5372
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app.dSYM
-t1352234409
+t1352392583
 s102
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/ActionSheet.png
@@ -2363,8 +2723,8 @@ t1352234409
 s13949
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Directions
-t1352234409
-s8688544
+t1352392586
+s8693840
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/DrawableContainerViewController.nib
 t1352234409
@@ -2863,60 +3223,60 @@ t1352234410
 s418
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/AGSGeometry+AppAdditions.o
-t1352234410
-s12236
+t1352234664
+s12332
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/AGSSymbol+AppAdditions.o
-t1352234410
-s10748
+t1352234665
+s10840
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/AppSettings.o
-t1352234410
-s13456
+t1352234664
+s13544
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISAppDelegate.o
-t1352234410
-s123500
+t1352234664
+s123596
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.o
-t1352234410
-s55880
+t1352392580
+s55976
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISOnlineConnection.o
-t1352234410
-s100592
+t1352234664
+s100712
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISOnlineServices.o
-t1352234410
-s89088
+t1352234664
+s89184
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Basemaps.o
-t1352234410
-s120660
+t1352234664
+s120764
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/BasemapsTableViewCell.o
-t1352234410
-s70128
+t1352234664
+s70224
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/BasemapsViewController.o
-t1352234410
-s133940
+t1352234664
+s134036
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/BlankSignView.o
-t1352234410
-s97344
+t1352234665
+s97440
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ContentItem.o
-t1352234410
-s50936
+t1352234664
+s51032
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/CurrentLocation.o
-t1352234410
-s32716
+t1352234664
+s32812
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Direction.o
-t1352234410
-s135956
+t1352234665
+s136044
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Directions.LinkFileList
 c00000000509976A7000000000000256D
@@ -2924,196 +3284,196 @@ t1352234663
 s9581
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DirectionsList.o
-t1352234410
-s92912
+t1352234665
+s93008
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DirectionsPrintRenderer.o
-t1352234410
-s20676
+t1352234665
+s20772
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableCollection.o
-t1352234410
-s30612
+t1352234665
+s30700
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableList.o
-t1352234410
-s33012
+t1352234665
+s33100
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/DrawableResultsTableView.o
-t1352234410
-s93600
+t1352234665
+s93696
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/GeocodeService.o
-t1352234410
-s154476
+t1352234664
+s154564
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/IconDownloader.o
-t1352234410
-s87972
+t1352234665
+s88068
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Legend.o
-t1352234410
-s195404
+t1352234665
+s195500
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Location.o
-t1352234410
-s173644
+t1352234664
+s173732
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/LocationCalloutView.o
-t1352234410
-s133048
+t1352234665
+s133144
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/LocationGraphic.o
-t1352234410
-s80656
+t1352234665
+s80752
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/LocationMarker.o
-t1352234410
-s22336
+t1352234665
+s22456
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapAppDelegate.o
-t1352234410
-s169792
+t1352234664
+s169888
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapAppSettings.o
-t1352234410
-s41520
+t1352234664
+s41608
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapContentViewController.o
-t1352234410
-s176932
+t1352234664
+s177028
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapLayerInfo+AppAdditions.o
-t1352234410
-s103588
+t1352234665
+s103680
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapShareUtility.o
-t1352234410
-s43044
+t1352234665
+s43132
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+MapTapping.o
-t1352234410
-s186276
+t1352234665
+s186372
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+PlanningRouting.o
-t1352234410
-s138504
+t1352234665
+s138600
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController+Search.o
-t1352234410
-s175540
+t1352234665
+s175660
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/MapViewController.o
-t1352234410
-s351312
+t1352234664
+s351408
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSDictionary+Additions.o
-t1352234410
-s6492
+t1352234664
+s6584
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSNull+Additions.o
-t1352234410
-s9516
+t1352234665
+s9612
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/NSString+NSString_Additions.o
-t1352234410
-s5156
+t1352234665
+s5248
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/OverviewDirection.o
-t1352234410
-s87200
+t1352234665
+s87288
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/PassThroughView.o
-t1352234410
-s69116
+t1352234665
+s69208
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/RecentSearches.o
-t1352234410
-s10204
+t1352234665
+s10300
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Route.o
-t1352234410
-s117652
+t1352234665
+s117748
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/RouteSolver.o
-t1352234410
-s106992
+t1352234665
+s107088
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/RouteSolverSettings.o
-t1352234410
-s15332
+t1352234665
+s15428
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Search.o
-t1352234410
-s20348
+t1352234664
+s20444
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SectionHeaderView.o
-t1352234410
-s88832
+t1352234664
+s88928
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SectionInfo.o
-t1352234410
-s80452
+t1352234664
+s80540
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SettingsViewController.o
-t1352234410
-s92496
+t1352234665
+s92592
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignTableView.o
-t1352234410
-s77376
+t1352234665
+s77472
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignTableViewCell.o
-t1352234410
-s83960
+t1352234665
+s84056
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SignsView.o
-t1352234410
-s229180
+t1352234665
+s229276
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/SplashImageVC.o
-t1352234410
-s75640
+t1352234664
+s75736
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/StopSignView.o
-t1352234410
-s88320
+t1352234665
+s88416
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/StopsList.o
-t1352234410
-s130356
+t1352234665
+s130444
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/StreetSignView.o
-t1352234410
-s84796
+t1352234665
+s84884
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ToggleSegmentedControl.o
-t1352234410
-s70108
+t1352234665
+s70200
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIBarButtonItem+AppAdditions.o
-t1352234410
-s3700
+t1352234665
+s3792
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIColor+Additions.o
-t1352234410
-s5888
+t1352234664
+s5984
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UIImage+AppAdditions.o
-t1352234410
-s10628
+t1352234665
+s10720
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/UserSearchResults.o
-t1352234410
-s105264
+t1352234665
+s105360
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/WIDeskViewController.o
-t1352234410
-s114500
+t1352234665
+s114596
 
 N/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/main.o
-t1352234410
-s3256
+t1352234664
+s3348
 
 N/Users/albe5259/Projects/navigator/Default-568h@2x.png
 c000000005069C646000000000009FE92
@@ -5527,8 +5887,8 @@ t1350062185
 s4769900
 
 N/var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-ceasdwaansomdteuilogtybkdoki/Map-Prefix.pch.pth
-t2
-s0
+t1352234664
+s4770172
 
 N/var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-efzcwkdwmvrjeggnuhrpoihwycsw/Map-Prefix.pch.pth
 t1350424648
@@ -5931,15 +6291,15 @@ r0
 
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies9a941227ae49b641^d4ef9627ae49b641^-488"Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.2(21%IDEActivityLogMessage2@224"Code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.-373927463#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-20"Code Signing Warning--2@224"Code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.-373927463#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-20"Code Signing Warning--0#1#0#--18"Check dependencies36"17D3C421-24AF-4D22-9AD6-2441B3CCDB4D-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies76a4c2581f4cb641^047132591f4cb641^-488"Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.2(21%IDEActivityLogMessage2@224"Code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.-374087513#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-20"Code Signing Warning--2@224"Code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer: Al Pascual (26XBXB8PRN)', 'iPhone Developer: David Cardella (GM722YWWHG)' -- 'iPhone Developer: Al Pascual (26XBXB8PRN)' will be used.-374087513#18446744073709551615#0#-1#27"com.apple.dt.IDE.LogMessage-20"Code Signing Warning--0#1#0#--18"Check dependencies36"D005E124-A6AD-439F-8ADF-0264063F9855-
 
 CCodeSign /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app
-s373927468.453860
-e373927468.969895
+s374087514.672174
+e374087514.975520
 r1
 xCodeSign
 x/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"CodeSign build/Debug-iphoneos/Directions.app664d742cae49b641^014df82cae49b641^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/0000000000000000^907"CodeSign build/Debug-iphoneos/Directions.app    cd /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign 11337a5157aa07f743d82a20a09e19c475fb7ca3 --resource-rules=/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/ResourceRules.plist --entitlements /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Directions.xcent /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app36"B11C1303-8124-4B3E-960D-2B0A352BAC46-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"CodeSign build/Debug-iphoneos/Directions.appf225ac5a1f4cb641^45bcf95a1f4cb641^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/0000000000000000^907"CodeSign build/Debug-iphoneos/Directions.app    cd /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample    setenv CODESIGN_ALLOCATE /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign --force --sign 11337a5157aa07f743d82a20a09e19c475fb7ca3 --resource-rules=/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/ResourceRules.plist --entitlements /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Directions.xcent /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app36"71412D4E-DC83-4FF4-BD66-C94AE0EB1086-
 
 CCodeSign /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app
 s372117504.458352
@@ -6067,8 +6427,8 @@ xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.mada30ed80f2eb641^f25e55d80f2eb641^---0#0#0#-19%DVTDocumentLocation2@74"file://localhost/Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.m0000000000000000^3346"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISAppDelegate.o Map/ArcGISAppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/navigator    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/navigator/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/navigator/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-efzcwkdwmvrjeggnuhrpoihwycsw/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISAppDelegate.d --serialize-diagnostics /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISAppDelegate.dia -c /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.m -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISAppDelegate.o36"92C3B619-D7AB-48B1-9C2A-051D579955E2-
 
 CCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s373927464.150312
-e373927464.358311
+s374087513.257934
+e374087513.365502
 r1
 xCompileC
 xbuild/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.o
@@ -6077,7 +6437,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.m999c2628ae49b641^56ba5b28ae49b641^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.m0000000000000000^3755"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.o Map/ArcGISMobileConfig.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-ceasdwaansomdteuilogtybkdoki/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.d --serialize-diagnostics /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.dia -c /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.m -o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.o36"BC2A5C21-B216-4ADE-8AF3-468F8921CF56-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Compile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.m532542591f4cb641^10925d591f4cb641^---0#0#0#-19%DVTDocumentLocation2@106"file://localhost/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.m0000000000000000^3755"CompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.o Map/ArcGISMobileConfig.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-generated-files.hmap -I/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-own-target-headers.hmap -I/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-all-target-headers.hmap -iquote /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Directions-project-headers.hmap -I/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/include "-I$ArcGIS" "-I$JSON" "-I$ArcGIS_Common" -I/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources/armv7 -I/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/DerivedSources -F/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -include /var/folders/8x/_hv6xyb51f1dpgv8c0z2zglx3n_3cv/C/com.apple.Xcode.1196756379/SharedPrecompiledHeaders/Map-Prefix-ceasdwaansomdteuilogtybkdoki/Map-Prefix.pch -MMD -MT dependencies -MF /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.d --serialize-diagnostics /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.dia -c /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.m -o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.o36"EB85DEB9-4E50-4356-9D46-B434272C61FA-
 
 CCompileC build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/ArcGISMobileConfig.o /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s372117448.575525
@@ -9469,13 +9829,13 @@ xbuild/Debug-iphoneos/Directions.app/ArcGIS.bundle
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy build/Debug-iphoneos/Directions.app/ArcGIS.bundle36abd2ec8728b641^b7b7dfec8728b641^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/ArcGIS.bundle000000000080d041^545"CpResource Map/ArcGIS.bundle build/Debug-iphoneos/Directions.app/ArcGIS.bundle    cd /Users/albe5259/Projects/navigator    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/albe5259/Projects/navigator/Map/ArcGIS.bundle /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app36"4EAA9DEA-4555-4AA2-BF45-5AE9077DC9AD-
 
 CGenerateDSYMFile /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app.dSYM /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Directions
-s373927467.442213
-e373927468.371784
+s374087513.855229
+e374087514.589277
 r1
 xGenerateDSYMFile
 x/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app.dSYM
 x/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Directions
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Generating /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app.dSYM1843712bae49b641^c32d5f2cae49b641^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app.dSYM/0000000000000000^689"GenerateDSYMFile build/Debug-iphoneos/Directions.app.dSYM build/Debug-iphoneos/Directions.app/Directions    cd /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Directions -o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app.dSYM36"7347EB38-9E6F-491B-8883-50FA15B34119-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Generating /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app.dSYMce00db591f4cb641^b6db965a1f4cb641^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app.dSYM/0000000000000000^689"GenerateDSYMFile build/Debug-iphoneos/Directions.app.dSYM build/Debug-iphoneos/Directions.app/Directions    cd /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Directions -o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app.dSYM36"496239E5-6B16-4DA9-8E4F-49B658772B31-
 
 CGenerateDSYMFile /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app.dSYM /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions
 s372117503.649029
@@ -9487,8 +9847,8 @@ x/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directio
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Generating /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app.dSYM5035a6ff0f2eb641^bea45d00102eb641^---0#0#0#-19%DVTDocumentLocation2@92"file://localhost/Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app.dSYM/0000000000000000^596"GenerateDSYMFile build/Debug-iphoneos/Directions.app.dSYM build/Debug-iphoneos/Directions.app/Directions    cd /Users/albe5259/Projects/navigator    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions -o /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app.dSYM36"70C9924C-9056-4618-ADDF-2863CE1AFC41-
 
 CLd /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Directions normal armv7
-s373927466.002925
-e373927467.435176
+s374087513.372373
+e374087513.847564
 r1
 xLd
 x/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Directions
@@ -9496,7 +9856,7 @@ xnormal
 xarmv7
 old: warning: directory not found for option '-L$ArcGIS_Common'
 old: warning: directory not found for option '-L/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug'
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Link /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Directions73d9002aae49b641^66696f2bae49b641^-189"ld: warning: directory not found for option '-L$ArcGIS_Common'ld: warning: directory not found for option '-L/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug'2(21%IDEActivityLogMessage2@49"Directory not found for option '-L$ArcGIS_Common'-373927466#0#63#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@112"Directory not found for option '-L/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug'-373927466#63#126#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--0#0#0#--1973"Ld build/Debug-iphoneos/Directions.app/Directions normal armv7    cd /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -L/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos "-L$ArcGIS_Common" -L/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug -F/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -filelist /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Directions.LinkFileList -dead_strip -ObjC -all_load -lstdc++ -lz -framework ArcGIS -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=4.3 -framework MapKit -framework AVFoundation -framework CFNetwork -framework CoreAudio -framework AudioToolbox -lstdc++ -framework MessageUI -lxml2 -framework SystemConfiguration -framework Security -framework AddressBook -framework AddressBookUI -framework UIKit -framework Foundation -framework CoreGraphics -framework CoreText -framework CoreLocation -framework MediaPlayer -framework MobileCoreServices -framework QuartzCore -o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Directions36"72F30193-BC1F-47FE-B8A3-D7EAD24E590D-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Link /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Directionsc66a5f591f4cb641^c9ffd8591f4cb641^-189"ld: warning: directory not found for option '-L$ArcGIS_Common'ld: warning: directory not found for option '-L/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug'2(21%IDEActivityLogMessage2@49"Directory not found for option '-L$ArcGIS_Common'-374087513#0#63#-1#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--2@112"Directory not found for option '-L/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug'-374087513#63#126#-1#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#27"Apple Mach-O Linker Warning--0#0#0#--1973"Ld build/Debug-iphoneos/Directions.app/Directions normal armv7    cd /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -L/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos "-L$ArcGIS_Common" -L/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug -F/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos -F/Users/albe5259/Library/SDKs/ArcGIS -F/Users/albe5259/Library/SDKs/ArcGIS/Samples -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Classes -F/Users/albe5259/Library/SDKs/ArcGIS/Samples/MapViewDemo/Resources-iPad -filelist /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Map.build/Debug-iphoneos/Map-Source.build/Objects-normal/armv7/Directions.LinkFileList -dead_strip -ObjC -all_load -lstdc++ -lz -framework ArcGIS -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=4.3 -framework MapKit -framework AVFoundation -framework CFNetwork -framework CoreAudio -framework AudioToolbox -lstdc++ -framework MessageUI -lxml2 -framework SystemConfiguration -framework Security -framework AddressBook -framework AddressBookUI -framework UIKit -framework Foundation -framework CoreGraphics -framework CoreText -framework CoreLocation -framework MediaPlayer -framework MobileCoreServices -framework QuartzCore -o /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app/Directions36"9897B159-E196-465B-A271-1E4869F2389C-
 
 CLd /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app/Directions normal armv7
 s372117503.153075
@@ -9595,12 +9955,12 @@ x/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.bu
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection209"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist build/Map.build/Debug-iphoneos/Map-Source.build/Directions.xcent7e8d2cdb0f2eb641^1b652ddb0f2eb641^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions.xcent0000000000000000^726"ProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist build/Map.build/Debug-iphoneos/Map-Source.build/Directions.xcent    cd /Users/albe5259/Projects/navigator    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/Entitlements.plist -entitlements -format xml -o /Users/albe5259/Projects/navigator/build/Map.build/Debug-iphoneos/Map-Source.build/Directions.xcent36"55E8D87D-BE08-4E40-9EC7-CC9A44E4C794-
 
 CTouch /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app
-s373927468.429565
-e373927468.435313
+s374087514.650624
+e374087514.655076
 r1
 xTouch
 x/Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Touch /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app31066e2cae49b641^97716f2cae49b641^---0#0#0#--427"Touch build/Debug-iphoneos/Directions.app    cd /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app36"61F0C6E5-594E-4897-9110-4A5E9539C078-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Touch /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.appb69da65a1f4cb641^a7b3a75a1f4cb641^---0#0#0#--427"Touch build/Debug-iphoneos/Directions.app    cd /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/build/Debug-iphoneos/Directions.app36"31D115E4-CE79-48A2-B50A-62F69B8E838C-
 
 CTouch /Users/albe5259/Projects/navigator/build/Debug-iphoneos/Directions.app
 s372117504.437494
