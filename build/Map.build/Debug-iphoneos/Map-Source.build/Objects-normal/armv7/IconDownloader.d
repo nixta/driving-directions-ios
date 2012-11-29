@@ -1,8 +1,8 @@
 dependencies: \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/IconDownloader.m \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/IconDownloader.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapSettings.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapSettingsBase.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/IconDownloader.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/IconDownloader.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapSettings.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapSettingsBase.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \
@@ -167,8 +167,8 @@ dependencies: \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/NSURLConnection+AGSAdditions.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayer.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/AppSettings.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISOnlineServices.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ContentItem.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISOnlineConnection.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISAppDelegate.h
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/AppSettings.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/ArcGISOnlineServices.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/ContentItem.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/ArcGISOnlineConnection.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/ArcGISAppDelegate.h

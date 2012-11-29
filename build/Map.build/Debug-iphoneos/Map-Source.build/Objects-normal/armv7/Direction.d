@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Direction.m \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Direction.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NamedGeometry.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Direction.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Direction.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/NamedGeometry.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \
@@ -166,5 +166,5 @@ dependencies: \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/NSURLConnection+AGSAdditions.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayer.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/TableViewDrawable.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UIImage+AppAdditions.h
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/TableViewDrawable.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/UIImage+AppAdditions.h

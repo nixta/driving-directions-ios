@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/albe5259/Projects/navigator/Map/MapLayerInfo+AppAdditions.m \
-  /Users/albe5259/Projects/navigator/Map/MapLayerInfo+AppAdditions.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapLayerInfo+AppAdditions.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapLayerInfo+AppAdditions.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \

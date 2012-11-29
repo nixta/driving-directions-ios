@@ -1,8 +1,8 @@
 dependencies: \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SettingsViewController.m \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SettingsViewController.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapAppSettings.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/AppSettings.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SettingsViewController.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SettingsViewController.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapAppSettings.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/AppSettings.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \
@@ -167,28 +167,28 @@ dependencies: \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/NSURLConnection+AGSAdditions.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayer.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableContainerDelegate.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/TableViewDrawable.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/UIColor+Additions.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapAppDelegate.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISAppDelegate.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RoutingDelegate.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapViewController.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/LocationCalloutView.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/BlankSignView.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Location.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/NamedGeometry.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/GeocodeService.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/ArcGISMobileConfig.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/MapStates.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/BasemapsViewController.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Basemaps.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/IconDownloader.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/TabbedResultsViewController.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableContainerViewController.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/SignsView.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/PassThroughView.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/StopsList.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/DrawableList.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/Route.h \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RouteSolver.h
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DrawableContainerDelegate.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/TableViewDrawable.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/UIColor+Additions.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapAppDelegate.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/ArcGISAppDelegate.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/RoutingDelegate.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapViewController.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/LocationCalloutView.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/BlankSignView.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Location.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/NamedGeometry.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/GeocodeService.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/ArcGISMobileConfig.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapStates.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/BasemapsViewController.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Basemaps.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/IconDownloader.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/TabbedResultsViewController.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DrawableContainerViewController.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SignsView.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/PassThroughView.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/StopsList.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DrawableList.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Route.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/RouteSolver.h

@@ -1,7 +1,8 @@
-dependencies: /Users/albe5259/Projects/navigator/Map/SectionInfo.m \
-  /Users/albe5259/Projects/navigator/Map/SectionInfo.h \
-  /Users/albe5259/Projects/navigator/Map/SectionHeaderView.h \
-  /Users/albe5259/Projects/navigator/Map/Legend.h \
+dependencies: \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SectionInfo.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SectionInfo.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SectionHeaderView.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Legend.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \

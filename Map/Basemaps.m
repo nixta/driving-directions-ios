@@ -201,6 +201,9 @@
 -(void)baseMapsItemsOperation:(NSOperation*)jrop didFailWithError:(NSError*)error {
     [self finishWithSuccess:NO];
     
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Downloading Basemaps Failed" message:@"Request to ArcGIS.com to download basemaps has failed" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alert show];
+    
     // nil out to release data
     self.baseMapsOp = nil;
 }

@@ -58,57 +58,64 @@
     //Removed POI until the geocoder is ready
     
     // Searching first with the new Geocoder at
-//#warning needs to be replace when the new ArcGIS Runtime SDK is available.
-//    // This is a work around until the new ArcGIS Runtime for iOS is available with a class
-//    // that supports passing an extent for searching.
-//    if ( self.app.config.geocoderServiceUrlNew != nil ) {
-//        
-//        MapAppDelegate *appDelegate = (MapAppDelegate *)[[UIApplication sharedApplication] delegate];
-//    
-//        AGSGeometryEngine *geoEngine = [AGSGeometryEngine defaultGeometryEngine];
-//        AGSEnvelope *wgsEnvelope = (AGSEnvelope*)[geoEngine projectGeometry:appDelegate.mapView.visibleArea.envelope toSpatialReference:[AGSSpatialReference spatialReferenceWithWKID:4326]];
-//        
-//        NSMutableString *bbox = [[NSMutableString alloc] initWithFormat:@"%f,%f,%f,%f", wgsEnvelope.xmin,
-//        wgsEnvelope.ymin,wgsEnvelope.xmax,wgsEnvelope.ymax ];
-//        
-//        [bbox replaceOccurrencesOfString:@","
-//                                    withString:@"%2C"
-//                                    options:0
-//                                    range:NSMakeRange(0, [bbox length])];
-//        
-//        NSMutableString *cleanSearchString = [[NSMutableString alloc] initWithString:searchString];
-//        [cleanSearchString replaceOccurrencesOfString:@" "
-//                                           withString:@"+"
-//                                              options:0
-//                                                range:NSMakeRange(0, [cleanSearchString length])];
-//        
-//        NSMutableString *requestString = [[NSMutableString alloc] initWithString:self.app.config.geocoderServiceUrlNew];
-//        [requestString appendFormat:@"/find?Text=%@", cleanSearchString];
-//        //&outFields=&outSR=&bbox=&f=pjson
-//        [requestString appendFormat:@"&outFields=&outSR=%d&bbox=%@&f=pjson", appDelegate.mapView.spatialReference.wkid ,bbox];
-//        
-//        // Replace with AGSJSONRequestOperation
-//        AGSJSONRequestOperation *requestOp = [[AGSJSONRequestOperation alloc]initWithURL:[NSURL URLWithString:requestString]];
-//        requestOp.target = self;
-//        requestOp.action = @selector(requestOp:completedWithResultsGeocoder:);
-//        
-//        [[AGSRequestOperation sharedOperationQueue] addOperation:requestOp];
-//        
-//    }
+#warning needs to be replace when the new ArcGIS Runtime SDK is available.
+    // This is a work around until the new ArcGIS Runtime for iOS is available with a class
+    // that supports passing an extent for searching.
+    if ( self.app.config.geocoderServiceUrlNew != nil ) {
+        
+        MapAppDelegate *appDelegate = (MapAppDelegate *)[[UIApplication sharedApplication] delegate];
+        
+        AGSEnvelope *inputEnvelope = [[AGSEnvelope alloc] initWithXmin:appDelegate.mapView.visibleArea.envelope.xmin ymin:appDelegate.mapView.visibleArea.envelope.ymin xmax:appDelegate.mapView.visibleArea.envelope.xmax ymax:appDelegate.mapView.visibleArea.envelope.ymax spatialReference:[AGSSpatialReference spatialReferenceWithWKID:102100]];
+        
+        AGSGeometryEngine *geoEngine = [AGSGeometryEngine defaultGeometryEngine];
+        AGSGeometry *wgsGeometry = [geoEngine projectGeometry:inputEnvelope toSpatialReference:[AGSSpatialReference spatialReferenceWithWKID:4326]];
+        
+        
+        AGSEnvelope *wgsEnvelope = wgsGeometry.envelope;
+        if ( wgsEnvelope == nil)
+            wgsEnvelope = appDelegate.mapView.visibleArea.envelope;
+        
+        NSMutableString *bbox = [[NSMutableString alloc] initWithFormat:@"%f,%f,%f,%f", wgsEnvelope.xmin,
+                                 wgsEnvelope.ymin,wgsEnvelope.xmax,wgsEnvelope.ymax ];
+        
+        [bbox replaceOccurrencesOfString:@","
+                              withString:@"%2C"
+                                 options:0
+                                   range:NSMakeRange(0, [bbox length])];
+        
+        NSMutableString *cleanSearchString = [[NSMutableString alloc] initWithString:searchString];
+        [cleanSearchString replaceOccurrencesOfString:@" "
+                                           withString:@"+"
+                                              options:0
+                                                range:NSMakeRange(0, [cleanSearchString length])];
+        
+        NSMutableString *requestString = [[NSMutableString alloc] initWithString:self.app.config.geocoderServiceUrlNew];
+        [requestString appendFormat:@"/find?Text=%@", cleanSearchString];
+        //&outFields=&outSR=&bbox=&f=pjson
+        [requestString appendFormat:@"&outFields=&outSR=%d&bbox=%@&maxLocations=20&f=pjson", appDelegate.mapView.spatialReference.wkid ,bbox];
+        
+        // Replace with AGSJSONRequestOperation
+        AGSJSONRequestOperation *requestOp = [[AGSJSONRequestOperation alloc]initWithURL:[NSURL URLWithString:requestString]];
+        requestOp.target = self;
+        requestOp.action = @selector(requestOp:completedWithResultsGeocoder:);
+        
+        [[AGSRequestOperation sharedOperationQueue] addOperation:requestOp];
+        
+    }
     
-
+    
     // Search for address using AddressLocator (AGSLocator)
     if(!self.findAddressLocator)
     {
-        NSURL *url = ( self.addressLocatorString != nil && self.addressLocatorString.length > 0) ?  [NSURL URLWithString:self.addressLocatorString] : 
-                                                                                                    [NSURL URLWithString:self.app.config.locatorServiceUrl];
+        NSURL *url = ( self.addressLocatorString != nil && self.addressLocatorString.length > 0) ?  [NSURL URLWithString:self.addressLocatorString] :
+        [NSURL URLWithString:self.app.config.locatorServiceUrl];
         self.findAddressLocator = [AGSLocator locatorWithURL:url];
         self.findAddressLocator.delegate = self;
     }
-
+    
     NSString *currentLocaleString = [[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode];
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:searchString, (self.useSingleLine) ? @"SingleLine" : @"SingleKey",
-                            currentLocaleString, @"localeCode", nil];  
+                            currentLocaleString, @"localeCode", nil];
     
     self.findAddressOperation = [self.findAddressLocator locationsForAddress:params
                                                                 returnFields:[NSArray arrayWithObject:@"*"]

@@ -1,5 +1,5 @@
 dependencies: \
-  /Users/albe5259/Projects/navigator/Map/WIDeskViewController.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/WIDeskViewController.m \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \
@@ -164,5 +164,5 @@ dependencies: \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/NSURLConnection+AGSAdditions.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayer.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
-  /Users/albe5259/Projects/navigator/Map/WIDeskViewController.h \
-  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/WIDeskViewController.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/ArcGISMobileConfig.h

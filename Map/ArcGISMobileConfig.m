@@ -55,10 +55,12 @@
         self.geocoderServiceUrlNew = @"http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer";
         
         // European Routing Service
-        self.routeUrl = [NSURL URLWithString:@"http://tasks.arcgisonline.com/ArcGIS/rest/services/NetworkAnalysis/ESRI_Route_EU/NAServer/Route"];
+        self.routeUrl = [NSURL URLWithString:@"http://tasks.arcgisonline.com/ArcGIS/rest/services/NetworkAnalysis/ESRI_Route_NA/NAServer/Route"];
         
         // North America Routing
         //@"http://tasks.arcgisonline.com/ArcGIS/rest/services/NetworkAnalysis/ESRI_Route_NA/NAServer/Route"];
+        // European Route
+        //@"http://tasks.arcgisonline.com/ArcGIS/rest/services/NetworkAnalysis/ESRI_Route_EU/NAServer/Route"];
 	}
 
 	return self;

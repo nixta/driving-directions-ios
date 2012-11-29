@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/albe5259/Projects/navigator/Map/BasemapsTableViewCell.m \
-  /Users/albe5259/Projects/navigator/Map/BasemapsTableViewCell.h
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/BasemapsTableViewCell.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/BasemapsTableViewCell.h

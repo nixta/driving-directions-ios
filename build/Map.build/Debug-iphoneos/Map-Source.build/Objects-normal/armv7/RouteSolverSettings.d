@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RouteSolverSettings.m \
-  /Users/albe5259/Projects/Dev-Summit-Europe-2012-Navigation-Sample/Map/RouteSolverSettings.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/RouteSolverSettings.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/RouteSolverSettings.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \

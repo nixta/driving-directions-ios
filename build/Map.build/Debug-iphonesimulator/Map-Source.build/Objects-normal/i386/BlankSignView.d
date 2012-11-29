@@ -1,2 +1,3 @@
-dependencies: /Users/albe5259/Projects/navigator/Map/BlankSignView.m \
-  /Users/albe5259/Projects/navigator/Map/BlankSignView.h
+dependencies: \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/BlankSignView.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/BlankSignView.h

@@ -316,7 +316,7 @@
         return;
     
     //TODO: This line sometimes causes a crash!
-   
+#warning This is a bug that for some reason the notification kills the app.
     [[NSNotificationCenter defaultCenter] postNotificationName:kLocationUpdatedAddress object:self];
    
 }

@@ -1,9 +1,9 @@
 dependencies: \
-  /Users/albe5259/Projects/navigator/Map/MapContentViewController.m \
-  /Users/albe5259/Projects/navigator/Map/MapContentViewController.h \
-  /Users/albe5259/Projects/navigator/Map/SectionHeaderView.h \
-  /Users/albe5259/Projects/navigator/Map/BasemapsViewController.h \
-  /Users/albe5259/Projects/navigator/Map/Basemaps.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapContentViewController.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapContentViewController.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SectionHeaderView.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/BasemapsViewController.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Basemaps.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \
@@ -168,17 +168,17 @@ dependencies: \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/NSURLConnection+AGSAdditions.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayer.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
-  /Users/albe5259/Projects/navigator/Map/IconDownloader.h \
-  /Users/albe5259/Projects/navigator/Map/Legend.h \
-  /Users/albe5259/Projects/navigator/Map/MapAppDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/RoutingDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/MapAppSettings.h \
-  /Users/albe5259/Projects/navigator/Map/AppSettings.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableContainerDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
-  /Users/albe5259/Projects/navigator/Map/MapLegendViewController.h \
-  /Users/albe5259/Projects/navigator/Map/UIColor+Additions.h \
-  /Users/albe5259/Projects/navigator/Map/BasemapsTableViewCell.h \
-  /Users/albe5259/Projects/navigator/Map/SettingsViewController.h \
-  /Users/albe5259/Projects/navigator/Map/SectionInfo.h
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/IconDownloader.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Legend.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapAppDelegate.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/ArcGISAppDelegate.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/RoutingDelegate.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapAppSettings.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/AppSettings.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DrawableContainerDelegate.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/TableViewDrawable.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapLegendViewController.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/UIColor+Additions.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/BasemapsTableViewCell.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SettingsViewController.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SectionInfo.h

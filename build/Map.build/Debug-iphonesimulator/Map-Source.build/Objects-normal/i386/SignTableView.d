@@ -1,3 +1,4 @@
-dependencies: /Users/albe5259/Projects/navigator/Map/SignTableView.m \
-  /Users/albe5259/Projects/navigator/Map/SignTableView.h \
-  /Users/albe5259/Projects/navigator/Map/BlankSignView.h
+dependencies: \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SignTableView.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SignTableView.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/BlankSignView.h

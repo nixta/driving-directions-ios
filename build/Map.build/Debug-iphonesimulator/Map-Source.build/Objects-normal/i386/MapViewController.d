@@ -1,5 +1,6 @@
-dependencies: /Users/albe5259/Projects/navigator/Map/MapViewController.m \
-  /Users/albe5259/Projects/navigator/Map/MapViewController.h \
+dependencies: \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapViewController.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapViewController.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \
@@ -164,51 +165,51 @@ dependencies: /Users/albe5259/Projects/navigator/Map/MapViewController.m \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/NSURLConnection+AGSAdditions.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayer.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableContainerDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
-  /Users/albe5259/Projects/navigator/Map/LocationCalloutView.h \
-  /Users/albe5259/Projects/navigator/Map/BlankSignView.h \
-  /Users/albe5259/Projects/navigator/Map/Location.h \
-  /Users/albe5259/Projects/navigator/Map/NamedGeometry.h \
-  /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
-  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h \
-  /Users/albe5259/Projects/navigator/Map/MapStates.h \
-  /Users/albe5259/Projects/navigator/Map/BasemapsViewController.h \
-  /Users/albe5259/Projects/navigator/Map/Basemaps.h \
-  /Users/albe5259/Projects/navigator/Map/IconDownloader.h \
-  /Users/albe5259/Projects/navigator/Map/TabbedResultsViewController.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableContainerViewController.h \
-  /Users/albe5259/Projects/navigator/Map/SignsView.h \
-  /Users/albe5259/Projects/navigator/Map/PassThroughView.h \
-  /Users/albe5259/Projects/navigator/Map/StopsList.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableList.h \
-  /Users/albe5259/Projects/navigator/Map/Route.h \
-  /Users/albe5259/Projects/navigator/Map/RouteSolver.h \
-  /Users/albe5259/Projects/navigator/Map/routingDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/MapViewController+MapTapping.h \
-  /Users/albe5259/Projects/navigator/Map/MapViewController+Search.h \
-  /Users/albe5259/Projects/navigator/Map/LocationMarker/LocationMarker.h \
-  /Users/albe5259/Projects/navigator/Map/MapViewController+PlanningRouting.h \
-  /Users/albe5259/Projects/navigator/Map/MapSettings.h \
-  /Users/albe5259/Projects/navigator/Map/MapSettingsBase.h \
-  /Users/albe5259/Projects/navigator/Map/MapAppDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/ArcGISAppDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/MapAppSettings.h \
-  /Users/albe5259/Projects/navigator/Map/AppSettings.h \
-  /Users/albe5259/Projects/navigator/Map/UIColor+Additions.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableResultsTableView.h \
-  /Users/albe5259/Projects/navigator/Map/MapContentViewController.h \
-  /Users/albe5259/Projects/navigator/Map/SectionHeaderView.h \
-  /Users/albe5259/Projects/navigator/Map/Legend.h \
-  /Users/albe5259/Projects/navigator/Map/CurrentLocation.h \
-  /Users/albe5259/Projects/navigator/Map/DirectionsList.h \
-  /Users/albe5259/Projects/navigator/Map/Direction.h \
-  /Users/albe5259/Projects/navigator/Map/OverviewDirection.h \
-  /Users/albe5259/Projects/navigator/Map/DirectionsPrintRenderer.h \
-  /Users/albe5259/Projects/navigator/Map/MapShareUtility.h \
-  /Users/albe5259/Projects/navigator/Map/LocationGraphic.h \
-  /Users/albe5259/Projects/navigator/Map/AGSGeometry+AppAdditions.h \
-  /Users/albe5259/Projects/navigator/Map/UIBarButtonItem+AppAdditions.h \
-  /Users/albe5259/Projects/navigator/Map/Search.h \
-  /Users/albe5259/Projects/navigator/Map/UserSearchResults.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableCollection.h
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DrawableContainerDelegate.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/TableViewDrawable.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/LocationCalloutView.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/BlankSignView.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Location.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/NamedGeometry.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/GeocodeService.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/ArcGISMobileConfig.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapStates.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/BasemapsViewController.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Basemaps.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/IconDownloader.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/TabbedResultsViewController.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DrawableContainerViewController.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SignsView.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/PassThroughView.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/StopsList.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DrawableList.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Route.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/RouteSolver.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/routingDelegate.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapViewController+MapTapping.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapViewController+Search.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/LocationMarker/LocationMarker.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapViewController+PlanningRouting.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapSettings.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapSettingsBase.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapAppDelegate.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/ArcGISAppDelegate.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapAppSettings.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/AppSettings.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/UIColor+Additions.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DrawableResultsTableView.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapContentViewController.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SectionHeaderView.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Legend.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/CurrentLocation.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DirectionsList.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Direction.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/OverviewDirection.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DirectionsPrintRenderer.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/MapShareUtility.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/LocationGraphic.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/AGSGeometry+AppAdditions.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/UIBarButtonItem+AppAdditions.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Search.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/UserSearchResults.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DrawableCollection.h

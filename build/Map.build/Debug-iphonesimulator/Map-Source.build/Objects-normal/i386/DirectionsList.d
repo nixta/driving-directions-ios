@@ -1,8 +1,9 @@
-dependencies: /Users/albe5259/Projects/navigator/Map/DirectionsList.m \
-  /Users/albe5259/Projects/navigator/Map/DirectionsList.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableList.h \
-  /Users/albe5259/Projects/navigator/Map/DrawableContainerDelegate.h \
-  /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
+dependencies: \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DirectionsList.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DirectionsList.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DrawableList.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/DrawableContainerDelegate.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/TableViewDrawable.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \
@@ -167,11 +168,11 @@ dependencies: /Users/albe5259/Projects/navigator/Map/DirectionsList.m \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/NSURLConnection+AGSAdditions.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayer.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
-  /Users/albe5259/Projects/navigator/Map/Direction.h \
-  /Users/albe5259/Projects/navigator/Map/NamedGeometry.h \
-  /Users/albe5259/Projects/navigator/Map/OverviewDirection.h \
-  /Users/albe5259/Projects/navigator/Map/NSString+NSString_Additions.h \
-  /Users/albe5259/Projects/navigator/Map/StopsList.h \
-  /Users/albe5259/Projects/navigator/Map/Location.h \
-  /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
-  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Direction.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/NamedGeometry.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/OverviewDirection.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/NSString+NSString_Additions.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/StopsList.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Location.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/GeocodeService.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/ArcGISMobileConfig.h

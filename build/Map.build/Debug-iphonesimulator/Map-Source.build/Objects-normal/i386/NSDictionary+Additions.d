@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/albe5259/Projects/navigator/Map/NSDictionary+Additions.m \
-  /Users/albe5259/Projects/navigator/Map/NSDictionary+Additions.h
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/NSDictionary+Additions.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/NSDictionary+Additions.h

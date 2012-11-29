@@ -1,2 +1,3 @@
-dependencies: /Users/albe5259/Projects/navigator/Map/SignTableViewCell.m \
-  /Users/albe5259/Projects/navigator/Map/SignTableViewCell.h
+dependencies: \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SignTableViewCell.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SignTableViewCell.h

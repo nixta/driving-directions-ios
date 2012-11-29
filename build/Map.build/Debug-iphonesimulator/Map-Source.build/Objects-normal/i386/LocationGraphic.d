@@ -1,5 +1,6 @@
-dependencies: /Users/albe5259/Projects/navigator/Map/LocationGraphic.m \
-  /Users/albe5259/Projects/navigator/Map/LocationGraphic.h \
+dependencies: \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/LocationGraphic.m \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/LocationGraphic.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/ArcGIS.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSJSON.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSSBJsonIncludes.h \
@@ -164,8 +165,8 @@ dependencies: /Users/albe5259/Projects/navigator/Map/LocationGraphic.m \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/NSURLConnection+AGSAdditions.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayer.h \
   /Users/albe5259/Library/SDKs/ArcGIS/ArcGIS.framework/Headers/AGSWMSLayerInfo.h \
-  /Users/albe5259/Projects/navigator/Map/Location.h \
-  /Users/albe5259/Projects/navigator/Map/NamedGeometry.h \
-  /Users/albe5259/Projects/navigator/Map/TableViewDrawable.h \
-  /Users/albe5259/Projects/navigator/Map/GeocodeService.h \
-  /Users/albe5259/Projects/navigator/Map/ArcGISMobileConfig.h
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/Location.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/NamedGeometry.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/TableViewDrawable.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/GeocodeService.h \
+  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/ArcGISMobileConfig.h
