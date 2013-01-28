@@ -4,7 +4,7 @@ Driving Directions app for iOS
 
 This is an app shown at the Development Summit Europe 2012 Plenary demonstrating an iPhone application for routing.
 
-The demo was developed for the iPhone using the ArcGIS Runtime SDK for iOS 2.3.2, xCode 4.5 (with Automatic Reference Counting) and iOS 6.0. 
+The demo was developed for the iPhone using the ArcGIS Runtime SDK for iOS 2.3.2, xCode 4.5 (with Automatic Reference Counting) and iOS 6.0. Upgraded to ArcGIS Runtime SDK for iOS 10.1.1
 
 ![App](https://raw.github.com/ArcGIS/driving-directions-ios/master/picture.png)
 
