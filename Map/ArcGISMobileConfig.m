@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -206,7 +206,7 @@
     
     tmp = [NSDictionary safeGetObjectFromDictionary:properties withKey:@"defaultMapExtent"];
 	if (tmp != nil){
-        self.defaultMapExtent = [[AGSEnvelope alloc] initWithJSON:[tmp AGSJSONValue]];
+        self.defaultMapExtent = [[AGSEnvelope alloc] initWithJSON:[tmp ags_JSONValue]];
     }
 }
 
@@ -247,7 +247,7 @@
     if (self.defaultMapExtent != nil)
     {
         NSDictionary *extentJSON = [self.defaultMapExtent encodeToJSON];
-        [configDict setValue:[extentJSON AGSJSONRepresentation] forKey:@"defaultMapExtent"];
+        [configDict setValue:[extentJSON ags_JSONRepresentation] forKey:@"defaultMapExtent"];
     }
     
     [json setObject:configDict forKey:@"uris"];

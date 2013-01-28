@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -246,7 +246,7 @@
     //update symbol for graphic and update graphic on map if necessary
     self.graphic.symbol = [self symbolForGraphic];
     if (self.graphic.layer != nil) {
-        [self.graphic.layer dataChanged];
+        [self.graphic.layer refresh];
     }
 }
 
@@ -301,7 +301,7 @@
     
     self.graphic.geometry = _geometry;
     if(self.graphic.layer != nil)
-        [self.graphic.layer dataChanged];
+        [self.graphic.layer refresh];
 } 
 
 #pragma mark -
@@ -418,10 +418,9 @@
 #pragma mark Private Methods
 -(AGSSymbol *)symbolForGraphic
 {
-    AGSPictureMarkerSymbol *locationSymbol = [AGSPictureMarkerSymbol pictureMarkerSymbolWithImage:self.defaultIcon];
-    locationSymbol.xoffset = 9;
-    locationSymbol.yoffset = 16;
-    locationSymbol.hotspot = CGPointMake(-9, 11);
+    AGSPictureMarkerSymbol *locationSymbol = [AGSPictureMarkerSymbol pictureMarkerSymbolWithImage:self.defaultIcon];    
+    locationSymbol.offset = CGPointMake(9, 16);
+    locationSymbol.leaderPoint = CGPointMake(-9, 11);
     
     if(self.locationType == LocationTypeNone)
         return locationSymbol;
@@ -429,14 +428,13 @@
     //have to create a custom location symbol 
     AGSCompositeSymbol *cs = [AGSCompositeSymbol compositeSymbol];
     
-    [cs.symbols addObject:locationSymbol];
+    [cs addSymbol:locationSymbol];
     
     AGSSimpleMarkerSymbol *circleMarkerSymbol = [AGSSimpleMarkerSymbol simpleMarkerSymbol];
     circleMarkerSymbol.style = AGSSimpleMarkerSymbolStyleCircle;
-    circleMarkerSymbol.size = 18;
-    circleMarkerSymbol.xoffset = 12;
-    circleMarkerSymbol.yoffset = 25;
-    
+    circleMarkerSymbol.size = CGSizeMake(18,18);
+    circleMarkerSymbol.offset = CGPointMake(12, 25);
+        
     switch (self.locationType) {
         case LocationTypeStartLocation:
             circleMarkerSymbol.color = [UIColor greenColor];
@@ -450,7 +448,7 @@
             break;
     }
     
-    [cs.symbols addObject:circleMarkerSymbol];
+    [cs addSymbol:circleMarkerSymbol];
     
     if (self.locationType == LocationTypeTransitLocation) {
         
@@ -465,10 +463,9 @@
             stopString = [NSString stringWithFormat:@"%d", stopNumber];
         }
         
-        AGSTextSymbol *ts = [AGSTextSymbol textSymbolWithTextTemplate:stopString color:[UIColor blackColor]];
-        ts.xoffset = 9;
-        ts.yoffset = 21;
-        [cs.symbols addObject:ts];
+        AGSTextSymbol *ts = [AGSTextSymbol textSymbolWithText:stopString color:[UIColor blackColor]];
+        ts.offset = CGPointMake(9, 21);
+        [cs addSymbol:ts];
     }
     
     return cs;

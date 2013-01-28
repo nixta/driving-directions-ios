@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -31,8 +31,7 @@
 -(AGSMarkerSymbol *)normalize
 {
     AGSMarkerSymbol *ms = [self copy];
-    ms.xoffset = 0;
-    ms.yoffset = 0;
+    ms.offset = CGPointMake(0,0);
     
     return ms;
 }
@@ -50,17 +49,14 @@
     
     AGSMarkerSymbol *firstMarkerSymbol = (AGSMarkerSymbol *)[cs.symbols objectAtIndex:0];
     
-    CGFloat xDelta = firstMarkerSymbol.xoffset;
-    CGFloat yDelta = firstMarkerSymbol.yoffset;
-    
-    firstMarkerSymbol.xoffset = 0;
-    firstMarkerSymbol.yoffset = 0;
+    CGPoint pDelta = firstMarkerSymbol.offset;
+   
+    firstMarkerSymbol.offset = CGPointMake(0, 0);
     
     for(int i = 1; i < cs.symbols.count; i++)
     {
         AGSMarkerSymbol *ms = [cs.symbols objectAtIndex:i];
-        ms.xoffset -= xDelta;
-        ms.yoffset -= yDelta;
+        ms.offset = CGPointMake(ms.offset.x - pDelta.x, ms.offset.y - pDelta.y);
     }
     
     return cs;

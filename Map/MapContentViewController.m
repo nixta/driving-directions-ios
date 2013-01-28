@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -61,11 +61,21 @@ static NSUInteger kBasemapSection = 0;
     return self;
 }
 
--(id)initWithMapLayerViews:(NSDictionary *)mapLayerViews
+-(id)initWithMapLayerViews:(NSArray *)mapLayerViews
 {
     self = [self initWithNibName:@"MapContentViewController" bundle:nil];
     if (self) {
         _mapLayerViews = mapLayerViews;
+    }
+    
+    return self;
+}
+
+-(id)initWithMap:(AGSMapView *)mapView
+{
+    self = [self initWithNibName:@"MapContentViewController" bundle:nil];
+    if (self) {
+        mapView = mapView;
     }
     
     return self;
@@ -405,11 +415,11 @@ static NSUInteger kBasemapSection = 0;
 
 -(void)sectionHeaderView:(SectionHeaderView *)sectionHeaderView toggledUISwitch:(UISwitch *)aSwitch
 {
-    UIView *layer = (UIView *)[self.mapLayerViews objectForKey:sectionHeaderView.titleLabel.text];
-    layer.hidden = !layer.hidden;
+    //UIView *layer = (UIView *)[self.mapLayerViews objectForKey:sectionHeaderView.titleLabel.text];
+    AGSLayer* layer = [self.mapView mapLayerForName:sectionHeaderView.titleLabel.text];
+    layer.visible = !layer.visible;
     
-    
-    if (layer.hidden && sectionHeaderView.disclosureButton.selected) {
+    if (layer.visible && sectionHeaderView.disclosureButton.selected) {
         [sectionHeaderView toggleOpenWithUserAction:YES];
     }
     

@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -31,7 +31,7 @@
 @end
 
 //private property off of tiled layer view we need
-@interface AGSTiledLayerView ()
+@interface AGSTiledLayer ()
 
 @property (nonatomic, retain) AGSLOD *lod;
 -(AGSLOD *)findClosestLOD:(double)resolution;
@@ -539,7 +539,7 @@ mapServiceLayerInfos:mapServiceLayerInfos
 //retrieving all of the base maps
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    NSDictionary *json = [self.responseString AGSJSONValue];
+    NSDictionary *json = [self.responseString ags_JSONValue];
     
     //Update Legend for current map service info
     NSArray *layerInfoArray = [json objectForKey:@"layers"];
@@ -733,23 +733,24 @@ mapServiceLayerInfos:mapServiceLayerInfos
             for (int i = 1; i <= kNumberOfLayersInFeatureCollection; i++) {
                 NSString *layerName = [self.mapLayerInfo.title stringByAppendingFormat:@"%d", i];
                 
-                UIView<AGSLayerView> *lyrView = (UIView<AGSLayerView> *)[mapView.mapLayerViews objectForKey:layerName];
-                if (lyrView && !lyrView.hidden) {
+                //UIView<AGSLayerView> *lyrView = (UIView<AGSLayerView> *)[mapView.mapLayerViews objectForKey:layerName];
+                AGSLayer *layer = [mapView mapLayerForName:layerName];
+                if (layer && !layer.visible) {
                     isVisible = YES;
                     break;
                 }
             }
         }
         else {
-            UIView<AGSLayerView> *lyrView = (UIView<AGSLayerView> *)[mapView.mapLayerViews objectForKey:self.mapLayerInfo.title];
+            //UIView<AGSLayerView> *lyrView = (UIView<AGSLayerView> *)[mapView.mapLayerViews objectForKey:self.mapLayerInfo.title];
+            AGSLayer *layer = [mapView mapLayerForName:self.mapLayerInfo.title];
             
-            AGSLayer *agsLayer = lyrView.agsLayer;
-            if ([agsLayer isKindOfClass:[AGSFeatureLayer class]]) {
-                isVisible = !lyrView.hidden && [self featureLayer:(AGSFeatureLayer *)agsLayer isVisibleWithScaleOnMapView:mapView];
+            if ([layer isKindOfClass:[AGSFeatureLayer class]]) {
+                isVisible = !layer.visible && [self featureLayer:(AGSFeatureLayer *)layer isVisibleWithScaleOnMapView:mapView];
             }
             else
             {
-                isVisible = !lyrView.hidden && [self isVisibleWithScaleOnMapView:mapView];
+                isVisible = !layer.visible && [self isVisibleWithScaleOnMapView:mapView];
             }
         }
     }
@@ -808,7 +809,7 @@ mapServiceLayerInfos:mapServiceLayerInfos
     
     AGSTiledMapServiceLayer *tiledMSL = [self.mapLayerInfo getTiledMapServiceLayer:mapView];
     if (tiledMSL != nil) {
-        AGSTiledLayerView *tlv = [mapView.mapLayerViews objectForKey:tiledMSL.name];
+        AGSTiledLayer *tlv = (AGSTiledLayer*)[mapView mapLayerForName:tiledMSL.name];
         scaleToCompare = [tlv findClosestLOD:mapView.resolution].scale; //tlv.lod.scale;
     }
     

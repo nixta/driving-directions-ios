@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -66,7 +66,7 @@
         [self.identifyLayer addGraphic:self.identifyLocation.graphic];
     }
     
-    [self.identifyLayer dataChanged];
+    [self.identifyLayer refresh];
     
     [self showCalloutForLocation:location];
     
@@ -114,8 +114,8 @@
     self.mapView.callout.highlight = nil;
     self.mapView.callout.cornerRadius = [LocationCalloutView radius];
     
-    [self.mapView showCalloutAtPoint:(AGSPoint *)location.geometry forGraphic:location.graphic animated:YES];
-    
+    [self.mapView.callout showCalloutAtPoint:(AGSPoint *)location.geometry forGraphic:location.graphic animated:YES];
+        
     [self.locationCallout showAccessoryView:(self.selectedFeaturePopupInfos.count > 0)];
     
     //do not show hide button if result is a search result OR if we are in routing mode and pin is a stop point
@@ -126,15 +126,16 @@
     [self setCalloutShown:YES];
 }
 
--(BOOL)mapView:(AGSMapView *)mapView shouldShowCalloutForGPS:(AGSGPS *)gps
+- (BOOL)mapView:(AGSMapView *)mapView shouldShowCalloutForLocationDisplay:(AGSLocationDisplay *)ld
 {
     //only show callout if we aren't using a tool or a callout isn't already being shown
-    BOOL show = !(_calloutShown) && self.mapView.gps.enabled;
+    BOOL show = !(_calloutShown) && self.mapView.locationDisplay.dataSourceStarted;
         
     return show; 
 }
 
--(UIView *)customViewForGPS:(AGSGPS *)gps screenPoint:(CGPoint)screen
+#warning replace with the new class
+/*-(UIView *)customViewForGPS:(AGSGPS *)gps screenPoint:(CGPoint)screen
 {
     _isShowingGPSCallout = YES;
     
@@ -153,9 +154,8 @@
     self.mapView.callout.highlight = nil;
     self.mapView.callout.cornerRadius = [LocationCalloutView radius];
     
-    
     return self.locationCallout;
-}
+}*/
 
 #pragma mark -
 #pragma mark Tapping Methods
@@ -308,7 +308,7 @@
     }
     
     [gl removeGraphic:location.graphic];
-    [gl dataChanged];
+    [gl refresh];
     
     [self setCalloutShown:NO];
     
@@ -402,7 +402,7 @@
         [self.planningRoute addStop:updatedStopLocation];
     }
     
-    [self.planningLayer dataChanged];
+    [self.planningLayer refresh];
     self.routeButton.enabled = [self.planningRoute canRoute];
     [self showStopSigns:(self.planningRoute.stops.numberOfValidStops > 0)];
     [self.stopsView reloadData];

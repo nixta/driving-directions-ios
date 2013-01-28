@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -177,7 +177,7 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
     
     //NSLog(@"%@", strData);
 
-    NSDictionary *json = [strData AGSJSONValue];
+    NSDictionary *json = [strData ags_JSONValue];
     TokenResponse* tokenResponse = [[TokenResponse alloc] init];
     [tokenResponse decodeWithJSON:json];
     
@@ -226,7 +226,7 @@ static NSString* _referer = @"www.esri.com/arcgismobile";
     //    NSLog(@"---url: %@", urlString);
     //     NSLog(@"---response: %@",responseString);
 	
-    NSDictionary *json = [responseString AGSJSONValue];
+    NSDictionary *json = [responseString ags_JSONValue];
     
     return json;
 }

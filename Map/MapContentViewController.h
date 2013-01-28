@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -44,7 +44,7 @@
     
     @private
     
-    NSDictionary                *_mapLayerViews;
+    NSArray                     *_mapLayerViews;
     BasemapsTableViewCell       *_basemapsTableViewCell;
     
     SettingsViewController      *_settingsVC;
@@ -68,7 +68,9 @@
 
 @property (nonatomic, strong) id<ChangeBasemapsDelegate>    changeBasemapDelegate;
 
-@property (nonatomic, strong) NSDictionary                  *mapLayerViews;
+@property (nonatomic, strong) NSArray                       *mapLayerViews;
+
+@property (nonatomic, strong) AGSMapView                    *mapView;
 
 -(IBAction)settingsButtonTapped:(id)sender;
 
@@ -76,6 +78,7 @@
  works for proof of concept
  */
 -(id)initWithMapLayerViews:(NSDictionary *)mapLayerViews;
+-(id)initWithMap:(AGSMapView *)mapView;
 
 /*Message passed to indicate basemap has successfully been changed somewhere in the app */
 -(void)successfullyChangedBasemap;

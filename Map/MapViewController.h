@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -50,10 +50,10 @@
  Main view controller and interface for Directions app  
  */
 
-@interface MapViewController : UIViewController     <AGSMapViewLayerDelegate, AGSMapViewTouchDelegate, AGSMapViewCalloutDelegate, AGSWebMapDelegate,
+@interface MapViewController : UIViewController     <AGSMapViewLayerDelegate, AGSMapViewTouchDelegate, AGSMapViewCalloutDelegate,           AGSWebMapDelegate,
                                                     AGSWebMapDelegate, LocationCalloutDelegate, 
                                                     UIActionSheetDelegate, ChangeBasemapsDelegate, RouteSolverDelegate,
-                                                    AGSGPSInfoTemplateDelegate, SignsViewDelegate, MFMailComposeViewControllerDelegate, 
+                                                    AGSLocationDisplayDataSourceDelegate, SignsViewDelegate, MFMailComposeViewControllerDelegate,
                                                      DrawableContainerDelegate, RoutingDelegate, UISearchBarDelegate>
 {
     /*Ux IB Elements */

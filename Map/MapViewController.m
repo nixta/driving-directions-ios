@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -126,12 +126,12 @@
     
     //[[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
     
-	self.mapView.wrapAround = YES;
+	[self.mapView enableWrapAround];
 	self.mapView.showMagnifierOnTapAndHold = YES;
 	self.mapView.layerDelegate = self;
 	self.mapView.touchDelegate = self;
 	self.mapView.calloutDelegate = self;
-	self.mapView.gps.infoTemplateDelegate = self;
+    self.mapView.locationDisplay.infoTemplateDelegate = self;
 	self.mapView.backgroundColor = [UIColor darkBackgroundColor];
     
     
@@ -144,7 +144,7 @@
     self.webmap = [AGSWebMap webMapWithItemId:kDefaultWebMapId credential:nil];
     self.webmap.delegate = self;
     
-    [self.mapView.gps start];
+    [self.mapView.locationDisplay startDataSource];
     
     if ( IS_IPHONE_5)
     {
@@ -164,11 +164,11 @@
     // show the point and route in the map, this is the delegate called from Apple Maps
     // we always assume the user selects their currect point as start and the end point is the destination.
     if (pStart == nil) {
-        pStart = self.mapView.gps.currentPoint;
+        pStart = self.mapView.locationDisplay.mapLocation;
     }
     
     if (pEnd == nil) {
-        pEnd = self.mapView.gps.currentPoint;
+        pEnd = self.mapView.locationDisplay.mapLocation;
     }
     
     Location *startLocation = [[Location alloc] initWithPoint:pStart
@@ -189,8 +189,9 @@
 - (void)viewDidUnload
 {
     if (_observingGPS) {
-        [self.mapView.gps removeObserver:self forKeyPath:gpsAutoPanKey];
-        [self.mapView.gps removeObserver:self forKeyPath:gpsEnabledKey];
+#warning Make sure the observers are available
+        [self.mapView.locationDisplay removeObserver:self forKeyPath:gpsAutoPanKey];
+        [self.mapView.locationDisplay removeObserver:self forKeyPath:gpsEnabledKey];
         _observingGPS = NO;
     }
     
@@ -289,7 +290,7 @@
      if (_mapContentVC == nil) {
          
          
-         MapContentViewController *mcvc = [[MapContentViewController alloc] initWithMapLayerViews:self.mapView.mapLayerViews];
+         MapContentViewController *mcvc = [[MapContentViewController alloc] initWithMap:self.mapView];
          mcvc.changeBasemapDelegate = self;
          
          UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:mcvc];
@@ -508,23 +509,23 @@
 {
     if (_routeSymbol == nil) {
         self.routeSymbol = [AGSCompositeSymbol compositeSymbol];
-        [self.routeSymbol.symbols addObject:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(100.0)/255 green:(100.0)/255 blue:(100.0)/255 alpha:1.0]
+        [self.routeSymbol addSymbol:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(100.0)/255 green:(100.0)/255 blue:(100.0)/255 alpha:1.0]
                                                                                      width:8.0f]];
         
-        [self.routeSymbol.symbols addObject:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(107.0)/255 green:(107.0)/255 blue:(107.0)/255 alpha:1.0]
+        [self.routeSymbol addSymbol:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(107.0)/255 green:(107.0)/255 blue:(107.0)/255 alpha:1.0]
                                                                                      width:7.5f]];
         
-        [self.routeSymbol.symbols addObject:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(115.0)/255 green:(115.0)/255 blue:(115.0)/255 alpha:1.0]
+        [self.routeSymbol addSymbol:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(115.0)/255 green:(115.0)/255 blue:(115.0)/255 alpha:1.0]
                                                                                      width:7.0f]];
         
-        [self.routeSymbol.symbols addObject:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(130.0)/255 green:(130.0)/255 blue:(130.0)/255 alpha:1.0]
+        [self.routeSymbol addSymbol:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(130.0)/255 green:(130.0)/255 blue:(130.0)/255 alpha:1.0]
                                                                                      width:5.0f]];
         
-        [self.routeSymbol.symbols addObject:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(145.0)/255 green:(145.0)/255 blue:(145.0)/255 alpha:1.0]
+        [self.routeSymbol addSymbol:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(145.0)/255 green:(145.0)/255 blue:(145.0)/255 alpha:1.0]
                                                                                      width:2.5f]]; 
     
         
-        [self.routeSymbol.symbols addObject:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(170.0)/255 green:(170.0)/255 blue:(170.0)/255 alpha:1.0]
+        [self.routeSymbol addSymbol:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(170.0)/255 green:(170.0)/255 blue:(170.0)/255 alpha:1.0]
                                                                                      width:1.0f]];  
     }
     
@@ -538,14 +539,14 @@
         
         AGSSimpleMarkerSymbol *cms = [AGSSimpleMarkerSymbol simpleMarkerSymbolWithColor:[[UIColor blackColor] colorWithAlphaComponent:.3]];
         cms.style = AGSSimpleMarkerSymbolStyleCircle;
-        cms.size = 55;
+        cms.size = CGSizeMake(55, 55);
         
         AGSSimpleLineSymbol *blackLine = [AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor darkGrayColor]];
         blackLine.width = 2;
                 
         cms.outline = blackLine;
         
-        [self.turnHighlightSymbol.symbols addObject:cms];
+        [self.turnHighlightSymbol addSymbol:cms];
     }
     
     return _turnHighlightSymbol;
@@ -571,19 +572,19 @@
     if (_currentDirectionSymbol == nil) {
         self.currentDirectionSymbol = [AGSCompositeSymbol compositeSymbol];
         
-        [self.currentDirectionSymbol.symbols addObject:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(57.0)/255 green:(121.0)/255 blue:(215.0)/255 alpha:1.0]
+        [self.currentDirectionSymbol addSymbol:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(57.0)/255 green:(121.0)/255 blue:(215.0)/255 alpha:1.0]
                                                                                      width:9.0f]];
         
-        [self.currentDirectionSymbol.symbols addObject:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(77.0)/255 green:(139.0)/255 blue:(219.0)/255 alpha:1.0]
+        [self.currentDirectionSymbol addSymbol:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(77.0)/255 green:(139.0)/255 blue:(219.0)/255 alpha:1.0]
                                                                                      width:7.0f]];
         
-        [self.currentDirectionSymbol.symbols addObject:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(117.0)/255 green:(173.0)/255 blue:(227.0)/255 alpha:1.0]
+        [self.currentDirectionSymbol addSymbol:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(117.0)/255 green:(173.0)/255 blue:(227.0)/255 alpha:1.0]
                                                                                      width:6.0f]];
         
-        [self.currentDirectionSymbol.symbols addObject:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(154.0)/255 green:(205.0)/255 blue:(235.0)/255 alpha:1.0]
+        [self.currentDirectionSymbol addSymbol:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(154.0)/255 green:(205.0)/255 blue:(235.0)/255 alpha:1.0]
                                                                                      width:5.0f]];
         
-        [self.currentDirectionSymbol.symbols addObject:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(176.0)/255 green:(221.0)/255 blue:(239.0)/255 alpha:1.0]
+        [self.currentDirectionSymbol addSymbol:[AGSSimpleLineSymbol simpleLineSymbolWithColor:[UIColor colorWithRed:(176.0)/255 green:(221.0)/255 blue:(239.0)/255 alpha:1.0]
                                                                                      width:2.5f]];  
     }
     
@@ -724,7 +725,7 @@
     
     //Clear view of all stops
     [self.planningLayer removeAllGraphics];
-    [self.planningLayer dataChanged];
+    [self.planningLayer refresh];
     
     self.routeButton.enabled = NO;
 }
@@ -756,39 +757,39 @@
     //if the map isn't loaded yet, then we're trying to turn on the GPS because the
     //gps won't have been enabled yet
     
-    AGSGPS *gps = self.mapView.gps;
+    AGSLocationDisplay *gps = self.mapView.locationDisplay;
     if ( self.mapView.loaded) {        
-        if (!gps.enabled)
+        if (!gps.dataSourceStarted)
         {
             [self enableGpsAutoPan];
         }
         else //gps is enabled
         {
             //disable gps
-            [gps stop];
+            [gps stopDataSource];
         }
     }
 }
 
 -(void)enableGpsAutoPan
 {    
-    AGSGPS *gps = self.mapView.gps;
-    if (!gps.enabled)
+    AGSLocationDisplay *gps = self.mapView.locationDisplay;
+    if (!gps.dataSourceStarted)
     {
         //start GPS
-        [gps start];
-        gps.autoPanMode = AGSGPSAutoPanModeDefault;
+        [gps startDataSource];
+        gps.autoPanMode = AGSLocationDisplayAutoPanModeDefault;
         
         //return because we're starting the gps and it might take a while
         return;
     }
 	
 	// all other times
-    [self.mapView centerAtPoint:gps.currentPoint animated:YES];
+    [self.mapView centerAtPoint:gps.mapLocation animated:YES];
     
     //this needs to be done after centerAtPoint so that call doesn't
     //reset the autopan property.
-    gps.autoPanMode = AGSGPSAutoPanModeDefault;
+    gps.autoPanMode = AGSLocationDisplayAutoPanModeDefault;
 }
 
 #pragma mark -
@@ -850,8 +851,8 @@
     
     //highlight/select GPS button as necessary
     if ([keyPath isEqualToString:gpsAutoPanKey] || [keyPath isEqualToString:gpsEnabledKey]){
-        BOOL bSelected = self.mapView.gps.enabled && (self.mapView.gps.autoPanMode == AGSGPSAutoPanModeDefault);
-        BOOL bHighlighted = self.mapView.gps.enabled && (self.mapView.gps.autoPanMode != AGSGPSAutoPanModeDefault);
+        BOOL bSelected = self.mapView.locationDisplay.dataSourceStarted && (self.mapView.locationDisplay.autoPanMode == AGSLocationDisplayAutoPanModeDefault);
+        BOOL bHighlighted = self.mapView.locationDisplay.dataSourceStarted && (self.mapView.locationDisplay.autoPanMode != AGSLocationDisplayAutoPanModeDefault);
                 
 		self.gpsButton.selected = bSelected;
         self.gpsButton.highlighted = bHighlighted;
@@ -866,14 +867,14 @@
     if (_observingGPS)
     {
         //remove our observers only if we've already loaded the web map...
-        [self.mapView.gps removeObserver:self forKeyPath:gpsAutoPanKey];
-        [self.mapView.gps removeObserver:self forKeyPath:gpsEnabledKey];
+        [self.mapView.locationDisplay removeObserver:self forKeyPath:gpsAutoPanKey];
+        [self.mapView.locationDisplay removeObserver:self forKeyPath:gpsEnabledKey];
         _observingGPS = NO;
     }
     
     if (!_observingGPS) {
-        [self.mapView.gps addObserver:self forKeyPath:gpsAutoPanKey options:NSKeyValueObservingOptionNew context:nil];
-        [self.mapView.gps addObserver:self forKeyPath:gpsEnabledKey options:NSKeyValueObservingOptionNew context:nil];
+        [self.mapView.locationDisplay addObserver:self forKeyPath:gpsAutoPanKey options:NSKeyValueObservingOptionNew context:nil];
+        [self.mapView.locationDisplay addObserver:self forKeyPath:gpsEnabledKey options:NSKeyValueObservingOptionNew context:nil];
         _observingGPS = YES;
     }
 }
@@ -930,10 +931,10 @@
     self.planningRoute = self.currentRoute = nil;
     
     [self.planningLayer removeAllGraphics];
-    [self.planningLayer dataChanged];
+    [self.planningLayer refresh];
     
     [self.routeLayer removeAllGraphics];
-    [self.routeLayer dataChanged];
+    [self.routeLayer refresh];
     
     [self endRouteModeToState:MapAppStateSimple animated:YES];
     [self setSearchState:MapSearchStateDefault withKeyboard:NO animated:NO];
@@ -1109,11 +1110,11 @@
     
     //remove all graphics from the route layer
     [self.routeLayer removeAllGraphics];
-    [self.routeLayer dataChanged];
+    [self.routeLayer refresh];
         
     //unconditionally remove all graphics from planning layer
     [self.planningLayer removeAllGraphics];
-    [self.planningLayer dataChanged];
+    [self.planningLayer refresh];
 
     self.currentRoute = nil;
     [self showSearchLayer:YES];
@@ -1124,8 +1125,9 @@
 //shows/hides the identify and search graphics layers
 -(void)showSearchLayer:(BOOL)show
 {
-    UIView *searchLayerView = [self.mapView.mapLayerViews objectForKey:self.searchLayer.name];
-    searchLayerView.hidden = !show;
+    //UIView *searchLayerView = [self.mapView.mapLayerViews objectForKey:self.searchLayer.name];
+    AGSLayer * searchLayerView = [self.mapView mapLayerForName:self.searchLayer.name];
+    searchLayerView.visible = !show;
 }
 
 //Returns an envelope that will fit in the screen, taking into account the various control elements
@@ -1189,7 +1191,7 @@
     [self.routeLayer addGraphic:routeGraphic];
     [self.routeLayer addGraphic:self.currentDirectionGraphic];
         
-    [self.routeLayer dataChanged];
+    [self.routeLayer refresh];
     
     //Add all stops into route layer if not already there
     [route.stops addStopsToLayer:self.planningLayer showCurrentLocation:YES];
@@ -1201,7 +1203,7 @@
     }
     [route.stops removeDisplacedStops];
     
-    [self.planningLayer dataChanged];
+    [self.planningLayer refresh];
     
     [self showDirectionsSigns:YES directions:route.directions];
 }
@@ -1427,7 +1429,7 @@
         
         [self.routeLayer addGraphic:self.turnHighlightGraphic];
         
-        [self.routeLayer dataChanged];
+        [self.routeLayer refresh];
     }
 }
 

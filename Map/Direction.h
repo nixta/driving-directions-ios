@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -22,7 +22,7 @@
 
 @protocol DirectionDelegate;
 
-@interface Direction : NSObject <NamedGeometry, AGSExportMapImageDelegate>
+@interface Direction : NSObject <NamedGeometry/*, AGSExportMapImageDelegate*/>
 {
     AGSGeometry             *_geometry;
     NSString                *_name;

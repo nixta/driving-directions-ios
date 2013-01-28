@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -86,16 +86,12 @@
 }
 
 -(AGSMapServiceInfo *)getMSI:(AGSMapView *)mapView
-{
-    //get the AGSLayerView for our layer
-    id<AGSLayerView> layerView = [mapView.mapLayerViews objectForKey:self.title];
+{    
+    AGSLayer *layer = [mapView mapLayerForName:self.title];
     
     //if we can't find the layer, return nil
-    if (!layerView)
+    if (!layer)
         return nil;
-    
-    //get the AGSLayer
-    AGSLayer *layer = layerView.agsLayer;
     
     AGSMapServiceInfo *msi = nil;
     
@@ -116,29 +112,23 @@
 
 -(BOOL)isDynamicMapService:(AGSMapView *)mapView
 {
-    //get the AGSLayerView for our layer
-    id<AGSLayerView> layerView = [mapView.mapLayerViews objectForKey:self.title];
+    //get the AGSLayerView for our layer    
+    AGSLayer *layer = [mapView mapLayerForName:self.title];
     
-    if (!layerView)
+    if (!layer)
         return NO;
-    
-    //get the AGSLayer
-    AGSLayer *layer = layerView.agsLayer;
-    
+        
     BOOL bIsDynamicMapService = [layer isKindOfClass:[AGSDynamicMapServiceLayer class]];
     
     return bIsDynamicMapService;
 }
 
 -(AGSDynamicMapServiceLayer *)getDynamicMapServiceLayer:(AGSMapView *)mapView
-{
-    id<AGSLayerView> layerView = [mapView.mapLayerViews objectForKey:self.title];
+{    
+    AGSLayer *layer = [mapView mapLayerForName:self.title];
     
-    if (!layerView)
+    if (!layer)
         return nil;
-    
-    //get the AGSLayer
-    AGSLayer *layer = layerView.agsLayer;
     
     AGSDynamicMapServiceLayer *retValue = nil;
     if ([layer isKindOfClass:[AGSDynamicMapServiceLayer class]])
@@ -150,15 +140,12 @@
 }
 
 -(AGSTiledMapServiceLayer *)getTiledMapServiceLayer:(AGSMapView *)mapView
-{
-    id<AGSLayerView> layerView = [mapView.mapLayerViews objectForKey:self.title];
+{    
+    AGSLayer *layer = [mapView mapLayerForName:self.title];
     
-    if (!layerView)
+    if (!layer)
         return nil;
-    
-    //get the AGSLayer
-    AGSLayer *layer = layerView.agsLayer;
-    
+        
     AGSTiledMapServiceLayer *retValue = nil;
     if ([layer isKindOfClass:[AGSTiledMapServiceLayer class]])
     {

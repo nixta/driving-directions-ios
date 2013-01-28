@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -97,7 +97,7 @@
     //updates all signs on the map
     [self.planningLayer removeAllGraphics];
     [self.planningRoute.stops addStopsToLayer:self.planningLayer showCurrentLocation:NO];
-    [self.planningLayer dataChanged];
+    [self.planningLayer refresh];
     
     //update surrounding Ux based on route
     self.routeButton.enabled = [self.planningRoute canRoute];

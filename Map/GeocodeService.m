@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -361,7 +361,7 @@
     
     AGSGraphic *feature = [[AGSGraphic alloc] initWithJSON:[json valueForKey:@"feature"]];
     
-    self.score = [[feature attributes] objectForKey:@"Score"];
+    self.score = [[feature allAttributes] objectForKey:@"Score"];
     self.location = (AGSPoint*)feature.geometry;
     self.extent = [[AGSEnvelope alloc] initWithJSON:[json valueForKey:@"extent"]];
 }

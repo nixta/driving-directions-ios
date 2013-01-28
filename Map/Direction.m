@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -108,7 +108,9 @@
     [env expandByFactor:1.3];
     [env reaspect:size];
     
-    AGSExportImageParams *graphicparams = [[AGSExportImageParams alloc] initWithEnvelope:env
+    // 10.1.1 Doesn't support exporting of the map
+    
+    /*AGSExportImageParams *graphicparams = [[AGSExportImageParams alloc] initWithEnvelope:env
                                                                        timeExtent:nil 
                                                                              size:size
                                                                             frame:CGRectMake(0, 0, size.width, size.height) mapWrapAround:YES];
@@ -128,12 +130,13 @@
                                                                              size:size 
                                                                             frame:CGRectMake(0, 0, size.width, size.height) mapWrapAround:YES];
     
-    self.mapOp = [self.basemapLayer exportMapImage:mapparams];
+    self.mapOp = [self.basemapLayer exportMapImage:mapparams];*/
 }
 
 #pragma mark -
 #pragma mark Export Image
-- (void)dynamicLayer:(AGSDynamicLayer *)layer exportMapImageOperation:(NSOperation<AGSDynamicLayerDrawingOperation>*)op didFinishWithImage:(UIImage *)image
+// 10.1.1 Doesn't support exporting of the map
+/*- (void)dynamicLayer:(AGSDynamicLayer *)layer exportMapImageOperation:(NSOperation<AGSDynamicLayerDrawingOperation>*)op didFinishWithImage:(UIImage *)image
 {
     if (op == self.graphicOp) {
         self.graphicImage = image;
@@ -154,15 +157,16 @@
         self.graphicImage = nil;
     }    
     
-}
+}*/
 
--(void)dynamicLayer:(AGSDynamicLayer *)layer exportMapImageOperation:(NSOperation<AGSDynamicLayerDrawingOperation> *)op didFailWithError:(NSError *)error
+// 10.1.1 Doesn't support exporting of the map
+/*-(void)dynamicLayer:(AGSDynamicLayer *)layer exportMapImageOperation:(NSOperation<AGSDynamicLayerDrawingOperation> *)op didFailWithError:(NSError *)error
 {
     if ([self.delegate respondsToSelector:@selector(directionDidFailToRetrieveImage:)]) 
     {
         [self.delegate directionDidFailToRetrieveImage:self];
     }
-}
+}*/
 
 #pragma mark -
 #pragma mark Class Methods
@@ -356,7 +360,8 @@
     if(_graphicsLayer == nil)
     {
         self.graphicsLayer = [AGSGraphicsLayer graphicsLayer];
-        self.graphicsLayer.exportDelegate = self;
+        // 10.1.1 Doesn't support exporting of the map
+        //self.graphicsLayer.exportDelegate = self;
         self.graphicsLayer.renderNativeResolution = NO;
         
         AGSSimpleLineSymbol *sls = [AGSSimpleLineSymbol simpleLineSymbol];

@@ -1,5 +1,5 @@
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -55,14 +55,14 @@ static NSString *kDefaultPortalUrl = @"http://www.arcgis.com";
 		self.appSettings = [self createAppSettings];
 		
         // register our preference selection data to be archived
-        sAppSettings = [[self.appSettings encodeToJSON] AGSJSONRepresentation];
+        sAppSettings = [[self.appSettings encodeToJSON] ags_JSONRepresentation];
         NSDictionary *appSettingsDictionary = [NSDictionary dictionaryWithObject:sAppSettings forKey:kAppSettingsKey];
         [[NSUserDefaults standardUserDefaults] registerDefaults:appSettingsDictionary];
         [[NSUserDefaults standardUserDefaults] synchronize];
 	}
 	else
 	{
-        self.appSettings = [self createAppSettingsWithJSON:[sAppSettings AGSJSONValue]];
+        self.appSettings = [self createAppSettingsWithJSON:[sAppSettings ags_JSONValue]];
 	}
 
     	
@@ -144,7 +144,7 @@ static NSString *kDefaultPortalUrl = @"http://www.arcgis.com";
 {    
     // save the current App Settings
     NSDictionary *appSettingsJSON = [self.appSettings encodeToJSON];
-    NSString *sJSONRepresentation = [appSettingsJSON AGSJSONRepresentation];
+    NSString *sJSONRepresentation = [appSettingsJSON ags_JSONRepresentation];
 	[[NSUserDefaults standardUserDefaults] setObject:sJSONRepresentation forKey:kAppSettingsKey];
         
 	[[NSUserDefaults standardUserDefaults] synchronize];
@@ -176,14 +176,14 @@ static NSString *kDefaultPortalUrl = @"http://www.arcgis.com";
 		self.appSettings = [self createAppSettings];
 		
         // register our preference selection data to be archived
-        sAppSettings = [[self.appSettings encodeToJSON] AGSJSONRepresentation];
+        sAppSettings = [[self.appSettings encodeToJSON] ags_JSONRepresentation];
         NSDictionary *appSettingsDictionary = [NSDictionary dictionaryWithObject:sAppSettings forKey:kAppSettingsKey];
         [[NSUserDefaults standardUserDefaults] registerDefaults:appSettingsDictionary];
         [[NSUserDefaults standardUserDefaults] synchronize];
 	}
 	else
 	{
-        self.appSettings = [self createAppSettingsWithJSON:[sAppSettings AGSJSONValue]];
+        self.appSettings = [self createAppSettingsWithJSON:[sAppSettings ags_JSONValue]];
 	}
 	 
 	// reshow status bar (initially hidden by plist setting)

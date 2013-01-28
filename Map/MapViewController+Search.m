@@ -4,7 +4,7 @@
 //
 //  Created by Scott Sirowy on 10/14/11.
 /*
- Copyright © 2012 Esri
+ Copyright © 2013 Esri
  
  All rights reserved under the copyright laws of the United States
  and applicable international laws, treaties, and conventions.
@@ -76,7 +76,7 @@
     //only add if not on the screen.
     if (![self.searchLayer.graphics containsObject:location.graphic]) {
         [self.searchLayer addGraphic:location.graphic];
-        [self.searchLayer dataChanged];
+        [self.searchLayer refresh];
     }
     
     if (zoom) {
@@ -289,7 +289,7 @@
         return;
     
     [self.searchLayer removeAllGraphics];
-    [self.searchLayer dataChanged];
+    [self.searchLayer refresh];
     
     //reset back to old imaget
     [self.mapListButton setImage:[UIImage imageNamed:@"Map.png"]];
@@ -394,7 +394,7 @@
 {
     //Remove old graphics from map
     [self.searchLayer removeAllGraphics];
-    [self.searchLayer dataChanged];
+    [self.searchLayer refresh];
     
     //Remove old results from model results object
     [self.searchResults clear];
