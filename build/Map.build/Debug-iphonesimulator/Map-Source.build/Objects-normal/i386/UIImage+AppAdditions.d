@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/UIImage+AppAdditions.m \
-  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/UIImage+AppAdditions.h
+  /Users/nixta/Development/iOS/GitHub/Nixta/directions-ios-fork/Map/UIImage+AppAdditions.m \
+  /Users/nixta/Development/iOS/GitHub/Nixta/directions-ios-fork/Map/UIImage+AppAdditions.h

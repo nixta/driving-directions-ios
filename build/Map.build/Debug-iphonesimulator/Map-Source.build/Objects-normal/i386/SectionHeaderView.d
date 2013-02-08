@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SectionHeaderView.m \
-  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SectionHeaderView.h \
-  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/UIColor+Additions.h
+  /Users/nixta/Development/iOS/GitHub/Nixta/directions-ios-fork/Map/SectionHeaderView.m \
+  /Users/nixta/Development/iOS/GitHub/Nixta/directions-ios-fork/Map/SectionHeaderView.h \
+  /Users/nixta/Development/iOS/GitHub/Nixta/directions-ios-fork/Map/UIColor+Additions.h

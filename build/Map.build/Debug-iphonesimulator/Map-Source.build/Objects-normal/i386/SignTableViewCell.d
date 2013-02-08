@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SignTableViewCell.m \
-  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/SignTableViewCell.h
+  /Users/nixta/Development/iOS/GitHub/Nixta/directions-ios-fork/Map/SignTableViewCell.m \
+  /Users/nixta/Development/iOS/GitHub/Nixta/directions-ios-fork/Map/SignTableViewCell.h

@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/main.m
+  /Users/nixta/Development/iOS/GitHub/Nixta/directions-ios-fork/Map/main.m

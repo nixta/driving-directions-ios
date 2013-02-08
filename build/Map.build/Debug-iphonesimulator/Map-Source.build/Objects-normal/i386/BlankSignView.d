@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/BlankSignView.m \
-  /Users/albe5259/Projects/GitHub_ArcGIS/driving-directions-ios/Map/BlankSignView.h
+  /Users/nixta/Development/iOS/GitHub/Nixta/directions-ios-fork/Map/BlankSignView.m \
+  /Users/nixta/Development/iOS/GitHub/Nixta/directions-ios-fork/Map/BlankSignView.h
