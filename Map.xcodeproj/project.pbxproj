@@ -134,7 +134,6 @@
 		78BA0DCC1458C17500530ADD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78342C97140D9CB400B0F354 /* QuartzCore.framework */; };
 		78BA0DCE1458C17500530ADD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78342C9C140D9CB400B0F354 /* InfoPlist.strings */; };
 		78BA0DCF1458C17500530ADD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78342CA5140D9CB400B0F354 /* MainWindow.xib */; };
-		78BA0DD01458C17500530ADD /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 78342CA8140D9CB500B0F354 /* ArcGIS.bundle */; };
 		78BA0DD21458C17500530ADD /* MapContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 789197561415B7BD00E85321 /* MapContentViewController.xib */; };
 		78BA0DD31458C17500530ADD /* MapLegendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 789197571415B7BD00E85321 /* MapLegendViewController.xib */; };
 		78BA0DD41458C17500530ADD /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 789197581415B7BD00E85321 /* MapViewController.xib */; };
@@ -240,6 +239,7 @@
 		8868F96E161A029200FB9238 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882A01F41610D6AA00027BE2 /* MapKit.framework */; };
 		8868F977161C9A7100FB9238 /* WIDeskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8868F976161C9A7100FB9238 /* WIDeskViewController.m */; };
 		88DE34011628A9BA00D5D93B /* LocationMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DE34001628A9BA00D5D93B /* LocationMarker.m */; };
+		D9DB29EA16C58609006E0663 /* ArcGIS.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D9DB29E916C58609006E0663 /* ArcGIS.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -291,7 +291,6 @@
 		78342CA2140D9CB400B0F354 /* MapAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapAppDelegate.h; sourceTree = "<group>"; };
 		78342CA3140D9CB400B0F354 /* MapAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapAppDelegate.m; sourceTree = "<group>"; };
 		78342CA6140D9CB400B0F354 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		78342CA8140D9CB500B0F354 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ArcGIS.bundle; sourceTree = "<group>"; };
 		78342CAA140D9CB500B0F354 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		78342CAB140D9CB500B0F354 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		783742111423AE400085A15A /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -485,7 +484,6 @@
 		78BFC28514A13303001F1522 /* MapViewController+PlanningRouting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapViewController+PlanningRouting.m"; sourceTree = "<group>"; };
 		78C807361421027500C4987C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Images/Default.png; sourceTree = "<group>"; };
 		78C807371421027500C4987C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Images/Default@2x.png"; sourceTree = "<group>"; };
-		78C8073B1421082A00C4987C /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/gcc/arm-apple-darwin10/4.2.1/libstdc++.dylib"; sourceTree = SDKROOT; };
 		78C8073D1421085600C4987C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		78C8073F1421087C00C4987C /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		78C80741142114CF00C4987C /* MapViewController+MapTapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapViewController+MapTapping.h"; sourceTree = "<group>"; };
@@ -535,7 +533,7 @@
 		78FCC11B141E867B005926F6 /* SampleMapThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SampleMapThumb.png; path = Resources/Images/SampleMapThumb.png; sourceTree = "<group>"; };
 		88078EC216B7178C00F8FB5B /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		88078EC416B7179900F8FB5B /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		882A01EA160BCE3100027BE2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		882A01EA160BCE3100027BE2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		882A01ED160BD15300027BE2 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		882A01EF160BD16A00027BE2 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		882A01F41610D6AA00027BE2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -550,6 +548,7 @@
 		88CFA5D416162DBA0084EB93 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		88DE33FF1628A9BA00D5D93B /* LocationMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationMarker.h; path = Map/LocationMarker/LocationMarker.h; sourceTree = SOURCE_ROOT; };
 		88DE34001628A9BA00D5D93B /* LocationMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationMarker.m; path = Map/LocationMarker/LocationMarker.m; sourceTree = SOURCE_ROOT; };
+		D9DB29E916C58609006E0663 /* ArcGIS.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = ArcGIS.bundle; path = $HOME/Library/SDKs/ArcGIS/iOS/ArcGIS.framework/Versions/Current/Resources/ArcGIS.bundle; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -655,18 +654,8 @@
 		78342C7A140D9CB400B0F354 = {
 			isa = PBXGroup;
 			children = (
-				88078EC416B7179900F8FB5B /* OpenGLES.framework */,
-				88078EC216B7178C00F8FB5B /* libc++.dylib */,
-				8868F968161A024200FB9238 /* AudioUnit.framework */,
-				8868F969161A024300FB9238 /* CoreAudio.framework */,
-				8868F9551616325400FB9238 /* CFNetwork.framework */,
-				88CFA5D416162DBA0084EB93 /* AudioToolbox.framework */,
-				88CFA5D216162DAB0084EB93 /* AVFoundation.framework */,
-				882A01F41610D6AA00027BE2 /* MapKit.framework */,
-				882A01EF160BD16A00027BE2 /* libstdc++.dylib */,
-				882A01ED160BD15300027BE2 /* libz.dylib */,
-				882A01EA160BCE3100027BE2 /* Default-568h@2x.png */,
 				78342C99140D9CB400B0F354 /* Map */,
+				78342C9A140D9CB400B0F354 /* Supporting Files */,
 				78342C88140D9CB400B0F354 /* Frameworks */,
 				78342C86140D9CB400B0F354 /* Products */,
 			);
@@ -683,9 +672,18 @@
 		78342C88140D9CB400B0F354 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				88078EC416B7179900F8FB5B /* OpenGLES.framework */,
+				88078EC216B7178C00F8FB5B /* libc++.dylib */,
+				8868F968161A024200FB9238 /* AudioUnit.framework */,
+				8868F969161A024300FB9238 /* CoreAudio.framework */,
+				8868F9551616325400FB9238 /* CFNetwork.framework */,
+				88CFA5D416162DBA0084EB93 /* AudioToolbox.framework */,
+				88CFA5D216162DAB0084EB93 /* AVFoundation.framework */,
+				882A01F41610D6AA00027BE2 /* MapKit.framework */,
+				882A01EF160BD16A00027BE2 /* libstdc++.dylib */,
+				882A01ED160BD15300027BE2 /* libz.dylib */,
 				78C8073F1421087C00C4987C /* libxml2.dylib */,
 				78C8073D1421085600C4987C /* MessageUI.framework */,
-				78C8073B1421082A00C4987C /* libstdc++.dylib */,
 				788CA8D914202DA10025D2FD /* SystemConfiguration.framework */,
 				7846963914201C2600847AB6 /* Security.framework */,
 				78B929A91419459C002415AB /* AddressBook.framework */,
@@ -706,7 +704,6 @@
 			isa = PBXGroup;
 			children = (
 				8868F978161CE90F00FB9238 /* LocationMarker */,
-				78342CA8140D9CB500B0F354 /* ArcGIS.bundle */,
 				78342CA2140D9CB400B0F354 /* MapAppDelegate.h */,
 				78342CA3140D9CB400B0F354 /* MapAppDelegate.m */,
 				7846963B14201CE200847AB6 /* App Settings */,
@@ -719,7 +716,6 @@
 				784695E2141EC7FF00847AB6 /* Shared Code */,
 				78F2A6101450CA9B0027DC56 /* Sharing */,
 				7804D98D147B04150026AF5D /* SignViews */,
-				78342C9A140D9CB400B0F354 /* Supporting Files */,
 				78342CC0140DAC4100B0F354 /* Utililty */,
 				88CFA5CE1615177B0084EB93 /* RoutingDelegate.h */,
 			);
@@ -729,6 +725,7 @@
 		78342C9A140D9CB400B0F354 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D9DB29E916C58609006E0663 /* ArcGIS.bundle */,
 				782C85B314B64DF500221A65 /* Directions-Info.plist */,
 				78693257140EA8FC00B96F3F /* Nibs */,
 				78342CB5140DA15300B0F354 /* Images */,
@@ -738,11 +735,13 @@
 				78342CA1140D9CB400B0F354 /* Map-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = Map;
 			sourceTree = "<group>";
 		};
 		78342CB5140DA15300B0F354 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				882A01EA160BCE3100027BE2 /* Default-568h@2x.png */,
 				786D77A214BE65DF00FDDA6C /* icon.png */,
 				786D77A314BE65DF00FDDA6C /* icon@2x.png */,
 				7885CC2514A2ADBF00F8A212 /* GPSDisplayStart.png */,
@@ -1190,7 +1189,6 @@
 			files = (
 				78BA0DCE1458C17500530ADD /* InfoPlist.strings in Resources */,
 				78BA0DCF1458C17500530ADD /* MainWindow.xib in Resources */,
-				78BA0DD01458C17500530ADD /* ArcGIS.bundle in Resources */,
 				78BA0DD21458C17500530ADD /* MapContentViewController.xib in Resources */,
 				78BA0DD31458C17500530ADD /* MapLegendViewController.xib in Resources */,
 				78BA0DD41458C17500530ADD /* MapViewController.xib in Resources */,
@@ -1338,6 +1336,7 @@
 				786D77BF14BE70BF00FDDA6C /* att_logo.png in Resources */,
 				786D77C214BE70BF00FDDA6C /* att_logo@2x.png in Resources */,
 				882A01EB160BCE3100027BE2 /* Default-568h@2x.png in Resources */,
+				D9DB29EA16C58609006E0663 /* ArcGIS.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
